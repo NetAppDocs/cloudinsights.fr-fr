@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: insights_overview.html 
+keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload, ttf, time to full, k8s, kubernetes, namespace 
+summary: 'Des informations vous permettent d"examiner l"utilisation des ressources et les tendances.' 
+---
+= Visibilité
+:allow-uri-read: 
+
+
+[role="lead"]
+Grâce aux informations exploitables, vous pouvez examiner différentes choses, comme l'utilisation des ressources et leur incidence sur d'autres ressources ou des analyses complètes.
+
+Plusieurs informations sont disponibles. Accédez à *tableaux de bord > Insights* pour commencer la plongée. Vous pouvez afficher les informations actives (informations en cours) dans l'onglet principal ou informations inactives dans l'onglet _informations inactives_. Les informations inactives sont celles qui étaient précédemment actives, mais qui n'ont plus lieu.
+
+
+
+== Types d'Insight
+
+
+
+=== Ressources partagées sous contrainte
+
+Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. La ressource partagée est alors contrainte. Cloud Insights fournit des outils pour vous aider à analyser la saturation des ressources et l'impact sur votre environnement. link:insights_shared_resources_under_stress.html["En savoir plus >>"]
+
+
+
+=== Espaces de noms Kubernetes manque d'espace
+
+L'exécution des espaces de noms Kubernetes en dehors de Space Insight vous donne une vue d'ensemble des workloads sur vos espaces de noms Kubernetes qui risquent de manquer d'espace. Cette vue indique également le nombre de jours restants avant que chaque espace ne soit saturé. link:insights_k8s_namespaces_running_out_of_space.html["En savoir plus >>"]

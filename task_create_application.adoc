@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_create_application.html 
+summary: 'Vous créez des règles d"annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez.' 
+keywords: application, create application, 
+---
+= Création d'applications
+:allow-uri-read: 
+
+
+[role="lead"]
+Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Cloud Insights.
+
+Si vous souhaitez associer l'application à une entité métier, vous devez créer l'entité métier avant de définir l'application.
+
+Cloud Insights vous permet de suivre les données issues des ressources associées à des applications pour des éléments tels que l'utilisation ou le reporting des coûts.
+
+. Dans le menu Cloud Insights, cliquez sur *gérer > applications*.
+
++ la boîte de dialogue Ajouter une application s'affiche.
+
+. Saisissez un nom unique pour l'application.
+. Sélectionnez une priorité pour l'application.
+. Cliquez sur *Enregistrer*.
+
+
+Après avoir défini une application, elle peut être affectée à des actifs.
+
+
+
+== Affectation d'applications aux ressources
+
+Cette procédure attribue l'application à un hôte comme exemple. Vous pouvez affecter un hôte, une machine virtuelle, un volume ou des volumes internes à une application.
+
+.Étapes
+. Recherchez la ressource à attribuer à l'application :
+. Cliquez sur *Queries > +New Query* et recherchez Host.
+. Cochez la case à gauche de l'hôte que vous souhaitez associer à l'application.
+. Cliquez sur *actions groupées > Ajouter une application*.
+. Sélectionnez l'application à laquelle vous affectez la ressource.
+
+
+Toutes les nouvelles applications que vous attribuez remplacent toutes les applications de la ressource dérivées d'une autre ressource. Par exemple, les volumes héritent des applications des hôtes. Lorsque de nouvelles applications sont attribuées à un volume, la nouvelle application est prioritaire sur l'application dérivée.
+
+
+NOTE: Pour les environnements disposant d'un grand nombre de ressources associées, l'héritage des affectations d'applications peut prendre plusieurs minutes. Veuillez laisser plus de temps à l'héritage si vous disposez de nombreux biens connexes.
+
+Après avoir affecté l'hôte à l'application, vous pouvez affecter les ressources restantes à l'application. Pour accéder à la page d'accueil de l'application, cliquez sur *gérer > application* et sélectionnez l'application que vous avez créée.

@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: 'Les fonctionnalités d"aperçu sont disponibles dans une capacité limitée et les fonctionnalités de mise en évidence ne sont pas encore prêtes pour le temps de pointe.' 
+keywords: coming soon, preview, 
+---
+= Aperçu des fonctions et des fonctionnalités
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights met en évidence les nouvelles fonctionnalités de façon _Preview_. Des fonctionnalités d'aperçu sont disponibles dans des environnements limités ou à une capacité limitée.
+
+Si vous souhaitez prévisualiser une ou plusieurs de ces fonctionnalités, contactez votre link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Équipe commerciale NetApp"] pour en savoir plus.

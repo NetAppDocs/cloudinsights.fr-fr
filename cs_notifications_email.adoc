@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: cs_notifications_email.html 
+summary: 'Ajout d"adresses e-mail pour les notifications des alertes Cloud Secure.' 
+keywords: email, notifications, alerts, warnings, attacks 
+---
+= Configuration des notifications par e-mail pour les alertes, les avertissements et l'état de santé du collecteur d'agents/de sources de données
+:allow-uri-read: 
+
+
+[role="lead"]
+Pour configurer les destinataires d'alertes Cloud Secure, cliquez sur *Admin > Notifications* et entrez les adresses e-mail dans les sections appropriées pour chaque destinataire.
+
+
+
+== Alertes et avertissements d'attaque potentielle
+
+Pour envoyer des notifications _attaque potentielle_ alerte, entrez les adresses e-mail des destinataires dans la section _Envoyer alertes d'attaque potentielles_. Les notifications par e-mail sont envoyées à la liste des destinataires des alertes pour chaque action de l'alerte.
+
+Pour envoyer des notifications _Warning_, entrez les adresses e-mail des destinataires dans la section _Send Warning Alerts_.
+
+
+
+== Surveillance de l'état de santé des agents et des Data Collector
+
+Vous pouvez surveiller l'état des agents et des sources de données grâce aux notifications.
+
+Afin de recevoir des notifications si un agent ou un collecteur de source de données ne fonctionne pas, entrez les adresses électroniques des destinataires dans la section _Data Collection Health Alerts_.
+
+Gardez à l'esprit les éléments suivants :
+
+* Les alertes d'intégrité ne seront envoyées qu'une fois que l'agent/le collecteur cesse de générer des rapports pendant au moins une heure.
+* Une seule notification par e-mail est envoyée aux destinataires prévus dans une période donnée de 24 heures, même si l'agent ou le collecteur de données est déconnecté pendant une période plus longue.
+* En cas de défaillance d'un agent, une alerte est envoyée (pas une par collecteur). Cet e-mail inclura une liste de tous les SVM affectés.
+* L'échec de la collecte de répertoire actif est signalé comme un avertissement ; elle n'a aucun impact sur la détection de ransomware.
+* La liste mise en route comprend maintenant une nouvelle phase _configurer les notifications par e-mail_.
+

@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_integration_with_ontap_arp.html 
+summary: 'Cloud Secure s"intègre avec la protection autonome contre les ransomwares ONTAP pour améliorer la détection des attaques par ransomware.' 
+keywords: ransomware, ARP, Protection, Security 
+---
+= Intégration avec la protection ONTAP autonome contre les ransomwares
+:allow-uri-read: 
+
+
+[role="lead"]
+La fonction ONTAP de protection autonome contre les ransomwares (Autonoman ransomware protection, ARP) utilise l'analyse des workloads dans les environnements NAS (NFS et SMB) pour détecter et avertir de manière proactive les anomalies d'activité dans les fichiers qui peuvent indiquer une attaque par ransomware.
+
+Vous trouverez des détails supplémentaires et des exigences de licence concernant ARP link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ici"].
+
+Cloud Secure s'intègre à ONTAP pour recevoir les événements ARP et fournir une couche d'analyse et de réponses automatiques supplémentaires.
+
+Cloud Secure reçoit les événements ARP de ONTAP et prend les actions suivantes :
+
+. Met en corrélation les événements de cryptage des volumes avec l'activité des utilisateurs pour identifier qui est à l'origine des dommages.
+. Met en œuvre des politiques de réponse automatique (si définies)
+. Offre des fonctionnalités d'analyse :
++
+** Permettre aux clients de mener des enquêtes sur les violations de données.
+** Identifier les fichiers affectés, ce qui permet de les récupérer plus rapidement et de mener des enquêtes sur les violations de données.
+
+
+
+
+
+
+== Prérequis
+
+. Version minimale de ONTAP : 9.11.1
+. Volumes compatibles ARP. Des détails sur l'activation de ARP sont disponibles link:https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["ici"]. ARP doit être activé via OnCommand System Manager. Cloud Secure ne peut pas activer ARP.
+. Le collecteur Cloud Secure doit être ajouté via l'IP du cluster.
+. Des informations d'identification au niveau du cluster sont nécessaires pour que cette fonctionnalité fonctionne. En d'autres termes, les identifiants au niveau du cluster doivent être utilisés lors de l'ajout de la SVM.
+
+
+
+
+== Autorisations utilisateur requises
+
+Si vous utilisez les informations d'identification d'administration du cluster, aucune nouvelle autorisation n'est nécessaire.
+
+Si vous utilisez un utilisateur personnalisé (par exemple, _csuser_) avec les autorisations accordées à l'utilisateur, suivez les étapes ci-dessous pour donner les autorisations à Cloud Secure pour collecter des informations relatives à ARP à partir de ONTAP.
+
+Pour _csuser_ avec les informations d'identification du cluster, effectuez les opérations suivantes à partir de la ligne de commande ONTAP :
+
+....
+security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
+security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
+security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
+....
+
+
+== Alerte exemple
+
+Un exemple d'alerte générée en raison d'un événement ARP est illustré ci-dessous :
+
+image:CS_ONTAP_ARP_EXAMPLE.png["Exemple d'écran ONTAP ARP"]
+
+Une bannière de confiance élevée indique que l'attaque a montré un comportement par ransomware avec les activités de chiffrement de fichiers. Le graphique fichiers chiffrés indique l'horodatage auquel l'activité de chiffrement de volume a été détectée par la solution ARP.
+
+
+
+== Limites
+
+Dans le cas où un SVM n'est pas surveillé par Cloud Secure, mais qu'il existe des événements ARP générés par ONTAP, les événements sont toujours reçus et affichés par Cloud Secure. Cependant, les informations judiciaires liées à l'alerte, ainsi que le mappage des utilisateurs, ne seront pas capturées ni affichées.
