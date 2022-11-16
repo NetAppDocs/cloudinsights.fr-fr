@@ -67,3 +67,18 @@ Procédez comme suit pour configurer la machine à utiliser en tant qu'agent Clo
 
 
 Pour plus de détails, consultez le lien suivant : https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
+
+
+
+== Dépannage
+
+Les problèmes connus et leurs résolutions sont décrits dans le tableau suivant.
+
+|===
+
+
+| Problème | Solution 
+
+
+| L'erreur "Cloud Secure: Échec de la détermination du type ONTAP pour le collecteur de données Amazon FxSN" est indiquée par le Data Collector. Le client ne peut pas ajouter un nouveau collecteur de données Amazon FSxN dans Cloud Secure. La connexion au cluster FSxN sur le port 443 de l'agent est en cours de temporisation. Les règles requises sont activées pour permettre la communication entre le pare-feu et les groupes de sécurité AWS. Un agent est déjà déployé et se trouve également dans le même compte AWS. Ce même agent est utilisé pour connecter et surveiller les dispositifs NetApp restants (et tous fonctionnent). | Résoudre ce problème en ajoutant le segment réseau LIF fsxadmin à la règle de sécurité de l'agent. Autorisé tous les ports si vous n'êtes pas sûr des ports. 
+|===
