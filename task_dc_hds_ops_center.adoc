@@ -56,8 +56,8 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 Vous devez disposer des éléments suivants pour collecter les données de stock :
 
-* Adresse IP du serveur Ops Center
-* Nom d'utilisateur et mot de passe en lecture seule pour le logiciel Ops Center et les privilèges peer
+* Adresse IP ou nom d'hôte du serveur Ops Center hébergeant le composant « Common Services »
+* Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas pris en charge les API REST pour une utilisation par des utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+
 
 
 
