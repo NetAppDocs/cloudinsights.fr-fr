@@ -9172,7 +9172,6 @@
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">Ne pas exécuter une attaque avec le même utilisateur plusieurs fois. Après quelques temps, CS apprendront le comportement de cet utilisateur et présumera qu'il s'agit du comportement normal de l'utilisateur.</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">Ne pas crypter les fichiers que le même utilisateur vient de créer. La modification d'un fichier qui vient d'être créé par un utilisateur n'est pas considérée comme une activité risquée. Utilisez plutôt les fichiers créés par un autre utilisateur OU attendez quelques heures entre la création et le cryptage des fichiers.</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">Adresse IP ou nom d'hôte du serveur Ops Center hébergeant le composant « Common Services »</block>
-  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas pris en charge les API REST pour une utilisation par des utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">Notez que lors de l'exécution de plusieurs règles qui mettent à jour la même annotation sur une ressource, la première règle (exécutée depuis le haut vers le bas) applique l'annotation et met à jour la ressource, la seconde règle s'applique mais ne modifie pas toute annotation qui a déjà été définie par la règle précédente.</block>
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*Réduction du bruit* pour filtrer les fichiers créés par l'utilisateur au cours des 2 dernières heures. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.</block>
   <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">Tri des données d'historique d'activité Forensic</block>
@@ -9181,4 +9180,5 @@
   <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">Conservation de l'historique des activités</block>
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Applicabilité des filtres dans la page Forensics</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">Chemin d'accès / chemin d'origine recherche</block>
+  <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas implémenté de prise en charge des API REST pour l'utilisation par les utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+</block>
 </blocks>

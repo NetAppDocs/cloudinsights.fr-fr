@@ -57,7 +57,7 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 Vous devez disposer des éléments suivants pour collecter les données de stock :
 
 * Adresse IP ou nom d'hôte du serveur Ops Center hébergeant le composant « Common Services »
-* Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas pris en charge les API REST pour une utilisation par des utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+
+* Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas implémenté de prise en charge des API REST pour l'utilisation par les utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+
 
 
 
@@ -99,7 +99,7 @@ Vous devez disposer des éléments suivants pour collecter les données de stock
 | Choisissez 'exclure' ou 'inclure' pour spécifier une liste | Indiquez si vous souhaitez inclure ou exclure la liste des matrices ci-dessous lors de la collecte des données. 
 
 
-| Filtrer la liste des périphériques | Liste séparée par des virgules des noms d'ID de périphérique ou de tableau à inclure ou exclure 
+| Filtrer la liste des périphériques | Liste séparée par des virgules des numéros de série de périphérique à inclure ou exclure 
 
 
 | Intervalle d'interrogation des performances (s) | Intervalle entre les sondages de performances. La valeur par défaut est 300. 
