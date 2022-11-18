@@ -339,8 +339,8 @@ Notez que l'espace de noms par défaut pour l'opérateur de surveillance NetApp 
 Les nouvelles versions de l'opérateur de surveillance peuvent être désinstallées à l'aide des commandes suivantes :
 
 ....
-kubectl delete agent <name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd <name-space>
+kubectl delete agent -A -l installed-by=nkmo-<name-space>
+kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
 ....
 Si la première commande renvoie “aucune ressource trouvée”, suivez les instructions ci-dessous pour désinstaller les anciennes versions de l’opérateur de surveillance.
 
