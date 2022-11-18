@@ -9181,4 +9181,5 @@
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Applicabilité des filtres dans la page Forensics</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">Chemin d'accès / chemin d'origine recherche</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas implémenté de prise en charge des API REST pour l'utilisation par les utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+</block>
+  <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">Le module « Analyzer » du HDS Ops Center doit être installé. Les matrices de stockage doivent alimenter le module « analyseur » du Ops Center</block>
 </blocks>

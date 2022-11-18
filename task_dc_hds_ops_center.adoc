@@ -62,6 +62,14 @@ Vous devez disposer des éléments suivants pour collecter les données de stock
 
 
 
+== Exigences en matière de performances
+
+Les exigences suivantes doivent être respectées pour collecter les données de performance :
+
+Le module « Analyzer » du HDS Ops Center doit être installé. Les matrices de stockage doivent alimenter le module « analyseur » du Ops Center
+
+
+
 == Configuration
 
 [cols="2*"]
