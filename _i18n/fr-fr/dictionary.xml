@@ -3989,9 +3989,6 @@
   <block id="1dc677ce29033ce9855fe2699237c9a1" category="list-text">*Source IP* à partir de laquelle l'entité a été accédée. Vous devez fournir une adresse IP source valide en guillemets doubles, par exemple “10.1.1.1.” Les adresses IP incomplètes telles que “10.1.1.*”, “10.1.*.*”, etc. Ne fonctionneront pas.</block>
   <block id="993bee13d79883a291c5bf94757d27d8" category="list-text">*Protocole* pour extraire des activités spécifiques au protocole.</block>
   <block id="c3d430182436845185c1ac182ba51c05" category="list-text">*Nom d'utilisateur* de l'utilisateur effectuant l'activité. Vous devez fournir le nom d'utilisateur exact pour filtrer. La recherche avec un nom d'utilisateur partiel ou un nom d'utilisateur partiel préfixé ou suffixé par '*' ne fonctionnera pas.</block>
-  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; TÊTE * *réduction du bruit* pour filtrer les fichiers créés au cours des 2 dernières heures par l'utilisateur. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.</block>
-  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">*Réduction du bruit* pour filtrer les fichiers nouvellement créés par l'utilisateur (c.-à-d. au cours des 2 dernières heures). Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.</block>
-  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fca2</block>
   <block id="5e5226f8443d6c79a977ffd6e71a8d9d" category="paragraph">Les champs suivants sont soumis à des règles de filtrage spéciales :</block>
   <block id="3d96016f7628ba3b55f9ed124fe9a321" category="list-text">*Type d'entité*, utilisant l'extension d'entité (fichier)</block>
   <block id="5c50b1e65ca02ceaca4a85e8cc5af6bf" category="list-text">*Chemin* de l'entité</block>
@@ -4003,17 +4000,12 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">La valeur exacte doit se trouver dans les guillemets : exemple : « searchtext »</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">Les chaînes de caractères génériques ne doivent pas contenir de guillemets : par exemple : searchtext, \*searchtext*, filtrera les chaînes contenant ‘contour d’oreille’.</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">Chaîne avec un préfixe, par exemple : searchtext* , recherchera toutes les chaînes commençant par ‘contour d’oreille’.</block>
-  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">== Tri des données d'historique d'activité médico-légale</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">Vous pouvez trier les données de l'historique d'activité par _Time, User, Source IP, Activity, Path_ et _Entity Type_. Par défaut, la table est triée par ordre décroissant _time_, ce qui signifie que les dernières données seront affichées en premier. Le tri est désactivé pour les champs _Device_ et _Protocol_.</block>
-  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">== exportation de toute l'activité</block>
   <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 10,000 principaux enregistrements sont exportés.</block>
-  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">== sélection de colonne pour toutes les activités</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">Le tableau _all Activity_ affiche les colonnes sélectionnées par défaut. Pour ajouter, supprimer ou modifier les colonnes, cliquez sur l'icône engrenage située à droite du tableau et sélectionnez-la dans la liste des colonnes disponibles.</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">Sélecteur d'activité, largeur=30 %</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">== conservation de l'historique des activités</block>
   <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">L'historique des activités est conservé pendant 13 mois pour les environnements Cloud Secure actifs.</block>
-  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">== applicabilité des filtres dans la page Forensics</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">Filtre</block>
   <block id="b12c51b935d86f01d092fb23a1fa4f9f" category="cell">Ce qu'il fait</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">Quels filtres s'appliquent ?</block>
@@ -4042,7 +4034,6 @@
   <block id="c9d397dcd3b4e882911495d696df5941" category="cell">Recherche les valeurs NULL dans tous les champs</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">Domaine</block>
   <block id="3c16a1572c295ef2bbd770516679c559" category="cell">renvoie les résultats où le champ cible est vide</block>
-  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">== chemin / chemin d'origine recherche</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">Les résultats de la recherche avec et sans / seront différents</block>
   <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
   <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">Fonctionne</block>
@@ -4059,7 +4050,6 @@
   <block id="137812c306b0ede761fedbc1e1b88824" category="cell">NON /AutoFile03242022</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
   <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">Affiche toutes les entrées</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">== Dépannage</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">Problème</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">Essayez</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">Dans la table “toutes les activités”, sous la colonne ‘utilisateur’, le nom d’utilisateur est indiqué comme suit : “ldap:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” ou “ldap:Default:80038003”</block>
@@ -9184,4 +9174,11 @@
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">Adresse IP ou nom d'hôte du serveur Ops Center hébergeant le composant « Common Services »</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">Compte utilisateur root/sysadmin et mot de passe existant sur tous les serveurs hébergeant les composants Ops Center. HDS n'a pas pris en charge les API REST pour une utilisation par des utilisateurs LDAP/SSO jusqu'à Ops Center 10.8+</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">Notez que lors de l'exécution de plusieurs règles qui mettent à jour la même annotation sur une ressource, la première règle (exécutée depuis le haut vers le bas) applique l'annotation et met à jour la ressource, la seconde règle s'applique mais ne modifie pas toute annotation qui a déjà été définie par la règle précédente.</block>
+  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*Réduction du bruit* pour filtrer les fichiers créés par l'utilisateur au cours des 2 dernières heures. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.</block>
+  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">Tri des données d'historique d'activité Forensic</block>
+  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">Exportation de toute l'activité</block>
+  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">Sélection de colonne pour toutes les activités</block>
+  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">Conservation de l'historique des activités</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Applicabilité des filtres dans la page Forensics</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">Chemin d'accès / chemin d'origine recherche</block>
 </blocks>

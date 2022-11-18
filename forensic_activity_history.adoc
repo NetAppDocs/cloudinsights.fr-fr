@@ -87,15 +87,8 @@ Vous pouvez filtrer les données d'activité Forensic en utilisant les champs su
 
 
 * *Nom d'utilisateur* de l'utilisateur effectuant l'activité. Vous devez fournir le nom d'utilisateur exact pour filtrer. La recherche avec un nom d'utilisateur partiel ou un nom d'utilisateur partiel préfixé ou suffixé par '*' ne fonctionnera pas.
+* *Réduction du bruit* pour filtrer les fichiers créés par l'utilisateur au cours des 2 dernières heures. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.
 
-
-<<<<<<<< TÊTE * *réduction du bruit* pour filtrer les fichiers créés au cours des 2 dernières heures par l'utilisateur. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.
-
-====
-* *Réduction du bruit* pour filtrer les fichiers nouvellement créés par l'utilisateur (c.-à-d. au cours des 2 dernières heures). Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.
-
-
->>>>>> 574e310d1e2d0707d9dba0ce1435f338b16fca2
 
 Les champs suivants sont soumis à des règles de filtrage spéciales :
 
@@ -114,25 +107,35 @@ Les champs précédents sont soumis aux éléments suivants lors du filtrage :
 * Chaîne avec un préfixe, par exemple : searchtext* , recherchera toutes les chaînes commençant par ‘contour d’oreille’.
 
 
-== Tri des données d'historique d'activité médico-légale
+
+
+== Tri des données d'historique d'activité Forensic
 
 Vous pouvez trier les données de l'historique d'activité par _Time, User, Source IP, Activity, Path_ et _Entity Type_. Par défaut, la table est triée par ordre décroissant _time_, ce qui signifie que les dernières données seront affichées en premier. Le tri est désactivé pour les champs _Device_ et _Protocol_.
 
-== exportation de toute l'activité
+
+
+== Exportation de toute l'activité
 
 Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 10,000 principaux enregistrements sont exportés.
 
-== sélection de colonne pour toutes les activités
+
+
+== Sélection de colonne pour toutes les activités
 
 Le tableau _all Activity_ affiche les colonnes sélectionnées par défaut. Pour ajouter, supprimer ou modifier les colonnes, cliquez sur l'icône engrenage située à droite du tableau et sélectionnez-la dans la liste des colonnes disponibles.
 
 image:CloudSecure_ActivitySelection.png["Sélecteur d'activité, largeur=30 %"]
 
-== conservation de l'historique des activités
+
+
+== Conservation de l'historique des activités
 
 L'historique des activités est conservé pendant 13 mois pour les environnements Cloud Secure actifs.
 
-== applicabilité des filtres dans la page Forensics
+
+
+== Applicabilité des filtres dans la page Forensics
 
 |===
 
@@ -154,7 +157,9 @@ L'historique des activités est conservé pendant 13 mois pour les environnement
 
 | Aucune | Recherche les valeurs NULL dans tous les champs | Aucune | Domaine |  | renvoie les résultats où le champ cible est vide 
 |===
-== chemin / chemin d'origine recherche
+
+
+== Chemin d'accès / chemin d'origine recherche
 
 Les résultats de la recherche avec et sans / seront différents
 
@@ -193,6 +198,8 @@ Les résultats de la recherche avec et sans / seront différents
 
 | * | Affiche toutes les entrées 
 |===
+
+
 == Dépannage
 
 |===
@@ -206,4 +213,3 @@ Les résultats de la recherche avec et sans / seront différents
 
 | Certains événements NFS n'apparaissent pas dans l'interface utilisateur. | Vérifier ce qui suit : 1. Un collecteur d'annuaire utilisateur pour serveur AD avec un jeu d'attributs POSIX doit être exécuté avec l'attribut unixid activé à partir de l'interface utilisateur. 2. Tout utilisateur effectuant un accès NFS doit s'afficher lorsqu'il recherche dans la page utilisateur à partir de l'interface utilisateur 3. Les événements bruts (événements pour lesquels l'utilisateur n'est pas encore découvert) ne sont pas pris en charge par NFS 4. L'accès anonyme à l'exportation NFS ne sera pas surveillé. 5. S'assurer que la version NFS est utilisée dans un niveau inférieur à NFS4.1. 
 |===
-====
