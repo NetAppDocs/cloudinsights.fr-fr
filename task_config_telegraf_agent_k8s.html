@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 21:47:32 +0000">11/15/2022</time>
+    <time datetime="2022-11-18 18:22:57 +0000">11/18/2022</time>
     
   
 
@@ -3651,8 +3651,8 @@ Si l'espace de noms de surveillance est utilisé à d'autres fins en plus de Tel
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>kubectl delete agent &lt;name-space&gt;
-kubectl delete ns,clusterrole,clusterrolebinding,crd &lt;name-space&gt;</pre>
+<pre>kubectl delete agent -A -l installed-by=nkmo-&lt;name-space&gt;
+kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-&lt;name-space&gt;</pre>
 </div>
 </div>
 <div class="paragraph">
