@@ -30,6 +30,7 @@ La boîte de dialogue Ajouter un périphérique s'affiche
 . Entrez l'adresse, l'adresse IP et un nom de périphérique unique.
 
 
+.Résultat
 Le périphérique que vous entrez est ajouté à la liste des périphériques dans l'onglet IP Address Identify (identification de l'adresse IP).
 
 
@@ -65,6 +66,7 @@ NOTE: Il est recommandé d'exporter d'abord les informations d'identification de
 
 Vous pouvez exporter des identifications de périphérique IP existantes vers un fichier .CSV à partir de la fonction de résolution de périphérique Cloud Insights. Vous pouvez exporter une identification de périphérique afin de pouvoir la modifier, puis la réimporter dans Cloud Insights, où elle est ensuite utilisée pour identifier les périphériques similaires à ceux qui correspondent à l'identification exportée.
 
+.Description de la tâche
 . Ce scénario peut être utilisé lorsque les périphériques ont des attributs similaires qui peuvent être facilement modifiés dans le fichier .CSV, puis importés à nouveau dans le système.
 
 Lorsque vous exportez une identification de périphérique IP dans un fichier .CSV, le fichier contient les informations suivantes dans l'ordre indiqué :

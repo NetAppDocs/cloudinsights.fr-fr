@@ -54,6 +54,7 @@ Comme mentionné précédemment, il peut s'agir d'un processus itératif et néc
 
 Les annotations sont des notes spécialisées que vous attribuez à vos ressources, ce qui vous permet de filtrer les ressources par leurs annotations. Cette annotation vous permettra d'identifier les agrégats NetApp racine dans votre environnement et de vérifier qu'ils ne sont pas inclus dans une liste de volumes internes dont la densité d'E/S est la plus élevée.
 
+.Avant de commencer
 Vous devez avoir identifié tous les agrégats racine à exclure du rapport « densité d'E/S élevée ».
 
 .Étapes
@@ -73,6 +74,7 @@ Vous devez avoir identifié tous les agrégats racine à exclure du rapport « d
 
 Au lieu d'appliquer manuellement des annotations à des ressources individuelles, vous pouvez appliquer automatiquement des annotations à plusieurs ressources à l'aide de règles d'annotation. Les règles d'annotation sont basées sur les requêtes que vous créez et lorsqu'elles sont exécutées sur le système, elles ajoutent de nouvelles ressources à des ensembles de ressources existants. Lorsque ces ensembles d'actifs sont exclus de l'inclusion, les nouveaux actifs sont également automatiquement exclus.
 
+.Avant de commencer
 Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement.
 
 .Étapes

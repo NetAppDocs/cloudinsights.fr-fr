@@ -30,7 +30,7 @@ image:K8sRunningOutOfSpaceWorkloadTable.png["Le tableau des charges de travail a
 
 
 
-=== Que puis-je faire si je manque d'espace ?
+=== Que faire si l'espace est insuffisant ?
 
 Sur la page Insight, cliquez sur *+Afficher les recommandations* pour voir les solutions possibles. L'option la plus simple en cas de manque d'espace consiste toujours à ajouter de la capacité, et Cloud Insights vous montre la capacité optimale à ajouter pour augmenter le temps de présaturation à une cible de 60 jours. D'autres recommandations sont également présentées.
 

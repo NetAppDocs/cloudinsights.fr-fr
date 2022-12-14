@@ -34,7 +34,7 @@ image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
 
 * L'installation de NetApp Kubernetes Monitoring Operator est prise en charge avec Kubernetes version 1.20 ou ultérieure.
 * Lorsque Cloud Insights contrôle le stockage back-end et que Kubernetes est utilisé avec l'exécution du conteneur Docker, Cloud Insights peut afficher des mappages entre pod et PV et stockage pour NFS et iSCSI. D'autres temps d'exécution indiquent uniquement iSCSI.
-* Depuis août 2022, l'opérateur de surveillance NetApp Kubernetes inclut la prise en charge de Pod Security Policy (PSP). Vous devez ,mise à niveau Auprès de l'opérateur de surveillance NetApp Kubernetes le plus récent si votre environnement utilise la PSP.
+* Depuis août 2022, l'opérateur de surveillance NetApp Kubernetes inclut la prise en charge de Pod Security Policy (PSP). Vous devez <<mise à niveau,mise à niveau>> Auprès de l'opérateur de surveillance NetApp Kubernetes le plus récent si votre environnement utilise la PSP.
 * Si vous exécutez OpenShift 4.6 ou une version supérieure, vous devez suivre les instructions OpenShift* ci-dessous en plus de garantir le respect de ces conditions.
 * La surveillance n'est installée que sur les nœuds Linux
 +
@@ -54,9 +54,9 @@ Cloud Insights prend en charge le contrôle des nœuds Kubernetes qui exécutent
 |===
 * L'opérateur de surveillance NetApp Kubernetes et ses dépendances (télégraf, indicateurs d'état kube, fluentbit, etc.) ne sont pas pris en charge sur les nœuds exécutant l'architecture ArMD64.
 * Les commandes suivantes doivent être disponibles : _curl_, _sudo_, _openssl_, _sha256sum_ et _kubectl_. Pour obtenir de meilleurs résultats, ajoutez ces commandes au CHEMIN D'ACCÈS.
-* L'hôte que vous utiliserez pour l'installation de l'opérateur de surveillance NetApp Kubernetes doit avoir _kubectl_ configuré pour communiquer avec le cluster K8s ainsi que pour établir une connexion Internet à votre environnement Cloud Insights. Si cet hôte nécessite un proxy pour atteindre Cloud Insights, suivez les instructions de la section ,Configuration du support de proxy section.
+* L'hôte que vous utiliserez pour l'installation de l'opérateur de surveillance NetApp Kubernetes doit avoir _kubectl_ configuré pour communiquer avec le cluster K8s ainsi que pour établir une connexion Internet à votre environnement Cloud Insights. Si cet hôte nécessite un proxy pour atteindre Cloud Insights, suivez les instructions de la section <<configuring-proxy-support,Configuration du support de proxy>> section.
 * L'opérateur de surveillance NetApp Kubernetes installe ses propres metrics kube-State pour éviter les conflits avec d'autres instances.
-* Si vous êtes derrière un proxy pendant l'installation ou si vous utilisez le cluster K8s, suivez les instructions du ,Configuration du support de proxy section.
+* Si vous êtes derrière un proxy pendant l'installation ou si vous utilisez le cluster K8s, suivez les instructions du <<configuring-proxy-support,Configuration du support de proxy>> section.
 * Vous devez disposer d'autorisations pour créer des rôles de cluster Kubernetes et des liaisons de rôles.
 
 
@@ -66,11 +66,11 @@ Pour un audit et un reporting précis des données, il est fortement recommandé
 
 == Notez-les avant de commencer
 
-Si vous utilisez un ,proxy, ont un ,référentiel personnalisé, ou utilisent ,OpenShift, lisez attentivement les sections suivantes.
+Si vous utilisez un <<configuring-proxy-support,proxy>>, ont un <<using-a-custom-or-private-docker-repository,référentiel personnalisé>>, ou utilisent <<openshift-instructions,OpenShift>>, lisez attentivement les sections suivantes.
 
-Si vous effectuez une mise à niveau à partir d'une installation précédente, lisez également le ,Mise à niveau informations.
+Si vous effectuez une mise à niveau à partir d'une installation précédente, lisez également le <<mise à niveau,Mise à niveau>> informations.
 
-Si vous voulez vérifier les fichiers d'installation avant d'installer l'agent, lisez à propos de ,Vérification des checksums Kubernetes.
+Si vous voulez vérifier les fichiers d'installation avant d'installer l'agent, lisez à propos de <<verifying-kubernetes-checksums,Vérification des checksums Kubernetes>>.
 
 
 
@@ -223,7 +223,7 @@ OpenShift peut implémenter un niveau de sécurité supplémentaire qui peut blo
 image:NKMO_Install_Instructions.png["Installation basée sur l'opérateur"]
 
 .Étapes d'installation de l'agent de l'opérateur de surveillance NetApp Kubernetes sur Kubernetes :
-. Entrez un nom de cluster et un espace de noms uniques. Si vous l'êtes ,mise à niveau À partir de l'agent basé sur des scripts ou d'un opérateur Kubernetes précédent, utilisez le même nom de cluster et le même espace de noms.
+. Entrez un nom de cluster et un espace de noms uniques. Si vous l'êtes <<mise à niveau,mise à niveau>> À partir de l'agent basé sur des scripts ou d'un opérateur Kubernetes précédent, utilisez le même nom de cluster et le même espace de noms.
 . Une fois ces données saisies, vous pouvez copier l'extrait de code du programme d'installation de l'agent
 . Cliquez sur le bouton pour copier ce fragment dans le presse-papiers.
 . Collez le fragment dans une fenêtre _bash_ et exécutez-le. Notez que l'extrait de code possède une clé unique et est valide pendant 24 heures.
@@ -231,10 +231,10 @@ image:NKMO_Install_Instructions.png["Installation basée sur l'opérateur"]
 
 
 
-NOTE: La configuration n'est pas terminée ,configurez votre proxy.
+NOTE: La configuration n'est pas terminée <<configuring-proxy-support,configurez votre proxy>>.
 
 
-NOTE: Si vous disposez d'un référentiel personnalisé, vous devez suivre les instructions pour ,À l'aide d'un référentiel docker personnalisé/privé.
+NOTE: Si vous disposez d'un référentiel personnalisé, vous devez suivre les instructions pour <<using-a-custom-or-private-docker-repository,À l'aide d'un référentiel docker personnalisé/privé>>.
 
 
 
@@ -277,7 +277,7 @@ Si l'espace de noms de surveillance est utilisé à d'autres fins en plus de Tel
 
 +
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-. ,Installer L'opérateur actuel. Veillez à utiliser le même nom de cluster que celui indiqué à l'étape 1 ci-dessus.
+. <<installing-the-netapp-kubernetes-monitoring-operator,Installer>> L'opérateur actuel. Veillez à utiliser le même nom de cluster que celui indiqué à l'étape 1 ci-dessus.
 
 
 
@@ -294,9 +294,9 @@ Pour les mises à niveau d'installation basées sur l'opérateur, exécutez les 
  kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
-,Désinstaller L'opérateur actuel.
+<<to-remove-the-netapp-kubernetes-monitoring-operator,Désinstaller>> L'opérateur actuel.
 
-,Installer Le dernier opérateur. Utilisez le même nom de cluster et assurez-vous d'extraire de nouvelles images de conteneur si vous avez configuré un repo personnalisé.
+<<installing-the-netapp-kubernetes-monitoring-operator,Installer>> Le dernier opérateur. Utilisez le même nom de cluster et assurez-vous d'extraire de nouvelles images de conteneur si vous avez configuré un repo personnalisé.
 
 
 
@@ -313,7 +313,7 @@ Pour démarrer l'opérateur de surveillance NetApp Kubernetes :
 == Désinstallation
 
 
-NOTE: Si vous exécutez un agent Kubernetes basé sur des scripts précédemment installé, vous devez ,mise à niveau À l'opérateur de surveillance NetApp Kubernetes.
+NOTE: Si vous exécutez un agent Kubernetes basé sur des scripts précédemment installé, vous devez <<mise à niveau,mise à niveau>> À l'opérateur de surveillance NetApp Kubernetes.
 
 
 
@@ -458,12 +458,12 @@ Quelques points à essayer si vous rencontrez des problèmes lors de la configur
 | Sur Kubernetes, mon pod Telegraf ReplicaSet signale l'erreur suivante : [inputs.prometheus] erreur dans le plug-in : impossible de charger keypair /etc/kubernetes/pki/ETcd/Server.crt:/etc/kubernetes/pki/ETcd/Server.key : ouvrir /etc/kubernetes/pki/ETcd/Server.crt : aucun fichier ni répertoire | Le pod Télégraf ReplicaSet est conçu pour s'exécuter sur un nœud désigné comme maître ou pour ETCD. Si le pod ReplicaSet n'est pas en cours d'exécution sur l'un de ces nœuds, vous obtenez ces erreurs. Vérifiez si vos nœuds maître/ETCD ont des astuces sur eux. S'ils le font, ajoutez les tolérances nécessaires à Telegraf ReplicaSet, telegraf-RS. Par exemple, modifiez le ReplicaSet... kubectl edit RS telegraf-RS ...et ajoutez les tolérances appropriées à la spécification. Redémarrez ensuite le pod ReplicaSet. 
 
 
-| J'ai un environnement PSP/PSA. Cela affecte-t-il mon opérateur de surveillance ? | Si votre cluster Kubernetes est exécuté avec une politique de sécurité Pod (PSP) ou un système d'admission à la sécurité Pod (PSA), vous devez effectuer une mise à niveau vers le dernier opérateur de surveillance NetApp Kubernetes. Procédez comme suit pour effectuer la mise à niveau vers le NKMO actuel avec la prise en charge de PSP/PSA : 1. ,Désinstaller L'opérateur de surveillance précédent : kubectl delete agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-gestionnaire-rôle agent-proxy-rôle agent-metrics-lecteur kubectl delete clusterleagent-responsable-roleagent-proxy-proxy-roleagent-Reliure-agent-proxy--agent-Reliure-agent-agent-proxy-rogle2. ,Installer la dernière version du moniteur. 
+| J'ai un environnement PSP/PSA. Cela affecte-t-il mon opérateur de surveillance ? | Si votre cluster Kubernetes est exécuté avec une politique de sécurité Pod (PSP) ou un système d'admission à la sécurité Pod (PSA), vous devez effectuer une mise à niveau vers le dernier opérateur de surveillance NetApp Kubernetes. Procédez comme suit pour effectuer la mise à niveau vers le NKMO actuel avec la prise en charge de PSP/PSA : 1. <<uninstalling,Désinstaller>> L'opérateur de surveillance précédent : kubectl delete agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-gestionnaire-rôle agent-proxy-rôle agent-metrics-lecteur kubectl delete clusterleagent-responsable-roleagent-proxy-proxy-roleagent-Reliure-agent-proxy--agent-Reliure-agent-agent-proxy-rogle2. <<installing-the-netapp-kubernetes-monitoring-operator,Installer>> la dernière version du moniteur. 
 
 
 | J'ai rencontré des problèmes lors de la tentative de déploiement du NKMO, et j'ai utilisé PSP/PSA. | 1. Modifiez l'agent à l'aide de la commande suivante : kubectl -n <name-space> edit agent 2. Marquez « Security-policy-enabled » comme « false ». Cela désactive les stratégies de sécurité Pod et l'admission de sécurité Pod et permet au NKMO de se déployer. Confirmez en utilisant les commandes suivantes : kubectl get psp (devrait afficher Pod Security Policy supprimé) kubectl get all -n <namespace> | grep -i psp (doit montrer que rien n'a été trouvé) 
 
 
-| Erreurs « ImagePullBackoff » détectées | Ces erreurs peuvent se produire si vous disposez d'un référentiel docker personnalisé ou privé et si vous n'avez pas encore configuré l'opérateur de surveillance NetApp Kubernetes pour le reconnaître correctement. ,En savoir plus a propos de la configuration pour repo personnalisé/privé. 
+| Erreurs « ImagePullBackoff » détectées | Ces erreurs peuvent se produire si vous disposez d'un référentiel docker personnalisé ou privé et si vous n'avez pas encore configuré l'opérateur de surveillance NetApp Kubernetes pour le reconnaître correctement. <<using-a-custom-or-private-docker-repository,En savoir plus>> a propos de la configuration pour repo personnalisé/privé. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].

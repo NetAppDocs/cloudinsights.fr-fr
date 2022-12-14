@@ -174,7 +174,7 @@ Les fonctionnalités suivantes ont été déaperçu et sont désormais disponibl
 |===
 
 
-=== Quelle est la santé de ma collecte de données ?
+=== Comment ma collecte de données est-elle en bonne santé ?
 
 Cloud Insights fournit deux nouveaux moniteurs de fréquence cardiaque pour vos unités d'acquisition, ainsi que deux moniteurs pour vous alerter des pannes de collecteur de données. Elles peuvent être utilisées pour vous alerter rapidement des problèmes liés à la collecte de données.
 
@@ -1314,7 +1314,7 @@ image:define_monitor_conditions_2.png["Conditions du moniteur"]
 
 
 
-=== Cloud Secure prend une action Snapshot
+=== Cloud Secure _prendre une action instantané_
 
 Cloud Secure protège vos données en effectuant automatiquement des copies Snapshot en cas de détection d'activités malveillantes, ce qui garantit la sauvegarde sécurisée de vos données.
 

@@ -11,10 +11,13 @@ keywords: application, create application,
 [role="lead"]
 Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Cloud Insights.
 
+.Avant de commencer
 Si vous souhaitez associer l'application à une entité métier, vous devez créer l'entité métier avant de définir l'application.
 
+.Description de la tâche
 Cloud Insights vous permet de suivre les données issues des ressources associées à des applications pour des éléments tels que l'utilisation ou le reporting des coûts.
 
+.Étapes
 . Dans le menu Cloud Insights, cliquez sur *gérer > applications*.
 
 + la boîte de dialogue Ajouter une application s'affiche.
@@ -24,6 +27,7 @@ Cloud Insights vous permet de suivre les données issues des ressources associé
 . Cliquez sur *Enregistrer*.
 
 
+.Une fois que vous avez terminé
 Après avoir défini une application, elle peut être affectée à des actifs.
 
 
@@ -45,4 +49,5 @@ Toutes les nouvelles applications que vous attribuez remplacent toutes les appli
 
 NOTE: Pour les environnements disposant d'un grand nombre de ressources associées, l'héritage des affectations d'applications peut prendre plusieurs minutes. Veuillez laisser plus de temps à l'héritage si vous disposez de nombreux biens connexes.
 
+.Une fois que vous avez terminé
 Après avoir affecté l'hôte à l'application, vous pouvez affecter les ressources restantes à l'application. Pour accéder à la page d'accueil de l'application, cliquez sur *gérer > application* et sélectionnez l'application que vous avez créée.

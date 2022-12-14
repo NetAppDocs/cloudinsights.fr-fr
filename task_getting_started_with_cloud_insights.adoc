@@ -88,7 +88,7 @@ Vous pouvez importer des tableaux de bord supplémentaires ultérieurement, ou l
 
 
 
-== C’est tout ce qu’il y a à dire
+== Ce n'est pas plus compliqué que cela
 
 Une fois le processus de configuration initial terminé, votre environnement commence à collecter des données.
 

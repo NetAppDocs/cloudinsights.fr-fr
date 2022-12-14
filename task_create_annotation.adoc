@@ -86,8 +86,10 @@ Pour attribuer automatiquement des annotations aux ressources en fonction des cr
 
 Au lieu d'appliquer manuellement des annotations à des ressources individuelles, vous pouvez appliquer automatiquement des annotations à plusieurs ressources à l'aide de règles d'annotation. Les annotations définies manuellement sur une page de ressource individuelle ont priorité sur les annotations basées sur des règles lors de l'évaluation par Insight des règles d'annotation.
 
+.Avant de commencer
 Vous devez avoir créé une requête pour la règle d'annotation.
 
+.Description de la tâche
 Bien que vous puissiez modifier les types d'annotation lors de la création des règles, vous devez avoir défini les types à l'avance.
 
 .Étapes

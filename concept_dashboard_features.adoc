@@ -234,6 +234,7 @@ Les données affichées dans un widget sont regroupées (parfois appelées « cu
 * *Count* : affiche un _count_ d'objets qui ont des données déclarées dans la période spécifiée. Vous pouvez choisir la _fenêtre de temps entier_ comme déterminé par la plage de temps du tableau de bord (ou la plage de temps du widget, si elle est définie pour remplacer l'heure du tableau de bord), ou une _fenêtre de temps personnalisée_ que vous sélectionnez.
 
 
+.Étapes
 Pour définir la méthode de regroupement, procédez comme suit.
 
 . Dans la requête de votre widget, choisissez un type et une mesure de ressource (par exemple _Storage_) et une mesure (par exemple _Performance IOPS Total_).
@@ -382,6 +383,7 @@ Les différentes mesures utilisent différentes unités de mesure pour les donn�
 
 Mais il est possible de tracer les deux ensembles de données sur un seul graphique significatif, en définissant une unité de mesure sur l'axe y principal (côté gauche) et l'autre unité de mesure sur l'axe y secondaire (côté droit). Chaque mesure est saisie à sa propre échelle.
 
+.Étapes
 Cet exemple illustre le concept des axes principal et secondaire dans un widget graphique.
 
 . Créez ou ouvrez un tableau de bord. Ajoutez un graphique linéaire, un graphique spline, un graphique de zone ou un widget de graphique à zone empilée au tableau de bord.

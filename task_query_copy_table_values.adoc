@@ -11,6 +11,7 @@ keywords: query, queries, copy, values, clipboard
 [role="lead"]
 Vous pouvez copier des valeurs dans les tableaux dans le presse-papiers pour les utiliser dans les zones de recherche ou dans d'autres applications.
 
+.Description de la tâche
 Vous pouvez utiliser deux méthodes pour copier des valeurs des tableaux ou des résultats de requête dans le presse-papiers.
 
 .Étapes

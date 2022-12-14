@@ -21,7 +21,7 @@ NOTE: Pour un audit et un reporting précis des données, il est fortement recom
 == Ajout d'une unité d'acquisition Linux
 
 .Avant de commencer
-* Si votre système utilise un proxy, vous devez définir les variables d'environnement proxy avant l'installation de l'unité d'acquisition. Pour plus d'informations, voir  proxy environment variables.
+* Si votre système utilise un proxy, vous devez définir les variables d'environnement proxy avant l'installation de l'unité d'acquisition. Pour plus d'informations, voir <<Définition des variables d'environnement proxy>>.
 
 
 .Étapes pour l'installation de l'unité d'acquisition Linux
@@ -183,6 +183,7 @@ REMARQUE : vous ne pouvez pas supprimer l'unité d'acquisition par défaut. Sél
 
 Pour réinstaller une unité d'acquisition sur le même serveur/VM, vous devez procéder comme suit :
 
+.Avant de commencer
 Une unité d'acquisition temporaire doit être configurée sur un serveur/VM distinct avant de réinstaller une unité d'acquisition.
 
 .Étapes

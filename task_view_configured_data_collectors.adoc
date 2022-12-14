@@ -94,6 +94,7 @@ La boîte de dialogue Cloner le Data Collector s'affiche.
 . Cliquez sur *Enregistrer*.
 
 
+.Une fois que vous avez terminé
 L'opération de clonage copie tous les autres attributs et paramètres pour créer le nouveau collecteur de données.
 
 
@@ -109,4 +110,5 @@ Vous pouvez modifier simultanément certaines informations pour plusieurs collec
 . Dans le menu d'options à droite, cliquez sur l'option que vous souhaitez exécuter.
 
 
+.Une fois que vous avez terminé
 L'opération que vous avez sélectionnée est exécutée sur les collecteurs de données. Lorsque vous avez choisi de supprimer des collecteurs de données, une boîte de dialogue vous demande de vous conformer à l'action.

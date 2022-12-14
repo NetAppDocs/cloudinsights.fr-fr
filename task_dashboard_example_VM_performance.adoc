@@ -11,6 +11,7 @@ keywords: dashboard, widget, custom, example, virtual machine, vm, performance
 [role="lead"]
 Les opérations IT sont confrontées à de nombreux défis. Les administrateurs doivent en faire plus avec moins, et une visibilité complète sur vos data centers dynamiques est primordiale. Dans cet exemple, nous vous montrerons comment créer un tableau de bord avec des widgets qui vous offrent des informations opérationnelles sur la performance des machines virtuelles dans votre environnement. En suivant cet exemple et en créant des widgets pour cibler vos propres besoins spécifiques, vous pouvez exemple visualiser les performances de stockage back-end par rapport aux performances des machines virtuelles front-end, ou afficher la latence des machines virtuelles par rapport à la demande d'E/S.
 
+.Description de la tâche
 Dans cette section, nous allons créer un tableau de bord des performances des ordinateurs virtuels comprenant les éléments suivants :
 
 * Un tableau répertoriant les noms de VM et les données de performances

@@ -20,8 +20,10 @@ Remarque : lorsqu'un nouveau collecteur de données est ajouté qui acquiert des
 . Dans la liste 'Sélectionner...', sélectionnez le type d'objet à rechercher. Vous pouvez faire défiler la liste ou commencer à taper pour trouver plus rapidement ce que vous recherchez.
 
 
+.Liste de défilement :
 image:QueryDrop-DownList.png["Liste déroulante requête"]
 
+.Type à rechercher :
 image:QueryPageFilter.png["Saisir pour trouver"]
 
 Vous pouvez ajouter des filtres pour affiner davantage votre requête en cliquant sur le bouton *+* dans le champ *Filtrer par*. Grouper les lignes par objet ou attribut. Lorsque vous utilisez des données d'intégration (Kubernetes, ONTAP Advanced Metrics, etc.), vous pouvez regrouper par plusieurs attributs, si vous le souhaitez.

@@ -103,7 +103,7 @@ Page détaillée (cet exemple montre une attaque par ransomware potentielle) :im
 
 
 
-== Prendre une action de cliché
+== _Prendre une action instantané_
 
 Cloud Secure protège vos données en effectuant automatiquement des copies Snapshot en cas de détection d'activités malveillantes, ce qui garantit la sauvegarde sécurisée de vos données.
 

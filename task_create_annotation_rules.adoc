@@ -10,6 +10,7 @@ summary: 'Vous créez des règles d"annotation pour appliquer automatiquement de
 [role="lead"]
 Vous pouvez utiliser des règles d'annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez. Cloud Insights attribue les annotations aux ressources en fonction de ces règles. Les annotations définies manuellement sur une page de ressource individuelle ont priorité sur les annotations basées sur des règles lors de l'évaluation des règles d'annotation par Cloud Insight.
 
+.Avant de commencer
 Vous devez avoir créé une requête pour la règle d'annotation.
 
 .Étapes

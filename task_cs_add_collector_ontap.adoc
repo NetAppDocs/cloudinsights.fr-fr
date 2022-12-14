@@ -11,6 +11,7 @@ summary: Ajout de collecteurs de données
 [role="lead"]
 Cloud Secure utilise des collecteurs de données pour collecter les données d'accès des fichiers et des utilisateurs à partir de terminaux. Les données sont fournies à Cloud Secure pour analyse.
 
+.Avant de commencer
 Vous avez besoin des informations suivantes pour configurer ce collecteur de données :
 
 * Un agent doit être configuré pour collecter des données

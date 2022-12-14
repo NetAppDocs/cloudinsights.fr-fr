@@ -139,4 +139,5 @@ Vos annotations apparaissent dans la liste de la page Annotations.
 
 
 
+.Une fois que vous avez terminé
 L'annotation est immédiatement disponible dans l'interface utilisateur.

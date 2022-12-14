@@ -121,6 +121,7 @@ Une mise à jour de la résolution du périphérique valide les modifications ma
 
 Cette fonction est utilisée dans des cas particuliers où vous souhaitez exécuter une règle spécifique ou une liste de règles (avec ou sans réorganisation unique) pour résoudre des hôtes inconnus, des périphériques de stockage et de bande.
 
+.Avant de commencer
 Vous avez un certain nombre de périphériques qui n'ont pas été identifiés et vous disposez également de plusieurs règles qui ont identifié d'autres périphériques avec succès.
 
 

@@ -95,6 +95,7 @@ Cette liste n'est pas exhaustive.
 
 La modification de l'ordre des compteurs dans un widget de tracé de dispersion modifie les axes sur lesquels les données sont affichées.
 
+.Description de la tâche
 Cet exemple va créer un tracé de dispersion qui vous permettra de voir des VM sous-performants présentant une latence élevée par rapport à un nombre d'opérations d'entrée/sortie par seconde faible.
 
 .Étapes

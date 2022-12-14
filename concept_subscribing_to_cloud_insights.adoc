@@ -98,7 +98,7 @@ Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche imag
 
 == Version d'essai
 
-Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement. Toutes les fonctionnalités de Cloud Insights ,Édition Standard sont disponibles pendant cet essai.
+Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement. Toutes les fonctionnalités de Cloud Insights <<editions,Édition Standard>> sont disponibles pendant cet essai.
 
 Vous pouvez vous abonner à Cloud Insights à tout moment pendant la période d'essai. L'abonnement à Cloud Insights garantit un accès ininterrompu à vos données ainsi qu'un accès prolongé link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*support produit*"] options.
 
@@ -111,7 +111,7 @@ NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights 
 
 == Essai via AWS Marketplace
 
-Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. Profitez de la version d'essai gratuite d'AWS Marketplace pour accéder à Cloud Insights ,Édition Premium pour une période d'essai de 33 jours et permet jusqu'à 499 ,Unités gérées (MUS).
+Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. Profitez de la version d'essai gratuite d'AWS Marketplace pour accéder à Cloud Insights <<editions,Édition Premium>> pour une période d'essai de 33 jours et permet jusqu'à 499 <<pricing,Unités gérées>> (MUS).
 
 Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'évaluation est en état de violation, vous perdrez l'accès à certaines fonctionnalités Cloud Insights jusqu'à ce que la violation soit résolue, soit en réduisant le nombre d'UM configurées, soit en vous abonnant à Cloud Insights.
 
@@ -149,7 +149,7 @@ Notez que les collecteurs de données suivants sont dosés à un taux de Tio bru
 * NetApp StorageGRID
 
 
-Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gérées, vous pouvez bénéficier de *Volume Pricing* et vous devrez contacter les équipes commerciales NetApp pour vous abonner. Voir ,ci-dessous pour en savoir plus.
+Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gérées, vous pouvez bénéficier de *Volume Pricing* et vous devrez contacter les équipes commerciales NetApp pour vous abonner. Voir <<how-do-i-subscribe,ci-dessous>> pour en savoir plus.
 
 
 
@@ -166,7 +166,7 @@ NOTE: La calculatrice est destinée uniquement à l'estimation. Votre prix exact
 
 == Comment s'inscrire ?
 
-Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous inscrire via les équipes commerciales NetApp ou ,s'abonner vous-même Via AWS Marketplace.
+Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous inscrire via les équipes commerciales NetApp ou <<self-subscribe-via-aws-marketplace,s'abonner vous-même>> Via AWS Marketplace.
 
 
 

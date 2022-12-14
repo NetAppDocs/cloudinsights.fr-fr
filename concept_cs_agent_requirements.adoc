@@ -109,6 +109,6 @@ Pour les environnements Cloud Secure * APAC :
 |===
 
 
-==== En savoir plus :
+== Dimensionnement du système
 
 Voir la link:concept_cs_event_rate_checker.html["Vérificateur de taux d'événement"] pour plus d'informations sur le dimensionnement.

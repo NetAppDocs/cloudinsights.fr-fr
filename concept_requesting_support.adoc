@@ -101,7 +101,7 @@ Il existe également un lien à fournir link:mailto:ng-cloudinsights-customerfee
 Outre les options de libre-service ci-dessus, si vous disposez d'un abonnement Cloud Insights ou d'un support payant pour des produits ou services NetApp surveillés, vous pouvez vous contacter un ingénieur du support NetApp pour résoudre votre problème.
 
 
-NOTE: Vous devez vous inscrire pour pouvoir vous inscrire à  support entitlement and accessing support,activer le support Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de link:https://register.netapp.com["Inscription au support Services de données cloud"].
+NOTE: Vous devez vous inscrire pour pouvoir vous inscrire à <<Activating support entitlement and accessing support,activer le support>> Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de link:https://register.netapp.com["Inscription au support Services de données cloud"].
 
 Il est fortement recommandé de cocher cette case pour permettre aux ingénieurs du support NetApp d'accéder à votre environnement Cloud Insights lors de votre session de support. Ainsi, le technicien pourra résoudre le problème rapidement. Lorsque votre problème est résolu ou que votre session d'assistance a pris fin, vous pouvez décocher la case.
 

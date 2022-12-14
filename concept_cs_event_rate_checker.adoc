@@ -11,7 +11,9 @@ keywords: event, checker, rate, sizing
 [role="lead"]
 Le vérificateur de taux d'événement est utilisé pour vérifier le taux d'événement combiné NFS/SMB au sein du SVM avant d'installer un collecteur de données SVM ONTAP, afin de voir le nombre de SVM qu'un ordinateur Agent peut surveiller. Un agent peut prendre en charge jusqu'à 50 collecteurs de données.
 
-Besoins :
+
+
+== Besoins :
 
 * IP de cluster
 * Nom d'utilisateur et mot de passe de l'administrateur du cluster
@@ -70,6 +72,8 @@ B + C doit être inférieur À A, sinon la machine Agent ne sera pas en mesure d
 En d'autres termes, le nombre de collecteurs de données pouvant être ajoutés à une seule machine agent doit être conforme à la formule ci-dessous :
 
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
+Voir la link:concept_cs_agent_requirements.html["Exigences de l'agent"] pour connaître les conditions préalables et les conditions requises supplémentaires.
+
 
 
 == Exemple

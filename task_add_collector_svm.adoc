@@ -73,7 +73,7 @@ Voir link:concept_cs_agent_requirements.html["Exigences de l'agent"] pour des in
 
 
 
-=== Autorisations lors de l'ajout via IP de gestion du cluster :
+=== Autorisations lors de l'ajout via *Cluster Management IP* :
 
 Si vous ne pouvez pas utiliser l'administrateur de gestion du cluster pour autoriser Cloud Secure à accéder au collecteur de données SVM ONTAP, vous pouvez créer un nouvel utilisateur nommé « csuser » avec les rôles décrits dans les commandes ci-dessous. Utilisez le nom d'utilisateur "csuser" et le mot de passe "csuser" lors de la configuration du collecteur de données Cloud Secure pour utiliser l'adresse IP de gestion du cluster.
 
@@ -97,7 +97,7 @@ security login create -user-or-group-name csuser -application ssh -authmethod pa
 ....
 
 
-=== Autorisations lors de l'ajout via Vserver Management IP :
+=== Autorisations lors de l'ajout via *Vserver Management IP* :
 
 Si vous ne pouvez pas utiliser l'administrateur de gestion du cluster pour autoriser Cloud Secure à accéder au collecteur de données SVM ONTAP, vous pouvez créer un nouvel utilisateur nommé « csuser » avec les rôles décrits dans les commandes ci-dessous. Utilisez le nom d'utilisateur "csuser" et le mot de passe "csuser" lors de la configuration du collecteur de données Cloud Secure pour utiliser l'IP de gestion Vserver.
 

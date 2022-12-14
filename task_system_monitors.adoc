@@ -127,7 +127,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Surallocation du quota de qtree volume | AVERTISSEMENT / CRITIQUE | Volume qtree quota overcommit spécifie le pourcentage auquel un volume est considéré comme surallouant par les quotas qtree. Le seuil défini pour le quota qtree est atteint pour le volume. La surveillance du surengagement de quota qtree du volume permet à l'utilisateur de recevoir un service de données sans interruption. | Si un seuil critique est atteint, des mesures immédiates doivent être prises pour limiter les interruptions de service : 1. Augmenter l'espace du volume 2. Supprimez les données non souhaitées lorsque le seuil d'avertissement est atteint, puis envisagez d'augmenter l'espace du volume. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -297,7 +297,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Problème au niveau des nœuds | AVERTISSEMENT | Cet événement est émis en cas de panique | Contactez l'assistance client NetApp. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -335,7 +335,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Activité de ransomware détectée | PRIMORDIAL | Pour protéger les données contre le ransomware détecté, une copie Snapshot peut être utilisée pour restaurer les données d'origine. Votre système génère et transmet un message AutoSupport ou d'appel en cas d'incident au support technique NetApp, ainsi qu'à toute destination configurée. Le message AutoSupport améliore l'identification et la résolution des problèmes. | Reportez-vous au « NOM DU DOCUMENT FINAL » pour prendre des mesures correctives concernant l'activité de ransomware. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -364,7 +364,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Taux de Miss. Du cache du volume FSX | Avertissement @ > 95 %…critique @ > 100 % | Volume cache Miss ratio est le pourcentage de demandes de lecture des applications client renvoyées du disque au lieu d'être renvoyées à partir du cache. Cela signifie que le volume a atteint le seuil défini. | Si un seuil critique est atteint, des mesures immédiates doivent être prises pour limiter les interruptions de service : 1. Déplacez certaines charges de travail depuis le nœud du volume pour réduire la charge d'E/S 2. Réduisez la demande de charges de travail moins prioritaires sur le même nœud via des limites de QoS… prenez des mesures immédiates en cas de dépassement du seuil d'avertissement : 1. Déplacez certaines charges de travail depuis le nœud du volume pour réduire la charge d'E/S 2. Réduisez les besoins en charges de travail prioritaires sur le même nœud via la limitation de la qualité de service 3. Modifier les caractéristiques des charges de travail (taille de bloc, mise en cache des applications, etc.) 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -408,7 +408,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Échec du montage DU POD | AVERTISSEMENT | Cette alerte survient lorsqu'un montage est en panne sur un POD. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -440,7 +440,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Machine virtuelle de stockage modifiée | Informatif | Ce message apparaît lorsqu'un Storage Virtual machine est modifié. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -460,7 +460,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Avertissement du collecteur | Cette alerte peut généralement survenir en raison d'une configuration erronée du collecteur de données ou du système cible. Revoir les configurations pour éviter les alertes futures. Cela peut également être dû à la récupération de données moins complètes où le collecteur de données a rassemblé toutes les données qu'il pourrait. Cela peut se produire lorsque des situations changent pendant la collecte de données (par exemple, une machine virtuelle présente au début de la collecte de données est supprimée lors de la collecte et avant la capture de ces données). | Vérifier la configuration du collecteur de données ou du système cible. Notez que le moniteur pour l'avertissement du collecteur peut envoyer plus d'alertes que d'autres types de moniteur. Il est donc recommandé de ne définir aucun destinataire d'alerte à moins que vous ne soyez en mesure de résoudre les problèmes. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -516,7 +516,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Protocole Telnet activé | Avertissement @ > 0 | Telnet n'est pas une méthode sécurisée pour établir l'accès par ligne de commande à la solution ONTAP. Pour sécuriser l'accès à distance, Telnet doit être désactivé. | NetApp recommande un accès sécurisé à distance (SSH). Pour désactiver Telnet sur un cluster, exécutez la commande ONTAP suivante en mode Advanced Privilege :…Security Protocol modify -application telnet -Enabled false 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -533,7 +533,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Décalage de la relation SnapMirror | Avertissement @ > 150 %…critique @ > 300 % | Le décalage de la relation SnapMirror est la différence entre l'horodatage de l'instantané et l'heure sur le système de destination. Le décalage_temps_pourcentage correspond au rapport entre le temps de décalage et l'intervalle de planification de la règle SnapMirror. Si le temps de décalage est égal à l'intervalle de planification, le décalage_temps_percent sera de 100 %. Si la politique SnapMirror n'a pas de planification, lag_time_percent ne sera pas calculé. | Surveiller l'état de SnapMirror à l'aide de la commande « snapmirror show » Vérifiez l'historique des transferts SnapMirror à l'aide de la commande « snapmirror show-history » 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
@@ -613,7 +613,7 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 | Volume CVO restreint | INFO | Cet événement indique qu'un volume flexible est réduit. | Remettre le volume en ligne. 
 |===
-,Haut de la page
+<<top,Haut de la page>>
 
 
 
