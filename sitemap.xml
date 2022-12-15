@@ -99,7 +99,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_cs_agent_requirements.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -120,7 +120,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_cs_event_rate_checker.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -134,14 +134,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_dashboard_best_practices.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_dashboard_features.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -246,7 +246,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_requesting_support.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -260,7 +260,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_subscribing_to_cloud_insights.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -295,14 +295,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/concept_whats_new.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/cs_alert_data.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -400,7 +400,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/io_density_nonroot.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -414,7 +414,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/insights_k8s_namespaces_running_out_of_space.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -491,7 +491,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/reporting_create_example.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -561,7 +561,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights//search.html</loc>
       
-      <lastmod>2022-11-23T15:43:34+00:00</lastmod>
+      <lastmod>2022-12-15T12:19:11+00:00</lastmod>
       
     </url>
   
@@ -589,7 +589,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_add_collector_svm.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -631,14 +631,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_config_telegraf_agent.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_config_telegraf_agent_k8s.html</loc>
       
-      <lastmod>2022-11-18T18:22:57+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -848,7 +848,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_configure_acquisition_unit.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -862,21 +862,21 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_create_annotation.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_create_annotation_rules.html</loc>
       
-      <lastmod>2022-11-16T21:26:11+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_create_application.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -890,7 +890,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_create_query.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -911,7 +911,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_cs_add_collector_ontap.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -939,7 +939,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_dashboard_example_VM_performance.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -953,7 +953,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_dc_aws_s3.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1394,21 +1394,21 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_defining_annotations.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_device_resolution_fibre_channel.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_device_resolution_ip.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1422,7 +1422,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_device_resolution_rules.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1450,7 +1450,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_getting_started_with_cloud_insights.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1464,7 +1464,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_isolate_root_volume.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1478,14 +1478,14 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_query_assign_multiple_applicationss.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_query_copy_table_values.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1499,7 +1499,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_system_monitors.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
@@ -1541,7 +1541,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/cloudinsights/task_view_configured_data_collectors.html</loc>
       
-      <lastmod>2022-11-15T21:47:32+00:00</lastmod>
+      <lastmod>2022-12-14T18:05:33+00:00</lastmod>
       
     </url>
   
