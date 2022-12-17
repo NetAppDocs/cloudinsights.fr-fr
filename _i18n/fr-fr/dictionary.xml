@@ -4652,7 +4652,6 @@
   <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">Les jetons d'accès à l'API ont une date d'expiration. Lorsqu'un jeton d'accès à l'API expire, les utilisateurs doivent générer un nouveau jeton (de type _Data ingestion_ avec les autorisations lecture/écriture) et reconfigurer Telegraf pour utiliser le jeton nouvellement généré au lieu du jeton expiré. Les étapes ci-dessous décrivent comment procéder.</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">Notez que ces commandes utilisent le namespace par défaut « surveillance netapp ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.</block>
-  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles indiquées ci-dessous.</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">Modifiez l'opérateur de surveillance NetApp Kubernetes.</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">Modifiez la valeur _spec.output-sink.api-key_ en remplaçant l'ancien jeton API par le nouveau jeton API.</block>
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS et Debian/Ubuntu</block>
@@ -9136,4 +9135,109 @@
   <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">_Prendre une action instantané_</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">Dimensionnement du système</block>
   <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">Exploration des pods et des volumes persistants du nœud</block>
+  <block id="f5616c23f020b3f984cbcd5f9a053ecc" category="section-title">Décembre 2022</block>
+  <block id="7750dc4a80b8e64c09792175ba7ab620" category="section-title">Découvrez les fonctionnalités de protection par ransomware et d'autres fonctionnalités de sécurité de Cloud Insights lors de l'essai</block>
+  <block id="d70c47c1302c357989571cd8038a7e1f" category="paragraph">À partir d'aujourd'hui, vous vous inscrivez à un nouvel essai de Cloud Insights et explorez des fonctionnalités de sécurité telles que la détection des attaques par ransomware et la stratégie automatisée de réponse aux blocs par les utilisateurs. Si vous ne vous êtes pas inscrit à l'essai, faites-le dès aujourd'hui !</block>
+  <block id="defdf2522119d2b648997f6b2aaf2248" category="section-title">Les workloads Kubernetes ont leur propre page d'accueil</block>
+  <block id="c25bdc959ecb8d2fddde4b75f9e6d3fa" category="paragraph">Les workloads constituent un élément clé de votre environnement Kubernetes, et Cloud Insights fournit donc désormais des pages d'accueil pour ces charges de travail. Vous pouvez y consulter, explorer et résoudre les problèmes qui affectent vos workloads Kubernetes.</block>
+  <block id="2eb1ff7eeb74bcccfbd52597702cefd2" category="inline-image-macro">Exemple de page d'accueil Kubernetes Workload</block>
+  <block id="b5983a6439977ea97f606ef9b22473da" category="paragraph"><block ref="b5983a6439977ea97f606ef9b22473da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="848145ac45f138034b0f73e33d01087d" category="section-title">Vérifiez vos checksums</block>
+  <block id="07d37618bb7cd1ed696f2a65da638c56" category="paragraph">Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows, Linux et MacOS, et nous pensons que c'est une bonne idée. Les voici donc :</block>
+  <block id="b205fe7e473302e0bfbfc761b5ff494f" category="inline-image-macro">Valeurs de somme de contrôle de l'agent affichées lors de l'installation</block>
+  <block id="f9e15fb7ce69e61fac90a652cc378b31" category="paragraph"><block ref="f9e15fb7ce69e61fac90a652cc378b31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86f7f75f0c9c85cf5db67a84570aecd1" category="section-title">Amélioration des alertes de journaux</block>
+  <block id="0abdc68d3e86586f3421ff4c2dcc3514" category="section-title">Grouper par</block>
+  <block id="671ac16ce94bc40aba1b6bd768b30284" category="paragraph">Lors de la création ou de la modification d'un moniteur de journal, vous pouvez désormais définir des attributs « Grouper par » pour permettre des alertes plus ciblées. Recherchez les attributs « Grouper par » sous les paramètres de « filtre » dans la définition de votre moniteur.</block>
+  <block id="9775102a6e845dd56e162f55795edf9a" category="inline-image-macro">Grouper par exemple dans la définition du moniteur</block>
+  <block id="8360ed7b9b1f3424add41edf5164874f" category="paragraph"><block ref="8360ed7b9b1f3424add41edf5164874f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b61804e2c21a1de91179c27cc1ce62e8" category="paragraph">Cette modification permet d'intégrer les moniteurs métriques et les moniteurs de journaux à la parité des fonctions en normalisant l'aspect « regrouper par » des définitions de moniteur. Cette parité permet aux clients de cloner/dupliquer *tous* moniteurs par défaut définis par le système pour une personnalisation plus poussée.</block>
+  <block id="7cf6bc0403bb3b600dd91bdabf4d0792" category="section-title">Duplication</block>
+  <block id="cce75f1693c82e558e45e9766c20916d" category="paragraph">Vous pouvez à présent cloner (dupliquer) les moniteurs change Log, Kubernetes Log et Data Collector Log. Cela crée un nouveau moniteur de journaux personnalisé que vous pouvez modifier en fonction de vos définitions spécifiques.</block>
+  <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">Duplication d'un moniteur de journal</block>
+  <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 nouveaux moniteurs ONTAP par défaut couvrant SnapMirror pour la continuité de l'activité</block>
+  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">Nous avons ajouté près d'une douzaine de nouveaux moniteurs système pour SnapMirror for Business Continuity (SMBC), qui signalent les modifications apportées aux certificats SMBC et aux médiateurs ONTAP.</block>
+  <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">Réglage de l'opérateur</block>
+  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.</block>
+  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">Variables liées aux ressources</block>
+  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">Voir<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> Pour plus d'informations sur les ressources Kubernetes.</block>
+  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">Emplacement réservé</block>
+  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">Nom du plug-in</block>
+  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">Inclus dans la CR par défaut</block>
+  <block id="b4706783c74b583b849dec44244e0769" category="cell">DS_CPU_LIMITS_PLACEHOLDER</block>
+  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">agent</block>
+  <block id="a6105c0a611b41b08f1209506350279e" category="cell">oui</block>
+  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Limite du processeur Kubernetes pour telegraf-ds</block>
+  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_LIMITS_PLACEHOLDER</block>
+  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">Limite Kubernetes mem pour telegraf-ds</block>
+  <block id="6787619d810a62301cfe3986961a1d04" category="cell">DS_CPU_REQUEST_PLACEHOLDER</block>
+  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Demandes de processeurs Kubernetes pour telegraf-ds</block>
+  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_REQUEST_PLACEHOLDER</block>
+  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Demandes de mémoire Kubernetes pour telegraf-ds</block>
+  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">RS_CPU_LIMITS_PLACEHOLDER</block>
+  <block id="b2099247c65bb590909309709da41854" category="cell">Limite du processeur Kubernetes pour telegraf-RS.</block>
+  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">RS_MEM_LIMITS_PLACEHOLDER</block>
+  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">Limite Kubernetes mem pour telegraf-RS</block>
+  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">PARAMÈTRE FICTIF_DEMANDE_CPU_RS</block>
+  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Demandes de processeurs Kubernetes pour telegraf-RS</block>
+  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">RS_MEM_REQUEST_PLACEHOLDER</block>
+  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Demandes de mémoire Kubernetes pour telegraf-RS</block>
+  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REQUEST_PLACEHOLDER :</block>
+  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">ksm</block>
+  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Demandes de processeur Kubernetes pour le déploiement de metrics d'état kube</block>
+  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REQUEST_PLACEHOLDER :</block>
+  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">Variables liées à Telegraf</block>
+  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">Voir<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> pour plus d'informations sur les variables telegraf.</block>
+  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">COLLECTION_INTERVAL_PLACEHOLDER</block>
+  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">non</block>
+  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">(Définit l'intervalle telegraf, l'intervalle de type) : le temps par défaut telegraf attend entre les entrées de tous les plugins. Les unités de temps valides sont les ns, nous (ou µs), ms, s, m, h.</block>
+  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">ROUND_INTERVAL_PLACEHOLDER</block>
+  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">(définit telegraf round_interval, type booléen) collecte des mesures sur plusieurs intervalles</block>
+  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">MÉTRIQUE_BATCH_SIZE_PLACEHOLDER</block>
+  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">(définit telegraf metric_batch_size, type int) le nombre maximum d'enregistrements pour une sortie telegraf écrit dans un batch</block>
+  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">PARAMÈTRE_BUFFER_LIMIT_PLACEHOLDER</block>
+  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">(définit telegraf metric_buffer_limit, type int) le nombre maximum d'enregistrements pour une sortie telegraf va mettre en cache en attente d'une écriture réussie</block>
+  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">COLLECTION_GIGUE_PLACEHOLDER</block>
+  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">(Définit telegraf collection_gigue, type interval) : chaque plug-in attend une durée aléatoire entre l'heure de collecte planifiée et cette heure + collection_gigue avant de collecter les entrées</block>
+  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">PARAMÈTRE FICTIF DE PRÉCISION</block>
+  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">(Définit la précision de télégraf, intervalle de type) : les mesures collectées sont arrondies à la précision spécifiée, lorsque la précision définie sur « 0 » est définie par les unités spécifiées par intervalle</block>
+  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">FLUSH_INTERVAL_PLACEHOLDER</block>
+  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">(Définit telegraf flush_interval, type interval) : durée par défaut, telegraf attend entre les sorties d'écriture.</block>
+  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">FLUSH_GIGUE_PLACEHOLDER</block>
+  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">(Définit telegraf flush_gigue, intervalle de type) : chaque sortie attend une durée aléatoire entre la durée d'écriture programmée et cette durée + flush_gigue avant d'écrire les sorties</block>
+  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Variables diverses</block>
+  <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLACEHOLDER</block>
+  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k »</block>
+  <block id="eab883150545736105e8c88087257995" category="section-title">SnapMirror pour les moniteurs de journaux de l'utilitaire de continuité de l'activité (SMBC)</block>
+  <block id="e0828fd72232d137dafad759271fe0fb" category="cell">ONTAP Mediator ajouté</block>
+  <block id="46f05e41dafc7ca3fdb415dafaeadb9f" category="cell">Ce message s'affiche lorsque le médiateur ONTAP est correctement ajouté à un cluster.</block>
+  <block id="8b6077b5a63dbcdbc2395f7346b42cd9" category="cell">ONTAP Mediator non accessible</block>
+  <block id="84abdf125e29886920f1abe486364d24" category="cell">Ce message s'affiche lorsque le médiateur ONTAP est reconverti ou que le progiciel du médiateur n'est plus installé sur le serveur du médiateur. Le basculement de SnapMirror n'est donc pas possible.</block>
+  <block id="bd11ea16762377ea55ab6e9fe4f71842" category="cell">Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="b4c68af730c085e0d63311da606c9201" category="cell">Mediator ONTAP supprimé</block>
+  <block id="c2d007271506f8733c7a26e8598bb0ef" category="cell">Ce message s'affiche lorsque le médiateur ONTAP a été supprimé avec succès d'un cluster.</block>
+  <block id="36d508341b861f30a27163272e8baf15" category="cell">ONTAP Médiateur inaccessible</block>
+  <block id="a4f969049ce5cae62984e31f259029fb" category="cell">Ce message apparaît lorsque le médiateur ONTAP est inaccessible sur un cluster. Le basculement de SnapMirror n'est donc pas possible.</block>
+  <block id="828b0f1ea47371036223858e1309941d" category="cell">Vérifiez la connectivité réseau du médiateur ONTAP à l'aide des commandes "ping réseau" et "traceroute réseau". Si le problème persiste, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="28892779eb4e805dd082d40c5420bc6a" category="cell">Certificat CA SMBC expiré</block>
+  <block id="62d5adf11f3682aff0384608f321b252" category="cell">Ce message s'affiche lorsque le certificat de l'autorité de certification du médiateur ONTAP (CA) a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</block>
+  <block id="d85d122b487f541999c41486061b2bc5" category="cell">Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d'autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="d0c1dd7578f55d35be079347703d22d1" category="cell">Expiration du certificat de l'AC SMBC</block>
+  <block id="f0085f65793f343e330e412a00fd8cbe" category="cell">Ce message survient lorsque le certificat de l'autorité de certification du médiateur (CA) de ONTAP expire dans les 30 prochains jours.</block>
+  <block id="3f6ab8f648ce6e6f42aac3de08286811" category="cell">Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d'autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="86e9db31dcdf840ed902a8a2bb588cd5" category="cell">Certificat client SMBC expiré</block>
+  <block id="89b2feff457c827be309fc8e743937a6" category="cell">Ce message s'affiche lorsque le certificat client du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</block>
+  <block id="cf2ea69073d2f370d0f8a7a207031e78" category="cell">Expiration du certificat client SMBC</block>
+  <block id="dfb807a8d5af3d164bb1d9b45833d72c" category="cell">Ce message s'affiche lorsque le certificat du client du médiateur ONTAP doit expirer dans les 30 prochains jours.</block>
+  <block id="7ec44a7636f8a929271fed93b096701f" category="cell">Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="b8910b8dc5e2d34819de910f6393b7be" category="cell">Relation SMBC hors synchronisation Remarque : L'UM n'a pas cette relation</block>
+  <block id="65314e3eb0f76bd7621e99fd2dddd5e0" category="cell">Ce message survient lorsqu'une relation SnapMirror pour la continuité de l'activité (SMBC) passe du statut « In-sync » à « Out-of-sync ». La protection des données RPO=0 sera interrompue.</block>
+  <block id="1b27ccdce1d73f8946f33cad5e33340d" category="cell">Vérifiez la connexion réseau entre les volumes source et de destination. Surveillez l'état de la relation SMBC à l'aide de la commande « snapmirror show » sur la destination et en utilisant la commande « snapmirror list-destinations » sur la source. La resynchronisation automatique essaiera de ramener la relation à l'état « in-sync ». Si la resynchronisation échoue, vérifiez que tous les nœuds du cluster se trouvent au quorum et sont en bon état.</block>
+  <block id="c1310da7f9951d1d26f65e60cc12ccef" category="cell">Certificat de serveur SMBC expiré</block>
+  <block id="27612c17e71a5e438bf222d52cb28459" category="cell">Ce message s'affiche lorsque le certificat du serveur du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</block>
+  <block id="67f4d6ec5d1a64b75674d9efeb7eeff7" category="cell">Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
+  <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">Expiration du certificat du serveur SMBC</block>
+  <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">Ce message s'affiche lorsque le certificat du serveur du médiateur ONTAP doit expirer dans les 30 prochains jours.</block>
+  <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
 </blocks>

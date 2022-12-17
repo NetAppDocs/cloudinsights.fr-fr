@@ -617,6 +617,50 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 
 
+=== SnapMirror pour les moniteurs de journaux de l'utilitaire de continuité de l'activité (SMBC)
+
+|===
+
+
+| Nom du moniteur | Gravité | Description du moniteur | Action corrective 
+
+
+| ONTAP Mediator ajouté | INFO | Ce message s'affiche lorsque le médiateur ONTAP est correctement ajouté à un cluster. | Aucune 
+
+
+| ONTAP Mediator non accessible | PRIMORDIAL | Ce message s'affiche lorsque le médiateur ONTAP est reconverti ou que le progiciel du médiateur n'est plus installé sur le serveur du médiateur. Le basculement de SnapMirror n'est donc pas possible. | Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Mediator ONTAP supprimé | INFO | Ce message s'affiche lorsque le médiateur ONTAP a été supprimé avec succès d'un cluster. | Aucune 
+
+
+| ONTAP Médiateur inaccessible | AVERTISSEMENT | Ce message apparaît lorsque le médiateur ONTAP est inaccessible sur un cluster. Le basculement de SnapMirror n'est donc pas possible. | Vérifiez la connectivité réseau du médiateur ONTAP à l'aide des commandes "ping réseau" et "traceroute réseau". Si le problème persiste, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Certificat CA SMBC expiré | PRIMORDIAL | Ce message s'affiche lorsque le certificat de l'autorité de certification du médiateur ONTAP (CA) a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible. | Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d'autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Expiration du certificat de l'AC SMBC | AVERTISSEMENT | Ce message survient lorsque le certificat de l'autorité de certification du médiateur (CA) de ONTAP expire dans les 30 prochains jours. | Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d'autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Certificat client SMBC expiré | PRIMORDIAL | Ce message s'affiche lorsque le certificat client du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible. | Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Expiration du certificat client SMBC | AVERTISSEMENT | Ce message s'affiche lorsque le certificat du client du médiateur ONTAP doit expirer dans les 30 prochains jours. | Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Relation SMBC hors synchronisation Remarque : L'UM n'a pas cette relation | PRIMORDIAL | Ce message survient lorsqu'une relation SnapMirror pour la continuité de l'activité (SMBC) passe du statut « In-sync » à « Out-of-sync ». La protection des données RPO=0 sera interrompue. | Vérifiez la connexion réseau entre les volumes source et de destination. Surveillez l'état de la relation SMBC à l'aide de la commande « snapmirror show » sur la destination et en utilisant la commande « snapmirror list-destinations » sur la source. La resynchronisation automatique essaiera de ramener la relation à l'état « in-sync ». Si la resynchronisation échoue, vérifiez que tous les nœuds du cluster se trouvent au quorum et sont en bon état. 
+
+
+| Certificat de serveur SMBC expiré | PRIMORDIAL | Ce message s'affiche lorsque le certificat du serveur du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible. | Supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+
+
+| Expiration du certificat du serveur SMBC | AVERTISSEMENT | Ce message s'affiche lorsque le certificat du serveur du médiateur ONTAP doit expirer dans les 30 prochains jours. | Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add. 
+|===
+<<top,Haut de la page>>
+
+
+
 == Plus d'informations
 
 * link:task_view_and_manage_alerts.html["Affichage et rejet des alertes"]

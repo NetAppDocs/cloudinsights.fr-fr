@@ -12,6 +12,61 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+== Décembre 2022
+
+
+
+=== Découvrez les fonctionnalités de protection par ransomware et d'autres fonctionnalités de sécurité de Cloud Insights lors de l'essai
+
+À partir d'aujourd'hui, vous vous inscrivez à un nouvel essai de Cloud Insights et explorez des fonctionnalités de sécurité telles que la détection des attaques par ransomware et la stratégie automatisée de réponse aux blocs par les utilisateurs. Si vous ne vous êtes pas inscrit à l'essai, faites-le dès aujourd'hui !
+
+
+
+=== Les workloads Kubernetes ont leur propre page d'accueil
+
+Les workloads constituent un élément clé de votre environnement Kubernetes, et Cloud Insights fournit donc désormais des pages d'accueil pour ces charges de travail. Vous pouvez y consulter, explorer et résoudre les problèmes qui affectent vos workloads Kubernetes.
+
+image:Kubernetes_Workload_LP.png["Exemple de page d'accueil Kubernetes Workload"]
+
+
+
+=== Vérifiez vos checksums
+
+Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows, Linux et MacOS, et nous pensons que c'est une bonne idée. Les voici donc :
+
+image:Agent_Checksum_Instructions.png["Valeurs de somme de contrôle de l'agent affichées lors de l'installation"]
+
+
+
+=== Amélioration des alertes de journaux
+
+
+
+==== Grouper par
+
+Lors de la création ou de la modification d'un moniteur de journal, vous pouvez désormais définir des attributs « Grouper par » pour permettre des alertes plus ciblées. Recherchez les attributs « Grouper par » sous les paramètres de « filtre » dans la définition de votre moniteur.
+
+image:Monitor_Group_By_Example.png["Grouper par exemple dans la définition du moniteur"]
+
+Cette modification permet d'intégrer les moniteurs métriques et les moniteurs de journaux à la parité des fonctions en normalisant l'aspect « regrouper par » des définitions de moniteur. Cette parité permet aux clients de cloner/dupliquer *tous* moniteurs par défaut définis par le système pour une personnalisation plus poussée.
+
+
+
+==== Duplication
+
+Vous pouvez à présent cloner (dupliquer) les moniteurs change Log, Kubernetes Log et Data Collector Log. Cela crée un nouveau moniteur de journaux personnalisé que vous pouvez modifier en fonction de vos définitions spécifiques.
+
+image:Log_Monitor_Duplicate.png["Duplication d'un moniteur de journal"]
+
+
+
+=== 11 nouveaux moniteurs ONTAP par défaut couvrant SnapMirror pour la continuité de l'activité
+
+Nous avons ajouté près d'une douzaine de nouveaux moniteurs système pour SnapMirror for Business Continuity (SMBC), qui signalent les modifications apportées aux certificats SMBC et aux médiateurs ONTAP.
+
+'''
+
+
 == Novembre 2022
 
 

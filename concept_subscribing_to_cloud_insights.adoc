@@ -119,7 +119,7 @@ La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tou
 
 
 
-== Que se passe-t-il si mon essai a expiré ?
+=== Que se passe-t-il si mon essai a expiré ?
 
 Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez.
 

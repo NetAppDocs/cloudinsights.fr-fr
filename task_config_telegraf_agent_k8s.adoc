@@ -434,6 +434,100 @@ Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation
  sudo -E -H ./<installation_script_name> --install
 
 
+== Réglage de l'opérateur
+
+Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.
+
+
+
+=== Variables liées aux ressources
+
+Voir https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[] Pour plus d'informations sur les ressources Kubernetes.
+
+|===
+
+
+| Emplacement réservé | Nom du plug-in | Inclus dans la CR par défaut | Description 
+
+
+| DS_CPU_LIMITS_PLACEHOLDER | agent | oui | Limite du processeur Kubernetes pour telegraf-ds 
+
+
+| DS_MEM_LIMITS_PLACEHOLDER | agent | oui | Limite Kubernetes mem pour telegraf-ds 
+
+
+| DS_CPU_REQUEST_PLACEHOLDER | agent | oui | Demandes de processeurs Kubernetes pour telegraf-ds 
+
+
+| DS_MEM_REQUEST_PLACEHOLDER | agent | oui | Demandes de mémoire Kubernetes pour telegraf-ds 
+
+
+| RS_CPU_LIMITS_PLACEHOLDER | agent | oui | Limite du processeur Kubernetes pour telegraf-RS. 
+
+
+| RS_MEM_LIMITS_PLACEHOLDER | agent | oui | Limite Kubernetes mem pour telegraf-RS 
+
+
+| PARAMÈTRE FICTIF_DEMANDE_CPU_RS | agent | oui | Demandes de processeurs Kubernetes pour telegraf-RS 
+
+
+| RS_MEM_REQUEST_PLACEHOLDER | agent | oui | Demandes de mémoire Kubernetes pour telegraf-RS 
+
+
+| KSM_CPU_REQUEST_PLACEHOLDER : | ksm | oui | Demandes de processeur Kubernetes pour le déploiement de metrics d'état kube 
+
+
+| KSM_MEM_REQUEST_PLACEHOLDER : | ksm | oui | Demandes de processeur Kubernetes pour le déploiement de metrics d'état kube 
+|===
+
+
+=== Variables liées à Telegraf
+
+Voir https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent[] pour plus d'informations sur les variables telegraf.
+
+|===
+
+
+| Emplacement réservé | Nom du plug-in | Inclus dans la CR par défaut | Description 
+
+
+| COLLECTION_INTERVAL_PLACEHOLDER | agent | non | (Définit l'intervalle telegraf, l'intervalle de type) : le temps par défaut telegraf attend entre les entrées de tous les plugins. Les unités de temps valides sont les ns, nous (ou µs), ms, s, m, h. 
+
+
+| ROUND_INTERVAL_PLACEHOLDER | agent | non | (définit telegraf round_interval, type booléen) collecte des mesures sur plusieurs intervalles 
+
+
+| MÉTRIQUE_BATCH_SIZE_PLACEHOLDER | agent | non | (définit telegraf metric_batch_size, type int) le nombre maximum d'enregistrements pour une sortie telegraf écrit dans un batch 
+
+
+| PARAMÈTRE_BUFFER_LIMIT_PLACEHOLDER | agent | non | (définit telegraf metric_buffer_limit, type int) le nombre maximum d'enregistrements pour une sortie telegraf va mettre en cache en attente d'une écriture réussie 
+
+
+| COLLECTION_GIGUE_PLACEHOLDER | agent | non | (Définit telegraf collection_gigue, type interval) : chaque plug-in attend une durée aléatoire entre l'heure de collecte planifiée et cette heure + collection_gigue avant de collecter les entrées 
+
+
+| PARAMÈTRE FICTIF DE PRÉCISION | agent | non | (Définit la précision de télégraf, intervalle de type) : les mesures collectées sont arrondies à la précision spécifiée, lorsque la précision définie sur « 0 » est définie par les unités spécifiées par intervalle 
+
+
+| FLUSH_INTERVAL_PLACEHOLDER | agent | non | (Définit telegraf flush_interval, type interval) : durée par défaut, telegraf attend entre les sorties d'écriture. 
+
+
+| FLUSH_GIGUE_PLACEHOLDER | agent | non | (Définit telegraf flush_gigue, intervalle de type) : chaque sortie attend une durée aléatoire entre la durée d'écriture programmée et cette durée + flush_gigue avant d'écrire les sorties 
+|===
+
+
+=== Variables diverses
+
+|===
+
+
+| Emplacement réservé | Nom du plug-in | Inclus dans la CR par défaut | Description 
+
+
+| CURL_CMD_PLACEHOLDER | agent | oui | La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k » 
+|===
+
+
 == Dépannage
 
 Quelques points à essayer si vous rencontrez des problèmes lors de la configuration de l'opérateur de surveillance NetApp Kubernetes :
