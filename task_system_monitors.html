@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-14 18:05:33 +0000">12/14/2022</time>
+    <time datetime="2022-12-17 03:23:12 +0000">12/17/2022</time>
     
   
 
@@ -3107,6 +3107,7 @@
 <li><a href="#moniteurs-de-sécurité">Moniteurs de sécurité</a></li>
 <li><a href="#moniteurs-de-protection-des-données">Moniteurs de protection des données</a></li>
 <li><a href="#contrôleurs-de-cloud-volumes-cvo">Contrôleurs de Cloud volumes (CVO)</a></li>
+<li><a href="#snapmirror-pour-les-moniteurs-de-journaux-de-lutilitaire-de-continuité-de-lactivité-smbc">SnapMirror pour les moniteurs de journaux de l&#8217;utilitaire de continuité de l&#8217;activité (SMBC)</a></li>
 </ul>
 </li>
 <li><a href="#plus-dinformations">Plus d&#8217;informations</a></li>
@@ -4270,6 +4271,94 @@ La plupart des moniteurs système sont à l&#8217;état <em>Pause</em> par défa
 <td class="tableblock halign-left valign-top"><p class="tableblock">INFO</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cet événement indique qu&#8217;un volume flexible est réduit.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Remettre le volume en ligne.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><a href="#top">Haut de la page</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="snapmirror-pour-les-moniteurs-de-journaux-de-lutilitaire-de-continuité-de-lactivité-smbc">SnapMirror pour les moniteurs de journaux de l&#8217;utilitaire de continuité de l&#8217;activité (SMBC)</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nom du moniteur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gravité</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description du moniteur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Action corrective</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP Mediator ajouté</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le médiateur ONTAP est correctement ajouté à un cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aucune</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP Mediator non accessible</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PRIMORDIAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le médiateur ONTAP est reconverti ou que le progiciel du médiateur n&#8217;est plus installé sur le serveur du médiateur. Le basculement de SnapMirror n&#8217;est donc pas possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mediator ONTAP supprimé</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INFO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le médiateur ONTAP a été supprimé avec succès d&#8217;un cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aucune</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP Médiateur inaccessible</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AVERTISSEMENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message apparaît lorsque le médiateur ONTAP est inaccessible sur un cluster. Le basculement de SnapMirror n&#8217;est donc pas possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vérifiez la connectivité réseau du médiateur ONTAP à l&#8217;aide des commandes "ping réseau" et "traceroute réseau". Si le problème persiste, supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Certificat CA SMBC expiré</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PRIMORDIAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le certificat de l&#8217;autorité de certification du médiateur ONTAP (CA) a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d&#8217;autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration du certificat de l&#8217;AC SMBC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AVERTISSEMENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message survient lorsque le certificat de l&#8217;autorité de certification du médiateur (CA) de ONTAP expire dans les 30 prochains jours.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avant l&#8217;expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat d&#8217;autorité de certification sur le serveur du médiateur ONTAP. Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Certificat client SMBC expiré</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PRIMORDIAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le certificat client du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration du certificat client SMBC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AVERTISSEMENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le certificat du client du médiateur ONTAP doit expirer dans les 30 prochains jours.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avant l&#8217;expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relation SMBC hors synchronisation Remarque : L&#8217;UM n&#8217;a pas cette relation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PRIMORDIAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message survient lorsqu&#8217;une relation SnapMirror pour la continuité de l&#8217;activité (SMBC) passe du statut « In-sync » à « Out-of-sync ». La protection des données RPO=0 sera interrompue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vérifiez la connexion réseau entre les volumes source et de destination. Surveillez l&#8217;état de la relation SMBC à l&#8217;aide de la commande « snapmirror show » sur la destination et en utilisant la commande « snapmirror list-destinations » sur la source. La resynchronisation automatique essaiera de ramener la relation à l&#8217;état « in-sync ». Si la resynchronisation échoue, vérifiez que tous les nœuds du cluster se trouvent au quorum et sont en bon état.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Certificat de serveur SMBC expiré</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PRIMORDIAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le certificat du serveur du médiateur ONTAP a expiré. Par conséquent, toute autre communication avec le médiateur ONTAP ne sera pas possible.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expiration du certificat du serveur SMBC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AVERTISSEMENT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ce message s&#8217;affiche lorsque le certificat du serveur du médiateur ONTAP doit expirer dans les 30 prochains jours.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avant l&#8217;expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l&#8217;aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l&#8217;accès au médiateur ONTAP à l&#8217;aide de la commande SnapMirror médiateur add.</p></td>
 </tr>
 </tbody>
 </table>
