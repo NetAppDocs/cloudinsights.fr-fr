@@ -93,14 +93,12 @@ image:Monitor_metric_conditions.png["Définir les conditions du moniteur"]
 
 === Surveillance des journaux
 
-Lors de la création d'un moniteur *Log Monitor*, choisissez d'abord le journal à surveiller dans la liste des journaux disponibles. Vous pouvez ensuite filtrer en fonction des attributs disponibles, comme ci-dessus.
-
-Par exemple, vous pouvez choisir de filtrer le type de message "Object.store.unavailable" dans la source logs.netapp.ems :
+Lors de la création d'un moniteur *Log Monitor*, choisissez d'abord le journal à surveiller dans la liste des journaux disponibles. Vous pouvez ensuite filtrer en fonction des attributs disponibles, comme ci-dessus. Vous pouvez également choisir un ou plusieurs attributs « Grouper par ».
 
 
 NOTE: Le filtre de surveillance du journal ne peut pas être vide.
 
-image:Monitor_log_monitor_filter.png["choisissez le journal à surveiller et définissez un filtre"]
+image:Monitor_Group_By_Example.png["Choisissez log pour surveiller, définissez un filtre et sélectionnez group by method, si vous le souhaitez"]
 
 
 

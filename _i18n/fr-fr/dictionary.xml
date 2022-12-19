@@ -162,11 +162,7 @@
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">Définir les conditions du moniteur</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Surveillance des journaux</block>
-  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">Lors de la création d'un moniteur *Log Monitor*, choisissez d'abord le journal à surveiller dans la liste des journaux disponibles. Vous pouvez ensuite filtrer en fonction des attributs disponibles, comme ci-dessus.</block>
-  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">Par exemple, vous pouvez choisir de filtrer le type de message "Object.store.unavailable" dans la source logs.netapp.ems :</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Le filtre de surveillance du journal ne peut pas être vide.</block>
-  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">choisissez le journal à surveiller et définissez un filtre</block>
-  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="454176c970e70022beb38f8813bea495" category="section-title">Définir le comportement d'alerte</block>
   <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">Choisissez le mode d'alerte que vous souhaitez signaler lorsqu'une alerte de journal est déclenchée. Vous pouvez régler le moniteur de façon à ce qu'il soit alertée avec _Warning_, _Critical_ ou _Informational_ gravité, en fonction des conditions de filtre que vous avez définies ci-dessus.</block>
   <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">définissez le comportement du journal à surveiller</block>
@@ -9241,4 +9237,7 @@
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">Avant l'expiration de ce certificat, supprimez la configuration du médiateur ONTAP actuel à l'aide de la commande « snapmirror médiateur remove ». Mettez à jour un nouveau certificat de serveur sur le serveur ONTAP Mediator. Reconfigurez l'accès au médiateur ONTAP à l'aide de la commande SnapMirror médiateur add.</block>
   <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">moniteurs système</block>
   <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">Nous avons ajouté près d'une douzaine de nouveaux produits <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> Pour SnapMirror for Business Continuity (SMBC), qui signale les modifications apportées aux certificats SMBC et aux médiateurs ONTAP.</block>
+  <block id="b229f086c89bfd44fd734a5299e9f059" category="paragraph">Lors de la création d'un moniteur *Log Monitor*, choisissez d'abord le journal à surveiller dans la liste des journaux disponibles. Vous pouvez ensuite filtrer en fonction des attributs disponibles, comme ci-dessus. Vous pouvez également choisir un ou plusieurs attributs « Grouper par ».</block>
+  <block id="d7aba68e0b82cfef5e7644a1a09648f2" category="inline-image-macro">Choisissez log pour surveiller, définissez un filtre et sélectionnez group by method, si vous le souhaitez</block>
+  <block id="3da252deb38a2d58507e7ff50d6508f0" category="paragraph"><block ref="3da252deb38a2d58507e7ff50d6508f0" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
