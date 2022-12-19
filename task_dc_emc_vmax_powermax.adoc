@@ -25,6 +25,23 @@ Avant de configurer ce collecteur de données, vous devez vous assurer que Cloud
 * Nom d'utilisateur et mot de passe en lecture seule pour le logiciel se
 * L'application UNISPHERE for VMAX doit exécuter et collecter des statistiques pour les baies EMC VMAX et PowerMax sStorage gérées par l'installation SMI-S Provider
 * Validation de l'accès pour les performances : dans un navigateur Web de votre unité d'acquisition, accédez à _\https://<SMI-S Hostname or IP>:5989/ecomconfig_ où « SMI-S Hostname or IP » correspond à l'adresse IP ou au nom d'hôte de votre serveur SMI-S. Cette URL est destinée à un portail d'administration pour le service EMC SMI-S (ou « ECOM »). Vous recevrez une fenêtre contextuelle de connexion.
+* Les autorisations doivent être déclarées dans le fichier de configuration du démon du serveur Solutions Enabler, généralement trouvé ici : _/var/symapi/config/daemon_Users_
++
+Voici un exemple de fichier avec les autorisations cisys appropriées.
+
++
+....
+root@cernciaukc101:/root
+14:11:25 # tail /var/symapi/config/daemon_users
+###
+###     Refer to the storrdfd(3) man page for additional details.
+###
+###     As noted above, only authorized users can perform stordaemon control
+###     operations (e.g., shutdown).
+################################################################################
+# smith         storrdfd
+cisys storapid <all>
+....
 
 
 
@@ -123,10 +140,6 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur de données :
 
-
-
-=== Inventaire
-
 [cols="2*"]
 |===
 | Problème : | Essayer : 
@@ -154,5 +167,8 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 
 | Erreur : • la commande CLI "symcfg list -tdev" peut renvoyer des données incorrectes lorsqu'elle est recueillie avec Solutions Enabler 7.x à partir d'un serveur Solutions Enabler 8.x. • La commande "symcfg list -srp" CLI peut renvoyer des données incorrectes lorsqu'elle est recueillie avec Solutions Enabler 8.1.0 ou une version antérieure à partir d'un serveur Solutions Enabler 8.3 ou une version ultérieure. | Vérifiez que vous utilisez la même version principale de Solutions Enabler 
+
+
+| J'ai constaté des erreurs de collecte de données avec le message "code inconnu" | Ce message peut s'afficher si les autorisations ne sont pas déclarées dans le fichier de configuration du démon du serveur Solutions Enabler (voir le <<de formation,De formation>> ci-dessus.) Cela suppose que la version de votre client se correspond à la version de votre serveur se. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
