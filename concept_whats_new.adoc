@@ -62,7 +62,7 @@ image:Log_Monitor_Duplicate.png["Duplication d'un moniteur de journal"]
 
 === 11 nouveaux moniteurs ONTAP par défaut couvrant SnapMirror pour la continuité de l'activité
 
-Nous avons ajouté près d'une douzaine de nouveaux moniteurs système pour SnapMirror for Business Continuity (SMBC), qui signalent les modifications apportées aux certificats SMBC et aux médiateurs ONTAP.
+Nous avons ajouté près d'une douzaine de nouveaux produits link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["moniteurs système"] Pour SnapMirror for Business Continuity (SMBC), qui signale les modifications apportées aux certificats SMBC et aux médiateurs ONTAP.
 
 '''
 
