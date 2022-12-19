@@ -2050,7 +2050,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Notification relative à Cloud Insights</block>
-  <block id="5b6169d0d5d664ce4f07f6328cd547c6" category="list-text"><block ref="5b6169d0d5d664ce4f07f6328cd547c6" category="inline-link-macro-rx"></block></block>
   <block id="8eb996cf95107ce6a0a76700629efd1d" category="summary">Configuration du collecteur de données Dell EMC VMAX et de la famille de périphériques PowerMax.</block>
   <block id="e3200b87c17458ad0a7966173c25cf50" category="doc">Dell EMC VMAX et PowerMax Family of Devices Data Collector</block>
   <block id="fd4f13f344037bce5e40ba8fad79e8e6" category="paragraph">Cloud Insights découvre EMC VMAX et les baies de stockage PowerMax à l'aide des commandes symcli de Solutions Enabler associées à un serveur Solutions Enabler existant dans votre environnement. Le serveur Solutions Enabler existant est connecté à la baie de stockage VMAX/PowerMax par l'accès aux volumes du contrôleur d'accès.</block>
@@ -9244,4 +9243,7 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">Voici un exemple de fichier avec les autorisations cisys appropriées.</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">J'ai constaté des erreurs de collecte de données avec le message "code inconnu"</block>
   <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">Ce message peut s'afficher si les autorisations ne sont pas déclarées dans le fichier de configuration du démon du serveur Solutions Enabler (voir le <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> ci-dessus.) Cela suppose que la version de votre client se correspond à la version de votre serveur se.</block>
+  <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Notification relative à Cloud Secure</block>
+  <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
+<block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
 </blocks>
