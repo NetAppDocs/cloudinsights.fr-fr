@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-17 03:23:12 +0000">12/17/2022</time>
+    <time datetime="2022-12-20 20:54:16 +0000">12/20/2022</time>
     
   
 
@@ -3845,6 +3845,28 @@ Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation
 <div class="paragraph">
 <p>Vous pouvez ajuster l&#8217;opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.</p>
 </div>
+<div class="paragraph">
+<p>Pour modifier ces valeurs, modifiez la demande de modification de l&#8217;agent à l&#8217;aide de la commande suivante (en remplaçant &lt;namespace&gt; par votre espace de noms) :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl edit agent agent-monitoring-netapp -n &lt;namespace&gt;
+La spécification CR suit le format :</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> - name: &lt;plugin-name&gt;
+   ...
+   substitutions:
+   - key: &lt;variable-name&gt;
+     value: &lt;desired-value&gt;
+     ...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l&#8217;agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.</p>
+</div>
 <div class="sect2">
 <h3 id="variables-liées-aux-ressources">Variables liées aux ressources</h3>
 <div class="paragraph">
@@ -3859,7 +3881,7 @@ Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Emplacement réservé</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nom de variable</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nom du plug-in</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inclus dans la CR par défaut</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
