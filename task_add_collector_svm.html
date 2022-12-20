@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-14 18:05:33 +0000">12/14/2022</time>
+    <time datetime="2022-12-20 16:19:15 +0000">12/20/2022</time>
     
   
 
@@ -3130,7 +3130,7 @@
 <p>Seuls les SVM de type données sont pris en charge. Les SVM avec Infinite volumes ne sont pas pris en charge.</p>
 </li>
 <li>
-<p>SVM possède plusieurs sous-types. Parmi ces derniers, seuls <em>default</em> et <em>sync_source</em> sont pris en charge.</p>
+<p>SVM possède plusieurs sous-types. Parmi ceux-ci, seuls <em>default</em>, <em>sync_source</em> et <em>sync_destination</em> sont pris en charge.</p>
 </li>
 <li>
 <p>Un agent <a href="task_cs_add_agent.html">"doit être configuré"</a> avant de pouvoir configurer des collecteurs de données.</p>
@@ -3357,6 +3357,57 @@ security login create -user-or-group-name csuser -application ontapi -authmethod
 <p>Dans la page collecteurs de données installés, utilisez le menu d&#8217;options à droite de chaque collecteur pour modifier le collecteur de données. Vous pouvez redémarrer le collecteur de données ou modifier les attributs de configuration du collecteur de données.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configuration-recommandée-pour-metro-cluster">Configuration recommandée pour Metro Cluster</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Il est recommandé d&#8217;utiliser les éléments suivants pour Metro Cluster :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Connectez deux collecteurs de données, un sur le SVM source et un autre sur le SVM de destination.</p>
+</li>
+<li>
+<p>Les collecteurs de données doivent être connectés par <em>Cluster IP</em>.</p>
+</li>
+<li>
+<p>À tout moment, un collecteur de données doit être en cours d&#8217;exécution, un autre sera en erreur.</p>
+<div class="paragraph">
+<p>Le collecteur de données actuel de la SVM "en cours d&#8217;exécution" s&#8217;affiche sous la forme <em>running</em>. Le collecteur de données actuel de la SVM ‘ssup’ sera <em>Error</em>.</p>
+</div>
+</li>
+<li>
+<p>Chaque fois qu&#8217;il y a un basculement, l&#8217;état du collecteur de données passe de 'en cours d&#8217;exécution' à 'erreur' et vice versa.</p>
+</li>
+<li>
+<p>Le collecteur de données passe de l&#8217;état erreur à l&#8217;état en cours d&#8217;exécution pendant deux minutes.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="politique-de-service">Politique de service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service <em>data-fpolicy-client</em> est requis avec le service de données <em>data-nfs</em> et/ou <em>data-cifs</em>.</p>
+</div>
+<div class="paragraph">
+<p>Exemple :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Testcluster-1::*&gt; net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+-services data-cifs,data-nfs,data,-core,data-fpolicy-client
+(network interface service-policy create)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans les versions ONTAP antérieures à 9.9.1, <em>data-fpolicy-client</em> n&#8217;a pas besoin d&#8217;être défini.</p>
 </div>
 </div>
 </div>
