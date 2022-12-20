@@ -8445,7 +8445,6 @@
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup est pris en charge à partir de ONTAP 9.4 et versions ultérieures</block>
   <block id="1b1cd01c54254af639999400741a0b75" category="list-text">ONTAP Select est pris en charge</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">Seuls les SVM de type données sont pris en charge. Les SVM avec Infinite volumes ne sont pas pris en charge.</block>
-  <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM possède plusieurs sous-types. Parmi ces derniers, seuls _default_ et _sync_source_ sont pris en charge.</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">doit être configuré</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">Un agent <block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block> avant de pouvoir configurer des collecteurs de données.</block>
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">Assurez-vous que vous disposez d'un connecteur d'annuaire utilisateur correctement configuré. Dans le cas contraire, les événements affichent des noms d'utilisateur codés et non le nom réel de l'utilisateur (tel qu'il est stocké dans Active Directory) dans la page « activités approfondies ».</block>
@@ -9246,4 +9245,16 @@
   <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Notification relative à Cloud Secure</block>
   <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
 <block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
+  <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM possède plusieurs sous-types. Parmi ceux-ci, seuls _default_, _sync_source_ et _sync_destination_ sont pris en charge.</block>
+  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Configuration recommandée pour Metro Cluster</block>
+  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Il est recommandé d'utiliser les éléments suivants pour Metro Cluster :</block>
+  <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">Connectez deux collecteurs de données, un sur le SVM source et un autre sur le SVM de destination.</block>
+  <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">Les collecteurs de données doivent être connectés par _Cluster IP_.</block>
+  <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">À tout moment, un collecteur de données doit être en cours d'exécution, un autre sera en erreur.</block>
+  <block id="edf525ae0ad794e4070641e785a1a628" category="paragraph">Le collecteur de données actuel de la SVM "en cours d'exécution" s'affiche sous la forme _running_. Le collecteur de données actuel de la SVM ‘ssup’ sera _Error_.</block>
+  <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">Chaque fois qu'il y a un basculement, l'état du collecteur de données passe de 'en cours d'exécution' à 'erreur' et vice versa.</block>
+  <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">Le collecteur de données passe de l'état erreur à l'état en cours d'exécution pendant deux minutes.</block>
+  <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">Politique de service</block>
+  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.</block>
+  <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas besoin d'être défini.</block>
 </blocks>

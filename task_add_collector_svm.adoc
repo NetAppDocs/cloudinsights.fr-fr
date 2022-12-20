@@ -25,7 +25,7 @@ Cloud Secure utilise des collecteurs de données pour collecter les données d'a
 
 
 * Seuls les SVM de type données sont pris en charge. Les SVM avec Infinite volumes ne sont pas pris en charge.
-* SVM possède plusieurs sous-types. Parmi ces derniers, seuls _default_ et _sync_source_ sont pris en charge.
+* SVM possède plusieurs sous-types. Parmi ceux-ci, seuls _default_, _sync_source_ et _sync_destination_ sont pris en charge.
 * Un agent link:task_cs_add_agent.html["doit être configuré"] avant de pouvoir configurer des collecteurs de données.
 * Assurez-vous que vous disposez d'un connecteur d'annuaire utilisateur correctement configuré. Dans le cas contraire, les événements affichent des noms d'utilisateur codés et non le nom réel de l'utilisateur (tel qu'il est stocké dans Active Directory) dans la page « activités approfondies ».
 * Pour des performances optimales, il est recommandé de configurer le serveur FPolicy sur le même sous-réseau que le système de stockage.
@@ -174,6 +174,37 @@ Le système affiche la page de configuration du SVM ONTAP. Entrez les données r
 .Une fois que vous avez terminé
 * Dans la page collecteurs de données installés, utilisez le menu d'options à droite de chaque collecteur pour modifier le collecteur de données. Vous pouvez redémarrer le collecteur de données ou modifier les attributs de configuration du collecteur de données.
 
+
+
+
+== Configuration recommandée pour Metro Cluster
+
+Il est recommandé d'utiliser les éléments suivants pour Metro Cluster :
+
+. Connectez deux collecteurs de données, un sur le SVM source et un autre sur le SVM de destination.
+. Les collecteurs de données doivent être connectés par _Cluster IP_.
+. À tout moment, un collecteur de données doit être en cours d'exécution, un autre sera en erreur.
++
+Le collecteur de données actuel de la SVM "en cours d'exécution" s'affiche sous la forme _running_. Le collecteur de données actuel de la SVM ‘ssup’ sera _Error_.
+
+. Chaque fois qu'il y a un basculement, l'état du collecteur de données passe de 'en cours d'exécution' à 'erreur' et vice versa.
+. Le collecteur de données passe de l'état erreur à l'état en cours d'exécution pendant deux minutes.
+
+
+
+
+== Politique de service
+
+Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.
+
+Exemple :
+
+....
+Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+-services data-cifs,data-nfs,data,-core,data-fpolicy-client
+(network interface service-policy create)
+....
+Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas besoin d'être défini.
 
 
 
