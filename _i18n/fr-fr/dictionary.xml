@@ -9257,4 +9257,8 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas besoin d'être défini.</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles indiquées ci-dessous.</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">Pour modifier ces valeurs, modifiez la demande de modification de l'agent à l'aide de la commande suivante (en remplaçant &lt;namespace&gt; par votre espace de noms) :</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">La spécification CR suit le format :</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l'agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">Nom de variable</block>
 </blocks>

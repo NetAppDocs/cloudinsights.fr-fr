@@ -438,6 +438,22 @@ Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation
 
 Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.
 
+Pour modifier ces valeurs, modifiez la demande de modification de l'agent à l'aide de la commande suivante (en remplaçant <namespace> par votre espace de noms) :
+
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+La spécification CR suit le format :
+
+[listing]
+----
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
+----
+Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l'agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.
+
 
 
 === Variables liées aux ressources
@@ -447,7 +463,7 @@ Voir https://kubernetes.io/docs/concepts/configuration/manage-resources-containe
 |===
 
 
-| Emplacement réservé | Nom du plug-in | Inclus dans la CR par défaut | Description 
+| Nom de variable | Nom du plug-in | Inclus dans la CR par défaut | Description 
 
 
 | DS_CPU_LIMITS_PLACEHOLDER | agent | oui | Limite du processeur Kubernetes pour telegraf-ds 
