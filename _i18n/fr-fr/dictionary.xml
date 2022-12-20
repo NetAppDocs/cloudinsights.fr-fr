@@ -6348,7 +6348,6 @@
   <block id="f9a9b1276eeee5dd40a308e6f4b24631" category="cell">La valeur par défaut est de 30 secondes</block>
   <block id="819902afffc93c6404da6c6845e68440" category="cell">Nombre de threads simultanés de performance</block>
   <block id="853e71d0368e6ee77bf4ac9c6d9aa93a" category="cell">Vérifiez que Cloud Insights collecte les mesures avancées à partir de la liste ci-dessous.</block>
-  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles associées au renouvellement des jetons d'API Kubernetes répertoriées ici.</block>
   <block id="a5dfaed67b2749f907deb26db5abcb10" category="summary">Conseils généraux de dépannage de Cloud Insights.</block>
   <block id="38bbcd866205b5ab858be293ea3a1f1f" category="doc">Dépannage des problèmes généraux de Cloud Insights</block>
   <block id="ac9d70899fcbb0d147ded44ff92e7ce8" category="paragraph">Vous trouverez ici des suggestions de dépannage de Cloud Insights.</block>
@@ -9257,4 +9256,5 @@
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">Politique de service</block>
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas besoin d'être défini.</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles indiquées ci-dessous.</block>
 </blocks>

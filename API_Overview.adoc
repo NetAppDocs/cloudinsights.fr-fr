@@ -283,7 +283,7 @@ Les jetons d'accès à l'API ont une date d'expiration. Lorsqu'un jeton d'accès
 
 Notez que ces commandes utilisent le namespace par défaut « surveillance netapp ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.
 
-Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles associées au renouvellement des jetons d'API Kubernetes répertoriées ici.
+Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles indiquées ci-dessous.
 
 * Modifiez l'opérateur de surveillance NetApp Kubernetes.
 +
