@@ -91,6 +91,8 @@ Pour les environnements Cloud Secure * APAC :
 
 == Règles dans le réseau
 
+Notez que si vous ajoutez _<</task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip,csuser>>_, cet utilisateur requiert un accès SSH à ONTAP.
+
 [cols="5*"]
 |===
 | Protocole | Port | Destination | Direction | Description 

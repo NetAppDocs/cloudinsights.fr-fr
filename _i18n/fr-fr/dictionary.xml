@@ -9261,4 +9261,6 @@
   <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">La spécification CR suit le format :</block>
   <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l'agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.</block>
   <block id="3f60b096843929b02e1a070f57e27584" category="cell">Nom de variable</block>
+  <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">csuser</block>
+  <block id="76ce4e2b9af0d8561c4d9aba287c2dfd" category="paragraph">Notez que si vous ajoutez _<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_, cet utilisateur requiert un accès SSH à ONTAP.</block>
 </blocks>
