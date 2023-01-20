@@ -12,6 +12,9 @@ keywords: data collector, NetApp, Cloud agent, ONTAP
 Ce collecteur de données crée une connexion cloud pour la collecte des données à partir des systèmes ONTAP 9.9+ CVO, AFF, et FAS.
 
 
+NOTE: Ce collecteur de données est link:task_getting_started_with_cloud_insights.html#useful-definitions["obsolète"] À partir du 1er janvier 2023.
+
+
 
 == Configuration
 

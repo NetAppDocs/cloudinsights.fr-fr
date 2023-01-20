@@ -75,6 +75,9 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale (auparavant Isilon)"] | Infrastructures 
 
 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | Infrastructures 
+
+
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | Infrastructures 
 
 
@@ -85,6 +88,9 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | Infrastructures 
+
+
+| link:task_dc_emc_unisphere_rest.html["DELL EMC Unisphere REST"] | Infrastructures 
 
 
 | link:task_dc_emc_vmax_powermax.html["Gamme de périphériques Dell EMC VMAX/PowerMax"] | Infrastructures 

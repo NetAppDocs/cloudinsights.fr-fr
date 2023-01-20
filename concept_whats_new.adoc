@@ -75,6 +75,7 @@ Nous avons ajouté près d'une douzaine de nouveaux produits link:task_system_mo
 
 Nous avons ajouté des dizaines de nouveaux contrôles définis par système, pour vous alerter des problèmes potentiels liés à Cloud volumes, à la sécurité et à la protection des données. En savoir plus sur ces moniteurs link:task_system_monitors.html#security-monitors["ici"].
 
+'''
 
 
 == Octobre 2022

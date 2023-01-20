@@ -26,7 +26,7 @@ image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
 +
 [[nkmoversion]]
 ** Télégraf : 1.24.0
-** kube-rbac-proxy: v0.13.0
+** kube-rbac-proxy: v1.13.0
 ** indicateurs d'état kube : v2.6.0
 ** bit fluide : 1.9.8
 ** kubernetes-event-exportateur : 0.10
@@ -177,14 +177,14 @@ Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, 
 Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées :
 
 ....
-docker.io/telegraf: 1.22.3
-gcr.io/kubebuilder/kube-rbac-proxy: v0.11.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.4.2
+docker.io/telegraf: 1.24.0
+gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
 ....
 Si Fluent-bit est activé, téléchargez également :
 
 ....
-docker.io/fluent-bit:1.9.3
+docker.io/fluent-bit:1.9.8
 docker.io/kubernetes-event-exporter:0.10
 ....
 Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo, désactivez la mise à niveau automatique (si elle est activée).

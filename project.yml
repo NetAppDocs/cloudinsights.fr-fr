@@ -352,8 +352,6 @@ sidebar:
           url: "/task_dc_ms_hyperv.html"
       - title: NetApp
         entries:
-        - title: Magasin de données Astra
-          url: "/task_dc_na_astra_data_store.html"
         - title: Connexion cloud pour ONTAP 9.9+
           url: "/task_dc_na_cloud_connection.html"
         - title: Cloud Volumes ONTAP

@@ -485,7 +485,13 @@ Veuillez link:task_config_telegraf_agent_k8s.html["*aller ici*"] Pour plus d'inf
 
 == Vérification des sommes de contrôle
 
-Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour effectuer une opération de téléchargement uniquement (par opposition au téléchargement et à l'installation par défaut), ces utilisateurs peuvent modifier la commande d'installation de l'agent obtenue à partir de l'interface utilisateur et supprimer l'option "installation" de fin.
+Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour ce faire, téléchargez le programme d'installation et générez une somme de contrôle pour le package téléchargé, puis comparez la somme de contrôle à la valeur indiquée dans les instructions d'installation.
+
+
+
+=== Téléchargez le programme d'installation sans l'installer
+
+Pour effectuer une opération de téléchargement uniquement (par opposition au téléchargement et à l'installation par défaut), les utilisateurs peuvent modifier la commande d'installation de l'agent obtenue à partir de l'interface utilisateur et supprimer l'option "installation" de fin.
 
 Voici la procédure à suivre :
 
@@ -540,6 +546,27 @@ Plus spécifiquement,
  Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
 
 
+
+
+=== Générer une valeur de somme de contrôle
+
+Pour générer la valeur de checksum, exécutez la commande suivante pour votre plateforme appropriée :
+
+* RHEL/Ubuntu :
++
+ sha256sum <package_name>
+* MacOS :
++
+ shasum -a 256 telegraf.pkg
+* Windows :
++
+ Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
+
+
+
+
+=== Vérifiez le total de contrôle à l'aide du fichier PEM
+
 Le fichier de somme de contrôle signé peut être vérifié à l'aide du fichier PEM :
 
 * Non Windows :
@@ -556,6 +583,10 @@ $signer = $result.SignerCertificate
 Add-Type -Assembly System.Security
 [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 ....
+
+
+=== Installez l'image téléchargée
+
 Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation de l'agent peut être lancée en exécutant :
 
 Non Windows :

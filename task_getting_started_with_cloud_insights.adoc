@@ -12,11 +12,11 @@ Une fois que vous vous êtes inscrit à Cloud Insights et que vous vous connecte
 
 Les collecteurs de données détectent les informations provenant de vos sources de données, telles que les périphériques de stockage, les commutateurs réseau et les machines virtuelles. Les informations recueillies sont utilisées à des fins d'analyse, de validation, de surveillance et de dépannage.
 
-Cloud Insights utilise trois types de collecteurs de données :
+Cloud Insights dispose de trois types de collecteurs de données :
 
-* Systèmes d'exploitation
-* Administratifs
-* Infrastructures
+* Infrastructure (périphériques de stockage, commutateurs de réseau, infrastructure de calcul)
+* Systèmes d'exploitation (tels que VMware ou Windows)
+* Services (tels que Kafka)
 
 
 Sélectionnez votre premier collecteur de données parmi les fournisseurs et modèles pris en charge disponibles. Vous pouvez facilement ajouter des collecteurs de données supplémentaires ultérieurement.
@@ -25,7 +25,7 @@ Sélectionnez votre premier collecteur de données parmi les fournisseurs et mod
 
 == Installer une unité d'acquisition
 
-Si vous avez sélectionné un collecteur de données _Infrastructure_, une unité d'acquisition est requise pour injecter des données dans Cloud Insights. Vous devrez télécharger et installer le logiciel acquisition Unit sur un serveur ou une machine virtuelle pour collecter des données pour Cloud Insights. Une unité d'acquisition unique peut être utilisée pour plusieurs collecteurs de données.
+Si vous avez sélectionné un collecteur de données _Infrastructure_, une unité d'acquisition est requise pour injecter des données dans Cloud Insights. Vous devrez télécharger et installer le logiciel acquisition Unit sur un serveur ou une machine virtuelle du centre de données à partir duquel vous allez recueillir. Une unité d'acquisition unique peut être utilisée pour plusieurs collecteurs de données.
 
 image:NewLinuxAUInstall.png["Instructions Linux au"]
 
@@ -43,9 +43,8 @@ Vous pouvez configurer des unités d'acquisition supplémentaires ultérieuremen
 Pour les collecteurs de données _Infrastructure_, on vous demandera de remplir les champs du collecteur de données présentés :
 
 * Donnez au collecteur de données un nom unique et significatif.
-* Entrez le nom d'utilisateur et le mot de passe pour vous connecter au terminal, le cas échéant.
+* Saisissez les informations d'identification (nom d'utilisateur et mot de passe) pour vous connecter au périphérique, le cas échéant.
 * Remplissez tous les autres champs obligatoires des sections _Configuration_ et _Advanced Configuration_.
-* Cliquez sur *Tester la connexion* pour tester la connexion au périphérique.
 * Cliquez sur *Ajouter un collecteur* pour enregistrer le collecteur de données.
 
 
@@ -97,4 +96,22 @@ Si le processus de configuration initial est interrompu (par exemple, si vous fe
 * Choisissez un Data Collector
 * Installez un agent ou une unité d'acquisition si vous y êtes invité
 * Configurer le Data Collector
+
+
+
+
+== Définitions utiles
+
+Les définitions suivantes peuvent être utiles lorsqu'on parle de collecteurs de données ou de fonctions Cloud Insights :
+
+* Cycle de vie du collecteur : un collecteur appartient à l'un des États suivants dans son cycle de vie :
++
+** *Aperçu* : disponible à une capacité limitée ou à un public limité. link:concept_preview_features.html["Aperçu des fonctions"] Et les collecteurs de données devraient devenir GA après la période d'aperçu. Les périodes d'aperçu varient en fonction de l'audience ou de la fonctionnalité.
+** *GA* : une fonctionnalité ou un collecteur de données généralement disponible pour tous les clients, en fonction de l'édition ou du jeu de fonctions.
+** *Obsolète* : s'applique aux collecteurs de données qui ne sont, ou sont censés devenir, plus viables sur le plan fonctionnel. Les collecteurs de données obsolètes sont souvent remplacés par de nouveaux collecteurs de données mis à jour de manière fonctionnelle.
+** *Supprimé* : un collecteur de données qui a été supprimé et n'est plus disponible.
+
+
+* Unité d'acquisition : ordinateur dédié à l'hébergement de collecteurs de données, généralement une machine virtuelle. Cet ordinateur se trouve généralement dans le même centre de données/VPC que les éléments surveillés.
+* Source de données : module de communication avec une pile matérielle ou logicielle. Il se compose d'une configuration et d'un code qui s'exécutent sur l'ordinateur au pour communiquer avec le périphérique.
 

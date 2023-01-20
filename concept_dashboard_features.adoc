@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: Concepts et fonctionnalités du tableau de bord. 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = Fonctionnalités du tableau de bord
 :toc: macro
@@ -628,6 +628,24 @@ Dans le widget valeur unique, outre le réglage des seuils d'avertissement (oran
 image:Single-Value Widgets.png["Widget de valeur unique avec et sans formatage"]
 
 Si vous cliquez sur le lien dans un widget à valeur unique ou un widget de jauge, une page de requête correspondant à la première requête du widget s'affiche.
+
+
+
+== Formatage des widgets de tableau
+
+Comme les widgets à valeur unique et jauge, vous pouvez définir un formatage conditionnel dans les widgets de tableau, ce qui vous permet de mettre en évidence des données avec des couleurs et/ou des icônes spéciales.
+
+La mise en forme conditionnelle vous permet de définir et de mettre en évidence les seuils de niveau d'avertissement et de niveau critique dans les widgets de tableau, offrant ainsi une visibilité instantanée des valeurs aberrantes et des points de données exceptionnels.
+
+image:ConditionalFormattingExample.png["Exemple de formatage conditionnel"]
+
+Le formatage conditionnel est défini séparément pour chaque colonne d'une table. Par exemple, vous pouvez choisir un ensemble de seuils pour une colonne de capacité et un autre ensemble pour une colonne de débit.
+
+Si vous modifiez l'affichage des unités pour une colonne, le formatage conditionnel reste et reflète la modification des valeurs. Les images ci-dessous montrent le même formatage conditionnel, même si l'unité d'affichage est différente.
+
+image:ConditionalFormatting_GiB.png["Mise en forme conditionnelle - Gio"] image:ConditionalFormatting_TiB.png["Mise en forme conditionnelle - Tio"]
+
+Vous pouvez choisir d'afficher ou non le format de condition en tant que couleur, icônes ou les deux.
 
 
 
