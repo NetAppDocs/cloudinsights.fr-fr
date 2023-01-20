@@ -5772,7 +5772,6 @@
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Avant d'installer NetApp Kubernetes Monitoring Operator</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">Conditions préalables :</block>
-  <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">Veuillez noter les versions de composants suivantes. Voici les versions actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes :</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Télégraf : 1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">indicateurs d'état kube : v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">bit fluide : 1.9.8</block>
@@ -5830,7 +5829,6 @@
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">Retirez l'image de docker de Cloud Insights. Assurez-vous que le numéro de version _netapp-monitoring_ est à jour :</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">Recherchez le champ _netapp-monitoring_ &lt;version&gt; à l'aide de la commande suivante :</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise.</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées :</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">Si Fluent-bit est activé, téléchargez également :</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo, désactivez la mise à niveau automatique (si elle est activée).</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">Dans la section _spec:_, effectuez les modifications suivantes :</block>
@@ -10046,7 +10044,6 @@
   <block id="2c56c637347a0a87008437d711d16263" category="cell">Mot de passe utilisé pour l'Isilon</block>
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">La valeur par défaut est 8080.</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">obsolète</block>
-  <block id="6afca2df57e91c9479bb6e541df1bbe2" category="admonition">Ce collecteur de données est <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> À partir du 1er janvier 2023.</block>
   <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">Développez, protégez et maîtrisez vos données hébergées dans le multicloud hybride à partir d'un seul plan de contrôle.</block>
   <block id="7ce49ad36572c616df2b7b18f0f3c2d5" category="doc">Cloud Insights fait partie de BlueXP</block>
   <block id="76609753d56a9030bf88cac400655be7" category="paragraph">BlueXP vous permet de gérer l'ensemble de vos ressources de stockage et de données NetApp à partir d'une interface unique. Dans BlueXP, vous trouverez de nombreux nouveaux services de stockage, ainsi que des services de données auparavant uniquement disponibles en tant que service autonome avec une interface utilisateur séparée. Cloud Insights fait partie de ces services.</block>
@@ -10680,4 +10677,8 @@
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*Supprimé* : un collecteur de données qui a été supprimé et n'est plus disponible.</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Unité d'acquisition : ordinateur dédié à l'hébergement de collecteurs de données, généralement une machine virtuelle. Cet ordinateur se trouve généralement dans le même centre de données/VPC que les éléments surveillés.</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">Source de données : module de communication avec une pile matérielle ou logicielle. Il se compose d'une configuration et d'un code qui s'exécutent sur l'ordinateur au pour communiquer avec le périphérique.</block>
+  <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">à l'aide d'un référentiel docker personnalisé ou privé</block>
+  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">Veuillez noter les versions de composants suivantes. Voici les versions actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes. Vous devrez particulièrement noter ces versions si vous l'êtes <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
+  <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées. Voir la <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> la section ci-dessus concerne les versions les plus récentes de ces composants :</block>
+  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">Ce collecteur de données est <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> À partir du 1er janvier 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>.</block>
 </blocks>

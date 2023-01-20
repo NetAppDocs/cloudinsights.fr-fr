@@ -21,10 +21,10 @@ image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
 
 == Avant d'installer NetApp Kubernetes Monitoring Operator
 
-.Conditions préalables :
-* Veuillez noter les versions de composants suivantes. Voici les versions actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes :
-+
 [[nkmoversion]]
+.Conditions préalables :
+* Veuillez noter les versions de composants suivantes. Voici les versions actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes. Vous devrez particulièrement noter ces versions si vous l'êtes <<using-a-custom-or-private-docker-repository,à l'aide d'un référentiel docker personnalisé ou privé>>:
++
 ** Télégraf : 1.24.0
 ** kube-rbac-proxy: v1.13.0
 ** indicateurs d'état kube : v2.6.0
@@ -174,18 +174,18 @@ Recherchez le champ _netapp-monitoring_ <version> à l'aide de la commande suiva
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise.
 
-Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées :
+Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées. Voir la <<before-installing-the-netapp-kubernetes-monitoring-operator,Conditions préalables>> la section ci-dessus concerne les versions les plus récentes de ces composants :
 
 ....
-docker.io/telegraf: 1.24.0
-gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
+docker.io/telegraf
+gcr.io/kubebuilder/kube-rbac-proxy
+k8s.gcr.io/kube-state-metrics/kube-state-metrics
 ....
 Si Fluent-bit est activé, téléchargez également :
 
 ....
-docker.io/fluent-bit:1.9.8
-docker.io/kubernetes-event-exporter:0.10
+docker.io/fluent-bit
+docker.io/kubernetes-event-exporter
 ....
 Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo, désactivez la mise à niveau automatique (si elle est activée).
 
