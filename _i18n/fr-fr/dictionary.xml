@@ -5774,7 +5774,6 @@
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Télégraf : 1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">indicateurs d'état kube : v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">bit fluide : 1.9.8</block>
-  <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">kubernetes-event-exportateur : 0.10</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">L'installation de NetApp Kubernetes Monitoring Operator est prise en charge avec Kubernetes version 1.20 ou ultérieure.</block>
   <block id="f555190cc628f345214d8d00c587f506" category="list-text">Lorsque Cloud Insights contrôle le stockage back-end et que Kubernetes est utilisé avec l'exécution du conteneur Docker, Cloud Insights peut afficher des mappages entre pod et PV et stockage pour NFS et iSCSI. D'autres temps d'exécution indiquent uniquement iSCSI.</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">mise à niveau</block>
@@ -7038,7 +7037,6 @@
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">un fichier de somme de contrôle signé (se terminant par sha256.signé ou sha256.ps1)</block>
   <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="list-text">Non Windows :</block>
   <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows (après avoir installé le certificat via Import-Certificate ci-dessus) :</block>
-  <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">Dépannage de l'installation de l'agent</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">Certaines choses à essayer si vous rencontrez des problèmes lors de la configuration d'un agent :</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">J'ai déjà installé un agent à l'aide de Cloud Insights</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">Si vous avez déjà installé un agent sur votre hôte/machine virtuelle, il n'est pas nécessaire d'installer l'agent à nouveau. Dans ce cas, il vous suffit de choisir la plate-forme et la clé appropriées dans l'écran installation de l'agent, puis de cliquer sur *Continuer* ou *Terminer*.</block>
@@ -9265,7 +9263,6 @@
   <block id="e683c12dcf92dc441c52b41d48fae3bd" category="cell">Liste des machines virtuelles à filtrer (séparées par des virgules ou séparées par des points-virgules si la virgule est utilisée dans la valeur) pour le filtrage</block>
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Intervalle d'interrogation des performances Unisphere (s)</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">La valeur par défaut est 300 secondes</block>
-  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbac-proxy: v1.13.0</block>
   <block id="c52daf8134416a70f4e670e99e7c4396" category="doc">Matrice de support des sources de données Cloud Insight</block>
   <block id="dea5f9ab95bb253b826201d228922448" category="paragraph">La matrice de prise en charge du Data Collector fournit une référence pour les collecteurs de données pris en charge par Cloud Insights, y compris les informations relatives au fournisseur et au modèle.</block>
   <block id="d47f554df13fb6a18614ec1418ee1c86" category="section-title">HP Enterprise 3PAR / Primera 9000 / Primera StoreServ Storage</block>
@@ -10656,7 +10653,6 @@
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Unité d'acquisition : ordinateur dédié à l'hébergement de collecteurs de données, généralement une machine virtuelle. Cet ordinateur se trouve généralement dans le même centre de données/VPC que les éléments surveillés.</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">Source de données : module de communication avec une pile matérielle ou logicielle. Il se compose d'une configuration et d'un code qui s'exécutent sur l'ordinateur au pour communiquer avec le périphérique.</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">à l'aide d'un référentiel docker personnalisé ou privé</block>
-  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">Veuillez noter les versions de composants suivantes. Voici les versions actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes. Vous devrez particulièrement noter ces versions si vous l'êtes <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées. Voir la <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> la section ci-dessus concerne les versions les plus récentes de ces composants :</block>
   <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">Ce collecteur de données est <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> À partir du 1er janvier 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Configuration du collecteur de données REST Dell EMC Isilon / PowerScale.</block>
@@ -10706,4 +10702,9 @@
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">Nom d'utilisateur et mot de passe</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">Intervalle entre les sondages de performances.</block>
   <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">Une fois votre environnement créé, il vous suffit de vous connecter au portail NetApp Cloud Portal et de cliquer sur *accéder à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.</block>
+  <block id="4e6966e86a775d896fac148f8f919b74" category="list-text">Veuillez noter les versions de composants suivantes. Il s'agit des versions _requises_ actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes. Vous devrez particulièrement noter ces versions si vous l'êtes <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
+  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">kube-rbac-proxy: v0.13.0</block>
+  <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">kubernetes-event-exportateur : v0.10</block>
+  <block id="051aaec40811db88a3eb9b87af9a7838" category="cell">Après avoir configuré un nouveau plug-in et redémarré Telegraf, Telegraf ne démarre pas. Les journaux indiquent qu'une erreur semblable à celle qui suit : "[telegraf] erreur d'exécution de l'agent : erreur lors du chargement du fichier de configuration /etc/telegraf/telegraf.d/cloudInsights-default.conf : sorties du plug-in.http: Ligne 88 : configuration spécifiée les champs ["use_system_proxy"], mais ils n'ont pas été utilisés"</block>
+  <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">La version installée de Telegraf est obsolète. Suivez les étapes de cette page pour *mettre à niveau l'agent* pour votre plate-forme appropriée.</block>
 </blocks>
