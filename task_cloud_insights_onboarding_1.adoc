@@ -51,11 +51,11 @@ Pendant l'essai gratuit, vous pouvez link:concept_subscribing_to_cloud_insights.
 
 == Connectez-vous et allez
 
-Une fois votre locataire créé, il vous suffit de vous connecter au portail cloud NetApp et de cliquer sur *accéder à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.
+Une fois votre environnement créé, il vous suffit de vous connecter au portail NetApp Cloud Portal et de cliquer sur *accéder à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.
 
 Vous pouvez également ouvrir un navigateur directement sur l'URL de votre environnement Cloud Insights, par exemple :
 
- https://<environment-name>.c01.cloudinsights.netapp.com/
+ https://<environment-prefix>.c01.cloudinsights.netapp.com/
 L'URL sera également incluse dans l'e-mail d'invitation de chaque utilisateur pour faciliter l'accès et le signet. Si l'utilisateur n'est pas encore connecté à Cloud Central, il est invité à se connecter.
 
 

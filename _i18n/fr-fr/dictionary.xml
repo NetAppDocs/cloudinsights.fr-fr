@@ -1806,7 +1806,6 @@
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">commencez votre abonnement</block>
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">Pendant l'essai gratuit, vous pouvez <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> Vers Cloud Insights à tout moment. Lorsque vous êtes abonné, vous pouvez utiliser les fonctions Cloud Insights en fonction de votre abonnement actuel.</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">Connectez-vous et allez</block>
-  <block id="3c43cc5f14a9a8d5c0d0ad13a6807635" category="paragraph">Une fois votre locataire créé, il vous suffit de vous connecter au portail cloud NetApp et de cliquer sur *accéder à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">Vous pouvez également ouvrir un navigateur directement sur l'URL de votre environnement Cloud Insights, par exemple :</block>
   <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">L'URL sera également incluse dans l'e-mail d'invitation de chaque utilisateur pour faciliter l'accès et le signet. Si l'utilisateur n'est pas encore connecté à Cloud Central, il est invité à se connecter.</block>
   <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">Les nouveaux utilisateurs doivent toujours s'inscrire pour accéder à Cloud Central avant d'accéder à l'URL de leur environnement.</block>
@@ -9255,9 +9254,6 @@
   <block id="a8f52a9563e47eb33fbdc4c48dfcf8f5" category="paragraph">Notez que lors de l'ajout de _<block ref="d95c3cfe38a15370491721a373f38df2" category="inline-link-macro-rx"></block>_, cet utilisateur requiert un accès SSH au LIF de gestion ONTAP.</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">Configuration du collecteur de données REST Dell EMC Unisphere.</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">Configuration du collecteur de données REST Dell EMC Unisphere</block>
-  <block id="40a4716908f3dbdf4bcc8ba2f723c402" category="paragraph">Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage Dell EMC Unisphere RESTStorage. Pour la configuration, le collecteur de données nécessite une adresse IP du serveur Unisphere et un compte de domaine de niveau administratif.</block>
-  <block id="178aa8940482ece4128332c5293d4776" category="list-text">Une adresse IP du serveur Unisphere</block>
-  <block id="e14ac1a874c2bab29d6bc82d3f0dbce3" category="list-text">Compte de domaine de niveau administratif pour le serveur Unisphere</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">Orifice 8443.</block>
   <block id="c62ee42653af581fe8eb16fb07118e8a" category="cell">Adresse IP du serveur Unisphere</block>
   <block id="2b6e86a54babfc32273d61df437cae05" category="cell">Adresse IP ou nom de domaine complet du serveur Unisphere</block>
@@ -10702,4 +10698,12 @@
   <block id="ae832e9b5bda2699db45f3fa6aa8c556" category="cell">SWIFT</block>
   <block id="7793f7416a4d38be57956421d8dd181c" category="cell">ISI_PRIV_JOB_ENGINE</block>
   <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">Moteur de tâches</block>
+  <block id="c0accd1360dce3944f0726ef704217c0" category="paragraph">Ce collecteur de données acquiert les données d'inventaire et de performances de Dell EMC Unisphere pour les systèmes de gestion PowerMax / Vmax 3.</block>
+  <block id="7e8e4c2fd39cb301da1af7afb93e8962" category="paragraph">Veuillez noter que Dell/EMC n'a pas introduit de statistiques par volume avant Unisphere 10.0 - ce collecteur de données prend en charge 9.2.0+, mais ne pourra pas collecter les statistiques de volume car elles n'existent pas.</block>
+  <block id="e3a699248ac2af0be8e4036425dd0b04" category="paragraph">Une instance Unisphere pour Vmax/PowerMax peut gérer une ou plusieurs baies de stockage Symmetrix 3 ou supérieure ; ce collecteur tente par défaut de découvrir toutes ces baies.</block>
+  <block id="da3865d5e1a7d870e4707356b907f643" category="paragraph">Pour la configuration, le collecteur de données nécessite une adresse IP/FQDN du serveur Unisphere, la connectivité TCP au port 8443, ainsi qu'un nom d'utilisateur et un mot de passe.</block>
+  <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Adresse IP/Nom de domaine complet du serveur Unisphere</block>
+  <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">Nom d'utilisateur et mot de passe</block>
+  <block id="4723d1b438a15598881f85467c0b7be8" category="cell">Intervalle entre les sondages de performances.</block>
+  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">Une fois votre environnement créé, il vous suffit de vous connecter au portail NetApp Cloud Portal et de cliquer sur *accéder à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.</block>
 </blocks>
