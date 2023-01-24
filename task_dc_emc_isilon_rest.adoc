@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: task_dc_emc_isilon_rest.html 
 keywords: data collector, isilon, EMC, DELL, PowerScale 
-summary: Configuration du collecteur de données REST Dell EMC Isilon. 
+summary: Configuration du collecteur de données REST Dell EMC Isilon / PowerScale. 
 ---
 = Collecteur de données REST Dell EMC Isilon
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données SSH REST Dell EMC Isilon pour acquérir des données d'inventaire et de performances provenant du stockage Dell EMC Isilon.
+Cloud Insights utilise le collecteur de données REST Dell EMC Isilon / PowerScale pour obtenir des données d'inventaire et de performances provenant du stockage Dell EMC Isilon ou PowerScale.
 
 
 
@@ -31,7 +31,13 @@ Cloud Insights acquiert les informations d'inventaire suivantes à partir de ce 
 | Nœud | Nœud de stockage 
 
 
-| Système de fichiers | Volume interne 
+| Système de fichiers OneFS | Volume interne 
+
+
+| Système de fichiers OneFS | Pool de stockage 
+
+
+| Qtree | Qtree 
 |===
 Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent ne pas représenter tous les cas pour ce collecteur de données.
 
@@ -41,11 +47,66 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 Vous avez besoin des informations suivantes pour configurer ce collecteur de données :
 
-* Autorisations d'administrateur pour le stockage REST Dell EMC Isilon
-* Adresse IP du cluster DE REPOS Dell EMC Isilon
+* Un compte utilisateur et un mot de passe. Ce compte N'a PAS besoin d'être admin/root, mais vous DEVEZ accorder un nombre important de privilèges en lecture seule à votre compte de service - voir le tableau ci-dessous
+* Adresse IP / Nom de domaine complet du cluster Dell EMC Isilon / PowerScale
 * Accès HTTPS au port 8080
 
 
+[cols="3*"]
+|===
+| Nom de privilège | Description | r(lecture) ou rw (lecture+écriture) 
+
+
+| ISI_PRIV_LOGIN_PAPI | API de plateforme | r 
+
+
+| ISI_PRIV_SYS_TIME | Temps | r 
+
+
+| ISI_PRIV_AUTH | Auth | r 
+
+
+| ISI_PRIV_ROLE | Privilège | r 
+
+
+| ISI_PRIV_DEVICES | Périphériques | r 
+
+
+| ISI_PRIV_EVENT | Événement | r 
+
+
+| ISI_PRIV_HDFS | HDFS | r 
+
+
+| ISI_PRIV_NDMP | NDMP | r 
+
+
+| ISI_PRIV_NETWORK | Le réseau | r 
+
+
+| ISI_PRIV_NFS | NFS | r 
+
+
+| ISI_PRIV_PAPI_CONFIG | Configurer l'API de la plate-forme | r 
+
+
+| ISI_PRIV_QUOTA | Quota | r 
+
+
+| ISI_PRIV_SMARTPOOLS | SmartPools | r 
+
+
+| ISI_PRIV_SMB | PME | r 
+
+
+| ISI_PRIV_STATISTICS | Statistiques | r 
+
+
+| ISI_PRIV_SWIFT | SWIFT | r 
+
+
+| ISI_PRIV_JOB_ENGINE | Moteur de tâches | r 
+|===
 
 
 == Configuration
