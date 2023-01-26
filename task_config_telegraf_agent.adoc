@@ -606,7 +606,10 @@ Certaines choses à essayer si vous rencontrez des problèmes lors de la configu
 | Problème : | Essayer : 
 
 
-| Après avoir configuré un nouveau plug-in et redémarré Telegraf, Telegraf ne démarre pas. Les journaux indiquent qu'une erreur semblable à celle qui suit : "[telegraf] erreur d'exécution de l'agent : erreur lors du chargement du fichier de configuration /etc/telegraf/telegraf.d/cloudInsights-default.conf : sorties du plug-in.http: Ligne 88 : configuration spécifiée les champs ["use_system_proxy"], mais ils n'ont pas été utilisés" | La version installée de Telegraf est obsolète. Suivez les étapes de cette page pour *mettre à niveau l'agent* pour votre plate-forme appropriée. 
+| Après avoir configuré un nouveau plug-in et redémarré Telegraf, Telegraf ne démarre pas. Les journaux indiquent qu'une erreur semblable à celle qui suit : "[telegraf] erreur d'exécution de l'agent : erreur lors du chargement du fichier de configuration /etc/telegraf/telegraf.d/cloudInsights-default.conf : sorties du plug-in.http: Line <linenumber>: Configuration a spécifié les champs ["use_system_proxy"], mais ils n'ont pas été utilisés" | La version installée de Telegraf est obsolète. Suivez les étapes de cette page pour *mettre à niveau l'agent* pour votre plate-forme appropriée. 
+
+
+| J'ai exécuté le script d'installation sur une ancienne installation et maintenant l'agent n'envoie pas de données | Désinstallez l'agent telegraf, puis relancez le script d'installation. Suivez les étapes *mettre à niveau l'agent* de cette page pour votre plate-forme appropriée. 
 
 
 | J'ai déjà installé un agent à l'aide de Cloud Insights | Si vous avez déjà installé un agent sur votre hôte/machine virtuelle, il n'est pas nécessaire d'installer l'agent à nouveau. Dans ce cas, il vous suffit de choisir la plate-forme et la clé appropriées dans l'écran installation de l'agent, puis de cliquer sur *Continuer* ou *Terminer*. 
