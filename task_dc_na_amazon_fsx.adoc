@@ -44,7 +44,7 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 * Fournisseur : AWS
 * Numéro de série – le numéro de série de la baie.
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données.
-* Capacité brute : somme de base 2 de tous les disques physiques du système, quel que soit leur rôle.
+* Capacité brute : somme de base 2 de tous les disques SSD affectés au système de fichiers FSX.
 * Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, Cloud Insights s'approvisionna directement cette valeur, mais ce n'est souvent pas le cas. Au lieu de cela, Cloud Insights effectue généralement un calcul pondéré par IOPS, à partir des statistiques des volumes internes individuels.
 * Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Cloud Insights dans le cadre du rapport d'inventaire.
 
@@ -55,13 +55,9 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 
 * Stockage : sur quelle baie de stockage ce pool vit. Obligatoire.
 * Type – valeur descriptive d'une liste de possibilités énumérées. Le plus souvent sera “agrégat” ou “RAID Group”.
-* Utilise Flash Pool – valeur Oui/non – ce pool basé sur SATA/SAS utilise-t-il des disques SSD pour accélérer la mise en cache ?
-* Redondance : niveau RAID ou schéma de protection. RAID_DP est la double parité, RAID_TP est la triple parité.
 * Capacité : les valeurs indiquées ici sont les valeurs logiques utilisées, la capacité utilisable et la capacité totale logique, ainsi que le pourcentage utilisé sur ces valeurs.
-* Capacité sursollicitée : si grâce aux technologies d'efficacité, vous avez alloué une somme totale de capacités de volume ou de volume interne supérieure à la capacité logique du pool de stockage, le pourcentage de valeur ici est supérieur à 0 %.
-* Snapshot : les capacités des copies Snapshot utilisées et totales, si l'architecture des pools de stockage consacre une partie de sa capacité à la segmentation uniquement des snapshots. Ce document présente notamment la solution ONTAP dans les configurations MetroCluster, tandis que les autres configurations ONTAP sont moins nombreuses.
-* Utilisation : pourcentage indiquant le pourcentage le plus élevé d'occupation du disque de tout disque contribuant à la capacité de ce pool de stockage. L'utilisation du disque n'est pas forcément synonyme de performances de la baie. L'utilisation peut être élevée en raison des reconstructions des disques et des activités de déduplication, etc. En l'absence de charges de travail pilotées par l'hôte. De plus, les implémentations de réplication de nombreuses baies peuvent conduire à l'utilisation du disque sans apparaître comme volume interne ou charge de travail du volume.
-* IOPS : somme des IOPS de tous les disques qui fournissent la capacité à ce pool de stockage. Débit : somme du débit de tous les disques qui fournissent la capacité à ce pool de stockage.
+* IOPS : somme des IOPS de tous les volumes affectés sur ce pool de stockage.
+* Débit : somme du débit de tous les volumes affectés sur ce pool de stockage.
 
 
 
@@ -92,6 +88,25 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 
 | Mot de passe | Mot de passe pour le cluster NetApp 
 |===
+
+
+== Mesures avancées
+
+Ce collecteur de données collecte les mesures avancées suivantes à partir du système FSX pour le stockage NetApp ONTAP :
+
+* fpolicy
+* nfsv3
+* nfsv3:nœud
+* nfsv4
+* nfsv4_1
+* nfsv4_1:nœud
+* nfsv4:nœud
+* groupe_de_règles
+* qtree
+* volumétrie
+* volume_charge_de_travail
+
+
 
 
 == Dépannage
