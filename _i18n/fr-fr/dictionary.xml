@@ -2935,7 +2935,6 @@
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">Lors de l'installation de l'agent, un utilisateur local _cssys_ et un groupe local _cssys_ sont créés sur l'ordinateur. Si les paramètres d'autorisation n'autorisent pas la création d'un utilisateur local et nécessitent à la place Active Directory, un utilisateur avec le nom d'utilisateur _cssys_ doit être créé dans le serveur Active Directory.</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">Procédure d'installation de l'agent</block>
   <block id="fc62cd9124318118e4abaac940b4a091" category="list-text">Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Cloud Secure.</block>
-  <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">Cliquez sur *Admin &gt; Data Collectors &gt; agents &gt; +Agent*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">Le système affiche la page Ajouter un agent :</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">Ajouter un agent 1</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">Vérifiez que le serveur agent répond à la configuration système minimale requise.</block>
@@ -10711,4 +10710,5 @@
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">Désinstallez l'agent telegraf, puis relancez le script d'installation. Suivez les étapes *mettre à niveau l'agent* de cette page pour votre plate-forme appropriée.</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">Les alertes par e-mail sont reçues 24 heures après la détection d'une attaque. Dans l'interface utilisateur, les alertes s'affichent 24 heures avant la réception des e-mails par Cloud Insights Workload Security.</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">Lorsque ONTAP envoie l'événement _ransomware Detected_ à la charge de travail Cloud Insights (c'est-à-dire Cloud Secure), l'e-mail est envoyé. L'événement contient une liste d'attaques et de ses horodatages. L'interface utilisateur de la sécurité de la charge de travail affiche l'horodatage d'alerte du premier fichier attaqué. ONTAP envoie l'événement _ransomware détecté_ à Cloud Insights lorsqu'un certain nombre de fichiers sont encodés. Par conséquent, il peut y avoir une différence entre l'heure d'affichage de l'alerte dans l'interface utilisateur et l'heure d'envoi de l'e-mail.</block>
+  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">Dans le menu *sécurité*, sélectionnez *Admin &gt; Data Collectors &gt; agents &gt; +Agent*</block>
 </blocks>
