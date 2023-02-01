@@ -6195,7 +6195,6 @@
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="summary">Cloud Secure utilise des collecteurs de données pour collecter les données d'accès des fichiers et des utilisateurs à partir de terminaux.</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">Configuration de Cloud Volumes ONTAP et d'Amazon FSX pour NetApp ONTAP Collector</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">Configuration du stockage Cloud Volumes ONTAP</block>
-  <block id="3760923e63b2ef4cd5a4ef21ab164f35" category="paragraph">Consultez la documentation de OnCommand Cloud Manager pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent Cloud Secure :<block ref="3a865d6888eced2f74a21bc9d0b68884" category="inline-link-rx"></block></block>
   <block id="60b02ea35fab7476f0f0cf2d8cfc680d" category="paragraph">Une fois la configuration terminée, suivre les étapes de configuration de votre SVM :<block ref="91221d0756e81d23329189ffc4e6701a" category="inline-link-rx"></block></block>
   <block id="4aa02491d3ee690a6a014b190a75060e" category="section-title">Plateformes prises en charge</block>
   <block id="bf6a182a4bf96601e8aa50ed356b9b9f" category="list-text">Cloud Volumes ONTAP, pris en charge dans tous les fournisseurs de services cloud disponibles, là où il est disponible. Par exemple : Amazon, Azure et Google Cloud.</block>
@@ -10725,4 +10724,5 @@
   <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">nfsv4:nœud</block>
   <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">groupe_de_règles</block>
   <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">volume_charge_de_travail</block>
+  <block id="eb7df28f88bc327c30fcc0b6ef2648ff" category="paragraph">Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent Cloud Secure :<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
 </blocks>

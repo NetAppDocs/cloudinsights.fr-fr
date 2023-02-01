@@ -15,7 +15,7 @@ Cloud Secure utilise des collecteurs de données pour collecter les données d'a
 
 == Configuration du stockage Cloud Volumes ONTAP
 
-Consultez la documentation de OnCommand Cloud Manager pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent Cloud Secure :https://docs.netapp.com/us-en/occm/index.html[]
+Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent Cloud Secure :https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
 Une fois la configuration terminée, suivre les étapes de configuration de votre SVM :https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
