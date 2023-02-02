@@ -10,32 +10,34 @@ summary: Bienvenue sur le portail de documentation de Cloud Insights.
 [role="lead"]
 NetApp Cloud Insights est un outil de surveillance de l'infrastructure cloud qui permet de bénéficier d'une grande visibilité sur l'ensemble de l'infrastructure. Avec Cloud Insights, vous pouvez surveiller toutes les ressources, les optimiser et résoudre les problèmes, y compris dans les clouds publics et dans vos data centers privés.
 
-Cloud Insights peut vous aider à :
-
-* *Réduire le temps moyen de résolution de 90 %*
-+
-Grâce à la topologie dynamique et à l'analyse de corrélation, qui permet de localiser immédiatement la zone problématique, vous n'avez plus besoin de rechercher dans les journaux et de corréler manuellement l'infrastructure.
-
-* *Réduire les coûts de l'infrastructure cloud de 33 % en moyenne*
-+
-Éliminez les inefficacités en détectant les ressources abandonnées ou inutilisées et en déplaçant les charges de travail vers leurs tiers de coûts et de performance optimisés.
-
-* *Prévenir jusqu'à 80 % des problèmes de cloud d'affecter les utilisateurs finaux*
-+
-Recherchez finale les problèmes dans de vastes quantités de données, et utilisez l'analytique avancée et l'apprentissage machine pour les détecter avant qu'ils ne deviennent critiques
 
 
+== Que peut m'apporter Cloud Insights ?
 
+Cloud Insights offre un contrôle multicloud hybride tout en garantissant l'observabilité de l'infrastructure et des charges de travail.
+
+* Collecteurs de données pour infrastructure et workloads hétérogènes, y compris Kubernetes
+* Ouvrez le collecteur Telegraf et les API ouvertes pour faciliter l'intégration
+* Alertes et notifications complètes
+* Machine learning pour des informations exploitables
+* Optimisez l'utilisation des ressources
+* Tableaux de bord intégrés ou personnalisables avec filtres avancés pour réduire le bruit d'affichage afin de répondre aux questions
+* Découvrez l'état de santé des opérations de stockage ONTAP 
+* Protégez vos ressources les plus précieuses : les données contre les attaques par ransomware ou les destructions de données
+
+
+'''
 
 
 == Mise en route
 
-* Je suis un nouveau client : link:task_cloud_insights_onboarding_1.html["Intégration"]
-* Je m'inscrit : que dois-je faire maintenant ?link:task_getting_started_with_cloud_insights.html["Acquisition des données"]
+* Comment faire link:task_cloud_insights_onboarding_1.html["*lancez-vous*"] Avec Cloud Insights ?
+* Je suis inscrit. Que dois-je faire maintenant ?link:task_getting_started_with_cloud_insights.html["Acquisition des données"]
 link:concept_user_roles.html["Configuration des utilisateurs"]
-* Comment tirer le meilleur parti de Cloud Insights ?link:task_defining_annotations.html["Préparation des ressources : annotation"]
+* Génial ! Et la suite ?link:task_defining_annotations.html["Préparation des ressources : annotation"]
 link:concept_querying_assets.html["Recherche des ressources que vous voulez : interrogation"]
 link:concept_dashboards_overview.html["Voir les données que vous voulez : tableaux de bord"]
 link:https:task_create_monitor.html["Surveillance et alertes"]
-* J'ai essayé Cloud Insights et maintenant je suis prêt à link:concept_subscribing_to_cloud_insights.html["*abonnez-vous*"].
+link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["Sécurisation des données"]
+* C'est super ! Je suis prêt à link:concept_subscribing_to_cloud_insights.html["*abonnez-vous*"].
 
