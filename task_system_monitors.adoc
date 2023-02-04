@@ -661,6 +661,81 @@ Les moniteurs système actuellement fournis avec Cloud Insights sont les suivant
 
 
 
+=== Moniteurs d'alimentation, de fréquence cardiaque et divers systèmes supplémentaires
+
+|===
+| Nom du moniteur | Gravité | Description du moniteur | Action corrective 
+
+
+| Alimentation du tiroir disque détectée | INFORMATIF | Ce message survient lors de l'ajout d'une unité d'alimentation au tiroir disque. | AUCUNE 
+
+
+| Blocs d'alimentation des tiroirs disques supprimés | INFORMATIF | Ce message survient lorsqu'une unité d'alimentation est retirée du tiroir disque. | AUCUNE 
+
+
+| MetroCluster basculement automatique non planifié désactivé | PRIMORDIAL | Ce message survient lorsque la fonctionnalité de basculement automatique non planifié est désactivée. | Exécutez la commande « MetroCluster modify -node-name <nodename> -Automatic-switchover-onfailure true » pour chaque nœud du cluster afin d'activer le basculement automatique. 
+
+
+| Pont de stockage MetroCluster inaccessible | PRIMORDIAL | Le pont de stockage est inaccessible sur le réseau de gestion | 1) si le pont est surveillé par SNMP, vérifier que le LIF de node management fonctionne à l'aide de la commande « network interface show ». Vérifiez que le pont est actif à l'aide de la commande « ping réseau ». 2) si le pont est surveillé en bande, vérifiez le câblage de la structure du pont, puis vérifiez que le pont est sous tension. 
+
+
+| Température du pont MetroCluster anormale - inférieure à la valeur critique | PRIMORDIAL | Le capteur sur le pont Fibre Channel signale une température inférieure au seuil critique. | 1) Vérifiez l'état de fonctionnement des ventilateurs sur le pont de stockage. 2) vérifier que le pont fonctionne dans des conditions de température recommandées. 
+
+
+| Température du pont MetroCluster anormale - supérieure à critique | PRIMORDIAL | Le capteur sur le pont Fibre Channel signale une température supérieure au seuil critique. | 1) vérifier l'état de fonctionnement du capteur de température du châssis sur le pont de stockage à l'aide de la commande « Storage Bridge show -Cooly ». 2) Vérifiez que le pont de stockage fonctionne dans des conditions de température recommandées. 
+
+
+| Agrégat MetroCluster restant derrière | AVERTISSEMENT | L'agrégat a été laissé derrière lors du rétablissement. | 1) Vérifiez l'état de l'agrégat à l'aide de la commande « aggr show ». 2) si l'agrégat est en ligne, retournez-le à son propriétaire initial en utilisant la commande « MetroCluster rétablissement ». 
+
+
+| Tous les liens entre les partenaires MetroCluster sont en panne | PRIMORDIAL | Les adaptateurs d'interconnexion RDMA et les LIF intercluster ont des connexions rompues au cluster de peering ou le cluster de peering est en panne. | 1) s'assurer que les LIFs intercluster sont opérationnels. Réparer les LIFs intercluster si elles sont en panne. 2) Vérifiez que le cluster peering est opérationnel en utilisant la commande « cluster peer ping ». Reportez-vous au Guide de reprise sur incident de MetroCluster si le cluster de peering est arrêté. 3) pour la structure MetroCluster, vérifiez que les liens ISL de la structure back-end sont opérationnels. Corrigez les liens ISL de la structure back-end s'ils ne sont pas affectés. 4) pour les configurations MetroCluster sans structure, vérifier que le câblage est correct entre les adaptateurs d'interconnexion RDMA. Reconfigurez le câblage si les liaisons sont en panne. 
+
+
+| Les partenaires MetroCluster ne sont pas accessibles sur le réseau de peering | PRIMORDIAL | La connectivité au cluster homologue est interrompue. | 1) Assurez-vous que le port est connecté au réseau/commutateur approprié. 2) s'assurer que le LIF intercluster est connecté au cluster peering. 3) Assurez-vous que le cluster peering est opérationnel en utilisant la commande « cluster peer ping ». Reportez-vous au Guide de reprise sur incident de MetroCluster si le cluster de peering est hors service. 
+
+
+| MetroCluster inter basculer toutes les liaisons vers le bas | PRIMORDIAL | Toutes les liaisons ISL (Inter-Switch Link) du commutateur de stockage sont en panne. | 1) réparer les liens ISL de la structure interne sur le commutateur de stockage. 2) Assurez-vous que le commutateur partenaire est opérationnel et que ses liens ISL sont opérationnels. 3) s'assurer que l'équipement intermédiaire, tel que les appareils xWDM, est opérationnel. 
+
+
+| Liaison SAS du nœud MetroCluster vers la pile de stockage | AVERTISSEMENT | L'adaptateur SAS ou son câble connecté peut être défectueux. | 1. Vérifiez que l'adaptateur SAS est en ligne et exécuté. 2. Vérifiez que la connexion du câble physique est sécurisée et opérationnelle, et remplacez le câble si nécessaire. 3. Si l'adaptateur SAS est connecté aux tiroirs disques, assurez-vous que les modules d'E/S et les disques sont correctement installés. 
+
+
+| Initiateurs MetroClusterFC en panne | PRIMORDIAL | L'adaptateur FC initiateur est en panne. | 1. Assurez-vous que la liaison de l'initiateur FC n'a pas été altérée. 2. Vérifiez le statut opérationnel de l'adaptateur FC initiator à l'aide de la commande « system node run -node local -command Storage show adapter ». 
+
+
+| Panne de la liaison de l'interconnexion FC-VI | PRIMORDIAL | La liaison physique du port FC-VI est hors ligne. | 1. S'assurer que la liaison FC-VI n'a pas été altérée. 2. Vérifiez que le statut physique de l'adaptateur FC-VI est « Marche » à l'aide de la commande « MetroCluster Interconnect adapter show ». 3. Si la configuration inclut des commutateurs de structure, assurez-vous qu'ils sont correctement câblés et configurés. 
+
+
+| Les disques de secours MetroCluster se sont laissés derrière | AVERTISSEMENT | Le disque de spare a été laissé au retard lors du rétablissement. | Si le disque n'est pas en panne, retournez-le à son propriétaire initial en utilisant la commande « MetroCluster rétablissement ». 
+
+
+| Port de la passerelle de stockage MetroCluster arrêté | PRIMORDIAL | Le port du Bridge de stockage est hors ligne. | 1) Vérifiez le statut opérationnel des ports sur le pont de stockage à l'aide de la commande « Storage Bridge show -ports ». 2) Vérifiez la connectivité logique et physique au port. 
+
+
+| Panne des ventilateurs du commutateur de stockage MetroCluster | PRIMORDIAL | Le ventilateur du commutateur de stockage est défectueux. | 1) s'assurer que les ventilateurs du commutateur fonctionnent correctement à l'aide de la commande « Storage Switch show -Coolant ». 2) s'assurer que les FRU de ventilateur sont correctement insérées et opérationnelles. 
+
+
+| Commutateur de stockage MetroCluster inaccessible | PRIMORDIAL | Le commutateur de stockage est inaccessible sur le réseau de gestion. | 1) Assurez-vous que la LIF node management est active à l'aide de la commande « network interface show ». 2) s'assurer que l'interrupteur est actif à l'aide de la commande "ping réseau". 3) Assurez-vous que le commutateur est accessible via SNMP en vérifiant ses paramètres SNMP après avoir ouvert une session sur le commutateur. 
+
+
+| Échec des blocs d'alimentation du commutateur MetroCluster | PRIMORDIAL | Une unité d'alimentation sur le commutateur de stockage n'est pas opérationnelle. | 1) Vérifiez les détails d'erreur à l'aide de la commande « Storage Switch show -error -switch-name <swtich name> ». 2) identifier l'unité d'alimentation défectueuse à l'aide de la commande « Storage switch show -power -switch-name <switch name> ». 3) Assurez-vous que le bloc d'alimentation est correctement inséré dans le châssis du commutateur de stockage et qu'il est entièrement opérationnel. 
+
+
+| Défaillance des capteurs de température du commutateur MetroCluster | PRIMORDIAL | Le capteur du commutateur Fibre Channel est défectueux. | 1) vérifier l'état de fonctionnement des capteurs de température sur le commutateur de stockage à l'aide de la commande « Storage Switch show -Coolant ». 2) vérifier que le contacteur fonctionne dans des conditions de température recommandées. 
+
+
+| Température du commutateur MetroCluster anormale | PRIMORDIAL | Le capteur de température sur le commutateur Fibre Channel a signalé une température anormale. | 1) vérifier l'état de fonctionnement des capteurs de température sur le commutateur de stockage à l'aide de la commande « Storage Switch show -Coolant ». 2) vérifier que le contacteur fonctionne dans des conditions de température recommandées. 
+
+
+| Absence de signal de détection du processeur de service | INFORMATIF | Ce message apparaît lorsque ONTAP ne reçoit pas de signal de « pulsation » attendu du processeur de service. En plus de ce message, les fichiers journaux du SP sont envoyés pour débogage. ONTAP réinitialise le processeur de service pour tenter de restaurer la communication. Le processeur de service est indisponible pendant deux minutes maximum lorsqu'il redémarre. | Contactez le support technique NetApp. 
+
+
+| Signal de détection du processeur de service arrêté | AVERTISSEMENT | Ce message survient lorsque ONTAP ne reçoit plus les pulsations de l'ensemble du processeur de service. Selon la conception matérielle, le système peut continuer à transmettre des données ou décider de s'arrêter afin d'éviter toute perte de données ou tout dommage matériel. Le système continue de fournir des données, mais comme le SP ne fonctionne peut-être pas, le système ne peut pas envoyer de notifications concernant les dispositifs en panne, les erreurs de démarrage ou les erreurs D'autotest de mise sous tension (POST) d'Open Firmware (OFW). Si votre système est configuré pour ce faire, il génère et transmet un message AutoSupport (ou « appel en cas d'incident ») au support technique NetApp et aux destinations configurées. La transmission réussie d'un message AutoSupport améliore considérablement la détermination et la résolution des problèmes. | Si le système s'est arrêté, essayez de mettre hors tension puis sous tension le système : retirez le contrôleur du châssis, poussez-le de nouveau, puis mettez le système sous tension. Si le problème persiste après la mise hors/sous tension ou pour tout autre condition susceptible de justifier votre intervention, contactez le support technique NetApp. 
+|===
+<<top,Haut de la page>>
+
+
+
 == Plus d'informations
 
 * link:task_view_and_manage_alerts.html["Affichage et rejet des alertes"]

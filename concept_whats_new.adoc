@@ -12,6 +12,26 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+== Janvier 2023
+
+
+
+=== Nouveaux moniteurs de journaux
+
+Nous avons ajouté près de deux douzaines de personnes link:task_system_monitors.html["moniteurs système supplémentaires"] pour signaler des liaisons d'interconnexion rompues, des problèmes de pulsation, etc. En outre, trois nouveaux moniteurs de journalisation de protection des données ont été ajoutés pour prévenir les modifications de resynchronisation automatique de SnapMirror, de la mise en miroir MetroCluster et de la resynchronisation des miroirs FabricPool.
+
+Notez que certains de ces moniteurs seront _activés_ par défaut ; vous devez les _mettre_ en pause si vous ne souhaitez pas les alerter. Notez également que ces moniteurs ne sont pas configurés pour transmettre des notifications. Vous devez configurer les destinataires de notification sur ces moniteurs si vous souhaitez envoyer des alertes par e-mail ou via webhook.
+
+
+
+=== Exportation .CSV pour tous les widgets de la table du tableau de bord
+
+Il est essentiel de garantir l'accessibilité de vos données, aussi nous avons réalisé l'exportation au format .CSV image:csv_export_icon["icône d'exportation .csv"] disponible pour toutes les requêtes de mesures, les widgets de tableau de bord et les pages d'arrivée d'objets, quel que soit le type de données (ressource ou intégration) que vous interrorez.
+
+Les personnalisations de données telles que la sélection de colonnes, le changement de nom des colonnes et les conversions d'unités sont désormais incluses dans la nouvelle fonctionnalité d'exportation.
+
+
+
 == Décembre 2022
 
 

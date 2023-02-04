@@ -12,24 +12,19 @@ keywords: query, queries, export, csv
 Vous pouvez exporter les résultats de n'importe quelle requête dans un fichier .CSV, qui vous permettra d'analyser les données ou de les importer dans une autre application.
 
 .Étapes
-. Connectez-vous à votre locataire Cloud Insights.
+. Connectez-vous à Cloud Insights.
 . Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*.
 +
 La page requêtes s'affiche.
 
 . Cliquez sur une requête.
 . Cliquez sur image:ExportButton.png["Bouton Exporter"] Pour exporter les résultats de la requête dans un fichier .CSV.
-. Lorsque vous y êtes invité, effectuez l'une des opérations suivantes :
-+
-.. Cliquez sur *Ouvrir avec*, puis sur *OK* pour ouvrir le fichier avec Microsoft Excel et enregistrer le fichier à un emplacement spécifique.
-.. Cliquez sur *Enregistrer le fichier*, puis sur *OK* pour enregistrer le fichier dans votre dossier Téléchargements.
 
 
 
+NOTE: L'exportation au format .CSV est également disponible dans le menu « trois points » des widgets de tableau de bord, ainsi que dans la plupart des tables de pages d'accueil.
 
-Tous les attributs des objets dans les colonnes sélectionnées pour l'affichage sont exportés vers le fichier, que ces attributs soient affichés ou non.
-
-Lors de l'exportation des résultats de la requête, sachez que toutes les lignes du tableau des résultats seront exportées, pas seulement celles sélectionnées ou affichées à l'écran, jusqu'à un maximum de 10,000 lignes.
+Les données exportées reflètent le filtrage, les colonnes et les noms de colonne affichés.
 
 Remarque : lorsqu'une virgule apparaît dans le nom d'un bien, l'exportation enferme le nom dans les guillemets, en préservant le nom du bien et le format .csv approprié.
 
