@@ -12,7 +12,7 @@ summary: Collecteur de données NetApp Config Advisor
 Ce collecteur de données acquiert les données de configuration des systèmes de stockage exécutant ONTAP et des commutateurs connectés en utilisant des appels en lecture seule. Ce Data Collector exécute également la validation de la configuration et des contrôles d'état sur l'ensemble de la pile de la configuration du cluster ONTAP afin d'identifier les problèmes de câblage, de configuration, de résilience, de disponibilité et de sécurité.
 
 
-NOTE: Config Advisor est considéré comme une fonction _Preview_ et est donc susceptible d'être modifiée. Pendant l'aperçu, aucun coût d'UM n'est engagé.
+NOTE: Ce collecteur de données est link:task_getting_started_with_cloud_insights.html#useful-definitions["obsolète"].
 
 
 

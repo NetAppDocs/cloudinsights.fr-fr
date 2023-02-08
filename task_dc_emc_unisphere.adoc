@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere.html 
+keywords: data collector, Unisphere, EMC 
+summary: Configuration du collecteur de données REST Dell EMC Unisphere. 
+---
+= Configuration du collecteur de données REST Dell EMC Unisphere
+:allow-uri-read: 
+
+
+[role="lead"]
+Cette page est un stub. Pour obtenir la documentation Unisphere la plus récente, reportez-vous à la section link:task_dc_emc_unisphere_rest.html["*cette page*"].

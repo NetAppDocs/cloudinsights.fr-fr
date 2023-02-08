@@ -53,7 +53,6 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 * Créez une nouvelle stratégie d'attaque ou modifiez une stratégie d'attaque existante.
 * Sélectionnez les SVM sur lesquels la règle d'attaque doit être contrôlée.
 * Cliquez sur la case à cocher "bloquer l'accès aux fichiers utilisateur". La fonction sera activée lorsque cette option est sélectionnée.
-* Sous « limiter l'accès utilisateur », sélectionnez le mode de restriction à appliquer.
 * Sous “time period”, sélectionnez la durée jusqu'à laquelle le blocage doit être appliqué.
 * Pour tester le blocage automatique de l'utilisateur, vous pouvez simuler une attaque via un link:concept_cs_attack_simulator.html["script simulé"].
 

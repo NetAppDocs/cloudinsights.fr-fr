@@ -5359,7 +5359,6 @@
   <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">Collecteur de données NetApp Config Advisor</block>
   <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">Collecteur de données NetApp Config Advisor</block>
   <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">Ce collecteur de données acquiert les données de configuration des systèmes de stockage exécutant ONTAP et des commutateurs connectés en utilisant des appels en lecture seule. Ce Data Collector exécute également la validation de la configuration et des contrôles d'état sur l'ensemble de la pile de la configuration du cluster ONTAP afin d'identifier les problèmes de câblage, de configuration, de résilience, de disponibilité et de sécurité.</block>
-  <block id="6db4c00428e1d05aeb71deccf277b6e0" category="admonition">Config Advisor est considéré comme une fonction _Preview_ et est donc susceptible d'être modifiée. Pendant l'aperçu, aucun coût d'UM n'est engagé.</block>
   <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights acquiert les données de configuration de ONTAP et des commutateurs avec le collecteur de données Config Advisor. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
   <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">liste déroulante affichant l'étiquette métrique config advisor</block>
   <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">Notez également que les metrics de Config Advisor seront disponibles dans le tableau de bord et d'autres requêtes portant la balise _netapp_ontap.configAdvisor_.<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
@@ -5532,7 +5531,6 @@
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">Créez une nouvelle stratégie d'attaque ou modifiez une stratégie d'attaque existante.</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">Sélectionnez les SVM sur lesquels la règle d'attaque doit être contrôlée.</block>
   <block id="83fce3228306e4223f72e5a98ed7923e" category="list-text">Cliquez sur la case à cocher "bloquer l'accès aux fichiers utilisateur". La fonction sera activée lorsque cette option est sélectionnée.</block>
-  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">Sous « limiter l'accès utilisateur », sélectionnez le mode de restriction à appliquer.</block>
   <block id="982ff1f57d1f125e6f9bb1f94dcef71e" category="list-text">Sous “time period”, sélectionnez la durée jusqu'à laquelle le blocage doit être appliqué.</block>
   <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">script simulé</block>
   <block id="37ac66ca624ac1ac8ee1db2467276dc8" category="list-text">Pour tester le blocage automatique de l'utilisateur, vous pouvez simuler une attaque via un <block ref="c144f5bb29c4478b376c3856feebe3da" category="inline-link-macro-rx"></block>.</block>
@@ -10804,4 +10802,6 @@
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">Connectez-vous à Cloud Insights.</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">L'exportation au format .CSV est également disponible dans le menu « trois points » des widgets de tableau de bord, ainsi que dans la plupart des tables de pages d'accueil.</block>
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">Les données exportées reflètent le filtrage, les colonnes et les noms de colonne affichés.</block>
+  <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*cette page*</block>
+  <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">Cette page est un stub. Pour obtenir la documentation Unisphere la plus récente, reportez-vous à la section <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>.</block>
 </blocks>
