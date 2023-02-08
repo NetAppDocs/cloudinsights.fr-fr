@@ -436,7 +436,10 @@ Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation
 
 == Réglage de l'opérateur
 
-Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.
+Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Pour obtenir des instructions et des listes des variables que vous pouvez régler, reportez-vous au fichier README fourni avec le package d'installation. Après avoir installé l'opérateur, utilisez la commande suivante pour afficher le fichier README :
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+//// - commencer la section de réglage vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.
 
 Pour modifier ces valeurs, modifiez la demande de modification de l'agent à l'aide de la commande suivante (en remplaçant <namespace> par votre espace de noms) :
 
@@ -542,6 +545,8 @@ Voir https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#ag
 
 | CURL_CMD_PLACEHOLDER | agent | oui | La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k » 
 |===
+/// - fin de la section de réglage
+
 
 
 == Dépannage
