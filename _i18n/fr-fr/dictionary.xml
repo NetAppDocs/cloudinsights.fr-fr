@@ -5851,7 +5851,6 @@
   <block id="cef7a1ce5721683d9793e2eee4d38e9c" category="section-title">Pour supprimer l'agent obsolète basé sur le script</block>
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">Notez que ces commandes utilisent l'espace de noms par défaut « ci-monitoring ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.</block>
   <block id="0b17bce222385cebd477477b188e6434" category="paragraph">Pour désinstaller l'agent basé sur un script sur Kubernetes (par exemple, lors de la mise à niveau vers l'opérateur de surveillance NetApp Kubernetes), procédez comme suit :</block>
-  <block id="98e7ede570d702984a8e51f5e4f2020c" category="section-title">Pour supprimer l'opérateur de surveillance NetApp Kubernetes</block>
   <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">Notez que l'espace de noms par défaut pour l'opérateur de surveillance NetApp Kubernetes est « surveillance netapp ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.</block>
   <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">Les nouvelles versions de l'opérateur de surveillance peuvent être désinstallées à l'aide des commandes suivantes :</block>
   <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">Si la première commande renvoie “aucune ressource trouvée”, suivez les instructions ci-dessous pour désinstaller les anciennes versions de l’opérateur de surveillance.</block>
@@ -9112,55 +9111,6 @@
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 nouveaux moniteurs ONTAP par défaut couvrant SnapMirror pour la continuité de l'activité</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">Réglage de l'opérateur</block>
-  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">Variables liées aux ressources</block>
-  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">Voir<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> Pour plus d'informations sur les ressources Kubernetes.</block>
-  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">Emplacement réservé</block>
-  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">Nom du plug-in</block>
-  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">Inclus dans la CR par défaut</block>
-  <block id="b4706783c74b583b849dec44244e0769" category="cell">DS_CPU_LIMITS_PLACEHOLDER</block>
-  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">agent</block>
-  <block id="a6105c0a611b41b08f1209506350279e" category="cell">oui</block>
-  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Limite du processeur Kubernetes pour telegraf-ds</block>
-  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_LIMITS_PLACEHOLDER</block>
-  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">Limite Kubernetes mem pour telegraf-ds</block>
-  <block id="6787619d810a62301cfe3986961a1d04" category="cell">DS_CPU_REQUEST_PLACEHOLDER</block>
-  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Demandes de processeurs Kubernetes pour telegraf-ds</block>
-  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_REQUEST_PLACEHOLDER</block>
-  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Demandes de mémoire Kubernetes pour telegraf-ds</block>
-  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">RS_CPU_LIMITS_PLACEHOLDER</block>
-  <block id="b2099247c65bb590909309709da41854" category="cell">Limite du processeur Kubernetes pour telegraf-RS.</block>
-  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">RS_MEM_LIMITS_PLACEHOLDER</block>
-  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">Limite Kubernetes mem pour telegraf-RS</block>
-  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">PARAMÈTRE FICTIF_DEMANDE_CPU_RS</block>
-  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Demandes de processeurs Kubernetes pour telegraf-RS</block>
-  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">RS_MEM_REQUEST_PLACEHOLDER</block>
-  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Demandes de mémoire Kubernetes pour telegraf-RS</block>
-  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REQUEST_PLACEHOLDER :</block>
-  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">ksm</block>
-  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Demandes de processeur Kubernetes pour le déploiement de metrics d'état kube</block>
-  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REQUEST_PLACEHOLDER :</block>
-  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">Variables liées à Telegraf</block>
-  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">Voir<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> pour plus d'informations sur les variables telegraf.</block>
-  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">COLLECTION_INTERVAL_PLACEHOLDER</block>
-  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">non</block>
-  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">(Définit l'intervalle telegraf, l'intervalle de type) : le temps par défaut telegraf attend entre les entrées de tous les plugins. Les unités de temps valides sont les ns, nous (ou µs), ms, s, m, h.</block>
-  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">ROUND_INTERVAL_PLACEHOLDER</block>
-  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">(définit telegraf round_interval, type booléen) collecte des mesures sur plusieurs intervalles</block>
-  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">MÉTRIQUE_BATCH_SIZE_PLACEHOLDER</block>
-  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">(définit telegraf metric_batch_size, type int) le nombre maximum d'enregistrements pour une sortie telegraf écrit dans un batch</block>
-  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">PARAMÈTRE_BUFFER_LIMIT_PLACEHOLDER</block>
-  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">(définit telegraf metric_buffer_limit, type int) le nombre maximum d'enregistrements pour une sortie telegraf va mettre en cache en attente d'une écriture réussie</block>
-  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">COLLECTION_GIGUE_PLACEHOLDER</block>
-  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">(Définit telegraf collection_gigue, type interval) : chaque plug-in attend une durée aléatoire entre l'heure de collecte planifiée et cette heure + collection_gigue avant de collecter les entrées</block>
-  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">PARAMÈTRE FICTIF DE PRÉCISION</block>
-  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">(Définit la précision de télégraf, intervalle de type) : les mesures collectées sont arrondies à la précision spécifiée, lorsque la précision définie sur « 0 » est définie par les unités spécifiées par intervalle</block>
-  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">FLUSH_INTERVAL_PLACEHOLDER</block>
-  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">(Définit telegraf flush_interval, type interval) : durée par défaut, telegraf attend entre les sorties d'écriture.</block>
-  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">FLUSH_GIGUE_PLACEHOLDER</block>
-  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">(Définit telegraf flush_gigue, intervalle de type) : chaque sortie attend une durée aléatoire entre la durée d'écriture programmée et cette durée + flush_gigue avant d'écrire les sorties</block>
-  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Variables diverses</block>
-  <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLACEHOLDER</block>
-  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k »</block>
   <block id="eab883150545736105e8c88087257995" category="section-title">SnapMirror pour les moniteurs de journaux de l'utilitaire de continuité de l'activité (SMBC)</block>
   <block id="e0828fd72232d137dafad759271fe0fb" category="cell">ONTAP Mediator ajouté</block>
   <block id="46f05e41dafc7ca3fdb415dafaeadb9f" category="cell">Ce message s'affiche lorsque le médiateur ONTAP est correctement ajouté à un cluster.</block>
@@ -9217,10 +9167,6 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas besoin d'être défini.</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est installée et que vous utilisez un jeton d'accès API renouvelable, les jetons arrivant à expiration seront automatiquement remplacés par des jetons d'accès à l'API nouveaux ou actualisés. Il n'est pas nécessaire d'effectuer les étapes manuelles indiquées ci-dessous.</block>
-  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">Pour modifier ces valeurs, modifiez la demande de modification de l'agent à l'aide de la commande suivante (en remplaçant &lt;namespace&gt; par votre espace de noms) :</block>
-  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">La spécification CR suit le format :</block>
-  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l'agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.</block>
-  <block id="3f60b096843929b02e1a070f57e27584" category="cell">Nom de variable</block>
   <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">csuser</block>
   <block id="a8f52a9563e47eb33fbdc4c48dfcf8f5" category="paragraph">Notez que lors de l'ajout de _<block ref="d95c3cfe38a15370491721a373f38df2" category="inline-link-macro-rx"></block>_, cet utilisateur requiert un accès SSH au LIF de gestion ONTAP.</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">Configuration du collecteur de données REST Dell EMC Unisphere.</block>
@@ -10804,6 +10750,5 @@
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*cette page*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">Cette page est un stub. Pour obtenir la documentation Unisphere la plus récente, reportez-vous à la section <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>.</block>
   <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Pour obtenir des instructions et des listes des variables que vous pouvez régler, reportez-vous au fichier README fourni avec le package d'installation. Après avoir installé l'opérateur, utilisez la commande suivante pour afficher le fichier README :</block>
-  <block id="60adfc96965dc4b561d28aa82001462f" category="paragraph">//// - commencer la section de réglage vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Voir les tableaux suivants pour les variables que vous pouvez définir.</block>
-  <block id="6bfc80ca044f246ded7fc934d4dacbaa" category="paragraph">/// - fin de la section de réglage</block>
+  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Pour supprimer l'opérateur de surveillance NetApp Kubernetes</block>
 </blocks>
