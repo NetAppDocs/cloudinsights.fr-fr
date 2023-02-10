@@ -5804,7 +5804,6 @@
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">Recherchez le champ _netapp-monitoring_ &lt;version&gt; à l'aide de la commande suivante :</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise.</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">Si Fluent-bit est activé, téléchargez également :</block>
-  <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo, désactivez la mise à niveau automatique (si elle est activée).</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">Dans la section _spec:_, effectuez les modifications suivantes :</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">Instructions OpenShift</block>
   <block id="725add584c7b017b758ee4ca5893c90a" category="paragraph">Si vous exécutez OpenShift 4.6 ou version ultérieure, vous devez modifier le paramètre « mode privilégié ». Exécutez la commande suivante pour ouvrir l'agent en vue de sa modification. Si vous utilisez un namespace autre que « NetApp-monitoring », spécifiez ce namespace dans la ligne de commande :</block>
@@ -10751,4 +10750,6 @@
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">Cette page est un stub. Pour obtenir la documentation Unisphere la plus récente, reportez-vous à la section <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>.</block>
   <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Pour obtenir des instructions et des listes des variables que vous pouvez régler, reportez-vous au fichier README fourni avec le package d'installation. Après avoir installé l'opérateur, utilisez la commande suivante pour afficher le fichier README :</block>
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Pour supprimer l'opérateur de surveillance NetApp Kubernetes</block>
+  <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance et modifiez toutes les références d'image pour utiliser le nouvel emplacement docker repo :</block>
+  <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo.</block>
 </blocks>
