@@ -5425,8 +5425,6 @@
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Cloud Insights.</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">Si vous souhaitez associer l'application à une entité métier, vous devez créer l'entité métier avant de définir l'application.</block>
   <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">Cloud Insights vous permet de suivre les données issues des ressources associées à des applications pour des éléments tels que l'utilisation ou le reporting des coûts.</block>
-  <block id="6d9d461026a19a3d065af99db5765921" category="paragraph">. Dans le menu Cloud Insights, cliquez sur *gérer &gt; applications*.</block>
-  <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+ la boîte de dialogue Ajouter une application s'affiche.</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">Saisissez un nom unique pour l'application.</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">Sélectionnez une priorité pour l'application.</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Cliquez sur *Enregistrer*.</block>
@@ -5747,7 +5745,6 @@
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Avant d'installer NetApp Kubernetes Monitoring Operator</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">Conditions préalables :</block>
-  <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Télégraf : 1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">indicateurs d'état kube : v2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">bit fluide : 1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">L'installation de NetApp Kubernetes Monitoring Operator est prise en charge avec Kubernetes version 1.20 ou ultérieure.</block>
@@ -6249,8 +6246,6 @@
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">*Linux:*</block>
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">Sur le serveur/VM de l'unité d'acquisition, exécutez la commande suivante :</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">Pour obtenir de l'aide sur la désinstallation, exécutez :</block>
-  <block id="ec62359e3a6ba69aa52f3e51f45e7418" category="paragraph">*Les deux:*</block>
-  <block id="0de5666c48f0424cee331c8922fd923a" category="list-text">Après avoir désinstallé le logiciel au, accédez à *Admin &gt; Data Collectors* et sélectionnez l'onglet *unités d'acquisition*.</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez désinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.</block>
   <block id="4262a364178344226a6201df72deaa22" category="paragraph">REMARQUE : vous ne pouvez pas supprimer l'unité d'acquisition par défaut. Sélectionnez une autre UA comme valeur par défaut avant de supprimer l'ancienne.</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Réinstallation d'une unité d'acquisition</block>
@@ -10752,4 +10747,12 @@
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Pour supprimer l'opérateur de surveillance NetApp Kubernetes</block>
   <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance et modifiez toutes les références d'image pour utiliser le nouvel emplacement docker repo :</block>
   <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">Modifiez la demande de modification de l'agent pour qu'elle reflète le nouvel emplacement de docker Repo.</block>
+  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">Dans le menu Cloud Insights, cliquez sur *gérer &gt; applications*.</block>
+  <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">La boîte de dialogue Ajouter une application s'affiche.</block>
+  <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Télégraf : 1.25.0</block>
+  <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Si vous désinstallez une unité d'acquisition *Windows* :</block>
+  <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Si vous désinstallez une unité d'acquisition *Linux* :</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows et Linux:*</block>
+  <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Après* désinstallation de l'au:</block>
+  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Dans Cloud Insights, accédez à *Admin &gt; collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*.</block>
 </blocks>

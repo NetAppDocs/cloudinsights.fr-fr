@@ -19,15 +19,14 @@ Cloud Insights vous permet de suivre les données issues des ressources associé
 
 .Étapes
 . Dans le menu Cloud Insights, cliquez sur *gérer > applications*.
-
-+ la boîte de dialogue Ajouter une application s'affiche.
++
+La boîte de dialogue Ajouter une application s'affiche.
 
 . Saisissez un nom unique pour l'application.
 . Sélectionnez une priorité pour l'application.
 . Cliquez sur *Enregistrer*.
 
 
-.Une fois que vous avez terminé
 Après avoir défini une application, elle peut être affectée à des actifs.
 
 

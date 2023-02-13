@@ -153,13 +153,19 @@ Si vous avez Cloud Secure dans votre environnement, les URL de point final confi
 
 Pour désinstaller le logiciel de l'unité d'acquisition, procédez comme suit :
 
+'''
 *Windows:*
+
+Si vous désinstallez une unité d'acquisition *Windows* :
 
 . Sur le serveur/VM de l'unité d'acquisition, ouvrez le panneau de configuration et choisissez *Désinstaller un programme*. Sélectionnez le programme d'unité d'acquisition Cloud Insights à supprimer.
 . Cliquez sur Désinstaller et suivez les invites.
 
 
+'''
 *Linux:*
+
+Si vous désinstallez une unité d'acquisition *Linux* :
 
 . Sur le serveur/VM de l'unité d'acquisition, exécutez la commande suivante :
 +
@@ -169,14 +175,18 @@ Pour désinstaller le logiciel de l'unité d'acquisition, procédez comme suit :
  sudo cloudinsights-uninstall.sh --help
 
 
-*Les deux:*
+'''
+*Windows et Linux:*
 
-. Après avoir désinstallé le logiciel au, accédez à *Admin > Data Collectors* et sélectionnez l'onglet *unités d'acquisition*.
+*Après* désinstallation de l'au:
+
+. Dans Cloud Insights, accédez à *Admin > collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*.
 . Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez désinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.
 
 
 REMARQUE : vous ne pouvez pas supprimer l'unité d'acquisition par défaut. Sélectionnez une autre UA comme valeur par défaut avant de supprimer l'ancienne.
 
+'''
 
 
 == Réinstallation d'une unité d'acquisition

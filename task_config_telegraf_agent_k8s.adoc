@@ -25,7 +25,7 @@ image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
 .Conditions préalables :
 * Veuillez noter les versions de composants suivantes. Il s'agit des versions _requises_ actuelles incluses avec l'opérateur de surveillance NetApp Kubernetes. Vous devrez particulièrement noter ces versions si vous l'êtes <<using-a-custom-or-private-docker-repository,à l'aide d'un référentiel docker personnalisé ou privé>>:
 +
-** Télégraf : 1.24.0
+** Télégraf : 1.25.0
 ** kube-rbac-proxy: v0.13.0
 ** indicateurs d'état kube : v2.6.0
 ** bit fluide : 1.9.8
