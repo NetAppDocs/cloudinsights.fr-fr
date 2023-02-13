@@ -176,7 +176,7 @@ Si vous désinstallez une unité d'acquisition *Linux* :
 
 
 '''
-*Windows et Linux:*
+ec62359e3a6ba69aa52f3e51f45e7418
 
 *Après* désinstallation de l'au:
 
