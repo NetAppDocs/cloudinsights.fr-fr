@@ -257,9 +257,8 @@ Pour mettre à niveau l'agent telegraf, procédez comme suit :
 . Notez le nom de votre cluster comme reconnu par Cloud Insights. Vous pouvez afficher le nom du cluster en exécutant la commande suivante. Si votre espace de noms n'est pas la valeur par défaut (_ci-monitoring_), remplacez l'espace de noms approprié :
 +
  kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-. Sauvegarder les configurations existantes :
-+
- kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . Enregistrez le nom du cluster K8s pour l'installation de la solution de surveillance basée sur l'opérateur pour assurer la continuité des données.
 +
 Si vous ne vous souvenez pas du nom du cluster K8s dans l'IC, il peut être extrait de la configuration enregistrée à l'aide de la ligne de commande suivante :
@@ -294,9 +293,6 @@ Pour les mises à niveau d'installation basées sur l'opérateur, exécutez les 
 * Notez le nom de votre cluster comme reconnu par Cloud Insights. Vous pouvez afficher le nom du cluster en exécutant la commande suivante. Si votre espace de noms n'est pas la valeur par défaut (_netapp-monitoring_), remplacez l'espace de noms approprié :
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* Sauvegarder les configurations existantes :
-+
- kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
 <<to-remove-the-netapp-kubernetes-monitoring-operator,Désinstaller>> L'opérateur actuel.

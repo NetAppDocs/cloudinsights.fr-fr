@@ -5824,7 +5824,6 @@
   <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">Mise à niveau d'un agent basé sur des scripts vers NetApp Kubernetes Monitoring Operator</block>
   <block id="8cf39a7fcad49926187638c2ef3888e4" category="paragraph">Pour mettre à niveau l'agent telegraf, procédez comme suit :</block>
   <block id="ce980eb171cf0f52904feafd9843c0cf" category="list-text">Notez le nom de votre cluster comme reconnu par Cloud Insights. Vous pouvez afficher le nom du cluster en exécutant la commande suivante. Si votre espace de noms n'est pas la valeur par défaut (_ci-monitoring_), remplacez l'espace de noms approprié :</block>
-  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">Sauvegarder les configurations existantes :</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">Enregistrez le nom du cluster K8s pour l'installation de la solution de surveillance basée sur l'opérateur pour assurer la continuité des données.</block>
   <block id="35c735048514e15b96558a336dddd484" category="paragraph">Si vous ne vous souvenez pas du nom du cluster K8s dans l'IC, il peut être extrait de la configuration enregistrée à l'aide de la ligne de commande suivante :</block>
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">Supprimez la surveillance basée sur des scripts</block>
@@ -10754,4 +10753,5 @@
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Si vous désinstallez une unité d'acquisition *Linux* :</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Après* désinstallation de l'au:</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Dans Cloud Insights, accédez à *Admin &gt; collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*.</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows et Linux:*</block>
 </blocks>
