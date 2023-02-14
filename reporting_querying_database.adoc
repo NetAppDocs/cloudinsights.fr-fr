@@ -62,7 +62,7 @@ Essayez des requêtes simples comme
 
 L'URL de tous les appels est _\https://<Cloud Insights URL>/REST/v1/dwh-management/odata_.
 
-* OBTENIR /{schéma}/** - récupère les données de la base de données de rapports, nécessite au moins le rôle _invité_.
+* OBTENIR /{schema}/** - récupère les données de la base de données de rapports.
 
 
 Format : _\https://<Cloud Insights URL>/REST/v1/dwh-management/odata/<nom_schéma>/<requête>_
