@@ -4,14 +4,12 @@ permalink: concept_cs_event_rate_checker.html
 summary: 'Ce script peut être exécuté pour vérifier le taux d"évènement dans le SVM avant d"installer un SVM DSC de ONTAP' 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= Vérificateur des taux d'événements SVM (guide de dimensionnement)
+= 4157783a6d651918a4d418c15ddff12f
 :allow-uri-read: 
 
 
 [role="lead"]
-Le vérificateur de taux d'événement est utilisé pour vérifier le taux d'événement combiné NFS/SMB au sein du SVM avant d'installer un collecteur de données SVM ONTAP, afin de voir le nombre de SVM qu'un ordinateur Agent peut surveiller. Utilisez le vérificateur de taux d'événements comme guide de dimensionnement pour vous aider à planifier vos besoins d'agent.
-
-Un agent peut prendre en charge jusqu'à 50 collecteurs de données.
+eff09a47f0894badbc59afef03e773cb
 
 
 

@@ -10753,7 +10753,4 @@
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows et Linux:*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">OBTENIR /{schema}/** - récupère les données de la base de données de rapports.</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">Ce script peut être exécuté pour vérifier le taux d'évènement dans le SVM avant d'installer un SVM DSC de ONTAP</block>
-  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">Vérificateur des taux d'événements SVM (guide de dimensionnement)</block>
-  <block id="a2d414ab492937f815ce3679fbf45352" category="paragraph">Le vérificateur de taux d'événement est utilisé pour vérifier le taux d'événement combiné NFS/SMB au sein du SVM avant d'installer un collecteur de données SVM ONTAP, afin de voir le nombre de SVM qu'un ordinateur Agent peut surveiller. Utilisez le vérificateur de taux d'événements comme guide de dimensionnement pour vous aider à planifier vos besoins d'agent.</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">Un agent peut prendre en charge jusqu'à 50 collecteurs de données.</block>
 </blocks>
