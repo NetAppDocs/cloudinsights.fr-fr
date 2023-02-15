@@ -4,7 +4,7 @@ permalink: concept_cs_event_rate_checker.html
 summary: 'Ce script peut être exécuté pour vérifier le taux d"évènement dans le SVM avant d"installer un SVM DSC de ONTAP' 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= Vérificateur des taux d'événements SVM (guide de dimensionnement)
+= Vérificateur de taux d'événements SVM (Guide de dimensionnement des agents)
 :allow-uri-read: 
 
 
