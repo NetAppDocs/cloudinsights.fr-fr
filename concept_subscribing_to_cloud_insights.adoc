@@ -98,7 +98,7 @@ Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche imag
 
 == Version d'essai
 
-Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement. Toutes les fonctionnalités de Cloud Insights <<editions,Édition Standard>> sont disponibles pendant cet essai.
+Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement.
 
 Vous pouvez vous abonner à Cloud Insights à tout moment pendant la période d'essai. L'abonnement à Cloud Insights garantit un accès ininterrompu à vos données ainsi qu'un accès prolongé link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*support produit*"] options.
 
