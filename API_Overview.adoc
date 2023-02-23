@@ -113,7 +113,7 @@ L'API Cloud Insights est basée sur la catégorie et contient actuellement les t
 
 D'autres types et/ou API peuvent devenir disponibles au fil du temps. Vous trouverez les dernières informations API dans le link:#api-documentation-swagger["Documentation de swagger API"].
 
-Notez que les types d'API auxquels un utilisateur a accès dépendent également du link:concept_user_roles.html["Rôle utilisateur"] Ils sont dotés dans chaque jeu de fonctions Cloud Insights (surveillance, Cloud Secure, création de rapports).
+Notez que les types d'API auxquels un utilisateur a accès dépendent également du link:concept_user_roles.html["Rôle utilisateur"] Ils sont dotés dans chaque jeu de fonctions Cloud Insights (surveillance, sécurité de la charge de travail, création de rapports).
 
 
 

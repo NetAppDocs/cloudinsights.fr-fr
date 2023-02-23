@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: security_admin_tool.html 
+summary: Cloud Insights suit les bonnes pratiques de sécurité tout au long du cycle de vie de la version. 
+keywords: security, risk, protection 
+---
+= Outil SecurityAdmin
+:allow-uri-read: 
+
+
+[role="lead"]
+Ci comprend des fonctionnalités de sécurité qui permettent aux environnements Insight de fonctionner avec une sécurité renforcée. Les fonctionnalités comprennent des améliorations au cryptage, le hachage des mots de passe et la possibilité de modifier les mots de passe et les paires de clés d'utilisateur internes qui cryptent et décryptent les mots de passe.
+
+Pour protéger vos données sensibles, NetApp vous recommande de modifier les clés par défaut et le mot de passe utilisateur acquisition après une installation ou une mise à niveau.
+
+Les mots de passe cryptés de la source de données sont stockés dans Cloud Insights, qui utilise une clé publique pour chiffrer les mots de passe lorsqu'un utilisateur les saisit dans une page de configuration du collecteur de données. Cloud Insights ne possède pas les clés privées requises pour décrypter les mots de passe du collecteur de données ; seules les unités d'acquisition disposent de la clé privée de collecteur de données requise pour décrypter les mots de passe du collecteur de données.
+
+
+
+== Mise à niveau et installation
+
+Si le système Insight contient des configurations de sécurité autres que celles par défaut (c'est-à-dire que vous avez des mots de passe avec clé de clés à clé), vous devez sauvegarder vos configurations de sécurité. L'installation de nouveaux logiciels ou, dans certains cas, la mise à niveau de logiciels restaure la configuration de sécurité par défaut de votre système. Lorsque votre système revient à la configuration par défaut, vous devez restaurer la configuration non par défaut pour que le système fonctionne correctement.
+
+
+
+== Gestion de la sécurité sur l'unité d'acquisition
+
+L'outil SecurityAdmin permet de gérer les options de sécurité de Cloud Insights et s'exécute sur le système d'unités d'acquisition. La gestion de la sécurité inclut la gestion des clés et des mots de passe, l'enregistrement et la restauration des configurations de sécurité que vous créez ou restaurez aux paramètres par défaut.
+
+
+
+== Avant de commencer
+
+Vous devez disposer de privilèges d'administrateur sur le système au pour effectuer des tâches de configuration de la sécurité.
+
+A propos de cette tâche l'outil SecurityAdmin se trouve sur le système d'unités d'acquisition à l'un des emplacements suivants :
+
+* *Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
+* *Linux - /bin/oci-securityadmin.sh
+
+
+.Étapes
+* *Démarrer l'outil SecurityAdmin en mode interactif (-i).
++
+Les options suivantes sont affichées :
+
+* Sauvegarde
++
+Crée un fichier zip de sauvegarde du coffre-fort contenant tous les mots de passe et clés et place le fichier à un emplacement spécifié par l'utilisateur ou aux emplacements par défaut suivants :
+
++
+....
+Windows - C:\Program Files\SANscreen\backup\vault
+Linux - /var/log/netapp/oci/backup/vault
+....
+* Restaurer
++
+Restaure la sauvegarde zip du coffre-fort créé. Une fois restaurées, tous les mots de passe et clés sont rétablis dans les valeurs existantes au moment de la création de la sauvegarde.
+
++
+La restauration peut être utilisée pour synchroniser les mots de passe et les clés sur plusieurs serveurs, par exemple : - Modifier les clés de cryptage sur l'au - Créer une sauvegarde du coffre-fort - Restaurer la sauvegarde du coffre-fort sur chacun des AUS
+
+* Modifiez les clés de chiffrement
++
+Modifiez les clés de cryptage au utilisées pour crypter ou décrypter les mots de passe des périphériques.
+
++
+Lorsque vous modifiez des clés de cryptage, sauvegardez votre nouvelle configuration de sécurité afin de pouvoir la restaurer après une mise à niveau ou une installation.
+
+* Mettre à jour le mot de passe
++
+Modifier le mot de passe du compte utilisateur « acquisition ».
+
++
+Lorsque vous modifiez les mots de passe, vous devez sauvegarder votre nouvelle configuration de sécurité afin de pouvoir la restaurer si nécessaire.
+
+* Rétablir les valeurs par défaut
++
+Réinitialise le mot de passe de l'utilisateur d'acquisition et les clés de cryptage de l'utilisateur d'acquisition sur les valeurs par défaut. Les valeurs par défaut sont celles fournies lors de l'installation.
+
+* Quitter
++
+Quittez l'outil SecurityAdmin.
+
+
+
+Choisissez l'option que vous souhaitez configurer et suivez les invites.

@@ -55,4 +55,4 @@ La liste des utilisateurs est actualisée toutes les 12 heures.
 
 == Stratégie de conservation
 
-S'il n'est pas actualisé à nouveau, la liste des utilisateurs est conservée pendant 13 mois. Au bout de 13 mois, les données seront supprimées. Si votre environnement Cloud Secure est supprimé, toutes les données associées à cet environnement sont supprimées.
+S'il n'est pas actualisé à nouveau, la liste des utilisateurs est conservée pendant 13 mois. Au bout de 13 mois, les données seront supprimées. Si votre environnement de sécurité des workloads est supprimé, toutes les données associées à l'environnement sont supprimées.

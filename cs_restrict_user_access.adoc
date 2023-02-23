@@ -2,20 +2,20 @@
 sidebar: sidebar 
 permalink: cs_restrict_user_access.html 
 keywords: alert, snapshot,  attack 
-summary: 'Avec Cloud Secure, vous pouvez restreindre l"accès des utilisateurs en cas de sabotage possible' 
+summary: 'Avec la sécurité des charges de travail, vous pouvez restreindre l"accès des utilisateurs en cas de sabotage possible' 
 ---
 = Blocage de l'accès utilisateur
 :allow-uri-read: 
 
 
 [role="lead"]
-Une fois qu'une attaque est détectée, Cloud Secure peut arrêter l'attaque en bloquant l'accès des utilisateurs au système de fichiers. L'accès peut être bloqué automatiquement à l'aide de politiques de réponse automatique ou manuellement à partir des pages d'alerte ou d'informations utilisateur.
+Une fois qu'une attaque est détectée, Workload Security peut arrêter l'attaque en bloquant l'accès des utilisateurs au système de fichiers. L'accès peut être bloqué automatiquement à l'aide de politiques de réponse automatique ou manuellement à partir des pages d'alerte ou d'informations utilisateur.
 
 Lorsque vous bloquez l'accès utilisateur, vous devez définir une période de blocage. Une fois la période sélectionnée terminée, l'accès utilisateur est automatiquement restauré. Le blocage des accès est pris en charge à la fois pour les protocoles SMB et NFS.
 
-L'utilisateur est directement bloqué pour le protocole SMB et l'adresse IP des machines hôtes à l'origine de l'attaque sera bloquée pour NFS. Ces adresses IP de la machine seront bloquées pendant l'accès à l'un des serveurs de stockage virtuels (SVM) surveillés par Cloud Secure.
+L'utilisateur est directement bloqué pour le protocole SMB et l'adresse IP des machines hôtes à l'origine de l'attaque sera bloquée pour NFS. Ces adresses IP de la machine seront bloquées lors de l'accès à l'un des SVM contrôlés par la sécurité des charges de travail.
 
-Disons, par exemple, Cloud Secure gère 10 SVM et la stratégie de réponse automatique est configurée pour quatre de ces SVM. Si l'attaque provient de l'un des quatre SVM, l'accès de l'utilisateur sera bloqué dans les 10 SVM. Une copie Snapshot est toujours effectuée sur la SVM d'origine.
+Disons, par exemple, que la sécurité des charges de travail gère 10 SVM, et la stratégie de réponse automatique est configurée pour quatre de ces SVM. Si l'attaque provient de l'un des quatre SVM, l'accès de l'utilisateur sera bloqué dans les 10 SVM. Une copie Snapshot est toujours effectuée sur la SVM d'origine.
 
 Si quatre SVM avec un SVM configuré pour SMB, un SVM pour NFS et les deux autres configurés pour NFS et SMB, tous les SVM seront bloqués si l'attaque provient de l'un des quatre SVM.
 
@@ -27,7 +27,7 @@ Des informations d'identification au niveau du cluster sont nécessaires pour qu
 
 Si vous utilisez les informations d'identification d'administration du cluster, aucune nouvelle autorisation n'est nécessaire.
 
-Si vous utilisez un utilisateur personnalisé (par exemple, _csuser_) avec les autorisations accordées à l'utilisateur, suivez les étapes ci-dessous pour donner des autorisations à Cloud Secure pour bloquer l'utilisateur.
+Si vous utilisez un utilisateur personnalisé (par exemple, _csuser_) avec les autorisations accordées à l'utilisateur, suivez les étapes ci-dessous pour donner des autorisations à Workload Security afin de bloquer l'utilisateur.
 
 Pour csuser avec les identifiants du cluster, effectuez la procédure suivante dans la ligne de commande ONTAP :
 
@@ -42,7 +42,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == Comment activer la fonction ?
 
-* Dans Cloud Secure, accédez à *Admin > stratégies de réponse automatique > Paramètres de stratégie de réponse > bloquer l'accès utilisateur*.
+* Dans sécurité des charges de travail, accédez à *Admin > stratégies de réponse automatique > Paramètres de stratégie de réponse > bloquer l'accès utilisateur*.
 * Définissez "Activer l'accès de l'utilisateur de bloc" sur _Enabled_.
 
 
@@ -85,7 +85,7 @@ Dans la page des détails de l'alerte et de l'utilisateur, dans le panneau utili
 
 Vous pouvez à tout moment désactiver la fonction. Si le système contient des utilisateurs restreints, vous devez d'abord restaurer leur accès.
 
-* Dans Cloud Secure, accédez à *Admin > stratégies de réponse automatique > Paramètres de stratégie de réponse > bloquer l'accès utilisateur*
+* Dans sécurité des charges de travail, accédez à *Admin > stratégies de réponse automatique > Paramètres de stratégie de réponse > bloquer l'accès utilisateur*
 * Désélectionnez l'option "Activer l'accès aux utilisateurs en mode bloc" pour désactiver.
 
 
@@ -95,7 +95,7 @@ La fonction sera masquée de toutes les pages.
 
 == Restaurez manuellement les adresses IP pour NFS
 
-Procédez comme suit pour restaurer manuellement les adresses IP à partir de ONTAP si votre version d'évaluation Cloud Secure expire ou si l'agent/collecteur est arrêté.
+Procédez comme suit pour restaurer manuellement des adresses IP à partir de ONTAP si votre essai de sécurité de la charge de travail expire ou si l'agent/collecteur est arrêté.
 
 . Lister toutes les export policy sur un SVM.
 +
@@ -117,10 +117,10 @@ svm3        test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 4 entries were displayed.
 ....
-. Supprimez les règles de toutes les règles de la SVM qui ont "cloudSecure_rule" comme client Match en spécifiant son RuleIndex respectif. La règle Cloud Secure est généralement à 1.
+. Supprimez les règles de toutes les règles de la SVM qui ont "cloudSecure_rule" comme client Match en spécifiant son RuleIndex respectif. La règle de sécurité de la charge de travail est généralement de 1.
 +
  contrail-qa-fas8020::*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
-. Assurez-vous que la règle Cloud Secure est supprimée (étape facultative pour confirmer).
+. Assurez-vous que la règle de sécurité de la charge de travail est supprimée (étape facultative pour confirmer).
 +
 ....
 contrail-qa-fas8020::*> export-policy rule show -vserver <svm name>
@@ -140,12 +140,12 @@ svm2         test            3       cifs,    0.0.0.0/0             any
 
 == Restaurez manuellement les utilisateurs pour SMB
 
-Procédez comme suit pour restaurer manuellement tous les utilisateurs à partir de ONTAP si votre version d'évaluation Cloud Secure expire ou si l'agent/collecteur est arrêté.
+Procédez comme suit pour restaurer manuellement des utilisateurs à partir de ONTAP si votre version d'évaluation de la sécurité de la charge de travail expire ou si l'agent/collecteur est arrêté.
 
-Vous pouvez obtenir la liste des utilisateurs bloqués dans Cloud Secure à partir de la page liste des utilisateurs.
+Vous pouvez obtenir la liste des utilisateurs bloqués dans la sécurité de la charge de travail à partir de la page liste des utilisateurs.
 
 . Connectez-vous au cluster ONTAP (où vous voulez débloquer des utilisateurs) avec les informations d'identification cluster _admin_. (Pour Amazon FSX, connectez-vous avec les informations d'identification FSX).
-. Exécutez la commande suivante pour lister tous les utilisateurs bloqués par Cloud Secure pour SMB dans tous les SVM :
+. Exécutez la commande suivante pour lister tous les utilisateurs bloqués par Workload Security for SMB dans tous les SVM :
 +
  vserver name-mapping show -direction win-unix -replacement " "
 +
@@ -182,7 +182,7 @@ Aucune entrée ne doit être affichée pour les utilisateurs bloqués précédem
 | Problème | Essayez 
 
 
-| Certains utilisateurs ne sont pas limités, bien qu'il y ait une attaque. | 1. Assurez-vous que le Data Collector et l'Agent des SVM sont à l'état _running_. Cloud Secure ne pourra pas envoyer de commandes si le Data Collector et l'agent sont arrêtés. 2. Ceci est dû au fait que l'utilisateur a peut-être accédé au stockage à partir d'un ordinateur avec une nouvelle adresse IP qui n'a pas été utilisée auparavant. La restriction s'effectue via l'adresse IP de l'hôte par l'intermédiaire de laquelle l'utilisateur accède au stockage. Vérifiez dans l'interface utilisateur (Détails de l'alerte > Historique des limitations d'accès pour cet utilisateur > adresses IP affectées) la liste des adresses IP restreintes. Si l'utilisateur accède au stockage à partir d'un hôte dont l'adresse IP est différente des adresses IP restreintes, alors l'utilisateur pourra toujours accéder au stockage via l'adresse IP non restreinte. Si l'utilisateur tente d'accéder aux hôtes dont les adresses IP sont restreintes, alors le stockage ne sera pas accessible. 
+| Certains utilisateurs ne sont pas limités, bien qu'il y ait une attaque. | 1. Assurez-vous que le Data Collector et l'Agent des SVM sont à l'état _running_. La sécurité de charge de travail ne pourra pas envoyer de commandes si le Data Collector et l'agent sont arrêtés. 2. Ceci est dû au fait que l'utilisateur a peut-être accédé au stockage à partir d'un ordinateur avec une nouvelle adresse IP qui n'a pas été utilisée auparavant. La restriction s'effectue via l'adresse IP de l'hôte par l'intermédiaire de laquelle l'utilisateur accède au stockage. Vérifiez dans l'interface utilisateur (Détails de l'alerte > Historique des limitations d'accès pour cet utilisateur > adresses IP affectées) la liste des adresses IP restreintes. Si l'utilisateur accède au stockage à partir d'un hôte dont l'adresse IP est différente des adresses IP restreintes, alors l'utilisateur pourra toujours accéder au stockage via l'adresse IP non restreinte. Si l'utilisateur tente d'accéder aux hôtes dont les adresses IP sont restreintes, alors le stockage ne sera pas accessible. 
 
 
 | Si vous cliquez manuellement sur restreindre l'accès, « les adresses IP de cet utilisateur ont déjà été restreintes » s'affiche. | L'adresse IP à restreindre est déjà restreinte par un autre utilisateur. 

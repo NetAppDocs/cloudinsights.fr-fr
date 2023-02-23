@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
 summary: 'Cloud Insights fournit plusieurs comptes utilisateur avec différents niveaux d"autorisation.' 
 ---
 = Comptes utilisateur et rôles
@@ -18,7 +18,7 @@ Cloud Insights fournit jusqu'à quatre rôles de compte utilisateur : propriéta
 Vous utilisez un compte disposant des privilèges d'administrateur pour créer ou modifier des comptes d'utilisateur. Chaque compte utilisateur se voit attribuer un rôle pour chaque fonctionnalité Cloud Insights des niveaux d'autorisation suivants.
 
 |===
-| Rôle | Observabilité | Sécurité | Création de rapports 
+| Rôle | Observabilité | Sécurité des workloads | Création de rapports 
 
 
 | Propriétaire du compte 3+| Peut modifier les abonnements, afficher les informations de facturation et d'utilisation et exécuter toutes les fonctions d'administrateur pour l'observabilité, la sécurité et la création de rapports. Les propriétaires peuvent également inviter et gérer des utilisateurs, ainsi que gérer les paramètres d'authentification SSO et de fédération d'identités. Le premier propriétaire du compte est créé lorsque vous vous inscrivez à Cloud Insights. Il est vivement recommandé d'avoir au moins deux propriétaires de compte pour chaque environnement Cloud Insights.  

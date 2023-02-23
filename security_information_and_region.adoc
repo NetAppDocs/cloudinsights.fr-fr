@@ -23,7 +23,7 @@ Les données de performances sont des données de séries chronologiques fournis
 
 * Données d'inventaire
 +
-Les données d'inventaire se composent de métadonnées décrivant l'appareil/la source surveillé et la façon dont il est configuré. Cela inclut, par exemple, les versions matérielles et logicielles installées, les disques et les LUN d'un système de stockage, les cœurs de CPU, la RAM et les disques d'une machine virtuelle, les tablespaces d'une base de données, le nombre et le type de ports sur un commutateur SAN, les noms de répertoire/fichier (si Cloud Secure est activé), etc
+Les données d'inventaire se composent de métadonnées décrivant l'appareil/la source surveillé et la façon dont il est configuré. Cela inclut, par exemple, les versions matérielles et logicielles installées, les disques et les LUN d'un système de stockage, les cœurs de CPU, la RAM et les disques d'une machine virtuelle, les espaces de stockage d'une base de données, le nombre et le type de ports d'un commutateur SAN, les noms de répertoire/fichier (si la sécurité des charges de travail de stockage est activée), etc
 
 * Données de configuration
 +
@@ -41,18 +41,18 @@ Il s'agit de données générées par NetApp avec le service de données cloud q
 +
 Informations d'authentification et d'accès qui permettent à NetApp Cloud Central de communiquer avec les sites Cloud Insights régionaux, notamment les données liées aux autorisations des utilisateurs.
 
-* Données du répertoire d'utilisateurs Cloud Secure
+* Données du répertoire utilisateur pour la sécurité des charges de travail de stockage
 +
-Lorsque la fonctionnalité Cloud Secure est activée ET que le client choisit d'activer le collecteur d'annuaire des utilisateurs, le système stocke les noms d'affichage des utilisateurs, les adresses e-mail professionnelles et d'autres informations collectées à partir d'Active Directory.
+Lorsque la fonctionnalité de sécurité de la charge de travail est activée ET que le client choisit d'activer le collecteur d'annuaire de l'utilisateur, le système stocke les noms d'affichage des utilisateurs, les adresses e-mail de l'entreprise et d'autres informations collectées à partir d'Active Directory.
 
 
 
 
-NOTE: Les données du répertoire utilisateur font référence aux informations du répertoire utilisateur collectées par le collecteur de données de l'Annuaire des utilisateurs Cloud Secure et non aux données relatives aux utilisateurs de Cloud Insights/Cloud Secure.
+NOTE: Les données du répertoire utilisateur font référence aux informations des répertoires utilisateur collectées par le collecteur de données du répertoire utilisateur Security de la charge de travail, et non aux données relatives aux utilisateurs de Cloud Insights/Workload Security eux-mêmes.
 
 *Aucune donnée personnelle explicite* n'est recueillie dans les ressources de l'infrastructure et des services. Les informations collectées concernent uniquement les mesures de performance, les informations de configuration et les métadonnées de l'infrastructure, comme bon nombre de fournisseurs de téléphonie, y compris le support automatique NetApp et ActiveIQ. Toutefois, en fonction des conventions de nom utilisées par le client, les données pour les partages, les volumes, les machines virtuelles, les qtrees, les applications, etc., peuvent contenir des informations personnelles identifiables.
 
-Si Cloud Secure est activé, le système recherche en outre les noms de fichier et de répertoire sur SMB ou d'autres partages, qui peuvent contenir des informations personnellement identifiables. Lorsque les clients activent le collecteur d'annuaire des utilisateurs Cloud Secure (qui mappe essentiellement les SID Windows avec les noms d'utilisateur via Active Directory), le nom d'affichage, l'adresse e-mail d'entreprise et tous les attributs supplémentaires sélectionnés seront collectés et stockés par Cloud Insights.
+Si la sécurité des charges de travail est activée, le système examine en outre les noms de fichiers et de répertoires sur SMB ou d'autres partages, qui peuvent contenir des informations personnellement identifiables. Lorsque les clients activent le collecteur d'annuaire d'utilisateurs de la sécurité de la charge de travail (qui mappe essentiellement les SID Windows aux noms d'utilisateur via Active Directory), le nom d'affichage, l'adresse e-mail d'entreprise et tous les attributs supplémentaires sélectionnés seront collectés et stockés par Cloud Insights.
 
 En outre, les journaux d'accès à Cloud Insights sont tenus à jour et contiennent les adresses IP et e-mail des utilisateurs permettant de se connecter au service.
 
@@ -68,8 +68,8 @@ Les informations suivantes sont stockées dans la région hôte :
 * Informations sur l'unité d'acquisition
 * Données fonctionnelles
 * Informations d'audit sur les activités des utilisateurs dans Cloud Insights
-* Informations sur Active Directory Cloud Secure
-* Informations d'audit Cloud Secure
+* Informations Active Directory de sécurité des charges de travail
+* Informations sur l'audit de sécurité de la charge de travail
 
 
 Les informations suivantes résident aux États-Unis, quelle que soit la région hébergeant votre environnement Cloud Insights :

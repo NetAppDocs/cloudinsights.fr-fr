@@ -1,25 +1,25 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_user_management.html 
-keywords: Cloud Secure, User, Login, account 
-summary: Les comptes utilisateur Cloud Secure sont gérés par le biais de la gestion des utilisateurs Cloud Insights 
+keywords: Workload Security, User, Login, account, cloud secure 
+summary: 'Sécurité des charges de travail les comptes d"utilisateurs sont gérés par le biais de la gestion des utilisateurs Cloud Insights' 
 ---
 = Gestion des utilisateurs
 :allow-uri-read: 
 
 
 [role="lead"]
-Les comptes utilisateurs Cloud Secure sont gérés via Cloud Insights.
+Les comptes utilisateurs de la sécurité des charges de travail sont gérés via Cloud Insights.
 
-Cloud Insights fournit quatre niveaux de compte utilisateur : propriétaire, administrateur, utilisateur et invité du compte. Chaque compte se voit attribuer des niveaux d'autorisation spécifiques. Un compte utilisateur disposant des privilèges d'administrateur peut créer ou modifier des utilisateurs et attribuer à chaque utilisateur l'un des rôles Cloud Secure suivants :
+Cloud Insights fournit quatre niveaux de compte utilisateur : propriétaire, administrateur, utilisateur et invité du compte. Chaque compte se voit attribuer des niveaux d'autorisation spécifiques. Un compte utilisateur disposant de privilèges d'administrateur peut créer ou modifier des utilisateurs et attribuer à chaque utilisateur l'un des rôles de sécurité de charge de travail suivants :
 
 |===
 
 
-| Rôle | Accès à Cloud Secure 
+| Rôle | Accès à la sécurité du workload 
 
 
-| Administrateur | Peut exécuter toutes les fonctions Cloud Secure, y compris celles pour les alertes, les médico-événements, les collecteurs de données, les règles de réponse automatisées et les API pour Cloud Secure. Un administrateur peut également inviter d'autres utilisateurs, mais peut uniquement attribuer des rôles Cloud Secure. 
+| Administrateur | Peut exécuter toutes les fonctions de sécurité de la charge de travail, y compris celles pour les alertes, les analyses approfondies, les collecteurs de données, les stratégies de réponse automatisées et les API pour la sécurité de la charge de travail. Un administrateur peut également inviter d'autres utilisateurs, mais peut uniquement attribuer des rôles de sécurité de la charge de travail. 
 
 
 | Utilisateur | Peut afficher et gérer des alertes et afficher des informations judiciaires. Le rôle de l'utilisateur peut modifier l'état des alertes, ajouter une note, effectuer des instantanés manuellement et limiter l'accès des utilisateurs. 
@@ -28,7 +28,7 @@ Cloud Insights fournit quatre niveaux de compte utilisateur : propriétaire, adm
 | Invité | Peut afficher les alertes et les analyses approfondies. Le rôle invité ne peut pas modifier le statut des alertes, ajouter une note, effectuer des instantanés manuellement ou restreindre l'accès des utilisateurs. 
 |===
 .Étapes
-. Connectez-vous à Cloud Secure
+. Connectez-vous à la sécurité des charges de travail
 . Dans le menu, cliquez sur *Admin > gestion des utilisateurs*
 +
 Vous serez redirigé vers la page gestion des utilisateurs de Cloud Insights.

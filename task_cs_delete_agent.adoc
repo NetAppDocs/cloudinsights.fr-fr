@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_delete_agent.html 
-keywords: agent, Cloud Secure, delete agent 
-summary: Suppression des agents Cloud Secure 
+keywords: agent, Workload Security, delete agent, Cloud Secure 
+summary: Suppression des agents de sécurité de charge de travail 
 ---
-= Suppression d'un agent Cloud Secure
+= Suppression d'un agent de sécurité de charge de travail
 :allow-uri-read: 
 
 
 [role="lead"]
-Lorsque vous supprimez un agent Cloud Secure, tous les collecteurs de données associés à l'agent doivent d'abord être supprimés.
+Lorsque vous supprimez un agent de sécurité de charge de travail, tous les collecteurs de données associés à l'agent doivent être supprimés en premier.
 
 
 
@@ -19,7 +19,7 @@ Lorsque vous supprimez un agent Cloud Secure, tous les collecteurs de données a
 IMPORTANT: La suppression d'un agent supprime tous les collecteurs de données associés à l'agent. Si vous prévoyez de configurer les collecteurs de données avec un autre agent, vous devez créer une sauvegarde des configurations Data Collector avant de supprimer l'agent.
 
 .Avant de commencer
-. Assurez-vous que tous les collecteurs de données associés à l'agent sont supprimés du portail Cloud Secure.
+. Assurez-vous que tous les collecteurs de données associés à l'agent sont supprimés du portail de sécurité de la charge de travail.
 +
 Remarque : ignorez cette étape si tous les collecteurs associés sont à l'état ARRÊTÉ.
 

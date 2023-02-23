@@ -1,30 +1,30 @@
----
-sidebar: sidebar 
-permalink: concept_cs_attack_simulator.html 
-keywords: ransomware, simulation, simulator, restrict, attack 
-summary: Grâce à un script, vous pouvez simuler une attaque par ransomware pour tester ou démontrer Cloud Secure 
----
-= Cloud Secure : simulation d'une attaque
+= Sécurité des charges de travail : simulation d'une attaque
 :allow-uri-read: 
 
 
+Code --- encadré : lien malveillant : concept_cs_attack_simulator.html mots-clés : ransomware, simulation, simulateur, restriction, résumé des attaques : à l'aide d'un script, vous pouvez simuler une attaque par ransomware pour tester ou démontrer la sécurité de la charge de travail ---
+
+
+
+= Sécurité des charges de travail : simulation d'une attaque
+
 [role="lead"]
-Vous pouvez utiliser les instructions de cette page pour simuler une attaque à des fins de test ou de démonstration de Cloud Secure à l'aide du script Cloud Secure de simulation d'attaques par ransomware inclus.
+Vous pouvez utiliser les instructions de cette page pour simuler une attaque à des fins de test ou de démonstration de la sécurité des charges de travail à l'aide du script inclus de simulation d'attaques par ransomware.
 
 
 
 == À noter avant de commencer
 
 * Le script de simulation d'attaque par ransomware fonctionne uniquement sur Linux.
-* Le script est fourni avec les fichiers d'installation de l'agent Cloud Secure. Il est disponible sur n'importe quelle machine sur laquelle un agent Cloud Secure est installé.
-* Vous pouvez exécuter le script sur l'agent Cloud Secure lui-même ; il n'est pas nécessaire de préparer une autre machine Linux. Cependant, si vous préférez exécuter le script sur un autre système, copiez simplement le script et exécutez-le là.
+* Le script est fourni avec les fichiers d'installation de l'agent de sécurité de la charge de travail. Il est disponible sur n'importe quelle machine sur laquelle un agent de sécurité de la charge de travail est installé.
+* Vous pouvez exécuter le script sur l'agent de sécurité de la charge de travail lui-même ; il n'est pas nécessaire de préparer une autre machine Linux. Cependant, si vous préférez exécuter le script sur un autre système, copiez simplement le script et exécutez-le là.
 
 
 
 
 == Avoir au moins 1,000 fichiers d'exemple
 
-Ce script doit s'exécuter sur un SVM avec un dossier qui a des fichiers à chiffrer. Nous vous recommandons d'avoir au moins 1,000 fichiers dans ce dossier et tous les sous-dossiers. Les fichiers ne doivent pas être vides. Ne créez pas les fichiers et ne les cryptez pas à l'aide du même utilisateur. Cloud Secure considère qu'il s'agit d'une activité à faible risque et ne génère donc pas d'alerte (c'est-à-dire que le même utilisateur modifie les fichiers qu'il/elle vient de créer).
+Ce script doit s'exécuter sur un SVM avec un dossier qui a des fichiers à chiffrer. Nous vous recommandons d'avoir au moins 1,000 fichiers dans ce dossier et tous les sous-dossiers. Les fichiers ne doivent pas être vides. Ne créez pas les fichiers et ne les cryptez pas à l'aide du même utilisateur. La sécurité de la charge de travail considère cette activité à faible risque et ne génère donc pas d'alerte (c'est-à-dire que le même utilisateur modifie les fichiers qu'il/elle vient de créer).
 
 Voir ci-dessous pour les instructions à link:#create-files-programmatically["créer par programmation des fichiers non vides"].
 
@@ -57,7 +57,7 @@ Pour monter CIFS sous Linux :
  mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o username=raisa
 Configurez ensuite un Data Collector :
 
-. Configurez l'agent Cloud Secure si ce n'est déjà fait.
+. Configurez l'agent de sécurité de la charge de travail si ce n'est déjà fait.
 . Configurer le collecteur de données du SVM s'il n'a pas encore été effectué
 
 
@@ -65,7 +65,7 @@ Configurez ensuite un Data Collector :
 
 == Exécutez le script du simulateur de ransomware
 
-. Connectez-vous (ssh) à l'ordinateur agent Cloud Secure.
+. Connectez-vous (ssh) à l'agent de sécurité de la charge de travail.
 . Accédez à : _/opt/netapp/cloudSecure/agent/install_
 . Appelez le script du simulateur sans paramètres pour voir l'utilisation :
 +
@@ -118,7 +118,7 @@ File /root/for/File002.txt is restored.
 
 == Exécutez le script plusieurs fois
 
-Après avoir généré une attaque par ransomware pour un utilisateur, passez à un autre utilisateur pour générer une attaque supplémentaire. Cloud Secure apprend le comportement de l'utilisateur et ne signale pas les attaques par ransomware répétées pendant une courte durée par le même utilisateur.
+Après avoir généré une attaque par ransomware pour un utilisateur, passez à un autre utilisateur pour générer une attaque supplémentaire. La sécurité des charges de travail apprend le comportement des utilisateurs et ne déclenche pas d'alerte lorsque les attaques par ransomware sont répétées dans les mêmes délais par le même utilisateur.
 
 
 

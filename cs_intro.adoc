@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: cs_intro.html 
-keywords: CloudSecure 
+keywords: CloudSecure, Cloud Secure 
 summary: Présentation 
 ---
-= À propos de Cloud Secure
+= À propos de la sécurité des charges de travail du stockage
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure vous aide à protéger vos données avec des informations exploitables sur les menaces internes Elle assure la visibilité et le contrôle centralisés sur tous les accès aux données de l'entreprise à l'échelle des environnements de cloud hybride, afin de garantir l'atteinte des objectifs de sécurité et de conformité.
+La sécurité des charges de travail du stockage Cloud Insights (anciennement Cloud Secure) vous aide à protéger vos données avec des informations exploitables sur les menaces internes. Elle assure la visibilité et le contrôle centralisés sur tous les accès aux données de l'entreprise à l'échelle des environnements de cloud hybride, afin de garantir l'atteinte des objectifs de sécurité et de conformité.
 
 
 
@@ -17,7 +17,7 @@ Cloud Secure vous aide à protéger vos données avec des informations exploitab
 
 Bénéficiez d'une visibilité et d'un contrôle centralisés sur l'accès des utilisateurs aux données stratégiques de l'entreprise stockées sur site ou dans le cloud.
 
-Remplacez les outils et les processus manuels qui n'offrent pas de visibilité opportune et exacte sur l'accès aux données et leur contrôle. Cloud Secure fonctionne de façon unique sur les systèmes de stockage cloud et sur site pour vous envoyer des alertes en temps réel en cas de comportement malveillant
+Remplacez les outils et les processus manuels qui n'offrent pas de visibilité opportune et exacte sur l'accès aux données et leur contrôle. La sécurité des charges de travail fonctionne de façon unique sur les systèmes de stockage cloud et sur site pour vous avertir en temps réel des comportements malveillants des utilisateurs.
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: cs_notifications_email.html 
-summary: 'Ajout d"adresses e-mail pour les notifications des alertes Cloud Secure.' 
+summary: 'Ajout d"adresses e-mail pour les notifications des alertes de sécurité de la charge de travail.' 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
 = Configuration des notifications par e-mail pour les alertes, les avertissements et l'état de santé du collecteur d'agents/de sources de données
@@ -9,7 +9,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 [role="lead"]
-Pour configurer les destinataires d'alertes Cloud Secure, cliquez sur *Admin > Notifications* et entrez les adresses e-mail dans les sections appropriées pour chaque destinataire.
+Pour configurer les destinataires d'alertes de sécurité de la charge de travail, cliquez sur *Admin > Notifications* et entrez une ou plusieurs adresses électroniques dans les sections appropriées pour chaque destinataire.
 
 
 

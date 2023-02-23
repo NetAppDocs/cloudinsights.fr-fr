@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: 'Ce script peut être exécuté pour vérifier le taux d"évènement dans le SVM avant d"installer un SVM DSC de ONTAP' 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = Vérificateur de taux d'événements SVM (Guide de dimensionnement des agents)
 :allow-uri-read: 
@@ -47,8 +47,7 @@ NOTE: Lors de l'exécution de ce script, aucun SVM Data Collector de ONTAP ne do
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. Chaque SVM Data Collector de ONTAP peut être associé à un seul SVM, ce qui signifie que chaque collecteur de données sera en mesure de recevoir le nombre d'événements qu'un seul SVM génère.
-
+Chaque SVM Data Collector de ONTAP peut être associé à un seul SVM, ce qui signifie que chaque collecteur de données sera en mesure de recevoir le nombre d'événements qu'un seul SVM génère.
 
 Gardez à l'esprit les éléments suivants :
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Question : si j'exécute ce script sur un SVM déjà configuré pour Cloud Secure, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou configure-t-il un serveur temporaire et exécute-t-il le processus ? 
+| Question : si j'exécute ce script sur un SVM déjà configuré pour la sécurité des charges de travail, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou bien configure-il un serveur temporaire et exécute-t-il le processus ? 
 
 
-| Réponse : le vérificateur de taux d'événements peut s'exécuter correctement, même pour un SVM déjà configuré pour Cloud Secure. Il ne devrait y avoir aucun impact. 
+| Réponse : le vérificateur de taux d'événements peut s'exécuter correctement, même pour un SVM déjà configuré pour la sécurité de la charge de travail. Il ne devrait y avoir aucun impact. 
 
 
 | Question : puis-je augmenter le nombre de SVM sur lequel le script peut être exécuté ? 

@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: 'Configuration du collecteur d"annuaire d"utilisateurs Active Directory Cloud Secure' 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: Configuration de Workload Security Active Directory User Directory Collector 
 ---
 = Configuration d'un collecteur d'annuaire d'utilisateurs Active Directory (AD)
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure peut être configuré de manière à collecter des attributs utilisateur à partir des serveurs Active Directory.
+La sécurité des charges de travail peut être configurée pour collecter des attributs utilisateur à partir des serveurs Active Directory.
 
 .Avant de commencer
 * Vous devez être administrateur Cloud Insights ou propriétaire de compte pour effectuer cette tâche.
@@ -18,7 +18,7 @@ Cloud Secure peut être configuré de manière à collecter des attributs utilis
 
 
 .Procédure de configuration d'un collecteur d'annuaire d'utilisateurs
-. Dans le menu Cloud Secure, cliquez sur : *Admin > collecteurs de données > collecteurs d'annuaires d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *Active Directory*
+. Dans le menu sécurité de la charge de travail, cliquez sur : *Admin > collecteurs de données > collecteurs d'annuaire d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *Active Directory*
 +
 Le système affiche l'écran Ajouter un répertoire d'utilisateurs.
 
@@ -114,7 +114,7 @@ Cliquez sur inclure les attributs facultatifs pour ajouter l'un des attributs su
 
 Vous pouvez valider les autorisations utilisateur LDAP et les définitions d'attributs en suivant les procédures suivantes :
 
-* Utiliser la commande suivante pour valider l'autorisation utilisateur LDAP de Cloud Secure :
+* Utilisez la commande suivante pour valider l'autorisation utilisateur LDAP de la sécurité de la charge de travail :
 +
 `ldapsearch -o ldif-wrap=no -LLL -x -b "dc=netapp,dc=com" -h 10.235.40.29 -p 389 -D \Administrator@netapp.com -W`
 
@@ -145,7 +145,7 @@ Le tableau suivant décrit les problèmes connus et les solutions qui peuvent su
 | L'ajout d'un connecteur de répertoire utilisateur donne l'état "erreur". L'erreur indique : « Impossible d'obtenir l'objet correspondant à DN=DC=hq,DC=domainname,DC=com fourni comme nom de forêt ». | Nom de forêt incorrect fourni. Modifiez et fournissez le nom de forêt correct. 
 
 
-| Les attributs facultatifs de l'utilisateur de domaine ne s'affichent pas dans la page profil utilisateur Cloud Secure. | Ceci est probablement dû à une incohérence entre les noms des attributs facultatifs ajoutés dans CloudSecure et les noms réels des attributs dans Active Directory. Modifiez et fournissez le ou les noms d'attribut facultatifs appropriés. 
+| Les attributs facultatifs de l'utilisateur de domaine ne s'affichent pas dans la page profil utilisateur de sécurité de la charge de travail. | Ceci est probablement dû à une incohérence entre les noms des attributs facultatifs ajoutés dans CloudSecure et les noms réels des attributs dans Active Directory. Modifiez et fournissez le ou les noms d'attribut facultatifs appropriés. 
 
 
 | Data Collector à l'état d'erreur avec « Impossible de récupérer les utilisateurs LDAP. Raison de l'échec : impossible de se connecter sur le serveur, la connexion est nulle » | Redémarrez le collecteur en cliquant sur le bouton _Restart_. 
@@ -178,7 +178,7 @@ Le tableau suivant décrit les problèmes connus et les solutions qui peuvent su
 | Le numéro de téléphone n'est pas renseigné dans la page de profil utilisateur. | Ceci est probablement dû à un problème de mappage d'attribut avec Active Directory. 1. Modifiez le collecteur Active Directory particulier qui recherche les informations de l'utilisateur à partir d'Active Directory. 2. Avis sous attributs facultatifs, il existe un nom de champ “Numéro de téléphone” mappé sur l’attribut Active Directory ‘Numéro de téléphone’. 4. Maintenant, utilisez l'outil Explorateur Active Directory comme décrit ci-dessus pour naviguer dans Active Directory et voir le nom d'attribut correct. 3. Assurez-vous que dans Active Directory il y a un attribut appelé «téléphone» qui a en effet le numéro de téléphone de l'utilisateur. 5. Disons dans Active Directory qu'il a été modifié en "numéro de téléphone". 6. Puis modifiez le collecteur de répertoire d'utilisateurs CloudSecure. Dans la section des attributs facultatifs, remplacer «téléphone» par «numéro de téléphone». 7. Enregistrez le collecteur Active Directory, le collecteur redémarre et affiche le numéro de téléphone de l'utilisateur dans la page de profil utilisateur. 
 
 
-| Si le certificat de cryptage (SSL) est activé sur le serveur Active Directory (AD), le collecteur d'annuaire des utilisateurs Cloud Secure ne peut pas se connecter au serveur AD. | Désactivez le cryptage du serveur AD avant de configurer un collecteur d'annuaire utilisateur. Une fois les informations utilisateur extraites, elles seront disponibles pendant 13 mois. Si le serveur AD est déconnecté après avoir récupéré les détails de l'utilisateur, les nouveaux utilisateurs dans AD ne seront pas extraits. Pour récupérer à nouveau, le collecteur d'annuaire de l'utilisateur doit être connecté à AD. 
+| Si le certificat de cryptage (SSL) est activé sur le serveur Active Directory (AD), le collecteur d'annuaire de l'utilisateur de sécurité de charge de travail ne peut pas se connecter au serveur AD. | Désactivez le cryptage du serveur AD avant de configurer un collecteur d'annuaire utilisateur. Une fois les informations utilisateur extraites, elles seront disponibles pendant 13 mois. Si le serveur AD est déconnecté après avoir récupéré les détails de l'utilisateur, les nouveaux utilisateurs dans AD ne seront pas extraits. Pour récupérer à nouveau, le collecteur d'annuaire de l'utilisateur doit être connecté à AD. 
 
 
 | Les données d'Active Directory sont présentes dans CloudInsights Security. Vous souhaitez supprimer toutes les informations utilisateur de CloudInsights. | Il n'est pas possible DE SUPPRIMER UNIQUEMENT les informations utilisateur d'Active Directory de CloudInsights Security. Pour supprimer l'utilisateur, le locataire complet doit être supprimé. 

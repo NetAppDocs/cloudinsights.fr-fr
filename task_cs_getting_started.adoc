@@ -1,16 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_getting_started.html 
-keywords: collectors, data collectors, configure, introduction, browsers 
-summary: Pour commencer à utiliser Cloud Secure, quelques étapes simples sont nécessaires 
+keywords: collectors, data collectors, configure, introduction, browsers , Cloud Secure 
+summary: Quelques étapes simples vous aideront à utiliser la sécurité de la charge de travail 
 ---
-= Mise en route de Cloud Secure
+= Mise en route de la sécurité des charges de travail
 :allow-uri-read: 
 
 
-Certaines tâches de configuration doivent être effectuées avant de pouvoir utiliser Cloud Secure pour surveiller l'activité des utilisateurs.
+[role="lead"]
+Certaines tâches de configuration doivent être effectuées avant de pouvoir utiliser la sécurité de la charge de travail pour surveiller l'activité des utilisateurs.
 
-Le système Cloud Secure utilise un agent pour collecter les données d'accès à partir des systèmes de stockage et des informations utilisateur à partir des serveurs de services d'annuaire.
+Le système Workload Security utilise un agent pour collecter les données d'accès des systèmes de stockage et des informations utilisateur à partir des serveurs Directory Services.
 
 Vous devez configurer les éléments suivants avant de pouvoir commencer à collecter les données :
 
@@ -43,4 +44,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["*Vidéo* : c
 
 | Dépannage | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["*Vidéo* : dépannage"] 
 |===
-Cloud Secure peut également s'intégrer à d'autres outils. Par exemple : link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["voir ce guide"] De l'intégration avec Splunk.
+La sécurité des charges de travail peut également s'intégrer à d'autres outils. Par exemple : link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["voir ce guide"] De l'intégration avec Splunk.

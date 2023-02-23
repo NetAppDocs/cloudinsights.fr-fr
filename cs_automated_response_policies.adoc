@@ -25,6 +25,6 @@ Voir la link:cs_restrict_user_access.html["Limiter l'accès des utilisateurs"] P
 
 Vous pouvez modifier ou interrompre une stratégie de réponse automatique en sélectionnant l'option dans le menu déroulant de la stratégie.
 
-Cloud Secure supprime automatiquement les snapshots une fois par jour en fonction des paramètres de suppression de l'instantané.
+Le service de sécurité des charges de travail supprime automatiquement les snapshots une fois par jour en fonction des paramètres de suppression de Snapshot.
 
 image:CloudSecure_SnapshotPurgeSettings.png["Paramètres de purge des instantanés"]

@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect_ldap.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: 'Configuration du collecteur d"annuaire LDAP Cloud Secure' 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: Configuration de Workload Security LDAP User Directory Collector 
 ---
 = Configuration d'un collecteur de serveur d'annuaire LDAP
 :allow-uri-read: 
 
 
 [role="lead"]
-Vous configurez Cloud Secure pour collecter des attributs utilisateur à partir des serveurs d'annuaire LDAP.
+Vous configurez la sécurité de la charge de travail pour collecter les attributs utilisateur à partir des serveurs d'annuaire LDAP.
 
 .Avant de commencer
 * Vous devez être administrateur Cloud Insights ou propriétaire de compte pour effectuer cette tâche.
@@ -18,7 +18,7 @@ Vous configurez Cloud Secure pour collecter des attributs utilisateur à partir 
 
 
 .Procédure de configuration d'un collecteur d'annuaire d'utilisateurs
-. Dans le menu Cloud Secure, cliquez sur : *Admin > collecteurs de données > collecteurs d'annuaires d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*
+. Dans le menu sécurité de la charge de travail, cliquez sur : *Admin > collecteurs de données > Collectors de répertoire utilisateur > + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*
 +
 Le système affiche l'écran Ajouter un répertoire d'utilisateurs.
 
@@ -120,7 +120,7 @@ Cliquez sur inclure les attributs facultatifs pour ajouter l'un des attributs su
 
 Vous pouvez valider les autorisations utilisateur LDAP et les définitions d'attributs en suivant les procédures suivantes :
 
-* Utiliser la commande suivante pour valider l'autorisation utilisateur LDAP de Cloud Secure :
+* Utilisez la commande suivante pour valider l'autorisation utilisateur LDAP de la sécurité de la charge de travail :
 +
  ldapsearch -D "uid=john ,cn=users,cn=accounts,dc=dorp,dc=company,dc=com" -W -x -LLL -o ldif-wrap=no -b "cn=accounts,dc=dorp,dc=company,dc=com" -H ldap://vmwipaapp08.dorp.company.com
 * Utilisez l'Explorateur LDAP pour naviguer dans une base de données LDAP, afficher les propriétés et les attributs des objets, afficher les autorisations, afficher le schéma d'un objet, exécuter des recherches sophistiquées que vous pouvez enregistrer et exécuter à nouveau.
@@ -150,7 +150,7 @@ Le tableau suivant décrit les problèmes connus et les solutions qui peuvent su
 | L'ajout d'un connecteur d'annuaire LDAP entraîne l'état "erreur". L'erreur indique : « Impossible d'obtenir l'objet correspondant à DN=DC=hq,DC=domainname,DC=com fourni comme nom de forêt ». | Base de recherche fournie incorrecte. Modifiez et fournissez le nom de forêt correct. 
 
 
-| Les attributs facultatifs de l'utilisateur de domaine ne s'affichent pas dans la page profil utilisateur Cloud Secure. | Ceci est probablement dû à une incohérence entre les noms des attributs facultatifs ajoutés dans CloudSecure et les noms réels des attributs dans Active Directory. Les champs sont sensibles à la casse. Modifiez et fournissez le ou les noms d'attribut facultatifs appropriés. 
+| Les attributs facultatifs de l'utilisateur de domaine ne s'affichent pas dans la page profil utilisateur de sécurité de la charge de travail. | Ceci est probablement dû à une incohérence entre les noms des attributs facultatifs ajoutés dans CloudSecure et les noms réels des attributs dans Active Directory. Les champs sont sensibles à la casse. Modifiez et fournissez le ou les noms d'attribut facultatifs appropriés. 
 
 
 | Data Collector à l'état d'erreur avec « Impossible de récupérer les utilisateurs LDAP. Raison de l'échec : impossible de se connecter sur le serveur, la connexion est nulle » | Redémarrez le collecteur en cliquant sur le bouton _Restart_. 
@@ -189,5 +189,5 @@ Le tableau suivant décrit les problèmes connus et les solutions qui peuvent su
 | Le numéro de téléphone n'est pas renseigné dans la page de profil utilisateur. | Ceci est probablement dû à un problème de mappage d'attribut avec Active Directory. 1. Modifiez le collecteur Active Directory particulier qui recherche les informations de l'utilisateur à partir d'Active Directory. 2. Avis sous attributs facultatifs, il existe un nom de champ “Numéro de téléphone” mappé sur l’attribut Active Directory ‘Numéro de téléphone’. 4. Utilisez l'outil Explorateur Active Directory comme décrit ci-dessus pour parcourir le serveur d'annuaire LDAP et voir le nom d'attribut correct. 3. Assurez-vous que dans l'annuaire LDAP il y a un attribut appelé «téléphone» qui a en effet le numéro de téléphone de l'utilisateur. 5. Disons dans l'annuaire LDAP qu'il a été modifié en «téléphone». 6. Puis modifiez le collecteur de répertoire d'utilisateurs CloudSecure. Dans la section des attributs facultatifs, remplacer «téléphone» par «numéro de téléphone». 7. Enregistrez le collecteur Active Directory, le collecteur redémarre et affiche le numéro de téléphone de l'utilisateur dans la page de profil utilisateur. 
 
 
-| Si le certificat de cryptage (SSL) est activé sur le serveur Active Directory (AD), le collecteur d'annuaire des utilisateurs Cloud Secure ne peut pas se connecter au serveur AD. | Désactivez le cryptage du serveur AD avant de configurer un collecteur d'annuaire utilisateur. Une fois les informations utilisateur extraites, elles seront disponibles pendant 13 mois. Si le serveur AD est déconnecté après avoir récupéré les détails de l'utilisateur, les nouveaux utilisateurs dans AD ne seront pas extraits. Pour récupérer à nouveau, le collecteur d'annuaire de l'utilisateur doit être connecté à AD. 
+| Si le certificat de cryptage (SSL) est activé sur le serveur Active Directory (AD), le collecteur d'annuaire de l'utilisateur de sécurité de charge de travail ne peut pas se connecter au serveur AD. | Désactivez le cryptage du serveur AD avant de configurer un collecteur d'annuaire utilisateur. Une fois les informations utilisateur extraites, elles seront disponibles pendant 13 mois. Si le serveur AD est déconnecté après avoir récupéré les détails de l'utilisateur, les nouveaux utilisateurs dans AD ne seront pas extraits. Pour récupérer à nouveau, le collecteur d'annuaire de l'utilisateur doit être connecté à AD. 
 |===

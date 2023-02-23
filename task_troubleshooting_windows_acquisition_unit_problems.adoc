@@ -65,7 +65,7 @@ Votre unité d'acquisition Cloud Insights, ainsi que vos interactions dans un na
 
 === Affichage des noeuds finaux du proxy
 
-Vous pouvez afficher vos noeuds finaux proxy en cliquant sur le lien *Paramètres proxy* lorsque vous choisissez un collecteur de données pendant l'intégration, ou sur le lien sous _Paramètres proxy_ de la page *aide > support*. Un tableau comme celui ci-dessous s'affiche. Si vous avez Cloud Secure dans votre environnement, les URL de point final configurées s'affichent également dans cette liste.
+Vous pouvez afficher vos noeuds finaux proxy en cliquant sur le lien *Paramètres proxy* lorsque vous choisissez un collecteur de données pendant l'intégration, ou sur le lien sous _Paramètres proxy_ de la page *aide > support*. Un tableau comme celui ci-dessous s'affiche. Si vous avez la sécurité de la charge de travail dans votre environnement, les URL de point final configurées s'affichent également dans cette liste.
 
 image:ProxyEndpoints_NewTable.png["Table des noeuds finaux du proxy"]
 

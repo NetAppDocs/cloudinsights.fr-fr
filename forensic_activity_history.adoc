@@ -9,7 +9,7 @@ summary: 'données d"historique des activités médico-légales'
 
 
 [role="lead"]
-La page toutes les activités vous aide à comprendre les actions effectuées sur les entités de l'environnement Cloud Secure.
+La page toutes les activités vous aide à comprendre les actions effectuées sur les entités de l'environnement de sécurité de la charge de travail.
 
 
 
@@ -131,7 +131,7 @@ image:CloudSecure_ActivitySelection.png["Sélecteur d'activité, largeur=30 %"]
 
 == Conservation de l'historique des activités
 
-L'historique des activités est conservé pendant 13 mois pour les environnements Cloud Secure actifs.
+L'historique des activités est conservé pendant 13 mois pour les environnements de sécurité active de la charge de travail.
 
 
 

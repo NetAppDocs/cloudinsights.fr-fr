@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_agent_requirements.html 
 summary: 'Le serveur ou la machine virtuelle que vous utilisez en tant qu"agent doit respecter la configuration minimale requise' 
-keywords: agent, Linux, requirements, docker, browsers, permissions, Network 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
-= Exigences de l'agent
+= Exigences de l'agent de sécurité de la charge de travail
 :allow-uri-read: 
 
 
@@ -31,9 +31,9 @@ Vous devez link:task_cs_add_agent.html["Installez un agent"] afin d'obtenir des 
 | Espace disque disponible | L'espace disque doit être alloué de cette manière : /opt/netapp 35 Go (minimum) si /opt est un dossier monté d'un stockage NAS, assurez-vous que les utilisateurs locaux ont accès à ce dossier. L'installation de l'agent ou du Data Collector peut échouer si les utilisateurs locaux n'ont pas l'autorisation de ce dossier. voir la link:task_cs_add_agent.html#troubleshooting-agent-errors["dépannage"] pour plus de détails. 
 
 
-| Le réseau | Connexion Ethernet 100 Mbit/s à 1 Gbit/s, adresse IP statique, connectivité IP à tous les périphériques et port requis vers l'instance Cloud Secure (80 ou 443). 
+| Le réseau | Connexion Ethernet de 100 Mbit/s à 1 Gbit/s, adresse IP statique, connectivité IP à tous les périphériques et port requis à l'instance de sécurité de la charge de travail (80 ou 443). 
 |===
-Remarque : l'agent Cloud Secure peut être installé sur la même machine qu'une unité d'acquisition Cloud Insights et/ou un agent. Toutefois, il est recommandé de les installer sur des machines distinctes. Si ces derniers sont installés sur la même machine, veuillez allouer de l'espace disque comme indiqué ci-dessous :
+Remarque : l'agent de sécurité de charge de travail peut être installé sur la même machine qu'une unité d'acquisition Cloud Insights et/ou un agent. Toutefois, il est recommandé de les installer sur des machines distinctes. Si ces derniers sont installés sur la même machine, veuillez allouer de l'espace disque comme indiqué ci-dessous :
 
 |===
 
@@ -51,7 +51,7 @@ Remarque : l'agent Cloud Secure peut être installé sur la même machine qu'une
 
 == Règles d'accès au réseau cloud
 
-Pour les environnements Cloud Secure * basés aux États-Unis :
+Pour les environnements de sécurité de la charge de travail *basés aux États-Unis* :
 
 [cols="5*"]
 |===
@@ -63,7 +63,7 @@ Pour les environnements Cloud Secure * basés aux États-Unis :
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | Appel sortant | Accès aux services d'authentification 
 |===
-Pour les environnements Cloud Secure * Europe :
+Pour les environnements de sécurité des charges de travail * basés en Europe :
 
 [cols="5*"]
 |===
@@ -75,7 +75,7 @@ Pour les environnements Cloud Secure * Europe :
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | Appel sortant | Accès aux services d'authentification 
 |===
-Pour les environnements Cloud Secure * APAC :
+Pour les environnements de sécurité de la charge de travail *APAC* :
 
 [cols="5*"]
 |===
@@ -107,7 +107,7 @@ Notez que lors de l'ajout de _link:task_add_collector_svm.html#permissions-when-
 | TCP | 35000 - 55000 | Adresses IP des LIF de données des SVM | Appels entrants/sortants | Communication avec ONTAP pour les événements Fpolicy 
 
 
-| TCP | 7 | Adresses IP des LIF de données des SVM | Bidirectionnel | Bidirectionnel entre ONTAP et Cloud Secure. L'agent commande ping les LIFs du SVM. 
+| TCP | 7 | Adresses IP des LIF de données des SVM | Bidirectionnel | Bidirectionnel entre ONTAP et sécurité des charges de travail. L'agent commande ping les LIFs du SVM. 
 |===
 
 
