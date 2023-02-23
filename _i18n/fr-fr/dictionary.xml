@@ -2831,7 +2831,6 @@
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">Exemples d'API REST</block>
   <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">L'URL de tous les appels est _\https://&lt;Cloud Insights URL&gt;/REST/v1/dwh-management/odata_.</block>
-  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">OBTENIR /{schéma}/** - récupère les données de la base de données de rapports, nécessite au moins le rôle _invité_.</block>
   <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">Format : _\https://&lt;Cloud Insights URL&gt;/REST/v1/dwh-management/odata/&lt;nom_schéma&gt;/&lt;requête&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">Exemple :</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">Résultat :</block>
@@ -10346,10 +10345,6 @@
   <block id="37b9c8ac0158a9b9c57a6fd39c09112a" category="cell">CpuIdleTimePercent.total</block>
   <block id="82e45cbb75d74071b021fa2fb638e1da" category="cell">CpuTotalWaitTimePercent.total</block>
   <block id="6d26c12f389d527e1ebe5f28f0ca597b" category="cell">UseCapacitéForReportDéMB</block>
-  <block id="5b18f1d58f1483da5c81155095d22768" category="section-title">Configuration du client REST pour les requêtes synchrones</block>
-  <block id="ca5f5ae182f010eb67697760ff6586f3" category="list-text">La requête doit être contenue sur une seule ligne</block>
-  <block id="2f9a3dbd7bceea75acec35221d985871" category="list-text">Doit être une chaîne JSON valide</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">Les touches APIkeys sont correctes pour _Sync_ ou _Async_ &lt;TBD More information&gt;</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">Informations exploitables : workloads consommateurs</block>
   <block id="b6178403f1fb13fa361db9ac6d3f0273" category="paragraph">Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. Cloud Insights fournit des outils pour vous aider à analyser la saturation des ressources et l'impact sur votre environnement.</block>
   <block id="7dbc3325f8c8ce0b9644c6385df9308d" category="paragraph">Une ressource *influente* ou _avide_ est une ressource qui cause un impact négatif sur une autre ressource. Par exemple, un volume dont les IOPS sont très élevées peut entraîner une augmentation de la latence dans d'autres volumes (ressources _affectées_ ou _dégradées_). Les ressources impactantes et affectées sont des « pairs » qui utilisent la même ressource partagée, par exemple un pool de stockage ou un volume.</block>
@@ -10785,4 +10780,5 @@
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">Mise en route de la sécurité des charges de travail</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Configuration d'un agent de sécurité de charge de travail</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Gestion des utilisateurs de la sécurité des workloads</block>
+  <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Unité d'acquisition installation, désinstallation, configuration de la prise en charge proxy et plus encore sous Windows et Linux.</block>
 </blocks>
