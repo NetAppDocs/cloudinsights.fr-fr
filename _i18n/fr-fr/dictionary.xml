@@ -10609,7 +10609,6 @@
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Vérificateur de taux d'événements (Guide de dimensionnement des agents)</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement.</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">Sécurité des charges de travail : simulation d'une attaque</block>
-  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">Code --- encadré : lien malveillant : concept_cs_attack_simulator.html mots-clés : ransomware, simulation, simulateur, restriction, résumé des attaques : à l'aide d'un script, vous pouvez simuler une attaque par ransomware pour tester ou démontrer la sécurité de la charge de travail ---</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">Vous pouvez utiliser les instructions de cette page pour simuler une attaque à des fins de test ou de démonstration de la sécurité des charges de travail à l'aide du script inclus de simulation d'attaques par ransomware.</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">Le script est fourni avec les fichiers d'installation de l'agent de sécurité de la charge de travail. Il est disponible sur n'importe quelle machine sur laquelle un agent de sécurité de la charge de travail est installé.</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">Vous pouvez exécuter le script sur l'agent de sécurité de la charge de travail lui-même ; il n'est pas nécessaire de préparer une autre machine Linux. Cependant, si vous préférez exécuter le script sur un autre système, copiez simplement le script et exécutez-le là.</block>
@@ -10781,4 +10780,5 @@
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Configuration d'un agent de sécurité de charge de travail</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Gestion des utilisateurs de la sécurité des workloads</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Unité d'acquisition installation, désinstallation, configuration de la prise en charge proxy et plus encore sous Windows et Linux.</block>
+  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">À l'aide d'un script, vous pouvez simuler une attaque par ransomware à des fins de test ou de démonstration de Workload Security</block>
 </blocks>
