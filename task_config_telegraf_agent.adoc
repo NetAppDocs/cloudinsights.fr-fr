@@ -114,7 +114,8 @@ sc.exe delete telegraf
 +
 ....
 cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+//rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+rm 1A918038E8E127BB5C87A202DF173B97A05B4996
 ....
 . Supprimez le dossier _C:\Program Files\telegraf_ pour supprimer le fichier binaire, les journaux et les fichiers de configuration
 . Supprimez la clé _SYSTÈME\CurrentControlSet\Services\EventLog\application\telegraf_ du Registre
@@ -535,7 +536,7 @@ Le script d'installation, le fichier d'environnement et les fichiers YAML peuven
 
 Le fichier PEM peut être vérifié en confirmant son empreinte digitale comme suit :
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 Plus spécifiquement,
 
 * Non Windows :

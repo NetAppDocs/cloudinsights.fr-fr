@@ -54,10 +54,7 @@ Cloud Insights prend en charge le contrôle des nœuds Kubernetes qui exécutent
 |===
 * L'opérateur de surveillance NetApp Kubernetes et ses dépendances (télégraf, indicateurs d'état kube, fluentbit, etc.) ne sont pas pris en charge sur les nœuds exécutant l'architecture ArMD64.
 * Les commandes suivantes doivent être disponibles : _curl_, _sudo_, _openssl_, _sha256sum_ et _kubectl_. Pour obtenir de meilleurs résultats, ajoutez ces commandes au CHEMIN D'ACCÈS.
-
-
->>>>>> E64b5299cf9e04514170378f9d37b84b9K8s d9e6b * l'hôte que vous utiliserez pour l'installation de l'opérateur de surveillance NetApp Kubernetes doit avoir configuré _kubectl_ pour communiquer avec le cluster cible et disposer d'une connectivité Internet dans votre environnement Cloud Insights. Si cet hôte nécessite un proxy pour atteindre Cloud Insights, suivez les instructions de la section <<configuring-proxy-support,Configuration du support de proxy>> section.
-
+* L'hôte que vous utiliserez pour l'installation de l'opérateur de surveillance NetApp Kubernetes doit avoir _kubectl_ configuré pour communiquer avec le cluster K8s ainsi que pour établir une connexion Internet à votre environnement Cloud Insights. Si cet hôte nécessite un proxy pour atteindre Cloud Insights, suivez les instructions de la section <<configuring-proxy-support,Configuration du support de proxy>> section.
 * L'opérateur de surveillance NetApp Kubernetes installe ses propres metrics kube-State pour éviter les conflits avec d'autres instances.
 * Si vous êtes derrière un proxy pendant l'installation ou si vous utilisez le cluster K8s, suivez les instructions du <<configuring-proxy-support,Configuration du support de proxy>> section.
 * Vous devez disposer d'autorisations pour créer des rôles de cluster Kubernetes et des liaisons de rôles.
@@ -426,7 +423,7 @@ Le script d'installation, le fichier d'environnement et les fichiers YAML peuven
 
 Le fichier PEM peut être vérifié en confirmant son empreinte digitale comme suit :
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 Plus spécifiquement,
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
