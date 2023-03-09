@@ -9,7 +9,7 @@ summary: 'Cloud Insights fournit plusieurs comptes utilisateur avec différents 
 
 
 [role="lead"]
-Cloud Insights fournit jusqu'à quatre rôles de compte utilisateur : propriétaire, administrateur, utilisateur et invité du compte. Chaque compte se voit attribuer des niveaux d'autorisation spécifiques, comme indiqué dans le tableau ci-dessous. (Notez que les rôles _User_ et _Guest_ ne sont pas disponibles dans le jeu de fonctions de sécurité.) Les utilisateurs le sont link:#creating-accounts-by-inviting-users["invités"] À Cloud Insights et a attribué un rôle spécifique, ou peut se connecter via link:#single-sign-on-sso-accounts["Autorisation SSO (Single Sign-On)"] avec un rôle par défaut. L'autorisation SSO est disponible en tant que fonctionnalité dans Cloud Insights Premium Edition.
+Cloud Insights fournit jusqu'à quatre rôles de compte utilisateur : propriétaire, administrateur, utilisateur et invité du compte. Chaque compte se voit attribuer des niveaux d'autorisation spécifiques, comme indiqué dans le tableau ci-dessous. Les utilisateurs le sont link:#creating-accounts-by-inviting-users["invités"] À Cloud Insights et a attribué un rôle spécifique, ou peut se connecter via link:#single-sign-on-sso-accounts["Autorisation SSO (Single Sign-On)"] avec un rôle par défaut. L'autorisation SSO est disponible en tant que fonctionnalité dans Cloud Insights Premium Edition.
 
 
 
