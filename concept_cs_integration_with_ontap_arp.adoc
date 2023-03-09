@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 Un exemple d'alerte générée en raison d'un événement ARP est illustré ci-dessous :
 
-image:CS_ONTAP_ARP_EXAMPLE.png["Exemple d'écran ONTAP ARP"]
+image:CS_Ransomware_Example_1.png["Alerte par ransomware, section supérieure"]
+image:CS_Ransomware_Example_2.png["Alerte par ransomware, section supérieure"]
+image:CS_Ransomware_Example_3.png["Alerte par ransomware, section supérieure"]
 
 Une bannière de confiance élevée indique que l'attaque a montré un comportement par ransomware avec les activités de chiffrement de fichiers. Le graphique fichiers chiffrés indique l'horodatage auquel l'activité de chiffrement de volume a été détectée par la solution ARP.
 
