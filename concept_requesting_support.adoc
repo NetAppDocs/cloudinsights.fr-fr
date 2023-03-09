@@ -68,7 +68,9 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 == Obtention d'informations de support
 
-NetApp prend en charge Cloud Insights de plusieurs façons. De nombreuses options de support en libre-service sont disponibles 24 h/24, 7 j/7, comme des articles de la base de connaissances (KB) ou la communauté NetApp. Pour les utilisateurs abonnés à l'une des éditions Cloud Insights (Basic, Standard, Premium), une assistance technique est disponible par téléphone ou via Internet. Un compte SSO du site de support NetApp (NSS) est nécessaire pour la gestion des dossiers en ligne.
+NetApp prend en charge Cloud Insights de plusieurs façons. De nombreuses options de support en libre-service sont disponibles 24 h/24, 7 j/7, comme des articles de la base de connaissances (KB) ou la communauté NetApp. Pour les utilisateurs abonnés à l'une des éditions Cloud Insights (Basic*, Standard, Premium), l'assistance technique est disponible par téléphone ou via la billetterie Web. Un compte SSO du site de support NetApp (NSS) est nécessaire pour la gestion des dossiers en ligne.
+
+*Le support est disponible avec Basic Edition tant que tous vos systèmes de stockage NetApp sont couverts au moins par le niveau Premium support.
 
 
 
