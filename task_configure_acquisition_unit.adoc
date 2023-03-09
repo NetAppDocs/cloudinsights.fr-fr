@@ -83,6 +83,8 @@ Pour ce faire, la méthode la plus simple consiste à spécifier une configurati
 
 NOTE: L'utilisation d'un astérisque (*) pour le caractère générique est courante, mais votre configuration proxy/pare-feu peut utiliser un format différent. Consultez la documentation de votre proxy pour vous assurer que les spécifications des caractères génériques sont correctes dans votre environnement.
 
+Pour plus d'informations sur la configuration des serveurs proxy, consultez le document NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Base de connaissances"].
+
 
 
 ==== Affichage des URL du proxy
@@ -136,6 +138,8 @@ Pour ce faire, la méthode la plus simple consiste à spécifier une configurati
  *.cloudinsights.netapp.com
 
 NOTE: L'utilisation d'un astérisque (*) pour le caractère générique est courante, mais votre configuration proxy/pare-feu peut utiliser un format différent. Consultez la documentation de votre proxy pour vous assurer que les spécifications des caractères génériques sont correctes dans votre environnement.
+
+Pour plus d'informations sur la configuration des serveurs proxy, consultez le document NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Base de connaissances"].
 
 
 
