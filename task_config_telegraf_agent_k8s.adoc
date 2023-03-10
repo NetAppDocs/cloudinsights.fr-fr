@@ -172,7 +172,10 @@ password: <password from docker secret step above>
 ....
 Retirez l'image de docker de Cloud Insights. Assurez-vous que le numéro de version _netapp-monitoring_ est à jour :
 
- docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
 Recherchez le champ _netapp-monitoring_ <version> à l'aide de la commande suivante :
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
