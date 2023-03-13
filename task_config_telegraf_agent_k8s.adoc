@@ -453,7 +453,7 @@ Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des perf
 
 Quelques points à essayer si vous rencontrez des problèmes lors de la configuration de l'opérateur de surveillance NetApp Kubernetes :
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | Problème : | Essayer : 
 
@@ -480,5 +480,17 @@ Quelques points à essayer si vous rencontrez des problèmes lors de la configur
 
 
 | Erreurs « ImagePullBackoff » détectées | Ces erreurs peuvent se produire si vous disposez d'un référentiel docker personnalisé ou privé et si vous n'avez pas encore configuré l'opérateur de surveillance NetApp Kubernetes pour le reconnaître correctement. <<using-a-custom-or-private-docker-repository,En savoir plus>> a propos de la configuration pour repo personnalisé/privé. 
+
+
+| J'ai un problème avec mon déploiement d'opérateur de surveillance, et la documentation actuelle ne m'aide pas à le résoudre.  a| 
+Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de support technique.
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
