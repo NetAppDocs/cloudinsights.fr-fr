@@ -3103,12 +3103,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">un serveur fpolicy existant avec le même nom, numéro de séquence, etc. Fournit une erreur.</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">Le script s'arrête brusquement en cours d'exécution.</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">Un exemple d'exécution de script est présenté ci-dessous :</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">Question : puis-je augmenter le nombre de SVM sur lequel le script peut être exécuté ?</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">Réponse : oui. Il vous suffit de modifier le script et de changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable.</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">Question : si j'augmente le nombre de SVM, va-t-il augmenter la durée d'exécution du script ?</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">Réponse : non Le script s'exécute pendant 5 minutes au maximum, même si le nombre de SVM est augmenté.</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">Réponse : oui. Vous devez modifier le script et changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable.</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">Réponse : non Le script s'exécute pendant 5 min au maximum, même si le nombre de SVM est augmenté.</block>
   <block id="92726ab5faeb2cb9208eaac9af0346bd" category="doc">Gestion des utilisateurs</block>
   <block id="db03a10b973a96816a6cf82300b069fa" category="cell">Accès à Cloud Secure</block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">Peut exécuter toutes les fonctions Cloud Secure, y compris celles pour les alertes, les médico-événements, les collecteurs de données, les règles de réponse automatisées et les API pour Cloud Secure. Un administrateur peut également inviter d'autres utilisateurs, mais peut uniquement attribuer des rôles Cloud Secure.</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">La page toutes les activités vous aide à comprendre les actions effectuées sur les entités de l'environnement de sécurité de la charge de travail.</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">L'historique des activités est conservé pendant 13 mois pour les environnements de sécurité active de la charge de travail.</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">Question : si j'exécute ce script sur un SVM déjà configuré pour la sécurité des charges de travail, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou bien configure-il un serveur temporaire et exécute-t-il le processus ?</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">Réponse : le vérificateur de taux d'événements peut s'exécuter correctement, même pour un SVM déjà configuré pour la sécurité de la charge de travail. Il ne devrait y avoir aucun impact.</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent de sécurité workloads :<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">Dans AWS, procédez comme suit pour configurer la machine à utiliser comme agent de sécurité de la charge de travail :</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">Procédez comme suit pour configurer la machine à utiliser en tant qu'agent de sécurité de la charge de travail :</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de support technique.</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">Le tableau de bord *Overview* affiche des informations utiles telles que le nombre de clusters dans votre environnement avec leurs pourcentages de capacité et de performances globaux. Des données prédictives concernant le nombre de jours prévus jusqu'à ce que la capacité de stockage ou les performances manque d'espace s'affichent. En outre, si des contrôleurs de votre infrastructure fonctionnent avec leur processeur à plus de 65 %, ce qui risque de compromettre votre cluster en cas de basculement, ONTAP Essentials les présente comme des contrôleurs actifs.</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">Question</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">Réponse</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">Si je exécute ce script sur un SVM déjà configuré pour Workload Security, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou configure-t-il une configuration temporaire et exécute-t-il le processus ?</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">L'Event Rate Checker peut s'exécuter correctement, même pour un SVM déjà configuré pour Workload Security. Il ne devrait y avoir aucun impact.</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">Puis-je augmenter le nombre de SVM sur lesquels le script peut être exécuté ?</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">Oui. Il vous suffit de modifier le script et de changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable.</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">Si j'augmente le nombre de SVM, augmente-t-il le temps d'exécution du script ?</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">Non Le script s'exécute pendant 5 minutes au maximum, même si le nombre de SVM est augmenté.</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">Oui. Vous devez modifier le script et changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable.</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">Non Le script s'exécute pendant 5 min au maximum, même si le nombre de SVM est augmenté.</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">Que se passe-t-il si j'exécute Event Rate Checker avec un agent existant ?</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">L'exécution d'Event Rate Checker sur un agent existant peut entraîner une augmentation de la latence sur le SVM. Cette augmentation sera temporaire pendant l'exécution du vérificateur de taux d'événement.</block>
 </blocks>

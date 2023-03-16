@@ -143,32 +143,23 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Question : si j'exécute ce script sur un SVM déjà configuré pour la sécurité des charges de travail, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou bien configure-il un serveur temporaire et exécute-t-il le processus ? 
+| Question | Réponse 
 
 
-| Réponse : le vérificateur de taux d'événements peut s'exécuter correctement, même pour un SVM déjà configuré pour la sécurité de la charge de travail. Il ne devrait y avoir aucun impact. 
+| Si je exécute ce script sur un SVM déjà configuré pour Workload Security, utilise-t-il simplement la configuration fpolicy existante sur le SVM ou configure-t-il une configuration temporaire et exécute-t-il le processus ? | L'Event Rate Checker peut s'exécuter correctement, même pour un SVM déjà configuré pour Workload Security. Il ne devrait y avoir aucun impact. 
 
 
-| Question : puis-je augmenter le nombre de SVM sur lequel le script peut être exécuté ? 
+| Puis-je augmenter le nombre de SVM sur lesquels le script peut être exécuté ? | Oui. Il vous suffit de modifier le script et de changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable. 
 
 
-| Réponse : oui. Il vous suffit de modifier le script et de changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable. 
+| Si j'augmente le nombre de SVM, augmente-t-il le temps d'exécution du script ? | Non Le script s'exécute pendant 5 minutes au maximum, même si le nombre de SVM est augmenté. 
 
 
-| Question : si j'augmente le nombre de SVM, va-t-il augmenter la durée d'exécution du script ? 
+| Puis-je augmenter le nombre de SVM sur lesquels le script peut être exécuté ? | Oui. Vous devez modifier le script et changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable. 
 
 
-| Réponse : non Le script s'exécute pendant 5 minutes au maximum, même si le nombre de SVM est augmenté. 
+| Si j'augmente le nombre de SVM, augmente-t-il le temps d'exécution du script ? | Non Le script s'exécute pendant 5 min au maximum, même si le nombre de SVM est augmenté. 
 
 
-| Question : puis-je augmenter le nombre de SVM sur lequel le script peut être exécuté ? 
-
-
-| Réponse : oui. Vous devez modifier le script et changer le nombre max de SVM de 5 à n'importe quel nombre souhaitable. 
-
-
-| Question : si j'augmente le nombre de SVM, va-t-il augmenter la durée d'exécution du script ? 
-
-
-| Réponse : non Le script s'exécute pendant 5 min au maximum, même si le nombre de SVM est augmenté. 
+| Que se passe-t-il si j'exécute Event Rate Checker avec un agent existant ? | L'exécution d'Event Rate Checker sur un agent existant peut entraîner une augmentation de la latence sur le SVM. Cette augmentation sera temporaire pendant l'exécution du vérificateur de taux d'événement. 
 |===
