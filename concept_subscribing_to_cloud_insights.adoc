@@ -143,6 +143,7 @@ Le prix de Cloud Insights est conforme à *unité gérée*. L'utilisation de vos
 
 Notez que les collecteurs de données suivants sont dosés à un taux de Tio brut différent de l'unité gérée. Chaque 40 Tio de capacité non formatée sur ces collecteurs de données est facturé comme une unité gérée (UM) :
 
+* AWS S3
 * Dell EMC ECS
 * Plate-forme de contenu Hitachi
 * IBM Cleversafe

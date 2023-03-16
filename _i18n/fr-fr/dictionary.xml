@@ -10796,4 +10796,5 @@
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">J'ai un problème avec mon déploiement d'opérateur de surveillance, et la documentation actuelle ne m'aide pas à le résoudre.</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de support technique.</block>
+  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
 </blocks>
