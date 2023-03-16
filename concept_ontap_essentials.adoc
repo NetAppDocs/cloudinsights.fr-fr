@@ -28,7 +28,7 @@ Pour commencer l'exploration, sélectionnez *ONTAP Essentials* dans le menu prin
 
 image:ONTAP_Essentials_Overview_Sept.png["Tableau de bord de présentation de ONTAP Essentials"]
 
-Le tableau de bord *Overview* affiche des informations utiles telles que le nombre de clusters dans votre environnement avec leurs pourcentages de capacité et de performances globaux. Des données prédictives concernant le nombre de jours prévus jusqu'à ce que la capacité de stockage ou les performances manque d'espace s'affichent. Si des contrôleurs de votre infrastructure fonctionnent à des températures élevées, ONTAP Essentials les montrera.
+Le tableau de bord *Overview* affiche des informations utiles telles que le nombre de clusters dans votre environnement avec leurs pourcentages de capacité et de performances globaux. Des données prédictives concernant le nombre de jours prévus jusqu'à ce que la capacité de stockage ou les performances manque d'espace s'affichent. En outre, si des contrôleurs de votre infrastructure fonctionnent avec leur processeur à plus de 65 %, ce qui risque de compromettre votre cluster en cas de basculement, ONTAP Essentials les présente comme des contrôleurs actifs.
 
 Des graphiques d'information vous permettent d'examiner les performances au fil du temps ainsi que les pannes d'utilisation de la capacité.
 
