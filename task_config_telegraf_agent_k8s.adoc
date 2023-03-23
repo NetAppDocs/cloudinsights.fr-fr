@@ -185,7 +185,7 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<vers
 Recherchez le champ _netapp-monitoring_ <version> à l'aide de la commande suivante :
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise.
+Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les chemins de répertoire vers ces images dans votre référentiel sont cohérents avec ceux de docker.<cluster>.cloudinsights.netapp.com.
 
 Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées. Voir la <<before-installing-the-netapp-kubernetes-monitoring-operator,Conditions préalables>> la section ci-dessus concerne les versions les plus récentes de ces composants :
 

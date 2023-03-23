@@ -5688,7 +5688,6 @@
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">Connectez-vous au référentiel docker :</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">Retirez l'image de docker de Cloud Insights. Assurez-vous que le numéro de version _netapp-monitoring_ est à jour :</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">Recherchez le champ _netapp-monitoring_ &lt;version&gt; à l'aide de la commande suivante :</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise.</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">Si Fluent-bit est activé, téléchargez également :</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">Dans la section _spec:_, effectuez les modifications suivantes :</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">Instructions OpenShift</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Carte générale montrant les données NKMO résidant dans le cluster Kubernetes, avec des flèches indiquant comment les données sont transmises au cluster depuis les hôtes et le serveur proxy, toutes ces données étant transmises à Cloud Insights</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">L'opérateur (NKMO) et les collecteurs de données sont téléchargés depuis le registre Docker de Cloud Insights. Une fois installé, NKMO gère ensuite tous les collecteurs compatibles avec l'opérateur déployés dans les nœuds du cluster Kubernetes pour acquérir des données, notamment la gestion du cycle de vie de ces collecteurs. Après cette chaîne, les données sont acquises auprès des collecteurs et envoyées à Cloud Insights.</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les chemins de répertoire vers ces images dans votre référentiel sont cohérents avec ceux de docker.&lt;cluster&gt;.cloudinsights.netapp.com.</block>
 </blocks>
