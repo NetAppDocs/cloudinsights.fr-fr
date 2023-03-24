@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: task_dc_rubrik_cdm.html 
+keywords: data collector, Rubrik, 
+summary: Configuration du collecteur de données Rubrik CDM. 
+---
+= Data Collector Rubrik CDM
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights utilise le collecteur de données CDM Rubrik pour collecter les données d'inventaire et de performances.
+
+
+NOTE: Ceci est considéré comme un collecteur _Preview_ et cette information est susceptible d'être modifiée.
+
+Cette page sera bientôt disponible.
