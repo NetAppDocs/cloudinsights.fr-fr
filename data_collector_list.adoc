@@ -294,6 +294,9 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_config_telegraf_agent.html#rhel-and-centos["RHEL  amp ; CentOS"] | Service 
 
 
+| link:task_dc_rubrik_cdm.html["Stockage CDM Rubrik"] | Infrastructures 
+
+
 | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu et amp ; Debian"] | Service 
 
 
