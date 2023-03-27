@@ -102,14 +102,6 @@ image:Monitor_Group_By_Example.png["Choisissez log pour surveiller, définissez 
 
 
 
-==== Définir le comportement d'alerte
-
-Choisissez le mode d'alerte que vous souhaitez signaler lorsqu'une alerte de journal est déclenchée. Vous pouvez régler le moniteur de façon à ce qu'il soit alertée avec _Warning_, _Critical_ ou _Informational_ gravité, en fonction des conditions de filtre que vous avez définies ci-dessus.
-
-image:Monitor_log_alert_behavior.png["définissez le comportement du journal à surveiller"]
-
-
-
 ==== Définir le comportement de résolution d'alerte
 
 Vous pouvez choisir le mode de résolution d'une alerte de surveillance des journaux. Trois choix sont proposés :
