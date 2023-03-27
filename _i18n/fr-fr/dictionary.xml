@@ -164,7 +164,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Surveillance des journaux</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Le filtre de surveillance du journal ne peut pas être vide.</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Définir le comportement de résolution d'alerte</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">Vous pouvez choisir le mode de résolution d'une alerte de surveillance des journaux. Trois choix sont proposés :</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Résoudre instantanément*: L'alerte est immédiatement résolue sans action supplémentaire</block>
   <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Résoudre en fonction de l'heure* : l'alerte est résolue une fois l'heure spécifiée écoulée</block>
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Résoudre en fonction de l'entrée de journal* : l'alerte est résolue lorsqu'une activité de journal ultérieure s'est produite. Par exemple, lorsqu'un objet est enregistré comme « disponible ».</block>
@@ -10809,4 +10808,7 @@
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Stockage CDM Rubrik</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">CDM Rubrik</block>
+  <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">Définir le comportement de l'alerte</block>
+  <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">Vous pouvez créer le moniteur pour qu'il vous alerte avec un niveau de gravité de _critique_, _Avertissement_ ou _information_, lorsque les conditions définies ci-dessus se produisent une fois (c'est-à-dire immédiatement), ou attendre que les conditions se produisent 2 fois ou plus.</block>
+  <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">Vous pouvez choisir la façon dont une alerte de surveillance de journal est résolue. Trois choix sont proposés :</block>
 </blocks>

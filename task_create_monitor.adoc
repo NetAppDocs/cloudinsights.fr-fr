@@ -102,9 +102,15 @@ image:Monitor_Group_By_Example.png["Choisissez log pour surveiller, définissez 
 
 
 
+==== Définir le comportement de l'alerte
+
+Vous pouvez créer le moniteur pour qu'il vous alerte avec un niveau de gravité de _critique_, _Avertissement_ ou _information_, lorsque les conditions définies ci-dessus se produisent une fois (c'est-à-dire immédiatement), ou attendre que les conditions se produisent 2 fois ou plus.
+
+
+
 ==== Définir le comportement de résolution d'alerte
 
-Vous pouvez choisir le mode de résolution d'une alerte de surveillance des journaux. Trois choix sont proposés :
+Vous pouvez choisir la façon dont une alerte de surveillance de journal est résolue. Trois choix sont proposés :
 
 * *Résoudre instantanément*: L'alerte est immédiatement résolue sans action supplémentaire
 * *Résoudre en fonction de l'heure* : l'alerte est résolue une fois l'heure spécifiée écoulée
