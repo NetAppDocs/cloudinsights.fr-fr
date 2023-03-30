@@ -9,9 +9,87 @@ summary: Configuration du collecteur de données Rubrik CDM.
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données CDM Rubrik pour collecter les données d'inventaire et de performances.
+Cloud Insights utilise le collecteur de données Rubrik pour acquérir des données d'inventaire et de performances à partir des appliances de stockage Rubrik.
 
 
-NOTE: Ceci est considéré comme un collecteur _Preview_ et cette information est susceptible d'être modifiée.
 
-Cette page sera bientôt disponible.
+== Terminologie
+
+Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données Rubrik. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+
+[cols="2*"]
+|===
+| Terme du fournisseur/modèle | Terme Cloud Insights 
+
+
+| Cluster | Stockage, pool de stockage 
+
+
+| Nœud | Nœud de stockage 
+
+
+| Disque | Disque 
+|===
+Remarque : il s'agit uniquement de mappages terminologiques courants et peuvent ne pas représenter tous les cas pour cette source de données.
+
+
+
+== De formation
+
+Les éléments suivants sont nécessaires pour configurer ce collecteur de données :
+
+* L'unité d'acquisition Cloud Insights initie les connexions au port TCP 443 du cluster Rubrik. Un collecteur par cluster.
+* Adresse IP du cluster Rubrik.
+* Nom d'utilisateur et mot de passe pour le cluster.
+* Port requis : HTTPS 443
+
+
+
+
+== Configuration
+
+[cols="2*"]
+|===
+| Champ | Description 
+
+
+| IP | Adresse IP du cluster Rubrik 
+
+
+| Nom d'utilisateur | Nom d'utilisateur du cluster 
+
+
+| Mot de passe | Mot de passe pour le cluster 
+|===
+
+
+== Configuration avancée
+
+[cols="2*"]
+|===
+| Intervalle d'interrogation des stocks (min) | La valeur par défaut est 60 
+
+
+| Intervalle d'interrogation des performances (s) | La valeur par défaut est 300 
+|===
+
+
+== Dépannage
+
+Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur de données :
+
+
+
+=== Inventaire
+
+[cols="2*"]
+|===
+| Problème : | Essayer : 
+
+
+| J'ai reçu un message indiquant que plusieurs stockages sont créés. | Vérifiez que le cluster est correctement configuré et que le collecteur pointe vers un seul cluster. 
+
+
+| J'ai reçu un avertissement indiquant que l'API du disque a renvoyé plus de données | Contactez le support pour obtenir des données supplémentaires. 
+|===
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].

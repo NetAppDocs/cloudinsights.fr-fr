@@ -10801,9 +10801,6 @@
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les chemins de répertoire vers ces images dans votre référentiel sont cohérents avec ceux de docker.&lt;cluster&gt;.cloudinsights.netapp.com.</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Configuration du collecteur de données Rubrik CDM.</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Data Collector Rubrik CDM</block>
-  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights utilise le collecteur de données CDM Rubrik pour collecter les données d'inventaire et de performances.</block>
-  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Ceci est considéré comme un collecteur _Preview_ et cette information est susceptible d'être modifiée.</block>
-  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Cette page sera bientôt disponible.</block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Stockage CDM Rubrik</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">CDM Rubrik</block>
@@ -10814,4 +10811,17 @@
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">Exemple YAML de rôle de cluster NKMO</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">Le composant _kubectl_ de l'opérateur de surveillance NetApp Kubernetes (NKMO) doit être configuré avec l'accès aux objets kubernetes suivants, au minimum : agents, rôles de cluster, liaisons de clusters, définitions de ressources personnalisées, déploiements, espaces de noms, rôles, liaisons, secrets, comptes de service, et services netapp. Vous trouverez ci-dessous un exemple de rôle de cluster avec ces privilèges minimaux.</block>
   <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">Les commandes suivantes doivent être disponibles : _curl, sudo, openssl, sha256sum,_ et _kubectl_. Pour obtenir de meilleurs résultats, ajoutez ces commandes au CHEMIN D'ACCÈS. Notez que _kubectl_ doit être configuré avec un accès minimal aux objets kubernetes suivants : _agents, clusterrorôles, clusterrobindings, customresourcedefinitions, déploiements, espaces de noms, rôles, liaisons, secrets, comptes de service,_ et _services_. Voir <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> pour un exemple de fichier .yaml avec ces privilèges de clusterrole minimum.</block>
+  <block id="179f74ad6aecb22f37252502d5f39223" category="paragraph">Cloud Insights utilise le collecteur de données Rubrik pour acquérir des données d'inventaire et de performances à partir des appliances de stockage Rubrik.</block>
+  <block id="33a86d81c4ea09bf20b800c1ec8450bc" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données Rubrik. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
+  <block id="8f8baa884fbda77b562cc514c3b81d0c" category="cell">Stockage, pool de stockage</block>
+  <block id="4789f5469e7862776edfb6738109575f" category="list-text">L'unité d'acquisition Cloud Insights initie les connexions au port TCP 443 du cluster Rubrik. Un collecteur par cluster.</block>
+  <block id="ba1537545eae7c49c014e94db43517c8" category="list-text">Adresse IP du cluster Rubrik.</block>
+  <block id="662de008b2f10a99c71484e7e9c3ed75" category="list-text">Nom d'utilisateur et mot de passe pour le cluster.</block>
+  <block id="93264baac0728f5daa6ac1609e5b5fdc" category="cell">Adresse IP du cluster Rubrik</block>
+  <block id="417cc983ef27be035f66210ac6213b46" category="cell">Nom d'utilisateur du cluster</block>
+  <block id="e41f6efeb9a8c29ac8077a1348b68078" category="cell">Mot de passe pour le cluster</block>
+  <block id="444301801d58f01b1fb488fe224bb8c5" category="cell">J'ai reçu un message indiquant que plusieurs stockages sont créés.</block>
+  <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Vérifiez que le cluster est correctement configuré et que le collecteur pointe vers un seul cluster.</block>
+  <block id="fc971fc699329bc531b4d65ff180a629" category="cell">J'ai reçu un avertissement indiquant que l'API du disque a renvoyé plus de données</block>
+  <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Contactez le support pour obtenir des données supplémentaires.</block>
 </blocks>
