@@ -164,11 +164,7 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Surveillance des journaux</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Le filtre de surveillance du journal ne peut pas être vide.</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Définir le comportement de résolution d'alerte</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Résoudre instantanément*: L'alerte est immédiatement résolue sans action supplémentaire</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Résoudre en fonction de l'heure* : l'alerte est résolue une fois l'heure spécifiée écoulée</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Résoudre en fonction de l'entrée de journal* : l'alerte est résolue lorsqu'une activité de journal ultérieure s'est produite. Par exemple, lorsqu'un objet est enregistré comme « disponible ».</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">Résolution des alertes</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">Sélectionnez le type de notification et les destinataires</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">Dans la section _configurer les notifications d'équipe_, vous pouvez choisir d'alerter votre équipe par e-mail ou via Webhook.</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">Choisissez la méthode d'alerte</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Vérifiez que le cluster est correctement configuré et que le collecteur pointe vers un seul cluster.</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">J'ai reçu un avertissement indiquant que l'API du disque a renvoyé plus de données</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Contactez le support pour obtenir des données supplémentaires.</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Résolution instantanée</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes ultérieures générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Options de résolution des alertes</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * *résoudre immédiatement*: L'alerte est immédiatement résolue sans autre action nécessaire * *résoudre en fonction du temps*: L'alerte est résolue après le délai spécifié * *résoudre en fonction de l'entrée du journal*: L'alerte est résolue lorsqu'une activité de journal ultérieure s'est produite. Par exemple, lorsqu'un objet est enregistré comme « disponible ».</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
