@@ -8,7 +8,7 @@ summary: Inscription au Cloud Insights et création de votre environnement.
 
 
 [role="lead"]
-Avant de travailler avec Cloud Insights, vous devez vous inscrire sur le portail *NetApp Cloud Central*. Si vous disposez déjà d'un identifiant NetApp Cloud Central, vous pouvez essayer gratuitement Cloud Insights en quelques étapes rapides.
+Avant de pouvoir travailler avec Cloud Insights, vous devez vous inscrire sur le portail *NetApp BlueXP* (anciennement Cloud Central). Si vous disposez déjà d'un identifiant NetApp Cloud Central, vous pouvez essayer gratuitement Cloud Insights en quelques étapes rapides.
 
 
 toc::[]
@@ -16,34 +16,34 @@ toc::[]
 
 == Création de votre compte NetApp Cloud Central
 
-Pour vous inscrire afin d'accéder aux services clouds de NetApp, rendez-vous sur https://cloud.netapp.com["*NetApp Cloud Central*"^] Et cliquez sur *s'inscrire*.
+Pour commencer à utiliser les services cloud NetApp, rendez-vous sur https://cloud.netapp.com["*NetApp BlueXP*"^] Et cliquez sur *commencer*.
 
+* Si vous n'êtes pas encore inscrit, sélectionnez *s'inscrire*
 * Saisissez une adresse e-mail professionnelle valide et choisissez un mot de passe.
 * Entrez le nom de votre entreprise, ainsi que votre nom complet.
-* Acceptez les termes et conditions et cliquez sur *s'inscrire*.
+* Acceptez les conditions générales et sélectionnez *Continuer*.
+* BlueXP vous guidera tout au long de la mise en route.
 
-
-Vous serez ensuite redirigé vers la page d'offres clouds de NetApp.
-
-Sélectionnez Cloud Insights.
 
 
 
 === Que se passe-t-il si je dispose déjà d'un identifiant NetApp Cloud ?
 
-Si vous disposez déjà d'un compte NetApp Cloud Central, choisissez simplement *connexion* sur le https://cloud.netapp.com["*NetApp Cloud Central*"^] page de portail.
+Une fois que vous avez un compte NetApp BlueXP, il vous suffit de choisir *se connecter* sur le https://cloud.netapp.com["*NetApp BlueXPl*"^] page de portail.
 
 Entrez votre adresse e-mail et votre mot de passe. Vous serez ensuite redirigé vers la page d'offres clouds de NetApp.
 
 Sélectionnez Cloud Insights.
 
+image:BlueXP_CloudInsights.png["Essai gratuit de Cloud Insights sur BlueXP"]
+
 
 
 == Commencez votre essai gratuit de Cloud Insights
 
-Si c'est la première fois que vous vous connectez à Cloud Insights, sous l'offre Cloud Insights, cliquez sur *commencer l'essai gratuit*. Cloud Insights créera ensuite l'environnement de votre entreprise.
+Si c'est la première fois que vous vous connectez à Cloud Insights, sous l'offre Cloud Insights, cliquez sur *commencer l'essai gratuit*. Cloud Insights vous guidera dans la création de l'environnement de votre entreprise.
 
-Une fois la création de votre environnement terminée, vous pouvez utiliser vos identifiants Cloud Central pour vous connecter et lancer l'essai gratuit de 30 jours d'Cloud Insights. Au cours de cet essai, vous pouvez explorer toutes les fonctionnalités offertes par l'édition Standard de Cloud Insights.
+Une fois la création de votre environnement terminée, vous pouvez utiliser vos identifiants Cloud Central pour vous connecter et lancer l'essai gratuit de 30 jours d'Cloud Insights. Pendant la période d'essai, vous pouvez explorer les fonctionnalités de Cloud Insights.
 
 Pendant l'essai gratuit, vous pouvez link:concept_subscribing_to_cloud_insights.html["commencez votre abonnement"] Vers Cloud Insights à tout moment. Lorsque vous êtes abonné, vous pouvez utiliser les fonctions Cloud Insights en fonction de votre abonnement actuel.
 
