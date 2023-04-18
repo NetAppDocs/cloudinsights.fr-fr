@@ -5457,8 +5457,6 @@
   <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">Cliquez sur _Ajouter une connexion Cloud_ et collez le code de couplage.</block>
   <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Revenez à l'onglet navigateur Cloud Insights et attendez que la connexion soit établie. Une fois qu'il est établi, un bouton _Complete_ est révélé.</block>
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">Cliquez sur _Complete_.</block>
-  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">L'erreur suivante s'affiche lors de la tentative de connexion à Azure CVO : « la demande de signature de certificat pour le service de l'autorité de certification de courtage/responsable n'a pas été traitée. »</block>
-  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">Vérifiez que les paramètres du proxy de votre Cloud Manager sont définis sur l'IP privée de Cloud Manager. L'installation de Cloud Manager peut définir un proxy différent. Une fois que le proxy est défini sur l'adresse IP correcte et que vous référencez le proxy dans la boîte de dialogue Cloud Connector, la connexion à Cloud Insights devrait s'établir avec succès.</block>
   <block id="c7a7127c54e3e8ac9e699f2540a909f5" category="summary">Commencer avec les coûts du cloud.</block>
   <block id="15870627e10ad6ebeb6e55af499ed0ce" category="doc">Commencer avec les coûts du cloud</block>
   <block id="617bd6c0c962503351aba8343b7e2031" category="paragraph">Les coûts du cloud fournissent une analyse détaillée des dépenses passées, présentes et estimées, qui apporte une grande visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses liées au cloud de votre entreprise et fournit une vue détaillée des charges de travail, des comptes et des services individuels.</block>
@@ -10377,7 +10375,6 @@
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">Source de données : module de communication avec une pile matérielle ou logicielle. Il se compose d'une configuration et d'un code qui s'exécutent sur l'ordinateur au pour communiquer avec le périphérique.</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">à l'aide d'un référentiel docker personnalisé ou privé</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">Téléchargez toutes les dépendances open source dans votre registre Docker privé. Les images Open Source suivantes doivent être téléchargées. Voir la <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> la section ci-dessus concerne les versions les plus récentes de ces composants :</block>
-  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">Ce collecteur de données est <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> À partir du 1er janvier 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">Configuration du collecteur de données REST Dell EMC Isilon / PowerScale.</block>
   <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights utilise le collecteur de données REST Dell EMC Isilon / PowerScale pour obtenir des données d'inventaire et de performances provenant du stockage Dell EMC Isilon ou PowerScale.</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">Système de fichiers OneFS</block>
@@ -10834,4 +10831,5 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Une fois la création de votre environnement terminée, vous pouvez utiliser vos identifiants Cloud Central pour vous connecter et lancer l'essai gratuit de 30 jours d'Cloud Insights. Pendant la période d'essai, vous pouvez explorer les fonctionnalités de Cloud Insights.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestion du cluster</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Nécessaire pour le blocage des utilisateurs CIFS/SMB.</block>
+  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">Ce collecteur de données n'est plus disponible en Cloud Insights depuis le 4 avril 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
