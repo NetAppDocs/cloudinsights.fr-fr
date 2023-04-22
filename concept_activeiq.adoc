@@ -11,6 +11,9 @@ summary: Cloud Insights collecte les données de risque auprès de NetApp Active
 [role="lead"]
 NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ"] Fournit une série de visualisations, d'analyses et d'autres services relatifs au support aux clients NetApp pour leurs systèmes matériels/logiciels. Les données rapportées par Active IQ peuvent améliorer le dépannage des problèmes système et fournir des informations sur l'optimisation et l'analyse prédictive liées à vos appareils.
 
+
+NOTE: ActiveIQ n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
 Cloud Insights collecte les *risques* pour tout système de stockage NetApp clustered Data ONTAP contrôlé et signalé par Active IQ. Les risques signalés pour les systèmes de stockage sont automatiquement collectés par Cloud Insights dans le cadre de sa collecte de données sur ces périphériques. Vous devez ajouter le collecteur de données approprié à Cloud Insights pour collecter les informations de risque Active IQ.
 
 Cloud Insights n'affichera pas les données de risque pour les systèmes ONTAP qui ne sont pas surveillés et signalés par Active IQ.

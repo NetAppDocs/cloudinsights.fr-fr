@@ -12,35 +12,41 @@ keywords: reporting, cognos, data warehouse, dwh, create, report
 Utilisez les étapes de cet exemple pour générer un rapport simple sur la capacité physique des pools de stockage et de stockage dans plusieurs data centers.
 
 .Étapes
-. Dans la barre d'outils, cliquez sur *[+]*
-. Cliquez sur *Rapport*
-. Cliquez sur *modèles > blanc*
-. Cliquez sur *Thèmes > Bleu clair > OK*
+. Accédez à *Menu > contenu > contenu de l'équipe > Rapports*
+. Dans le coin supérieur droit de l'écran, sélectionnez *[Nouveau +]*
+. Sélectionnez *Rapport*
++
+image:Reporting_New_Report.png["Création d'un nouveau rapport"]
+
+. Dans l'onglet *Templates*, sélectionnez _Blank_
 +
 Les onglets Source et données s'affichent
 
-. Cliquez sur *Source > [+]*
-. Dans la boîte de dialogue *Ouvrir fichier*, cliquez sur *contenu d'association > Forfaits*
+. Ouvrir *sélectionnez une source +*
+. Sous *contenu de l'équipe*, ouvrez *Packages*
 +
 La liste des packages disponibles s'affiche.
 
-. Cliquez sur *capacité de stockage et de pool de stockage > Ouvrir*
-. Cliquez sur *[+]*
+. Choisissez *capacité de stockage et de pool de stockage*image:Reporting_Select_Source_For_Report.png["Sélection d'une source pour le rapport"]
+. Sélectionnez *Ouvrir*
 +
 Les styles disponibles pour votre rapport sont affichés.
 
-. Cliquez sur *liste*
+. Sélectionnez *liste*
 +
 Ajoutez des noms appropriés pour la liste et la requête
 
-. Cliquez sur *OK*
+. Sélectionnez *OK*
 . Développez _la capacité physique_
 . Développez jusqu'au niveau le plus bas de _Data Center_
 . Faites glisser _Data Center_ vers le palais de reporting.
 . Développez _Capacity (Mo)_
 . Faites glisser _Capacity (Mo)_ vers le palais de reporting.
 . Faites glisser _used Capacity (MB)_ vers le palais de reporting.
-. Exécutez le rapport en cliquant sur image:Reporting-RunButton.png["Courez"] et sélection d'un type de sortie.
+. Exécutez le rapport en sélectionnant un type de sortie dans le menu *Exécuter*.
++
+image:Reporting_Running_A_Report.png["Sélection d'une sortie de rapport"]
+
 
 
 .Résultat

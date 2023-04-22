@@ -12,6 +12,9 @@ summary: Présentation
 La sécurité des charges de travail du stockage Cloud Insights (anciennement Cloud Secure) vous aide à protéger vos données avec des informations exploitables sur les menaces internes. Elle assure la visibilité et le contrôle centralisés sur tous les accès aux données de l'entreprise à l'échelle des environnements de cloud hybride, afin de garantir l'atteinte des objectifs de sécurité et de conformité.
 
 
+NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
+
 
 == Visibilité
 

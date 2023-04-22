@@ -9,11 +9,11 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-Ci comprend des fonctionnalités de sécurité qui permettent aux environnements Insight de fonctionner avec une sécurité renforcée. Les fonctionnalités comprennent des améliorations au cryptage, le hachage des mots de passe et la possibilité de modifier les mots de passe et les paires de clés d'utilisateur internes qui cryptent et décryptent les mots de passe.
+Cloud Insights inclut des fonctions de sécurité qui permettent à votre environnement de fonctionner avec une sécurité renforcée. Ces fonctionnalités comprennent des améliorations au cryptage, au hachage de mot de passe et à la possibilité de modifier les mots de passe des utilisateurs internes ainsi que les paires de clés qui chiffrent et décryptent les mots de passe.
 
-Pour protéger vos données sensibles, NetApp vous recommande de modifier les clés par défaut et le mot de passe utilisateur acquisition après une installation ou une mise à niveau.
+Pour protéger les données sensibles, NetApp vous recommande de modifier les clés par défaut et le mot de passe utilisateur _acquisition_ après une installation ou une mise à niveau.
 
-Les mots de passe cryptés de la source de données sont stockés dans Cloud Insights, qui utilise une clé publique pour chiffrer les mots de passe lorsqu'un utilisateur les saisit dans une page de configuration du collecteur de données. Cloud Insights ne possède pas les clés privées requises pour décrypter les mots de passe du collecteur de données ; seules les unités d'acquisition disposent de la clé privée de collecteur de données requise pour décrypter les mots de passe du collecteur de données.
+Les mots de passe cryptés de la source de données sont stockés dans Cloud Insights, qui utilise une clé publique pour chiffrer les mots de passe lorsqu'un utilisateur les saisit dans une page de configuration du collecteur de données. Cloud Insights ne dispose pas des clés privées requises pour décrypter les mots de passe du collecteur de données ; seules les unités d'acquisition (AUS) possèdent la clé privée du collecteur de données requise pour décrypter les mots de passe du collecteur de données.
 
 
 
@@ -31,20 +31,30 @@ L'outil SecurityAdmin permet de gérer les options de sécurité de Cloud Insigh
 
 == Avant de commencer
 
-Vous devez disposer de privilèges d'administrateur sur le système au pour effectuer des tâches de configuration de la sécurité.
-
-A propos de cette tâche l'outil SecurityAdmin se trouve sur le système d'unités d'acquisition à l'un des emplacements suivants :
-
-* *Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
-* *Linux - /bin/oci-securityadmin.sh
+* Vous devez disposer de privilèges d'administrateur sur le système au pour installer le logiciel de l'unité d'acquisition (qui inclut l'outil SecurityAdmin).
+* Si vous avez des utilisateurs non-admin qui devront ensuite accéder à l'outil SecurityAdmin, ils doivent être ajoutés au groupe _cisys_. Le groupe _cisys_ est créé lors de l'installation au.
 
 
-.Étapes
-* *Démarrer l'outil SecurityAdmin en mode interactif (-i).
-+
+Après l'installation de au, l'outil SecurityAdmin se trouve sur le système d'unités d'acquisition à l'un des emplacements suivants :
+
+....
+Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
+Linux - /bin/oci-securityadmin.sh
+....
+
+
+== Utilisation de l'outil SecurityAdmin
+
+Démarrez l'outil SecurityAdmin en mode interactif (-i).
+
+
+NOTE: Il est recommandé d'utiliser l'outil SecurityAdmin en mode interactif, afin d'éviter de transmettre des secrets sur la ligne de commande, qui peuvent être capturés dans les journaux.
+
 Les options suivantes sont affichées :
 
-* Sauvegarde
+image:SecurityAdminMenuChoices.png["Options de l'outil SecurityAdmin (Linux)"]
+
+. *Sauvegarde*
 +
 Crée un fichier zip de sauvegarde du coffre-fort contenant tous les mots de passe et clés et place le fichier à un emplacement spécifié par l'utilisateur ou aux emplacements par défaut suivants :
 
@@ -53,35 +63,131 @@ Crée un fichier zip de sauvegarde du coffre-fort contenant tous les mots de pas
 Windows - C:\Program Files\SANscreen\backup\vault
 Linux - /var/log/netapp/oci/backup/vault
 ....
-* Restaurer
++
+Il est recommandé de préserver la sécurité des sauvegardes de coffre-fort, car elles contiennent des informations sensibles.
+
+. *Restaurer*
 +
 Restaure la sauvegarde zip du coffre-fort créé. Une fois restaurées, tous les mots de passe et clés sont rétablis dans les valeurs existantes au moment de la création de la sauvegarde.
 
 +
-La restauration peut être utilisée pour synchroniser les mots de passe et les clés sur plusieurs serveurs, par exemple : - Modifier les clés de cryptage sur l'au - Créer une sauvegarde du coffre-fort - Restaurer la sauvegarde du coffre-fort sur chacun des AUS
+Restore peut être utilisé pour synchroniser les mots de passe et les clés sur plusieurs serveurs, par exemple en procédant comme suit : 1) modifiez les clés de cryptage sur l'au. 2) Créez une sauvegarde du coffre-fort. 3) restaurez la sauvegarde du coffre-fort sur chacun des États-Unis.
 
-* Modifiez les clés de chiffrement
+. *Enregistrer / mettre à jour le script de récupération de clé externe*
 +
-Modifiez les clés de cryptage au utilisées pour crypter ou décrypter les mots de passe des périphériques.
+Utilisez un script externe pour enregistrer ou modifier les clés de cryptage au utilisées pour crypter ou décrypter les mots de passe du terminal.
 
 +
 Lorsque vous modifiez des clés de cryptage, sauvegardez votre nouvelle configuration de sécurité afin de pouvoir la restaurer après une mise à niveau ou une installation.
 
-* Mettre à jour le mot de passe
 +
-Modifier le mot de passe du compte utilisateur « acquisition ».
+Remarque cette option est uniquement disponible sous Linux.
 
 +
-Lorsque vous modifiez les mots de passe, vous devez sauvegarder votre nouvelle configuration de sécurité afin de pouvoir la restaurer si nécessaire.
+Lorsque vous utilisez votre propre script de récupération de clé avec l'outil SecurityAdmin, gardez à l'esprit les points suivants :
 
-* Rétablir les valeurs par défaut
++
+** L'algorithme actuellement pris en charge est RSA avec un minimum de 2048 bits.
+** Le script doit renvoyer les clés privées et publiques en texte brut. Le script ne doit pas renvoyer de clés publiques et privées cryptées.
+** Le script doit renvoyer un contenu brut et codé (format PEM uniquement).
+** Le script externe doit avoir des autorisations _execute_.
+
+
+. *Rotation des clés de cryptage*
++
+Faites pivoter vos clés de cryptage (désenregistre les clés actuelles et enregistre les nouvelles clés). Pour utiliser une clé d'un système de gestion externe des clés, vous devez spécifier l'ID de clé publique et l'ID de clé privée
+
+
+
+. *Réinitialiser les touches par défaut*
 +
 Réinitialise le mot de passe de l'utilisateur d'acquisition et les clés de cryptage de l'utilisateur d'acquisition sur les valeurs par défaut. Les valeurs par défaut sont celles fournies lors de l'installation.
 
-* Quitter
+. *Modifier le mot de passe de la banque de confiance*
++
+Modifiez le mot de passe du magasin de confiance.
+
+. *Changer le mot de passe de la base de stockage*
++
+Modifiez le mot de passe de la base de stockage de clés.
+
+. *Crypter le mot de passe du collecteur*
++
+Crypter le mot de passe du collecteur de données.
+
+. *Quitter*
 +
 Quittez l'outil SecurityAdmin.
 
 
 
 Choisissez l'option que vous souhaitez configurer et suivez les invites.
+
+
+
+== Spécification d'un utilisateur pour exécuter l'outil
+
+Si vous vous trouvez dans un environnement contrôlé et soucieux de la sécurité, vous ne disposez peut-être pas du groupe _cisys_ mais vous pouvez toujours demander à des utilisateurs spécifiques d'exécuter l'outil SecurityAdmin.
+
+Pour ce faire, vous pouvez installer manuellement le logiciel au et spécifier l'utilisateur/le groupe auquel vous souhaitez accéder.
+
+* À l'aide de l'API, téléchargez le programme d'installation d'EC sur le système au et décompressez-le.
++
+** Vous aurez besoin d'un jeton d'autorisation unique. Reportez-vous à la documentation API swagger (_Admin > API Access_ et sélectionnez le lien _API Documentation_) et recherchez la section _GET /au/oneTimeToken_ API.
+** Une fois que vous avez le jeton, utilisez l'API _GET /au/installateurs/{Platform}/{version}_ pour télécharger le fichier d'installation. Vous devrez fournir une plate-forme (Linux ou Windows) ainsi qu'une version du programme d'installation.
+
+
+* Copiez le fichier d'installation téléchargé sur le système au et décompressez-le.
+* Accédez au dossier contenant les fichiers et exécutez le programme d'installation en tant que racine, en spécifiant l'utilisateur et le groupe :
++
+ ./cloudinsights-install.sh <User> <Group>
+
+
+Si l'utilisateur et/ou le groupe spécifié n'existe pas, ils seront créés. L'utilisateur aura accès à l'outil SecurityAdmin.
+
+
+
+== Mise à jour ou suppression du proxy
+
+L'outil SecurityAdmin peut être utilisé pour définir ou supprimer des informations de proxy pour l'unité d'acquisition en exécutant l'outil avec le paramètre _-pr_ :
+
+[listing]
+----
+[root@ci-eng-linau bin]# ./securityadmin -pr
+usage: securityadmin -pr -ap <arg> | -h | -rp | -upr <arg>
+
+The purpose of this tool is to enable reconfiguration of security aspects
+of the Acquisition Unit such as encryption keys, and proxy configuration,
+etc. For more information about this tool, please check the Cloud Insights
+Documentation.
+
+-ap,--add-proxy <arg>       add a proxy server.  Arguments: ip=ip
+                             port=port user=user password=password
+                             domain=domain
+                             (Note: Always use double quote(") or single
+                             quote(') around user and password to escape
+                             any special characters, e.g., <, >, ~, `, ^,
+                             !
+                             For example: user="test" password="t'!<@1"
+                             Note: domain is required if the proxy auth
+                             scheme is NTLM.)
+-h,--help
+-rp,--remove-proxy          remove proxy server
+-upr,--update-proxy <arg>   update a proxy.  Arguments: ip=ip port=port
+                             user=user password=password domain=domain
+                             (Note: Always use double quote(") or single
+                             quote(') around user and password to escape
+                             any special characters, e.g., <, >, ~, `, ^,
+                             !
+                             For example: user="test" password="t'!<@1"
+                             Note: domain is required if the proxy auth
+                             scheme is NTLM.)
+----
+Par exemple, pour supprimer le proxy, exécutez la commande suivante :
+
+ [root@ci-eng-linau bin]# ./securityadmin -pr -rp
+Vous devez redémarrer l'unité d'acquisition après avoir exécuté la commande.
+
+Pour mettre à jour un proxy, la commande est
+
+ ./securityadmin -pr -upr <arg>

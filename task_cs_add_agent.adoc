@@ -12,6 +12,9 @@ summary: 'Ajout d"agents de sécurité de charge de travail'
 La sécurité des charges de travail (anciennement Cloud Secure) collecte des données d'activité utilisateur en utilisant un ou plusieurs agents. Les agents se connectent aux terminaux de votre environnement et collectent les données envoyées à la couche SaaS de sécurité de la charge de travail pour analyse. Voir link:concept_cs_agent_requirements.html["Exigences de l'agent"] Pour configurer une machine virtuelle agent.
 
 
+NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
+
 
 == Avant de commencer
 

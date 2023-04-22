@@ -100,13 +100,13 @@ Chaque modèle de données comprend un simple data Mart et un Data Mart avancé 
 
 
 
-=== Modèle de données de capacité
+=== Modèles de données de capacité
 
 Vous aide à répondre aux questions concernant la capacité de stockage, l'utilisation du système de fichiers, la capacité de volume interne, la capacité de port, la capacité qtree, Et la capacité de la machine virtuelle (VM). Le modèle de données de capacité est un conteneur pour plusieurs modèles de données de capacité. Vous pouvez créer des rapports répondant à différents types de questions à l'aide de ce modèle de données :
 
 
 
-=== Modèle de données de capacité du pool de stockage et du pool de stockage
+==== Modèle de données de capacité du pool de stockage et du pool de stockage
 
 Vous permet de répondre aux questions concernant la planification des ressources de stockage, y compris les pools de stockage et les pools, et inclut à la fois les données des pools de stockage physiques et virtuels. Avec ce modèle de données simple, vous pouvez répondre à toutes les questions relatives à la capacité sur place et à l'utilisation de la capacité des pools de stockage par niveau et par data Center à long terme. Si les nouveaux rapports sur la capacité vous servent, vous devez commencer par le modèle de données, car il s'agit d'un modèle de données plus simple et ciblé. Vous pouvez répondre à des questions similaires à ce qui suit à l'aide de ce modèle de données :
 
@@ -122,7 +122,7 @@ Vous permet de répondre aux questions concernant la planification des ressource
 
 
 
-=== Modèle de données d'utilisation du système de fichiers
+==== Modèle de données d'utilisation du système de fichiers
 
 Ce modèle de données permet de contrôler l'utilisation de la capacité par les hôtes au niveau du système de fichiers. Les administrateurs peuvent déterminer la capacité allouée et utilisée par système de fichiers, déterminer le type de système de fichiers et identifier les statistiques de tendances par type de système de fichiers. Vous pouvez répondre aux questions suivantes à l'aide de ce modèle de données :
 
@@ -133,7 +133,7 @@ Ce modèle de données permet de contrôler l'utilisation de la capacité par le
 
 
 
-=== Modèle de données de capacité de volume interne
+==== Modèle de données de capacité de volume interne
 
 Répond à des questions sur le volume interne utilisé, la capacité allouée et l'utilisation de la capacité au fil du temps :
 
@@ -143,7 +143,7 @@ Répond à des questions sur le volume interne utilisé, la capacité allouée e
 
 
 
-=== Modèle de données de capacité de port
+==== Modèle de données de capacité de port
 
 Vous permet de répondre à des questions sur la connectivité du port du commutateur, l'état du port et la vitesse du port au fil du temps. Vous pouvez répondre à des questions comme suit pour vous aider à planifier l'achat de nouveaux commutateurs : comment créer une prévision de consommation des ports qui prévoit la disponibilité des ressources (port) (selon le data Center, le fournisseur des commutateurs et la vitesse du port) ?
 
@@ -156,7 +156,7 @@ Vous permet de répondre à des questions sur la connectivité du port du commut
 
 
 
-=== Modèle de données de capacité qtree
+==== Modèle de données de capacité qtree
 
 Permet de tendances de l'utilisation des qtrees (avec des données telles que la capacité utilisée par rapport à la capacité allouée) dans le temps. Vous pouvez afficher ces informations en fonction de différentes dimensions (par exemple, par entité commerciale, application, niveau et niveau de service). Vous pouvez répondre aux questions suivantes à l'aide de ce modèle de données :
 
@@ -168,7 +168,7 @@ Permet de tendances de l'utilisation des qtrees (avec des données telles que la
 
 
 
-=== Modèle de données de capacité de la machine virtuelle
+==== Modèle de données de capacité de la machine virtuelle
 
 Permet de générer des rapports sur l'utilisation de la capacité de votre environnement virtuel. Ce modèle de données vous permet de créer des rapports sur l'évolution de l'utilisation de la capacité au fil du temps pour les machines virtuelles et les datastores. Le modèle de données offre également le provisionnement fin et les données de refacturation des machines virtuelles.
 
@@ -182,7 +182,7 @@ Capacités dans le modèle de données VM Capacity sont extraites de disques vir
 
 
 
-=== Modèle de données Volume Capacity
+==== Modèle de données Volume Capacity
 
 Vous permet d'analyser tous les aspects des volumes de votre environnement et d'organiser les données par fournisseur, modèle, niveau, niveau de service et data Center.
 
@@ -248,7 +248,7 @@ Réponses à des questions sur les ressources d'inventaire, notamment les hôtes
 
 === Modèle de données de performance
 
-Répond aux questions de performances des volumes, des volumes d'application, des volumes internes, des commutateurs, des applications Ordinateurs virtuels, VMDK, ESX par rapport aux machines virtuelles, aux hôtes et aux nœuds d'applications. Grâce à ce modèle de données, vous pouvez créer des rapports qui répondent à plusieurs types de questions de gestion des performances :
+Répond aux questions de performances des volumes, des volumes d'application, des volumes internes, des commutateurs, des applications Ordinateurs virtuels, VMDK, ESX par rapport aux machines virtuelles, aux hôtes et aux nœuds d'applications. Nombre de ces données de rapport _Hourly_, _Daily_ ou les deux. Grâce à ce modèle de données, vous pouvez créer des rapports qui répondent à plusieurs types de questions de gestion des performances :
 
 * Quels volumes ou volumes internes n'ont pas été utilisés ou consultés au cours d'une période spécifique ?
 * Pouvons-nous identifier les erreurs de configuration potentielles du stockage d'une application (non utilisée) ?

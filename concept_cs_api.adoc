@@ -11,6 +11,9 @@ summary: 'La sécurité des charges de travail intègre une API puissante pour l
 [role="lead"]
 L'API de sécurité des charges de travail permet aux clients NetApp et aux éditeurs de logiciels indépendants d'intégrer la sécurité des charges de travail à d'autres applications, comme les CMDB ou d'autres systèmes de gestion des tickets.
 
+
+NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
 Conditions requises pour l'accès à l'API :
 
 * Un modèle de token d'accès API est utilisé pour accorder l'accès.

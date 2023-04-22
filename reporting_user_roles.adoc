@@ -60,6 +60,18 @@ Le tableau suivant présente les fonctions disponibles pour chaque rôle de rapp
 
 
 | Effectuer des tâches administratives | Non | Non | Oui. 
+
+
+| Ajouter/Modifier un élément HTML | Non | Non | Oui. 
+
+
+| Exécuter le rapport avec l'élément HTML | Oui. | Oui. | Oui. 
+
+
+| Ajouter/Modifier SQL personnalisé | Non | Non | Oui. 
+
+
+| Exécutez des rapports avec Custom SQL | Oui. | Oui. | Oui. 
 |===
 
 
@@ -82,7 +94,12 @@ Si vous êtes un client Premium Edition actuel, SSO n'est pas automatiquement ac
 
 Pour vous assurer que vos rapports sont conservés, migrez tous les rapports de _mon contenu_ à _contenu_ de l'équipe en suivant les étapes ci-dessous. Vous devez effectuer cette opération avant d'activer SSO dans votre environnement :
 
-. Créez un nouveau dossier dans _Team Content_
+. Accédez à *Menu > contenu*
+
+
+image:Reporting_Menu.png["Menu supérieur gauche de Cognos"]
+
+. Créez un nouveau dossier dans *_Team Content_*
 +
 .. Si plusieurs utilisateurs ont été créés, créez un dossier distinct pour chaque utilisateur afin d'éviter d'écraser des rapports avec des noms en double
 

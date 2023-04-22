@@ -10,7 +10,10 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-Vous pouvez accéder aux options de support dans Cloud Insights en cliquant sur *aide > support*. Les options d'assistance disponibles dépendent de votre présence en mode d'essai ou en mode d'abonnement.
+Vous pouvez accéder aux options de support dans Cloud Insights en cliquant sur *aide > support*. Les options de support disponibles dépendent de votre édition Cloud Insights.
+
+
+NOTE: L'option de support de discussion en ligne n'est pas disponible dans l'édition fédérale de Cloud Insights.
 
 image:SupportPageWithLearningCenter.png["Page de support"]
 

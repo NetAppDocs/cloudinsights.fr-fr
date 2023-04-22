@@ -18,6 +18,9 @@ La mise en route de Cloud Insights se fait en trois étapes simples :
 Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights link:security_information_and_region.html["Information et région"].
 
 
+NOTE: Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights (de base, standard, Premium). L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.
+
+
 
 == Éditions
 
@@ -33,7 +36,7 @@ WARNING: Les environnements inactifs de l'édition de base Cloud Insights sont s
 NOTE: Les fonctionnalités, les temps de rétention des données et les objets ou metrics collectés dans Cloud Insights Basic Edition sont susceptibles d'être modifiés avec ou sans préavis.
 
 * *Standard Edition* est disponible par abonnement et offre toutes les fonctionnalités de Basic Edition plus encore.
-* *Premium Edition* offre des avantages supplémentaires tels que Business Intelligence et Reporting, ainsi que l'audit de la sécurité de la charge de travail et la détection des menaces.
+* *Édition fédérale* fournit une édition Cloud Insights conforme FedRAMP pour les États-Unis Administrations américaines. Certaines fonctionnalités disponibles dans les éditions commerciales ci-dessus peuvent ne pas être disponibles dans l'édition fédérale ou être disponibles avec des fonctionnalités réduites. Dans la mesure du possible, ces différences sont indiquées dans la documentation Cloud Insights.
 
 
 
@@ -61,7 +64,7 @@ Voici les principales fonctionnalités disponibles dans Basic, Standard et Premi
 | Forum, documentation et vidéos de formation | &contrôle ; | &contrôle ; | &contrôle ; 
 
 
-| Chat en ligne et assistance technique | - | &contrôle ; | &contrôle ; 
+| Live Chat^&plus;&plus;^ et support technique | - | &contrôle ; | &contrôle ; 
 
 
 | Metrics VM | - | &contrôle ; | &contrôle ; 
@@ -76,7 +79,7 @@ Voici les principales fonctionnalités disponibles dans Basic, Standard et Premi
 | Contrôle et alerte | &ast ; | &contrôle ; | &contrôle ; 
 
 
-| Accès et plus API | &contrôle ; | &contrôle ; | &contrôle ; 
+| Accès API^&plus ;^ | &contrôle ; | &contrôle ; | &contrôle ; 
 
 
 | Authentification unique (SSO) | - | - | &contrôle ; 
@@ -90,7 +93,7 @@ Voici les principales fonctionnalités disponibles dans Basic, Standard et Premi
 
 | Business Intelligence et Reporting&ast ; et ast ; | - | - | &contrôle ; 
 |===
-&ast;limité à 5 moniteurs personnalisés actifs à la fois &plus;l'accès à l'API varie selon Edition &ast;&ast;disponible pour les environnements de 500 unités gérées et plus
+&ast;limité à 5 moniteurs personnalisés actifs à la fois &plus;l'accès API varie selon l'édition et ast;&ast;disponible pour les environnements de 500 unités gérées et plus ^&plus;&plus;^ fonctionnalités non disponibles dans l'édition fédérale de Cloud Insights
 
 Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche image:padlock.png["Cadenas"], Cela signifie que la fonction n'est pas disponible dans votre édition actuelle ou est disponible sous une forme limitée. Mise à niveau pour un accès complet à la fonctionnalité.
 

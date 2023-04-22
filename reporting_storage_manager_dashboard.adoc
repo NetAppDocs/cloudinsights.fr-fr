@@ -14,11 +14,15 @@ Le tableau de bord de Storage Manager vous offre une visualisation centralisée 
 
 NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
-Le tableau de bord comprend sept composants contenant des informations contextuelles sur certains aspects de votre environnement de stockage. Vous pouvez approfondir vos différents aspects de vos services de stockage afin d'effectuer une analyse approfondie d'une section qui vous intéresse le plus.
-
 
 
 == Récapitulatif
+
+La sélection de *Storage Manager Dashboard* à partir du contenu de l'équipe vous donne plusieurs rapports qui fournissent des informations sur votre trafic et votre stockage.
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Options du tableau de bord de Storage Manager"]
+
+Pour une vue d'ensemble, le *Storage Manager Report* comprend sept composants qui contiennent des informations contextuelles sur de nombreux aspects de votre environnement de stockage. Vous pouvez approfondir vos différents aspects de vos services de stockage afin d'effectuer une analyse approfondie d'une section qui vous intéresse le plus.
 
 image:Reporting-SMD.png["Tableau de bord de Storage Manager"]
 

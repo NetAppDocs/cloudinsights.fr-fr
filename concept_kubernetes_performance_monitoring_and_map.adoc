@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concept_kubernetes_performance_monitoring_and_map.html 
+keywords: service map, workloads, Kubernetes, 
+summary: Présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance 
+---
+= Contrôle des performances et mappage Kubernetes
+:allow-uri-read: 
+
+
+[role="lead"]
+La fonctionnalité Performance du réseau et carte Kubernetes simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
+
+
+NOTE: La performance du réseau Kubernetes et le mappage est un link:concept_preview_features.html["Aperçu"] et est susceptible d'être modifié.
+
+Principales fonctionnalités : • la carte des workloads présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance. • Surveiller le trafic réseau entre les pods Kubernetes, les workloads et les nœuds ; identifier la source des problèmes de trafic et de latence. • Réduire les coûts globaux en analysant les entrées, les sorties, le trafic interrégional et le trafic de réseau interzone.
+
+image:Workload Map Example_withSlideout.png["Exemple de schéma de la charge de travail montrant le panneau « Slideout » avec des détails"]
+
+
+
+== Conditions préalables
+
+Avant d'utiliser Kubernetes Network Performance and Map, vous devez avoir configuré le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] pour activer cette option. Pendant le déploiement de l'opérateur, cochez la case « performances du réseau et carte » pour l'activer. Vous pouvez également activer cette option en accédant à une page d'accueil Kubernetes et en sélectionnant « Modifier le déploiement ».
+
+image:ServiceMap_NKMO_Deployment_Options.png["Sélection de l'option carte pendant le stup NKMO"]
+
+
+
+== Moniteurs
+
+Le mappage des charges de travail utilise link:task_create_monitor.html["moniteurs"] pour dériver des informations. Cloud Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.
+
+
+
+== La carte
+
+La carte montre les services (également appelés charges de travail) et leurs relations les uns avec les autres. Les flèches indiquent l'itinéraire de la circulation. Le survol d'une charge de travail affiche un récapitulatif des informations relatives à cette charge, comme vous pouvez le voir dans cet exemple :
+
+image:ServiceMap_Simple_Example.png["Exemple de charge de travail Workload Map"]
+
+Les icônes situées dans les cercles représentent différents types de services. Notez que les icônes ne sont visibles que si les objets sous-jacents possèdent <<workload-labels,étiquettes>>.
+
+image:ServiceMap_Icons.png["Explication des icônes de service"]
+
+La taille de chaque cercle indique la taille du nœud. Notez que ces tailles sont relatives, le niveau de zoom ou la taille de l'écran de votre navigateur peut affecter la taille réelle des cercles. De la même manière, le style de ligne de trafic vous donne une vue d'un coup d'œil de la taille de la connexion ; les lignes en gras sont à fort trafic, tandis que les lignes en pointillés légers sont à faible trafic.
+
+Les nombres à l'intérieur des cercles correspondent au nombre de connexions externes en cours de traitement par le service.
+
+image:ServiceMap_Node_and_Connection_Legend.png["légende indiquant le cercle relatif (nœud) et les tailles de connexion"]
+
+
+
+== Détails de la charge de travail et alertes
+
+Les cercles affichés en couleur indiquent une alerte de niveau critique ou d'avertissement pour la charge de travail. Passez le curseur sur le cercle pour obtenir un résumé du problème ou cliquez sur le cercle pour ouvrir un panneau coulissant avec plus de détails.
+
+image:Workload_Map_Slideout_with_Alert.png["Détails de la diapositive sur la charge de travail avec alertes"]
+
+
+
+== Filtrage
+
+À l'instar des autres fonctionnalités de Cloud Insights, vous pouvez facilement définir des filtres afin de vous concentrer sur les objets ou les attributs de charge de travail spécifiques que vous souhaitez.
+
+image:Workload_Map_Filtering.png["Filtrage de mappage des charges de travail"]
+
+
+
+== Étiquettes de charge de travail
+
+Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la carte identifie les types de charges de travail affichées (c'est-à-dire les icônes en cercle). Les étiquettes sont dérivées comme suit :
+
+* Nom du service/de l'application s'exécutant en termes génériques
+* Si la source est un pod :
++
+** Provient du libellé de la charge de travail du pod
+** Libellé attendu sur le workload : app.kubernetes.io/composant
+** Référence du nom de l'étiquette : https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** Étiquettes recommandées :
++
+*** front-end
+*** back-end
+*** base de données
+*** cache
+*** file d'attente
+*** kafka
+
+
+
+
+* Si la source est externe au cluster k8s :
++
+** Essayez d'analyser le nom DNS résolu et extrayez le type de service
++
+exemple : s3.eu-north-1.amazonaws.com
+
++
+nom analysé résolu pour obtenir s3
+
+
+
+

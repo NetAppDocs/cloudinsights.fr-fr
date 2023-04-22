@@ -28,3 +28,12 @@ Les charges de travail à fort impact peuvent réduire les performances d'autres
 === Espaces de noms Kubernetes manque d'espace
 
 L'exécution des espaces de noms Kubernetes en dehors de Space Insight vous donne une vue d'ensemble des workloads sur vos espaces de noms Kubernetes qui risquent de manquer d'espace. Cette vue indique également le nombre de jours restants avant que chaque espace ne soit saturé. link:insights_k8s_namespaces_running_out_of_space.html["En savoir plus >>"]
+
+
+
+=== Récupération du stockage à froid ONTAP
+
+L'outil _Reclaim ONTAP Cold Storage_ Insight fournit des données sur la capacité à froid, les économies potentielles en termes de coûts/d'énergie et les actions recommandées pour les volumes des systèmes ONTAP. link:insights_reclaim_ontap_cold_storage.html["En savoir plus >>"]
+
+
+NOTE: Il s'agit d'une fonction _Preview_ qui peut changer au fil du temps à mesure que des améliorations sont apportées. link:/concept_preview_features.html["En savoir plus >>"] A propos des fonctions d'aperçu de Cloud Insights.

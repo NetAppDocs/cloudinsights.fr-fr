@@ -28,11 +28,12 @@ Cloud Insights s'adapte à plusieurs services de création de rapports en vous p
 
 Lorsque vous ouvrez le portail de rapports, le dossier _Team Content_ est le point de départ pour vous permettre de sélectionner le type d'informations dont vous avez besoin dans les rapports Cloud Insights.
 
-. Dans le volet de navigation de gauche, cliquez sur *contenu d'équipe* et sélectionnez la catégorie d'informations que vous souhaitez utiliser.
-. Cliquez sur *Rapports* pour accéder aux rapports prédéfinis.
+. Dans le volet de navigation de gauche, sélectionnez *contenu > contenu de l'équipe*.
+. Sélectionnez *Rapports* pour accéder aux rapports prédéfinis.
 
 
-image:Reporting-TeamContent.png["Contenu de l'équipe"]
+image:Reporting_Menu.png["Menu Rapports"]
+image:Reporting_Team_Content.png["Contenu de l'équipe affichant les rapports mis en surbrillance"]
 
 
 

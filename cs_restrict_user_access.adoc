@@ -11,6 +11,9 @@ summary: 'Avec la sécurité des charges de travail, vous pouvez restreindre l"a
 [role="lead"]
 Une fois qu'une attaque est détectée, Workload Security peut arrêter l'attaque en bloquant l'accès des utilisateurs au système de fichiers. L'accès peut être bloqué automatiquement à l'aide de politiques de réponse automatique ou manuellement à partir des pages d'alerte ou d'informations utilisateur.
 
+
+NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
 Lorsque vous bloquez l'accès utilisateur, vous devez définir une période de blocage. Une fois la période sélectionnée terminée, l'accès utilisateur est automatiquement restauré. Le blocage des accès est pris en charge à la fois pour les protocoles SMB et NFS.
 
 L'utilisateur est directement bloqué pour le protocole SMB et l'adresse IP des machines hôtes à l'origine de l'attaque sera bloquée pour NFS. Ces adresses IP de la machine seront bloquées lors de l'accès à l'un des SVM contrôlés par la sécurité des charges de travail.

@@ -454,6 +454,9 @@ Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des perf
 
  kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
 
+NOTE: Le réglage de l'opérateur n'est pas disponible dans l'édition fédérale Cloud Insights
+
+
 
 == Dépannage
 

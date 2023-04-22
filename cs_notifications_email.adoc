@@ -12,6 +12,9 @@ keywords: email, notifications, alerts, warnings, attacks
 Pour configurer les destinataires d'alertes de sécurité de la charge de travail, cliquez sur *Admin > Notifications* et entrez une ou plusieurs adresses électroniques dans les sections appropriées pour chaque destinataire.
 
 
+NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
+
+
 
 == Alertes et avertissements d'attaque potentielle
 

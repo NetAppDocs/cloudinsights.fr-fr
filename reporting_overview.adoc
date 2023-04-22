@@ -41,7 +41,7 @@ Les rapports Cloud Insights peuvent générer des rapports personnalisés dans d
 
 Vous pouvez accéder aux rapports Cloud Insights en cliquant sur le lien *Rapports* dans le menu.
 
-Vous serez redirigé vers l'interface de génération de rapports. Cloud Insights utilise IBM Cognos Analytics pour son moteur de reporting. Connectez-vous à l'aide de vos informations d'identification Reporting.
+Vous serez redirigé vers l'interface de génération de rapports. Cloud Insights utilise IBM Cognos Analytics pour son moteur de reporting.
 
 
 

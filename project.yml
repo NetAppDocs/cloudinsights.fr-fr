@@ -23,6 +23,8 @@ sidebar:
       url: "/security_overview.html"
     - title: Ce que nous Store et où
       url: "/security_information_and_region.html"
+    - title: Outil SecurityAdmin
+      url: "/security_admin_tool.html"
   - title: Mise en route
     entries:
     - title: Tutoriels de fonctionnalités

@@ -635,11 +635,14 @@ Si vous cliquez sur le lien dans un widget à valeur unique ou un widget de jaug
 
 Comme les widgets à valeur unique et jauge, vous pouvez définir un formatage conditionnel dans les widgets de tableau, ce qui vous permet de mettre en évidence des données avec des couleurs et/ou des icônes spéciales.
 
+
+NOTE: La mise en forme conditionnelle n'est pas disponible actuellement dans l'édition fédérale de Cloud Insights.
+
 La mise en forme conditionnelle vous permet de définir et de mettre en évidence les seuils de niveau d'avertissement et de niveau critique dans les widgets de tableau, offrant ainsi une visibilité instantanée des valeurs aberrantes et des points de données exceptionnels.
 
 image:ConditionalFormattingExample.png["Exemple de formatage conditionnel"]
 
-Le formatage conditionnel est défini séparément pour chaque colonne d'une table. Par exemple, vous pouvez choisir un ensemble de seuils pour une colonne de capacité et un autre ensemble pour une colonne de débit.
+Le formatage conditionnel est défini séparément pour chaque colonne d'une table. Par exemple, vous pouvez choisir un ensemble de seuils pour une colonne de capacité et un autre pour une colonne de débit.
 
 Si vous modifiez l'affichage des unités pour une colonne, le formatage conditionnel reste et reflète la modification des valeurs. Les images ci-dessous montrent le même formatage conditionnel, même si l'unité d'affichage est différente.
 
