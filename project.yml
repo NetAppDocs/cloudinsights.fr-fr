@@ -89,6 +89,16 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Page du cluster Kubernetes
       url: "/kubernetes_cluster_detail.html"
+  - title: Visibilité
+    entries:
+    - title: Présentation
+      url: "/insights_overview.html"
+    - title: Ressources partagées sous contrainte
+      url: "/insights_shared_resources_under_stress.html"
+    - title: Espaces de noms Kubernetes manque d'espace
+      url: "/insights_k8s_namespaces_running_out_of_space.html"
+    - title: Récupération du stockage à froid ONTAP
+      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP Essentials
     url: "/concept_ontap_essentials.html"
   - title: Utilisation des requêtes
