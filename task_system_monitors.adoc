@@ -22,7 +22,7 @@ summary: 'Créez des moniteurs pour alerter les seuils de performances ou d"inve
 Cloud Insights inclut un certain nombre de contrôles définis par le système, à la fois pour les metrics et les journaux. Les moniteurs système disponibles dépendent des collecteurs de données présents dans votre environnement. De ce fait, les moniteurs disponibles dans Cloud Insights peuvent changer à mesure que des collecteurs de données sont ajoutés ou que leurs configurations ont changé.
 
 
-NOTE: La plupart des moniteurs système sont à l'état _Pause_ par défaut. Avant de reprendre le moniteur, vous devez vous assurer que _Advanced Counter Data Collection_ et _Enable ONTAP EMS log collection_ sont activés dans le Data Collector. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:image:Enable_Log_Monitor_Collection.png["Activation du compteur avancé et de la collecte des journaux EMS pour ONTAP"]
+NOTE: Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:image:Enable_Log_Monitor_Collection.png["Activation du compteur avancé et de la collecte des journaux EMS pour ONTAP"]
 
 
 toc::[]
