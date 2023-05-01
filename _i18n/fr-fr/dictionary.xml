@@ -1719,7 +1719,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Communication de l'API avec ONTAP</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">Adresses IP des LIF de données des SVM</block>
-  <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">Appels entrants/sortants</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">Communication avec ONTAP pour les événements Fpolicy</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">Bidirectionnel</block>
@@ -10568,7 +10567,6 @@
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">Pour les environnements de sécurité de la charge de travail *basés aux États-Unis* :</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">Pour les environnements de sécurité des charges de travail * basés en Europe :</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">Pour les environnements de sécurité de la charge de travail *APAC* :</block>
-  <block id="c62621daddc9bbedf66f077464765078" category="cell">Bidirectionnel entre ONTAP et sécurité des charges de travail. L'agent commande ping les LIFs du SVM.</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">Si vous avez la sécurité de la charge de travail dans votre environnement, les URL de point final configurées s'affichent également dans cette liste.</block>
   <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">Notez que les types d'API auxquels un utilisateur a accès dépendent également du <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> Ils sont dotés dans chaque jeu de fonctions Cloud Insights (surveillance, sécurité de la charge de travail, création de rapports).</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">Le service de sécurité des charges de travail supprime automatiquement les snapshots une fois par jour en fonction des paramètres de suppression de Snapshot.</block>
@@ -11044,4 +11042,6 @@
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Certains des modules net-observateur de l'espace de noms NKMO sont à l'état en attente</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-observateur est un DemonSet et exécute un pod dans chaque nœud du cluster k8s. • Notez le pod qui est à l'état en attente et vérifiez s'il rencontre un problème de ressource pour le processeur ou la mémoire. Assurez-vous que la mémoire et le processeur requis sont disponibles dans le nœud.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">Entrant</block>
+  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirectionnel entre ONTAP et Workload Security. L'agent commande ping les LIFs du SVM.</block>
 </blocks>
