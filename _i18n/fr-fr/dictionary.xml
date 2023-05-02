@@ -10639,8 +10639,6 @@
   <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">La sécurité des charges de travail du stockage Cloud Insights (anciennement Cloud Secure) vous aide à protéger vos données avec des informations exploitables sur les menaces internes. Elle assure la visibilité et le contrôle centralisés sur tous les accès aux données de l'entreprise à l'échelle des environnements de cloud hybride, afin de garantir l'atteinte des objectifs de sécurité et de conformité.</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">Remplacez les outils et les processus manuels qui n'offrent pas de visibilité opportune et exacte sur l'accès aux données et leur contrôle. La sécurité des charges de travail fonctionne de façon unique sur les systèmes de stockage cloud et sur site pour vous avertir en temps réel des comportements malveillants des utilisateurs.</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">Remarque concernant la sécurité des charges de travail (anciennement Cloud Secure)</block>
-  <block id="a2e7ba2dd94ada0070912463ec6803b4" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">La page toutes les activités vous aide à comprendre les actions effectuées sur les entités de l'environnement de sécurité de la charge de travail.</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">L'historique des activités est conservé pendant 13 mois pour les environnements de sécurité active de la charge de travail.</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent de sécurité workloads :<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -11044,4 +11042,6 @@
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">Entrant</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirectionnel entre ONTAP et Workload Security. L'agent commande ping les LIFs du SVM.</block>
+  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
+<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
 </blocks>

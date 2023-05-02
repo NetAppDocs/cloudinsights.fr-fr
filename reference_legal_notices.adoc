@@ -50,5 +50,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.
 
-link:media/Notice_Cloud_Insights-2022-12-14.pdf["Notification relative à Cloud Insights"]
+link:media/Notice_Cloud_Insights-2023-04.pdf["Notification relative à Cloud Insights"]
 link:media/Notice_Cloud_Secure-2022-12-14.pdf["Remarque concernant la sécurité des charges de travail (anciennement Cloud Secure)"]
