@@ -117,7 +117,7 @@ Vous pouvez trier les données de l'historique d'activité par _Time, User, Sour
 
 == Exportation de toute l'activité
 
-Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 10,000 principaux enregistrements sont exportés.
+Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 100,000 premiers enregistrements sont exportés. Selon la quantité de données, l'exportation peut prendre de quelques secondes à plusieurs minutes.
 
 
 
