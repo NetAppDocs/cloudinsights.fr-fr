@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: 'Cloud Insights prend en charge Telegraf en tant qu"agent pour collecter des données d"intégration. Il peut être configuré sur Windows, Linux, MacOS et Kubernetes.' 
+summary: 'Cloud Insights prend en charge Telegraf comme agent de collecte des données d"intégration et peut être configuré sous Windows ou Linux.' 
 ---
-= Configuration d'un agent pour collecter des données (Windows/Linux/Mac)
+= Configuration d'un agent pour collecter des données (Windows/Linux)
 :allow-uri-read: 
 
 
@@ -28,8 +28,6 @@ Si vous installez un collecteur de données de service et que vous n'avez pas en
 * <<Répertoires de base>>
 * <<RHEL et CentOS>>
 * <<Ubuntu et Debian>>
-* <<Mac OS>>
-* <<Kubernetes>>
 
 
 Pour installer un agent, quelle que soit la plate-forme que vous utilisez, vous devez d'abord effectuer les opérations suivantes :
@@ -37,9 +35,7 @@ Pour installer un agent, quelle que soit la plate-forme que vous utilisez, vous 
 . Connectez-vous à l'hôte que vous utiliserez pour votre agent.
 . Connectez-vous à votre site Cloud Insights et accédez à *Admin > Data Collectors*.
 . Cliquez sur *+Data Collector* et choisissez un collecteur de données à installer.
-
-
-. Choisir la plate-forme la mieux adaptée à votre hôte (Windows, Linux, MacOS, etc.)
+. Choisir la plate-forme appropriée pour votre hôte (Windows, Linux)
 . Suivez les étapes restantes pour chaque plate-forme.
 
 
@@ -345,145 +341,6 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-=== Mac OS
-
-
-
-==== Conditions préalables :
-
-* Les commandes suivantes doivent être disponibles : curl, sudo, openssl et shasum
-* Si vous êtes derrière un proxy, vous devez suivre les instructions de la section *Configuration du support proxy pour MacOS*.
-
-
-
-
-==== Configuration de la prise en charge de proxy pour MacOS
-
-
-NOTE: Si votre environnement utilise un proxy, lisez cette section avant de procéder à l'installation.
-
-
-NOTE: Les étapes ci-dessous présentent les actions nécessaires pour définir les variables d'environnement _http_proxy/https_proxy_. Pour certains environnements proxy, les utilisateurs peuvent également avoir besoin de définir la variable _no_proxy Environment_.
-
-Pour les systèmes résidant derrière un proxy, procédez comme suit pour définir les variables d'environnement _https_proxy_ et/ou _http_proxy_ pour l'utilisateur actuel *ANTÉRIEUR* à l'installation de l'agent Telegraf :
-
- export https_proxy=<proxy_server>:<proxy_port>
-*APRÈS* installation de l'agent Telegraf, ajoutez et définissez les variables _https_proxy_ et/ou _http_proxy_ appropriées dans _/applications/telegraf.app/Contents/telegraf.plist_:
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-Puis, redémarrez Telegraf après avoir chargé les modifications ci-dessus :
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== Installation de l'agent
-
-image:Agent_Requirements_Macos.png["Installation de l'agent MacOS"]
-
-.Étapes d'installation de l'agent sous MacOS :
-. Choisissez une clé d'accès d'agent.
-. Copiez le bloc de commande à partir de la boîte de dialogue d'installation de l'agent. Vous pouvez cliquer sur l'icône du presse-papiers pour copier rapidement la commande dans le presse-papiers.
-. Ouvrez une fenêtre de jeu
-. Collez la commande dans la fenêtre Bash et appuyez sur entrée.
-. La commande télécharge le programme d'installation de l'agent approprié, l'installe et définit une configuration par défaut. Une fois l'opération terminée, le service agent redémarre. La commande a une clé unique et est valide pendant 24 heures.
-. Si vous avez déjà installé un agent Telegraf à l'aide d'Homebrew, vous êtes invité à le désinstaller. Une fois que l'agent Telegraf installé précédemment est désinstallé, exécutez de nouveau la commande à l'étape 5 ci-dessus.
-. Cliquez sur *Terminer* ou *Continuer*
-
-
-Une fois l'agent installé, vous pouvez utiliser les commandes suivantes pour démarrer/arrêter le service :
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== Désinstallation de l'agent
-
-Pour désinstaller l'agent sous MacOS, dans un terminal Bash, exécutez les opérations suivantes :
-
-. Arrêtez le service Telegraf :
-+
- sudo launchctl stop telegraf
-. Désinstallez l'agent telegraf :
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. Supprimez tous les fichiers de configuration ou de journal qui peuvent être laissés derrière :
-+
-....
-sudo rm -rf /usr/local/etc/telegraf*
-sudo rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== Mise à niveau de l'agent
-
-Pour mettre à niveau l'agent telegraf, procédez comme suit :
-
-. Arrêtez le service telegraf :
-+
- sudo launchctl stop telegraf
-. Désinstallez l'ancien agent telegraf :
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["Installez le nouvel agent"].
-
-
-{vide} {vide} {vide} {vide} {vide} {vide} {vide}
-
-
-
-== Kubernetes
-
-L'opérateur de surveillance NetApp Kubernetes (NKMO) est la méthode privilégiée pour installer Kubernetes pour Cloud Insights Insights, pour bénéficier d'une configuration de surveillance plus flexible avec moins d'étapes, ainsi que d'opportunités améliorées de surveillance des autres logiciels s'exécutant sur le cluster K8s.
-
-Veuillez link:task_config_telegraf_agent_k8s.html["*aller ici*"] Pour plus d'informations et des instructions d'installation pour l'opérateur NetApp Kubernetes Monitoring.
-
-{vide} {vide} {vide} {vide} {vide} {vide} {vide}
-
-
-
 == Vérification des sommes de contrôle
 
 Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour ce faire, téléchargez le programme d'installation et générez une somme de contrôle pour le package téléchargé, puis comparez la somme de contrôle à la valeur indiquée dans les instructions d'installation.
@@ -498,7 +355,7 @@ Voici la procédure à suivre :
 
 . Copiez l'extrait de code Agent installer comme indiqué.
 . Au lieu de coller le fragment dans une fenêtre de commande, collez-le dans un éditeur de texte.
-. Supprimez le "--install" (Linux/Mac) ou "-install" (Windows) de la commande.
+. Supprimez la commande de fin « --install » (Linux) ou « -install » (Windows).
 . Copiez la commande entière à partir de l'éditeur de texte.
 . Ensuite, collez-la dans votre fenêtre de commande (dans un répertoire de travail) et exécutez-la.
 
@@ -556,9 +413,6 @@ Pour générer la valeur de checksum, exécutez la commande suivante pour votre 
 * RHEL/Ubuntu :
 +
  sha256sum <package_name>
-* MacOS :
-+
- shasum -a 256 telegraf.pkg
 * Windows :
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List

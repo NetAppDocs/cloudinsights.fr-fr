@@ -4144,8 +4144,6 @@
   <block id="3dcf1132d2ac9bc21285187c48593f04" category="cell"><block ref="3dcf1132d2ac9bc21285187c48593f04" category="inline-link-macro-rx"></block></block>
   <block id="9c213cb7b5d19c2f29b16c443a8abfd6" category="inline-link-macro">Lenovo HX Series</block>
   <block id="cb794264bdd8eabce9d96fe3669eb8ba" category="cell"><block ref="cb794264bdd8eabce9d96fe3669eb8ba" category="inline-link-macro-rx"></block></block>
-  <block id="6c61a878ac2abe027fdc9bb02c9dc5ee" category="inline-link-macro">Mac OS</block>
-  <block id="e7a7b834eaa4f36ff205b888218eb86a" category="cell"><block ref="e7a7b834eaa4f36ff205b888218eb86a" category="inline-link-macro-rx"></block></block>
   <block id="fa836c8f852703c79e684718602d15f3" category="inline-link-macro">Mise en mémoire cache</block>
   <block id="126d3fe0d1082a69b5d94b09b5bc3c76" category="cell"><block ref="126d3fe0d1082a69b5d94b09b5bc3c76" category="inline-link-macro-rx"></block></block>
   <block id="b10bdb60d29ba046adcdfada8800a230" category="inline-link-macro">Microsoft Azure NetApp Files</block>
@@ -4272,7 +4270,6 @@
   <block id="c8d85f57956f127cf15ceb0dd0f01a67" category="paragraph">Vous pourrez configurer des collecteurs de données supplémentaires ultérieurement.</block>
   <block id="38842479851f6bd610129b076a042485" category="section-title">Configurer Data Collector - systèmes d'exploitation et services</block>
   <block id="0f0f84cb9775a6f4ad6b4796bfcedfe9" category="section-title">Système d'exploitation :</block>
-  <block id="975a66ed816bd277d0cef6e3be2ded78" category="paragraph">Pour les collecteurs de données _système d'exploitation_, choisissez une plate-forme (MacOS, Linux, Windows) pour installer un agent Cloud Insights. Vous devez disposer d'au moins un agent pour collecter des données auprès des Services. L'agent collecte également les données de l'hôte lui-même, à utiliser dans Cloud Insights. Ces données sont classées comme des données de « nœud » dans des widgets, etc</block>
   <block id="3016defc353ac1d6c8fb67380dc453a9" category="list-text">Ouvrez un terminal ou une fenêtre de commande sur l'hôte de l'agent ou le VM, puis collez la commande affichée pour installer l'agent.</block>
   <block id="4307f095d2e3c10914861e3d0b27520b" category="list-text">Une fois l'installation terminée, cliquez sur *Terminer l'installation*.</block>
   <block id="2feb695214b35f4b4c9ae83eac6164ee" category="section-title">Services :</block>
@@ -4474,7 +4471,6 @@
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS et Debian/Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">Modifiez les fichiers de configuration de Telegraf et remplacez toutes les instances de l'ancien jeton API par le nouveau jeton API.</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">Redémarrez Telegraf.</block>
-  <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">Mac OS</block>
   <block id="aea23489ce3aa9b6406ebb28e0cda430" category="section-title">Répertoires de base</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">Pour chaque fichier de configuration de Telegraf dans _C:\Program Files\telegraf\telegraf.d_, remplacez toutes les instances de l'ancien jeton API par le nouveau jeton API.</block>
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">configuration dco</block>
@@ -5866,14 +5862,6 @@
   <block id="228775e556bb7d0b1893a0069479cc55" category="cell">Octets reçus octets envoyés paquets envoyés Outboud paquets rejetés erreurs Outboud paquets reçus paquets rejetés erreurs reçues paquets reçus erreurs paquets reçus paquets envoyés</block>
   <block id="620f85b913de46972f8dc2d9791d0335" category="inline-link-macro">Configuration d'un agent</block>
   <block id="11e9a60bae5c09e0b15ee77e596f4b30" category="paragraph">Les informations de configuration et de dépannage se trouvent sur le <block ref="253f1bddd94d888bccb7868889c4eaa6" category="inline-link-macro-rx"></block> page.</block>
-  <block id="9b2aab4a17e8001708e5c064c18e9cc9" category="section-title">Utilisation de la mémoire MacOS</block>
-  <block id="bdb7a011a6dcafb6d9cca887b7acc5d4" category="paragraph">Cloud Insights (via Telegraf) et MacOS signalent des numéros différents pour l'utilisation de la mémoire. Telegraf et le moniteur d'activité Mac utilisent des mesures recueillies à partir de _vm_stat_, cependant l'utilisation totale de la mémoire est calculée différemment pour chaque.</block>
-  <block id="cf7023b1681322a2d9e0f6d0c97b53b8" category="paragraph">*Telegraf* calcule _mémoire utilisée Total_ comme suit :</block>
-  <block id="bdec3477c71d1105bc571aa81c60a497" category="paragraph">Où _Memory Available Total_ est dérivé de la somme de "pages libres" et de "pages inactives" dans _vm_stat_.</block>
-  <block id="cebe752b3cb71c1129081a5eb80e578b" category="paragraph">*Le moniteur d'activité Mac*, en revanche, calcule la mémoire utilisée comme suit :</block>
-  <block id="4051f7a972961f2c2f00ce4e28456668" category="list-text">_App Memory_ est dérivé de la différence entre “pages anonymes” et “pages purgeable” dans _vm_stat_,</block>
-  <block id="83dd5b5fa4fab4140db6a44dd694c77e" category="list-text">_Wired Memory_ est dérivé de “pages câblées en bas” dans _vm_stat_, et</block>
-  <block id="aeb19aa8690d7899c00999b3db5b53ab" category="list-text">_Compressed_ est dérivé de “pages occupées par compresseur” dans _vm_stat_.</block>
   <block id="7eb410d92e2a18ab21dc72d9c0d990b0" category="summary">Affichage des requêtes qui ont été créées</block>
   <block id="0a1aca0ce8e56ded0adb600f66ec2de7" category="doc">Affichage des requêtes</block>
   <block id="1fc205cf7c624c62075df4662909d53d" category="paragraph">Vous pouvez afficher vos requêtes pour surveiller vos actifs et modifier la façon dont vos requêtes affichent les données associées à vos ressources.</block>
@@ -6712,8 +6700,6 @@
   <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">Une référence rapide pour les icônes d'objet utilisées dans Cloud Insights.</block>
   <block id="390c989aa3d9a6bba33ccfbf291f42d3" category="inline-image-macro">Référence de l'icône</block>
   <block id="822c8b943b98c805e2153d211dbe71a8" category="paragraph"><block ref="822c8b943b98c805e2153d211dbe71a8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights prend en charge Telegraf en tant qu'agent pour collecter des données d'intégration. Il peut être configuré sur Windows, Linux, MacOS et Kubernetes.</block>
-  <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">Configuration d'un agent pour collecter des données (Windows/Linux/Mac)</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Utilisations de Cloud Insights <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> en tant qu'agent pour la collecte de données d'intégration. Telegraf est un agent serveur piloté par plug-in qui peut être utilisé pour collecter et signaler des mesures, des événements et des journaux. Les plug-ins d'entrée sont utilisés pour recueillir les informations souhaitées dans l'agent en accédant directement au système/système d'exploitation, en appelant des API tierces ou en écoutant des flux configurés (c.-à-d. Kafka, statsD, etc.). Les plug-ins de sortie sont utilisés pour envoyer les mesures, les événements et les journaux collectés depuis l'agent vers Cloud Insights.</block>
   <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">La version actuelle de Telegraf pour Cloud Insights est *1.24.0*.</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">Si vous souhaitez vérifier les fichiers d'installation avant d'installer l'agent, reportez-vous à la section ci-dessous <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>.</block>
@@ -6722,13 +6708,10 @@
   <block id="8d6f7baf6fd8e47d9316fcc507ab0f85" category="list-text"><block ref="85415f26af88eac138de6f713927df0c" category="inline-xref-macro-rx"></block></block>
   <block id="95f68796200de884bc3186742179de85" category="list-text"><block ref="8311b71d9af22c435aebd4b15988ca17" category="inline-xref-macro-rx"></block></block>
   <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
-  <block id="bbf85c4af8ae929eb3f146ee14dc6de7" category="list-text"><block ref="eb2b23738d53e26664bd524aac0d946b" category="inline-xref-macro-rx"></block></block>
-  <block id="0fb66d0a12868f7a7a7ac80d4f6e61eb" category="list-text"><block ref="1e8f93845a7d4d0675fd8a2f9ee474e1" category="inline-xref-macro-rx"></block></block>
   <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">Pour installer un agent, quelle que soit la plate-forme que vous utilisez, vous devez d'abord effectuer les opérations suivantes :</block>
   <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">Connectez-vous à l'hôte que vous utiliserez pour votre agent.</block>
   <block id="e9604f31aba2ec7275fd08fdb30a45f9" category="list-text">Connectez-vous à votre site Cloud Insights et accédez à *Admin &gt; Data Collectors*.</block>
   <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">Cliquez sur *+Data Collector* et choisissez un collecteur de données à installer.</block>
-  <block id="ff90afa9cae89212ec8c4a56e9010e87" category="list-text">Choisir la plate-forme la mieux adaptée à votre hôte (Windows, Linux, MacOS, etc.)</block>
   <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">Suivez les étapes restantes pour chaque plate-forme.</block>
   <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">Une fois que vous avez installé un agent sur un hôte, vous n'avez pas besoin d'installer de nouveau un agent sur cet hôte.</block>
   <block id="4779eaa1340da59df6b8231755992886" category="inline-link-macro">Metrics de nœud</block>
@@ -6793,27 +6776,7 @@
   <block id="b5648f15565fb8185bfc83aaabee9577" category="paragraph">Si votre système d'exploitation n'utilise pas le système :</block>
   <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">Pour désinstaller l'agent sur Ubuntu/Debian, dans un terminal Bash, exécutez les opérations suivantes :</block>
   <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>.</block>
-  <block id="8b06df0295926efcdcc1f9e13c49848e" category="section-title">Mac OS</block>
-  <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">Les commandes suivantes doivent être disponibles : curl, sudo, openssl et shasum</block>
-  <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">Si vous êtes derrière un proxy, vous devez suivre les instructions de la section *Configuration du support proxy pour MacOS*.</block>
-  <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">Configuration de la prise en charge de proxy pour MacOS</block>
-  <block id="86ca857cd13e48a665c06adacc3bc11c" category="paragraph">Pour les systèmes résidant derrière un proxy, procédez comme suit pour définir les variables d'environnement _https_proxy_ et/ou _http_proxy_ pour l'utilisateur actuel *ANTÉRIEUR* à l'installation de l'agent Telegraf :</block>
-  <block id="b7811096d82a6677a2e9256752cdbc44" category="paragraph">*APRÈS* installation de l'agent Telegraf, ajoutez et définissez les variables _https_proxy_ et/ou _http_proxy_ appropriées dans _/applications/telegraf.app/Contents/telegraf.plist_:</block>
-  <block id="8bbdd3c386723d33a3bfe476f361744c" category="paragraph">Puis, redémarrez Telegraf après avoir chargé les modifications ci-dessus :</block>
-  <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">Installation de l'agent MacOS</block>
-  <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b23f4e2f2268beeee7ca70611f0a7a37" category="list-title">Étapes d'installation de l'agent sous MacOS :</block>
-  <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">Si vous avez déjà installé un agent Telegraf à l'aide d'Homebrew, vous êtes invité à le désinstaller. Une fois que l'agent Telegraf installé précédemment est désinstallé, exécutez de nouveau la commande à l'étape 5 ci-dessus.</block>
-  <block id="903f8d1093beeadb9d59b74d760a40e8" category="paragraph">Pour désinstaller l'agent sous MacOS, dans un terminal Bash, exécutez les opérations suivantes :</block>
-  <block id="1ed754660eab03374442236452ed9e39" category="list-text">Désinstallez l'agent telegraf :</block>
-  <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">Désinstallez l'ancien agent telegraf :</block>
-  <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>.</block>
-  <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">{vide} {vide} {vide} {vide} {vide} {vide} {vide}</block>
-  <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">L'opérateur de surveillance NetApp Kubernetes (NKMO) est la méthode privilégiée pour installer Kubernetes pour Cloud Insights Insights, pour bénéficier d'une configuration de surveillance plus flexible avec moins d'étapes, ainsi que d'opportunités améliorées de surveillance des autres logiciels s'exécutant sur le cluster K8s.</block>
-  <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">*aller ici*</block>
-  <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">Veuillez <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> Pour plus d'informations et des instructions d'installation pour l'opérateur NetApp Kubernetes Monitoring.</block>
   <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">Vérification des sommes de contrôle</block>
-  <block id="e596e19d0eb6c82c1aba63c3fd5cc626" category="list-text">Supprimez le "--install" (Linux/Mac) ou "-install" (Windows) de la commande.</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">Non Windows (ces exemples sont pour Kubernetes ; les noms réels de scripts peuvent varier) :</block>
   <block id="140710a8dd48496a1ea3b09f2799c408" category="paragraph">Windows :</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">un fichier de somme de contrôle signé (se terminant par sha256.signé ou sha256.ps1)</block>
@@ -8666,8 +8629,6 @@
   <block id="87c6157f200d5f2c85eeda2dc68852f6" category="sidebar">Ce que nous Store et où</block>
   <block id="55b171ae91c4f30690df081e54631deb" category="sidebar">Collecte des données</block>
   <block id="713f769811f3b7c68113061a88f193e4" category="sidebar">Configuration d'une unité d'acquisition</block>
-  <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">Configuration d'un agent (Windows/Linux/Mac)</block>
-  <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">Configuration d'un agent (Kubernetes)</block>
   <block id="e30ee94d3d17494d7e3f549e9b179b61" category="sidebar">Détermination de l'état d'acquisition du Data Collector</block>
   <block id="4aba696177ce8a74216803ac14343d2c" category="sidebar">Gérer les collecteurs de données configurés</block>
   <block id="72633c43eaf6d098d8df9b7b7cf5fb7a" category="sidebar">Erreurs de collecte de données de recherche</block>
@@ -8855,7 +8816,6 @@
   <block id="2eb1ff7eeb74bcccfbd52597702cefd2" category="inline-image-macro">Exemple de page d'accueil Kubernetes Workload</block>
   <block id="b5983a6439977ea97f606ef9b22473da" category="paragraph"><block ref="b5983a6439977ea97f606ef9b22473da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="848145ac45f138034b0f73e33d01087d" category="section-title">Vérifiez vos checksums</block>
-  <block id="07d37618bb7cd1ed696f2a65da638c56" category="paragraph">Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows, Linux et MacOS, et nous pensons que c'est une bonne idée. Les voici donc :</block>
   <block id="b205fe7e473302e0bfbfc761b5ff494f" category="inline-image-macro">Valeurs de somme de contrôle de l'agent affichées lors de l'installation</block>
   <block id="f9e15fb7ce69e61fac90a652cc378b31" category="paragraph"><block ref="f9e15fb7ce69e61fac90a652cc378b31" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86f7f75f0c9c85cf5db67a84570aecd1" category="section-title">Amélioration des alertes de journaux</block>
@@ -10278,7 +10238,6 @@
   <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">Générer une valeur de somme de contrôle</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">Pour générer la valeur de checksum, exécutez la commande suivante pour votre plateforme appropriée :</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu :</block>
-  <block id="ba6ad5c825f9877ce4f39aaf439755f6" category="list-text">MacOS :</block>
   <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">Vérifiez le total de contrôle à l'aide du fichier PEM</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">Installez l'image téléchargée</block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">DELL EMC Unisphere REST</block>
@@ -11044,4 +11003,12 @@
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 100,000 premiers enregistrements sont exportés. Selon la quantité de données, l'exportation peut prendre de quelques secondes à plusieurs minutes.</block>
+  <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows et Linux et nous pensons que c'est une excellente idée. Les voici donc :</block>
+  <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights prend en charge Telegraf comme agent de collecte des données d'intégration et peut être configuré sous Windows ou Linux.</block>
+  <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">Configuration d'un agent pour collecter des données (Windows/Linux)</block>
+  <block id="72213a3f462eab56462e1fd1892f6fc0" category="list-text">Choisir la plate-forme appropriée pour votre hôte (Windows, Linux)</block>
+  <block id="98cd1da81daac82fdd86ce7412e50a24" category="list-text">Supprimez la commande de fin « --install » (Linux) ou « -install » (Windows).</block>
+  <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">Pour les collecteurs de données _système d'exploitation_, choisissez une plate-forme (Linux, Windows) pour installer un agent Cloud Insights. Vous devez disposer d'au moins un agent pour collecter des données auprès des Services. L'agent collecte également les données de l'hôte lui-même, à utiliser dans Cloud Insights. Ces données sont classées comme des données de « nœud » dans des widgets, etc</block>
+  <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">Configuration d'un agent sous Windows/Linux</block>
+  <block id="77206fd030aaac8141e97d837c255109" category="sidebar">Configuration d'un opérateur Kubernetes</block>
 </blocks>

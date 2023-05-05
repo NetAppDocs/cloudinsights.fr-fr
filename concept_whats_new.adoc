@@ -141,7 +141,7 @@ image:Kubernetes_Workload_LP.png["Exemple de page d'accueil Kubernetes Workload"
 
 === Vérifiez vos checksums
 
-Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows, Linux et MacOS, et nous pensons que c'est une bonne idée. Les voici donc :
+Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows et Linux et nous pensons que c'est une excellente idée. Les voici donc :
 
 image:Agent_Checksum_Instructions.png["Valeurs de somme de contrôle de l'agent affichées lors de l'installation"]
 

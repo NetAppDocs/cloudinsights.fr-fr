@@ -198,9 +198,6 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_dc_lenovo.html["Lenovo HX Series"] | Infrastructures 
 
 
-| link:task_config_telegraf_agent.html#macos["Mac OS"] | Service 
-
-
 | link:task_config_telegraf_memcached.html["Mise en mémoire cache"] | Service 
 
 

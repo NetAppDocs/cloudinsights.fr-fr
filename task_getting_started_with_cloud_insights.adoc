@@ -58,7 +58,7 @@ Vous pourrez configurer des collecteurs de données supplémentaires ultérieure
 
 === Système d'exploitation :
 
-Pour les collecteurs de données _système d'exploitation_, choisissez une plate-forme (MacOS, Linux, Windows) pour installer un agent Cloud Insights. Vous devez disposer d'au moins un agent pour collecter des données auprès des Services. L'agent collecte également les données de l'hôte lui-même, à utiliser dans Cloud Insights. Ces données sont classées comme des données de « nœud » dans des widgets, etc
+Pour les collecteurs de données _système d'exploitation_, choisissez une plate-forme (Linux, Windows) pour installer un agent Cloud Insights. Vous devez disposer d'au moins un agent pour collecter des données auprès des Services. L'agent collecte également les données de l'hôte lui-même, à utiliser dans Cloud Insights. Ces données sont classées comme des données de « nœud » dans des widgets, etc
 
 * Ouvrez un terminal ou une fenêtre de commande sur l'hôte de l'agent ou le VM, puis collez la commande affichée pour installer l'agent.
 * Une fois l'installation terminée, cliquez sur *Terminer l'installation*.
