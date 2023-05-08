@@ -15,6 +15,16 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Mai 2023
+
+
+
+=== Chargement de l'écran de sécurité de la charge de travail amélioré
+
+Cloud Insights a amélioré l'expérience utilisateur en affichant plus efficacement les écrans d'observabilité et de sécurité des workloads, réduisant ainsi le temps de chargement lorsque vous naviguez entre ces fonctionnalités. Notez que les URL de la page sécurité des workloads ont changé. Les URL précédentes seront automatiquement redirigées vers les nouvelles URL.
+
+
+
 == Avril 2023
 
 
