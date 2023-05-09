@@ -16,7 +16,7 @@ NOTE: La performance du réseau Kubernetes et le mappage est un link:concept_pre
 
 Principales fonctionnalités : • la carte des workloads présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance. • Surveiller le trafic réseau entre les pods Kubernetes, les workloads et les nœuds ; identifier la source des problèmes de trafic et de latence. • Réduire les coûts globaux en analysant les entrées, les sorties, le trafic interrégional et le trafic de réseau interzone.
 
-image:Workload Map Example_withSlideout.png["Exemple de schéma de la charge de travail montrant le panneau « Slideout » avec des détails"]
+image:workload-map-animated.gif["Exemple de carte des charges de travail"]
 
 
 
