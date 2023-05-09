@@ -40,7 +40,8 @@ Remarque : un nombre « jours à plein » de « 0 » (zéro) indique que le nomb
 
 Sélectionnez la page *Data protection* pour afficher les relations SnapMirror. Cliquez sur a vers les informations sur le volume source ou de destination, ou cliquez sur l'icône engrenage pour ajouter des colonnes pour les données que vous souhaitez afficher.
 
-image:OE_DataProtection.png["Page de liste des relations SnapMirror"]
+image:DataProtectionDashboard_OverviewWidgets.png["Widgets Data protection Dashboard affichant des présentations locales et distantes"]
+image:DataProtectionDashboard_ClusterList.png["Liste des clusters de protection des données"]
 
 
 
