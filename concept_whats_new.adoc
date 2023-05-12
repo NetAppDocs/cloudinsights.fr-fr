@@ -29,48 +29,10 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
-=== Amélioration de l'installation des opérateurs de surveillance Kubernetes
+=== 675daaee26cb7a668008d96ba0afd8e2
 
-Installation et configuration du link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] est plus facile que jamais grâce aux améliorations suivantes :
+394791778bc8c7c505ff97a4408cada8
 
-* De production link:telegraf_agent_k8s_config_options.html["paramètres de configuration"] sont conservés dans un seul fichier de configuration auto-documenté.
-* Instructions détaillées pour le téléchargement des images de l'opérateur de surveillance Kubernetes vers votre référentiel privé.
-* Simple à mettre à niveau avec une seule commande pour mettre à niveau votre système de contrôle Kubernetes tout en conservant des configurations personnalisées.
-* Sécurité accrue : les clés d'API gèrent les secrets de manière sécurisée.
-* Facilité d'intégration et de déploiement avec vos outils d'automatisation ci/CD.
-
-
-
-
-=== Virtualisation du stockage
-
-Cloud Insights peut différencier une baie de stockage dotée d'un stockage local ou d'une virtualisation d'autres baies de stockage. Vous pouvez ainsi établir le lien entre les coûts et distinguer les performances du stockage frontal et du stockage interne de votre infrastructure.
-
-image:StorageVirtualization_StorageSummary.png["Page d'accueil du stockage affichant des informations sur le stockage virtuel et sauvegardé"]
-
-
-
-=== Nouveaux paramètres Webhook
-
-Lors de la création d'un link:task_create_webhook.html["Webhook"] notification, vous pouvez désormais inclure ces paramètres dans votre définition de webhook :
-
-* %%TriggeredOnKeys%%
-* %%TriggeredOnValues%%
-
-
-
-
-=== Signalement des données PV Kubernetes
-
-Les informations de volume persistant Kubernetes collectées par Cloud Insights sont désormais disponibles pour le reporting, permettant la refacturation, les tendances, les prévisions, les calculs TTF, Par ailleurs, les autres rapports métier sur les metrics pour les clusters Kubernetes, les espaces de noms, les charges de travail, etc.
-
-
-
-=== Moniteurs système ONTAP par défaut activés pour les nouveaux clients
-
-De nombreux moniteurs système ONTAP sont activés (c.-à-d. _repris_) par défaut dans les nouveaux environnements Cloud Insights. Auparavant, la plupart des moniteurs avaient par défaut l'état _Pause_. Étant donné que les besoins des entreprises varient d'une entreprise à l'autre, nous vous recommandons de toujours consulter le link:task_system_monitors.html["moniteurs système"] dans votre environnement et en mettant en pause ou en reprenant chacune de ces fonctions en fonction de vos besoins en matière d'alertes.
-
-'''
 
 
 == Avril 2023
@@ -79,7 +41,7 @@ De nombreux moniteurs système ONTAP sont activés (c.-à-d. _repris_) par défa
 
 === Contrôle des performances et mappage Kubernetes
 
-Le link:concept_kubernetes_network_monitoring_and_map.html["_Performances du réseau Kubernetes et mappage_"] Cette fonctionnalité simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
+5d6a6764c313767cd859950497830f19
 
 Principales fonctionnalités : • la carte des workloads présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance. • Surveiller le trafic réseau entre les pods Kubernetes, les workloads et les nœuds ; identifier la source des problèmes de trafic et de latence. • Réduire les coûts globaux en analysant les entrées, les sorties, le trafic interrégional et le trafic de réseau interzone.
 
