@@ -54,19 +54,8 @@ Les notifications par e-mail d'alertes sont envoyées à la liste des destinatai
 
 Pour configurer les destinataires d'alertes globales, sélectionnez les destinataires souhaités dans la section *destinataires de notification du moniteur global*.
 
+[role="thumb"]
 Vous pouvez toujours remplacer la liste globale des destinataires d'un moniteur individuel lors de la création ou de la modification du moniteur.
 
 
 NOTE: Les notifications ONTAP Data Collector prévalent sur toute notification Monitor spécifique pertinente au cluster/Data Collector. La liste des destinataires que vous définissez pour le Data Collector lui-même recevra les alertes du Data Collector. Si aucune alerte de collecte de données n'est active, des alertes générées par le moniteur seront envoyées à des destinataires de moniteur spécifiques.
-
-
-
-== Modification des notifications pour ONTAP
-
-Vous pouvez modifier les notifications pour les clusters ONTAP en sélectionnant _Modifier les notifications_ dans le menu déroulant situé en haut à droite de la page d'accueil stockage.
-
-image:EditONTAPNotifications.png["ONTAP Modifier les notifications"]
-
-À partir de là, vous pouvez définir des notifications pour les alertes critiques, d'avertissement, d'information et/ou résolues. Chaque scénario peut avertir la liste des destinataires globaux ou les autres destinataires que vous choisissez.
-
-image:EditONTAPNotifications_MultipleScenarios.png["Notifications ONTAP pour différents scénarios"]
