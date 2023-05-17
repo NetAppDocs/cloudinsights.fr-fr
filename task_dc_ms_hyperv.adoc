@@ -5,11 +5,21 @@ keywords: data collector, Microsoft, Hyper-V
 summary: Configuration du collecteur de données Microsoft Hyper-V. 
 ---
 = Collecteur de données Microsoft Hyper-V.
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-Le collecteur de données Microsoft Hyper-V acquiert les données d'inventaire et de performances de l'environnement informatique de serveur virtualisé.
+Le collecteur de données Microsoft Hyper-V acquiert les données d'inventaire et de performances de l'environnement informatique de serveur virtualisé. Ce collecteur de données peut découvrir un hôte Hyper-V autonome ou un cluster entier. Il peut en créer un par hôte ou cluster autonome.
 
 
 
@@ -48,13 +58,12 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 Les éléments suivants sont nécessaires pour configurer ce collecteur de données :
 
 * Hyper-V requiert l'ouverture du port 5985 pour la collecte de données et l'accès/la gestion à distance.
-* Adresse IP du nœud du groupe de clusters
-* Utilisateur de l'administrateur local et mot de passe sur l'hyperviseur
-* Compte utilisateur de niveau administratif
-* Commande WMI (Windows Management Instrumentation), qui est la commande par défaut installée par Windows.
+* Adresse IP ou FQDN du cluster ou de l'hyperviseur autonome. L'utilisation du nom d'hôte ou de l'adresse IP flottante du cluster constitue probablement l'approche la plus fiable au lieu de pointer le collecteur vers un seul nœud spécifique d'un cluster.
+* Compte utilisateur de niveau administrateur qui fonctionne sur tous les hyperviseurs du cluster.
+* WinRM doit être activé et être à l'écoute de tous les hyperviseurs
 * Configuration requise du port : le port 135 via les ports WMI et TCP dynamique a été attribué à 1024-65535 pour Windows 2003 et versions antérieures et à 49152-65535 pour Windows 2008.
 * La résolution DNS doit réussir, même si le collecteur de données est pointé à une seule adresse IP
-* Chaque hyperviseur Hyper-V doit avoir la fonction de mesure des ressources activée pour chaque machine virtuelle, sur chaque hôte. Cela permet à chaque hyperviseur de disposer de plus de données pour Cloud Insights sur chaque invité. Si ce paramètre n'est pas défini, moins de mesures de performance sont acquises pour chaque client. Pour plus d'informations sur le dosage des ressources, consultez la documentation microsoft :
+* Chaque hyperviseur Hyper-V doit avoir la fonction de mesure des ressources activée pour chaque machine virtuelle, sur chaque hôte. Cela permet à chaque hyperviseur de disposer de plus de données pour Cloud Insights sur chaque invité. Si ce paramètre n'est pas défini, moins de mesures de performance sont acquises pour chaque client. Pour plus d'informations sur la mesure des ressources, consultez la documentation Microsoft :
 +
 link:https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Présentation de la mesure des ressources Hyper-V"]
 
@@ -75,7 +84,7 @@ NOTE: Le collecteur de données Hyper-V nécessite une unité d'acquisition Wind
 | Champ | Description 
 
 
-| Adresse IP de l'hôte physique | Adresse IP ou nom de domaine complet de l'hôte physique (hyperviseur) 
+| Adresse IP du cluster ou nom de domaine complet du cluster flottant | L'adresse IP ou le nom de domaine complet du cluster ou un hyperviseur autonome non mis en cluster 
 
 
 | Nom d'utilisateur | Nom d'utilisateur administrateur de l'hyperviseur 
@@ -84,7 +93,7 @@ NOTE: Le collecteur de données Hyper-V nécessite une unité d'acquisition Wind
 | Mot de passe | Mot de passe de l'hyperviseur 
 
 
-| Domaine NT | Nom DNS utilisé par les nœuds du cluster 
+| Suffixe de domaine DNS | Le suffixe de nom d'hôte associé au nom d'hôte simple pour afficher le nom de domaine complet d'un hyperviseur 
 |===
 
 

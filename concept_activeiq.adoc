@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_activeiq.html 
-keywords: Active IQ, risks, svm 
+keywords: Active IQ, risks, svm, AIQ, risk 
 summary: Cloud Insights collecte les données de risque auprès de NetApp Active IQ 
 ---
 = Active IQ

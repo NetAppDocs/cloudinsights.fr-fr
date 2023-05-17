@@ -18,7 +18,7 @@ NOTE: Cette page fait référence aux instructions de tiers, qui peuvent faire l
 
 == Exemple de mou :
 
-* Accédez à https://api.slack.com/apps[] Et créez une nouvelle application Donnez un nom significatif et sélectionnez l'espace de travail Slack.
+* Accédez à https://[] Et créez une nouvelle application Donnez un nom significatif et sélectionnez l'espace de travail Slack.
 +
 image:Webhooks_Slack_Create_Webhook.png["Créer un crochet mou"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["Notifications de Webhook"]
 
 ==== Pour aller plus loin :
 
-* Pour modifier le format et la mise en page du message, voir https://api.slack.com/messaging/composing[]
-* Gestion des erreurs : https://api.slack.com/messaging/webhooks#handling_errors[]
+* Pour modifier le format et la mise en page du message, voir https://[]
+* Gestion des erreurs : https://[]
 

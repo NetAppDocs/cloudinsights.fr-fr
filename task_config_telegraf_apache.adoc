@@ -14,7 +14,7 @@ Ce collecteur de données permet de collecter des données à partir des serveur
 .Conditions préalables
 * Votre serveur HTTP Apache doit être configuré et en cours d'exécution
 * Vous devez disposer d'autorisations sudo ou administrateur sur votre hôte agent/machine virtuelle
-* En général, le module Apache _mod_status_ est configuré pour exposer une page à l'emplacement '/Server-status?auto' du serveur Apache. L'option _ExtendedStatus_ doit être activée pour collecter tous les champs disponibles. Pour plus d'informations sur la configuration de votre serveur, consultez la documentation du module Apache : https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
+* En général, le module Apache _mod_status_ est configuré pour exposer une page à l'emplacement '/Server-status?auto' du serveur Apache. L'option _ExtendedStatus_ doit être activée pour collecter tous les champs disponibles. Pour plus d'informations sur la configuration de votre serveur, consultez la documentation du module Apache : https://[]
 
 
 

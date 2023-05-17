@@ -1,18 +1,28 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_performance_monitoring_and_map.html 
+permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: Présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance 
 ---
-= Contrôle des performances et mappage Kubernetes
+= Surveillance et mappage des performances du réseau Kubernetes
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-La fonctionnalité Performance du réseau et carte Kubernetes simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
+La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
 
 
-NOTE: La performance du réseau Kubernetes et le mappage est un link:concept_preview_features.html["Aperçu"] et est susceptible d'être modifié.
+NOTE: Le contrôle et le mappage des performances du réseau Kubernetes est un link:concept_preview_features.html["Aperçu"] et est susceptible d'être modifié.
 
 Principales fonctionnalités : • la carte des workloads présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance. • Surveiller le trafic réseau entre les pods Kubernetes, les workloads et les nœuds ; identifier la source des problèmes de trafic et de latence. • Réduire les coûts globaux en analysant les entrées, les sorties, le trafic interrégional et le trafic de réseau interzone.
 
@@ -22,7 +32,7 @@ image:workload-map-animated.gif["Exemple de carte des charges de travail"]
 
 == Conditions préalables
 
-Avant d'utiliser Kubernetes Network Performance and Map, vous devez avoir configuré le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] pour activer cette option. Pendant le déploiement de l'opérateur, cochez la case « performances du réseau et carte » pour l'activer. Vous pouvez également activer cette option en accédant à une page d'accueil Kubernetes et en sélectionnant « Modifier le déploiement ».
+Avant de pouvoir utiliser le contrôle et le mappage des performances du réseau Kubernetes, vous devez avoir configuré le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] pour activer cette option. Pendant le déploiement de l'opérateur, cochez la case « performances du réseau et carte » pour l'activer. Vous pouvez également activer cette option en accédant à une page d'accueil Kubernetes et en sélectionnant « Modifier le déploiement ».
 
 image:ServiceMap_NKMO_Deployment_Options.png["Sélection de l'option carte pendant le stup NKMO"]
 
@@ -77,7 +87,7 @@ Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la 
 +
 ** Provient du libellé de la charge de travail du pod
 ** Libellé attendu sur le workload : app.kubernetes.io/composant
-** Référence du nom de l'étiquette : https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** Référence du nom de l'étiquette : https://[]
 ** Étiquettes recommandées :
 +
 *** front-end
