@@ -21,7 +21,7 @@ Vous devez installer une unité d'acquisition (au) afin d'obtenir des informatio
 | Composant | Configuration Linux requise | Configuration Windows requise 
 
 
-| Système d'exploitation | 9eaf347efd9d5225664dc4c414a82eb2 | Un ordinateur exécutant une version sous licence de l'un des ordinateurs suivants : * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 cet ordinateur ne doit pas exécuter d'autre logiciel de niveau application. Un serveur dédié est recommandé. 
+| Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes : * CentOS (64 bits) : 7.2 à 7.9, Stream 8, Stream 9 * Debian (64 bits) : 9 et 10 * Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.4 * Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 9.1 * Rocky 9.0, 9.1 * Ubuntu Server: 18.04 et 20.04 LTS cet ordinateur ne doit pas exécuter d'autres logiciels de niveau application. Un serveur dédié est recommandé. | Un ordinateur exécutant une version sous licence de l'un des ordinateurs suivants : * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 cet ordinateur ne doit pas exécuter d'autre logiciel de niveau application. Un serveur dédié est recommandé. 
 
 
 | CPU | 2 cœurs de processeurs | Identique 
@@ -63,3 +63,10 @@ Vous vous attendez à :
 Pour chaque réponse "Oui" ci-dessus, il est recommandé d'ajouter 8 Go de mémoire et 50 Go d'espace disque à l'au. Donc, par exemple, si vous avez répondu « Oui » aux deux, vous devriez déployer un système de 24 Go avec 150 Go ou plus d'espace disque. Sous Linux, l'espace disque à ajouter à l'emplacement du journal.
 
 Pour toute question sur le dimensionnement, contactez le support NetApp.
+
+
+
+== Exigence supplémentaire de l'édition fédérale
+
+* L'édition fédérale de Cloud Insights requiert l'installation de _rng-Tool_ sur le système d'unité d'acquisition pour que le chiffrement validé FIPS fonctionne.
+
