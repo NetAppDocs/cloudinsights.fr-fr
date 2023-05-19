@@ -11157,9 +11157,6 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">Gardez à l'esprit que :</block>
-  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">Les données inactives de moins de 30 jours ne sont pas affichées.</block>
-  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">Les volumes constitutifs d'une FlexGroup ne sont pas inclus dans les calculs de données inactives (car la règle de Tier ne peut pas être définie sur les composants).</block>
   <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Informations sur la puissance des données inactives</block>
   <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">Recommandations</block>
@@ -11172,4 +11169,5 @@
   <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Tableau des charges de travail des données inactives</block>
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">N'oubliez pas que les données inactives de moins de 30 jours ne sont pas affichées.</block>
 </blocks>
