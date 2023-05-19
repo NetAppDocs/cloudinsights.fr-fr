@@ -10862,18 +10862,11 @@
   <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">La description d'Insight fournit une indication rapide de la quantité de données détectées en tant que « inactives » et du stockage sur lequel résident les données. Le tableau indique également le nombre de charges de travail avec des données inactives.</block>
   <block id="7cc631429c391f70b58e64999f7fbe48" category="inline-link-macro">Calculateur de TCO de NetApp</block>
   <block id="cdb12d4961181c6c0d6f14a1a17cfd87" category="paragraph">Si vous sélectionnez un Insight dans la liste, une page contenant plus de détails s'ouvre. Vous y trouverez notamment des recommandations pour transférer des données vers le cloud ou arrêter des disques non isés, ainsi qu'une estimation des coûts et des économies d'énergie que vous pourriez réaliser grâce à l'implémentation de ces recommandations. La page fournit même un lien pratique vers <block ref="928b307e42240e05f4c78ed4745d6f3a" category="inline-link-macro-rx"></block> vous pouvez ainsi tester les chiffres.</block>
-  <block id="d4dcff57f0b29162c5b6b2c09678b2e2" category="inline-image-macro">Exemple de données inactives</block>
-  <block id="3f7f21955dfa309fc0646bb3a937c6fb" category="paragraph"><block ref="3f7f21955dfa309fc0646bb3a937c6fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5048bf2003cf033b80e3fa2e33502f8" category="paragraph">Sur la page Insight, développez les *recommandations* pour explorer les options suivantes :</block>
   <block id="f77e48bcc98143a3f6bd8bcc492be286" category="list-text">Déplacez les workloads non utilisés (zombies) vers un Tier de stockage moins coûteux (HDD).</block>
-  <block id="52119c89cf47d4da7004a38925cca6c7" category="paragraph">En utilisant l'indicateur zombie, le stockage à froid et le nombre de jours, trouvez la quantité de données la plus froide et la plus importante, puis déplacez la charge de travail vers un niveau de stockage moins coûteux (par exemple, un pool de stockage utilisant du stockage sur disque dur). Une charge de travail est considérée comme un « zombie » lorsque le système IS n'a reçu aucune demande d'E/S significative pendant sept jours ou plus.</block>
   <block id="c8abb3322f2d9026ffca3cbd29c6e9ba" category="list-text">Supprimez les charges de travail inutilisées</block>
   <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">Vérifiez quelles charges de travail ne sont pas utilisées et envisagez de les archiver ou de les supprimer du système de stockage.</block>
   <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">Prenons l'exemple de la solution NetApp Fabric Pool</block>
-  <block id="5338c9536e3c14268eb7568f06d418b6" category="paragraph">La solution Fabric Pool de NetApp transfère automatiquement les données inactives vers un stockage cloud à faible coût, ce qui améliore l'efficacité de votre Tier de performance tout en assurant la protection des données à distance.</block>
-  <block id="394172dfa5bac3cc560f6f81bc64334d" category="paragraph">Le graphique et le tableau fournissent des informations supplémentaires sur les tendances et vous permettent d'explorer chaque charge de travail.</block>
-  <block id="e8f788aa86e776dcd96d7f18cf2b3073" category="inline-image-macro">Données_froides_charge_de_travail_Graph_and_Table</block>
-  <block id="18149ca5a604ec569675b78f1c8cfba7" category="paragraph"><block ref="18149ca5a604ec569675b78f1c8cfba7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">L'outil _Reclaim ONTAP Cold Storage_ Insight fournit des données sur la capacité à froid, les économies potentielles en termes de coûts/d'énergie et les actions recommandées pour les volumes des systèmes ONTAP. <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
   <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">Il s'agit d'une fonction _Preview_ qui peut changer au fil du temps à mesure que des améliorations sont apportées. <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> A propos des fonctions d'aperçu de Cloud Insights.</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">Accédez à *Menu &gt; contenu &gt; contenu de l'équipe &gt; Rapports*</block>
@@ -11164,4 +11157,19 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">Gardez à l'esprit que :</block>
+  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">Les données inactives de moins de 30 jours ne sont pas affichées.</block>
+  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">Les volumes constitutifs d'une FlexGroup ne sont pas inclus dans les calculs de données inactives (car la règle de Tier ne peut pas être définie sur les composants).</block>
+  <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Informations sur la puissance des données inactives</block>
+  <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">Recommandations</block>
+  <block id="987152d50a80bdf0820a4f1fd1771f81" category="paragraph">En utilisant l'indicateur zombie, le stockage à froid et le nombre de jours, trouvez la quantité de données la plus froide et la plus importante, puis déplacez la charge de travail vers un niveau de stockage moins coûteux (par exemple, un pool de stockage utilisant du stockage sur disque dur). Une charge de travail est considérée comme un « zombie » lorsque le système IS n'a reçu aucune demande d'E/S significative pendant au moins 30 jours.</block>
+  <block id="27130393c9a69c9ac4259ad677b7e09b" category="inline-link-macro">Solution FabricPool</block>
+  <block id="a7c5cd98f24711202e2a8089e206922c" category="paragraph">NetApp <block ref="6dfc63a251a9b042b77c667e40f20df9" category="inline-link-macro-rx"></block> procède automatiquement au tiering des données inactives dans un stockage cloud à faible coût, ce qui augmente l'efficacité de votre tier de performance ainsi que la protection des données à distance.</block>
+  <block id="b0bad3786567c06c6ba5f9c05f89f0fb" category="section-title">Visualiser et explorer</block>
+  <block id="f9a5f3e9d6c824797a0884341490f583" category="paragraph">Les graphiques et le tableau fournissent des informations supplémentaires sur les tendances et vous permettent d'explorer chaque charge de travail.</block>
+  <block id="046d0c83fcc2f8749fd500daded4836a" category="inline-image-macro">Graphiques récapitulatifs des données inactives</block>
+  <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Tableau des charges de travail des données inactives</block>
+  <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
+<block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
