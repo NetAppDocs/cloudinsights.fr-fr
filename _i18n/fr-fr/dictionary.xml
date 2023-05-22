@@ -6947,7 +6947,6 @@
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">Tableau de bord de présentation de ONTAP Essentials</block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">Remarque : un nombre « jours à plein » de « 0 » (zéro) indique que le nombre de jours à pleins est estimé à plus de 90 jours. En d'autres termes, vos systèmes ne risquent pas de manquer d'espace à tout moment.</block>
   <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">La protection des données</block>
-  <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">Sélectionnez la page *Data protection* pour afficher les relations SnapMirror. Cliquez sur a vers les informations sur le volume source ou de destination, ou cliquez sur l'icône engrenage pour ajouter des colonnes pour les données que vous souhaitez afficher.</block>
   <block id="d69c939c03cf5ed0d694b88094ca8309" category="paragraph">Vous pouvez y voir les alertes actives de votre environnement et explorer rapidement les problèmes potentiels. Sélectionnez l'onglet _Resolved_ pour afficher les alertes qui ont été résolues.</block>
   <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">La page ONTAP Essentials *Infrastructure* vous donne un aperçu de l'état et des performances du cluster à l'aide de requêtes pré-intégrées (mais encore personnalisables) sur tous les objets ONTAP de base. Sélectionnez le type d'objet à explorer (cluster, pool de stockage, etc.) et choisissez d'afficher les informations d'état ou de performance. Définissez des filtres pour approfondir chaque système.</block>
   <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">Sélections d'infrastructure pour les pools de stockage</block>
@@ -10894,8 +10893,6 @@
   <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">Mai 2023</block>
   <block id="6b091071a7d33b506abd7a64e9f0795d" category="inline-image-macro">Widgets Data protection Dashboard affichant des présentations locales et distantes</block>
   <block id="185acbfb6bbd68c83e1d229b0f437594" category="inline-image-macro">Liste des clusters de protection des données</block>
-  <block id="2104c64c486c18ec271b0134a19654dd" category="paragraph"><block ref="c556223236d0a6ab73f15f6e6f21e0f9" category="inline-image-macro-rx" type="image"></block>
-<block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">Exemple de carte des charges de travail</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">Mise en route avec l'opérateur de surveillance</block>
@@ -11154,4 +11151,21 @@
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">N'oubliez pas que les données inactives de moins de 30 jours ne sont pas affichées.</block>
   <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">Ce collecteur de données n'est plus disponible pour l'installation dans Cloud Insights à partir du 4 avril 2023 et sera supprimé de toutes les installations Cloud Insights le 25 mai 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
+  <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">La page *Data protection* affiche l'état des volumes protégés par *Snapshot copies* ou *SnapMirror policies*.</block>
+  <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">Dans la section _vue d'ensemble de la protection locale_, les graphiques fournissent les informations suivantes pour les volumes protégés par des copies Snapshot :</block>
+  <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">Le nombre de volumes protégés par les copies Snapshot, ainsi que les volumes non protégés.</block>
+  <block id="3f47a78c5f66b83b60ca72ace954dca7" category="list-text">Nombre de volumes qui utilisent ou dépassent l'espace de réserve pour les copies Snapshot.</block>
+  <block id="97fdc67fef73327f22b8fc495e435f8e" category="list-text">Nombre de volumes dans des plages spécifiques de nombre de copies Snapshot (c'est-à-dire moins de 10 copies, 10 à 200, etc.).</block>
+  <block id="b8a1fa4d1861a618562ca06e01978c9e" category="paragraph">Dans la section _Présentation de la protection à distance_, les graphiques fournissent des informations relatives aux volumes protégés par les règles SnapMirror :</block>
+  <block id="b43d32c4db7003345fb07d24af63f6df" category="list-text">Le nombre de relations SnapMirror saines et malsaines.</block>
+  <block id="14160d3e23782b8cd0b814d46365dddf" category="list-text">Nombre de relations SnapMirror avec un décalage de l'objectif de point de récupération (RPO) basé sur le statut de décalage.</block>
+  <block id="80ba86360fcf2d182d10656bc16ae2c5" category="list-text">Nombre de relations protégées par les types de protection de volume SnapMirror tels que SnapMirror volume, les relations SVMDR, les relations SnapMirror FlexGroup, les relations de groupe de cohérence SMBC (SnapMirror Business Continuity), ainsi que les volumes non protégés.</block>
+  <block id="c7fe2f93c4d26e8d245132ba4de7e3c6" category="list-text">Nombre de relations protégées par les types de relations SnapMirror tels que Asynchronous Mirror, Asynchronous Vault, Asynchronous MirrorVault, StrictSync et Sync.</block>
+  <block id="2e34ea590b54b579c6accf225d3ae30e" category="paragraph"><block ref="2e34ea590b54b579c6accf225d3ae30e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6b707fac607c8a9643179751e9c495d" category="paragraph">La grille _clusters_ au bas de la page fournit des détails sur les éléments suivants :</block>
+  <block id="e6e7aa3e8144e8696637ef6e047685ee" category="list-text">Volumes non protégés par des snapshots.</block>
+  <block id="2d71ecbcc9900bb68660e6db988080ca" category="list-text">Les volumes ne correspondant pas à l'espace de réserve du snapshot.</block>
+  <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">Les volumes non protégés par des règles snapmirror et les relations snapmirror sont en décalage.</block>
+  <block id="9354fc9fde4206bac6177054249907e9" category="list-text">Relations SnapMirror défectueuses.</block>
+  <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
