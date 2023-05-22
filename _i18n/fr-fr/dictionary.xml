@@ -5384,20 +5384,6 @@
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">Configuration du collecteur de données NetApp Cloud Connection pour ONTAP 9.9+</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">Collecteur de données NetApp Cloud Connection for ONTAP 9.9+</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">Ce collecteur de données crée une connexion cloud pour la collecte des données à partir des systèmes ONTAP 9.9+ CVO, AFF, et FAS.</block>
-  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights collecte les données de ONTAP 9.9+ à l'aide d'une *connexion cloud*, ce qui évite d'installer une unité d'acquisition externe et simplifie le dépannage, la maintenance et le déploiement initial. La configuration de la connexion au cloud pour le collecteur de données ONTAP 9.9+ nécessite la copie d'un *Code de couplage* dans le Gestionnaire système ONTAP, qui établit ensuite une connexion avec votre environnement Cloud Insights. Une fois la connexion établie, les données collectées sont les mêmes que si elles ont été collectées par l'intermédiaire d'une unité d'acquisition.</block>
-  <block id="72c287aa31792e43cc71160178046540" category="paragraph">Ce collecteur de données prend en charge les systèmes ONTAP 9.9+ CVO, AFF et FAS.</block>
-  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Configuration du collecteur de données d'agent cloud</block>
-  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">Procédez comme suit pour configurer la connexion :</block>
-  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">Générez un jeton unique qui sera utilisé pour établir la connexion au système ONTAP.</block>
-  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">Copiez le code de couplage, qui inclut le jeton. Vous pouvez afficher le code de couplage en cliquant sur _[+] révéler le code Snippet_.</block>
-  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">Une fois le code de couplage copié, l'écran de configuration du collecteur de données affiche une étape 6, vous invitant à attendre que la connexion soit établie. Rien n'est plus nécessaire sur cet écran tant que la connexion n'est pas établie.</block>
-  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">Attente de connexion</block>
-  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">Dans un nouvel onglet de navigateur, connectez-vous au ONTAP System Manager et accédez à _Cluster &gt; Paramètres &gt; connexions clouds_.</block>
-  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">Cliquez sur _Ajouter une connexion Cloud_ et collez le code de couplage.</block>
-  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">Revenez à l'onglet navigateur Cloud Insights et attendez que la connexion soit établie. Une fois qu'il est établi, un bouton _Complete_ est révélé.</block>
-  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">Cliquez sur _Complete_.</block>
   <block id="c7a7127c54e3e8ac9e699f2540a909f5" category="summary">Commencer avec les coûts du cloud.</block>
   <block id="15870627e10ad6ebeb6e55af499ed0ce" category="doc">Commencer avec les coûts du cloud</block>
   <block id="617bd6c0c962503351aba8343b7e2031" category="paragraph">Les coûts du cloud fournissent une analyse détaillée des dépenses passées, présentes et estimées, qui apporte une grande visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses liées au cloud de votre entreprise et fournit une vue détaillée des charges de travail, des comptes et des services individuels.</block>
@@ -8206,8 +8192,6 @@
   <block id="e9713ae04a02a810d6f33dd956f42794" category="cell">Apache</block>
   <block id="aaba4d734bb5c6c1cd828a66a204028f" category="cell">Nœud Nom de nœud IP Port de configuration du serveur parent génération du serveur parent la continuité du serveur de génération MPM est en cours d'arrêt</block>
   <block id="af40aea2350db56f2ccf87bd2e878384" category="cell">Nombre de travailleurs occupés octets par requête par seconde UC enfants système processeur enfants charge UC utilisateur CPU système CPU utilisateurs connexions asynchrones fermeture connexions asynchrones connexion asynchrones maintien actif connexions asynchrones écriture connexions durée totale par demande travailleurs inactifs moyenne de charge (1 m dernier) moyenne de charge (15 m dernier) moyenne de charge (5 m dernier) Traitement des demandes par seconde Total des accès durée totale des Ko Tableau de bord fermeture Tableau de bord des recherches DNS Tableau de bord finition Tableau de bord nettoyage automatique Tableau de bord Tableau de bord garder actif Tableau de bord Tableau de bord Ouvrir Tableau de bord lecture Tableau de bord envoi Tableau de bord démarrage Tableau de bord en attente</block>
-  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">à la place de cette page</block>
-  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">Cette page est obsolète et ne sera pas mise à jour. Rendez-vous à <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>.</block>
   <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">À noter avant de commencer</block>
   <block id="228b6b559614ae017988e0b66c4ab82c" category="list-text">Le script de simulation d'attaque par ransomware fonctionne uniquement sur Linux.</block>
   <block id="7507a6fc6500d36cd4c727aec7187901" category="section-title">Avoir au moins 1,000 fichiers d'exemple</block>
@@ -10623,7 +10607,6 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Une fois la création de votre environnement terminée, vous pouvez utiliser vos identifiants Cloud Central pour vous connecter et lancer l'essai gratuit de 30 jours d'Cloud Insights. Pendant la période d'essai, vous pouvez explorer les fonctionnalités de Cloud Insights.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestion du cluster</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Nécessaire pour le blocage des utilisateurs CIFS/SMB.</block>
-  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">Ce collecteur de données n'est plus disponible en Cloud Insights depuis le 4 avril 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">La sélection de *Storage Manager Dashboard* à partir du contenu de l'équipe vous donne plusieurs rapports qui fournissent des informations sur votre trafic et votre stockage.</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Options du tableau de bord de Storage Manager</block>
   <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
@@ -11170,4 +11153,5 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">N'oubliez pas que les données inactives de moins de 30 jours ne sont pas affichées.</block>
+  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">Ce collecteur de données n'est plus disponible pour l'installation dans Cloud Insights à partir du 4 avril 2023 et sera supprimé de toutes les installations Cloud Insights le 25 mai 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
