@@ -11150,7 +11150,6 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">N'oubliez pas que les données inactives de moins de 30 jours ne sont pas affichées.</block>
-  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">Ce collecteur de données n'est plus disponible pour l'installation dans Cloud Insights à partir du 4 avril 2023 et sera supprimé de toutes les installations Cloud Insights le 25 mai 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
   <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">La page *Data protection* affiche l'état des volumes protégés par *Snapshot copies* ou *SnapMirror policies*.</block>
   <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">Dans la section _vue d'ensemble de la protection locale_, les graphiques fournissent les informations suivantes pour les volumes protégés par des copies Snapshot :</block>
   <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">Le nombre de volumes protégés par les copies Snapshot, ainsi que les volumes non protégés.</block>
@@ -11168,4 +11167,5 @@
   <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">Les volumes non protégés par des règles snapmirror et les relations snapmirror sont en décalage.</block>
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">Relations SnapMirror défectueuses.</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">Ce collecteur de données n'est plus disponible pour l'installation dans Cloud Insights à partir du 4 avril 2023 et sera supprimé de toutes les installations Cloud Insights le 25 mai 2023. Pour plus d'informations sur la transition vers la collecte de données au, consultez le <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
