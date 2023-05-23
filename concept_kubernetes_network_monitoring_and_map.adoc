@@ -87,7 +87,7 @@ Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la 
 +
 ** Provient du libellé de la charge de travail du pod
 ** Libellé attendu sur le workload : app.kubernetes.io/composant
-** Référence du nom de l'étiquette : https://[]
+** Référence du nom de l'étiquette : https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** Étiquettes recommandées :
 +
 *** front-end

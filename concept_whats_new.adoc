@@ -1659,8 +1659,8 @@ Cloud Insights est fourni avec une variété de tableaux de bord prédéfinis po
 
 Vous trouverez plus d'informations sur les données avancées de ONTAP dans les liens suivants :
 
-* https://[] (Remarque : vous devez vous connecter au service de support NetApp)
-* https://[]
+* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[] (Remarque : vous devez vous connecter au service de support NetApp)
+* https://nabox.org/faq/[]
 
 
 

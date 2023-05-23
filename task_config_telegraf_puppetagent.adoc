@@ -30,7 +30,7 @@ image:PuppetDCConfigWindows.png["Configuration de Puppet"]
 
 == Configuration
 
-Vous trouverez des informations dans le https://["Documentation Puppet"]
+Vous trouverez des informations dans le https://puppet.com/docs["Documentation Puppet"]
 
 
 

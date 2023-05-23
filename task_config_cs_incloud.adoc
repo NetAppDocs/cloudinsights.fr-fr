@@ -15,9 +15,9 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 
 == Configuration du stockage Cloud Volumes ONTAP
 
-Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent de sécurité workloads :https://[]
+Consultez la documentation OnCommand Cloud Volumes ONTAP pour configurer une instance AWS à un seul nœud/haute disponibilité pour héberger l'agent de sécurité workloads :https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-Une fois la configuration terminée, suivre les étapes de configuration de votre SVM :https://[]
+Une fois la configuration terminée, suivre les étapes de configuration de votre SVM :https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
@@ -41,7 +41,7 @@ Procédez comme suit pour configurer la machine à utiliser en tant qu'agent de 
 
 .Étapes
 . Connectez-vous à la console AWS, accédez à la page EC2-instances et sélectionnez _Launch instance_.
-. Sélectionnez une ami RHEL ou CentOS avec la version appropriée, comme indiqué sur cette page :https://[]
+. Sélectionnez une ami RHEL ou CentOS avec la version appropriée, comme indiqué sur cette page :https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 . Sélectionnez le VPC et le sous-réseau dans lesquels réside l'instance de Cloud ONTAP.
 . Sélectionnez _t2.XLarge_ (4 cpu virtuels et 16 Go de RAM) comme ressources allouées.
 +

@@ -27,7 +27,7 @@ Une fois le compte correctement configuré et l'application enregistrée dans Az
 
 
 
-https://[]
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

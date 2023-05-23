@@ -30,7 +30,7 @@ image:KapacitorDCConfigWindows.png["Configuration Kapacitor"]
 
 == Configuration
 
-Les informations de configuration sont disponibles dans le https://["Documentation Kapacitor"]
+Les informations de configuration sont disponibles dans le https://docs.influxdata.com/kapacitor/v1.5/["Documentation Kapacitor"]
 
 
 

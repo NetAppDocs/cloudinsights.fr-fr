@@ -34,7 +34,7 @@ Lors du processus d'abonnement initial, votre instance Cloud Insights génère u
 === Option 1 : étapes pour un utilisateur avec un compte SSO existant sur le site de support NetApp (NSS)
 
 .Étapes
-. Accédez au site Web d'inscription NetApp https://[]
+. Accédez au site Web d'inscription NetApp https://register.netapp.com[]
 . Sélectionnez « je suis déjà inscrit en tant que client NetApp » et choisissez _Cloud Insights_ comme gamme de produits. Sélectionnez votre fournisseur de facturation (NetApp ou AWS) et indiquez votre numéro de série et votre nom d'abonnement NetApp ou votre identifiant de client AWS en consultant le menu « aide > support » dans l'interface utilisateur Cloud Insights :
 +
 image:SupportPage_SN_Section-NA.png["SN_Screen"]
@@ -52,7 +52,7 @@ image:ExistingCustomerRegExample.png["formulaire client existant"]
 === Option 2 : étapes pour un nouveau client NetApp sans compte SSO existant sur le site de support NetApp (NSS)
 
 .Étapes
-. Accédez au site Web d'inscription NetApp https://[]
+. Accédez au site Web d'inscription NetApp https://register.netapp.com[]
 . Sélectionnez « Je ne suis pas un client NetApp enregistré » et remplissez le formulaire d'exemple ci-dessous :
 
 
@@ -63,7 +63,7 @@ image:NewCustomerRegExample.png["nouveau formulaire client"]
 image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 . Si aucune erreur ne se produit, l'utilisateur est dirigé vers une page "enregistrement soumis avec succès". L'adresse e-mail associée au nom d'utilisateur SSO NSS utilisé pour l'enregistrement recevra un e-mail dans quelques heures indiquant « votre produit est maintenant éligible pour l'assistance ».
-. En tant que nouveau client NetApp, vous devrez également créer un compte utilisateur sur le site de support NetApp (NSS) pour les inscriptions futures et accéder au portail de support pour accéder au chat qui fournit des informations sur le support technique et à la création de tickets en ligne. Ce lien est situé à https://[]. Pour accélérer le processus, vous pouvez fournir le nouveau numéro de série Cloud Insights enregistré.
+. En tant que nouveau client NetApp, vous devrez également créer un compte utilisateur sur le site de support NetApp (NSS) pour les inscriptions futures et accéder au portail de support pour accéder au chat qui fournit des informations sur le support technique et à la création de tickets en ligne. Ce lien est situé à https://mysupport.netapp.com/eservice/public/now.do[]. Pour accélérer le processus, vous pouvez fournir le nouveau numéro de série Cloud Insights enregistré.
 . Il s'agit d'une inscription unique au numéro de série Cloud Insights.
 
 

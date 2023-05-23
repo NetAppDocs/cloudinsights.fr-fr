@@ -53,7 +53,7 @@ Les conditions suivantes sont requises pour la collecte des performances :
 * Le nom d'utilisateur doit être fourni pour le cimserver. La connexion doit disposer d'un accès complet en lecture à la configuration et aux propriétés de la matrice.
 * Espace de noms SMI-S. La valeur par défaut est root/ibm. Ceci est configurable dans le cimserver.
 * Configuration requise : 5988 pour HTTP, 5989 pour HTTPS.
-* Pour créer un compte pour la collecte de performances SMI-S, reportez-vous au lien suivant : http://[]
+* Pour créer un compte pour la collecte de performances SMI-S, reportez-vous au lien suivant : http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html[]
 
 
 

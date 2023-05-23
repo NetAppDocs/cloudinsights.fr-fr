@@ -29,7 +29,7 @@ Si un agent est déjà configuré, sélectionnez le système d'exploitation ou l
 
 == Configuration
 
-Les informations de configuration sont disponibles dans le https://["Documentation DC/OS"].
+Les informations de configuration sont disponibles dans le https://docs.mesosphere.com["Documentation DC/OS"].
 
 
 
