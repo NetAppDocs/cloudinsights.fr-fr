@@ -490,5 +490,8 @@ Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de
 
 
 | Certains des modules net-observateur de l'espace de noms NKMO sont à l'état en attente | Net-observateur est un DemonSet et exécute un pod dans chaque nœud du cluster k8s. • Notez le pod qui est à l'état en attente et vérifiez s'il rencontre un problème de ressource pour le processeur ou la mémoire. Assurez-vous que la mémoire et le processeur requis sont disponibles dans le nœud. 
+
+
+| Je vois ce qui suit dans mes journaux immédiatement après l'installation de NetApp Kubernetes Monitoring Operator : [inputs.prometheus] erreur dans le plug-in : erreur lors de la demande HTTP à http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] Obtenez http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] dial tcp: lookup kube-state-metrics.<namespace>.svc.cluster.local: pas d'hôte de ce type | Ce message n'apparaît généralement que lorsqu'un nouvel opérateur est installé et que le module _telegraf-RS_ est en marche avant que le module _ksm_ ne soit en marche. Ces messages doivent s'arrêter une fois que tous les modules sont en cours d'exécution. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].

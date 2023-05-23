@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">J'ai à la fois un quota souple et un quota matériel définis manuellement dans le même qtree, mais la capacité totale affichée est le quota dur ; est-ce correct ?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Oui, si un quota matériel est spécifié, il s'affichera comme la capacité totale.</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problèmes de connexion</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Je vois ce qui suit dans mes journaux immédiatement après l'installation de NetApp Kubernetes Monitoring Operator : [inputs.prometheus] erreur dans le plug-in : erreur lors de la demande HTTP à<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenez<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: lookup kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: pas d'hôte de ce type</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Ce message n'apparaît généralement que lorsqu'un nouvel opérateur est installé et que le module _telegraf-RS_ est en marche avant que le module _ksm_ ne soit en marche. Ces messages doivent s'arrêter une fois que tous les modules sont en cours d'exécution.</block>
 </blocks>
