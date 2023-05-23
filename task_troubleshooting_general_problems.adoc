@@ -15,7 +15,7 @@ Voir aussi link:task_troubleshooting_linux_acquisition_unit_problems.html["Dépa
 
 
 
-== Problèmes de connexion :
+== Problèmes de connexion
 
 |===
 | *Problème:* | *Essayez ceci:* 

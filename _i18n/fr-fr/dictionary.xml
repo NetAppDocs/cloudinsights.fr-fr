@@ -6048,7 +6048,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Dépannage des problèmes d'unité d'acquisition Linux</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Dépannage des problèmes d'unité d'acquisition Windows</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">Voir aussi <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> et <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>.</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">Problèmes de connexion :</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights se déconnecte toutes les 5 minutes</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">Activez l'acceptation par un tiers des cookies NetApp et auth0 nécessaires. Exemple : dans Chrome, entrez "chrome://paramètres/cookies" dans l'URL du navigateur. Sélectionnez l'option « Autoriser tous les cookies ». *OU* sélectionnez "bloquer les cookies tiers" et ajoutez des exceptions pour [*.]auth0.com et [*.]netapp.com. Remarque : veillez à sélectionner l'option « y compris les cookies tiers sur ce site » lors de la création d'une exception.</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Je dispose d'un compte Cloud Central, mais je ne peux pas me connecter à Cloud Central.</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">Seuls les quotas matériels, définis manuellement ou définis via Trident, s'afficheront comme quotas définis ; si aucun quota matériel n'est spécifié, la capacité du volume interne sera la capacité du volume.</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">J'ai à la fois un quota souple et un quota matériel définis manuellement dans le même qtree, mais la capacité totale affichée est le quota dur ; est-ce correct ?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Oui, si un quota matériel est spécifié, il s'affichera comme la capacité totale.</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problèmes de connexion</block>
 </blocks>
