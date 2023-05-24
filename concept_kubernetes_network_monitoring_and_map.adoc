@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["Détails de la diapositive sur la ch
 
 
 
-== Filtrage
+== Recherche et filtrage
 
 À l'instar des autres fonctionnalités de Cloud Insights, vous pouvez facilement définir des filtres afin de vous concentrer sur les objets ou les attributs de charge de travail spécifiques que vous souhaitez.
 
 image:Workload_Map_Filtering.png["Filtrage de mappage des charges de travail"]
+
+De même, la saisie d'une chaîne dans le champ _find_ met en surbrillance les charges de travail correspondantes.
+
+image:Workload_Map_Find_Highlighting.png["la saisie dans la zone rechercher met en évidence les workloads"]
 
 
 

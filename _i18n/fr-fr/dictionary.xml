@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">Les cercles affichés en couleur indiquent une alerte de niveau critique ou d'avertissement pour la charge de travail. Passez le curseur sur le cercle pour obtenir un résumé du problème ou cliquez sur le cercle pour ouvrir un panneau coulissant avec plus de détails.</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">Détails de la diapositive sur la charge de travail avec alertes</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtrage</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">À l'instar des autres fonctionnalités de Cloud Insights, vous pouvez facilement définir des filtres afin de vous concentrer sur les objets ou les attributs de charge de travail spécifiques que vous souhaitez.</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">Filtrage de mappage des charges de travail</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problèmes de connexion</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Je vois ce qui suit dans mes journaux immédiatement après l'installation de NetApp Kubernetes Monitoring Operator : [inputs.prometheus] erreur dans le plug-in : erreur lors de la demande HTTP à<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenez<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: lookup kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: pas d'hôte de ce type</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Ce message n'apparaît généralement que lorsqu'un nouvel opérateur est installé et que le module _telegraf-RS_ est en marche avant que le module _ksm_ ne soit en marche. Ces messages doivent s'arrêter une fois que tous les modules sont en cours d'exécution.</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">Recherche et filtrage</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">De même, la saisie d'une chaîne dans le champ _find_ met en surbrillance les charges de travail correspondantes.</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">la saisie dans la zone rechercher met en évidence les workloads</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
