@@ -112,22 +112,25 @@ Configurez la section proxy de AgentConfiguration dans Operator-config.yaml avan
 
 [listing]
 ----
-proxy:
+agent:
+  ...
+  proxy:
+    server: <server for proxy>
+    port: <port for proxy>
+    username: <username for proxy>
+    password: <password for proxy>
 
-   server: <server for proxy>
-   port: <port for proxy>
-   username: <username for proxy>
-   password: <password for proxy>
+    # In the noproxy section, enter a comma-separated list of
+    # IP addresses and/or resolvable hostnames that should bypass
+    # the proxy
+    noproxy: <comma separated list>
 
-# In the noproxy section, enter a comma-separated list of
-# IP addresses and/or resolvable hostnames that should bypass
-# the proxy:
-
-   noproxy: <comma separated list>
-   isTelegrafProxyEnabled: true
-   isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
-   isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
-   isAuProxyEnabled: <true or false> # true if AU enabled
+    isTelegrafProxyEnabled: true
+    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
+    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
+    isAuProxyEnabled: <true or false> # true if AU enabled
+  ...
+...
 ----
 
 
@@ -167,13 +170,16 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 ....
 Modifiez la configuration d'agentConfiguration dans Operator-config.yaml pour refléter le nouvel emplacement docker repo. Créez une nouvelle imagePullSecret pour votre référentiel privé. Pour plus de détails, voir _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
 
-....
-# An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-# Please see documentation link here:
-dockerRepo: your.docker.repo/long/path/to/test
-# Optional: A docker image pull secret that maybe needed for your private docker registry
-dockerImagePullSecret: docker-secret-name
-....
+[listing]
+----
+agent:
+  ...
+  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
+  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  dockerRepo: your.docker.repo/long/path/to/test
+  # Optional: A docker image pull secret that maybe needed for your private docker registry
+  dockerImagePullSecret: docker-secret-name
+----
 
 
 === Instructions OpenShift
