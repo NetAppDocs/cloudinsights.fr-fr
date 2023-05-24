@@ -19,7 +19,7 @@ summary: Présente les dépendances et les flux des workloads Kubernetes, et sou
 
 
 [role="lead"]
-La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
+La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie le dépannage en mappant les dépendances entre les services Kubernetes (également appelés workloads). Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
 
 
 NOTE: Le contrôle et le mappage des performances du réseau Kubernetes est un link:concept_preview_features.html["Aperçu"] et est susceptible d'être modifié.
@@ -42,11 +42,24 @@ image:ServiceMap_NKMO_Deployment_Options.png["Sélection de l'option carte penda
 
 Le mappage des charges de travail utilise link:task_create_monitor.html["moniteurs"] pour dériver des informations. Cloud Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.
 
+Vous pouvez créer des alertes de metric Cloud Insights sur tous les types d'objet ci-dessous. Assurez-vous que l'objet est regroupé par ID
+
+* workloads kubernetes
+* kubernetes.demonset
+* kubernetes.deployment
+* kubernetes.cronjob
+* kubernetes.travail
+* kubernetes.repliaset
+* kubernetes.statefulset
+* pod kubernetes
+* kubernetes.network_traffic_l4
+
+
 
 
 == La carte
 
-La carte montre les services (également appelés charges de travail) et leurs relations les uns avec les autres. Les flèches indiquent l'itinéraire de la circulation. Le survol d'une charge de travail affiche un récapitulatif des informations relatives à cette charge, comme vous pouvez le voir dans cet exemple :
+La carte montre les services/charges de travail et leurs relations les uns avec les autres. Les flèches indiquent l'itinéraire de la circulation. Le survol d'une charge de travail affiche un récapitulatif des informations relatives à cette charge, comme vous pouvez le voir dans cet exemple :
 
 image:ServiceMap_Simple_Example.png["Exemple de charge de travail Workload Map"]
 
@@ -89,7 +102,7 @@ Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la 
 * Nom du service/de l'application s'exécutant en termes génériques
 * Si la source est un pod :
 +
-** Provient du libellé de la charge de travail du pod
+** L'étiquette est dérivée de l'étiquette de charge de travail du pod
 ** Libellé attendu sur le workload : app.kubernetes.io/composant
 ** Référence du nom de l'étiquette : https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** Étiquettes recommandées :
@@ -104,15 +117,28 @@ Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la 
 
 
 
-* Si la source est externe au cluster k8s :
+* Si la source est externe au cluster kubernetes :
 +
-** Essayez d'analyser le nom DNS résolu et extrayez le type de service
+** Cloud Insights tente d'analyser le nom DNS résolu pour extraire le type de service.
 +
-exemple : s3.eu-north-1.amazonaws.com
-
-+
-nom analysé résolu pour obtenir s3
+Par exemple, avec un nom DNS résolu de _s3.eu-north-1.amazonaws.com_, le nom résolu est analysé pour obtenir _s3_ comme type de service.
 
 
 
 
+
+
+
+== Plongez au cœur de l'aventure
+
+Cliquez avec le bouton droit de la souris sur une charge de travail pour afficher des options supplémentaires afin d'en savoir plus. Par exemple, vous pouvez effectuer un zoom avant pour afficher les connexions de cette charge de travail.
+
+image:Workload_Map_Zoom_Into_Connections.png["Carte de la charge de travail cliquez avec le bouton droit de la souris sur Zoom pour afficher les connexions de la charge de travail"]
+
+Vous pouvez également ouvrir le panneau détaillé pour afficher directement l'onglet _Summary_, _Network_ ou _Pod & Storage_.
+
+image:Workload_Map_Detail_Network_Slideout.png["Exemple d'onglet réseau de la diapositive détaillée"]
+
+Enfin, en sélectionnant _aller à la page de ressources_, vous ouvrez la page d'accueil détaillée de la ressource pour la charge de travail.
+
+image:Workload_Map_Asset_Page.png["Page ressource de charge de travail"]

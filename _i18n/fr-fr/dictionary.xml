@@ -10709,7 +10709,6 @@
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">moniteurs</block>
   <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">Le mappage des charges de travail utilise <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> pour dériver des informations. Cloud Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">La carte</block>
-  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">La carte montre les services (également appelés charges de travail) et leurs relations les uns avec les autres. Les flèches indiquent l'itinéraire de la circulation. Le survol d'une charge de travail affiche un récapitulatif des informations relatives à cette charge, comme vous pouvez le voir dans cet exemple :</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">Exemple de charge de travail Workload Map</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">étiquettes</block>
@@ -10731,7 +10730,6 @@
   <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la carte identifie les types de charges de travail affichées (c'est-à-dire les icônes en cercle). Les étiquettes sont dérivées comme suit :</block>
   <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">Nom du service/de l'application s'exécutant en termes génériques</block>
   <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">Si la source est un pod :</block>
-  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">Provient du libellé de la charge de travail du pod</block>
   <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">Libellé attendu sur le workload : app.kubernetes.io/composant</block>
   <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">Référence du nom de l'étiquette :<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
   <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">Étiquettes recommandées :</block>
@@ -10741,10 +10739,6 @@
   <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">cache</block>
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">file d'attente</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">kafka</block>
-  <block id="30231f87db181989dc6b48606b359f57" category="list-text">Si la source est externe au cluster k8s :</block>
-  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">Essayez d'analyser le nom DNS résolu et extrayez le type de service</block>
-  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">exemple : s3.eu-north-1.amazonaws.com</block>
-  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">nom analysé résolu pour obtenir s3</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp améliore et améliore continuellement ses produits et services. Voici quelques-unes des dernières fonctionnalités disponibles dans les éditions commerciales de Cloud Insights.</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">Certaines de ces fonctions peuvent ne pas être disponibles dans l'édition fédérale de Cloud Insights ou être disponibles avec des fonctionnalités réduites. Dans la mesure du possible, ces différences sont notées dans la documentation.</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">Avril 2023</block>
@@ -10905,7 +10899,6 @@
   <block id="b8adad41e88791514af597358506f749" category="cell">Suffixe de domaine DNS</block>
   <block id="3b15ddcf76b613b05aa53ea7cf06a953" category="cell">Le suffixe de nom d'hôte associé au nom d'hôte simple pour afficher le nom de domaine complet d'un hyperviseur</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Surveillance et mappage des performances du réseau Kubernetes</block>
-  <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Le contrôle et le mappage des performances du réseau Kubernetes est un <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> et est susceptible d'être modifié.</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">Avant de pouvoir utiliser le contrôle et le mappage des performances du réseau Kubernetes, vous devez avoir configuré le <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> pour activer cette option. Pendant le déploiement de l'opérateur, cochez la case « performances du réseau et carte » pour l'activer. Vous pouvez également activer cette option en accédant à une page d'accueil Kubernetes et en sélectionnant « Modifier le déploiement ».</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">L'opérateur de surveillance NetApp Kubernetes dispose d'un certain nombre d'options configurables.</block>
@@ -11180,4 +11173,30 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">De même, la saisie d'une chaîne dans le champ _find_ met en surbrillance les charges de travail correspondantes.</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">la saisie dans la zone rechercher met en évidence les workloads</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie le dépannage en mappant les dépendances entre les services Kubernetes (également appelés workloads). Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.</block>
+  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">Vous pouvez créer des alertes de metric Cloud Insights sur tous les types d'objet ci-dessous. Assurez-vous que l'objet est regroupé par ID</block>
+  <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">workloads kubernetes</block>
+  <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">kubernetes.demonset</block>
+  <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
+  <block id="da08d7cb113a582345e1c87537667bfd" category="list-text">kubernetes.cronjob</block>
+  <block id="e8eeaeeace97ddc1d8d3fd0e2d727de6" category="list-text">kubernetes.travail</block>
+  <block id="2dd2185af8e18909d0c1f96b139ff088" category="list-text">kubernetes.repliaset</block>
+  <block id="b11992f8220e27ed38a528aa3279ca6c" category="list-text">kubernetes.statefulset</block>
+  <block id="959158aaf864560f2a6da1c5111a2488" category="list-text">pod kubernetes</block>
+  <block id="e5dd88b41415ccc9b96130968a48a25c" category="list-text">kubernetes.network_traffic_l4</block>
+  <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">La carte montre les services/charges de travail et leurs relations les uns avec les autres. Les flèches indiquent l'itinéraire de la circulation. Le survol d'une charge de travail affiche un récapitulatif des informations relatives à cette charge, comme vous pouvez le voir dans cet exemple :</block>
+  <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">L'étiquette est dérivée de l'étiquette de charge de travail du pod</block>
+  <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">Si la source est externe au cluster kubernetes :</block>
+  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights tente d'analyser le nom DNS résolu pour extraire le type de service.</block>
+  <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">Par exemple, avec un nom DNS résolu de _s3.eu-north-1.amazonaws.com_, le nom résolu est analysé pour obtenir _s3_ comme type de service.</block>
+  <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">Plongez au cœur de l'aventure</block>
+  <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">Cliquez avec le bouton droit de la souris sur une charge de travail pour afficher des options supplémentaires afin d'en savoir plus. Par exemple, vous pouvez effectuer un zoom avant pour afficher les connexions de cette charge de travail.</block>
+  <block id="382fe39fadd269cb6f5709f01bcb97f3" category="inline-image-macro">Carte de la charge de travail cliquez avec le bouton droit de la souris sur Zoom pour afficher les connexions de la charge de travail</block>
+  <block id="11cf13816a69e8f7513d902d787c018f" category="paragraph"><block ref="11cf13816a69e8f7513d902d787c018f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="08a268f9324eb2fedb3f30f6aed68c83" category="paragraph">Vous pouvez également ouvrir le panneau détaillé pour afficher directement l'onglet _Summary_, _Network_ ou _Pod &amp; Storage_.</block>
+  <block id="c878025155cecb2c39acd2fc019a750c" category="inline-image-macro">Exemple d'onglet réseau de la diapositive détaillée</block>
+  <block id="e1ad379a2729c042c49570a56d16450f" category="paragraph"><block ref="e1ad379a2729c042c49570a56d16450f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">Enfin, en sélectionnant _aller à la page de ressources_, vous ouvrez la page d'accueil détaillée de la ressource pour la charge de travail.</block>
+  <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">Page ressource de charge de travail</block>
+  <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
