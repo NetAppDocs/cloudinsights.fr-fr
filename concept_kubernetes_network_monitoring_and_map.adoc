@@ -42,7 +42,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["Sélection de l'option carte penda
 
 Le mappage des charges de travail utilise link:task_create_monitor.html["moniteurs"] pour dériver des informations. Cloud Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.
 
-Vous pouvez créer des alertes de metric Cloud Insights sur tous les types d'objet ci-dessous. Assurez-vous que l'objet est regroupé par ID
+Vous pouvez créer des alertes de metric Cloud Insights sur tous les types d'objet ci-dessous. Assurez-vous que les données sont regroupées par type d'objet par défaut.
 
 * workloads kubernetes
 * kubernetes.demonset
