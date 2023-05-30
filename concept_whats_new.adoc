@@ -60,9 +60,11 @@ Lors de la création d'un link:task_create_webhook.html["Webhook"] notification,
 
 
 
-=== Signalement des données PV Kubernetes
+=== Reporting sur les données Kubernetes
 
-Les informations de volume persistant Kubernetes collectées par Cloud Insights sont désormais disponibles pour le reporting, permettant la refacturation, les tendances, les prévisions, les calculs TTF, Par ailleurs, les autres rapports métier sur les metrics pour les clusters Kubernetes, les espaces de noms, les charges de travail, etc.
+Cloud Insights peut désormais créer des rapports sur toutes les données Kubernetes, y compris les volumes persistants, la demande de volume persistant, la charge de travail, le cluster et le namespace.
+
+Les données Kubernetes collectées par Cloud Insights, y compris les volumes persistants (PV), les demandes de volume persistant, les charges de travail, les clusters et les espaces de noms, sont désormais disponibles pour les fonctions de reporting, de facturation interne, de tendance, de prévision, de calculs TTF, Et autres rapports métier sur les metrics pour Kubernetes.
 
 
 
