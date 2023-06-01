@@ -38,3 +38,23 @@ Gardez à l'esprit les éléments suivants :
 * L'échec de la collecte de répertoire actif est signalé comme un avertissement ; elle n'a aucun impact sur la détection de ransomware.
 * La liste mise en route comprend maintenant une nouvelle phase _configurer les notifications par e-mail_.
 
+
+
+
+== Réception de notifications de mise à niveau d'agent et de Data Collector
+
+* Entrez les ID d'e-mail dans le champ « Data Collection Health Alerts » (alertes d'état de la collecte de données).
+* La case à cocher « Activer les notifications de mise à niveau » devient activée.
+* Les notifications par e-mail de mise à niveau de l'agent et du Data Collector sont envoyées aux ID d'e-mail un jour avant la mise à niveau prévue.
+
+
+
+
+== Dépannage
+
+|===
+| *Problème:* | *Essayez ceci:* 
+
+
+| Les ID d'e-mail sont présents dans les « alertes d'intégrité du Data Collector », mais je ne reçois pas de notifications. | Les e-mails de notification sont envoyés depuis le domaine NetApp Cloud Insights, c'est-à-dire depuis _accounts@service.cloudinsights.netapp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Cloud Insights sont blanches. 
+|===
