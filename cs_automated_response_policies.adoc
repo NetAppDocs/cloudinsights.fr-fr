@@ -14,9 +14,9 @@ Les stratégies de réponse déclenchent des actions telles que la prise d'un in
 
 NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
 
-Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin > Automated Response Policies* et cliquez sur le bouton *+Policy+ approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.
+Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin > Automated Response Policies* et cliquez sur le bouton *+Policy* approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.
 
-image:AutomatedAttackPolicy.png["Créer une stratégie d'attaque"]
+image:Automated_Response_Screenshot.png["Créer une stratégie d'attaque"]
 
 Vous devez enregistrer la police avec un nom unique.
 

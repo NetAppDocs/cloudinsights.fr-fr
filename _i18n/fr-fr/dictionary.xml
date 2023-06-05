@@ -2802,9 +2802,7 @@
   <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">Vous pouvez définir des règles de réponse automatisées pour des attaques potentielles (par exemple, des ransomwares) et/ou des avertissements d'activité</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">Stratégies de réponse automatisées</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">Les stratégies de réponse déclenchent des actions telles que la prise d'un instantané ou la restriction de l'accès de l'utilisateur en cas d'attaque ou de comportement anormal de l'utilisateur.</block>
-  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin &gt; Automated Response Policies* et cliquez sur le bouton *+Policy+ approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.</block>
   <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">Créer une stratégie d'attaque</block>
-  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">Vous devez enregistrer la police avec un nom unique.</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">Pour désactiver une action de réponse automatisée (par exemple, prendre un instantané), il suffit d'annuler l'action et d'enregistrer la stratégie.</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">Page de détails de l'alerte</block>
@@ -11205,4 +11203,6 @@
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">Les notifications par e-mail de mise à niveau de l'agent et du Data Collector sont envoyées aux ID d'e-mail un jour avant la mise à niveau prévue.</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">Les ID d'e-mail sont présents dans les « alertes d'intégrité du Data Collector », mais je ne reçois pas de notifications.</block>
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">Les e-mails de notification sont envoyés depuis le domaine NetApp Cloud Insights, c'est-à-dire depuis _accounts@service.cloudinsights.netapp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Cloud Insights sont blanches.</block>
+  <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin &gt; Automated Response Policies* et cliquez sur le bouton *+Policy* approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.</block>
+  <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
