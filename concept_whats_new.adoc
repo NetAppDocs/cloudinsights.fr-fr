@@ -25,6 +25,61 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Juin 2023
+
+
+
+=== Découvrez votre utilisation
+
+À partir de juin 2023, Cloud Insights fournit une répartition de l'utilisation des unités gérées en fonction de l'ensemble de fonctions. Vous pouvez désormais afficher et surveiller rapidement l'utilisation des unités gérées (MU) pour votre infrastructure, ainsi que l'utilisation des UM liées à Kubernetes.
+
+image:Metering_Usage.png["Analyse des pannes d'utilisation"]
+
+
+
+=== La surveillance et le mappage du réseau Kubernetes sont disponibles pour tous
+
+Le link:concept_kubernetes_network_monitoring_and_map.html["_Performances du réseau Kubernetes et mappage_"] Simplifie la résolution des problèmes en mappant les dépendances entre les workloads Kubernetes, offrant ainsi une visibilité en temps réel sur les latences des performances du réseau et les anomalies pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. De nombreux clients l'ont trouvé utile lors de l'aperçu, et maintenant il est disponible pour tous les goûts.
+
+
+
+=== Création de rapports
+
+Le composant de génération de rapports de Cloud Insights a été nommé « analyse Cloud Insights ». Ne vous inquiétez pas, cependant, la fonctionnalité reste la même.
+
+
+
+=== Modifications du collecteur/de l'acquisition :
+
+Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :
+
+* Les MU Data Domain et Cohesity sont mesurées à 40 Tio : 1 MU.
+* Les unités d'acquisition prennent désormais en charge RHEL et Rocky 9.0 et 9.1.
+
+
+
+
+=== Nouveaux tableaux de bord ONTAP Essentials
+
+Les tableaux de bord ONTAP Essentials suivants sont désormais disponibles dans les environnements de prévisualisation et sont désormais disponibles pour tous :
+
+* Tableau de bord de sécurité
+* Tableau de bord de protection des données (inclut les présentations de la protection locale et à distance)
+
+
+
+
+=== Moniteurs système supplémentaires
+
+Les moniteurs système suivants sont inclus avec Cloud Insights :
+
+* Service FCP de la machine virtuelle de stockage indisponible
+* Service iSCSI de la machine virtuelle de stockage indisponible
+
+
+'''
+
+
 == Mai 2023
 
 

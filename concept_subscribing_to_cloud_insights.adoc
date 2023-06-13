@@ -5,95 +5,33 @@ summary: À tout moment pendant votre essai gratuit, vous pouvez vous abonner à
 keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
 ---
 = Abonnement à Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: OnCommand, Insight, documentation, help, onboarding, getting started
+:toc-position: content
 
 
 La mise en route de Cloud Insights se fait en trois étapes simples :
 
-* Créez un compte sur link:https://cloud.netapp.com/["*NetApp Cloud Central*"] Accédez à toutes les offres cloud de NetApp.
+* Créez un compte sur link:https://https://bluexp.netapp.com//["*NetApp BlueXP*"] Accédez à toutes les offres cloud de NetApp.
 * S'inscrire à un link:https://cloud.netapp.com/cloud-insights["*essai gratuit*"] De Cloud Insights pour explorer les fonctionnalités disponibles.
-* *Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Ventes NetApp"] Direct ou AWS Marketplace (link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Édition Standard"] ou link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Édition Premium"]).
+* *Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Ventes NetApp"] direct ou link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"].
 
 
 Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights link:security_information_and_region.html["Information et région"].
 
 
-NOTE: Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights (de base, standard, Premium). L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.
+NOTE: Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights. L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.
 
-
-
-== Éditions
-
-Les fonctions et fonctionnalités disponibles dans Cloud Insights dépendent de l'édition à laquelle vous vous abonnez. Les éditions disponibles sont expliquées ici.
-
-* *Édition de base* est gratuite et accessible pour les clients NetApp existants avec un compte de support NetApp actif.
-+
-
-WARNING: Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.
-
-+
-
-NOTE: Les fonctionnalités, les temps de rétention des données et les objets ou metrics collectés dans Cloud Insights Basic Edition sont susceptibles d'être modifiés avec ou sans préavis.
-
-* *Standard Edition* est disponible par abonnement et offre toutes les fonctionnalités de Basic Edition plus encore.
-* *Édition fédérale* fournit une édition Cloud Insights conforme FedRAMP pour les États-Unis Administrations américaines. Certaines fonctionnalités disponibles dans les éditions commerciales ci-dessus peuvent ne pas être disponibles dans l'édition fédérale ou être disponibles avec des fonctionnalités réduites. Dans la mesure du possible, ces différences sont indiquées dans la documentation Cloud Insights.
-
-
-
-
-=== Fonctionnalités clés
-
-Voici les principales fonctionnalités disponibles dans Basic, Standard et Premium Edition :
-
-[cols=".<,.^,.^,.^"]
-|===
-
-
-| Fonctionnalités clés | Édition de base | Édition Standard | Édition Premium 
-
-
-| Conservation des données | 7 jours | 90 jours | 13 mois 
-
-
-| Données chiffrées sur l'infrastructure et le stockage | NetApp uniquement | Multifournisseur | Multifournisseur 
-
-
-| Tableaux de bord personnalisables | &contrôle ; | &contrôle ; | &contrôle ; 
-
-
-| Forum, documentation et vidéos de formation | &contrôle ; | &contrôle ; | &contrôle ; 
-
-
-| Live Chat^&plus;&plus;^ et support technique | - | &contrôle ; | &contrôle ; 
-
-
-| Metrics VM | - | &contrôle ; | &contrôle ; 
-
-
-| Metrics cloud | - | &contrôle ; | &contrôle ; 
-
-
-| Metrics de service | - | &contrôle ; | &contrôle ; 
-
-
-| Contrôle et alerte | &ast ; | &contrôle ; | &contrôle ; 
-
-
-| Accès API^&plus ;^ | &contrôle ; | &contrôle ; | &contrôle ; 
-
-
-| Authentification unique (SSO) | - | - | &contrôle ; 
-
-
-| Sécurité de la charge de travail audit de l'accès aux données utilisateur | - | - | &contrôle ; 
-
-
-| Détection des menaces internes pour la sécurité des workloads avec l'IA/ML | - | - | &contrôle ; 
-
-
-| Business Intelligence et Reporting&ast ; et ast ; | - | - | &contrôle ; 
-|===
-&ast;limité à 5 moniteurs personnalisés actifs à la fois &plus;l'accès API varie selon l'édition et ast;&ast;disponible pour les environnements de 500 unités gérées et plus ^&plus;&plus;^ fonctionnalités non disponibles dans l'édition fédérale de Cloud Insights
+Pour une comparaison complète des fonctionnalités disponibles dans les éditions de base et Premium de Cloud Insights, consultez le link:https://bluexp.netapp.com/cloud-insights-pricing["Tarifs Cloud Insights"] page.
 
 Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche image:padlock.png["Cadenas"], Cela signifie que la fonction n'est pas disponible dans votre édition actuelle ou est disponible sous une forme limitée. Mise à niveau pour un accès complet à la fonctionnalité.
 
@@ -105,7 +43,7 @@ Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est act
 
 Vous pouvez vous abonner à Cloud Insights à tout moment pendant la période d'essai. L'abonnement à Cloud Insights garantit un accès ininterrompu à vos données ainsi qu'un accès prolongé link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*support produit*"] options.
 
-Cloud Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _View Subscription_, qui ouvre la page *Admin > Subscription*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.
+Cloud Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _Afficher l'abonnement_ qui ouvre la page *Admin -> abonnement*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.
 
 
 NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights et que votre période d'essai expire dans 4 jours maximum, vous pouvez prolonger votre période d'essai de 30 jours supplémentaires. Vous ne pouvez prolonger l'essai qu'une seule fois. Vous ne pouvez pas prolonger si votre période d'essai a expiré.
@@ -114,11 +52,11 @@ NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights 
 
 == Essai via AWS Marketplace
 
-Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. Profitez de la version d'essai gratuite d'AWS Marketplace pour accéder à Cloud Insights <<editions,Édition Premium>> pour une période d'essai de 33 jours et permet jusqu'à 499 <<pricing,Unités gérées>> (MUS).
+Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 personnes <<pricing,Unités gérées>> (MUS).
 
 Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'évaluation est en état de violation, vous perdrez l'accès à certaines fonctionnalités Cloud Insights jusqu'à ce que la violation soit résolue, soit en réduisant le nombre d'UM configurées, soit en vous abonnant à Cloud Insights.
 
-La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre essai, vous pouvez revenir à un abonnement Cloud Insights édition de base ou passer à un abonnement payant Cloud Insights Standard ou Premium Edition en accédant à la page *Admin --> abonnement*.
+La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre période d'essai, vous pouvez revenir à un abonnement à l'édition de base de Cloud Insights ou passer à un abonnement Cloud Insights payant en visitant la page *Admin -> abonnement*.
 
 
 
@@ -130,9 +68,7 @@ Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud
 
 == Options d'abonnement
 
-Pour vous abonner, accédez à *Admin > abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre prix estimé. Pour un environnement typique, vous pouvez cliquer sur le bouton en libre-service AWS Marketplace *Subscribe Now*. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.
-
-image:SubscriptionCompareTable-2.png["Options d'abonnement"]
+Pour vous abonner, accédez à *Admin -> abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre prix estimé. Dans un environnement classique, vous pouvez cliquer sur le bouton AWS Marketplace en libre-service. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.
 
 
 
@@ -147,6 +83,8 @@ Le prix de Cloud Insights est conforme à *unité gérée*. L'utilisation de vos
 Notez que les collecteurs de données suivants sont dosés à un taux de Tio brut différent de l'unité gérée. Chaque 40 Tio de capacité non formatée sur ces collecteurs de données est facturé comme une unité gérée (UM) :
 
 * AWS S3
+* Cohesity SmartFiles
+* Dell EMC Data Domain
 * Dell EMC ECS
 * Plate-forme de contenu Hitachi
 * IBM Cleversafe
@@ -159,12 +97,12 @@ Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gér�
 
 === Estimer le coût de votre abonnement
 
-Le calculateur d'abonnement vous donne une estimation du coût mensuel Cloud Insights de la liste en fonction du nombre d'hôtes et de la quantité de capacité non formatée signalée par vos collecteurs de données. Les valeurs actuelles sont préremplies dans les champs _hosts_ et _Unformated Capacity_. Vous pouvez entrer différentes valeurs pour vous aider à planifier une croissance future estimée.
+Les calculateurs d'abonnement vous donnent une estimation du coût Cloud Insights mensuel en fonction du nombre d'unités gérées dont vous aurez besoin. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.
 
 Le coût estimé de votre liste de prix sera modifié en fonction de la durée de votre abonnement.
+REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Votre prix exact sera défini lorsque vous vous abonnez.
 
-
-NOTE: La calculatrice est destinée uniquement à l'estimation. Votre prix exact sera défini lorsque vous vous abonnez.
+image:Subscription_Cost_Calculators.png["Page d'abonnement affichant les calculateurs d'estimation des coûts d'infrastructure et de Kubernetes"]
 
 
 
@@ -187,11 +125,11 @@ Vous devez fournir votre numéro de série Cloud Insights * à votre ingénieur 
 
 NOTE: Vous devez être propriétaire ou administrateur de compte pour appliquer un abonnement AWS Marketplace à votre compte d'essai Cloud Insights existant. Vous devez également disposer d'un compte Amazon Web Services (AWS).
 
-Cliquez sur le bouton *s'abonner maintenant* pour ouvrir le AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
+Pour ouvrir AWS, cliquez sur le lien Amazon Marketplace link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
 
 Après avoir saisi le nombre total d'unités gérées et choisi soit 12 mois, soit 36 mois, cliquez sur *configurer votre compte* pour terminer le processus d'abonnement.
 
-Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. Si l'environnement n'est plus actif (par exemple, vous êtes déconnecté), vous serez redirigé vers la page de connexion de Cloud Central. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.
+Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. De plus, si l'environnement n'est plus actif (par exemple, vous vous êtes déconnecté), vous accédez à la page de connexion de NetApp BlueXP. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.
 
 
 NOTE: Après avoir cliqué sur *configurer votre compte* sur la page AWS Marketplace, vous devez terminer le processus d'abonnement AWS en une heure. Si vous ne le terminez pas dans l'heure, vous devrez cliquer de nouveau sur *configurer votre compte* pour terminer le processus.
@@ -204,20 +142,19 @@ En cas de problème et si le processus d'abonnement ne s'effectue pas correcteme
 
 Une fois votre abonnement actif, vous pouvez afficher l'état de votre abonnement et l'utilisation de l'unité gérée à partir de la page *Admin > abonnement*.
 
-image:Subscription_Status_Usage.png["Consulter votre abonnement ststststststus"]
+L'onglet Résumé de l'abonnement affiche les éléments suivants :
 
-L'onglet Détails de l'abonnement affiche les éléments suivants :
-
-* Abonnement actuel ou édition active
-* Détails de votre abonnement
-* Liens permettant de modifier votre abonnement ou d'estimer les changements de coût
+* Édition actuelle
+* Numéro de série de l'abonnement
+* Utilisation actuelle des UM et « et si ? » estimateurs de coûts
+* Liens permettant de modifier votre abonnement
 
 
 
 
 == Affichez votre gestion de l'utilisation
 
-L'onglet gestion de l'utilisation présente une vue d'ensemble de l'utilisation des unités gérées, ainsi qu'une liste des collecteurs de données installés dans votre environnement et la répartition des unités gérées pour chacune.
+L'onglet gestion de l'utilisation présente un aperçu de l'utilisation des unités gérées, ainsi que les onglets qui dépanne la consommation des unités gérées par collecteur ou cluster Kubernetes.
 
 
 NOTE: Le nombre d'unités gérées capacité non formatée correspond à la somme de la capacité brute totale dans l'environnement et est arrondi à l'unité gérée la plus proche.
@@ -225,7 +162,7 @@ NOTE: Le nombre d'unités gérées capacité non formatée correspond à la somm
 
 NOTE: La somme des unités gérées peut différer légèrement du nombre de collecteurs de données dans la section Résumé. C'est parce que les nombres d'unités gérées sont arrondis à l'unité gérée la plus proche. La somme de ces nombres dans la liste collecteurs de données peut être légèrement supérieure au total des unités gérées dans la section d'état. La section Synthèse indique le nombre réel d'unités gérées pour votre abonnement.
 
-Si votre utilisation atteint ou dépasse le montant souscrit, vous pouvez supprimer des collecteurs de données dans cette liste en cliquant sur le menu « trois points » et en sélectionnant _Supprimer_.
+Si votre utilisation approche ou dépasse le montant souscrit, vous pouvez réduire l'utilisation en supprimant des collecteurs de données ou en arrêtant la surveillance des clusters Kubernetes. Supprimez un élément de cette liste en cliquant sur le menu « trois points » et en sélectionnant _Supprimer_.
 
 
 
@@ -245,7 +182,9 @@ Des avertissements s'affichent lorsque l'utilisation de votre unité gérée dé
 | *90 %* | Une bannière d'avertissement s'affiche. Vous pouvez augmenter le nombre d'unités gérées souscrites. 
 
 
-| *100 %* | Une bannière d'erreur s'affiche et vous n'aurez qu'une fonctionnalité limitée jusqu'à ce que vous soyez l'un des suivants : * modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites * supprimez les collecteurs de données afin que votre utilisation d'unités gérées soit inférieure ou égale au montant souscrit 
+| *100 %* | Une bannière d'erreur s'affiche et les fonctionnalités sont limitées jusqu'à ce que vous effectuez l'une des opérations suivantes :
+* Supprimez les collecteurs de données de sorte que votre utilisation de l'unité gérée soit égale ou inférieure à votre montant souscrit
+* Modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites 
 |===
 
 

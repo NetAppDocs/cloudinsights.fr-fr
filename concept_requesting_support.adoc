@@ -114,7 +114,7 @@ Vous pouvez demander de l'aide par l'une des méthodes suivantes. Vous devez êt
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["*Téléphone*"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*Support Ticket*"]
-* *Chat* - vous Wll être en contact avec le personnel de support NetApp pour obtenir de l'aide (jours de semaine uniquement). Le chat est disponible dans l'option de menu *aide > Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.
+* *Chat* - vous serez mis en relation avec le personnel d'assistance NetApp pour obtenir de l'aide (en semaine seulement). Le chat est disponible dans l'option de menu *aide > Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.
 
 
 Vous pouvez également demander de l'aide commerciale en cliquant sur le bouton link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*Contactez-nous*"] lien.

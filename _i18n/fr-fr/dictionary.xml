@@ -1738,7 +1738,6 @@
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">Inscription au Cloud Insights et création de votre environnement.</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Intégration de Cloud Insights</block>
   <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">Création de votre compte NetApp Cloud Central</block>
-  <block id="f8345b18954fdb87b8ec25957d81a0fa" category="inline-link">*NetApp Cloud Central*</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Saisissez une adresse e-mail professionnelle valide et choisissez un mot de passe.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Entrez le nom de votre entreprise, ainsi que votre nom complet.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Sélectionnez Cloud Insights.</block>
@@ -3549,7 +3548,6 @@
   <block id="d509e88fe0d420e546f838c2bf3149e4" category="list-text"><block ref="d509e88fe0d420e546f838c2bf3149e4" category="inline-link-macro-rx"></block></block>
   <block id="78ce7a1ba00884845ede733dc79b1141" category="inline-link-macro">*Support Ticket*</block>
   <block id="1ce9a43d63998783a781596de13b0965" category="list-text"><block ref="fa5b9c38e8e5b8e1f4e408b08ce16532" category="inline-link-macro-rx"></block></block>
-  <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*Chat* - vous Wll être en contact avec le personnel de support NetApp pour obtenir de l'aide (jours de semaine uniquement). Le chat est disponible dans l'option de menu *aide &gt; Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.</block>
   <block id="ac2ae10a8c7bd50e80c93d5e57fc84da" category="inline-link-macro">*Contactez-nous*</block>
   <block id="5c0e6c90408c98d6eca3e09416c4ee77" category="paragraph">Vous pouvez également demander de l'aide commerciale en cliquant sur le bouton <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> lien.</block>
   <block id="6c45ba81e807bdb7fd46fdc507e78d04" category="paragraph">Votre numéro de série Cloud Insights est visible dans le service depuis le menu *aide &gt; support*. Si vous rencontrez des problèmes pour accéder au service et que vous avez enregistré un numéro de série auprès de NetApp, vous pouvez également consulter la liste des numéros de série Cloud Insights à partir du site de support NetApp :</block>
@@ -3632,58 +3630,26 @@
   <block id="da6ac19a818a6de76b382ff406bf15b4" category="summary">À tout moment pendant votre essai gratuit, vous pouvez vous abonner à Cloud Insights.</block>
   <block id="5a2dd268fff03fda59184d39fcea3904" category="doc">Abonnement à Cloud Insights</block>
   <block id="48749104f97dbc83956df65c789fed9f" category="paragraph">La mise en route de Cloud Insights se fait en trois étapes simples :</block>
-  <block id="bc08fa610320914a0054ff93bcd79397" category="list-text">Créez un compte sur <block ref="2cff9f38148e7f8c74bd89c0309a200d" category="inline-link-macro-rx"></block> Accédez à toutes les offres cloud de NetApp.</block>
   <block id="3f6b1218c41eefc30536db7e39f979df" category="inline-link-macro">*essai gratuit*</block>
   <block id="e4f3a6f7a1f50be5b653bf57b0b61372" category="list-text">S'inscrire à un <block ref="82b0fa617f1dfb2e34805f2626cf97a5" category="inline-link-macro-rx"></block> De Cloud Insights pour explorer les fonctionnalités disponibles.</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">Ventes NetApp</block>
-  <block id="4c7e636779d99dc62c5aac24a3c8eb71" category="inline-link-macro">Édition Standard</block>
-  <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">*Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direct ou AWS Marketplace (<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> ou <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>).</block>
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>.</block>
-  <block id="40a5834e83975621427553254177c0ab" category="section-title">Éditions</block>
-  <block id="e5357ca832e310fe2d063fed63521e4d" category="paragraph">Les fonctions et fonctionnalités disponibles dans Cloud Insights dépendent de l'édition à laquelle vous vous abonnez. Les éditions disponibles sont expliquées ici.</block>
-  <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">*Édition de base* est gratuite et accessible pour les clients NetApp existants avec un compte de support NetApp actif.</block>
-  <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.</block>
-  <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">Les fonctionnalités, les temps de rétention des données et les objets ou metrics collectés dans Cloud Insights Basic Edition sont susceptibles d'être modifiés avec ou sans préavis.</block>
-  <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">*Standard Edition* est disponible par abonnement et offre toutes les fonctionnalités de Basic Edition plus encore.</block>
-  <block id="219927b224df858b634f5817e92a43c9" category="section-title">Fonctionnalités clés</block>
-  <block id="156cab06046ee0bb08bbcf2279656592" category="paragraph">Voici les principales fonctionnalités disponibles dans Basic, Standard et Premium Edition :</block>
-  <block id="0ad6a6d28761ee1aea9142218e951165" category="cell">Fonctionnalités clés</block>
-  <block id="4f407ad617aec7f56138e7f5dcb581be" category="cell">Édition de base</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">Conservation des données</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 jours</block>
   <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90 jours</block>
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 mois</block>
-  <block id="e7bf25f23f000e012533efc35c4d2416" category="cell">Données chiffrées sur l'infrastructure et le stockage</block>
-  <block id="0dbffb0c659b5d4a9b9db7c99921c0ff" category="cell">NetApp uniquement</block>
-  <block id="6723887a7f5a25b38fc43b06de935334" category="cell">Multifournisseur</block>
-  <block id="3474cd92e50405481b9e7fa627d1ec50" category="cell">Tableaux de bord personnalisables</block>
-  <block id="218645bc52c81c8985636d68a575596c" category="cell">&amp;contrôle ;</block>
-  <block id="c3778b94ab899c76a40a1a02fe9a4d49" category="cell">Forum, documentation et vidéos de formation</block>
-  <block id="336d5ebc5436534e61d16e63ddfca327" category="cell">-</block>
-  <block id="eaedcc38fe9f5ceda03da3c909bffa54" category="cell">Metrics VM</block>
-  <block id="48ddfbf9b74c53d0faaa56e85e7f4945" category="cell">Metrics cloud</block>
-  <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">Metrics de service</block>
-  <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">Contrôle et alerte</block>
-  <block id="c17f94825893615b23fe642f01528d0f" category="cell">&amp;ast ;</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">Authentification unique (SSO)</block>
-  <block id="d54591f265027d735d3be71d57199e4a" category="cell">Business Intelligence et Reporting&amp;ast ; et ast ;</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">Cadenas</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>, Cela signifie que la fonction n'est pas disponible dans votre édition actuelle ou est disponible sous une forme limitée. Mise à niveau pour un accès complet à la fonctionnalité.</block>
-  <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">Version d'essai</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">*support produit*</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">Vous pouvez vous abonner à Cloud Insights à tout moment pendant la période d'essai. L'abonnement à Cloud Insights garantit un accès ininterrompu à vos données ainsi qu'un accès prolongé <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> options.</block>
-  <block id="21d39705a699dccfee88543d413556c8" category="paragraph">Cloud Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _View Subscription_, qui ouvre la page *Admin &gt; Subscription*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights et que votre période d'essai expire dans 4 jours maximum, vous pouvez prolonger votre période d'essai de 30 jours supplémentaires. Vous ne pouvez prolonger l'essai qu'une seule fois. Vous ne pouvez pas prolonger si votre période d'essai a expiré.</block>
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">Essai via AWS Marketplace</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">Unités gérées</block>
-  <block id="d2ba9dfef380aaa951b864d3a265d580" category="paragraph">Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. Profitez de la version d'essai gratuite d'AWS Marketplace pour accéder à Cloud Insights <block ref="b1efab9efad52c2e88de872a7b8b0a69" category="inline-xref-macro-rx"></block> pour une période d'essai de 33 jours et permet jusqu'à 499 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> (MUS).</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'évaluation est en état de violation, vous perdrez l'accès à certaines fonctionnalités Cloud Insights jusqu'à ce que la violation soit résolue, soit en réduisant le nombre d'UM configurées, soit en vous abonnant à Cloud Insights.</block>
-  <block id="9610f5475b4256230dbfd8bf12bacab1" category="paragraph">La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre essai, vous pouvez revenir à un abonnement Cloud Insights édition de base ou passer à un abonnement payant Cloud Insights Standard ou Premium Edition en accédant à la page *Admin --&gt; abonnement*.</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">Que se passe-t-il si mon essai a expiré ?</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez.</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">Options d'abonnement</block>
-  <block id="91817940c8ccf98f5864299e8c3db4d7" category="paragraph">Pour vous abonner, accédez à *Admin &gt; abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre prix estimé. Pour un environnement typique, vous pouvez cliquer sur le bouton en libre-service AWS Marketplace *Subscribe Now*. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.</block>
-  <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">Tarifs</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Le prix de Cloud Insights est conforme à *unité gérée*. L'utilisation de vos unités gérées est calculée en fonction du nombre de *hôtes ou machines virtuelles* et de la quantité de *capacité non formatée* gérée dans votre environnement d'infrastructure.</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 unité gérée = 2 hôtes (toute machine virtuelle ou physique)</block>
@@ -3696,9 +3662,6 @@
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">ci-dessous</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gérées, vous pouvez bénéficier de *Volume Pricing* et vous devrez contacter les équipes commerciales NetApp pour vous abonner. Voir <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> pour en savoir plus.</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">Estimer le coût de votre abonnement</block>
-  <block id="b3a13f2ac714cd20783d18ca8d2f35c7" category="paragraph">Le calculateur d'abonnement vous donne une estimation du coût mensuel Cloud Insights de la liste en fonction du nombre d'hôtes et de la quantité de capacité non formatée signalée par vos collecteurs de données. Les valeurs actuelles sont préremplies dans les champs _hosts_ et _Unformated Capacity_. Vous pouvez entrer différentes valeurs pour vous aider à planifier une croissance future estimée.</block>
-  <block id="83697bcbf001c6401bd12a7e4d024920" category="paragraph">Le coût estimé de votre liste de prix sera modifié en fonction de la durée de votre abonnement.</block>
-  <block id="5c42608f26905e7504f522bdb6724935" category="admonition">La calculatrice est destinée uniquement à l'estimation. Votre prix exact sera défini lorsque vous vous abonnez.</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">Comment s'inscrire ?</block>
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">s'abonner vous-même</block>
   <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous inscrire via les équipes commerciales NetApp ou <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> Via AWS Marketplace.</block>
@@ -3707,24 +3670,14 @@
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">Vous devez fournir votre numéro de série Cloud Insights * à votre ingénieur commercial NetApp afin que votre abonnement payant puisse s'appliquer à votre environnement Cloud Insights. Le numéro de série identifie de manière unique votre environnement d'essai Cloud Insights et se trouve sur la page *Admin &gt; abonnement*.</block>
   <block id="ba16017252787d62326108ae062b54b0" category="section-title">Vous pouvez vous inscrire via AWS Marketplace</block>
   <block id="24dced9ec471b11c43d64232ba07d95a" category="admonition">Vous devez être propriétaire ou administrateur de compte pour appliquer un abonnement AWS Marketplace à votre compte d'essai Cloud Insights existant. Vous devez également disposer d'un compte Amazon Web Services (AWS).</block>
-  <block id="cd8989ed97c93cf5c202f61c8f811c55" category="paragraph">Cliquez sur le bouton *s'abonner maintenant* pour ouvrir le AWS <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.</block>
   <block id="b0d79f167bb60f1ee8201b52678b1e91" category="paragraph">Après avoir saisi le nombre total d'unités gérées et choisi soit 12 mois, soit 36 mois, cliquez sur *configurer votre compte* pour terminer le processus d'abonnement.</block>
-  <block id="7ad3a84f1fcb16f2e949410059075192" category="paragraph">Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. Si l'environnement n'est plus actif (par exemple, vous êtes déconnecté), vous serez redirigé vers la page de connexion de Cloud Central. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">Après avoir cliqué sur *configurer votre compte* sur la page AWS Marketplace, vous devez terminer le processus d'abonnement AWS en une heure. Si vous ne le terminez pas dans l'heure, vous devrez cliquer de nouveau sur *configurer votre compte* pour terminer le processus.</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">En cas de problème et si le processus d'abonnement ne s'effectue pas correctement, la bannière « version d'évaluation » s'affiche toujours lorsque vous vous connectez à votre environnement. Dans ce cas, vous pouvez accéder à *Admin &gt; abonnement* et répéter le processus d'abonnement.</block>
   <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">Afficher l'état de votre abonnement</block>
   <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">Une fois votre abonnement actif, vous pouvez afficher l'état de votre abonnement et l'utilisation de l'unité gérée à partir de la page *Admin &gt; abonnement*.</block>
-  <block id="cf9f7d335ccf63f9afafb03e9bccbb83" category="inline-image-macro">Consulter votre abonnement ststststststus</block>
-  <block id="5b5d45532915c043e48d673f375857ab" category="paragraph"><block ref="5b5d45532915c043e48d673f375857ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a6d1c39ffb1db427cb7afbe60b68ee43" category="paragraph">L'onglet Détails de l'abonnement affiche les éléments suivants :</block>
-  <block id="6d9a2e2290d3df63014b18bdb7da2212" category="list-text">Abonnement actuel ou édition active</block>
-  <block id="a62d98f1bf3d70795bcdab761b572ade" category="list-text">Détails de votre abonnement</block>
-  <block id="2f40f378178c238fe365dfbf4f50ca13" category="list-text">Liens permettant de modifier votre abonnement ou d'estimer les changements de coût</block>
   <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">Affichez votre gestion de l'utilisation</block>
-  <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">L'onglet gestion de l'utilisation présente une vue d'ensemble de l'utilisation des unités gérées, ainsi qu'une liste des collecteurs de données installés dans votre environnement et la répartition des unités gérées pour chacune.</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">Le nombre d'unités gérées capacité non formatée correspond à la somme de la capacité brute totale dans l'environnement et est arrondi à l'unité gérée la plus proche.</block>
   <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">La somme des unités gérées peut différer légèrement du nombre de collecteurs de données dans la section Résumé. C'est parce que les nombres d'unités gérées sont arrondis à l'unité gérée la plus proche. La somme de ces nombres dans la liste collecteurs de données peut être légèrement supérieure au total des unités gérées dans la section d'état. La section Synthèse indique le nombre réel d'unités gérées pour votre abonnement.</block>
-  <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">Si votre utilisation atteint ou dépasse le montant souscrit, vous pouvez supprimer des collecteurs de données dans cette liste en cliquant sur le menu « trois points » et en sélectionnant _Supprimer_.</block>
   <block id="cbeff837b5b145559373d2d49dde5efb" category="section-title">Que se passe-t-il si je dépasse mon utilisation souscrite ?</block>
   <block id="8014c42068ef58c63a245dfd8cb969f3" category="paragraph">Des avertissements s'affichent lorsque l'utilisation de votre unité gérée dépasse 80 %, 90 % et 100 % du montant total de votre abonnement :</block>
   <block id="5d5e1ac7bb660dd92446dd963f0ab9ec" category="cell">*Lorsque l'utilisation dépasse:*</block>
@@ -3734,7 +3687,6 @@
   <block id="c80438ed487f426482cacad6a4e99a1d" category="cell">*90 %*</block>
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">Une bannière d'avertissement s'affiche. Vous pouvez augmenter le nombre d'unités gérées souscrites.</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">*100 %*</block>
-  <block id="13b6624916681c7d00ae8634971f8cd8" category="cell">Une bannière d'erreur s'affiche et vous n'aurez qu'une fonctionnalité limitée jusqu'à ce que vous soyez l'un des suivants : * modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites * supprimez les collecteurs de données afin que votre utilisation d'unités gérées soit inférieure ou égale au montant souscrit</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">Inscrivez-vous directement et ignorez l'essai</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">Vous pouvez également vous abonner à Cloud Insights directement à partir du <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>, sans créer d'abord un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.</block>
@@ -10383,8 +10335,6 @@
   <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">Certaines tâches de configuration doivent être effectuées avant de pouvoir utiliser la sécurité de la charge de travail pour surveiller l'activité des utilisateurs.</block>
   <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">Le système Workload Security utilise un agent pour collecter les données d'accès des systèmes de stockage et des informations utilisateur à partir des serveurs Directory Services.</block>
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">La sécurité des charges de travail peut également s'intégrer à d'autres outils. Par exemple : <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> De l'intégration avec Splunk.</block>
-  <block id="ff6174f06964486c8970783d9abd7b54" category="cell">Sécurité de la charge de travail audit de l'accès aux données utilisateur</block>
-  <block id="1b3681a6af892931e035b5a955f26be0" category="cell">Détection des menaces internes pour la sécurité des workloads avec l'IA/ML</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">Configuration de Workload Security LDAP User Directory Collector</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">Vous configurez la sécurité de la charge de travail pour collecter les attributs utilisateur à partir des serveurs d'annuaire LDAP.</block>
   <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">Dans le menu sécurité de la charge de travail, cliquez sur : *Admin &gt; collecteurs de données &gt; Collectors de répertoire utilisateur &gt; + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*</block>
@@ -10687,11 +10637,6 @@
   <block id="0407a7c5b366f01d5671805c1f907afe" category="inline-image-macro">Menu supérieur gauche de Cognos</block>
   <block id="837aabd72a7904f0806179e23fe0d6e5" category="paragraph"><block ref="837aabd72a7904f0806179e23fe0d6e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e816756750f33badae1d375877be4d7" category="list-text">Créez un nouveau dossier dans *_Team Content_*</block>
-  <block id="72d743dc018b9aea07e4baa34bd41f04" category="admonition">Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights (de base, standard, Premium). L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.</block>
-  <block id="1127a17ff9264a478b5b2afbb0ec9fc5" category="list-text">*Édition fédérale* fournit une édition Cloud Insights conforme FedRAMP pour les États-Unis Administrations américaines. Certaines fonctionnalités disponibles dans les éditions commerciales ci-dessus peuvent ne pas être disponibles dans l'édition fédérale ou être disponibles avec des fonctionnalités réduites. Dans la mesure du possible, ces différences sont indiquées dans la documentation Cloud Insights.</block>
-  <block id="bcb2daf8da854022329b57412821d9eb" category="cell">Live Chat^&amp;plus;&amp;plus;^ et support technique</block>
-  <block id="7a535c5cff09892a0f3fc0a2ecbe2932" category="cell">Accès API^&amp;plus ;^</block>
-  <block id="cddad7083722bc6fb1722d2d5da45782" category="paragraph">&amp;ast;limité à 5 moniteurs personnalisés actifs à la fois &amp;plus;l'accès API varie selon l'édition et ast;&amp;ast;disponible pour les environnements de 500 unités gérées et plus ^&amp;plus;&amp;plus;^ fonctionnalités non disponibles dans l'édition fédérale de Cloud Insights</block>
   <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">Vous pouvez accéder aux options de support dans Cloud Insights en cliquant sur *aide &gt; support*. Les options de support disponibles dépendent de votre édition Cloud Insights.</block>
   <block id="3c99b9f872acb5e317804aaff9d10cfb" category="admonition">L'option de support de discussion en ligne n'est pas disponible dans l'édition fédérale de Cloud Insights.</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">Présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance</block>
@@ -11205,4 +11150,65 @@
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">Les e-mails de notification sont envoyés depuis le domaine NetApp Cloud Insights, c'est-à-dire depuis _accounts@service.cloudinsights.netapp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Cloud Insights sont blanches.</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin &gt; Automated Response Policies* et cliquez sur le bouton *+Policy* approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">Créez un compte sur <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> Accédez à toutes les offres cloud de NetApp.</block>
+  <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> direct ou <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>.</block>
+  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights. L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.</block>
+  <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Tarifs Cloud Insights</block>
+  <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">Pour une comparaison complète des fonctionnalités disponibles dans les éditions de base et Premium de Cloud Insights, consultez le <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> page.</block>
+  <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">Version d'essai</block>
+  <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">Cloud Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _Afficher l'abonnement_ qui ouvre la page *Admin -&gt; abonnement*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.</block>
+  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 personnes <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> (MUS).</block>
+  <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre période d'essai, vous pouvez revenir à un abonnement à l'édition de base de Cloud Insights ou passer à un abonnement Cloud Insights payant en visitant la page *Admin -&gt; abonnement*.</block>
+  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">Pour vous abonner, accédez à *Admin -&gt; abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre prix estimé. Dans un environnement classique, vous pouvez cliquer sur le bouton AWS Marketplace en libre-service. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.</block>
+  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
+  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC Data Domain</block>
+  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">Les calculateurs d'abonnement vous donnent une estimation du coût Cloud Insights mensuel en fonction du nombre d'unités gérées dont vous aurez besoin. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.</block>
+  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">Le coût estimé de votre liste de prix sera modifié en fonction de la durée de votre abonnement.
+REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Votre prix exact sera défini lorsque vous vous abonnez.</block>
+  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">Page d'abonnement affichant les calculateurs d'estimation des coûts d'infrastructure et de Kubernetes</block>
+  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">Pour ouvrir AWS, cliquez sur le lien Amazon Marketplace <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.</block>
+  <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. De plus, si l'environnement n'est plus actif (par exemple, vous vous êtes déconnecté), vous accédez à la page de connexion de NetApp BlueXP. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.</block>
+  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">L'onglet Résumé de l'abonnement affiche les éléments suivants :</block>
+  <block id="2638d109f7501322af782022ec53f096" category="list-text">Édition actuelle</block>
+  <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">Numéro de série de l'abonnement</block>
+  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">Utilisation actuelle des UM et « et si ? » estimateurs de coûts</block>
+  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">Liens permettant de modifier votre abonnement</block>
+  <block id="d3d856c02816952b24a5110171a09834" category="paragraph">L'onglet gestion de l'utilisation présente un aperçu de l'utilisation des unités gérées, ainsi que les onglets qui dépanne la consommation des unités gérées par collecteur ou cluster Kubernetes.</block>
+  <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">Si votre utilisation approche ou dépasse le montant souscrit, vous pouvez réduire l'utilisation en supprimant des collecteurs de données ou en arrêtant la surveillance des clusters Kubernetes. Supprimez un élément de cette liste en cliquant sur le menu « trois points » et en sélectionnant _Supprimer_.</block>
+  <block id="718a66b23c9ea5a577883d447f892296" category="cell">Une bannière d'erreur s'affiche et les fonctionnalités sont limitées jusqu'à ce que vous effectuez l'une des opérations suivantes :
+* Supprimez les collecteurs de données de sorte que votre utilisation de l'unité gérée soit égale ou inférieure à votre montant souscrit
+* Modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites</block>
+  <block id="411d690288852abddc39378b2989bfda" category="section-title">Juin 2023</block>
+  <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">Découvrez votre utilisation</block>
+  <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">À partir de juin 2023, Cloud Insights fournit une répartition de l'utilisation des unités gérées en fonction de l'ensemble de fonctions. Vous pouvez désormais afficher et surveiller rapidement l'utilisation des unités gérées (MU) pour votre infrastructure, ainsi que l'utilisation des UM liées à Kubernetes.</block>
+  <block id="32c091d4e02c7b82d97bee3fc5f2fd0c" category="inline-image-macro">Analyse des pannes d'utilisation</block>
+  <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">La surveillance et le mappage du réseau Kubernetes sont disponibles pour tous</block>
+  <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">Le <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Simplifie la résolution des problèmes en mappant les dépendances entre les workloads Kubernetes, offrant ainsi une visibilité en temps réel sur les latences des performances du réseau et les anomalies pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. De nombreux clients l'ont trouvé utile lors de l'aperçu, et maintenant il est disponible pour tous les goûts.</block>
+  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Le composant de génération de rapports de Cloud Insights a été nommé « analyse Cloud Insights ». Ne vous inquiétez pas, cependant, la fonctionnalité reste la même.</block>
+  <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">Modifications du collecteur/de l'acquisition :</block>
+  <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :</block>
+  <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Les MU Data Domain et Cohesity sont mesurées à 40 Tio : 1 MU.</block>
+  <block id="73a81d909884b3b62b84dacced2eeca9" category="list-text">Les unités d'acquisition prennent désormais en charge RHEL et Rocky 9.0 et 9.1.</block>
+  <block id="c4f065a2c4ebd22f7bfd9dbe61a5ab49" category="section-title">Nouveaux tableaux de bord ONTAP Essentials</block>
+  <block id="b972bd3ee7c713179adbfcfdf2701350" category="paragraph">Les tableaux de bord ONTAP Essentials suivants sont désormais disponibles dans les environnements de prévisualisation et sont désormais disponibles pour tous :</block>
+  <block id="9b2e2112dbf0945f11b7f04ac3421312" category="list-text">Tableau de bord de protection des données (inclut les présentations de la protection locale et à distance)</block>
+  <block id="e549f5717ec1caa7dfb9fc872b4b87a3" category="section-title">Moniteurs système supplémentaires</block>
+  <block id="62a0cfde3778aefa78f4b178eaa97a76" category="paragraph">Les moniteurs système suivants sont inclus avec Cloud Insights :</block>
+  <block id="ba58cfebfc4230ab4f6ab822a49aa1fe" category="list-text">Service FCP de la machine virtuelle de stockage indisponible</block>
+  <block id="99f7dcb5d0bc844ef56cc6cd317f2555" category="list-text">Service iSCSI de la machine virtuelle de stockage indisponible</block>
+  <block id="b2997605f7b826343b475f71837415f4" category="section-title">Emplacements des journaux</block>
+  <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Les messages journaux Telegraf sont redirigés de stdout vers les fichiers journaux suivants par défaut :</block>
+  <block id="176f2e3b515143c4119028872457ab70" category="list-text">RHEL/CentOS : /var/log/telegraf/telegraf.log</block>
+  <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu/Debian : /var/log/telegraf/telegraf.log</block>
+  <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows : C:\Program Files\telegraf\telegraf.log</block>
+  <block id="2c20388998fe9dc758bf7fb123ac7a32" category="cell">Après avoir saisi des lettres contenant un caractère générique comme l'astérisque (\*) dans les filtres des pages Forensics _All Activity_ ou _Entities_, les pages se chargent très lentement.</block>
+  <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">Un astérisque (\*) dans la chaîne de recherche recherche recherche tout. Cependant, les chaînes de caractères génériques comme _*&lt;searchTerm&gt;_ ou _*&lt;searchTerm&gt;*_ entraînent une requête lente.
+Pour obtenir de meilleures performances, utilisez plutôt des chaînes de préfixe, au format _&lt;searchTerm&gt;*_ (en d'autres termes, ajoutez l'astérisque (*) _après_ un terme de recherche).
+Exemple : utilisez la chaîne _testvolume*_, plutôt que _*testvolume_ ou _*test*volume_.
+
+Utilisez une recherche basée sur des préfixes pour voir toutes les activités sous un dossier donné de manière récursive (recherche hiérarchique). par exemple _/path1/path2/path3_ ou _“/path1/path2/path3”_ répertoriera toutes les activités récursivement sous _/path1/path2/path3_.
+Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet toutes les activités.</block>
+  <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - vous serez mis en relation avec le personnel d'assistance NetApp pour obtenir de l'aide (en semaine seulement). Le chat est disponible dans l'option de menu *aide &gt; Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.</block>
 </blocks>

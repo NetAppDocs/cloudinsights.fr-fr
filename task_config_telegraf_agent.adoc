@@ -50,6 +50,17 @@ NOTE: Si vous utilisez un proxy, lisez les instructions du proxy de votre plate-
 
 
 
+=== Emplacements des journaux
+
+Les messages journaux Telegraf sont redirigés de stdout vers les fichiers journaux suivants par défaut :
+
+* RHEL/CentOS : /var/log/telegraf/telegraf.log
+* Ubuntu/Debian : /var/log/telegraf/telegraf.log
+* Windows : C:\Program Files\telegraf\telegraf.log
+
+
+
+
 === Répertoires de base
 
 
