@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: 'Cloud Insights prend en charge Telegraf en tant qu"agent pour collecter des données d"intégration sur Kubernetes.' 
 ---
 = Configuration de l'opérateur de surveillance NetApp Kubernetes
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:nofooter: 
+:toclevels: 2
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -459,7 +469,7 @@ Quelques points à essayer si vous rencontrez des problèmes lors de la configur
 | Je vois des messages d'erreur de Telegraf ressemblant aux messages suivants, mais Telegraf démarre et s'exécute : oct 11 14:23:41 ip-172-31-39-47 systemd[1] : lancé l'agent serveur piloté par des plug-ins pour signaler des mesures dans InfluxDB. Oct 11 14:23:41 ip-172-31-39-47 telegraf[1827] : heure="2021-10-11T14:23:41Z" level=erreur msg="Impossible de créer le répertoire de cache. /etc/telegraf/.cache/flocon de neige, err: mkdir /etc/telegraf/.ca che: permission refusée. Ignoré\n » func="powflocon.(*defaultLogger).Errorf" file="log.Go:120" oct 11 14:23:41 ip-172-31-39-47 telegraf[1827]: Time="2021-10-11T14:23:41Z" level=error msg="failed to open. Ignoré. Ouvrez /etc/telegraf/.cache/flocon de neige/ocsp_Response_cache.json : aucun fichier ou répertoire\n » func=« gosflocon.(*defaultLogger).Errorf » fichier=« log.Go:120 » oct 11 14:23:41 ip-172-31-39-47 telegraf[1827 23] : 2021-10 T1141114:! Démarrage de Telegraf 1.19.3 | Il s'agit d'un problème connu. Reportez-vous à la section link:https://github.com/influxdata/telegraf/issues/9407["Article GitHub"] pour en savoir plus. Tant que Telegraf est opérationnel, les utilisateurs peuvent ignorer ces messages d'erreur. 
 
 
-| Sur Kubernetes, mes coffee pad(s) Telegraf ont signalé l'erreur suivante : "erreur lors du traitement des informations de mountstats : échec de l'ouverture du fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Ouvrir /hostfs/proc/1/mountstats: Permission refusée" | Si SELinux est activé et applique, il est probable que le ou les pod(s) Telegraf n'accèdent pas au fichier /proc/1/mountstats sur les nœuds Kubernetes. Pour détendre cette restriction, modifiez l'agent (`kubectl edit agent agent-monitoring-netapp`), et remplacer "privileged-mode: false" par "privileged-mode: true" 
+| Sur Kubernetes, mes coffee pad(s) Telegraf ont signalé l'erreur suivante : "erreur lors du traitement des informations de mountstats : échec de l'ouverture du fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Ouvrir /hostfs/proc/1/mountstats: Permission refusée" | Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, voir : https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]. 
 
 
 | Sur Kubernetes, mon pod Telegraf ReplicaSet signale l'erreur suivante : [inputs.prometheus] erreur dans le plug-in : impossible de charger keypair /etc/kubernetes/pki/ETcd/Server.crt:/etc/kubernetes/pki/ETcd/Server.key : ouvrir /etc/kubernetes/pki/ETcd/Server.crt : aucun fichier ni répertoire | Le pod Télégraf ReplicaSet est conçu pour s'exécuter sur un nœud désigné comme maître ou pour ETCD. Si le pod ReplicaSet n'est pas en cours d'exécution sur l'un de ces nœuds, vous obtenez ces erreurs. Vérifiez si vos nœuds maître/ETCD ont des astuces sur eux. S'ils le font, ajoutez les tolérances nécessaires à Telegraf ReplicaSet, telegraf-RS. Par exemple, modifiez le ReplicaSet... kubectl edit RS telegraf-RS ...et ajoutez les tolérances appropriées à la spécification. Redémarrez ensuite le pod ReplicaSet. 
