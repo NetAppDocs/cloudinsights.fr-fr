@@ -10863,7 +10863,6 @@
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">Options de configuration qui peuvent personnaliser l'installation de telegraf de l'opérateur</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">Intervalle de collection</block>
-  <block id="ddc880d728f800827e372a1d2f48313a" category="cell">Intervalle de collecte des metrics, en secondes</block>
   <block id="2129471bf14899d19206e2b1aa6c00ca" category="cell">DsCpuLimit</block>
   <block id="718918f6bff9fdd2a6292afbe4549d0b" category="cell">Limite CPU pour les telegraf ds</block>
   <block id="5eeea2f6351dff2df3a80bcff5cdd5be" category="cell">DsMemLimit</block>
@@ -11211,4 +11210,5 @@ Exemple : utilisez la chaîne _testvolume*_, plutôt que _*testvolume_ ou _*test
 Utilisez une recherche basée sur des préfixes pour voir toutes les activités sous un dossier donné de manière récursive (recherche hiérarchique). par exemple _/path1/path2/path3_ ou _“/path1/path2/path3”_ répertoriera toutes les activités récursivement sous _/path1/path2/path3_.
 Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet toutes les activités.</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - vous serez mis en relation avec le personnel d'assistance NetApp pour obtenir de l'aide (en semaine seulement). Le chat est disponible dans l'option de menu *aide &gt; Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.</block>
+  <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">Intervalle de collecte des metrics, en secondes (max=60 s)</block>
 </blocks>

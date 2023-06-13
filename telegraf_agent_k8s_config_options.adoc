@@ -39,7 +39,7 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 | telegraf |  | Options de configuration qui peuvent personnaliser l'installation de telegraf de l'opérateur 
 
 
-|  | Intervalle de collection | Intervalle de collecte des metrics, en secondes 
+|  | Intervalle de collection | Intervalle de collecte des metrics, en secondes (max=60 s) 
 
 
 |  | DsCpuLimit | Limite CPU pour les telegraf ds 
