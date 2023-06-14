@@ -5,7 +5,17 @@ summary: Cette section contient des conseils et des astuces pour résoudre vos p
 keywords:  
 ---
 = Dépannage des problèmes de Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

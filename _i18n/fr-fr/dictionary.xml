@@ -1355,7 +1355,6 @@
   <block id="5c60750a2abc4b9d7aa61cc76e102a94" category="cell">Solutions possibles: * Recommandé: Re-générer le certificat pour Virtual Center en utilisant plus fort (p. ex. 1024 bits) clé RSA. * Non recommandé : modifiez la configuration de la JVM java.security pour utiliser la contrainte jdk.certpath.disabedAlgorithms pour permettre la clé RSA 512 bits. Voir les notes de mise à jour 40 du JDK 7 à l'adresse <block ref="ac06061ee1016775797c99e274153a15" category="inline-link-rx"></block></block>
   <block id="d5d5b9f170a27fd5f88756592b939a58" category="summary">Connaître les applications utilisées dans l'environnement de votre entreprise vous aide à surveiller l'utilisation des ressources et les coûts.</block>
   <block id="66eb03874fd60842ce2afb5ab2f59e21" category="doc">Suivi de l'utilisation des ressources par application</block>
-  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">Connaître les applications utilisées dans l'environnement de votre entreprise vous aide à surveiller l'utilisation des ressources et les coûts.</block>
   <block id="49376b02066c48dc7163dd18c3a35c8e" category="paragraph">Avant de pouvoir suivre les données associées aux applications exécutées dans votre environnement, vous devez d'abord définir ces applications et les associer aux ressources appropriées. Vous pouvez associer des applications aux ressources suivantes : hôtes, machines virtuelles, volumes, volumes internes, qtrees, les partages et les hyperviseurs.</block>
   <block id="7a5c742197c3513b7a70556975974799" category="paragraph">Cette rubrique fournit un exemple de suivi de l'utilisation des machines virtuelles que l'équipe marketing utilise pour son courrier électronique Exchange.</block>
   <block id="122304f18fc1f52e984e99abf836f513" category="paragraph">Vous pouvez créer un tableau similaire à ce qui suit pour identifier les applications utilisées dans votre environnement et noter le groupe ou l'unité commerciale utilisant chaque application.</block>
@@ -5263,7 +5262,6 @@
   <block id="d277b1caec042177f4e38daf4ba9c735" category="paragraph">Crochets pour <block ref="d38416df564b8fab0d5bf94bcee43e7f" category="inline-link-macro-rx"></block>Crochets pour <block ref="95ac5170c5012e9551d08ea594650d6e" category="inline-link-macro-rx"></block>Crochets pour <block ref="973c3eb9f830c62535e232e5f5d9c6dc" category="inline-link-macro-rx"></block>Crochets pour <block ref="864c30ce6045ed450c74103c83df4646" category="inline-link-macro-rx"></block></block>
   <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">Collecteur de données IBM TotalStorage DS4000</block>
   <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">Ce collecteur de données acquiert les informations d'inventaire et de performances du système de stockage IBM DS4000. Il existe deux configurations possibles (firmware 6.x et firmware 7.x+), et elles ont toutes les deux les mêmes valeurs.</block>
-  <block id="18d3625d121f112f86fd37791d1bf10d" category="paragraph">Cloud Insight st fait l'acquisition des informations d'inventaire suivantes auprès du collecteur de données IBM DS4000. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour ce bien est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
   <block id="d9dc66c5dd0daf41b61af8de89a60066" category="list-text">Adresse IP de chaque baie DS5 ou FAStT</block>
   <block id="90708586f8afae2670c5e389c5b3df37" category="list-text">Validation des accès en envoyant une commande ping à l'adresse IP des deux contrôleurs de la baie</block>
   <block id="d0ad61d8d4e1d5d38bb6b0cb90a5d934" category="list-text">Configuration requise pour les ports : 2463</block>
@@ -6135,7 +6133,6 @@
   <block id="03600e14e8c249775af21bb69579dc2c" category="paragraph">+ il peut prendre jusqu'à deux périodes d'interrogation avant que les données de l'environnement soient affichées dans les tableaux de bord ou disponibles pour les requêtes.</block>
   <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">Détail de l'entité légale</block>
   <block id="ab440e736c2d9e3403efa72117388494" category="doc">Détail de l'entité légale</block>
-  <block id="d2386b3d08b7b3147c97ac77153b47f4" category="paragraph">cot: macro:hardbreaks: :toclevels: 1:nofoter::icons: font:linkattrs::imagesdir: ./media/</block>
   <block id="0759459fd7984031945fba78588c75bb" category="paragraph">Utilisez la page Détails de l'entité pour accéder aux informations détaillées sur une entité.</block>
   <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">Vous accédez au</block>
   <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">Profil d'entité</block>
@@ -11211,4 +11208,59 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - vous serez mis en relation avec le personnel d'assistance NetApp pour obtenir de l'aide (en semaine seulement). Le chat est disponible dans l'option de menu *aide &gt; Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">Intervalle de collecte des metrics, en secondes (max=60 s)</block>
   <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, voir :<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>.</block>
+  <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM DS4000. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour ce bien est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
+  <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.</block>
+  <block id="a7c522a068ca75556dee476101135cc4" category="doc">Installation manuelle du logiciel de l'unité d'acquisition</block>
+  <block id="8b01a0d5e9fc950e10c5789185b76fab" category="paragraph">Par défaut, Cloud Insights met automatiquement à jour le logiciel au (acquisition Unit) au fur et à mesure du déploiement des mises à jour. Cependant, dans un environnement contrôlé sécurisé, la mise à jour automatique peut ne pas être possible ou souhaitée.  Dans ce cas, Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.</block>
+  <block id="7fa388dd2c2240646539be23019e8d18" category="paragraph">Pour télécharger et installer manuellement le logiciel au, procédez comme suit. Cloud Insights fournit une page de documentation swagger utile que vous pouvez utiliser pour la plupart de ces étapes, ou vous pouvez utiliser vos propres scripts/commandes d'API. Accédez à Admin &gt; API Access et cliquez sur le lien API Documentation.</block>
+  <block id="39d5d5a9880f1ad19fe6d2c1a8b95da4" category="paragraph">Le processus est similaire pour Linux et Windows.</block>
+  <block id="f7c4249be54645abe9d6bbb85ffd95e3" category="section-title">Exécution D'une NOUVELLE installation au sous Linux :</block>
+  <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">Dans Cloud Insights, créez un jeton d'API.</block>
+  <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">Accédez à *Admin &gt; accès API* et sélectionnez *+jeton d'accès API*.</block>
+  <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">Définissez un *Nom* et une *Description* faciles à identifier</block>
+  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">Type : *unité d'acquisition*</block>
+  <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">Autorisations : *lecture/écriture*</block>
+  <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">Sélectionnez les valeurs *Expiry* et *Auto-Renew* souhaitées</block>
+  <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">Copiez le jeton d'accès à l'API généré. Cette étape doit être effectuée avant de pouvoir fermer la fenêtre.</block>
+  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">Dans swagger (Admin &gt; accès API &gt; Documentation API), utilisez le jeton pour autoriser les API Cloud Insights</block>
+  <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">Cliquez sur _Authorise_ en haut à droite de l'écran swagger</block>
+  <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">Collez le jeton copié depuis le haut dans le champ clé APIKey client</block>
+  <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">Cliquez sur *Autoriser*</block>
+  <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">Fermez la fenêtre</block>
+  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2cae2725952c883826876920381ecb59" category="list-text">Téléchargez le programme d'installation au à l'aide de l'API _/au/installateurs/{Platform}/Latest_ ou _/au/installateurs/{Platform}/{version}_ :</block>
+  <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">Plate-forme : *linux*</block>
+  <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">Version : *&lt;version&gt;* (dernière ou spécifiée)</block>
+  <block id="8441f82f2a5dd29ac44e118b98df995c" category="inline-image-macro">API pour récupérer la dernière version au</block>
+  <block id="ae6ea5b2f32189b7018c970fbb10e3bb" category="paragraph"><block ref="ae6ea5b2f32189b7018c970fbb10e3bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c827b541aa6a7d60d4a0c16c12d4ebc" category="admonition">Si vous ne téléchargez pas la dernière version, confirmez avec NetApp la version au à télécharger.</block>
+  <block id="d1720e1ae1c7ec3cfaaf2b6708405d4f" category="list-text">Cliquez sur *Télécharger le fichier*. Si vous effectuez ces étapes sur un système autre que le système au, copiez le fichier téléchargé sur le système au.</block>
+  <block id="07b7a71211b83fdb6affc9516bd8c884" category="list-text">Vous pouvez également exécuter la commande CURL résultante sur le système au :</block>
+  <block id="1786f7c932f739c573815e056569419d" category="list-text">À ce stade, le fichier d'installation doit être présent sur le système au.</block>
+  <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">Les étapes suivantes nécessitent l'utilisation d'un jeton temporaire. N'utilisez pas le jeton d'accès à l'API que vous avez créé ci-dessus.</block>
+  <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">Dans le swagger de l'API Cloud Insights, créez un jeton à usage unique à l'aide de l'API _/au/oneTimeToken_.</block>
+  <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">Copiez le jeton à usage unique obtenu.</block>
+  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
+<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">Sur l'ordinateur sur lequel l'au va être installé, accédez au dossier contenant le fichier d'installation téléchargé. Les commandes ci-dessous nécessitent que l'utilisateur dispose des autorisations root.</block>
+  <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">Décompressez le fichier d'installation</block>
+  <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">Accédez au dossier d'installation qui en résulte</block>
+  <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">Exportez le jeton à usage unique et la version du programme d'installation vers des variables d'environnement en exécutant les opérations suivantes :</block>
+  <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">Exécutez les étapes suivantes pour installer l'EC avec un utilisateur et un groupe personnalisés :</block>
+  <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">Remarque : si vous ne souhaitez pas utiliser un utilisateur et un groupe personnalisés, vous pouvez utiliser l’utilisateur et le groupe par défaut “cisys”.  Dans ce cas, exécutez la commande install ci-dessus, mais ne spécifiez pas l'utilisateur et le groupe.</block>
+  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">À ce stade, le logiciel au est installé sur le système et est accessible par l'utilisateur et le groupe personnalisés. Cependant, vous n'avez pas la possibilité d'ajouter des collecteurs de données. Pour ce faire manuellement, vous devez copier le fichier datasources.war à l'emplacement approprié.</block>
+  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">Naviguez jusqu'à l'emplacement source de datasources.war et vérifiez le fichier zip :</block>
+  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">Notez les autorisations sur le dossier datasources.war par défaut :</block>
+  <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">Pour les étapes suivantes, vous devez basculer vers (ou déconnecter root et vous connecter avec) l'utilisateur personnalisé.</block>
+  <block id="c228e145e9e61000d0f54dd253874651" category="list-text">Remarque : si vous utilisez l’utilisateur et le groupe “cisys” par défaut, vous n’avez pas besoin d’effectuer cette étape.</block>
+  <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">Remarque : l'utilisateur personnalisé peut être tout utilisateur membre d'un groupe personnalisé que vous avez fourni à cloudinsights-install.sh lors de l'installation au, et peut être identique ou différent de l'utilisateur personnalisé que vous avez fourni lors de l'installation au.</block>
+  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">Créez un dossier de travail et réglez-le sur les mêmes autorisations :</block>
+  <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront affichés dans la sortie ci-dessus.</block>
+  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">Copiez le fichier _datasources-war-&lt;version&gt;.zip_ dans le dossier de travail. Par exemple :</block>
+  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">Accédez au dossier de téléchargement et décompressez le fichier :</block>
+  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">assurez-vous que l'utilisateur, le groupe et les autorisations sont corrects sur tous les fichiers :</block>
+  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">Remarque : si vous prévoyez d'administrer au à l'aide d'utilisateurs personnalisés différents, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (_chmod 660 …_)</block>
+  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Redémarrez au.</block>
+  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Dans Cloud Insights, accédez à *Admin &gt; collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*. Choisissez _Restart_ dans le menu "trois points" à droite de l'au.</block>
 </blocks>

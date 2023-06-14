@@ -5,7 +5,17 @@ summary: 'Explication du temps de vie (TTL) et du sous-échantillonnage'
 keywords: time-to-live, TTL, downsampling, downsample, 
 ---
 = Temps de vie (TTL) et données sous-échantillonnées
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

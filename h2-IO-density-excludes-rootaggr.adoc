@@ -5,7 +5,17 @@ keywords: notifications, annotations, queries, applications,
 summary: Densité des E/S. 
 ---
 = Les données de densité d'E/S ne décrivent que les volumes de données internes
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

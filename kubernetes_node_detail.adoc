@@ -5,7 +5,17 @@ keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning
 summary: La page de détails des nœuds Kubernetes fournit des informations sur le stockage persistant et Pod en back-end. 
 ---
 = Page des détails des nœuds Kubernetes
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

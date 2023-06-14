@@ -5,7 +5,12 @@ keywords: alert, attack, ransomware, activity, security, abnormal
 summary: 'La sécurité des charges de travail génère des alertes en cas d"activité anormale de l"utilisateur ou d"attaque potentielle. La page alertes répertorie ces activités pour une investigation rapide et facile.' 
 ---
 = Alertes
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media
 
 
 [role="lead"]

@@ -5,7 +5,16 @@ keywords: Schema, DB Schema, premium, dwh, data warehouse
 summary: Diagrammes de schéma de rapport 
 ---
 = Diagrammes de schéma de reporting Cloud Insights
+:toc: macro
+:hardbreaks:
 :allow-uri-read: 
+:toc: 
+:toclevekls: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -5,7 +5,17 @@ keywords: audit, users, activities
 summary: Cet audit offre une vue des activités des systèmes et des utilisateurs du système Cloud Insights. 
 ---
 = Audit
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

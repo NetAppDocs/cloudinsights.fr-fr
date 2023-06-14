@@ -5,7 +5,17 @@ summary: 'Ce que vous pouvez faire avec Cloud Insights Reporting dépend de votr
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
 = Rôles d'utilisateur Cloud Insights Reporting
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

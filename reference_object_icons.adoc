@@ -5,7 +5,17 @@ summary: 'Référence de l"icône de l"objet Cloud Insights.'
 keywords: icons, assets, objects, reference 
 ---
 = Référence de l'icône d'objet
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

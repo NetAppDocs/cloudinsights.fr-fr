@@ -5,7 +5,17 @@ keywords: roles, guest, user, administrator, SSO, Federate, federation, identity
 summary: 'Cloud Insights fournit plusieurs comptes utilisateur avec différents niveaux d"autorisation.' 
 ---
 = Comptes utilisateur et rôles
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

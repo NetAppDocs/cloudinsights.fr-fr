@@ -5,9 +5,20 @@ summary: Mise en route de Cloud Insights.
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = Début de la collecte des données
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 Une fois que vous vous êtes inscrit à Cloud Insights et que vous vous connectez à votre environnement pour la première fois, vous serez guidé dans les étapes suivantes afin de commencer à collecter et à gérer les données.
 
 Les collecteurs de données détectent les informations provenant de vos sources de données, telles que les périphériques de stockage, les commutateurs réseau et les machines virtuelles. Les informations recueillies sont utilisées à des fins d'analyse, de validation, de surveillance et de dépannage.

@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, agent, telegraf agent
 summary: 'Cloud Insights prend en charge Telegraf comme agent de collecte des données d"intégration et peut être configuré sous Windows ou Linux.' 
 ---
 = Configuration d'un agent pour collecter des données (Windows/Linux)
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -4,7 +4,18 @@ permalink: index.html
 summary: Bienvenue sur le portail de documentation de Cloud Insights. 
 ---
 = Documentation Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: OnCommand, Insight, documentation, help
+:toc-position: content
 
 
 [role="lead"]

@@ -5,7 +5,17 @@ summary: 'Diagrammes de schéma d"entrepôt de données et tableaux à utiliser 
 keywords: dwh, data warehouse, schema, reporting 
 ---
 = Schémas Cloud Insights pour le reporting
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

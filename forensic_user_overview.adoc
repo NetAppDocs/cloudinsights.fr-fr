@@ -5,7 +5,12 @@ keywords: Forensic, user, user, activity
 summary: informations utilisateur médico-légales 
 ---
 = Vue d'ensemble de l'utilisateur judiciaire
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
 
 Les informations relatives à chaque utilisateur sont fournies dans la vue d'ensemble de l'utilisateur. Utilisez ces vues pour comprendre les caractéristiques des utilisateurs, les entités associées et les activités récentes.

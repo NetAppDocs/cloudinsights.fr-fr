@@ -5,7 +5,17 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: 'Créez des moniteurs pour alerter les seuils de performances ou d"inventaire, ainsi que les conditions de mesure ou de journal.' 
 ---
 = Alertes avec les moniteurs
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

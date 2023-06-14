@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, kubernetes
 summary: Configuration du collecteur de données Kubernetes 
 ---
 = Collecteur de données Kubernetes
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

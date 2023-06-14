@@ -5,7 +5,17 @@ summary: Utilisez les API Cloud Insights pour interroger directement la base de 
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = Accéder à la base de données de rapports via l'API
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

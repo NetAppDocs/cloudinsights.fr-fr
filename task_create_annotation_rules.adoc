@@ -4,7 +4,17 @@ permalink: task_create_annotation_rules.html
 summary: 'Vous créez des règles d"annotation pour appliquer automatiquement des annotations à plusieurs ressources.' 
 ---
 = Création de règles d'annotation
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

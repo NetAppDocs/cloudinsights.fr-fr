@@ -5,7 +5,17 @@ keywords: annotations, import, api
 summary: 'Vous pouvez importer des annotations et des applications à l"aide de l"API Cloud Insights.' 
 ---
 = Importation d'annotations
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

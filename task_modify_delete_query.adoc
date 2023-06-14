@@ -5,14 +5,25 @@ summary: 'Modification ou suppression d"une requête'
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = Modification ou suppression d'une requête
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+Vous pouvez modifier les critères qui sont associés à une requête lorsque vous voulez modifier les critères de recherche des ressources que vous interrogez.
 
 
 
 == Modification d'une requête
-
-Vous pouvez modifier les critères qui sont associés à une requête lorsque vous voulez modifier les critères de recherche des ressources que vous interrogez.
 
 .Étapes
 . Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*.

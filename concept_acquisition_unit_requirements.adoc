@@ -5,7 +5,17 @@ summary: 'Le serveur ou la VM que vous utilisez comme unité d"acquisition doit 
 keywords: AU, acquisition unit, RAU, requirements, sizing 
 ---
 = Exigences relatives à l'unité d'acquisition
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

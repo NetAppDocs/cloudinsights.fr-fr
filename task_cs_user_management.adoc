@@ -5,7 +5,17 @@ keywords: Workload Security, User, Login, account, cloud secure
 summary: 'Sécurité des charges de travail les comptes d"utilisateurs sont gérés par le biais de la gestion des utilisateurs Cloud Insights' 
 ---
 = Gestion des utilisateurs
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

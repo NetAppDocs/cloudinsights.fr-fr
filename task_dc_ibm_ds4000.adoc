@@ -5,7 +5,17 @@ keywords: data collector, IBM, DS4000
 summary: Collecteur de données IBM TotalStorage DS4000 
 ---
 = Collecteur de données IBM TotalStorage DS4000
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -15,7 +25,7 @@ Ce collecteur de données acquiert les informations d'inventaire et de performan
 
 == Terminologie
 
-Cloud Insight st fait l'acquisition des informations d'inventaire suivantes auprès du collecteur de données IBM DS4000. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour ce bien est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM DS4000. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour ce bien est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
