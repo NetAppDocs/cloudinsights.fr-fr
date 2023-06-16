@@ -11261,4 +11261,5 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Redémarrez au.</block>
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Dans Cloud Insights, accédez à *Admin &gt; collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*. Choisissez _Restart_ dans le menu "trois points" à droite de l'au.</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">Le <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> l'installation et la configuration peuvent être personnalisées.</block>
+  <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Options de l'opérateur de surveillance</block>
 </blocks>
