@@ -19,7 +19,7 @@ summary: 'L"opérateur de surveillance NetApp Kubernetes dispose d"un certain no
 
 
 [role="lead"]
-L'installation et la configuration de l'opérateur de surveillance NetApp Kubernetes peuvent être personnalisées.
+Le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] l'installation et la configuration peuvent être personnalisées.
 
 Le tableau ci-dessous répertorie les options possibles pour le fichier AgentConfiguration :
 
@@ -41,9 +41,6 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 
 
 |  | Proxy format: Proxy: Server: Port: Nom d'utilisateur: Mot de passe: NoProxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Facultatif pour que le client puisse définir le proxy. Il s'agit généralement d'un proxy d'entreprise du client. 
-
-
-|  | UUID de l'agent1 | Chaîne identifiée de façon unique sur toutes les installations d'opérateur Cloud Insights. Ce paramètre est généralement automatiquement défini par Cloud Insights. 
 
 
 | telegraf |  | Options de configuration qui peuvent personnaliser l'installation de telegraf de l'opérateur 
