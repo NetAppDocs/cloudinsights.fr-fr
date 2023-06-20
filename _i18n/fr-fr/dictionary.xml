@@ -10462,7 +10462,6 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">À l'aide d'un script, vous pouvez simuler une attaque par ransomware à des fins de test ou de démonstration de Workload Security</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">Le blocage de l'utilisateur (adresse IP) pour NFS fonctionne, mais pour SMB / CIFS, un message d'erreur s'affiche : « échec de la transformation entre SID et DomainName. Délai d'expiration du motif : le socket n'est pas établi »</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">Ceci peut se produire est _csuser_ n'a pas l'autorisation d'exécuter ssh. (Vérifiez la connexion au niveau du cluster, puis assurez-vous que l'utilisateur peut effectuer ssh). le rôle _csuser_ requiert ces autorisations.<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>Pour _csuser_ avec les informations d'identification du cluster, effectuez les opérations suivantes à partir de la ligne de commande ONTAP : sécurité login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session" -access all security login role create -role csrole -cmddirname "vserver services access-check authentifiez" -all security login Rôle create -role csrole -cmddirname "vserver name-mapping" -Access all si _csuser_ n'est pas utilisé et si admin user au niveau du cluster est utilisé, assurez-vous que l'utilisateur admin a les droits ssh à ONTAP.</block>
-  <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes : Red Hat Enterprise Linux 7.x, 8.x 64 bits CentOS 7.x 64 bits CentOS 8 Stream Ubuntu 20 à 22 64 bits Rocky 8.x 64 bits, Rocky 9.x 64 bits cet ordinateur ne devrait pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé. Se (Security Enhanced) Linux n'est pas pris en charge.</block>
   <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">Lorsque Cloud Insights contrôle le stockage back-end et que Kubernetes est utilisé avec le runtime du conteneur Docker, Cloud Insights peut afficher les mappages du pod au volume PV et les metrics pour NFS et iSCSI. Les autres runtimes affichent uniquement NFS.</block>
   <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">Mars 2023</block>
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud Connection pour ONTAP 9.9+ est obsolète</block>
@@ -11264,4 +11263,16 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Options de l'opérateur de surveillance</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">Je ne vois aucun indicateur collecté pour les cronjobs Kubernetes qui existent dans mon cluster.</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Vérifiez votre version Kubernetes (c'est-à-dire<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  S'il est v1.20.x ou inférieur, il s'agit d'une limitation attendue.  La version de kube-state-metrics déployée avec l'opérateur de surveillance Kubernetes NetApp ne prend en charge que v1.cronjob.  Avec Kubernetes 1.20.x et versions antérieures, la ressource cronjob est à v1beta.cronjob.  Par conséquent, les indicateurs d'état kube ne peuvent pas trouver la ressource cronjob.</block>
+  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
+
+Red Hat Enterprise Linux 7.x, 8.x 64 bits
+CentOS 7.x 64 bits
+Flux CentOS 8
+Ubuntu 20 à 22 64 bits
+Rocky 8.x 64 bits, Rocky 9.x 64 bits
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
+
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
+
+Se (Security Enhanced) Linux n'est pas pris en charge.</block>
 </blocks>

@@ -29,7 +29,18 @@ NOTE: La sécurité des workloads de stockage n'est pas disponible dans l'éditi
 | Composant | Configuration Linux requise 
 
 
-| Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes : Red Hat Enterprise Linux 7.x, 8.x 64 bits CentOS 7.x 64 bits CentOS 8 Stream Ubuntu 20 à 22 64 bits Rocky 8.x 64 bits, Rocky 9.x 64 bits cet ordinateur ne devrait pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé. Se (Security Enhanced) Linux n'est pas pris en charge. 
+| Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
+
+Red Hat Enterprise Linux 7.x, 8.x 64 bits
+CentOS 7.x 64 bits
+Flux CentOS 8
+Ubuntu 20 à 22 64 bits
+Rocky 8.x 64 bits, Rocky 9.x 64 bits
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
+
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
+
+Se (Security Enhanced) Linux n'est pas pris en charge. 
 
 
 | Commandes | le dézipper est requis pour l'installation. En outre, la commande « udo su – » est requise pour l'installation, l'exécution de scripts et la désinstallation. 
