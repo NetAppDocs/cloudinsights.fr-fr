@@ -124,6 +124,12 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 |  | étiquettes | une liste de ressources séparées par des virgules que les indicateurs d'état kube doivent capturer +++ exemple : cronjobs=[*],demonsets=[*],deployments=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*],resenteclaims=[*],despotstatsets[*][*]*][*],despodeslotstatedespods=*[*]*[*]*[*] 
 
 
+|  | CpuLimit | Limite CPU pour le déploiement des indicateurs d'état kube 
+
+
+|  | MemLimit | Limite MEM pour le déploiement de mesures kube-state 
+
+
 | journaux |  | Options de configuration permettant de personnaliser la collecte des journaux et l'installation de l'opérateur 
 
 

@@ -11275,4 +11275,6 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
 
 Se (Security Enhanced) Linux n'est pas pris en charge.</block>
+  <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Limite CPU pour le déploiement des indicateurs d'état kube</block>
+  <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">Limite MEM pour le déploiement de mesures kube-state</block>
 </blocks>
