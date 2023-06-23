@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_object_icons.html 
 summary: 'Référence de l"icône de l"objet Cloud Insights.' 
-keywords: icons, assets, objects, reference 
+keywords: icons, assets, objects, reference, kubernetes, map 
 ---
 = Référence de l'icône d'objet
 :toc: macro
@@ -21,4 +21,20 @@ keywords: icons, assets, objects, reference
 [role="lead"]
 Une référence rapide pour les icônes d'objet utilisées dans Cloud Insights.
 
-image:Icon_Glossary.png["Référence de l'icône"]
+
+
+== Icônes d'infrastructure :
+
+image:Icon_Glossary.png["Référence des icônes d'infrastructure"]
+
+
+
+== Icônes Kubernetes :
+
+image:K8sIconsWithLabels.png["Référence des icônes Kubernetes, largeur=180"]
+
+
+
+== Contrôle des performances du réseau Kubernetes et icônes de carte :
+
+image:ServiceMap_Icons.png["Surveillance et mappage des performances du réseau Kubernetes, largeur=640"]
