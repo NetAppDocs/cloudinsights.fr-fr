@@ -31,12 +31,12 @@ NOTE: La sécurité des workloads de stockage n'est pas disponible dans l'éditi
 
 | Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
 
-Red Hat Enterprise Linux 7.x, 8.x 64 bits
-CentOS 7.x 64 bits
-Flux CentOS 8
+Red Hat Enterprise Linux 7.x, 8.x 64 bits, SELinux
+CentOS 7.x 64 bits, SELinux
+CentOS 8 Stream, SELinux
 Ubuntu 20 à 22 64 bits
-Rocky 8.x 64 bits, Rocky 9.x 64 bits
-SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
+Rocky 8.x 64 bits, Rocky 9.x 64 bits, SELinux
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux sur SUSE 15 SP3
 
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
 
