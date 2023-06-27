@@ -11284,4 +11284,8 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinu
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
 
 Se (Security Enhanced) Linux n'est pas pris en charge.</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ».</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Modifiez la configuration de l'agentconfiguration NetApp-monitoring-configuration et définissez _dockerMetricCollectionEnabled_ sur FALSE.  Pour plus de détails, reportez-vous au manuel de l'opérateur <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Collecte de metrics Docker. Par défaut, ce paramètre est défini sur true et les metrics docker seront collectées pour les déploiements k8s sur site basés sur docker. Pour désactiver la collection de mesures docker, définissez cette option sur false.</block>
 </blocks>
