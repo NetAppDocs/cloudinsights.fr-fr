@@ -123,15 +123,11 @@ Vous pouvez créer le moniteur pour qu'il vous alerte avec un niveau de gravité
 Vous pouvez choisir la façon dont une alerte de surveillance de journal est résolue. Trois choix sont proposés :
 
 * Résolution instantanée
-* Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes ultérieures générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.
-* Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données
+* Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes suivantes avec _group_by_ correspondant générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.
+* Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données.
 
 
 image:LogMonitorAlertResolution.png["Options de résolution des alertes"]
-
-/// * *résoudre immédiatement*: L'alerte est immédiatement résolue sans autre action nécessaire * *résoudre en fonction du temps*: L'alerte est résolue après le délai spécifié * *résoudre en fonction de l'entrée du journal*: L'alerte est résolue lorsqu'une activité de journal ultérieure s'est produite. Par exemple, lorsqu'un objet est enregistré comme « disponible ».
-
-image:Monitor_log_monitor_resolution.png["Résolution des alertes"]///
 
 
 
