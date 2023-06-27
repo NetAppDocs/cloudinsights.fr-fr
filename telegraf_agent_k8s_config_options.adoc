@@ -112,6 +112,12 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 | metrics-état-kube |  | Options de configuration permettant de personnaliser l'installation des mesures d'état kube de l'opérateur 
 
 
+|  | CpuLimit | Limite CPU pour le déploiement des indicateurs d'état kube 
+
+
+|  | MemLimit | Limite MEM pour le déploiement de mesures kube-state 
+
+
 |  | CpuRequest | Demande de processeur pour le déploiement de metrics d'état kube 
 
 
@@ -122,12 +128,6 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 
 
 |  | étiquettes | une liste de ressources séparées par des virgules que les indicateurs d'état kube doivent capturer +++ exemple : cronjobs=[*],demonsets=[*],deployments=[*],ingresses=[*],jobs=[*],namespaces=[*],nodes=[*],resenteclaims=[*],despotstatsets[*][*]*][*],despodeslotstatedespods=*[*]*[*]*[*] 
-
-
-|  | CpuLimit | Limite CPU pour le déploiement des indicateurs d'état kube 
-
-
-|  | MemLimit | Limite MEM pour le déploiement de mesures kube-state 
 
 
 | journaux |  | Options de configuration permettant de personnaliser la collecte des journaux et l'installation de l'opérateur 
@@ -211,13 +211,14 @@ spec:
   telegraf:
     # use these settings to fine tune data collection
     collectionInterval: 20s
-    #batchSize:
-    #bufferLimit:
-    #roundInterval:
-    #collectionJitter:
-    #precision:
-    #flushInterval:
-    #flushJitter:
+
+    # batchSize:
+    # bufferLimit:
+    # roundInterval:
+    # collectionJitter:
+    # precision:
+    # flushInterval:
+    # flushJitter:
 
     # Collect kubernetes.system_container metrics and objects in the kube-system|cattle-system namespaces for managed kubernetes clusters
     # (EKS, AKS, GKE, managed Rancher). Set this to true if you want collect these metrics.
@@ -242,6 +243,8 @@ spec:
     # rsMemRequest:
 
   kube-state-metrics:
+    # cpuLimit:
+    # memLimit:
     # cpuRequest:
     # memRequest:
 
