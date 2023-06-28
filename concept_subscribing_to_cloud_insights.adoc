@@ -78,6 +78,7 @@ Le prix de Cloud Insights est conforme à *unité gérée*. L'utilisation de vos
 
 * 1 unité gérée = 2 hôtes (toute machine virtuelle ou physique)
 * 1 unité gérée = 4 Tio de capacité non formatée des disques physiques ou virtuels
+* 1 unité gérée = 4 vCPU de Kuberentes
 
 
 Notez que les collecteurs de données suivants sont dosés à un taux de Tio brut différent de l'unité gérée. Chaque 40 Tio de capacité non formatée sur ces collecteurs de données est facturé comme une unité gérée (UM) :
@@ -97,7 +98,7 @@ Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gér�
 
 === Estimer le coût de votre abonnement
 
-Les calculateurs d'abonnement vous donnent une estimation du coût Cloud Insights mensuel en fonction du nombre d'unités gérées dont vous aurez besoin. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.
+Les calculateurs d'abonnement vous aident à estimer le coût de votre abonnement Cloud Insights en fonction du nombre d'unités gérées nécessaires. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.
 
 Le coût estimé de votre liste de prix sera modifié en fonction de la durée de votre abonnement.
 REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Votre prix exact sera défini lorsque vous vous abonnez.
@@ -148,6 +149,7 @@ L'onglet Résumé de l'abonnement affiche les éléments suivants :
 * Numéro de série de l'abonnement
 * Utilisation actuelle des UM et « et si ? » estimateurs de coûts
 * Liens permettant de modifier votre abonnement
+* Vues de l'utilisation de votre unité gérée
 
 
 
