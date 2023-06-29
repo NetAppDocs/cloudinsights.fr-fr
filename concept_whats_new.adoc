@@ -43,12 +43,6 @@ Le link:concept_kubernetes_network_monitoring_and_map.html["_Performances du ré
 
 
 
-=== Création de rapports
-
-Le composant de génération de rapports de Cloud Insights a été nommé « analyse Cloud Insights ». Ne vous inquiétez pas, cependant, la fonctionnalité reste la même.
-
-
-
 === Modifications du collecteur/de l'acquisition :
 
 Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :
