@@ -88,6 +88,12 @@ image:Reporting_Open_From_Clipboard.png["Ouverture d'un rapport à partir du pre
 
 
 
+== Modification d'un rapport existant
+
+N'oubliez pas que la modification des fichiers à leur emplacement par défaut risque d'écraser ces rapports lors de la prochaine actualisation du catalogue de rapports. Il est recommandé d'enregistrer le rapport modifié sous un nouveau nom ou de le stocker dans un emplacement autre que celui par défaut.
+
+
+
 == Dépannage
 
 Vous trouverez ici des suggestions pour résoudre les problèmes liés à la création de rapports.

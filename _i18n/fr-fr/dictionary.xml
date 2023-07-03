@@ -11168,7 +11168,6 @@ REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Vot
   <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">La surveillance et le mappage du réseau Kubernetes sont disponibles pour tous</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">Le <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Simplifie la résolution des problèmes en mappant les dépendances entre les workloads Kubernetes, offrant ainsi une visibilité en temps réel sur les latences des performances du réseau et les anomalies pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. De nombreux clients l'ont trouvé utile lors de l'aperçu, et maintenant il est disponible pour tous les goûts.</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Le composant de génération de rapports de Cloud Insights a été nommé « analyse Cloud Insights ». Ne vous inquiétez pas, cependant, la fonctionnalité reste la même.</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">Modifications du collecteur/de l'acquisition :</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Les MU Data Domain et Cohesity sont mesurées à 40 Tio : 1 MU.</block>
@@ -11283,4 +11282,6 @@ Se (Security Enhanced) Linux n'est pas pris en charge.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 unité gérée = 4 vCPU de Kuberentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Les calculateurs d'abonnement vous aident à estimer le coût de votre abonnement Cloud Insights en fonction du nombre d'unités gérées nécessaires. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Vues de l'utilisation de votre unité gérée</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Modification d'un rapport existant</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">N'oubliez pas que la modification des fichiers à leur emplacement par défaut risque d'écraser ces rapports lors de la prochaine actualisation du catalogue de rapports. Il est recommandé d'enregistrer le rapport modifié sous un nouveau nom ou de le stocker dans un emplacement autre que celui par défaut.</block>
 </blocks>
