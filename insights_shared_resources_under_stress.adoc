@@ -43,20 +43,20 @@ Un *conflit* ou *saturation* survient lorsque les IOPS sont déterminées à aff
 
 == Et des workloads exigeants
 
-Pour commencer à examiner les charges de travail exigeantes et affectées dans vos ressources partagées, cliquez sur *tableaux de bord > Ressources partagées sous stress* dans le menu Cloud Insights.
+Pour commencer à examiner les charges de travail exigeantes et affectées dans vos ressources partagées, cliquez sur *tableaux de bord > Insights* et sélectionnez *Ressources partagées sous stress* Insight.
 
-image:Shared_resources_Under_Stress_menu.png["Liste des charges de travail"]
+image:InsightsMenu.png["Menu Insights"]
 
-Cloud Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Notez que Cloud Insights n'affiche que les charges de travail pour lesquelles au moins une ressource _exigeante_ *et* au moins une ressource _affectée_ a été détectée.
+Cloud Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Notez que Cloud Insights affichera les charges de travail où au moins une ressource _exigeante_ *ou* _ressource impactée_ a été détectée.
 
 Cliquez sur une charge de travail pour afficher la page de détails correspondante. Le graphique du haut indique l'activité sur la ressource partagée (par exemple, un pool de stockage) sur laquelle se produit la contention/saturation.
 
-image:Shared_resources_Under_Stress_SharedResource.png["Ressource partagée montrant des conflits"]
+image:ResourceInsightShared.png["Ressource partagée montrant des conflits"]
 
 Voici deux graphiques illustrant les _charges de travail_ exigeantes_ et les charges de travail _affectées_ par les charges de travail exigeantes.
 
-image:Insights_Demanding_Workload_Chart.png["Tableau des charges de travail exigeantes"]
-image:Insights_Impacted_Workload_Chart.png["Graphique des charges de travail impactées"]
+image:ResourceInsightDemanding.png["Tableau des charges de travail exigeantes"]
+image:ResourceInsightImpacted-a.png["Graphique des charges de travail impactées"]
 
 Le tableau ci-dessous répertorie les charges de travail et/ou les ressources qui affectent ou sont affectées par les conflits. Un clic sur une ressource (par exemple, une VM) ouvre une page détaillée pour cette ressource. Un clic sur une charge de travail ouvre une page de requête qui affiche les modules concernés. Notez que si le lien ouvre une requête vide, cela peut être dû au fait que le pod affecté ne fait plus partie du conflit actif. Vous pouvez modifier la plage de temps de la requête pour afficher la liste des pods dans une plage de temps plus ou plus ciblée.
 
