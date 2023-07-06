@@ -41,7 +41,7 @@ Cette section récapitule les données de configuration fournies par le client u
 
 * Secrets
 +
-Ils secrets sont constitués des identifiants utilisés par l'unité d'acquisition Cloud Insights pour accéder aux dispositifs et services du client. Ces identifiants sont chiffrés à l'aide de la norme AES-256, et les clés privées sont stockées uniquement sur les unités d'acquisition, sans jamais quitter l'environnement du client. Même les EPE privilégiés Cloud Insights ne peuvent pas accéder aux secrets des clients en texte clair à cause de cette conception.
+Ils secrets sont constitués des identifiants utilisés par l'unité d'acquisition Cloud Insights pour accéder aux dispositifs et services du client. Ces informations d'identification sont chiffrées à l'aide d'un cryptage asymétrique puissant, et les clés privées sont stockées uniquement sur les unités d'acquisition et ne quittent jamais l'environnement du client. Même les EPE privilégiés Cloud Insights ne peuvent pas accéder aux secrets des clients en texte clair à cause de cette conception.
 
 * Données fonctionnelles
 +
