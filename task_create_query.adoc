@@ -44,6 +44,54 @@ La liste des résultats de la requête affiche un certain nombre de colonnes par
 
 image:QuerySelectColumns.png["Sélectionnez colonnes"]
 
+
+
+== Choisissez agrégation, unités, mise en forme conditionnelle
+
+
+
+=== Agrégation et unités
+
+Pour les colonnes « valeur », vous pouvez affiner davantage les résultats de votre requête en choisissant la manière dont les valeurs affichées sont agrégées et en sélectionnant les unités dans lesquelles ces valeurs sont affichées. Ces options sont disponibles en sélectionnant le menu « trois points » dans le coin supérieur d'une colonne.
+
+image:Query_Page_Aggregation_etc.png["Résultats de la page de requête montrant l'agrégation, la mise en forme conditionnelle, l'affichage de l'unité et le changement de nom de la colonne"]
+
+
+
+==== Unités
+
+Vous pouvez sélectionner les unités dans lesquelles afficher les valeurs. Par exemple, si la colonne sélectionné affiche la capacité brute et que les valeurs s'affichent en Gio, mais que vous préférez les afficher en Tio, sélectionnez simplement Tio dans la liste déroulante Affichage des unités.
+
+
+
+==== Agrégation
+
+Par le même jeton, si les valeurs affichées sont agrégées à partir des données sous-jacentes sous la forme « moyenne », Mais vous préférez afficher la somme de toutes les valeurs, sélectionnez « somme » dans la liste déroulante _regrouper par_ (si vous voulez que des valeurs groupées affichent les sommes) ou dans la liste déroulante _Time Aggregate by_ (si vous voulez que les valeurs de ligne affichent des sommes de données sous-jacentes).
+
+Vous pouvez choisir d'agréger des points de données groupés par _AVG, Max, min ou SUM_.
+
+Vous pouvez agréger des données de ligne individuelles par _moyenne, dernier point de données acquis, maximum, minimum ou somme_.
+
+
+
+==== Mise en forme conditionnelle
+
+La mise en forme conditionnelle vous permet de mettre en évidence les seuils de niveau Avertissement et critique dans la liste des résultats de la requête, ce qui apporte une visibilité instantanée sur les valeurs aberrantes et les points de données exceptionnels.
+
+image:Query_Page_Conditional_Formatting.png["Mise en forme conditionnelle sur la page de requête"]
+
+Le formatage conditionnel est défini séparément pour chaque colonne. Par exemple, vous pouvez choisir un ensemble de seuils pour une colonne de capacité et un autre pour une colonne de débit.
+
+
+
+==== Renommer la colonne
+
+Renommer une colonne modifie le nom affiché dans la liste des résultats de la requête. Le nouveau nom de colonne est également affiché dans le fichier résultant si vous exportez la liste de requêtes au format .CSV.
+
+
+
+=== Économisez
+
 Une fois que vous avez configuré votre requête pour afficher les résultats souhaités, vous pouvez cliquer sur le bouton *Enregistrer* pour enregistrer la requête en vue d'une utilisation ultérieure. Donnez-lui un nom unique et significatif.
 
 
