@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["Exemple de modifications récentes"]
 
 === Améliorations pour l'opérateur
 
-Les améliorations suivantes ont été apportées à link:/telegraf_agent_k8s_config_options.html["Opérateur Kubernetes"] déploiement :
+Les améliorations suivantes ont été apportées à link:telegraf_agent_k8s_config_options.html["Opérateur Kubernetes"] déploiement :
 
 * Option permettant de contourner la collection de mesures docker
 * Possibilité d'ajouter et de personnaliser des tolérances à des démonstrateurs et des réplicajeux telegraf
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["Téléchargez la clé publique"]
 
 === Agrégation, mise en forme conditionnelle, etc. Pour les requêtes
 
-L'agrégation, la sélection d'unité, la mise en forme conditionnelle et le renommage de colonne sont parmi les fonctionnalités les plus utiles d'un widget de tableau de bord, et ces mêmes fonctionnalités sont désormais disponibles pour link:/task_create_query.html["Requêtes"].
+L'agrégation, la sélection d'unité, la mise en forme conditionnelle et le renommage de colonne sont parmi les fonctionnalités les plus utiles d'un widget de tableau de bord, et ces mêmes fonctionnalités sont désormais disponibles pour link:task_create_query.html["Requêtes"].
 
 image:Query_Page_Aggregation_etc.png["Résultats de la page de requête montrant l'agrégation, la mise en forme conditionnelle, l'affichage de l'unité et le changement de nom de la colonne"]
 
