@@ -172,7 +172,7 @@ Performances et carte réseau
 
 Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les balises d'image et les chemins de répertoire de ces images dans votre référentiel sont cohérents avec ceux du référentiel Cloud Insights.
 
-Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.
+Modifiez le déploiement de l'opérateur de surveillance dans Operator-config.yaml et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.
 
 ....
 image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
