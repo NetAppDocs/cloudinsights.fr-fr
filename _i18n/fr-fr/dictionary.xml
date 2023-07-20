@@ -11358,5 +11358,5 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">tolérances l4</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">Les améliorations suivantes ont été apportées à <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> déploiement :</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">L'agrégation, la sélection d'unité, la mise en forme conditionnelle et le renommage de colonne sont parmi les fonctionnalités les plus utiles d'un widget de tableau de bord, et ces mêmes fonctionnalités sont désormais disponibles pour <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
-  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance dans Operator-config.yaml et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.</block>
 </blocks>
