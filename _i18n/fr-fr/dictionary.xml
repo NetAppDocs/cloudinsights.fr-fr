@@ -11359,4 +11359,23 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">L'agrégation, la sélection d'unité, la mise en forme conditionnelle et le renommage de colonne sont parmi les fonctionnalités les plus utiles d'un widget de tableau de bord, et ces mêmes fonctionnalités sont désormais disponibles pour <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Si vous utilisez un proxy pour l'une ou l'autre de ces opérations, ou pour les deux, vous NetApp devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Cloud Insights. Par exemple, à partir des serveurs/machines virtuelles à partir desquels vous souhaitez installer l'opérateur, vous devez pouvoir accéder à Cloud Insights et télécharger des binaires à partir de Cloud Insights.</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
+
+ E ! [Agent] erreur lors de l'écriture dans les sorties.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Délai de contexte dépassé (client.Timeout dépassé lors de l'attente des en-têtes)</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">Modifiez chaque fichier de configuration Telegraf (c.-à-d. /etc/telegraf/telegraf.d/*.conf) et augmentez le délai d'expiration des plugins de sortie Telegraf.  Par exemple, dans chaque fichier .conf, remplacez toutes les instances de...
+
+[[outputs.http]]
+...
+timeout = « 5s »
+...
+
+
+...avec les éléments suivants :
+
+[[outputs.http]]
+...
+timeout = « 10 s »
+...
+
+Redémarrez ensuite Telegraf.</block>
 </blocks>

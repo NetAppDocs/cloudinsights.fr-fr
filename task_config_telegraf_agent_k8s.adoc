@@ -523,5 +523,25 @@ Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de
 
 
 | Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ». | Modifiez la configuration de l'agentconfiguration NetApp-monitoring-configuration et définissez _dockerMetricCollectionEnabled_ sur FALSE.  Pour plus de détails, reportez-vous au manuel de l'opérateur link:telegraf_agent_k8s_config_options.html["options de configuration"]. 
+
+
+| Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
+
+ E ! [Agent] erreur lors de l'écriture dans les sorties.http: Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] Délai de contexte dépassé (client.Timeout dépassé lors de l'attente des en-têtes) | Modifiez chaque fichier de configuration Telegraf (c.-à-d. /etc/telegraf/telegraf.d/*.conf) et augmentez le délai d'expiration des plugins de sortie Telegraf.  Par exemple, dans chaque fichier .conf, remplacez toutes les instances de...
+
+[[outputs.http]]
+...
+timeout = « 5s »
+...
+
+
+...avec les éléments suivants :
+
+[[outputs.http]]
+...
+timeout = « 10 s »
+...
+
+Redémarrez ensuite Telegraf. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
