@@ -99,8 +99,10 @@ L'en-tête HTTP où le token d'accès est transmis est *X-CloudInsights-ApiKey:*
 
 Par exemple, utilisez les éléments suivants pour récupérer des actifs de stockage :
 
- curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey:<API_Access_Token>'
 Où _<API_Access_Token>_ est le jeton que vous avez enregistré lors de la création d'un accès à l'API.
+
+Reportez-vous aux pages swagger pour obtenir des exemples spécifiques à l'API que vous souhaitez utiliser.
 
 
 
@@ -304,7 +306,7 @@ Remarque : si la dernière version de NetApp Kubernetes Monitoring Operator est 
 spec:
 …
   output-sink:
-  - api-key: <NEW_API_TOKEN>
+  - api-key:<NEW_API_TOKEN>
 ....
 
 
