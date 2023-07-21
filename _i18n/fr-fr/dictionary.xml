@@ -11379,4 +11379,37 @@ timeout = « 10 s »
 
 Redémarrez ensuite Telegraf.</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">Reportez-vous aux pages swagger pour obtenir des exemples spécifiques à l'API que vous souhaitez utiliser.</block>
+  <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">Mesures de puissance ONTAP</block>
+  <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">Plusieurs modèles ONTAP fournissent des mesures de puissance pour Cloud Insights qui peuvent être utilisées à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.</block>
+  <block id="4331e7abe05d195d44f5ad7553810841" category="paragraph">Modèles pris en charge :</block>
+  <block id="1c7aba313bcd844b750939db18c6ba3f" category="paragraph">A200
+A220
+A250
+A300
+A320
+A400
+L'A700
+A700s
+L'A800
+A900
+C190
+FAS2240-4
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000</block>
+  <block id="f9e69d73975332449ef353ece92feba1" category="paragraph">Modèles non pris en charge :</block>
+  <block id="6b9e2344af026f5b0bd0790abba3451c" category="paragraph">FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS/AFF 8020
+FAS/AFF 8040
+FAS/AFF 8060
+FAS/AFF 8080</block>
 </blocks>
