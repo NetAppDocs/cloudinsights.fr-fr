@@ -10809,7 +10809,6 @@
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">Exemple de carte des charges de travail</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">Mise en route avec l'opérateur de surveillance</block>
-  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Surveillance et mappage Kubernetes</block>
   <block id="07771c0af5efde2b4fbae3151b85a7ae" category="paragraph">Le collecteur de données Microsoft Hyper-V acquiert les données d'inventaire et de performances de l'environnement informatique de serveur virtualisé. Ce collecteur de données peut découvrir un hôte Hyper-V autonome ou un cluster entier. Il peut en créer un par hôte ou cluster autonome.</block>
   <block id="8c7e59a5cdb49e2a8cab80c42a4342af" category="list-text">Adresse IP ou FQDN du cluster ou de l'hyperviseur autonome. L'utilisation du nom d'hôte ou de l'adresse IP flottante du cluster constitue probablement l'approche la plus fiable au lieu de pointer le collecteur vers un seul nœud spécifique d'un cluster.</block>
   <block id="5a8e7ab77aee94008b9126631260c5f7" category="list-text">Compte utilisateur de niveau administrateur qui fonctionne sur tous les hyperviseurs du cluster.</block>
@@ -11412,4 +11411,5 @@ FAS/AFF 8020
 FAS/AFF 8040
 FAS/AFF 8060
 FAS/AFF 8080</block>
+  <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">Surveillance et carte réseau</block>
 </blocks>
