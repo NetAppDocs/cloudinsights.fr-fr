@@ -141,9 +141,6 @@ Les alertes et avertissements sont conservés pendant 13 mois. Les alertes et av
 | Problème : | Essayer : 
 
 
-| Pour les snapshots pris par la sécurité de la charge de travail (CS), y a-t-il une période de purge/d'archivage pour les snapshots CS ? | Non Aucune période de purge/d'archivage n'est définie pour les instantanés CS. L'utilisateur doit définir une stratégie de purge pour les instantanés CS. Reportez-vous à la link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["Documentation ONTAP"] sur la façon de configurer les règles. 
-
-
 | Dans certains cas, ONTAP effectue des copies Snapshot par jour toutes les heures. Les snapshots de sécurité de la charge de travail (CS) l'affectent-ils ? Est-ce que le snapshot CS prend le snapshot toutes les heures ? Le snapshot horaire par défaut sera-t-il arrêté ? | Les snapshots de sécurité de la charge de travail n'affectent pas les snapshots horaires. LES snapshots CS ne prennent pas l'espace de snapshot horaire et doivent continuer comme précédemment. Le snapshot horaire par défaut n'est pas arrêté. 
 
 
