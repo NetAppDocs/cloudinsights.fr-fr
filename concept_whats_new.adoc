@@ -25,6 +25,70 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Août 2023
+
+
+
+=== Menus améliorés
+
+Nous avons mis à jour le menu de navigation de gauche pour mieux prendre en charge les flux de travail de nos clients. Les nouveaux éléments de premier plan, tels que _Kubernetes_, accélèrent l'accès à ce dont le client a besoin, et la console d'administration consolidée prend en charge le rôle de propriétaire du locataire.
+
+Voici quelques exemples supplémentaires de ces modifications :
+
+* Le menu _observabilité_ de premier niveau présente la découverte de données, les alertes et les requêtes de journal
+* La fonctionnalité d'accès aux API pour l'observabilité et la sécurité des workloads se trouve dans un seul menu
+* De même pour les fonctionnalités d'observabilité et de notification de sécurité des workloads, désormais disponibles dans un seul menu
+
+
+image:NewLeftNavMenu.png["Mise à jour du menu de navigation de gauche"]
+
+Voici une brève liste des fonctions que vous pouvez trouver sous chaque menu :
+
+Observabilité :
+
+* Explore (tableaux de bord, requêtes relatives aux indicateurs, informations sur l'infrastructure)
+* Alertes (moniteurs et alertes)
+* Collecteurs (collecteurs de données et unités d'acquisition)
+* Requêtes de journal
+* Enrichir (annotations et règles d'annotation, applications, résolution de périphérique)
+* Création de rapports
+
+
+Kubernetes :
+
+* Exploration de cluster et carte réseau
+
+
+Sécurité des workloads :
+
+* Alertes
+* Médecine légale
+* Collecteurs
+* Stratégies
+
+
+ONTAP Essentials :
+
+* La protection des données
+* Sécurité
+* Alertes
+* Infrastructures
+* Mise en réseau
+* Charges de travail
+*VMware
+
+
+Admin :
+
+* Accès aux API
+* Audit
+* Notifications
+* Informations sur l'abonnement
+* Gestion des utilisateurs
+
+
+
+
 == Juillet 2023
 
 
