@@ -10665,7 +10665,6 @@ Se (Security Enhanced) Linux n'est pas pris en charge.</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">Teintes et tolérances</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">En savoir plus sur Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>.</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ».</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Modifiez la configuration de l'agentconfiguration NetApp-monitoring-configuration et définissez _dockerMetricCollectionEnabled_ sur FALSE.  Pour plus de détails, reportez-vous au manuel de l'opérateur <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Collecte de metrics Docker. Par défaut, ce paramètre est défini sur true et les metrics docker seront collectées pour les déploiements k8s sur site basés sur docker. Pour désactiver la collection de mesures docker, définissez cette option sur false.</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">Tolérances de type dsTolerations</block>
@@ -11086,4 +11085,21 @@ g) Ouvrez le pare-feu dans ONTAP, afin que ONTAP puisse connecter le boîtier de
 8. Vérifiez que le port 7 est ouvert.
 
 9. Si aucune des réponses ci-dessus ne résout le problème, ouvrez un dossier avec <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> pour obtenir de l'aide.</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">Modifiez la section netapp-monitoring-configuration dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.
+
+REMARQUE : si vous utilisez l'édition fédérale de Cloud Insights, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter de metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut ; pour les désactiver, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_ :
+
+...
+spéc. :
+...
+telegraf :
+    ...
+     - nom: docker
+            mode run :
+              - DemonSet
+            substitutions :
+              - CLÉ : DOCKER_UNIX_SOCK_PLACEHOLDER
+                valeur : unix:///run/docker.sock
+    ...
+...</block>
 </blocks>
