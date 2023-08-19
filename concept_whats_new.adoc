@@ -29,6 +29,54 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+=== Collecte des journaux Isilon/PowerScale et des données d'analyse avancées
+
+Les collecteurs REST Isilon et REST PowerScale contiennent les améliorations suivantes :
+
+* Les événements du journal Isilon sont disponibles pour les requêtes et les alertes
+* Les attributs Isilon Advanced Analytic peuvent être utilisés dans les requêtes, les tableaux de bord et les alertes :
++
+** emc_isilon.cluster
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+Ils sont activés par défaut pour les utilisateurs des collecteurs REST Isilon et/ou REST PowerScale. NetApp encourage vivement les utilisateurs du collecteur basé sur l'interface de ligne de commande Isilon à migrer vers le nouveau collecteur basé sur l'API REST pour bénéficier d'améliorations, telles que celles ci-dessus.
+
+
+
+=== Amélioration de la cartographie des charges de travail
+
+La carte des charges de travail est plus utilisable et moins bruyante. Elle regroupe tous les services externes similaires en un seul nœud s'ils communiquent avec les mêmes charges de travail, ce qui réduit la complexité du graphique et facilite la compréhension de l'interconnexion des services.
+
+La sélection d'un nœud groupé affiche un tableau détaillé avec les mesures du trafic réseau pour chaque service externe correspondant à ce nœud.
+
+
+
+=== Ajustement de l'utilisation des unités gérées Kubernetes
+
+Si une ressource de calcul est comptabilisée dans l'environnement de cluster Kubernetes par l'opérateur de surveillance NetApp Kubernetes et un collecteur de données d'infrastructure sous-jacente (par exemple, VMware), l'utilisation de ces ressources sera ajustée pour assurer le comptage le plus efficace des unités gérées. Vous pouvez afficher les ajustements des UM Kubernetes sur la page Admin > abonnement, dans les onglets Résumé et utilisation.
+
+Onglet Résumé :
+image:MU_Adjustments_K8s.png["K8s Réglage UM indiqué sur le calculateur d'estimation"]
+
+Onglet utilisation :
+image:MU_Adjustments_K8s_Usage_Tab.png["K8s Réglage UM affiché dans l'onglet utilisation"]
+
+
+
+=== Modifications du collecteur/de l'acquisition :
+
+Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :
+
+* Les unités d'acquisition prennent désormais en charge RHEL 8.7.
+
+
+
+
 === Menus améliorés
 
 Nous avons mis à jour le menu de navigation de gauche pour mieux prendre en charge les flux de travail de nos clients. Les nouveaux éléments de premier plan, tels que _Kubernetes_, accélèrent l'accès à ce dont le client a besoin, et la console d'administration consolidée prend en charge le rôle de propriétaire du locataire.
