@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: 'La section vue Expert d"une page de ressources est un outil puissant pour le dépannage ou la surveillance.' 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = Vue expert
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-La section vue Expert d'une page de ressources vous permet d'afficher un exemple de performance pour l'actif de base en fonction de n'importe quel nombre de mesures applicables dans le contexte d'une période déterminée dans le tableau de performances et de toutes les ressources associées.
+La section vue Expert d'une page de ressources vous permet d'afficher un exemple de performance pour l'actif de base en fonction de n'importe quel nombre de mesures applicables dans le contexte d'une période déterminée dans le tableau de performances et de toutes les ressources associées.  Les données des graphiques sont actualisées automatiquement lorsque les collecteurs de données interrogent et que les données mises à jour sont acquises.
 
 
 

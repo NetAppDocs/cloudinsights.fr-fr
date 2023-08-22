@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_page_overview.html 
 summary: 'Les pages ASSET peuvent être affichées pour la plupart des types d"objet.' 
-keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric 
+keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric, refresh 
 ---
 = Présentation de la page de ressources
 :toc: macro
@@ -69,6 +69,8 @@ Vous pouvez modifier le segment de temps des données affichées à l'aide d'une
 
 
 La plage de temps personnalisée vous permet de sélectionner jusqu'à 31 jours consécutifs. Vous pouvez également définir l'heure de début et l'heure de fin de la journée pour cette plage. L'heure de début par défaut est 12:00 AM le premier jour sélectionné et l'heure de fin par défaut est 11:59 PM le dernier jour sélectionné. Cliquez sur appliquer pour appliquer la plage horaire personnalisée à la page ressource.
+
+Les informations contenues dans une section de résumé de la page d'inventaire, ainsi que dans les tableaux ou widgets personnalisés de la page, sont automatiquement actualisées en fonction de la plage horaire sélectionnée. La fréquence de rafraîchissement actuelle s'affiche dans le coin supérieur droit de la section Résumé et dans les tableaux ou widgets pertinents de la page.
 
 
 
