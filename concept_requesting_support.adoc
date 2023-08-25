@@ -141,7 +141,7 @@ image:Support_View_SN.png["Afficher le numéro de série du support"]
 
 == Matrice de prise en charge du Data Collector de Cloud Insights
 
-Vous pouvez afficher ou télécharger des informations et des détails sur les collecteurs de données pris en charge dans le link:CloudInsightsDataCollectorSupportMatrix.pdf["*Matrice de prise en charge du Data Collector de Cloud Insights*, role=« externe »"].
+Vous pouvez afficher ou télécharger des informations et des détails sur les collecteurs de données pris en charge dans le link:reference_data_collector_support_matrix.html["*Matrice de prise en charge du Data Collector de Cloud Insights*, role=« externe »"].
 
 
 

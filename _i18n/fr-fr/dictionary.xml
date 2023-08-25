@@ -98,7 +98,6 @@
   <block id="20be84be5f193d53b7e93ee4b7d0b8e7" category="cell">Vérifiez qu'il n'y a pas de pare-feu entre ci au et la matrice qui bloquera l'EC au de créer des connexions TCP à 5988 ou 5989. Une fois cela terminé, et si vous avez confirmé qu'il n'y a pas de pare-feu, vous devez utiliser SSH pour la baie et utiliser la commande « showcim » pour confirmer. Vérifiez que : * le service est activé * HTTPS est activé * le port HTTPS devrait être 5989 si tous ces éléments sont ainsi, vous pouvez essayer de "stopcim" puis un "startcim" pour redémarrer le CIM (c.-à-d. Service SMI-S).</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-link-macro">Assistance</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Matrice de prise en charge du Data Collector</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">Pour plus d'informations, consultez le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">Configuration du collecteur de données ECS.</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">Configuration du collecteur de données EMC ECS</block>
   <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage EMC ECS. Pour la configuration, le collecteur de données nécessite une adresse IP du serveur ECS et un compte de domaine de niveau administratif.</block>
@@ -473,7 +472,6 @@
   <block id="a9ae711f88079f5c90a9af915867432d" category="cell">Étiqueter les clés et les valeurs sur lesquelles filtrer les VM</block>
   <block id="7955a23503311b9724986a9aa7bfd0c4" category="cell">Cliquez sur *+ Filter Label* pour choisir les VM (et les disques associés) à inclure/exclure en filtrant les clés et les valeurs correspondant aux clés et aux valeurs des étiquettes de la VM. La clé d'étiquette est requise, la valeur d'étiquette est facultative. Lorsque la valeur d'étiquette est vide, la machine virtuelle est filtrée tant qu'elle correspond à la clé d'étiquette.</block>
   <block id="185c9af3780ba13252cc4d44cfa1daf0" category="cell">La valeur par défaut est de 1800 secondes</block>
-  <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">Pour plus d'informations sur ce Data Collector, consultez le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="f3affd068b3b1c8b1c14040de68e962f" category="doc">Exemples d'expression régulière</block>
   <block id="6e56e07c6a060470f30f55387ae47aef" category="paragraph">Si vous avez sélectionné l'approche d'expression régulière comme stratégie de dénomination source, vous pouvez utiliser les exemples d'expression régulière comme guides pour vos propres expressions utilisées dans les méthodes de résolution automatique Cloud Insights.</block>
   <block id="29fcd384116085fb186a63a78e0b427c" category="section-title">Formatage des expressions régulières</block>
@@ -3551,7 +3549,6 @@
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">Matrice de prise en charge du Data Collector de Cloud Insights</block>
   <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">*Matrice de prise en charge du Data Collector de Cloud Insights*, role=« externe »</block>
-  <block id="34a28f543ea4981287965bd3ea1448ef" category="paragraph">Vous pouvez afficher ou télécharger des informations et des détails sur les collecteurs de données pris en charge dans le <block ref="4928518ab1eaba703f07b7f823f64b48" category="inline-link-macro-rx"></block>.</block>
   <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">Centre de formation</block>
   <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">Quel que soit votre abonnement, *aide &gt; support* liens vers plusieurs offres de cours NetApp University pour vous aider à tirer le meilleur parti de Cloud Insights. Découvrez-les !</block>
   <block id="d88662e1a105ca69f2e4f75dda790104" category="summary">Instructions générales relatives au collecteur de données</block>
@@ -12937,4 +12934,5 @@ VMware vCenter Server 8.0.1 build-21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">Pour plus d'informations sur ce Data Collector, consultez le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Pour plus d'informations, consultez le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Des informations supplémentaires sur ce collecteur de données sont disponibles sur le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
+  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Vous pouvez afficher ou télécharger des informations et des détails sur les collecteurs de données pris en charge dans le <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
 </blocks>

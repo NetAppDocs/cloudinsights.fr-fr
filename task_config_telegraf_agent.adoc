@@ -493,4 +493,4 @@ Certaines choses à essayer si vous rencontrez des problèmes lors de la configu
 
 | J'ai déjà un agent installé, mais pas à l'aide du programme d'installation de Cloud Insights | Supprimez l'agent précédent et exécutez l'installation de l'agent Cloud Insights pour vous assurer que les paramètres par défaut du fichier de configuration sont corrects. Lorsque vous avez terminé, cliquez sur *Continuer* ou *Terminer*. 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
