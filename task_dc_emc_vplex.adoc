@@ -166,4 +166,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | Erreur : aucune donnée de performance signalée par le directeur | • Vérifiez que les moniteurs de performances du système fonctionnent correctement • Veuillez contacter le support EMC pour permettre la mise à jour des fichiers journaux du moniteur de performances du système 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

@@ -172,4 +172,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | "Erreur interne" avec les messages d'erreur "commande <votre commande> l'exécution a échoué avec l'autorisation: <votre autorisation actuelle>. Problème d'autorisation d'exécution de la commande sudo » | Vérifiez que l'utilisateur dispose des autorisations de sudo pour exécuter la commande suivante sur le périphérique 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

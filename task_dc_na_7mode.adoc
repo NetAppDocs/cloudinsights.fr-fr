@@ -216,4 +216,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | Erreur « échec de la connexion à vFiler » | Vérifiez que les fonctionnalités utilisateur acquises incluent les éléments suivants au minimum : api-* Security-api-vfiler login-http-admin Confirmez que le filer exécute la version minimale de ONTAPI version 1.7. 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

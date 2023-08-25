@@ -188,4 +188,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | Erreur : l'acquisition des performances n'est pas prise en charge par SNMP v1 | • Modifier la source de données et désactiver les performances du commutateur • Modifier la source de données et la configuration du commutateur pour utiliser SNMP v2 ou supérieur 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

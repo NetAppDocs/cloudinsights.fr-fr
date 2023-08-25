@@ -138,4 +138,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | Erreur : configuration non prise en charge - pas de ports Fibre Channel | Le périphérique n'est configuré avec aucun port Fibre Channel. Actuellement, seules les configurations FC sont prises en charge. Vérifiez que cette version/micrologiciel est prise en charge. 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

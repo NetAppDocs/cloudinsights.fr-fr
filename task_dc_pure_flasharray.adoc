@@ -114,4 +114,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | "Informations d'identification non valides" avec les messages d'erreur "la stratégie n'autorise pas" ou "vous n'êtes pas autorisé" | Valider le compte utilisateur et le mot de passe Pure via l'interface http Pure 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

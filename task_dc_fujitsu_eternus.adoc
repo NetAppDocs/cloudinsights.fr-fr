@@ -108,4 +108,4 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 | "Erreur de connexion" avec les messages d'erreur "échec de l'instanciation d'une connexion SSH au stockage" ou "échec de l'instanciation d'une connexion à VirtualCenter" | Causes probables : * identifiants incorrects. * Adresse IP incorrecte. * Problème de réseau. * Le stockage est peut-être arrêté ou ne répond pas. Solutions possibles : * Vérifiez les informations d'identification et l'adresse IP saisies. * Essayez de communiquer avec le stockage à l'aide de SSH client. 
 |===
-Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Matrice de prise en charge du Data Collector"].
+Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
