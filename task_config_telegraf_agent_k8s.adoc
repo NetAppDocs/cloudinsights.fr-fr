@@ -212,6 +212,17 @@ En savoir plus sur Kubernetes link:https://kubernetes.io/docs/concepts/schedulin
 
 
 
+=== Autorisations
+
+Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agrégats à afficher"], Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.
+
+. Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/<namespace>-additional-permissions_
+. Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Appliquez vos modifications au cluster
+
+
+
+
 == Installation de l'opérateur de surveillance NetApp Kubernetes
 
 image:NKMO-Instructions-1.png[""]
@@ -559,5 +570,8 @@ timeout = « 10 s »
 ...
 
 Redémarrez ensuite Telegraf. 
+
+
+| Il me manque des données _involvedobject_ pour certains journaux d'événements. | Assurez-vous d'avoir suivi les étapes de la <<permissions,Autorisations>> section ci-dessus. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

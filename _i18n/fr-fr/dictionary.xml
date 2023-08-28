@@ -4272,10 +4272,7 @@
   <block id="0aa574554c08c96c168c1e97ad174912" category="cell">Mot de passe de la matrice</block>
   <block id="504153dba55dae032aeb4a2bc21e177f" category="cell">Port utilisé par l'API REST Nimble. La valeur par défaut est 5392.</block>
   <block id="b658088fb929fb96d594ab2f4ffdab24" category="paragraph">Remarque : l'intervalle d'interrogation par défaut est de 300 secondes et ne peut pas être modifié. Il s'agit du seul intervalle pris en charge par HPE Alletra 6000.</block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Configurez Cloud Insights avec la télémétrie de streaming ONTAP NetApp</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">Télémétrie en streaming NetApp ONTAP</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">Connexion cloud NetApp pour ONTAP 9.9+</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">Pour obtenir des informations à jour, reportez-vous à la section <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> page data collector.</block>
   <block id="137b3f649398a1f9fa1259c39d880c93" category="summary">L'API Cloud Insights permet l'intégration à d'autres applications, telles que les systèmes de contrôle et de reporting.</block>
   <block id="2be3c4c4132fe06361d81b1c1784eac3" category="doc">API Cloud Insights</block>
   <block id="551279e83d2a3c07e1a53609f28238f1" category="paragraph">L'API Cloud Insights permet aux clients NetApp, ainsi qu'aux éditeurs de logiciels indépendants, d'intégrer Cloud Insights à d'autres applications, comme les systèmes de gestion de tickets de CMDB ou tout autre système de gestion de tickets.</block>
@@ -12935,4 +12932,11 @@ VMware vCenter Server 8.0.1 build-21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Pour plus d'informations, consultez le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Des informations supplémentaires sur ce collecteur de données sont disponibles sur le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> ou dans le <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Vous pouvez afficher ou télécharger des informations et des détails sur les collecteurs de données pris en charge dans le <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agrégats à afficher</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Appliquez vos modifications au cluster</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Il me manque des données _involvedobject_ pour certains journaux d'événements.</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">Assurez-vous d'avoir suivi les étapes de la <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> section ci-dessus.</block>
 </blocks>
