@@ -205,7 +205,7 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: Tables de schéma
       url: "/reference_schemas.html"
-  - title: Sécurité des charges de travail de stockage
+  - title: Sécurité des workloads
     entries:
     - title: À propos de la sécurité des workloads
       url: "/cs_intro.html"
