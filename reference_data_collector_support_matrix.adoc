@@ -33,128 +33,10 @@ toc::[]
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| 3.1.1 (MU1)
-3.1.1 (MU1) P10
-3.1.2 (MU3) P16
-3.1.3 (MU1) P07
-3.1.3 (MU2)
-3.1.3 (MU3)
-3.2.1 (MU3) P17
-3.2.1 (MU5) P49
-3.2.2 (MU2) P14
-3.2.2 (MU4) P56
-3.2.2 (MU6) P96
-3.2.2 (MU6) P99
-3.2.2 P03
-3.3.1 (MU1) P09
-3.3.1 (MU2) P30
-3.3.1 (MU2) P32
-3.3.1 (MU5) P126
-3.3.1 (MU5) P132
-3.3.2 (MU1)
-3.3.2 (MU1) P04
-3.3.2 P01
-4.4.1 Type de version : version de support standard
-4.5.11 Type de version : version de support étendu
-4.5.3 Type de version : version de support étendu
-4.5.7 Type de version : version de support étendu
-9.5.8 Type de version : version de support étendu
-P02
-P04
-P05
-P08
-P09
-P103
-P106
-P107
-P11
-P111
-P113
-P115
-P118
-P119
-P127
-P13
-P131
-P132
-P133
-P135
-P138
-P139
-P140
-P141
-P142
-P146
-P148
-P149
-P15
-P150
-P151
-P152
-P153
-P154
-P155
-P156
-P157
-P160
-P161
-P162
-P164
-P165
-P166
-P167
-P168
-P170
-P172
-P173
-P175
-P177
-P18
-P180
-P19
-P22
-P23
-P25
-P27
-P29
-P30
-P32
-P34
-P36
-P37
-P39
-P40
-P41
-P42
-P45
-P48
-P49
-P50
-P51
-P52
-P53
-P56
-P57
-P59
-P60
-P70
-P71
-P72
-P73
-P75
-P76
-P78
-P80
-P85
-P90
-P93
-P94
-P96
-P98
-P99 | HPE Alletra 9080
+| HPE Alletra 9080
 HPE_3PAR 20450
 HPE_3PAR 20800
 HPE_3PAR 20850
@@ -183,124 +65,26 @@ InServ F400
 InServ T400
 InServ T800
 InServ V400 | 3.1.1 (MU1)
-3.1.1 (MU1) P10
-3.1.2 (MU3) P16
-3.1.3 (MU1) P07
+3.1.2 (MU3)
+3.1.3 (MU1)
 3.1.3 (MU2)
 3.1.3 (MU3)
-3.2.1 (MU3) P17
-3.2.1 (MU5) P49
-3.2.2 (MU2) P14
-3.2.2 (MU4) P56
-3.2.2 (MU6) P96
-3.2.2 (MU6) P99
-3.2.2 P03
-3.3.1 (MU1) P09
-3.3.1 (MU2) P30
-3.3.1 (MU2) P32
-3.3.1 (MU5) P126
-3.3.1 (MU5) P132
+3.2.1 (MU3)
+3.2.1 (MU5)
+3.2.2
+3.2.2 (MU2)
+3.2.2 (MU4)
+3.2.2 (MU6)
+3.3.1 (MU1)
+3.3.1 (MU2)
+3.3.1 (MU5)
+3.3.2
 3.3.2 (MU1)
-3.3.2 (MU1) P04
-3.3.2 P01
 4.4.1 Type de version : version de support standard
 4.5.11 Type de version : version de support étendu
 4.5.3 Type de version : version de support étendu
 4.5.7 Type de version : version de support étendu
-9.5.8 Type de version : version de support étendu
-P02
-P04
-P05
-P08
-P09
-P103
-P106
-P107
-P11
-P111
-P113
-P115
-P118
-P119
-P127
-P13
-P131
-P132
-P133
-P135
-P138
-P139
-P140
-P141
-P142
-P146
-P148
-P149
-P15
-P150
-P151
-P152
-P153
-P154
-P155
-P156
-P157
-P160
-P161
-P162
-P164
-P165
-P166
-P167
-P168
-P170
-P172
-P173
-P175
-P177
-P18
-P180
-P19
-P22
-P23
-P25
-P27
-P29
-P30
-P32
-P34
-P36
-P37
-P39
-P40
-P41
-P42
-P45
-P48
-P49
-P50
-P51
-P52
-P53
-P56
-P57
-P59
-P60
-P70
-P71
-P72
-P73
-P75
-P76
-P78
-P80
-P85
-P90
-P93
-P94
-P96
-P98
-P99 
+9.5.8 Type de version : version de support étendu 
 |===
 Produits pris en charge par ce collecteur de données :
 
@@ -1185,10 +969,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| 2010-08-01 | S3 | 2010-08-01 
+| S3 | 2010-08-01 
 |===
 Produits pris en charge par ce collecteur de données :
 
@@ -2343,10 +2127,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| v9.1.x | Brocade 6505
+| Brocade 6505
 Brocade G720
 Brocade X6-8 | v8.2.3c
 v8.2.3c1
@@ -3407,17 +3191,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| 5.5.38-1
-6.0.65-2
-7.1.76-4
-7.1.79-8
-7.1.83-2
-8.1.21-266
-8.1.21-303
-8.1.9-155 | NS-480FC
+| NS-480FC
 NSX
 VG8
 VNX5200
@@ -5501,16 +5278,13 @@ H400
 H500
 H600
 H700
-Message de syslogd@ersk
 NL400
 NL410
 S210
-SIMULATEUR
 X200
 X210
 X400
-X410
-infinity_hba_bay_to_unit : aucun mot de passe de périphérique da 7 | 9.1.0.10
+X410 | 9.1.0.10
 9.1.0.12
 9.1.0.16
 9.1.0.18
@@ -6672,11 +6446,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| 2.5
-3.5 | ScaleIO | R2_6.11000.113
+| ScaleIO | R2_6.11000.113
 R2_6.11000.115
 R3_0.1400.101
 R3_5.1200.104
@@ -6999,8 +6772,7 @@ V9.2.3.4
 V9.2.3.5
 V9.2.3.6
 V9.2.4.1
-V9.2.4.2
-indisponible | DMX3-24
+V9.2.4.2 | DMX3-24
 DMX4-24
 PMax2000
 Powermax_2000
@@ -8168,13 +7940,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| 7.1.76-4
-7.1.80-3
-7.33
-8.1.9-232 | VNX5300
+| VNX5300
 VNX5400
 VNX5700
 VNX5800 | 05.33.009.5.231
@@ -13369,8 +13138,6 @@ API de gestion utilisées par ce collecteur de données :
 
 == IBM Cleversafe
 
-Modèles et versions pris en charge par ce collecteur de données :
-
 |===
 |===
 Produits pris en charge par ce collecteur de données :
@@ -13959,8 +13726,6 @@ API de gestion utilisées par ce collecteur de données :
 
 
 == IBM PowerVM (SSH)
-
-Modèles et versions pris en charge par ce collecteur de données :
 
 |===
 |===
@@ -15725,8 +15490,6 @@ API de gestion utilisées par ce collecteur de données :
 
 == Microsoft Hyper-V
 
-Modèles et versions pris en charge par ce collecteur de données :
-
 |===
 |===
 Produits pris en charge par ce collecteur de données :
@@ -16132,12 +15895,12 @@ Modèles et versions pris en charge par ce collecteur de données :
 | Versions d'API | Modèles | Versions du micrologiciel 
 
 
-| Version de ONTAPI=1.12
-Version de ONTAPI=1.14
-Version de ONTAPI=1.17
-Version de ONTAPI=1.19
-Version de ONTAPI=1.20
-Version de ONTAPI=1.21 | FAS2040
+| 1.12
+1.14
+1.17
+1.19
+1.20
+1.21 | FAS2040
 FAS2050
 FAS2220
 FAS2240-2
@@ -17219,16 +16982,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| NetApp version 9.11.0P1 : Mar 22 17:41:04 UTC 2022
-NetApp version 9.11.1P3 : jeu sept 29 16:06:51 UTC 2022
-NetApp version 9.11.1P5: Sam 10 23:54:17 UTC 2022
-NetApp version 9.11.1P6: Ven Jan 27 03:16:05 UTC 2023
-NetApp version 9.11.1P7: Jeu Mar 09 11:22:24 UTC 2023
-NetApp sortie 9.11.1P9: Ven Avr 28 03:24:07 UTC 2023
-NetApp version 9.12.1P4: Mar 06 20:41:34 UTC 2023 | FSX pour ONTAP | Data ONTAP 
+| FSX pour ONTAP | Data ONTAP 
 |===
 Produits pris en charge par ce collecteur de données :
 
@@ -17864,221 +17621,10 @@ API de gestion utilisées par ce collecteur de données :
 Modèles et versions pris en charge par ce collecteur de données :
 
 |===
-| Versions d'API | Modèles | Versions du micrologiciel 
+| Modèles | Versions du micrologiciel 
 
 
-| Version Data ONTAP 9.12.1P2 : mercredi 05 19 avril 57:43 UTC 2023 (Lenovo)
-NetApp version 8.2.3P5 Cluster-mode : jeu juillet 16 21:51:07 PDT 2015
-NetApp version 8.3 : lundi 31 12 août 42:08 UTC 2015
-NetApp version 8.3.1P2 : mercredi 09 03 décembre 10:24 UTC 2015
-NetApp version 8.3 : Mer 24 03:29:11 UTC 2016
-NetApp version 8.3.2P12: Lundi 14 02 août 57:01 UTC 2017
-NetApp version 8.3.2P2: Lundi 23 13 mai 45:25 UTC 2016
-NetApp version 8.3.2P5: Mar août 23 12:36:56 UTC 2016
-NetApp version 8.3 : LUN Mar 09 23:01:28 PDT 2015
-NetApp version 9.10.0 : jeu août 19 01:19:53 UTC 2021
-NetApp version 9.10.1: Sam 15 10:49:44 UTC 2022
-NetApp version 9.10.1: Sam 15 15:04:44 UTC 2022
-NetApp version 9.10.1P10: Dec 18 16:24:34 UTC 2022
-NetApp version 9.10.1P11: Jeu fév 23 06:55:33 UTC 2023
-NetApp version 9.10.1P12: Jeu Avr 13 00:30:59 UTC 2023
-NetApp version 9.10.1P13: Lundi 19 06 juin 30:54 UTC 2023
-NetApp version 9.10.1P1 : dimanche 20 04 février 09:09 UTC 2022
-NetApp version 9.10.1P2: DIM Mar 13 07:13:58 UTC 2022
-NetApp version 9.10.1P3 : Mar Avr 19 17:44:44 UTC 2022
-NetApp version 9.10.1P4 : lundi 09 22 mai 11:44 UTC 2022
-NetApp version 9.10.1P5: DIM juin 19 14:49:57 UTC 2022
-NetApp version 9.10.1P6: Ven Jul 01 12:06:33 UTC 2022
-NetApp version 9.10.1P7: Mar août 02 08:59:50 UTC 2022
-NetApp version 9.10.1P8: Mar Sep 13 14:10:13 UTC 2022
-NetApp version 9.10.1P9: Jeu nov 03 23:29:00 UTC 2022
-NetApp version 9.10.1RC1 : mercredi 27 02 octobre 46:19 UTC 2021
-NetApp version 9.11.0P1 : Mar 22 17:41:04 UTC 2022
-NetApp version 9.11.1 : Mar Jul 12 04:38:28 UTC 2022
-NetApp version 9.11.1 : Mar Jul 12 10:21:46 UTC 2022
-NetApp version 9.11.1P10: Jeu Mai 25 12:28:26 UTC 2023
-NetApp version 9.11.1P1 : Mar août 09 13:13:19 UTC 2022
-NetApp version 9.11.1P2: Lundi 05 03 septembre 40:01 UTC 2022
-NetApp version 9.11.1P3 : jeu sept 29 16:06:51 UTC 2022
-NetApp version 9.11.1P4: Jeu Oct 27 11:37:48 UTC 2022
-NetApp version 9.11.1P5: Sam 10 23:54:17 UTC 2022
-NetApp version 9.11.1P6: Ven Jan 27 03:16:05 UTC 2023
-NetApp version 9.11.1P7: Jeu Mar 09 11:22:24 UTC 2023
-NetApp sortie 9.11.1P8: Ven Avr 07 00:02:50 UTC 2023
-NetApp sortie 9.11.1P9: Ven Avr 28 03:24:07 UTC 2023
-NetApp version 9.11.1RC1 : mercredi 27 06 avril 57:10 UTC 2022
-NetApp version 9.11.1X12: Jeu Mar 24 16:38:36 UTC 2022
-NetApp version 9.11.1X26: Jeu juin 02 09:48:39 UTC 2022
-NetApp version 9.12.1: Mer Fév 01 01:10:18 UTC 2023
-Version NetApp 9.12.1P1 : mercredi 22 18 février 22:20 UTC 2023
-Version NetApp 9.12.1P2 : mercredi 05 14 avril 58:46 UTC 2023
-Version NetApp 9.12.1P2 : mercredi 05 19 avril 57:43 UTC 2023
-NetApp version 9.12.1P3 : Mar 02 13 mai 02:11 UTC 2023
-NetApp version 9.12.1P4: Mar 06 20:41:34 UTC 2023
-NetApp version 9.12.1RC1 : vendredi 04 11 novembre 45:36 UTC 2022
-NetApp version 9.12.1RC1 : mercredi 09 01 novembre 14:48 UTC 2022
-NetApp version 9.13.0 : Mar Fév 07 21:20:29 UTC 2023
-NetApp version 9.13.0P1 : lundi 27 03 mars 33:38 UTC 2023
-NetApp version 9.13.0P2: Mar Avr 11 15:05:31 UTC 2023
-Version NetApp 9.13.0P3 : Mer 17 16 mai 31:25 UTC 2023
-NetApp version 9.13.1 : lundi 19 13 juin 36:41 UTC 2023
-NetApp version 9.13.1RC1 : mercredi 26 15 avril 07:24 UTC 2023
-NetApp version 9.13.1X19: LUN Avr 03 20:51:32 UTC 2023
-NetApp version 9.13.1X25: Mer Avr 26 15:07:24 UTC 2023
-NetApp version 9.13.1X33: Lundi 29 12 mai 34:33 UTC 2023
-NetApp version 9.13.1X34: Jeu juin 08 10:20:00 UTC 2023
-NetApp version 9.13.1X35: Lundi 12 12 juin 12:13 UTC 2023
-NetApp version 9.13.1X36: Jeu juin 15 13:39:29 UTC 2023
-NetApp sortie 9.1: Vendredi 23 04 décembre 09:51 UTC 2016
-NetApp version 9.1P10: Mar Nov 14 18:03:02 UTC 2017
-NetApp version 9.1P11: Jeu Déc 21 15:05:39 UTC 2017
-NetApp version 9.1P12: Lundi 05 17 mars 39:31 UTC 2018
-NetApp version 9.1P14: Mer juin 27 09:15:16 UTC 2018
-NetApp version 9.1P15: Jeu août 30 08:19:59 UTC 2018
-NetApp version 9.1P17: Jeu fév 28 08:05:25 UTC 2019
-NetApp version 9.1P19 : lundi 27 09 mai 09:01 UTC 2019
-NetApp version 9.1P1 : Mar 14 13:14:46 UTC 2017
-NetApp version 9.1P20: Lundi 28 14:37:28 UTC 2019
-NetApp version 9.1P5: Sun juin 11 02:26:58 UTC 2017
-NetApp version 9.1P7: Lundi 14 10 août 27:14 UTC 2017
-NetApp version 9.1P8: Mer août 30 13:33:41 UTC 2017
-NetApp version 9.3P10: Sam 15 04:24:49 UTC 2018
-NetApp version 9.3P12: LUN Avr 01 23:33:10 UTC 2019
-NetApp version 9.3P13: Lundi 27 19 mai 26:00 UTC 2019
-NetApp version 9.3P14: Mer Jul 10 14:38:46 UTC 2019
-NetApp version 9.3P15: Mar Jul 16 19:40:35 UTC 2019
-NetApp version 9.3P18: Lundi 30 10 décembre 39:53 UTC 2019
-NetApp version 9.3P19: Ven Jul 10 12:47:52 UTC 2020
-NetApp version 9.3P1 : lundi 22 18 janvier 01:29 UTC 2018
-NetApp version 9.3P20: Mer sept 23 21:44:43 UTC 2020
-NetApp version 9.3P21: Lundi 11 17:25:42 UTC 2021
-NetApp version 9.3P2: Vendredi 02 01 mars 02:58 UTC 2018
-NetApp version 9.3P2: Jeu Mar 01 16:53:13 UTC 2018
-NetApp version 9.3P4: Ven Avr 27 19:34:03 UTC 2018
-NetApp version 9.3P6: Jeu juin 14 20:21:25 UTC 2018
-NetApp version 9.3P7: Mer Jul 25 10:11:10 UTC 2018
-NetApp version 9.3P8: Lundi 03 20 septembre 01:35 UTC 2018
-NetApp version 9.3P9: Jeu Oct 25 07:42:13 UTC 2018
-NetApp version 9.4P2: Mar août 21 00:00:08 UTC 2018
-NetApp version 9.4P3 : jeu Oct 11 22:23:50 UTC 2018
-NetApp version 9.4P4: Jeu nov 01 15:18:22 UTC 2018
-NetApp version 9.4P6: Ven 22 09:43:14 UTC 2019
-NetApp version 9.4RC1 : jeu Avr 26 09:13:57 UTC 2018
-NetApp version 9.5 : jeu Déc 13 20:41:33 UTC 2018
-NetApp sortie 9.5P10: Ven Déc 13 16:01:45 UTC 2019
-NetApp version 9.5P12: Ven Avr 10 18:20:31 UTC 2020
-NetApp version 9.5P13: Mar Mai 19 02:45:36 UTC 2020
-NetApp version 9.5P14: Lundi 17 05 août 32:42 UTC 2020
-NetApp version 9.5P15: Mar Nov 17 07:31:22 UTC 2020
-NetApp version 9.5P16: Mar Jan 12 10:52:07 UTC 2021
-NetApp version 9.5P17: Mer Mai 12 20:42:52 UTC 2021
-NetApp version 9.5P18: Mer août 11 19:17:30 UTC 2021
-NetApp version 9.5P19: Sam 27 06:39:07 UTC 2021
-NetApp version 9.5P1 : Mar 19 21:38:50 UTC 2019
-NetApp version 9.5P2: Jeu Mar 14 13:59:39 UTC 2019
-Version NetApp 9.5P3 : Mar Avr 16 18:33:13 UTC 2019
-Version NetApp 9.5P3 : Mar Avr 16 22:44:27 UTC 2019
-NetApp version 9.5P4 : Mar 07 03 mai 16:26 UTC 2019
-NetApp version 9.5P5: Ven juin 14 15:33:34 UTC 2019
-NetApp version 9.5P6: Mer Jul 10 18:43:50 UTC 2019
-NetApp version 9.5P6: Mer Jul 10 22:58:11 UTC 2019
-NetApp version 9.5P7: Mar août 06 00:37:41 UTC 2019
-NetApp version 9.5P8: Ven Sep 20 19:03:08 UTC 2019
-NetApp version 9.5P9: Lundi 28 09:18:10 UTC 2019
-NetApp version 9.6 : mercredi 10 10 juillet 10:43 UTC 2019
-NetApp version 9.6 : mercredi 10 16 juillet 25:33 UTC 2019
-NetApp version 9.6P11: Vendredi 16 23:13:09 UTC 2020
-NetApp version 9.6P14: LUN Avr 05 15:34:55 UTC 2021
-NetApp version 9.6P15: Lundi 31 02 mai 25:27 UTC 2021
-NetApp version 9.6P18: Mar Avr 05 11:08:11 UTC 2022
-NetApp version 9.6P2: Ven Jul 19 06:06:59 UTC 2019
-NetApp version 9.6P3: DIM Sep 22 08:26:36 UTC 2019
-NetApp version 9.6P4: Jeu nov 07 01:50:36 UTC 2019
-NetApp sortie 9.6P5 : vendredi 13 18 décembre 21:56 UTC 2019
-NetApp version 9.6RC1 : samedi 11 05 mai 58:14 UTC 2019
-NetApp version 9.6X11: Sun Mar 10 12:15:04 UTC 2019
-NetApp version 9.7: Jeu Jan 09 17:11:21 UTC 2020
-NetApp version 9.7P10: Jeu Dec 10 00:55:43 UTC 2020
-NetApp version 9.7P11: Mar Jan 12 18:41:08 UTC 2021
-NetApp version 9.7P11: Mar Jan 12 23:00:49 UTC 2021
-NetApp version 9.7P12: Mar Mar 02 23:38:44 UTC 2021
-NetApp version 9.7P13: Jeu Avr 15 02:06:46 UTC 2021
-NetApp version 9.7P14: Jeu juin 10 22:54:31 UTC 2021
-NetApp version 9.7P15: Ven août 06 19:56:41 UTC 2021
-NetApp version 9.7P16: Ven Sep 10 22:33:12 UTC 2021
-NetApp version 9.7P17: Sam 27 13:49:53 UTC 2021
-NetApp version 9.7P18: Jeu Mar 10 09:57:16 UTC 2022
-NetApp version 9.7P19: Lundi 23 20 mai:55:08 UTC 2022
-NetApp version 9.7P1 : jeu fév. 27 01:25:24 UTC 2020
-NetApp version 9.7P20: Jeu août 11 13:20:52 UTC 2022
-Version NetApp 9.7P21: Vendredi 23 11 décembre 52:44 UTC 2022
-NetApp version 9.7P22: Lundi 27 14 mars 06:51 UTC 2023
-NetApp version 9.7P2: DIM Mar 22 21:50:44 UTC 2020
-Version NetApp 9.7P3 : Ven Avr 17 14:37:51 UTC 2020
-NetApp version 9.7P4: Sam 23 00:43:42 UTC 2020
-NetApp version 9.7P5: Mar 23 04:02:30 UTC 2020
-NetApp version 9.7P6: Mar Jul 28 04:06:27 UTC 2020
-NetApp version 9.7P7: Jeu août 27 20:57:05 UTC 2020
-NetApp version 9.7P8: Jeu Oct 15 04:11:57 UTC 2020
-NetApp version 9.7P9: Ven Nov 06 01:13:45 UTC 2020
-Version NetApp 9.7RC1 : vendredi 22 07 novembre 39:07 UTC 2019
-NetApp version 9.7X17: Sam 16 22:06:11 UTC 2019
-NetApp version 9.8 : mercredi 09 06 décembre 17:24 UTC 2020
-NetApp version 9.8P10: Vendredi 04 19:51:21 UTC 2022
-NetApp version 9.8P11: Sam 12 10:19:15 UTC 2022
-NetApp version 9.8P11D2: Jeu Avr 14 12:50:07 UTC 2022
-NetApp version 9.8P12: Ven mai 13 00:04:00 UTC 2022
-NetApp version 9.8P13: Ven Jul 15 22:40:56 UTC 2022
-NetApp version 9.8P14: Mar août 23 15:29:48 UTC 2022
-NetApp version 9.8P15: Mer novembre 23 09:29:16 UTC 2022
-NetApp sortie 9.8P16: Ven Déc 02 02:05:05 UTC 2022
-NetApp version 9.8P16: Jeu Déc 01 20:42:37 UTC 2022
-Version NetApp 9.8P17: Vendredi 24 15:11:05 UTC 2023
-NetApp version 9.8P18: Mer Mar 29 13:19:30 UTC 2023
-NetApp version 9.8P19: Jeu Mai 11 12:52:01 UTC 2023
-NetApp version 9.8P19: Jeu Mai 11 17:26:53 UTC 2023
-NetApp version 9.8P1 : jeu. Jan. 21 01:11:31 UTC 2021
-NetApp version 9.8P2 : Mar 16 03:49:46 UTC 2021
-NetApp version 9.8P3 : Sam 27 08:43:48 UTC 2021
-NetApp version 9.8P4 : lundi 03 09 mai 22:00 UTC 2021
-NetApp version 9.8P5: Jeu juin 10 21:52:01 UTC 2021
-NetApp version 9.8P6: Mar août 03 16:21:11 UTC 2021
-NetApp version 9.8P7: Mar Sep 14 18:38:58 UTC 2021
-NetApp version 9.8P8: Jeu Oct 21 19:21:56 UTC 2021
-NetApp version 9.8P9: Mer Déc 22 09:39:04 UTC 2021
-NetApp version 9.8RC1 : Sam 31 11:13:09 UTC 2020
-NetApp version 9.9 : vendredi 05 11:29:21 UTC 2021
-NetApp version 9.9.1: DIM juin 13 06:06:29 UTC 2021
-NetApp version 9.9.1: DIM juin 13 11:45:05 UTC 2021
-NetApp version 9.9.1P10: Ven mai 27 16:22:46 UTC 2022
-NetApp version 9.9.1P11: Mar août 02 19:12:28 UTC 2022
-NetApp version 9.9.1P12: Vendredi 16 20:50:11 UTC 2022
-NetApp version 9.9.1P13: Ven novembre 18 17:29:45 UTC 2022
-NetApp version 9.9.1P14: Vendredi 27 21:45:51 UTC 2023
-NetApp version 9.9.1P15: LUN 27 12:31:36 UTC 2023
-NetApp version 9.9.1P16: Jeu Mai 25 01:06:07 UTC 2023
-NetApp version 9.9.1P1 : vendredi 02 20 juillet 21:27 UTC 2021
-NetApp version 9.9.1P2: Jeu août 19 13:53:06 UTC 2021
-NetApp version 9.9.1P3 : Sam 25 13:10:46 UTC 2021
-NetApp version 9.9.1P3 : mercredi 29 12 septembre 55:55 UTC 2021
-NetApp version 9.9.1P4: LUN 11 09:20:31 UTC 2021
-NetApp version 9.9.1P5: Sam 20 12:17:23 UTC 2021
-NetApp version 9.9.1P6: Mar Déc 21 13:38:22 UTC 2021
-NetApp version 9.9.1P7: Sam 29 01:25:00 UTC 2022
-NetApp version 9.9.1P8: Mar Mar 15 22:46:53 UTC 2022
-NetApp version 9.9.1P9: Mer Avr 20 00:42:19 UTC 2022
-Version NetApp Bluepadle__9.7.0: Ven Nov 22 07:39:07 UTC 2019
-NetApp version Dirtwolf__9.8.0: Mar Jan 18 07:07:03 UTC 2022
-Phare de sortie NetApp__9.13.1: Lundi 19 07 juin 42:08 UTC 2023
-Phare de sortie NetApp__9.13.1: Dimanche 18 05 juin 17:33 UTC 2023
-NetApp release Longboard__9.0.1: Sam 04 09:45:33 UTC 2016
-NetApp version métropolitaine__9.11.1: Mar Jul 12 04:38:28 UTC 2022
-NetApp version métropolitaine__9.11.1: Mer Avr 27 01:48:31 UTC 2022
-NetApp sortie Stormking__9.10.1: Sun Mar 13 02:23:34 UTC 2022
-NetApp sortie Yellowdog__9.12.1: LUN Nov 28 22:02:55 UTC 2022
-NetApp sortie Yellowdog__9.12.1: Mar Jan 31 19:19:43 UTC 2023
-NetApp sortie Yellowdog__9.12.1: Mar Nov 08 20:32:25 UTC 2022
-NetApp sortie Yellowdog__9.12.1: Mer oct 05 05:47:17 UTC 2022 | AFF A150
+| AFF A150
 AFF A200
 AFF A220
 BAIE AFF A250
@@ -18126,186 +17672,186 @@ FAS9000
 FAS9500
 FASDvM300
 SIMBOX
-V6240 | 8.2.3P5 Clustered Data ONTAP
-Clustered Data ONTAP 8.3.0
-Clustered Data ONTAP 8.3.1
-8.3.1P2 clustered Data ONTAP
-Clustered Data ONTAP 8.3.2
-8.3.2P12 clustered Data ONTAP
-8.3.2P2 clustered Data ONTAP
-8.3.2P5 Clustered Data ONTAP
-Clustered Data ONTAP 9.0.1
-Clustered Data ONTAP 9.1.0
-9.1.0P1 clustered Data ONTAP
-9.1.0P10 Clustered Data ONTAP
-9.1.0P11 Clustered Data ONTAP
-9.1.0P12 Clustered Data ONTAP
-9.1.0P14 Clustered Data ONTAP
-9.1.0P15 Clustered Data ONTAP
-9.1.0P17 Clustered Data ONTAP
-9.1.0P19 Clustered Data ONTAP
-9.1.0P20 Clustered Data ONTAP
-9.1.0P5 Clustered Data ONTAP
-9.1.0P7 Clustered Data ONTAP
-9.1.0P8 Clustered Data ONTAP
-Clustered Data ONTAP 9.10.0
-Clustered Data ONTAP 9.10.1
-Clustered Data ONTAP 9.10.1P1
-9.10.1P10 Clustered Data ONTAP
-9.10.1P11 Clustered Data ONTAP
-9.10.1P12 Clustered Data ONTAP
-9.10.1P13 Clustered Data ONTAP
-9.10.1P2 clustered Data ONTAP
-Clustered Data ONTAP 9.10.1P3
-Clustered Data ONTAP 9.10.1P4
-9.10.1P5 Clustered Data ONTAP
-9.10.1P6 Clustered Data ONTAP
-9.10.1P7 Clustered Data ONTAP
-9.10.1P8 Clustered Data ONTAP
-9.10.1P9 Clustered Data ONTAP
-9.11.0P1 clustered Data ONTAP
-Clustered Data ONTAP 9.11.1
-9.11.1P1, clustered Data ONTAP
-9.11.1P10 Clustered Data ONTAP
-9.11.1P2 clustered Data ONTAP
-9.11.1P3 clustered Data ONTAP
-9.11.1P4 clustered Data ONTAP
-9.11.1P5 Clustered Data ONTAP
-9.11.1P6 Clustered Data ONTAP
-9.11.1P7 Clustered Data ONTAP
-9.11.1P8 Clustered Data ONTAP
-9.11.1P9 Clustered Data ONTAP
-9.11.1X12 Clustered Data ONTAP
-9.11.1X26 Clustered Data ONTAP
-Clustered Data ONTAP 9.12.1
-Clustered Data ONTAP 9.12.1P1
-9.12.1P2 Clustered Data ONTAP
-Clustered Data ONTAP 9.12.1P3
-Clustered Data ONTAP 9.12.1P4
-Clustered Data ONTAP 9.13.0
-9.13.0P1 clustered Data ONTAP
-9.13.0P2, Clustered Data ONTAP
-9.13.0P3 clustered Data ONTAP
-Clustered Data ONTAP 9.13.1
-Clustered Data ONTAP 9.13.1 X19
-Clustered Data ONTAP 9.13,1 X 25
-9,13,1 x 33 clustered Data ONTAP
-Clustered Data ONTAP 9.13.1 X34
-Clustered Data ONTAP 9.13,1 X 35
-9,13,1 x 36 clustered Data ONTAP
-9.3.0P1 clustered Data ONTAP
-9.3.0P10 Clustered Data ONTAP
-9.3.0P12 Clustered Data ONTAP
-9.3.0P13 Clustered Data ONTAP
-9.3.0P14 Clustered Data ONTAP
-9.3.0P15 Clustered Data ONTAP
-9.3.0P18 Clustered Data ONTAP
-9.3.0P19 Clustered Data ONTAP
-9.3.0P2 clustered Data ONTAP
-9.3.0P20 Clustered Data ONTAP
-9.3.0P21 Clustered Data ONTAP
-9.3.0P4 clustered Data ONTAP
-9.3.0P6 Clustered Data ONTAP
-9.3.0P7 Clustered Data ONTAP
-9.3.0P8 Clustered Data ONTAP
-9.3.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.4.0
-9.4.0P2 clustered Data ONTAP
-9.4.0P3 clustered Data ONTAP
-9.4.0P4 clustered Data ONTAP
-9.4.0P6 Clustered Data ONTAP
-Clustered Data ONTAP 9.5.0
-9.5.0P1 clustered Data ONTAP
-9.5.0P10 Clustered Data ONTAP
-9.5.0P12 Clustered Data ONTAP
-9.5.0P13 Clustered Data ONTAP
-9.5.0P14 Clustered Data ONTAP
-9.5.0P15 Clustered Data ONTAP
-9.5.0P16 Clustered Data ONTAP
-9.5.0P17 Clustered Data ONTAP
-9.5.0P18 Clustered Data ONTAP
-9.5.0P19 Clustered Data ONTAP
-9.5.0P2 clustered Data ONTAP
-9.5.0P3 clustered Data ONTAP
-9.5.0P4 clustered Data ONTAP
-9.5.0P5 Clustered Data ONTAP
-9.5.0P6 Clustered Data ONTAP
-9.5.0P7 Clustered Data ONTAP
-9.5.0P8 Clustered Data ONTAP
-9.5.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.6.0
-9.6.0P11 Clustered Data ONTAP
-9.6.0P14 Clustered Data ONTAP
-9.6.0P15 Clustered Data ONTAP
-9.6.0P18 Clustered Data ONTAP
-9.6.0P2 clustered Data ONTAP
-9.6.0P3 clustered Data ONTAP
-9.6.0P4 clustered Data ONTAP
-9.6.0P5 Clustered Data ONTAP
-9.6.0X11 Data ONTAP en cluster
-Clustered Data ONTAP 9.7.0
-9.7.0P1 clustered Data ONTAP
-9.7.0P10 Clustered Data ONTAP
-9.7.0P11 Clustered Data ONTAP
-9.7.0P12 Clustered Data ONTAP
-9.7.0P13 Clustered Data ONTAP
-9.7.0P14 Clustered Data ONTAP
-9.7.0P15 Clustered Data ONTAP
-9.7.0P16 Clustered Data ONTAP
-9.7.0P17 Clustered Data ONTAP
-9.7.0P18 Clustered Data ONTAP
-9.7.0P19 Clustered Data ONTAP
-9.7.0P2 clustered Data ONTAP
-9.7.0P20 Clustered Data ONTAP
-9.7.0P21 Clustered Data ONTAP
-9.7.0P22 Clustered Data ONTAP
-9.7.0P3 clustered Data ONTAP
-9.7.0P4 clustered Data ONTAP
-9.7.0P5 Clustered Data ONTAP
-9.7.0P6 Clustered Data ONTAP
-9.7.0P7 Clustered Data ONTAP
-9.7.0P8 Clustered Data ONTAP
-9.7.0P9 Clustered Data ONTAP
-9.7.0X17 Clustered Data ONTAP
-Clustered Data ONTAP 9.8.0
-9.8.0P1 clustered Data ONTAP
-9.8.0P10 Clustered Data ONTAP
-9.8.0P11 Clustered Data ONTAP
-9.8.0P11D2 Clustered Data ONTAP
-9.8.0P12 Clustered Data ONTAP
-9.8.0P13 Clustered Data ONTAP
-9.8.0P14 Clustered Data ONTAP
-9.8.0P15 Clustered Data ONTAP
-9.8.0P16 Clustered Data ONTAP
-9.8.0P17 Clustered Data ONTAP
-9.8.0P18 Clustered Data ONTAP
-9.8.0P19 Clustered Data ONTAP
-9.8.0P2 clustered Data ONTAP
-9.8.0P3 clustered Data ONTAP
-9.8.0P4 clustered Data ONTAP
-9.8.0P5 Clustered Data ONTAP
-9.8.0P6 Clustered Data ONTAP
-9.8.0P7 Clustered Data ONTAP
-9.8.0P8 Clustered Data ONTAP
-9.8.0P9 Clustered Data ONTAP
-Clustered Data ONTAP 9.9.0
-Clustered Data ONTAP 9.9.1
-9.9.1P1, clustered Data ONTAP
-9.9.1P10 Clustered Data ONTAP
-9.9.1P11 Clustered Data ONTAP
-9.9.1P12 clustered Data ONTAP
-9.9.1P13 Clustered Data ONTAP
-9.9.1P14 Clustered Data ONTAP
-9.9.1P15 Clustered Data ONTAP
-9.9.1P16 Clustered Data ONTAP
-9.9.1P2 clustered Data ONTAP
-9.9.1P3 clustered Data ONTAP
-9.9.1P4 clustered Data ONTAP
-9.9.1P5 Clustered Data ONTAP
-9.9.1P6 Clustered Data ONTAP
-9.9.1P7 Clustered Data ONTAP
-9.9.1P8 Clustered Data ONTAP
-9.9.1P9 Clustered Data ONTAP 
+V6240 | 8.2.3P5
+8.3.0
+8.3.1
+8.3.1P2
+8.3.2
+8.3.2P12
+8.3.2P2
+8.3.2P5
+9.0.1
+9.1.0
+9.1.0P1
+9.1.0P10
+9.1.0P11
+9.1.0P12
+9.1.0P14
+9.1.0P15
+9.1.0P17
+9.1.0P19
+9.1.0P20
+9.1.0P5
+9.1.0P7
+9.1.0P8
+9.10.0
+9.10.1
+9.10.1P1
+9.10.1P10
+9.10.1P11
+9.10.1P12
+9.10.1P13
+9.10.1P2
+9.10.1P3
+9.10.1P4
+9.10.1P5
+9.10.1P6
+9.10.1P7
+9.10.1P8
+9.10.1P9
+9.11.0P1
+9.11.1
+9.11.1P1
+9.11.1P10
+9.11.1P2
+9.11.1P3
+9.11.1P4
+9.11.1P5
+9.11.1P6
+9.11.1P7
+9.11.1P8
+9.11.1P9
+9.11.1X12
+9.11.1X26
+9.12.1
+9.12.1P1
+9.12.1P2
+9.12.1P3
+9.12.1P4
+9.13.0
+9.13.0P1
+9.13.0P2
+9.13.0P3
+9.13.1
+9.13.1X19
+9.13.1X25
+9.13.1X33
+9.13.1X34
+9.13.1X35
+9.13.1X36
+9.3.0P1
+9.3.0P10
+9.3.0P12
+9.3.0P13
+9.3.0P14
+9.3.0P15
+9.3.0P18
+9.3.0P19
+9.3.0P2
+9.3.0P20
+9.3.0P21
+9.3.0P4
+9.3.0P6
+9.3.0P7
+9.3.0P8
+9.3.0P9
+9.4.0
+9.4.0P2
+9.4.0P3
+9.4.0P4
+9.4.0P6
+9.5.0
+9.5.0P1
+9.5.0P10
+9.5.0P12
+9.5.0P13
+9.5.0P14
+9.5.0P15
+9.5.0P16
+9.5.0P17
+9.5.0P18
+9.5.0P19
+9.5.0P2
+9.5.0P3
+9.5.0P4
+9.5.0P5
+9.5.0P6
+9.5.0P7
+9.5.0P8
+9.5.0P9
+9.6.0
+9.6.0P11
+9.6.0P14
+9.6.0P15
+9.6.0P18
+9.6.0P2
+9.6.0P3
+9.6.0P4
+9.6.0P5
+9.6.0X11
+9.7.0
+9.7.0P1
+9.7.0P10
+9.7.0P11
+9.7.0P12
+9.7.0P13
+9.7.0P14
+9.7.0P15
+9.7.0P16
+9.7.0P17
+9.7.0P18
+9.7.0P19
+9.7.0P2
+9.7.0P20
+9.7.0P21
+9.7.0P22
+9.7.0P3
+9.7.0P4
+9.7.0P5
+9.7.0P6
+9.7.0P7
+9.7.0P8
+9.7.0P9
+9.7.0X17
+9.8.0
+9.8.0P1
+9.8.0P10
+9.8.0P11
+9.8.0P11D2
+9.8.0P12
+9.8.0P13
+9.8.0P14
+9.8.0P15
+9.8.0P16
+9.8.0P17
+9.8.0P18
+9.8.0P19
+9.8.0P2
+9.8.0P3
+9.8.0P4
+9.8.0P5
+9.8.0P6
+9.8.0P7
+9.8.0P8
+9.8.0P9
+9.9.0
+9.9.1
+9.9.1P1
+9.9.1P10
+9.9.1P11
+9.9.1P12
+9.9.1P13
+9.9.1P14
+9.9.1P15
+9.9.1P16
+9.9.1P2
+9.9.1P3
+9.9.1P4
+9.9.1P5
+9.9.1P6
+9.9.1P7
+9.9.1P8
+9.9.1P9 
 |===
 Produits pris en charge par ce collecteur de données :
 
@@ -20980,8 +20526,6 @@ API de gestion utilisées par ce collecteur de données :
 
 == OPENSTACK (API REST/SSH)
 
-Modèles et versions pris en charge par ce collecteur de données :
-
 |===
 |===
 Produits pris en charge par ce collecteur de données :
@@ -22275,8 +21819,6 @@ API de gestion utilisées par ce collecteur de données :
 
 
 == Red Hat RHV (REST)
-
-Modèles et versions pris en charge par ce collecteur de données :
 
 |===
 |===
