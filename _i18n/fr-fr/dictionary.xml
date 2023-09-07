@@ -5657,9 +5657,6 @@
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">L'explorateur de journaux est un outil puissant pour rechercher des problèmes dans différents journaux système.</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">Explorateur de journaux</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">L'explorateur de journaux Cloud Insights est un outil puissant pour interroger les journaux système. En plus de vous aider dans les enquêtes, vous pouvez également enregistrer une requête de journal dans un moniteur afin de fournir des alertes lorsque ces déclencheurs de journal particuliers sont activés.</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">Pour commencer l'exploration des journaux, cliquez sur *requêtes &gt; +New Log Query*.</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">Menu requêtes de journal, 480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">Sélectionnez un journal disponible dans la liste.</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">Choisissez votre journal</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
@@ -5669,10 +5666,7 @@
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">Les résultats s'affichent dans un graphique indiquant le nombre d'instances de journal pour chaque période affichée. Sous le graphique se trouvent les entrées du journal temindividus. Le graphique et les entrées se réactualisent automatiquement en fonction de la plage horaire sélectionnée.</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">Exemple de requête montrant le filtre</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">Le graphe du journal</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">Le graphique indique le nombre d'entrées de journal, regroupées en _seaux_, qui sont basées sur la plage de temps du tableau de bord sélectionnée. Les godets pour chaque plage horaire sont les suivants :</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">Plage de temps du tableau de bord</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">Taille du godet</block>
   <block id="19835cec9600eb5f9fc332ed671fc46a" category="cell">10 secondes</block>
   <block id="cc2ce94ec935cfe3b39913486e0ee27c" category="cell">15 secondes</block>
   <block id="e0e8774db3dbc0633c02ff72ce710ba3" category="cell">30 secondes</block>
@@ -5681,14 +5675,7 @@
   <block id="4b9fb98e0952078c236a9fb09c0c6dc7" category="cell">5 minutes</block>
   <block id="3a3853e1fe25e10ecaa88617010f9e41" category="cell">10 minutes</block>
   <block id="0d109f2a2e5b1f92e8b4de51b6bd9363" category="cell">15 minutes</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 minutes</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 minutes</block>
   <block id="5ce155ac62ee03701f7a117676333008" category="cell">2 heures</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 jour</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">Pour effectuer un zoom sur le graphique, faites simplement glisser les curseurs de chaque côté. Pour faire un panoramique sur la zone agrandie, cliquez sur la zone blanche et déplacez-la vers la gauche ou vers la droite. Cliquez sur _Reset Zoom_ pour réinitialiser le niveau de zoom.</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">Effectuez un zoom avant en faisant glisser les côtés du graphique</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">Notez que lors d'un zoom sur le graphique ou du défilement de la table, l'actualisation automatique du tableau de bord s'interrompt et la plage horaire affiche le temps figé. Pour reprendre l'actualisation, cliquez sur le bouton _reprendre_ <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>. Le niveau de zoom sera également réinitialisé.</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">A tout moment, vous pouvez cliquer sur _Créer un moniteur de journal_ pour créer un nouveau moniteur basé sur le filtre actuel.</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">Détails du journal</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">Si vous cliquez n'importe où dans une entrée de journal de la liste, un volet de détails s'ouvre pour cette entrée. Ici, vous pouvez explorer d'autres informations sur cet événement.</block>
@@ -12464,4 +12451,30 @@ V9.2.4.2</block>
 9.9.1P8
 9.9.1P9</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">Pour commencer à explorer les journaux, cliquez sur *requêtes de journal &gt; +Nouvelle requête de journal*.</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtrage</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">Inclure / exclure</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">Lorsque vous filtrez les journaux, vous pouvez choisir d'inclure *les chaînes que vous tapez (c'est-à-dire "Filtrer vers") ou *les exclure*. Les chaînes exclues sont affichées dans le filtre terminé sous la forme « NOT &lt;string&gt; ».</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">Filtre du journal affichant l'option exclure</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">Filtrage avancé</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">Lorsque vous filtrez des valeurs de texte ou de liste dans des requêtes ou des widgets de tableau de bord, lorsque vous commencez à taper, vous avez la possibilité de créer un *filtre générique* basé sur le texte en cours. Si vous sélectionnez cette option, tous les résultats correspondant à l'expression de caractère générique seront résélectionnés. Vous pouvez également créer des expressions à l'aide de NOT, AND, or ou, ou vous pouvez sélectionner l'option « aucun » pour filtrer les valeurs nulles.</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">Assurez-vous d'enregistrer votre requête tôt et souvent lorsque vous créez votre filtrage. Advanced Querying est une entrée de chaîne de "forme libre", et des erreurs d'analyse peuvent se produire au fur et à mesure que vous construisez.</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">Jetez un coup d'œil à cette image d'écran affichant les résultats filtrés pour une requête avancée du journal _logs.kubernetes.event_. Il y a beaucoup de choses dans cette page, qui est expliquée ci-dessous l'image:</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">L'écran requête avancée a été expliqué</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">Cette chaîne de requête avancée filtre les éléments suivants :</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">Filtrer les entrées de journal avec un _motif_ qui inclut le mot "échec", mais pas n'importe quoi avec la raison spécifique de "FailedMount".</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">Incluez toutes les entrées qui incluent également un _metadata.namespace_ incluant le mot "monitoring", mais excluez les espaces de noms spécifiques de "cm-monitoring" ou "EG-monitoring".</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">Notez que, dans le cas ci-dessus, étant donné que "cm-monitoring" et "EG-monitoring" contiennent un tiret ("-"), les chaînes doivent être incluses entre guillemets ou une erreur d'analyse sera affichée. Les chaînes qui n'incluent pas de tirets, d'espaces, etc. N'ont pas besoin d'être placées entre guillemets. En cas de doute, essayez de mettre la chaîne entre guillemets.</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">Les résultats du filtre actuel, y compris les valeurs « Filtrer par » ET le filtre de requête avancée. La liste peut être triée par colonnes affichées. Pour afficher des colonnes supplémentaires, sélectionner l'icône « vitesse ».</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">Le graphique a été agrandi pour afficher uniquement les résultats du journal qui se sont produits dans une période donnée. La plage horaire affichée ici reflète le niveau de zoom actuel. Sélectionnez le bouton _Réinitialiser le zoom_ pour rétablir le niveau de zoom sur la plage horaire Cloud Insights actuelle.</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">Les résultats du graphique ont été regroupés par le champ _source_. Le graphique présente les résultats dans chaque colonne, regroupés en couleurs. Passez le curseur sur une colonne du graphique pour afficher des détails sur les entrées spécifiques.</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">Détails du survol groupés</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">Vous pouvez combiner un filtre simple avec un filtre de requête avancé ; le filtre résultant est un « ET » des deux.</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">La légende du graphique</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">La _Légende_ sous le tableau a aussi quelques surprises. Pour chaque résultat (basé sur le filtre actuel) affiché dans la légende, vous avez la possibilité d'afficher uniquement les résultats pour cette ligne (Ajouter un filtre) ou d'afficher les résultats AUTRES QUE pour cette ligne (Ajouter un filtre d'exclusion). Le graphique et la liste des entrées du journal sont mis à jour pour afficher les résultats en fonction de votre sélection.  Pour supprimer ce filtre, ouvrez de nouveau la légende et sélectionnez [X] pour effacer le filtre de légende.</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">Recherche avancée Legen montrant "Ajouter un filtre" pour le premier résultat</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
