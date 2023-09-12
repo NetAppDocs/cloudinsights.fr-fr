@@ -5500,7 +5500,6 @@
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">Si vous utilisez un <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>, ont un <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>, ou utilisent <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>, lisez attentivement les sections suivantes.</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">Mise à niveau</block>
   <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">Si vous effectuez une mise à niveau à partir d'une installation précédente, lisez également le <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> informations.</block>
-  <block id="342761835c95d3618833ced82b6260ac" category="inline-xref">Vérification des checksums Kubernetes</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">Pour installer l'opérateur NetApp Kubernetes Monitoring, vous pouvez utiliser un proxy dans votre environnement. Il peut s'agir de systèmes proxy identiques ou distincts :</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">Proxy requis lors de l'exécution de l'extrait de code d'installation (en utilisant "curl") pour connecter le système sur lequel l'extrait est exécuté dans votre environnement Cloud Insights</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">Proxy nécessaire du cluster Kubernetes cible pour communiquer avec votre environnement Cloud Insights</block>
@@ -5515,11 +5514,7 @@
   <block id="143bc427903e01a7afe2d41b83643f5e" category="section-title">Installation de l'opérateur de surveillance NetApp Kubernetes</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">Étapes d'installation de l'agent de l'opérateur de surveillance NetApp Kubernetes sur Kubernetes :</block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">mise à niveau</block>
-  <block id="8fd8f7aff1ee233a0c987ac476072bd4" category="list-text">Entrez un nom de cluster et un espace de noms uniques. Si vous l'êtes <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> À partir de l'agent basé sur des scripts ou d'un opérateur Kubernetes précédent, utilisez le même nom de cluster et le même espace de noms.</block>
-  <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">Si un agent basé sur des scripts a déjà été installé, vous devez _effectuer une mise à niveau vers l'opérateur NetApp Kubernetes Monitoring.</block>
-  <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">Mise à niveau d'un agent basé sur des scripts vers NetApp Kubernetes Monitoring Operator</block>
   <block id="8cf39a7fcad49926187638c2ef3888e4" category="paragraph">Pour mettre à niveau l'agent telegraf, procédez comme suit :</block>
-  <block id="ce980eb171cf0f52904feafd9843c0cf" category="list-text">Notez le nom de votre cluster comme reconnu par Cloud Insights. Vous pouvez afficher le nom du cluster en exécutant la commande suivante. Si votre espace de noms n'est pas la valeur par défaut (_ci-monitoring_), remplacez l'espace de noms approprié :</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">Enregistrez le nom du cluster K8s pour l'installation de la solution de surveillance basée sur l'opérateur pour assurer la continuité des données.</block>
   <block id="35c735048514e15b96558a336dddd484" category="paragraph">Si vous ne vous souvenez pas du nom du cluster K8s dans l'IC, il peut être extrait de la configuration enregistrée à l'aide de la ligne de commande suivante :</block>
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">Supprimez la surveillance basée sur des scripts</block>
@@ -5528,89 +5523,26 @@
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">Si l'espace de noms de surveillance est utilisé à d'autres fins en plus de Telegraf :</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">Installer</block>
   <block id="fb990bfdcd5afe0e05c70ad5c62965f0" category="list-text"><block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> L'opérateur actuel. Veillez à utiliser le même nom de cluster que celui indiqué à l'étape 1 ci-dessus.</block>
-  <block id="20e38ff1d741d05cb351043049612af2" category="section-title">Mise à niveau vers la dernière console de surveillance NetApp Kubernetes</block>
-  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">Désinstaller</block>
-  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">Arrêt et démarrage de l'opérateur de surveillance NetApp Kubernetes</block>
-  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">Pour arrêter l'opérateur de surveillance NetApp Kubernetes :</block>
-  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">Pour démarrer l'opérateur de surveillance NetApp Kubernetes :</block>
-  <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">Désinstallation</block>
   <block id="f6df033900c8ae9dec99b302ab258469" category="admonition">Si vous exécutez un agent Kubernetes basé sur des scripts précédemment installé, vous devez <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> À l'opérateur de surveillance NetApp Kubernetes.</block>
   <block id="cef7a1ce5721683d9793e2eee4d38e9c" category="section-title">Pour supprimer l'agent obsolète basé sur le script</block>
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">Notez que ces commandes utilisent l'espace de noms par défaut « ci-monitoring ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.</block>
   <block id="0b17bce222385cebd477477b188e6434" category="paragraph">Pour désinstaller l'agent basé sur un script sur Kubernetes (par exemple, lors de la mise à niveau vers l'opérateur de surveillance NetApp Kubernetes), procédez comme suit :</block>
-  <block id="7a8d7f509007f2970254571be4a339db" category="paragraph">Notez que l'espace de noms par défaut pour l'opérateur de surveillance NetApp Kubernetes est « surveillance netapp ». Si vous avez défini votre propre espace de noms, remplacez-le dans ces commandes et tous les fichiers suivants.</block>
-  <block id="12deeaac5f633c54b730f8c247dbf7e0" category="paragraph">Les nouvelles versions de l'opérateur de surveillance peuvent être désinstallées à l'aide des commandes suivantes :</block>
-  <block id="97e76f0c81cc1c26b3d8ffe0d972c5af" category="paragraph">Si la première commande renvoie “aucune ressource trouvée”, suivez les instructions ci-dessous pour désinstaller les anciennes versions de l’opérateur de surveillance.</block>
-  <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">Exécutez chacune des commandes suivantes dans l'ordre indiqué. Selon votre installation actuelle, certaines de ces commandes peuvent renvoyer des messages "objet non trouvé". Ces messages peuvent être ignorés en toute sécurité.</block>
-  <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">Si une contrainte de contexte de sécurité a été créée manuellement pour une installation Telegraf basée sur un script :</block>
-  <block id="a945216a5c61e628c867b8948c797454" category="section-title">À propos des indicateurs Kube-State</block>
-  <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">L'opérateur de surveillance NetApp Kubernetes installe automatiquement des metrics kube-State. Aucune interaction n'est nécessaire.</block>
-  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Compteurs indicateurs d'état kube</block>
-  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">Utilisez les liens suivants pour accéder aux informations de ces compteurs de mesures d'état kube :</block>
-  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">Metrics de ConfigMap</block>
-  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
-  <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">Indicateurs de démonstration</block>
-  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
-  <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">Indicateurs de déploiement</block>
-  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
-  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">Mesures d'entrée</block>
-  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
-  <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">Mesures de l'espace de noms</block>
-  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
-  <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">Metrics de nœud</block>
-  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
-  <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">Métriques de volume persistant</block>
-  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
-  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">Mesures de demande de volume persistant</block>
-  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
-  <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Metrics de pod</block>
-  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
-  <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">Metrics de réplicaet</block>
-  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
-  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">Mesures secrètes</block>
-  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
-  <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">Metrics de services</block>
-  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
-  <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">Metrics StatefulSet</block>
-  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
-  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour effectuer une opération de téléchargement uniquement (par opposition au téléchargement et à l'installation par défaut), ces utilisateurs peuvent modifier la commande d'installation de l'agent obtenue à partir de l'interface utilisateur et supprimer l'option "installation" de fin.</block>
   <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">Voici la procédure à suivre :</block>
   <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">Copiez l'extrait de code Agent installer comme indiqué.</block>
   <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">Au lieu de coller le fragment dans une fenêtre de commande, collez-le dans un éditeur de texte.</block>
-  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">Supprimez le "--install" de la commande.</block>
   <block id="34e3334224025c0302c21ab69b535b6e" category="list-text">Copiez la commande entière à partir de l'éditeur de texte.</block>
   <block id="d2a9c05594a3807487efd306f7e06ff5" category="list-text">Ensuite, collez-la dans votre fenêtre de commande (dans un répertoire de travail) et exécutez-la.</block>
   <block id="051ab73b0c77a3e60cd6e6de57fc9319" category="list-text">Téléchargement et installation (par défaut) :</block>
   <block id="a3ef489d553e0422ea8926faf65bf77a" category="list-text">Téléchargement uniquement :</block>
-  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">La commande de téléchargement uniquement télécharge tous les artefacts requis de Cloud Insights vers le répertoire de travail. Les artefacts incluent, mais ne se limitent pas aux éléments suivants :</block>
   <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">un script d'installation</block>
   <block id="b015398c226e1e3576258432ece31819" category="list-text">un fichier d'environnement</block>
   <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">Fichiers YAML</block>
-  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">un fichier de somme de contrôle signé (sha256.signé)</block>
   <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">Un fichier PEM (netapp_cert.pem) pour la vérification de la signature</block>
   <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">Le script d'installation, le fichier d'environnement et les fichiers YAML peuvent être vérifiés à l'aide d'une inspection visuelle.</block>
   <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">Le fichier PEM peut être vérifié en confirmant son empreinte digitale comme suit :</block>
   <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">Plus spécifiquement,</block>
   <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">Le fichier de somme de contrôle signé peut être vérifié à l'aide du fichier PEM :</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">Une fois tous les artefacts vérifiés de manière satisfaisante, l'installation de l'agent peut être lancée en exécutant :</block>
-  <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">Quelques points à essayer si vous rencontrez des problèmes lors de la configuration de l'opérateur de surveillance NetApp Kubernetes :</block>
-  <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">Je ne vois pas de lien hypertexte/connexion entre mon volume persistant Kubernetes et le périphérique de stockage back-end correspondant. Mon volume persistant Kubernetes est configuré en utilisant le nom d'hôte du serveur de stockage.</block>
-  <block id="31374f026fd34f38c1768e8bcae58183" category="cell">Procédez comme suit pour désinstaller l'agent Telegraf existant, puis réinstaller l'agent Telegraf le plus récent. Vous devez utiliser Telegraf version 2.0 ou ultérieure et le stockage en cluster Kubernetes doit être activement surveillé par Cloud Insights.</block>
-  <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">Je vois des messages dans les journaux qui ressemblent aux messages suivants : E0901 15:21:39.962145 1 réflecteur.Go:178] k8s.io/kube-State-metrics/interne/magasin/constructeur.Go:352 : échec de la liste *v1.MutatingWebhookConfiguration : le serveur n'a pas pu trouver la ressource demandée E0901 15 178:21.43.168161.0.352.0.0.0.0.1.0.0.0.1.0.0.0.0.0.0.1.0.0.1.0.0.1.0.1.0.0.1.1.0.0.0.1.0.0.1.0.0.0.0.</block>
-  <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">Ces messages peuvent se produire si vous exécutez des metrics d'état kube version 2.0.0 ou supérieure avec les versions Kubernetes inférieures à 1.20. Pour obtenir la version Kubernetes : _kubectl version_ pour obtenir la version kube-state-metrics : _kubectl get deployment/kube-state-metrics -o jsonpath='{..image}'_ pour éviter que ces messages se produisent, les utilisateurs peuvent modifier leur déploiement de metrics kube-state-metrics pour désactiver les baux suivants : _hookingwebconfigurations_. Ressources=certificats,demandes persistantes,configmaps,cronjobs,demonets, déploiements,noeuds finaux,horizontalepodpodscalers,ingresources,details,resuts,undats,depositionsstatees,depositigmats,defiees,resottes,depositionssecuts,defiees,dees,depositionunedats,delimantees,delimantees,deficedats,dees,delimantees,delimantees,delimantees,deficedats,delimantees,deficedats,delimantees,deficedats,deficedats,dees,delimantees,delimantees,dees,delimantees,deficedats,dees,delimantees,delimantees,delimantees,delimantees,de vaillewebconfiguration,v'</block>
-  <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">Je vois des messages d'erreur de Telegraf ressemblant aux messages suivants, mais Telegraf démarre et s'exécute : oct 11 14:23:41 ip-172-31-39-47 systemd[1] : lancé l'agent serveur piloté par des plug-ins pour signaler des mesures dans InfluxDB. Oct 11 14:23:41 ip-172-31-39-47 telegraf[1827] : heure="2021-10-11T14:23:41Z" level=erreur msg="Impossible de créer le répertoire de cache. /etc/telegraf/.cache/flocon de neige, err: mkdir /etc/telegraf/.ca che: permission refusée. Ignoré\n » func="powflocon.(*defaultLogger).Errorf" file="log.Go:120" oct 11 14:23:41 ip-172-31-39-47 telegraf[1827]: Time="2021-10-11T14:23:41Z" level=error msg="failed to open. Ignoré. Ouvrez /etc/telegraf/.cache/flocon de neige/ocsp_Response_cache.json : aucun fichier ou répertoire\n » func=« gosflocon.(*defaultLogger).Errorf » fichier=« log.Go:120 » oct 11 14:23:41 ip-172-31-39-47 telegraf[1827 23] : 2021-10 T1141114:! Démarrage de Telegraf 1.19.3</block>
-  <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">Article GitHub</block>
-  <block id="8f176f657f418586c2a4828045ab0c37" category="cell">Il s'agit d'un problème connu. Reportez-vous à la section <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> pour en savoir plus. Tant que Telegraf est opérationnel, les utilisateurs peuvent ignorer ces messages d'erreur.</block>
-  <block id="9aab00e938cede2932654042bc507309" category="cell">Sur Kubernetes, mes coffee pad(s) Telegraf ont signalé l'erreur suivante : "erreur lors du traitement des informations de mountstats : échec de l'ouverture du fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Ouvrir /hostfs/proc/1/mountstats: Permission refusée"</block>
-  <block id="f997e79142f159c33823b9deeab809eb" category="cell">Sur Kubernetes, mon pod Telegraf ReplicaSet signale l'erreur suivante : [inputs.prometheus] erreur dans le plug-in : impossible de charger keypair /etc/kubernetes/pki/ETcd/Server.crt:/etc/kubernetes/pki/ETcd/Server.key : ouvrir /etc/kubernetes/pki/ETcd/Server.crt : aucun fichier ni répertoire</block>
-  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Le pod Télégraf ReplicaSet est conçu pour s'exécuter sur un nœud désigné comme maître ou pour ETCD. Si le pod ReplicaSet n'est pas en cours d'exécution sur l'un de ces nœuds, vous obtenez ces erreurs. Vérifiez si vos nœuds maître/ETCD ont des astuces sur eux. S'ils le font, ajoutez les tolérances nécessaires à Telegraf ReplicaSet, telegraf-RS. Par exemple, modifiez le ReplicaSet... kubectl edit RS telegraf-RS ...et ajoutez les tolérances appropriées à la spécification. Redémarrez ensuite le pod ReplicaSet.</block>
-  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">J'ai un environnement PSP/PSA. Cela affecte-t-il mon opérateur de surveillance ?</block>
-  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">Si votre cluster Kubernetes est exécuté avec une politique de sécurité Pod (PSP) ou un système d'admission à la sécurité Pod (PSA), vous devez effectuer une mise à niveau vers le dernier opérateur de surveillance NetApp Kubernetes. Procédez comme suit pour effectuer la mise à niveau vers le NKMO actuel avec la prise en charge de PSP/PSA : 1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> L'opérateur de surveillance précédent : kubectl delete agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-gestionnaire-rôle agent-proxy-rôle agent-metrics-lecteur kubectl delete clusterleagent-responsable-roleagent-proxy-proxy-roleagent-Reliure-agent-proxy--agent-Reliure-agent-agent-proxy-rogle2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> la dernière version du moniteur.</block>
-  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">J'ai rencontré des problèmes lors de la tentative de déploiement du NKMO, et j'ai utilisé PSP/PSA.</block>
-  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1. Modifiez l'agent à l'aide de la commande suivante : kubectl -n &lt;name-space&gt; edit agent 2. Marquez « Security-policy-enabled » comme « false ». Cela désactive les stratégies de sécurité Pod et l'admission de sécurité Pod et permet au NKMO de se déployer. Confirmez en utilisant les commandes suivantes : kubectl get psp (devrait afficher Pod Security Policy supprimé) kubectl get all -n &lt;namespace&gt; | grep -i psp (doit montrer que rien n'a été trouvé)</block>
-  <block id="59e3026f71d01a624108642cdb778ebd" category="cell">Erreurs « ImagePullBackoff » détectées</block>
-  <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">En savoir plus</block>
-  <block id="d18743173cd6691e1637fd7bb6299057" category="cell">Ces erreurs peuvent se produire si vous disposez d'un référentiel docker personnalisé ou privé et si vous n'avez pas encore configuré l'opérateur de surveillance NetApp Kubernetes pour le reconnaître correctement. <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> a propos de la configuration pour repo personnalisé/privé.</block>
   <block id="81c7383b650665d348221da3b0b08e7f" category="summary">Cloud Insights dispose de didacticiels pour vous montrer comment effectuer de nombreuses tâches.</block>
   <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="doc">Tutoriels de fonctionnalités</block>
   <block id="66dc6c98ce15c9bec5a1bac245e6f799" category="paragraph">Cloud Insights est doté de fonctionnalités utiles qui vous permettent de trouver rapidement et facilement des données, de résoudre des problèmes et d'obtenir des informations sur l'environnement de votre entreprise. Trouvez facilement des données grâce à des requêtes puissantes, visualisez des données dans des tableaux de bord et envoyez des alertes par e-mail pour les seuils de données que vous définissez.</block>
@@ -9550,7 +9482,6 @@
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">Les données exportées reflètent le filtrage, les colonnes et les noms de colonne affichés.</block>
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*cette page*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">Cette page est un stub. Pour obtenir la documentation Unisphere la plus récente, reportez-vous à la section <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>.</block>
-  <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Pour supprimer l'opérateur de surveillance NetApp Kubernetes</block>
   <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">Dans le menu Cloud Insights, cliquez sur *gérer &gt; applications*.</block>
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">La boîte de dialogue Ajouter une application s'affiche.</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Si vous désinstallez une unité d'acquisition *Windows* :</block>
@@ -9732,8 +9663,6 @@
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">J'ai un problème avec mon déploiement d'opérateur de surveillance, et la documentation actuelle ne m'aide pas à le résoudre.</block>
-  <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de support technique.</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">Le tableau de bord *Overview* affiche des informations utiles telles que le nombre de clusters dans votre environnement avec leurs pourcentages de capacité et de performances globaux. Des données prédictives concernant le nombre de jours prévus jusqu'à ce que la capacité de stockage ou les performances manque d'espace s'affichent. En outre, si des contrôleurs de votre infrastructure fonctionnent avec leur processeur à plus de 65 %, ce qui risque de compromettre votre cluster en cas de basculement, ONTAP Essentials les présente comme des contrôleurs actifs.</block>
   <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">Question</block>
@@ -10042,14 +9971,6 @@
   <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">Sélection d'une sortie de rapport</block>
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">La sécurité des workloads de stockage n'est pas disponible dans l'édition fédérale de Cloud Insights.</block>
-  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">Les pods net-observateur (Workload Map) dans l'espace de noms NKMO se trouvent dans CrashLoopBackOff</block>
-  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">Ces pods correspondent au collecteur de données Workload Map pour l'observabilité réseau. Essayez : • Vérifiez les journaux de l'un des modules pour confirmer la version minimale du noyau. Par exemple : --- {"ci-tenant-ID":"votre-tenant-ID","collectionneur-cluster":"votre-k8s-cluster-name","Environment":"prod","level":"error","msg":"échec de la validation. Raison : la version 3.10.0 du noyau est inférieure à la version minimale du noyau de 4.18.0","Time":"2022-11-09T08:23:08Z"} ---- • les pods Net-observateur requièrent que la version du noyau Linux soit au moins 4.18.0. Vérifiez la version du noyau à l'aide de la commande “uname -r” et assurez-vous qu'ils sont &gt;= 4.18.0</block>
-  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">Les pods d'observateur-réseau dans l'espace de noms NKMO sont dans CrashLoopBackOff dans l'environnement OpenShift 4</block>
-  <block id="c16b414538506d32ed8a234fa2331767" category="cell">Cette opération n'est pas prise en charge actuellement. Attendez-vous à ce que le support soit ajouté dans une future mise à jour.</block>
-  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Les pods s'exécutent dans l'espace de noms NKMO (par défaut : surveillance netapp), mais aucune donnée n'est affichée dans l'interface pour la carte des workloads ou les metrics Kubernetes dans les requêtes</block>
-  <block id="b301a7b156c241fb466de1bca776811c" category="cell">Vérifiez le réglage de l'heure sur les nœuds du cluster K8S. Pour un audit et un reporting précis des données, il est vivement recommandé de synchroniser l'heure sur l'ordinateur de l'agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol).</block>
-  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Certains des modules net-observateur de l'espace de noms NKMO sont à l'état en attente</block>
-  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-observateur est un DemonSet et exécute un pod dans chaque nœud du cluster k8s. • Notez le pod qui est à l'état en attente et vérifiez s'il rencontre un problème de ressource pour le processeur ou la mémoire. Assurez-vous que la mémoire et le processeur requis sont disponibles dans le nœud.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">Entrant</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirectionnel entre ONTAP et Workload Security. L'agent commande ping les LIFs du SVM.</block>
@@ -10217,18 +10138,6 @@
   <block id="d5461aa4ef1df0b08d1c023caca59a6e" category="list-text">Activé - hors ligne</block>
   <block id="3a7ceac4689e5c9ea84be781707cd148" category="list-text">Activé - en ligne</block>
   <block id="be85cefb4673c1f486c73de818be2056" category="list-text">Erreur - la clé d'API ne dispose pas des autorisations suffisantes</block>
-  <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Déterminez si une configuration d'agentConfiguration existe avec l'opérateur existant (si votre espace de noms n'est pas le _netapp-monitoring_ par défaut, remplacez l'espace de noms approprié) :</block>
-  <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Si une configuration d'agentConfiguration existe :</block>
-  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> Dernier opérateur par rapport à l'opérateur existant.</block>
-  <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">extraction des dernières images du conteneur</block>
-  <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">Assurez-vous de l'être <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> si vous utilisez un référentiel personnalisé.</block>
-  <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">Si AgentConfiguration n'existe pas :</block>
-  <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">Notez le nom de votre cluster tel que reconnu par Cloud Insights (si votre espace de noms n'est pas la surveillance netapp par défaut, remplacez l'espace de noms approprié) :</block>
-  <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">Créer une sauvegarde de l'opérateur existant (si votre namespace n'est pas la surveillance netapp par défaut, remplacez le namespace approprié) :</block>
-  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> L'opérateur existant.</block>
-  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> Le dernier opérateur.</block>
-  <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">Utilisez le même nom de cluster.</block>
-  <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">Après avoir téléchargé les derniers fichiers Operator YAML, porter toutes les personnalisations trouvées dans agent_backup.yaml à l'opérateur-config.yaml téléchargé avant le déploiement.</block>
   <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">Modification des notifications pour ONTAP</block>
   <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">Vous pouvez modifier les notifications pour les clusters ONTAP en sélectionnant _Modifier les notifications_ dans le menu déroulant situé en haut à droite de la page d'accueil stockage.</block>
   <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP Modifier les notifications</block>
@@ -10339,8 +10248,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">J'ai à la fois un quota souple et un quota matériel définis manuellement dans le même qtree, mais la capacité totale affichée est le quota dur ; est-ce correct ?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Oui, si un quota matériel est spécifié, il s'affichera comme la capacité totale.</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Problèmes de connexion</block>
-  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Je vois ce qui suit dans mes journaux immédiatement après l'installation de NetApp Kubernetes Monitoring Operator : [inputs.prometheus] erreur dans le plug-in : erreur lors de la demande HTTP à<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Obtenez<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> dial tcp: lookup kube-state-metrics.&lt;namespace&gt;.svc.cluster.local: pas d'hôte de ce type</block>
-  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Ce message n'apparaît généralement que lorsqu'un nouvel opérateur est installé et que le module _telegraf-RS_ est en marche avant que le module _ksm_ ne soit en marche. Ces messages doivent s'arrêter une fois que tous les modules sont en cours d'exécution.</block>
   <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">Recherche et filtrage</block>
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">De même, la saisie d'une chaîne dans le champ _find_ met en surbrillance les charges de travail correspondantes.</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">la saisie dans la zone rechercher met en évidence les workloads</block>
@@ -10441,7 +10348,6 @@ Utilisez une recherche basée sur des préfixes pour voir toutes les activités 
 Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet toutes les activités.</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - vous serez mis en relation avec le personnel d'assistance NetApp pour obtenir de l'aide (en semaine seulement). Le chat est disponible dans l'option de menu *aide &gt; Chat en direct* dans le coin supérieur droit de n'importe quel écran Cloud Insights.</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">Intervalle de collecte des metrics, en secondes (max=60 s)</block>
-  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, voir :<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>.</block>
   <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM DS4000. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour ce bien est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
   <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.</block>
   <block id="a7c522a068ca75556dee476101135cc4" category="doc">Installation manuelle du logiciel de l'unité d'acquisition</block>
@@ -10499,8 +10405,6 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Dans Cloud Insights, accédez à *Admin &gt; collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*. Choisissez _Restart_ dans le menu "trois points" à droite de l'au.</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">Le <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> l'installation et la configuration peuvent être personnalisées.</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Options de l'opérateur de surveillance</block>
-  <block id="02230bab9788e4843408e124331bb1ca" category="cell">Je ne vois aucun indicateur collecté pour les cronjobs Kubernetes qui existent dans mon cluster.</block>
-  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Vérifiez votre version Kubernetes (c'est-à-dire<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  S'il est v1.20.x ou inférieur, il s'agit d'une limitation attendue.  La version de kube-state-metrics déployée avec l'opérateur de surveillance Kubernetes NetApp ne prend en charge que v1.cronjob.  Avec Kubernetes 1.20.x et versions antérieures, la ressource cronjob est à v1beta.cronjob.  Par conséquent, les indicateurs d'état kube ne peuvent pas trouver la ressource cronjob.</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Limite CPU pour le déploiement des indicateurs d'état kube</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">Limite MEM pour le déploiement de mesures kube-state</block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">Icônes d'infrastructure :</block>
@@ -10594,7 +10498,6 @@ Se (Security Enhanced) Linux n'est pas pris en charge.</block>
   <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">Les démonstrateurs _telegraf_, _fluent-bit_ et _net-observateur_ doivent planifier un pod sur chaque nœud de votre cluster afin de collecter correctement les données sur tous les nœuds. L'opérateur a été configuré pour tolérer certains *taints* bien connus. Si vous avez configuré des fichiers d'accès personnalisés sur vos nœuds, empêchant ainsi les modules de s'exécuter sur chaque nœud, vous pouvez créer une *tolérance* pour ces fichiers d'accès <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>. Si vous avez appliqué des rejets personnalisés à tous les nœuds de votre cluster, vous devez également ajouter les tolérances nécessaires au déploiement de l'opérateur pour permettre la planification et l'exécution du pod opérateur.</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">Teintes et tolérances</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">En savoir plus sur Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>.</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ».</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Collecte de metrics Docker. Par défaut, ce paramètre est défini sur true et les metrics docker seront collectées pour les déploiements k8s sur site basés sur docker. Pour désactiver la collection de mesures docker, définissez cette option sur false.</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">Tolérances de type dsTolerations</block>
@@ -10618,25 +10521,6 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">L'agrégation, la sélection d'unité, la mise en forme conditionnelle et le renommage de colonne sont parmi les fonctionnalités les plus utiles d'un widget de tableau de bord, et ces mêmes fonctionnalités sont désormais disponibles pour <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Si vous utilisez un proxy pour l'une ou l'autre de ces opérations, ou pour les deux, vous NetApp devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Cloud Insights. Par exemple, à partir des serveurs/machines virtuelles à partir desquels vous souhaitez installer l'opérateur, vous devez pouvoir accéder à Cloud Insights et télécharger des binaires à partir de Cloud Insights.</block>
-  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
-
- E ! [Agent] erreur lors de l'écriture dans les sorties.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Délai de contexte dépassé (client.Timeout dépassé lors de l'attente des en-têtes)</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">Modifiez chaque fichier de configuration Telegraf (c.-à-d. /etc/telegraf/telegraf.d/*.conf) et augmentez le délai d'expiration des plugins de sortie Telegraf.  Par exemple, dans chaque fichier .conf, remplacez toutes les instances de...
-
-[[outputs.http]]
-...
-timeout = « 5s »
-...
-
-
-...avec les éléments suivants :
-
-[[outputs.http]]
-...
-timeout = « 10 s »
-...
-
-Redémarrez ensuite Telegraf.</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">Reportez-vous aux pages swagger pour obtenir des exemples spécifiques à l'API que vous souhaitez utiliser.</block>
   <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">Mesures de puissance ONTAP</block>
   <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">Plusieurs modèles ONTAP fournissent des mesures de puissance pour Cloud Insights qui peuvent être utilisées à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.</block>
@@ -10833,23 +10717,6 @@ g) Ouvrez le pare-feu dans ONTAP, afin que ONTAP puisse connecter le boîtier de
 8. Vérifiez que le port 7 est ouvert.
 
 9. Si aucune des réponses ci-dessus ne résout le problème, ouvrez un dossier avec <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> pour obtenir de l'aide.</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">Modifiez la section netapp-monitoring-configuration dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.
-
-REMARQUE : si vous utilisez l'édition fédérale de Cloud Insights, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter de metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut ; pour les désactiver, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_ :
-
-...
-spéc. :
-...
-telegraf :
-    ...
-     - nom: docker
-            mode run :
-              - DemonSet
-            substitutions :
-              - CLÉ : DOCKER_UNIX_SOCK_PLACEHOLDER
-                valeur : unix:///run/docker.sock
-    ...
-...</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">Modèles et versions pris en charge par ce collecteur de données :</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
@@ -12477,4 +12344,62 @@ V9.2.4.2</block>
   <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">La _Légende_ sous le tableau a aussi quelques surprises. Pour chaque résultat (basé sur le filtre actuel) affiché dans la légende, vous avez la possibilité d'afficher uniquement les résultats pour cette ligne (Ajouter un filtre) ou d'afficher les résultats AUTRES QUE pour cette ligne (Ajouter un filtre d'exclusion). Le graphique et la liste des entrées du journal sont mis à jour pour afficher les résultats en fonction de votre sélection.  Pour supprimer ce filtre, ouvrez de nouveau la légende et sélectionnez [X] pour effacer le filtre de légende.</block>
   <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">Recherche avancée Legen montrant "Ajouter un filtre" pour le premier résultat</block>
   <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c22968bfe7941ac13825abafc2a7f5b1" category="list-text">Entrez un nom de cluster et un espace de noms uniques. Si vous l'êtes <block ref="0aef99036de6ea3b65be8c21025bb151" category="inline-xref-macro-rx"></block> Depuis un opérateur Kubernetes précédent, utilisez le même nom de cluster et le même espace de noms.</block>
+  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">Sauvegarder les configurations existantes :</block>
+  <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">Réglage de l'opérateur</block>
+  <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées. Pour obtenir des instructions et des listes des variables que vous pouvez régler, reportez-vous au fichier README fourni avec le package d'installation. Après avoir installé l'opérateur, utilisez la commande suivante pour afficher le fichier README :</block>
+  <block id="bc6b270b9094337edca8a85819407d18" category="admonition">Le réglage de l'opérateur n'est pas disponible dans l'édition fédérale Cloud Insights</block>
+  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">Vous pouvez ajuster l'opérateur de surveillance NetApp Kubernetes pour des performances optimales en ajustant certaines variables pour les ressources personnalisées.  Voir les tableaux suivants pour les variables que vous pouvez définir.</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">Pour modifier ces valeurs, modifiez la demande de modification de l'agent à l'aide de la commande suivante (en remplaçant &lt;namespace&gt; par votre espace de noms) :</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">La spécification CR suit le format :</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Les éléments marqués « oui » pour « inclus dans la demande de modification par défaut » seront déjà présents dans le CR de l'agent et se trouvent sous leur plugin respectif. Les articles marqués « non » doivent être ajoutés manuellement en suivant les exemples fournis par les substitutions par défaut incluses.</block>
+  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">Variables liées aux ressources</block>
+  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">Voir<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block>	Pour plus d'informations sur les ressources Kubernetes.</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">Nom de variable</block>
+  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">Nom du plug-in</block>
+  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">Inclus dans la CR par défaut</block>
+  <block id="b4706783c74b583b849dec44244e0769" category="cell">DS_CPU_LIMITS_PLACEHOLDER</block>
+  <block id="a6105c0a611b41b08f1209506350279e" category="cell">oui</block>
+  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Limite du processeur Kubernetes pour telegraf-ds</block>
+  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_LIMITS_PLACEHOLDER</block>
+  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">Limite Kubernetes mem pour telegraf-ds</block>
+  <block id="6787619d810a62301cfe3986961a1d04" category="cell">DS_CPU_REQUEST_PLACEHOLDER</block>
+  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Demandes de processeurs Kubernetes pour telegraf-ds</block>
+  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_REQUEST_PLACEHOLDER</block>
+  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Demandes de mémoire Kubernetes pour telegraf-ds</block>
+  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">RS_CPU_LIMITS_PLACEHOLDER</block>
+  <block id="b2099247c65bb590909309709da41854" category="cell">Limite du processeur Kubernetes pour telegraf-RS.</block>
+  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">RS_MEM_LIMITS_PLACEHOLDER</block>
+  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">Limite Kubernetes mem pour telegraf-RS</block>
+  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">PARAMÈTRE FICTIF_DEMANDE_CPU_RS</block>
+  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Demandes de processeurs Kubernetes pour telegraf-RS</block>
+  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">RS_MEM_REQUEST_PLACEHOLDER</block>
+  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Demandes de mémoire Kubernetes pour telegraf-RS</block>
+  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_REQUEST_PLACEHOLDER :</block>
+  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">ksm</block>
+  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Demandes de processeur Kubernetes pour le déploiement de metrics d'état kube</block>
+  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_REQUEST_PLACEHOLDER :</block>
+  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">Variables liées à Telegraf</block>
+  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">Voir<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> pour plus d'informations sur les variables telegraf.</block>
+  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">Emplacement réservé</block>
+  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">COLLECTION_INTERVAL_PLACEHOLDER</block>
+  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">non</block>
+  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">(Définit l'intervalle telegraf, l'intervalle de type) : le temps par défaut telegraf attend entre les entrées de tous les plugins. Les unités de temps valides sont les ns, nous (ou µs), ms, s, m, h.</block>
+  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">ROUND_INTERVAL_PLACEHOLDER</block>
+  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">(définit telegraf round_interval, type booléen) collecte des mesures sur plusieurs intervalles</block>
+  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">MÉTRIQUE_BATCH_SIZE_PLACEHOLDER</block>
+  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">(définit telegraf metric_batch_size, type int) le nombre maximum d'enregistrements pour une sortie telegraf écrit dans un batch</block>
+  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">PARAMÈTRE_BUFFER_LIMIT_PLACEHOLDER</block>
+  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">(définit telegraf metric_buffer_limit, type int) le nombre maximum d'enregistrements pour une sortie telegraf va mettre en cache en attente d'une écriture réussie</block>
+  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">COLLECTION_GIGUE_PLACEHOLDER</block>
+  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">(Définit telegraf collection_gigue, type interval) : chaque plug-in attend une durée aléatoire entre l'heure de collecte planifiée et cette heure + collection_gigue avant de collecter les entrées</block>
+  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">PARAMÈTRE FICTIF DE PRÉCISION</block>
+  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">(Définit la précision de télégraf, intervalle de type) : les mesures collectées sont arrondies à la précision spécifiée, lorsque la précision définie sur « 0 » est définie par les unités spécifiées par intervalle</block>
+  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">FLUSH_INTERVAL_PLACEHOLDER</block>
+  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">(Définit telegraf flush_interval, type interval) : durée par défaut, telegraf attend entre les sorties d'écriture.</block>
+  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">FLUSH_GIGUE_PLACEHOLDER</block>
+  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">(Définit telegraf flush_gigue, intervalle de type) : chaque sortie attend une durée aléatoire entre la durée d'écriture programmée et cette durée + flush_gigue avant d'écrire les sorties</block>
+  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Variables diverses</block>
+  <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLACEHOLDER</block>
+  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k »</block>
 </blocks>
