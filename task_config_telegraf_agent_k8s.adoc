@@ -19,18 +19,10 @@ summary: 'Cloud Insights prend en charge Telegraf en tant qu"agent pour collecte
 
 
 [role="lead"]
-Cloud Insights utilise différents composants, notamment link:https://docs.fluentbit.io/manual["Bit fluide"] et link:https://docs.influxdata.com/telegraf/["Télégraf"], Pour la collecte de données Kubernetes. Telegraf est un agent serveur piloté par plug-in qui peut être utilisé pour collecter et signaler des mesures, des événements et des journaux. Les plug-ins d'entrée sont utilisés pour recueillir les informations souhaitées dans l'agent en accédant directement au système/système d'exploitation, en appelant des API tierces ou en écoutant des flux configurés (c.-à-d. Kafka, statsD, etc.). Les plug-ins de sortie sont utilisés pour envoyer les mesures, les événements et les journaux collectés depuis l'agent vers Cloud Insights.
+Cloud Insights propose *l'opérateur de surveillance NetApp Kubernetes* (NKMO) pour la collection Kubernetes. Lorsque vous ajoutez un collecteur de données, il vous suffit de choisir la vignette « Kubernetes ».
 
 
 toc::[]
-Cloud Insights propose *l'opérateur de surveillance NetApp Kubernetes* (NKMO) pour la collection Kubernetes. Lorsque vous ajoutez un collecteur de données, il vous suffit de choisir la vignette « Kubernetes ».
-
-image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
-
-Vous trouverez ci-dessous une illustration de haut niveau montrant où se trouve l'opérateur dans votre environnement. Selon votre environnement, _Proxy Server_ peut être requis ou non.
-
-image:CI_Diagram_with_NKMO.png["Carte générale montrant les données NKMO résidant dans le cluster Kubernetes, avec des flèches indiquant comment les données sont transmises au cluster depuis les hôtes et le serveur proxy, toutes ces données étant transmises à Cloud Insights"]
-
 L'opérateur (NKMO) et les collecteurs de données sont téléchargés depuis le registre Docker de Cloud Insights. Une fois installé, NKMO gère ensuite tous les collecteurs compatibles avec l'opérateur déployés dans les nœuds du cluster Kubernetes pour acquérir des données, notamment la gestion du cycle de vie de ces collecteurs. Après cette chaîne, les données sont acquises auprès des collecteurs et envoyées à Cloud Insights.
 
 
