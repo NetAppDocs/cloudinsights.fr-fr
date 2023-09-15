@@ -25,6 +25,71 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Septembre 2023
+
+
+
+=== Trouvez facilement ce que vous voulez dans les journaux
+
+La requête de journal (*observabilité > requêtes de journal > +Nouvelle requête de journal*) inclut un certain nombre de link:concept_log_explorer.html#advanced-filtering["améliorations"] pour faciliter l'exploration des journaux et obtenir des informations plus utiles.
+
+
+
+==== Inclure/exclure
+
+Lors du filtrage d'une valeur, vous pouvez facilement choisir d'inclure *les résultats* ou *exclure* correspondant au filtre. La sélection de l'option « exclure » crée un filtre « NON <value> ». Vous pouvez combiner les valeurs inclure et exclure dans un seul filtre.
+
+image:Log_Query_Exclude_Filter.png["Filtre affichant le bouton radio exclure"]
+
+
+
+==== Requête avancée
+
+*Advanced Querying* vous donne la possibilité de créer des filtres "forme libre", combinant ou excluant des valeurs en utilisant ET, PAS, OU, des caractères génériques, etc
+
+image:Log_Advanced_Query_Example.png["Exemple de requête de journal illustrant LES fonctions ET, et NON et OU"]
+
+Les options « Filtrer par » et « requête avancée » sont « ET « td » ensemble pour former une seule requête. Les résultats sont affichés dans la liste de résultats et dans le graphique.
+
+
+
+==== Regroupement dans le graphique
+
+Lorsque vous sélectionnez un attribut de journal dans *Grouper par*, la liste et le graphique affichent les résultats du filtre actuel. Dans le graphique, colonnes regroupées en couleurs. Passez le curseur sur une colonne du graphique pour afficher des détails sur les entrées spécifiques, similaires aux informations générales affichées lorsque vous développez la légende du graphique.  Dans la légende, vous pouvez également choisir de définir un filtre d'inclusion ou d'exclusion pour un regroupement spécifique.
+
+image:Log_Query_Group_By_Chart.png["Log Query Group par exemple montrant les colonnes empilées dans le graphique"]
+
+
+
+=== Panneau de détails du journal « flottant »
+
+Lors de l'exploration des journaux à l'aide de la requête de journal, la sélection d'une entrée dans la liste ouvre un panneau de détails pour cette entrée. Vous pouvez maintenant choisir d'afficher ce panneau coulissant « flottant » (c'est-à-dire affiché sur le reste de l'écran) ou « en page » (c'est-à-dire affiché comme son propre cadre dans la page). Pour basculer entre ces vues, sélectionnez le bouton « In page / Floating » dans le coin supérieur droit du panneau.
+
+image:Log_Query_Floating_Detail_Panel.png["Panneau coulissant « In-page » avec le bouton mis en surbrillance"]
+
+
+
+=== Réduire le menu
+
+Vous pouvez réduire le menu de navigation Cloud Insights de gauche en sélectionnant le bouton « réduire » sous le menu. Lorsque le menu est réduit, passez le curseur sur une icône pour voir la section qui s'ouvre ; sélectionnez l'icône pour ouvrir le menu et accéder directement à cette section.
+
+image:CI_Menu_Minimize_Button.png["Réduisez le menu"]
+
+
+
+=== Améliorations du Data Collector
+
+Cloud Insights a facilité l'affichage et la recherche des informations du collecteur de données :
+
+* *Le traitement des listes de collecteurs de données* est plus efficace, ce qui signifie que le temps nécessaire pour afficher et naviguer dans ces listes est considérablement réduit. Si vous avez un grand environnement avec de nombreux collecteurs de données, vous verrez une amélioration significative en listant vos collecteurs de données.
+
+
+* La *Data Collector support Matrix* est passée d'un fichier .PDF à une page .HTML, plus rapide à naviguer et plus facile à entretenir. Découvrez la nouvelle matrice ici : https://docs.netapp.com/us-en/cloudinsights/reference_data_collector_support_matrix.html[]
+
+
+'''
+
+
 == Août 2023
 
 
