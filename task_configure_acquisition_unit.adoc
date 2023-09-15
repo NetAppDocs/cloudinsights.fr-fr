@@ -200,7 +200,10 @@ Si vous désinstallez une unité d'acquisition *Linux* :
 
 
 NOTE: Vous ne pouvez pas supprimer une unité d'acquisition (au) avec des collecteurs de données connectés. Déplacez tous les collecteurs de données de l'au vers un autre au (modifiez le collecteur et sélectionnez simplement un au différent) avant de supprimer l'au d'origine.
-'''
+
+Une unité d'acquisition avec une étoile à côté de celle-ci est utilisée pour la résolution de l'appareil. Avant de supprimer cette au, vous devez sélectionner un autre au à utiliser pour la résolution du périphérique. Passez le curseur sur un autre au et ouvrez le menu « trois points » pour sélectionner « utiliser pour la résolution du périphérique ».
+
+image:AU_for_Device_Resolution.png["Au utilisé pour la résolution du périphérique"]
 
 
 

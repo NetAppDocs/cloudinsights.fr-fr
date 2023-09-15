@@ -12394,6 +12394,8 @@ V9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Variables diverses</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLACEHOLDER</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k »</block>
-  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">Vous ne pouvez pas supprimer une unité d'acquisition (au) avec des collecteurs de données connectés. Déplacez tous les collecteurs de données de l'au vers un autre au (modifiez le collecteur et sélectionnez simplement un au différent) avant de supprimer l'au d'origine.
-'''</block>
+  <block id="1f0e93b0a15bd60e04388c6d5ff59fdc" category="admonition">Vous ne pouvez pas supprimer une unité d'acquisition (au) avec des collecteurs de données connectés. Déplacez tous les collecteurs de données de l'au vers un autre au (modifiez le collecteur et sélectionnez simplement un au différent) avant de supprimer l'au d'origine.</block>
+  <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">Une unité d'acquisition avec une étoile à côté de celle-ci est utilisée pour la résolution de l'appareil. Avant de supprimer cette au, vous devez sélectionner un autre au à utiliser pour la résolution du périphérique. Passez le curseur sur un autre au et ouvrez le menu « trois points » pour sélectionner « utiliser pour la résolution du périphérique ».</block>
+  <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">Au utilisé pour la résolution du périphérique</block>
+  <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
