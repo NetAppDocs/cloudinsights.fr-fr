@@ -204,6 +204,19 @@ En savoir plus sur Kubernetes link:https://kubernetes.io/docs/concepts/schedulin
 
 
 
+=== Autorisations
+
+Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agrégats à afficher"], Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.
+
+. Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/<namespace>-additional-permissions_
+. Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Appliquez vos modifications au cluster
+
+
+Remarque : si vous souhaitez supprimer des autorisations ajoutées précédemment, les modifications ne prendront effet qu'au redémarrage du module _event-exportatrice_.
+
+
+
 == Installation de l'opérateur de surveillance NetApp Kubernetes
 
 image:NKMO-Instructions-1.png[""]

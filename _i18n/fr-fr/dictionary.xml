@@ -12398,4 +12398,10 @@ V9.2.4.2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">Une unité d'acquisition avec une étoile à côté de celle-ci est utilisée pour la résolution de l'appareil. Avant de supprimer cette au, vous devez sélectionner un autre au à utiliser pour la résolution du périphérique. Passez le curseur sur un autre au et ouvrez le menu « trois points » pour sélectionner « utiliser pour la résolution du périphérique ».</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">Au utilisé pour la résolution du périphérique</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agrégats à afficher</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Appliquez vos modifications au cluster</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">Remarque : si vous souhaitez supprimer des autorisations ajoutées précédemment, les modifications ne prendront effet qu'au redémarrage du module _event-exportatrice_.</block>
 </blocks>
