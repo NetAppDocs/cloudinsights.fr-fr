@@ -5474,12 +5474,8 @@
   <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">Vous trouverez des informations sur le <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> page.</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights prend en charge Telegraf en tant qu'agent pour collecter des données d'intégration sur Kubernetes.</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">Configuration de l'opérateur de surveillance NetApp Kubernetes</block>
-  <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">Bit fluide</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Télégraf</block>
-  <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">Cloud Insights utilise différents composants, notamment <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> et <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>, Pour la collecte de données Kubernetes. Telegraf est un agent serveur piloté par plug-in qui peut être utilisé pour collecter et signaler des mesures, des événements et des journaux. Les plug-ins d'entrée sont utilisés pour recueillir les informations souhaitées dans l'agent en accédant directement au système/système d'exploitation, en appelant des API tierces ou en écoutant des flux configurés (c.-à-d. Kafka, statsD, etc.). Les plug-ins de sortie sont utilisés pour envoyer les mesures, les événements et les journaux collectés depuis l'agent vers Cloud Insights.</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights propose *l'opérateur de surveillance NetApp Kubernetes* (NKMO) pour la collection Kubernetes. Lorsque vous ajoutez un collecteur de données, il vous suffit de choisir la vignette « Kubernetes ».</block>
-  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Mosaïque Kubernetes Data Collector</block>
-  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Avant d'installer NetApp Kubernetes Monitoring Operator</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">Conditions préalables :</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">L'installation de NetApp Kubernetes Monitoring Operator est prise en charge avec Kubernetes version 1.20 ou ultérieure.</block>
@@ -5841,7 +5837,6 @@
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">Sur le serveur/VM de l'unité d'acquisition, exécutez la commande suivante :</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">Pour obtenir de l'aide sur la désinstallation, exécutez :</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez désinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.</block>
-  <block id="4262a364178344226a6201df72deaa22" category="paragraph">REMARQUE : vous ne pouvez pas supprimer l'unité d'acquisition par défaut. Sélectionnez une autre UA comme valeur par défaut avant de supprimer l'ancienne.</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Réinstallation d'une unité d'acquisition</block>
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">Pour réinstaller une unité d'acquisition sur le même serveur/VM, vous devez procéder comme suit :</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">Une unité d'acquisition temporaire doit être configurée sur un serveur/VM distinct avant de réinstaller une unité d'acquisition.</block>
@@ -9677,9 +9672,6 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">Non Le script s'exécute pendant 5 min au maximum, même si le nombre de SVM est augmenté.</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">Que se passe-t-il si j'exécute Event Rate Checker avec un agent existant ?</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">L'exécution d'Event Rate Checker sur un agent existant peut entraîner une augmentation de la latence sur le SVM. Cette augmentation sera temporaire pendant l'exécution du vérificateur de taux d'événement.</block>
-  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">Vous trouverez ci-dessous une illustration de haut niveau montrant où se trouve l'opérateur dans votre environnement. Selon votre environnement, _Proxy Server_ peut être requis ou non.</block>
-  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Carte générale montrant les données NKMO résidant dans le cluster Kubernetes, avec des flèches indiquant comment les données sont transmises au cluster depuis les hôtes et le serveur proxy, toutes ces données étant transmises à Cloud Insights</block>
-  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">L'opérateur (NKMO) et les collecteurs de données sont téléchargés depuis le registre Docker de Cloud Insights. Une fois installé, NKMO gère ensuite tous les collecteurs compatibles avec l'opérateur déployés dans les nœuds du cluster Kubernetes pour acquérir des données, notamment la gestion du cycle de vie de ces collecteurs. Après cette chaîne, les données sont acquises auprès des collecteurs et envoyées à Cloud Insights.</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Configuration du collecteur de données Rubrik CDM.</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Data Collector Rubrik CDM</block>
@@ -12402,4 +12394,6 @@ V9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Variables diverses</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLACEHOLDER</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">La commande curl utilisée pour télécharger diverses ressources. Ex) « curl » ou « curl -k »</block>
+  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">Vous ne pouvez pas supprimer une unité d'acquisition (au) avec des collecteurs de données connectés. Déplacez tous les collecteurs de données de l'au vers un autre au (modifiez le collecteur et sélectionnez simplement un au différent) avant de supprimer l'au d'origine.
+'''</block>
 </blocks>

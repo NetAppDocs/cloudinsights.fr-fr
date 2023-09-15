@@ -198,9 +198,10 @@ Si vous désinstallez une unité d'acquisition *Linux* :
 . Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez désinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.
 
 
-REMARQUE : vous ne pouvez pas supprimer l'unité d'acquisition par défaut. Sélectionnez une autre UA comme valeur par défaut avant de supprimer l'ancienne.
 
+NOTE: Vous ne pouvez pas supprimer une unité d'acquisition (au) avec des collecteurs de données connectés. Déplacez tous les collecteurs de données de l'au vers un autre au (modifiez le collecteur et sélectionnez simplement un au différent) avant de supprimer l'au d'origine.
 '''
+
 
 
 == Réinstallation d'une unité d'acquisition
