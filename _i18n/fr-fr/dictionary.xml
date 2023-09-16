@@ -10157,7 +10157,6 @@
   <block id="98f382d1962b023b2f9625686af82de9" category="section-title">Moniteurs système ONTAP par défaut activés pour les nouveaux clients</block>
   <block id="31330c4ff7fe349e530327f3c9b8295a" category="paragraph">De nombreux moniteurs système ONTAP sont activés (c.-à-d. _repris_) par défaut dans les nouveaux environnements Cloud Insights. Auparavant, la plupart des moniteurs avaient par défaut l'état _Pause_. Étant donné que les besoins des entreprises varient d'une entreprise à l'autre, nous vous recommandons de toujours consulter le <block ref="6e23d996007e5a9ae1533f26f739ed3d" category="inline-link-macro-rx"></block> dans votre environnement et en mettant en pause ou en reprenant chacune de ces fonctions en fonction de vos besoins en matière d'alertes.</block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">Le <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Cette fonctionnalité simplifie le dépannage en mappant les dépendances entre les workloads Kubernetes. Il fournit une visibilité en temps réel sur les latences et les anomalies des performances du réseau Kubernetes pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs. Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes : * CentOS (64 bits) : 7.2 à 7.9, Stream 8, Stream 9 * Debian (64 bits) : 9 et 10 * Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.4 * Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 9.1 * Rocky 9.0, 9.1 * Ubuntu Server: 18.04 et 20.04 LTS cet ordinateur ne doit pas exécuter d'autres logiciels de niveau application. Un serveur dédié est recommandé.</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">Exigence supplémentaire de l'édition fédérale</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">Pour les installations d'unités d'acquisition dans les grappes de l'édition fédérale de Cloud Insights, le système d'exploitation sous-jacent doit avoir une bonne source d'entropie. Sur les systèmes Linux, cela se fait généralement en installant _rng-Tools_ ou en utilisant la génération de nombres aléatoires (RNG). Il incombe au client de s'assurer que cette exigence est remplie sur la machine de l'unité d'acquisition.</block>
   <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights peut offrir des vues sur le stockage virtualisé frontal et back-end.</block>
@@ -12433,4 +12432,14 @@ V9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights a facilité l'affichage et la recherche des informations du collecteur de données :</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*Le traitement des listes de collecteurs de données* est plus efficace, ce qui signifie que le temps nécessaire pour afficher et naviguer dans ces listes est considérablement réduit. Si vous avez un grand environnement avec de nombreux collecteurs de données, vous verrez une amélioration significative en listant vos collecteurs de données.</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">La *Data Collector support Matrix* est passée d'un fichier .PDF à une page .HTML, plus rapide à naviguer et plus facile à entretenir. Découvrez la nouvelle matrice ici :<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
+  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
+
+* CentOS (64 bits) : 7.2 à 7.9, Stream 8, Stream 9
+* Debian (64 bits) : 9 et 10
+* Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.4
+* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.7, 9.1
+* Rocky 9.0, 9.1
+* Serveur Ubuntu: 18.04 et 20.04 LTS
+
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
 </blocks>
