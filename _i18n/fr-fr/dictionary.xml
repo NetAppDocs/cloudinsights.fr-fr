@@ -4831,23 +4831,7 @@
   <block id="478d052d4cfb6a52aa1167cc91369a53" category="cell">Taux de Miss. Du cache du volume FSX</block>
   <block id="3285dee4815080320066f09ef70efdc0" category="cell">Si un seuil critique est atteint, des mesures immédiates doivent être prises pour limiter les interruptions de service : 1. Déplacez certaines charges de travail depuis le nœud du volume pour réduire la charge d'E/S 2. Réduisez la demande de charges de travail moins prioritaires sur le même nœud via des limites de QoS… prenez des mesures immédiates en cas de dépassement du seuil d'avertissement : 1. Déplacez certaines charges de travail depuis le nœud du volume pour réduire la charge d'E/S 2. Réduisez les besoins en charges de travail prioritaires sur le même nœud via la limitation de la qualité de service 3. Modifier les caractéristiques des charges de travail (taille de bloc, mise en cache des applications, etc.)</block>
   <block id="fff01ad725d8d95091bb3ef05163c7ba" category="section-title">Contrôleurs K8s</block>
-  <block id="f294f708940b046c4b5c6c3fe2beb74d" category="cell">POD créé</block>
   <block id="5391f9a882a54c787b206138ed6d28b0" category="cell">Informatif</block>
-  <block id="2b52cb18ad3dc04e8b3f5b0a217dab16" category="cell">Cette alerte survient lors de la création d'un POD.</block>
-  <block id="f0b518884d4692e825876fc2d7fca44a" category="cell">POD supprimé</block>
-  <block id="0639cadac03e80ed4b6257e91f9bd8e3" category="cell">Cette alerte survient lorsqu'un POD est supprimé.</block>
-  <block id="39d7b0860d5ecdb0380a2c77c4dc332e" category="cell">Début de la DemOnset créé</block>
-  <block id="e098953d5def2535f5787c6fcd748361" category="cell">Cette alerte se produit lorsqu'un démarrage est créé.</block>
-  <block id="0de1cf7dabd7089b851b4cbcb81dac73" category="cell">Début supprimé</block>
-  <block id="c9e4867a446fa930c3f7f1dff2ddaf9c" category="cell">Cette alerte se produit lorsqu'un démarrage est supprimé.</block>
-  <block id="3d89b8eed7c69a8a767fb928b4562a31" category="cell">Réplicaet créé</block>
-  <block id="73ce536af3f9104c8f119e8eb860e726" category="cell">Cette alerte survient lors de la création d'un réplicateur.</block>
-  <block id="eeabcf367afdad2d67693fc3246849de" category="cell">Réplicaet supprimé</block>
-  <block id="33230c56cde1b140e9cd5f9fc6dd1815" category="cell">Cette alerte se produit lorsqu'un duplicaet est supprimé.</block>
-  <block id="5e68de0568b7ee3ce1ee168f6023b496" category="cell">Déploiement créé</block>
-  <block id="bcf54384c450fe942a8b2365ec90cc58" category="cell">Cette alerte survient lors de la création d'un déploiement.</block>
-  <block id="90582794610cecc6bf6c1b849f118be0" category="cell">Échec DU POD</block>
-  <block id="1fb5af0b070e3edfc1b28299d45542c7" category="cell">Cette alerte survient lorsqu'un POD est en panne.</block>
   <block id="fac4e44d90149e3d2fdc712cbc9bb991" category="cell">Échec de la connexion DU POD</block>
   <block id="b60b475ab9762e47d4888115edfe5fe4" category="cell">Cette alerte se produit en cas d'échec d'une pièce jointe à un volume avec POD.</block>
   <block id="309238af720d23dd7b5017c92842c5ed" category="cell">Échec de liaison de la demande de volume persistant</block>
@@ -12443,4 +12427,172 @@ V9.2.4.2</block>
 
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-observateur-l4-ds tolérances supplémentaires.</block>
+  <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">Actions correctives</block>
+  <block id="dacff74646dd80517d0cffd123266041" category="cell">Gravité/seuil</block>
+  <block id="a0fc1910fcbc18de2726e16e8e450c0e" category="cell">Latence élevée du volume persistant</block>
+  <block id="acf1a4cb85a03e701ce12c2b5af1697c" category="cell">Avec des latences de volume persistantes élevées, les applications elles-mêmes risquent d'être affectées et ne peuvent pas accomplir leurs tâches. La surveillance de la latence des volumes persistants est essentielle pour maintenir la cohérence des performances des applications. Les latences suivantes sont attendues pour le type de support : SSD jusqu'à 1-2 millisecondes ; SAS jusqu'à 8-10 millisecondes et disques durs SATA 17-20 millisecondes.</block>
+  <block id="23342e50cb508ff10388d5171bab5292" category="cell">**Actions immédiates**
+	Si le seuil critique est dépassé, prenez des mesures immédiates pour minimiser l'interruption du service :
+		Si une politique de QoS est attribuée au volume, évaluez ses seuils limités si celui-ci ralentit la charge de travail du volume.
+		**Actions à faire bientôt**
+	Si le seuil d'avertissement est dépassé, planifiez les actions immédiates suivantes :
+		1. Si le pool de stockage est également très utilisé, déplacez le volume vers un autre pool de stockage.
+	2. Si une règle de qualité de service lui est attribuée, évaluez ses seuils de limite au cas où il restreint la charge de travail du volume.
+	3. Si le contrôleur connaît également un taux d'utilisation élevé, déplacez le volume vers un autre contrôleur ou réduisez la charge de travail totale du contrôleur.</block>
+  <block id="803448f7213deba01eb02cdcf79fd429" category="cell">Avertissement à &gt; 6,000 μs
+	Critique à &gt; 12,000 μs</block>
+  <block id="90b04ed8e7a658e5a53536008dbc49ca" category="cell">Saturation de la mémoire du cluster élevée</block>
+  <block id="647a330e362524d08e4713d9d799fac3" category="cell">La saturation de la mémoire allouable du cluster est élevée.
+	La saturation du CPU du cluster est calculée comme la somme de l'utilisation de la mémoire divisée par la somme de la mémoire allouable sur tous les nœuds K8s.</block>
+  <block id="5ddf5dd104ca2c41c79e1923eafaab0a" category="cell">Ajouter des nœuds.
+	Corrigez tous les nœuds non planifiés.
+	Pods de taille adéquate pour libérer de la mémoire sur les nœuds.</block>
+  <block id="5e2de4e8a6fc94dfdcde0d23d16a4b45" category="cell">Avertissement @ &gt; 80 %
+	Critique à &gt; 90 %</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">Avertissement</block>
+  <block id="45418d6dfe7cd04b64a53acde16e3ac3" category="cell">Taux de retransmission élevé</block>
+  <block id="bfb4c85db6684f06b563d6cdd7918965" category="cell">Taux de retransmission TCP élevé</block>
+  <block id="d99165642f1db07fbe730ecc58aa4786" category="cell">Vérifier l'encombrement du réseau : identifiez les charges de travail qui consomment beaucoup de bande passante réseau.
+	Vérifiez si le taux d'utilisation du processeur du Pod est élevé.
+	Vérifiez les performances du réseau matériel.</block>
+  <block id="27d40f1ffa3b1b63509d8c164f792e2b" category="cell">Avertissement @ &gt; 10 %
+	Critique à &gt; 25 %</block>
+  <block id="4e969a481a508599577f19a66c5a2c7d" category="cell">Capacité élevée du système de fichiers nœud</block>
+  <block id="fb781ac8e192e21d893a740ed76df796" category="cell">- Augmenter la taille des disques de nœud pour s'assurer qu'il y a suffisamment de place pour les fichiers d'application.
+- Diminuer l'utilisation du fichier d'application.</block>
+  <block id="987be04e5e051fed3f030c2cd4ff1d32" category="cell">Avertissement @ &gt; 80 %
+ Critique à &gt; 90 %</block>
+  <block id="0d69047d13e9146b8262619f5d342fbf" category="cell">Charge de travail instabilité du réseau élevée</block>
+  <block id="4c6d9c0e11174f170d06049863db3bb1" category="cell">Puissance TCP élevée (variations de temps de réponse/latence élevées)</block>
+  <block id="0fc3d756aa02a551d20d8ecba29b15a1" category="cell">Vérifiez la présence d'une congestion du réseau. Identifiez les charges de travail qui consomment beaucoup de bande passante réseau.
+Vérifiez si le taux d'utilisation du processeur du Pod est élevé.
+Vérifiez les performances du réseau matériel</block>
+  <block id="0b08522ca39f06e97361791696c099e6" category="cell">Avertissement à &gt; 30 ms.
+ Critique à &gt; 50 ms.</block>
+  <block id="5c8d95aa52f5f7fa3c761dc1931f2437" category="cell">Débit de volume persistant</block>
+  <block id="ce667327ae727d17bb7630071127ce99" category="cell">Les seuils EN MBIT/S sur les volumes persistants peuvent être utilisés pour alerter l'administrateur lorsque les volumes persistants dépassent les attentes de performance prédéfinies, ce qui peut affecter d'autres volumes persistants. L'activation de ce moniteur génère des alertes adaptées au profil de débit type des volumes persistants sur les disques SSD. Ce contrôle couvre tous les volumes persistants de votre environnement. Les valeurs de seuil critique et d'avertissement peuvent être ajustées en fonction de vos objectifs de surveillance en dupliquant ce moniteur et en définissant des seuils appropriés à votre classe de stockage. Un moniteur dupliqué peut être davantage ciblé sur un sous-ensemble de volumes persistants de votre environnement.</block>
+  <block id="349a265834d31c44dd4c4d988ae086a5" category="cell">**Actions immédiates**
+Si le seuil critique est dépassé, planifiez immédiatement des actions pour minimiser l'interruption du service :
+1. Introduire des limites QoS EN MBIT/S pour le volume.
+2. Examinez l'application pilotant le workload sur le volume pour voir s'il y a des anomalies.
+**Actions à faire bientôt**
+Si le seuil d'avertissement est dépassé, prévoyez de prendre les mesures immédiates suivantes :
+1. Introduire des limites QoS EN MBIT/S pour le volume.
+2. Examinez l'application pilotant le workload sur le volume pour voir s'il y a des anomalies.</block>
+  <block id="da3a106e23c4f2bb1f4abed10895a5eb" category="cell">Avertissement @ &gt; 10,000 Mo/s.
+ Critique @ &gt; 15,000 Mo/s.</block>
+  <block id="2cb486fc59da30d769c702eb01d788ed" category="cell">Conteneur à risque de tuer le MOO</block>
+  <block id="4451a534f9bef0a82e96f0c18b8f16bd" category="cell">Les limites de mémoire du conteneur sont trop basses. Le conteneur risque d'être expulsé (mémoire saturée).</block>
+  <block id="77f8b545bfce1b75706171f18d013f8c" category="cell">Augmentez les limites de la mémoire du conteneur.</block>
+  <block id="a2c21993b043d505436e461c962d53a6" category="cell">Avertissement @ &gt; 95 %</block>
+  <block id="381bd9782459bd6690d99e8a8a81ea06" category="cell">Charge de travail réduite</block>
+  <block id="d17f44dd62f560c6b98986fba619fcaa" category="cell">La charge de travail ne comporte pas de pods sains.</block>
+  <block id="317b54184772540ad23340d4d76c09ef" category="cell">Critique @ &lt; 1</block>
+  <block id="8d889f31bcf23267b347a3fb4cb1ff1a" category="cell">Resourcequota Mem limites sur le point de dépasser</block>
+  <block id="e6f393bbe1c9300a33e61931440df8d0" category="cell">Les limites de mémoire pour l'espace de noms vont dépasser Resourcequota</block>
+  <block id="cb6d920e3afdddd6d3dd2e25a249a7ce" category="cell">Resourcequota Mem requêtes sur le point de dépasser</block>
+  <block id="e5355e449eb03dfd98c1255687241437" category="cell">Les demandes de mémoire pour l'espace de noms vont dépasser Resourcequota</block>
+  <block id="d056d53ae2322df97c75b1ce5dac5cff" category="cell">La création du nœud a échoué</block>
+  <block id="c941e3d6c35513ec6bad317f797958dd" category="cell">Le nœud n'a pas pu être planifié en raison d'une erreur de configuration.</block>
+  <block id="701714f5fbd36524d1a2977a95a150a5" category="cell">Consultez le journal des événements Kubernetes pour connaître la cause de l'échec de configuration.</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">Primordial</block>
+  <block id="0e14c27d69d1477839d9efc8b0ad46f8" category="cell">Échec de la récupération du volume persistant</block>
+  <block id="8c8cbcc14840938903ba6a12977112a5" category="cell">La récupération automatique du volume a échoué.</block>
+  <block id="f6aad30681bba4322fc5af1af69cf8ef" category="cell">Avertissement @ &gt; 0 B.</block>
+  <block id="a01254b5fadca078ea74cbeb0e57fe0c" category="cell">Restriction du processeur du conteneur</block>
+  <block id="1bf5d16fa7c5d9c8897cd4d824dac923" category="cell">Les limites de l'UC du conteneur sont trop basses. Les processus de conteneur sont ralentis.</block>
+  <block id="62a706a5ff0ecfd04050efa911929788" category="cell">Augmentez les limites du processeur du conteneur.</block>
+  <block id="de6571525c704c8657b3102f71cd1329" category="cell">Avertissement @ &gt; 95 %
+ Critique à &gt; 98 %</block>
+  <block id="12ffb413fda4bff7ed3d529fab7e21dd" category="cell">Échec de la suppression de Service Load Balancer</block>
+  <block id="b50c21eaa4dde5dcceb05f3d5e10e7c3" category="cell">IOPS de volume persistant</block>
+  <block id="54e09e4f57136b1abc2be3badec732b0" category="cell">Les seuils d'IOPS pour les volumes persistants peuvent être utilisés pour alerter l'administrateur lorsque les volumes persistants dépassent les attentes de performance prédéfinies. L'activation de ce moniteur génère des alertes appropriées pour le profil IOPS type des volumes de persistance. Ce contrôle couvre tous les volumes persistants de votre environnement. Les valeurs de seuil critique et d'avertissement peuvent être ajustées en fonction de vos objectifs de surveillance en dupliquant ce moniteur et en définissant des seuils adaptés à votre charge de travail.</block>
+  <block id="c9b0218269436ed0877e903ae0a00283" category="cell">**Actions immédiates**
+Si le seuil critique est dépassé, planifiez immédiatement des actions pour réduire au minimum les interruptions de service :
+1. Introduire des limites IOPS de QoS pour le volume.
+2. Examinez l'application pilotant le workload sur le volume pour voir s'il y a des anomalies.
+**Actions à faire bientôt**
+Si le seuil d'avertissement est dépassé, planifiez les actions immédiates suivantes :
+1. Introduire des limites IOPS de QoS pour le volume.
+2. Examinez l'application pilotant le workload sur le volume pour voir s'il y a des anomalies.</block>
+  <block id="29b0560962e1c0212afb7c4ecbb71c93" category="cell">Avertissement @ &gt; 20,000 IO/s.
+ Critique à plus de 25,000 E/s.</block>
+  <block id="87cfeec4bdb82649fe26dbd8b7bf29f9" category="cell">Échec de la mise à jour de Service Load Balancer</block>
+  <block id="2643d59c01ffa8a1c0684fc4eb390bcc" category="cell">Nœud pression PID</block>
+  <block id="1288eedc6e2511d2721df59f399ac7fa" category="cell">Les identificateurs de processus disponibles sur le nœud (Linux) sont tombés en dessous d'un seuil d'exclusion.</block>
+  <block id="8d9541f2f1d32c5fb01855176e5c57c1" category="cell">Recherchez et corrigez les pods qui génèrent de nombreux processus et qui ne disposent plus des ID de processus disponibles.
+Configurez PodPidsLimit pour protéger votre nœud contre les pods ou les conteneurs qui génèrent trop de processus.</block>
+  <block id="4dbefdf4b1ddb3ca9769f134be871e4b" category="cell">Critique @ &gt; 0</block>
+  <block id="95bea6890aa529aa4331870c42c52bea" category="cell">Échec de l'extraction d'image pod</block>
+  <block id="25a9cfb04ab08da2d3408b6841891ac7" category="cell">Kubernetes n'a pas pu extraire l'image du conteneur du pod.</block>
+  <block id="6f6bdaa9544f6281972ea06985fb9ab7" category="cell">- Assurez-vous que l'image du pod est correctement orthographiée dans la configuration du pod.
+- Vérifiez que la balise image existe dans votre registre.
+- Vérifiez les informations d'identification du registre d'images.
+- Vérifiez les problèmes de connectivité du registre.
+- Vérifiez que vous n'arrivez pas aux limites de taux imposées par les fournisseurs de registres publics.</block>
+  <block id="94c150c1b83894781d50071af135ea80" category="cell">Tâche en cours d'exécution trop longue</block>
+  <block id="1cf41ef56ce8a9eb75257ff3c8693f09" category="cell">Le travail est en cours d'exécution trop longtemps</block>
+  <block id="3d1aa5736ce76c14a4ebe18eaf3a77d6" category="cell">Avertissement @ &gt; 1 heure
+ Critique à &gt; 5 h</block>
+  <block id="7841d72460ad10b826b67c603889a136" category="cell">Mémoire de nœud élevée</block>
+  <block id="2aceb65bfe4bea21524bfc1a1b116165" category="cell">L'utilisation de la mémoire des nœuds est élevée</block>
+  <block id="71da577c9b69706906f95d0fd5696368" category="cell">Ajouter des nœuds.
+Corrigez tous les nœuds non planifiés.
+Pods de taille adéquate pour libérer de la mémoire sur les nœuds.</block>
+  <block id="e5e09bf52d280084c87d12264b756edd" category="cell">Avertissement @ &gt; 85 %
+ Critique à &gt; 90 %</block>
+  <block id="74ef7bdeeb51a483e58c7ded021952ed" category="cell">Resourcequota CPU limites sur le point de dépasser</block>
+  <block id="9b8e4b0bb0460afb26f3786cfd249927" category="cell">Les limites de CPU pour l'espace de noms vont dépasser Resourcequota</block>
+  <block id="aa5d59f5b34fcd2e6570cb5b597748ae" category="cell">Boucle de collision du pod</block>
+  <block id="2f6430566c6afc6ea2ca5b08f5bb7c01" category="cell">Le pod s'est écrasé et a tenté de redémarrer plusieurs fois.</block>
+  <block id="3bdafc039774c767282dbe18d44c1c99" category="cell">Critique @ &gt; 3</block>
+  <block id="147f45a9ef97cc0341380f6f8a1d6e01" category="cell">CPU du nœud haut</block>
+  <block id="3e37bc9b357938449001aad25ef8f753" category="cell">L'utilisation du processeur du nœud est élevée.</block>
+  <block id="2681406d533aa4d58826e3edffbcc642" category="cell">Ajouter des nœuds.
+Corrigez tous les nœuds non planifiés.
+Pods de taille appropriée pour libérer le processeur sur les nœuds.</block>
+  <block id="bbbc0887121969dffaaac1addd997c03" category="cell">Temps de réponse de latence du réseau de la charge de travail élevé</block>
+  <block id="9d45c8691c30b49f5f9bb02bd9d560b0" category="cell">Temps de latence TCP RTT (aller-retour) élevé</block>
+  <block id="d7fb4a35576851603f71e722e49b7694" category="cell">Vérifier la congestion du réseau ▒ identifier les charges de travail qui consomment beaucoup de bande passante du réseau.
+Vérifiez si le taux d'utilisation du processeur du Pod est élevé.
+Vérifiez les performances du réseau matériel.</block>
+  <block id="5e8fb3d2a2c4c6e442f16a447b6ce44c" category="cell">Avertissement à &gt; 150 ms.
+ Critique à &gt; 300 ms.</block>
+  <block id="f51ad3a32d20f12a4aa62f7865c24b05" category="cell">Echec du travail</block>
+  <block id="62cc8941365780e844a7a1a3edfdae70" category="cell">La tâche ne s'est pas terminée correctement en raison d'une panne ou d'un redémarrage du nœud, d'un épuisement de la ressource, d'un délai d'attente de la tâche ou d'un échec de la planification du pod.</block>
+  <block id="5ee1a3ccbcd9ac286dece4ebf73be882" category="cell">Recherchez les causes d'échec dans les journaux d'événements Kubernetes.</block>
+  <block id="2ec669c0c57f515b14422f2029d0d00c" category="cell">Avertissement @ &gt; 1</block>
+  <block id="4b9573f7ad02d63bbbaee8beda615e22" category="cell">Volume persistant plein en quelques jours</block>
+  <block id="f24107b73347142c35cd13250c79c514" category="cell">L'espace d'un volume persistant sera insuffisant dans quelques jours</block>
+  <block id="ff886ed7d916977aab8b3fb7aae56d53" category="cell">-Augmentez la taille du volume pour vous assurer qu'il y a suffisamment d'espace pour les fichiers d'application.
+-Réduire la quantité de données stockées dans les applications.</block>
+  <block id="c9e8926f037a4aaf0bfbc95008a28ce5" category="cell">Avertissement à &lt; 8 jours
+ Critique à &lt; 3 jours</block>
+  <block id="c314f44daabd371d9d8799b6e3cffa7a" category="cell">Pression de mémoire du nœud</block>
+  <block id="348e57fa4d72e6a73235b6317cc9498e" category="cell">La mémoire du nœud est insuffisante. La mémoire disponible a atteint le seuil d'exclusion.</block>
+  <block id="13e758d164117d8a33c597c0707dc8f5" category="cell">Nœud non prêt</block>
+  <block id="3c15047d3f6252c3a62c846cf5fcc9aa" category="cell">Le nœud n'est pas prêt depuis 5 minutes</block>
+  <block id="9aa3333109c5063bd5f328edf601ba38" category="cell">Vérifiez que le nœud dispose de suffisamment de ressources CPU, de mémoire et de disque.
+Vérifiez la connectivité réseau des nœuds.
+Recherchez les causes d'échec dans les journaux d'événements Kubernetes.</block>
+  <block id="72fc9f4b384a114b1502bdf2b1a4981b" category="cell">Capacité élevée du volume persistant</block>
+  <block id="9e20a4e791e5b3fcd5f0cdf5e58976a0" category="cell">La capacité utilisée par le back-end du volume persistant est élevée.</block>
+  <block id="1af3a99d19897f9593f718d7e186ede9" category="cell">- Augmenter la taille du volume pour s'assurer qu'il y a suffisamment d'espace pour les fichiers d'application.
+- Réduire la quantité de données stockées dans les applications.</block>
+  <block id="342ebde848a696c7b94b3852d026d450" category="cell">La création de Service Load Balancer a échoué</block>
+  <block id="fdc1b09aa1ad52660639e653ccf495f9" category="cell">Échec de la création de Service Load Balancer</block>
+  <block id="e00662f582c55c273e64f4e3cffcd0dd" category="cell">Incompatibilité du réplica de la charge de travail</block>
+  <block id="bc323bcbe0862d9bb52aeff43583e9ee" category="cell">Certains modules ne sont actuellement pas disponibles pour un déploiement ou un jeu de démonstration.</block>
+  <block id="88009a6fc741fb272943a946dcf66624" category="cell">Resourcequota demandes CPU sur le point de dépasser</block>
+  <block id="5e6016e4c2bd2e4bd4df818a1bf2e362" category="cell">Les demandes de processeur pour l'espace de noms vont dépasser Resourcequota</block>
+  <block id="e9ab30ecefea517194998d555f0b0e37" category="cell">Vérifier l'encombrement du réseau : identifiez les charges de travail qui consomment beaucoup de bande passante réseau.
+Vérifiez si le taux d'utilisation du processeur du Pod est élevé.
+Vérifiez les performances du réseau matériel.</block>
+  <block id="a42092b4bcc7ac433713e0441e1787b1" category="cell">Avertissement @ &gt; 10 %
+ Critique à &gt; 25 %</block>
+  <block id="b0e0b6c8516b4a336ca0958188e4ddc7" category="cell">Pression du disque du nœud</block>
+  <block id="b0faff68997bb5f0c79ea09d9187e7ce" category="cell">L'espace disque disponible et les inodes sur le système de fichiers racine du nœud ou sur le système de fichiers image ont satisfait un seuil d'exclusion.</block>
+  <block id="7a630b16f340cd744188cfe88ea277e0" category="cell">Saturation élevée de l'UC du cluster</block>
+  <block id="ef9e90b0a74afb98891334eb9c2fec60" category="cell">La saturation CPU pouvant être localisée par le cluster est élevée.
+La saturation des processeurs du cluster est calculée comme la somme de l'utilisation des processeurs divisée par la somme des CPU allouables sur tous les nœuds K8s.</block>
 </blocks>
