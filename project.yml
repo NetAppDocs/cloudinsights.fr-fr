@@ -87,7 +87,9 @@ sidebar:
     entries:
     - title: Page de présentation de Kubernetes
       url: "/kubernetes_landing_page.html"
-    - title: Mise en route avec l'opérateur de surveillance
+    - title: Avant d'installer ou de mettre à niveau l'opérateur
+      url: "/pre-requisites_for_k8s_operator.html"
+    - title: Installation de l'opérateur de surveillance
       url: "/task_config_telegraf_agent_k8s.html"
     - title: Options de l'opérateur de surveillance
       url: "/telegraf_agent_k8s_config_options.html"

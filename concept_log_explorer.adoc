@@ -78,7 +78,7 @@ Notez que, dans le cas ci-dessus, étant donné que "cm-monitoring" et "EG-monit
 
 
 
-. Les résultats du filtre actuel, y compris les valeurs « Filtrer par » ET le filtre de requête avancée. La liste peut être triée par colonnes affichées. Pour afficher des colonnes supplémentaires, sélectionner l'icône « vitesse ».
+. Les résultats du filtre actuel, y compris les valeurs « Filtrer par » ET le filtre de requête avancée, sont affichés dans la liste des résultats. La liste peut être triée par colonnes affichées. Pour afficher des colonnes supplémentaires, sélectionner l'icône « vitesse ».
 . Le graphique a été agrandi pour afficher uniquement les résultats du journal qui se sont produits dans une période donnée. La plage horaire affichée ici reflète le niveau de zoom actuel. Sélectionnez le bouton _Réinitialiser le zoom_ pour rétablir le niveau de zoom sur la plage horaire Cloud Insights actuelle.
 . Les résultats du graphique ont été regroupés par le champ _source_. Le graphique présente les résultats dans chaque colonne, regroupés en couleurs. Passez le curseur sur une colonne du graphique pour afficher des détails sur les entrées spécifiques.
 +
