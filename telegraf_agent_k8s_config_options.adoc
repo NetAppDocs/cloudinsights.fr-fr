@@ -159,6 +159,12 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 |  | DnsMode | TCP/UDP, mode pour DNS 
 
 
+|  | tolérances fluentes-bit | fluent-bit-ds tolérances supplémentaires. 
+
+
+|  | tolérance-exportateur-événement | tolérances supplémentaires de l'exportateur d'événements. 
+
+
 | mappe des charges de travail |  | Options de configuration permettant de personnaliser la collection de cartes de charge de travail et l'installation de l'opérateur 
 
 
@@ -183,13 +189,7 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 |  | EnableDNSLookup | Vrai/faux, activer la recherche DNS 
 
 
-|  | tolérances fluentes-bit | fluent-bit-ds tolérances supplémentaires. 
-
-
-|  | tolérance-exportateur-événement | tolérances supplémentaires de l'exportateur d'événements. 
-
-
-| mappe des charges de travail |  | tolérances l4 
+|  | tolérances l4 | net-observateur-l4-ds tolérances supplémentaires. 
 |===
 
 

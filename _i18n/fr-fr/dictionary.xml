@@ -12442,4 +12442,5 @@ V9.2.4.2</block>
 * Serveur Ubuntu: 18.04 et 20.04 LTS
 
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">net-observateur-l4-ds tolérances supplémentaires.</block>
 </blocks>
