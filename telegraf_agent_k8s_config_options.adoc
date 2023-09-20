@@ -180,7 +180,7 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 |  | MemRequest | demande mem pour net observateur ds 
 
 
-|  | MetricAgreeInterval | intervalle d'agrégation des mesures, en secondes 
+|  | Intervalle d'Aggregationde métadonnées | intervalle d'agrégation des mesures, en secondes 
 
 
 |  | BpfPollInterval | Intervalle d'interrogation BPF, en secondes 
