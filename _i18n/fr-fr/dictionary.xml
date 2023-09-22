@@ -3627,8 +3627,6 @@
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>.</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">Conservation des données</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 jours</block>
-  <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90 jours</block>
-  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 mois</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">Authentification unique (SSO)</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">Cadenas</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>, Cela signifie que la fonction n'est pas disponible dans votre édition actuelle ou est disponible sous une forme limitée. Mise à niveau pour un accès complet à la fonctionnalité.</block>
@@ -6042,14 +6040,9 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">Notez qu'AWS est sensible à la casse, tandis que Cloud Insights n'est pas sensible à la casse. Si vous créez une annotation nommée « PROPRIÉTAIRE » dans Cloud Insights et des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans S3, toutes les variantes S3 du « propriétaire » seront mappées vers l'annotation « PROPRIÉTAIRE » de Cloud Insight.</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">Vous devez configurer chaque compte enfant pour qu'il dispose d'un rôle AWS qui permet à l'ID de compte principal d'accéder aux informations S3 à partir du compte enfants.</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">Meilleure pratique : il est fortement recommandé d'attribuer la politique AWS prédéfinie _Amazon S3ReadOnlyAccess_ au compte principal S3. En outre, l'utilisateur configuré dans la source de données doit avoir au moins la stratégie prédéfinie _AWOrganiztionsReadOnlyAccess_, afin d'interroger AWS.</block>
-  <block id="4a4a6b257377a1be5e4488cf0a12459b" category="summary">Explication du temps de vie (TTL) et du sous-échantillonnage</block>
-  <block id="ded51882afc1e18389057617d96454cb" category="doc">Temps de vie (TTL) et données sous-échantillonnées</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Comme Cloud Insights conserve les données pour une période définie (par édition), il est possible de traiter des milliers de points de données. Les données peuvent donc être sous-échantillonnées avant d'être affichées dans les graphiques et les tableaux.</block>
-  <block id="9f006f2f14b484069511ef4a3f5315b3" category="section-title">Conservation des données (durée de vie)</block>
   <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights conserve les données pendant une durée déterminée par l'édition souscrite active. La conservation des données est également appelée « Time-to-Live » ou TTL.</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">Édition</block>
-  <block id="433a6d1dc9f59395173b9c44da198568" category="cell">TTL</block>
-  <block id="c6de11ce9bf3311bd827033947947ad4" category="paragraph">Les abonnements Premium Edition avec au moins 500 unités gérées (Us) conservent également les données de Business Intelligence et de reporting pour la période de 13 mois.</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">Sous-échantillonnage des données</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*Downsampling* fournit une approximation statistique de vos données dans des graphiques, vous donnant un aperçu efficace des données sans avoir à afficher chaque point de données, tout en maintenant une vue précise de vos données collectées.</block>
   <block id="b75dadfce21049a86b69409a71f9d89d" category="section-title">Pourquoi le sous-échantillonnage est-il nécessaire ?</block>
@@ -12730,4 +12723,9 @@ Redémarrez ensuite Telegraf.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Avant d'installer ou de mettre à niveau l'opérateur</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installation de l'opérateur de surveillance</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">Intervalle d'Aggregationde métadonnées</block>
+  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Durée de vie (TTL) : explication de la conservation des données et du sous-échantillonnage</block>
+  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">Conservation des données et données sous-échantillonnées</block>
+  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Conservation des données (durée de vie prolongée)</block>
+  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 jours</block>
+  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Les abonnements Premium Edition avec au moins 500 unités gérées (MU) conservent les données Business Intelligence et Reporting pendant 13 mois.</block>
 </blocks>
