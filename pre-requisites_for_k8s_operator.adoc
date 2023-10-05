@@ -193,6 +193,17 @@ OpenShift peut implémenter un niveau de sécurité supplémentaire qui peut blo
 
 
 
+=== Autorisations
+
+Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["agrégats à afficher"], Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.
+
+. Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/<namespace>-additional-permissions_
+. Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Appliquez vos modifications au cluster
+
+
+
+
 === Tolérances et tainations
 
 Les démonstrateurs _telegraf_, _fluent-bit_ et _net-observateur_ doivent planifier un pod sur chaque nœud de votre cluster afin de collecter correctement les données sur tous les nœuds. L'opérateur a été configuré pour tolérer certains *taints* bien connus. Si vous avez configuré des fichiers d'accès personnalisés sur vos nœuds, empêchant ainsi les modules de s'exécuter sur chaque nœud, vous pouvez créer une *tolérance* pour ces fichiers d'accès link:telegraf_agent_k8s_config_options.html["Dans _AgentConfiguration_"]. Si vous avez appliqué des rejets personnalisés à tous les nœuds de votre cluster, vous devez également ajouter les tolérances nécessaires au déploiement de l'opérateur pour permettre la planification et l'exécution du pod opérateur.

@@ -10367,18 +10367,6 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Contrôle des performances du réseau Kubernetes et icônes de carte :</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Surveillance et mappage des performances du réseau Kubernetes, largeur=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
-
-Red Hat Enterprise Linux 7.x, 8.x 64 bits, SELinux
-CentOS 7.x 64 bits, SELinux
-CentOS 8 Stream, SELinux
-Ubuntu 20 à 22 64 bits
-Rocky 8.x 64 bits, Rocky 9.x 64 bits, SELinux
-SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux sur SUSE 15 SP3
-
-Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
-
-Se (Security Enhanced) Linux n'est pas pris en charge.</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes suivantes avec _group_by_ correspondant générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données.</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">Protocole SMB version 3.1 et antérieure.  Notez que la sécurité des workloads ne fonctionne pas avec les configurations SMB qui utilisent FlexCache. Sur les systèmes utilisant FlexCache, à partir de ONTAP 9.7, Fpolicy n'est prise en charge que dans un environnement NFS.</block>
@@ -12519,7 +12507,6 @@ La saturation des processeurs du cluster est calculée comme la somme de l'utili
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">L'opérateur et les collecteurs de données sont téléchargés depuis le registre Docker de Cloud Insights. Une fois installé, NKMO gère ensuite tous les collecteurs compatibles avec l'opérateur déployés dans les nœuds du cluster Kubernetes pour acquérir des données, notamment la gestion du cycle de vie de ces collecteurs. Après cette chaîne, les données sont acquises auprès des collecteurs et envoyées à Cloud Insights.</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*Avant l'installation ou la mise à niveau*</block>
-  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">Lire le <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> Documentation avant l'installation ou la mise à niveau de l'opérateur de surveillance NetApp Kubernetes.</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">Mise à niveau vers la dernière console de surveillance NetApp Kubernetes</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Déterminez si une configuration d'agentConfiguration existe avec l'opérateur existant (si votre espace de noms n'est pas le _netapp-monitoring_ par défaut, remplacez l'espace de noms approprié) :</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Si une configuration d'agentConfiguration existe :</block>
@@ -12728,4 +12715,22 @@ Redémarrez ensuite Telegraf.</block>
   <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Conservation des données (durée de vie prolongée)</block>
   <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 jours</block>
   <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Les abonnements Premium Edition avec au moins 500 unités gérées (MU) conservent les données Business Intelligence et Reporting pendant 13 mois.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agrégats à afficher</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Créez une nouvelle règle pour les apiGroups et les ressources souhaités avec les verbes ["get", "Watch", "list"]. Voir \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Appliquez vos modifications au cluster</block>
+  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
+
+Red Hat Enterprise Linux 7.x, 8.x 64 bits, SELinux
+CentOS 7.x 64 bits, SELinux
+CentOS 8 Stream, SELinux
+Ubuntu 20 à 22 64 bits
+Rocky 8.x 64 bits, Rocky 9.x 64 bits, SELinux
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux sur SUSE 15 SP3
+
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">Lire le <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Documentation avant l'installation ou la mise à niveau de l'opérateur de surveillance NetApp Kubernetes.</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Il me manque des données _involvedobject_ pour certains journaux d'événements.</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Assurez-vous d'avoir suivi les étapes de la <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> section ci-dessus.</block>
 </blocks>

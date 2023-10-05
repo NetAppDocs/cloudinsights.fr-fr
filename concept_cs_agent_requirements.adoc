@@ -38,9 +38,7 @@ Ubuntu 20 à 22 64 bits
 Rocky 8.x 64 bits, Rocky 9.x 64 bits, SELinux
 SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux sur SUSE 15 SP3
 
-Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
-
-Se (Security Enhanced) Linux n'est pas pris en charge. 
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé. 
 
 
 | Commandes | le dézipper est requis pour l'installation. En outre, la commande « udo su – » est requise pour l'installation, l'exécution de scripts et la désinstallation. 
