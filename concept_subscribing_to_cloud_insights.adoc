@@ -53,7 +53,7 @@ NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights 
 
 
 
-== Essai via AWS Marketplace
+=== Essai via AWS Marketplace
 
 Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 personnes <<pricing,Unités gérées>> (MUS).
 
@@ -63,9 +63,41 @@ La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tou
 
 
 
-=== Que se passe-t-il si mon essai a expiré ?
+==== Que se passe-t-il si mon essai a expiré ?
 
 Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez.
+
+
+
+== Essais de module
+
+Bientôt disponible !
+
+
+NOTE: La version d'évaluation du module est considérée comme une fonctionnalité d'aperçu et est donc susceptible d'être modifiée.
+
+En plus de votre essai initial de Cloud Insights, vous pouvez également profiter des *essais de module*. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes, en commençant par l'installation de l'opérateur de surveillance Kubernetes NetApp. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
+
+
+NOTE: Gardez à l'esprit que vous serez facturé pour une nouvelle utilisation d'unité gérée (MU) après la période d'essai, veillez donc à planifier en conséquence. Lorsque la version d'évaluation de votre module se termine, vous serez averti si vous devrez ajouter d'autres unités de gestion pour éviter toute interruption de service.
+
+Vous pouvez contrôler l'utilisation de votre unité gérée sur la page *Admin > abonnement* de l'onglet *usage*.
+
+image:Module_Trials_UsageTab.png["Ecran utilisation UM"]
+
+
+
+=== Estimateur
+
+Pendant un essai de module, vous n'avez pas modifié l'utilisation des UM pour les ressources consommées pour le module, mais vous pouvez ouvrir le *estimateur* (dans l'onglet _Summary_) pour voir comment les UM seront facturées après l'essai, ainsi que jouer avec des scénarios de type "What if" avec le nombre d'UM dont vous aurez besoin à l'avenir. Réinitialisez les chiffres en quittant l'estimateur.
+
+image:Module_Trials_Estimator.png["Estimateur"]
+
+Cochez la case en regard d'un module pour ajouter ou supprimer les UM du module entier du coût estimé.
+
+L'estimateur vous permet également de voir comment les numéros se positionnent soit pour un module complémentaire, où vous conservez votre abonnement actuel et augmentez le nombre d'unités gérées sous licence, soit pour une option Renew pour un abonnement de renouvellement que vous achèterez lors de votre abonnement actuel fin du terme.
+
+Notez que les clients ne peuvent bénéficier d'un essai de module qu'une seule fois par abonnement.
 
 
 

@@ -263,3 +263,20 @@ Cependant, n'activez pas l'option _SSO User Auto-Provisioning_ si l'un de ces é
 * Votre entreprise dispose de plusieurs locataires Cloud Insights
 * Dans votre entreprise, aucun utilisateur du domaine fédéré ne souhaite disposer d'un certain niveau d'accès automatique au locataire Cloud Insights. _À ce stade dans le temps, nous n'avons pas la possibilité d'utiliser des groupes pour contrôler l'accès aux rôles avec cette option_.
 
+
+
+
+== Restriction de l'accès par domaine
+
+Cloud Insights peut limiter l'accès utilisateur aux seuls domaines que vous spécifiez. Sur la page *Admin > gestion des utilisateurs*, sélectionnez « restreindre les domaines ».
+
+image:Restrict_Domains_Modal.png["Restriction des domaines aux domaines par défaut uniquement, valeurs par défaut plus domaines supplémentaires que vous spécifiez, ou aucune restriction"]
+
+Les choix suivants s'offrent à vous :
+
+* Aucune restriction : Cloud Insights reste accessible aux utilisateurs, quel que soit leur domaine.
+* Limiter l'accès aux domaines par défaut : les domaines par défaut sont ceux utilisés par les propriétaires de compte d'environnement Cloud Insights. Ces domaines sont toujours accessibles.
+* Limitez l'accès aux valeurs par défaut et aux domaines que vous spécifiez. Répertoriez tous les domaines auxquels vous souhaitez avoir accès à votre environnement Cloud Insights, en plus des domaines par défaut.
+
+
+image:Restrict_Domains_Tooltip.png[""]
