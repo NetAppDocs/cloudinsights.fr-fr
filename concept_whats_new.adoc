@@ -25,6 +25,35 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Octobre 2023
+
+
+
+=== Essais de module
+
+En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:/concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
+
+
+
+=== Restreindre l'accès aux domaines spécifiés
+
+Les administrateurs et les propriétaires de compte ont désormais la possibilité de link:/concept_user_roles.html#restricting-access-by-domain["Limitez l'accès Cloud Insights"] aux domaines de messagerie qu'ils spécifient. Accédez à *Admin > gestion des utilisateurs* et sélectionnez le bouton _restreindre les domaines_.
+
+image:Restrict_Domains_Modal.png["Modèle restreindre les domaines"]
+
+
+
+=== Mises à jour du Data Collector
+
+Les modifications suivantes du Data Collector/de l'unité d'acquisition sont en place :
+
+* *Isilon / PowerScale REST* : plusieurs nouveaux attributs et mesures ont été ajoutés aux capacités d'analyse améliorées de Cloud Insights sous le nom _emc_isilon.node_pool.*_. Ces compteurs et attributs permettent aux utilisateurs de créer des tableaux de bord et des moniteurs pour la consommation de la capacité _node_pool_ ; les utilisateurs avec des clusters Isilon construits à partir de modèles de nœuds différents disposent de plusieurs pools de nœuds. Il est donc utile de comprendre la consommation de votre disque dur/SSD/capacité totale au niveau d'un pool de nœuds pour la surveillance et la planification.
+* *Rubrik* prise en charge de l'authentification « compte de service » : le collecteur Rubrik de Cloud Insights prend désormais en charge l'authentification HTTP basique (nom d'utilisateur et mot de passe) classique et l'approche de compte de service de Rubrik, qui nécessite un nom d'utilisateur + un secret + un ID d'organisation.
+
+
+'''
+
+
 == Septembre 2023
 
 
