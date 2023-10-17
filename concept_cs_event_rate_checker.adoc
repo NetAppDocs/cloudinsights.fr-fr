@@ -42,7 +42,7 @@ NOTE: Lors de l'exécution de ce script, aucun SVM Data Collector de ONTAP ne do
  /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . Ce script nécessite l'installation de _sshpass_ sur la machine linux. Il existe deux façons de l'installer :
 +
-.. Exécutez la commande de fiolling :
+.. Exécutez la commande suivante :
 +
  linux_prompt> yum install sshpass
 .. Si cela ne fonctionne pas, téléchargez _sshpass_ sur la machine linux à partir du Web et exécutez la commande suivante :
@@ -61,7 +61,7 @@ Chaque SVM Data Collector de ONTAP peut être associé à un seul SVM, ce qui si
 
 Gardez à l'esprit les éléments suivants :
 
-A) utilisez ce tableau comme guide de dimensionnement général :
+A) utilisez ce tableau comme guide de dimensionnement général. Vous pouvez augmenter le nombre de cœurs et/ou de mémoire pour augmenter le nombre de collecteurs de données pris en charge, jusqu'à un maximum de 50 collecteurs de données :
 
 |===
 
