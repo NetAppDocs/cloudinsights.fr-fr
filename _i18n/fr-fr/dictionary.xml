@@ -1404,11 +1404,6 @@
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">Identification des périphériques inactifs</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">L'identification des ressources dont vous disposez et de qui les utilise est essentielle pour « dimensionner correctement » et libérer l'infrastructure inutilisée. Vous pouvez facilement réaffecter ou désaffecter les ressources sous-utilisées et éviter ainsi les achats inutiles.</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">Procédez comme suit pour identifier les ressources inactives.</block>
-  <block id="74f2d5af3d35830fbffe4e065b028732" category="list-text">Dans le menu Cloud Insights, cliquez sur *requêtes &gt; Nouvelle requête*</block>
-  <block id="355d0fe6f460ad7e9e4be906a083f7e4" category="list-text">Dans le<block ref="9116737835cb1f4d8af2c2aac1d48819" prefix=" " category="inline-code"></block> sélectionnez le type de ressource à interroger</block>
-  <block id="08b0a890022d521dd17d275bcefd82ef" category="list-text">Cliquez sur *+ &gt; est actif*</block>
-  <block id="cc1d1782b616d7d5b18a8e83247f82c9" category="list-text">Cliquez sur *any* et remplacez-le par *non*</block>
-  <block id="d6badef7150cd45268b7ee1f29045a26" category="paragraph">Le système affiche la liste des ressources inactives du type de périphérique sélectionné.</block>
   <block id="b9249fd328314d6a7d2f42e8e3c6b5d4" category="summary">Configuration du collecteur de données VPLEX.</block>
   <block id="60681db287042fdbd55c4c2ed95ce0f0" category="doc">Configuration du collecteur de données EMC VPLEX</block>
   <block id="dbbc7759d6fa847682027ce2d68707f9" category="paragraph">Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage EMC VPLEX. Pour la configuration, le collecteur de données nécessite une adresse IP du serveur VPLEX et un compte de domaine de niveau administratif.</block>
@@ -12766,4 +12761,8 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 mois</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">Éditions et tarification</block>
   <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Une liste complète des fonctions disponibles dans chaque édition est disponible sur le Cloud Insights <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> page.</block>
+  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">Naviguez jusqu'à *Explorer -&gt; +Nouvelle requête métrique*.</block>
+  <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">Sélectionnez _Storage_ dans la liste déroulante.</block>
+  <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">Cliquez sur l'engrenage et ajoutez _isActive_ comme colonne.</block>
+  <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Les lignes affichant une vérification sont actives. "X" indique les périphériques inactifs.</block>
 </blocks>

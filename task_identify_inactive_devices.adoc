@@ -24,11 +24,10 @@ L'identification des ressources dont vous disposez et de qui les utilise est ess
 Procédez comme suit pour identifier les ressources inactives.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *requêtes > Nouvelle requête*
-. Dans le `Search For` sélectionnez le type de ressource à interroger
-. Cliquez sur *+ > est actif*
-. Cliquez sur *any* et remplacez-le par *non*
+* Naviguez jusqu'à *Explorer -> +Nouvelle requête métrique*.
+* Sélectionnez _Storage_ dans la liste déroulante.
+* Cliquez sur l'engrenage et ajoutez _isActive_ comme colonne.
 +
-Le système affiche la liste des ressources inactives du type de périphérique sélectionné.
+Les lignes affichant une vérification sont actives. "X" indique les périphériques inactifs.
 
 
