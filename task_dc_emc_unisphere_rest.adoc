@@ -95,5 +95,8 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 
 | Erreur : l'authentification de l'utilisateur a échoué. | Assurez-vous que vos informations d'identification pour ce périphérique sont correctes. 
+
+
+| État récent de l'inventaire : données inattendues récupérées -Array a signalé 0 volume | Indique généralement un problème d'autorisation (et non d'authentification). Assurez-vous que vos informations d'identification sont correctes et que le nom d'utilisateur est habilité à répertorier tous les volumes et à voir leurs attributs. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

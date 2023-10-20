@@ -12765,4 +12765,6 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">Sélectionnez _Storage_ dans la liste déroulante.</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">Cliquez sur l'engrenage et ajoutez _isActive_ comme colonne.</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Les lignes affichant une vérification sont actives. "X" indique les périphériques inactifs.</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">État récent de l'inventaire : données inattendues récupérées -Array a signalé 0 volume</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Indique généralement un problème d'autorisation (et non d'authentification). Assurez-vous que vos informations d'identification sont correctes et que le nom d'utilisateur est habilité à répertorier tous les volumes et à voir leurs attributs.</block>
 </blocks>
