@@ -22,6 +22,9 @@ summary: Amazon FSX pour NetApp ONTAP Data Collector
 Ce collecteur de données fait l'acquisition des données d'inventaire et de performance par Amazon FSX pour NetApp ONTAP. Ce collecteur de données sera disponible progressivement dans toutes les régions de service Cloud Insights. Contactez votre vendeur si vous ne voyez pas l'icône de ce collecteur dans votre environnement Cloud Insights.
 
 
+NOTE: Ce collecteur Cloud Insights nécessite un utilisateur ONTAP avec un rôle _Filesystem-scoped_. N'hésitez pas à consulter notre site AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rôles et règles"] documentation pour les options disponibles. À l'heure actuelle, AWS ne prend en charge qu'un seul type de rôle utilisateur avec le champ d'application du système de fichiers, à savoir _fsxadmin_. Il s'agit du rôle approprié à utiliser pour le collecteur Cloud Insights.
+
+
 
 == Terminologie
 
