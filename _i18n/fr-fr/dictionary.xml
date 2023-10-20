@@ -6036,7 +6036,6 @@
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">Vous devez configurer chaque compte enfant pour qu'il dispose d'un rôle AWS qui permet à l'ID de compte principal d'accéder aux informations S3 à partir du compte enfants.</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">Meilleure pratique : il est fortement recommandé d'attribuer la politique AWS prédéfinie _Amazon S3ReadOnlyAccess_ au compte principal S3. En outre, l'utilisateur configuré dans la source de données doit avoir au moins la stratégie prédéfinie _AWOrganiztionsReadOnlyAccess_, afin d'interroger AWS.</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Comme Cloud Insights conserve les données pour une période définie (par édition), il est possible de traiter des milliers de points de données. Les données peuvent donc être sous-échantillonnées avant d'être affichées dans les graphiques et les tableaux.</block>
-  <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights conserve les données pendant une durée déterminée par l'édition souscrite active. La conservation des données est également appelée « Time-to-Live » ou TTL.</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">Édition</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">Sous-échantillonnage des données</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*Downsampling* fournit une approximation statistique de vos données dans des graphiques, vous donnant un aperçu efficace des données sans avoir à afficher chaque point de données, tout en maintenant une vue précise de vos données collectées.</block>
@@ -12701,11 +12700,6 @@ Redémarrez ensuite Telegraf.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Avant d'installer ou de mettre à niveau l'opérateur</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installation de l'opérateur de surveillance</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">Intervalle d'Aggregationde métadonnées</block>
-  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Durée de vie (TTL) : explication de la conservation des données et du sous-échantillonnage</block>
-  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">Conservation des données et données sous-échantillonnées</block>
-  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Conservation des données (durée de vie prolongée)</block>
-  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 jours</block>
-  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Les abonnements Premium Edition avec au moins 500 unités gérées (MU) conservent les données Business Intelligence et Reporting pendant 13 mois.</block>
   <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">agrégats à afficher</block>
   <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Si le cluster que vous contrôlez contient des ressources personnalisées qui n'ont pas de ClusterRole qui <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>, Vous devrez accorder manuellement à l'opérateur l'accès à ces ressources pour les surveiller avec les journaux d'événements.</block>
   <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Modifiez _Operator-additional-permissions.yaml_ avant l'installation ou après l'installation, modifiez la ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
@@ -12766,4 +12760,10 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">Les administrateurs et les propriétaires de compte ont désormais la possibilité de <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> aux domaines de messagerie qu'ils spécifient. Accédez à *Admin &gt; gestion des utilisateurs* et sélectionnez le bouton _restreindre les domaines_.</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">Rôles et règles</block>
   <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">Ce collecteur Cloud Insights nécessite un utilisateur ONTAP avec un rôle _Filesystem-scoped_. N'hésitez pas à consulter notre site AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> documentation pour les options disponibles. À l'heure actuelle, AWS ne prend en charge qu'un seul type de rôle utilisateur avec le champ d'application du système de fichiers, à savoir _fsxadmin_. Il s'agit du rôle approprié à utiliser pour le collecteur Cloud Insights.</block>
+  <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">Temps de conservation des données et temps de sous-échantillonnage expliqués</block>
+  <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">Conservation des données et données sous-échantillonnées</block>
+  <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights conserve les données pendant une durée déterminée par l'édition souscrite active.</block>
+  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 mois</block>
+  <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">Éditions et tarification</block>
+  <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Une liste complète des fonctions disponibles dans chaque édition est disponible sur le Cloud Insights <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> page.</block>
 </blocks>
