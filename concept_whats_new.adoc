@@ -2623,7 +2623,7 @@ Lors de la configuration des collecteurs de données suivants, vous pouvez filtr
 
 === Edition groupée de collecteurs de données
 
-* Vous pouvez modifier les informations de plusieurs collecteurs de données en même temps. Sur la page *Admin > collecteurs de données*, sélectionnez les collecteurs de données à modifier en cochant la case à gauche de chacun et cliquez sur le bouton *actions groupées*. Choisissez *Modifier* et modifiez les champs nécessaires.
+* Vous pouvez modifier les informations de plusieurs collecteurs de données en même temps. Sur la page *observabilité > Collectors*, sélectionnez les collecteurs de données à modifier en cochant la case à gauche de chaque et cliquez sur le bouton *Bulk actions*. Choisissez *Modifier* et modifiez les champs nécessaires.
 +
 Les collecteurs de données sélectionnés doivent être du même fournisseur et du même modèle et résident sur la même unité d'acquisition.
 

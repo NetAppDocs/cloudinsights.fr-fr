@@ -37,7 +37,7 @@ NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition 
 == Procédure d'installation de l'agent
 
 . Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement de sécurité de la charge de travail.
-. Dans le menu *sécurité*, sélectionnez *Admin > Data Collectors > agents > +Agent*
+. Sélectionnez *collecteurs > agents > +Agent*
 +
 Le système affiche la page Ajouter un agent :
 

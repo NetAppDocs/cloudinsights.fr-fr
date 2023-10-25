@@ -28,7 +28,8 @@ La sécurité des charges de travail peut être configurée pour collecter des a
 
 
 .Procédure de configuration d'un collecteur d'annuaire d'utilisateurs
-. Dans le menu sécurité de la charge de travail, cliquez sur : *Admin > collecteurs de données > collecteurs d'annuaire d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *Active Directory*
+. Dans le menu sécurité de la charge de travail, cliquez sur :
+*Collecteurs > collecteurs d'annuaire d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *Active Directory*
 +
 Le système affiche l'écran Ajouter un répertoire d'utilisateurs.
 

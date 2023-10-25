@@ -32,7 +32,7 @@ Vous avez besoin des informations suivantes pour configurer ce collecteur de don
 
 .Étapes de configuration
 . Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement de sécurité de la charge de travail.
-. Cliquez sur *Admin > Data Collectors > +Data Collectors*
+. Cliquez sur *observabilité > Collectors > +Data Collectors*
 +
 Le système affiche les collecteurs de données disponibles.
 
@@ -49,7 +49,7 @@ Le système affiche la page de configuration Add Data Collector : ONTAP SVM.
 
 
 .Une fois que vous avez terminé
-* Cliquez sur *Admin > Data Collectors* pour vérifier l'état du collecteur que vous avez configuré.
+* Cliquez sur *Workload Security > Collectors* pour vérifier l'état du collecteur que vous avez configuré.
 +
 Il y a normalement un délai avant l'affichage de l'état du collecteur.
 

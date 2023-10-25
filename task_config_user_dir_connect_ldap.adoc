@@ -28,7 +28,8 @@ Vous configurez la sécurité de la charge de travail pour collecter les attribu
 
 
 .Procédure de configuration d'un collecteur d'annuaire d'utilisateurs
-. Dans le menu sécurité de la charge de travail, cliquez sur : *Admin > collecteurs de données > Collectors de répertoire utilisateur > + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*
+. Dans le menu sécurité de la charge de travail, cliquez sur :
+*Collecteurs > collecteurs d'annuaire d'utilisateurs > + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*
 +
 Le système affiche l'écran Ajouter un répertoire d'utilisateurs.
 

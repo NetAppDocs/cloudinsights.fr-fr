@@ -25,7 +25,7 @@ Cloud Insights utilise ce collecteur de données pour collecter les mesures à p
 
 == Installation
 
-. Dans *Admin > Data Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Kafka.
+. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Kafka.
 +
 Sélectionnez le système d'exploitation ou la plate-forme sur laquelle l'agent Telegraf est installé.
 

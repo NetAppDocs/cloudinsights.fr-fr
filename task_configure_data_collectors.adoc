@@ -40,7 +40,7 @@ Les informations d'identification du collecteur de données sont chiffrées lors
 
 == Configuration du Data Collector
 
-* Dans le menu Cloud Insights, cliquez sur *Admin > Data Collectors* et cliquez sur le bouton *+ Data Collector*. Vous pouvez choisir d'afficher tous les collecteurs de données, ou de filtrer pour afficher uniquement les collecteurs de données disponibles pour vous en fonction de votre abonnement.
+* Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors* et cliquez sur le bouton *+ Data Collector*. Vous pouvez choisir d'afficher tous les collecteurs de données, ou de filtrer pour afficher uniquement les collecteurs de données disponibles pour vous en fonction de votre abonnement.
 
 
 * Selon le type de collecteur de données choisi, les étapes d'installation varient.

@@ -25,7 +25,7 @@ Cloud Insights utilise ce collecteur de données pour collecter des metrics depu
 
 == Installation
 
-. Dans *Admin > Data Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Couchbase.
+. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Couchbase.
 +
 Sélectionnez le système d'exploitation ou la plate-forme sur laquelle l'agent Telegraf est installé.
 

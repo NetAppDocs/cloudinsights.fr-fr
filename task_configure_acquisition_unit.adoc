@@ -36,7 +36,7 @@ NOTE: Pour un audit et un reporting précis des données, il est fortement recom
 
 .Étapes pour l'installation de l'unité d'acquisition Linux
 . Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Cloud Insights.
-. Cliquez sur *Admin > Data Collectors > unités d'acquisition > +unité d'acquisition*
+. Cliquez sur *observabilité > collecteurs > unités d'acquisition > +unité d'acquisition*
 +
 Le système affiche la boîte de dialogue _Install acquisition Unit_. Choisissez Linux.
 
@@ -52,7 +52,7 @@ image:NewLinuxAUInstall.png["Instructions Linux au"]
 
 
 .Une fois que vous avez terminé
-* Cliquez sur *Admin > Data Collectors > unités d'acquisition* pour vérifier l'état des unités d'acquisition.
+* Cliquez sur *observabilité > collecteurs > unités d'acquisition* pour vérifier l'état des unités d'acquisition.
 * Les journaux des unités d'acquisition sont accessibles à l'adresse /var/log/netapp/cloudInsights/acq/acq.log
 * Utilisez le script suivant pour contrôler l'unité d'acquisition :
 +
@@ -112,7 +112,7 @@ Si vous avez la sécurité de la charge de travail dans votre environnement, les
 .Étapes pour l'installation de l'unité d'acquisition Windows
 . Connectez-vous au serveur/VM de l'unité d'acquisition en tant qu'utilisateur disposant des autorisations d'administrateur.
 . Sur ce serveur, ouvrez une fenêtre de navigateur et connectez-vous à votre environnement Cloud Insights en tant qu'administrateur ou responsable de compte.
-. Cliquez sur *Admin > Data Collectors > unités d'acquisition > +unité d'acquisition* .
+. Cliquez sur *observabilité > collecteurs > unités d'acquisition > +unité d'acquisition* .
 +
 Le système affiche la boîte de dialogue _Install acquisition Unit_. Choisissez Windows.
 
@@ -130,7 +130,7 @@ image::NewWindowsAUInstall.png[Installation de Windows au]
 
 
 .Une fois que vous avez terminé
-* Cliquez sur *Admin > Data Collectors > unités d'acquisition* pour vérifier l'état des unités d'acquisition.
+* Cliquez sur * > observabilité > collecteurs > unités d'acquisition* pour vérifier l'état des unités d'acquisition.
 * Vous pouvez accéder au journal de l'unité d'acquisition dans <dossier d'installation>\Cloud Insights\acquisition Unit\log\acq.log
 * Utilisez le script suivant pour arrêter, démarrer, redémarrer ou vérifier l'état de l'unité d'acquisition :
 +
@@ -194,7 +194,7 @@ Si vous désinstallez une unité d'acquisition *Linux* :
 
 *Après* désinstallation de l'au:
 
-. Dans Cloud Insights, accédez à *Admin > collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*.
+. Dans Cloud Insights, accédez à *observabilité > collecteurs et sélectionnez l'onglet *unités d'acquisition*.
 . Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez désinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.
 
 
@@ -216,12 +216,12 @@ Une unité d'acquisition temporaire doit être configurée sur un serveur/VM dis
 
 .Étapes
 . Connectez-vous au serveur/VM de l'unité d'acquisition et désinstallez le logiciel au.
-. Connectez-vous à votre environnement Cloud Insights et accédez à *Admin > Data Collectors*.
+. Connectez-vous à votre environnement Cloud Insights et accédez à *observabilité > Collectors*.
 . Pour chaque collecteur de données, cliquez sur le menu Options à droite et sélectionnez _Edit_. Affectez le collecteur de données à l'unité d'acquisition temporaire et cliquez sur *Enregistrer*.
 +
 Vous pouvez également sélectionner plusieurs collecteurs de données du même type et cliquer sur le bouton *actions groupées*. Choisissez _Edit_ et affectez les collecteurs de données à l'unité d'acquisition temporaire.
 
-. Une fois tous les collecteurs de données déplacés vers l'unité d'acquisition temporaire, accédez à *Admin > collecteurs de données* et sélectionnez l'onglet *unités d'acquisition*.
+. Une fois que tous les collecteurs de données ont été déplacés vers l'unité d'acquisition temporaire, allez dans *observabilité > collecteurs* et sélectionnez l'onglet *unités d'acquisition*.
 . Cliquez sur le bouton Options à droite de l'unité d'acquisition que vous souhaitez réinstaller, puis sélectionnez _Delete_. Vous pouvez supprimer une unité d'acquisition uniquement si aucun collecteur de données n'y est affecté.
 . Vous pouvez maintenant réinstaller le logiciel acquisition Unit sur le serveur/VM d'origine. Cliquez sur *+unité d'acquisition* et suivez les instructions ci-dessus pour installer l'unité d'acquisition.
 . Une fois que l'unité d'acquisition a été réinstallée, affectez vos collecteurs de données à l'unité d'acquisition.
