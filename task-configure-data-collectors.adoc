@@ -32,7 +32,7 @@ Vous configurez les collecteurs de données dans votre environnement Cloud Insig
 +
 Le système affiche les collecteurs de données disponibles classés par fournisseur.
 
-. Cliquez sur *+ Collector* sur le fournisseur requis et sélectionnez le collecteur de données à configurer.
+. Cliquez sur *+ Collector* et sélectionnez le collecteur de données à configurer.
 +
 Dans la boîte de dialogue, vous pouvez configurer le collecteur de données et ajouter une unité d'acquisition.
 

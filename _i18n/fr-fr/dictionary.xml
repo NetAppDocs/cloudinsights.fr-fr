@@ -3539,7 +3539,6 @@
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">Vous avez besoin d'informations d'identification pour les périphériques à partir desquels vous recueillez des données.</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">Les adresses réseau du périphérique, les informations de compte et les mots de passe sont requis pour tous les périphériques à partir de qui vous recueillez des données.</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">Le système affiche les collecteurs de données disponibles classés par fournisseur.</block>
-  <block id="98340026125b30253a889a183c2af3e1" category="list-text">Cliquez sur *+ Collector* sur le fournisseur requis et sélectionnez le collecteur de données à configurer.</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">Dans la boîte de dialogue, vous pouvez configurer le collecteur de données et ajouter une unité d'acquisition.</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">Entrez un nom pour le collecteur de données.</block>
   <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">Les noms peuvent contenir des lettres (a-z), des chiffres (0-9), des tirets (-), des traits de soulignement (_), des apostrophes ('), et les périodes (.).</block>
@@ -12780,4 +12779,5 @@ Voir la section référence du fournisseur du Data Collector de la documentation
   <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, sélectionnez CouchDB.</block>
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez encre.</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">Accédez à Workload Security *Collectors* et cliquez sur l'onglet *agents*.</block>
+  <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">Cliquez sur *+ Collector* et sélectionnez le collecteur de données à configurer.</block>
 </blocks>
