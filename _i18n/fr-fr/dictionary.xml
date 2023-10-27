@@ -12780,4 +12780,12 @@ Voir la section référence du fournisseur du Data Collector de la documentation
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez encre.</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">Accédez à Workload Security *Collectors* et cliquez sur l'onglet *agents*.</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">Cliquez sur *+ Collector* et sélectionnez le collecteur de données à configurer.</block>
+  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">Ajoutez des extensions de fichier à une liste blanche pour réduire les alertes</block>
+  <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">Stratégies de types de fichiers autorisées</block>
+  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">Si une attaque par ransomware est détectée pour une extension de fichier connue et que des alertes sont générées sur l'écran alertes, une extension de fichier peut être blanche pour empêcher les alertes inutiles.</block>
+  <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">Accédez à *Workload Security &gt; Policies* et allez à l'onglet _Allowed File Type Policies_.</block>
+  <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">Une fois blanches, aucune alerte d'attaque par ransomware ne sera générée pour ce type de fichier autorisé. Notez que la règle _allowed File types_ ne s'applique qu'à la détection des ransomware.</block>
+  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">Par exemple, si un fichier nommé _test.txt_ est renommé _test.txt.abc_ et que Workload Security détecte une attaque par ransomware à cause de l'extension _.abc_, l'extension _.abc_ peut être blanche. Après cette liste blanche, les attaques par ransomware ne seront plus générées contre les fichiers portant l'extension _.abc_.</block>
+  <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">Les types de fichiers autorisés peuvent être des correspondances exactes (par exemple, ".abc") ou des expressions (par exemple, ".*type", ".type*" ou "*type*"). Les expressions des types “.a*c”, “.p*f” ne sont pas prises en charge.</block>
 </blocks>
