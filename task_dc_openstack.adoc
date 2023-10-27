@@ -27,7 +27,7 @@ Le collecteur de données OpenStack (API REST/KVM) acquiert les données d'inven
 
 * Adresse IP du contrôleur OpenStack
 * Informations d'identification du rôle d'administrateur OpenStack et accès à l'hyperviseur Linux KVM. Si vous n'utilisez pas le compte admin ou les privilèges équivalents admin, vous devez utiliser le test et l'erreur pour identifier les stratégies par défaut pour vous détendre pour votre ID utilisateur de collecteur de données.
-* Le module Ceilometer OpenStack doit être installé et configuré pour la collecte de performances. La configuration du Ceilometer s'effectue en éditant le fichier nova.conf pour chaque hyperviseur, puis en redémarrant le service Nova Compute sur chaque hyperviseur. Modifications du nom de l'option dans les différentes versions d'OpenStack :
+* Le module OpenStack gnocchi doit être installé et configuré pour la collecte des performances. La configuration de gnocchi se fait en éditant le fichier nova.conf pour chaque hyperviseur, puis en redémarrant le service Nova Compute sur chaque hyperviseur. Modifications du nom de l'option dans les différentes versions d'OpenStack :
 +
 ** Icehouse
 ** Juno
@@ -45,7 +45,7 @@ Le collecteur de données OpenStack (API REST/KVM) acquiert les données d'inven
 ** 22 pour KVM SSH
 ** 8774 pour le service de calcul Nova
 ** 8776 pour le service de blocs Cinder
-** 8777 pour le service de performance du Ceilometer
+** 8777 pour le service de performance de gnocchi
 ** 9292 pour le service d'image Glance *Remarque* le port se lie au service spécifique et le service peut s'exécuter sur le contrôleur ou un autre hôte dans des environnements plus grands.
 
 
