@@ -29,6 +29,16 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+=== Sécurité améliorée des workloads
+
+La sécurité des charges de travail a été améliorée grâce aux éléments suivants :
+
+* *Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir des événements « accès refusé » et fournir une couche supplémentaire d'analyses et de réponses automatiques.
+* Liste blanche *autorisé types de fichiers* : si une attaque par ransomware est détectée pour une extension de fichier connue, cette extension peut être mise en blanc pour empêcher les alertes inutiles. - link:/ws_allowed_file_types.html["En savoir plus >>"]
+
+
+
+
 === Essais de module
 
 En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
