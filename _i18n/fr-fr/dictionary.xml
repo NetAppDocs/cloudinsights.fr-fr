@@ -12807,4 +12807,8 @@ Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  M
 
 Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
   <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">Notez que les commandes de l'interface de ligne de commande FSX extraient certaines valeurs de capacité que FSX interdit via l'API. Étant donné que Cloud Insights tente de récupérer les données FSX via l'API, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Cloud Insights que dans FSX lui-même. Pour plus d'informations, contactez votre représentant Amazon.</block>
+  <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Lors de la saisie d'un horaire de rapport Cognos, parfois, je me termine par un "m" supplémentaire dans l'horaire. Par exemple, si j'entre l'heure « 02:15 PM », il peut ajouter un caractère supplémentaire : « 02:15 PMM » (ou PMM). Lorsque je clique à l'extérieur, il passe à « 2:15 AM ».
+
+Je suis capable d'enregistrer le rapport, mais lorsque je rouvre le rapport enregistré, l'heure de planification apparaît comme AM (c'est-à-dire matin), que je saisis AM ou PM dans l'heure de planification.</block>
+  <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">Entrez à nouveau l'heure programmée en veillant à ne pas entrer les caractères « AM » ou « PM » ; il suffit de taper « A » pour « AM » ou « P » pour « PM ». Si le caractère supplémentaire n'est pas affiché, l'heure de programmation sera définie correctement.</block>
 </blocks>

@@ -65,6 +65,11 @@ Voir aussi link:task_troubleshooting_linux_acquisition_unit_problems.html["Dépa
 
 
 | J'ai à la fois un quota souple et un quota matériel définis manuellement dans le même qtree, mais la capacité totale affichée est le quota dur ; est-ce correct ? | Oui, si un quota matériel est spécifié, il s'affichera comme la capacité totale. 
+
+
+| Lors de la saisie d'un horaire de rapport Cognos, parfois, je me termine par un "m" supplémentaire dans l'horaire. Par exemple, si j'entre l'heure « 02:15 PM », il peut ajouter un caractère supplémentaire : « 02:15 PMM » (ou PMM). Lorsque je clique à l'extérieur, il passe à « 2:15 AM ».
+
+Je suis capable d'enregistrer le rapport, mais lorsque je rouvre le rapport enregistré, l'heure de planification apparaît comme AM (c'est-à-dire matin), que je saisis AM ou PM dans l'heure de planification. | Entrez à nouveau l'heure programmée en veillant à ne pas entrer les caractères « AM » ou « PM » ; il suffit de taper « A » pour « AM » ou « P » pour « PM ». Si le caractère supplémentaire n'est pas affiché, l'heure de programmation sera définie correctement. 
 |===
 
 
