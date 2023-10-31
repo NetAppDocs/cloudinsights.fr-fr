@@ -120,6 +120,8 @@ Ce collecteur de données collecte les mesures avancées suivantes à partir du 
 * volume_charge_de_travail
 
 
+Notez que les commandes de l'interface de ligne de commande FSX extraient certaines valeurs de capacité que FSX interdit via l'API. Étant donné que Cloud Insights tente de récupérer les données FSX via l'API, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Cloud Insights que dans FSX lui-même. Pour plus d'informations, contactez votre représentant Amazon.
+
 
 
 == Dépannage

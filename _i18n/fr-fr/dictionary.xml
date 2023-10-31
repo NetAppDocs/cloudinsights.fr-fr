@@ -12806,4 +12806,5 @@ Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  M
 ....
 
 Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
+  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">Notez que les commandes de l'interface de ligne de commande FSX extraient certaines valeurs de capacité que FSX interdit via l'API. Étant donné que Cloud Insights tente de récupérer les données FSX via l'API, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Cloud Insights que dans FSX lui-même. Pour plus d'informations, contactez votre représentant Amazon.</block>
 </blocks>
