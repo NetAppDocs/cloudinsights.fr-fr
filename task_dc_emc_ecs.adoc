@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données ECS.
 
 
 [role="lead"]
-Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage EMC ECS. Pour la configuration, le collecteur de données nécessite une adresse IP du serveur ECS et un compte de domaine de niveau administratif.
+Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage EMC ECS. Pour la configuration, le collecteur de données nécessite une adresse IP ou un nom d'hôte du cluster ECS ainsi qu'un nom d'utilisateur et un mot de passe.
 
 
 NOTE: Dell EMC ECS est mesuré à un taux de To brut différent vers l'unité gérée. Chaque 40 To de capacité ECS non formatée est facturé comme 1 link:concept_subscribing_to_cloud_insights.html#pricing["Unité gérée (UM)"].
@@ -52,11 +52,9 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 == De formation
 
-* Une adresse IP de la console de gestion ECS
-* Compte de domaine de niveau administratif pour le système ECS
-* Port 443 (HTTPS). Nécessite une connectivité sortante vers le port TCP 443 du système ECS.
-* Pour des performances optimales, le nom d'utilisateur et le mot de passe en lecture seule pour l'accès ssh/scp.
-* Pour les performances, le port 22 est requis.
+* Une adresse IP ou un nom d'hôte du cluster ECS
+* Un nom d'utilisateur et un mot de passe pour le système ECS
+* Port 4443 (HTTPS).  Nécessite une connectivité sortante au port TCP 4443 sur le système ECS.
 
 
 
@@ -74,7 +72,7 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 | Port hôte ECS | Port utilisé pour la communication avec l'hôte ECS 
 
 
-| ID fournisseur ECS | ID fournisseur pour ECS 
+| ID utilisateur ECS | ID utilisateur pour ECS 
 
 
 | Mot de passe | Mot de passe utilisé pour ECS 
@@ -94,4 +92,31 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 == Dépannage
 
+Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur de données :
+
+
+
+==== Inventaire
+
+[cols="2*"]
+|===
+| Problème : | Essayer : 
+
+
+| Erreur : l'authentification de l'utilisateur a échoué. | Assurez-vous que vos informations d'identification pour ce périphérique sont correctes. 
+|===
+
+
+==== Performance
+
+[cols="2*"]
+|===
+| Problème : | Essayer : 
+
+
+| Erreur : données collectées insuffisantes. | • Vérifiez l'horodatage de collecte dans le fichier journal et modifiez l'intervalle de vote en conséquence • attendez plus longtemps 
+
+
+| Erreur : l'intervalle d'interrogation des performances est trop important. | Vérifiez l'horodatage de collecte dans le fichier journal ${logfile} et modifiez l'intervalle d'interrogation en conséquence 
+|===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
