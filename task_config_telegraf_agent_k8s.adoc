@@ -528,9 +528,15 @@ Redémarrez ensuite Telegraf.
 | Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-netapp-kubernetes-monitoring-operator,installez le nouveau>>. 
 
 
-| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue. | Récupérez le nom du pod Event-exportateur `kubectl -n pods netapp-monitoring 
+| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue. | Récupérer le nom du pod Event-exportateur :
 
+ `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
 
-| grep exportateur-événement | awk '{print $1}' 
+Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance `kubectl -n netapp-monitoring edit agent`, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
+
+    - Clé : FICHIER_JOURNAL
+      valeurs :
+      - /var/log/containers/netapp-ci-event-exportatrice*.log
+Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-the-netapp-kubernetes-monitoring-operator,réinstallez>> l'agent. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

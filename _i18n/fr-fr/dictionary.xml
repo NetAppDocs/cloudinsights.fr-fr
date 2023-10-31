@@ -12785,13 +12785,22 @@ Voir la section référence du fournisseur du Data Collector de la documentation
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir des événements « accès refusé » et fournir une couche supplémentaire d'analyses et de réponses automatiques.</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">Liste blanche *autorisé types de fichiers* : si une attaque par ransomware est détectée pour une extension de fichier connue, cette extension peut être mise en blanc pour empêcher les alertes inutiles. - <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue.</block>
-  <block id="530877d75874db688a349c68f4d664d6" category="cell">Récupérez le nom du pod Event-exportateur `kubectl -n pods netapp-monitoring</block>
-  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">grep exportateur-événement</block>
-  <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '{print $1}'</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage EMC ECS. Pour la configuration, le collecteur de données nécessite une adresse IP ou un nom d'hôte du cluster ECS ainsi qu'un nom d'utilisateur et un mot de passe.</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">Une adresse IP ou un nom d'hôte du cluster ECS</block>
   <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">Un nom d'utilisateur et un mot de passe pour le système ECS</block>
   <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">Port 4443 (HTTPS).  Nécessite une connectivité sortante au port TCP 4443 sur le système ECS.</block>
   <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ID utilisateur ECS</block>
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ID utilisateur pour ECS</block>
+  <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">désinstaller</block>
+  <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">réinstallez</block>
+  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">Récupérer le nom du pod Event-exportateur :
+
+<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
+
+Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
+
+    - Clé : FICHIER_JOURNAL
+      valeurs :
+      - /var/log/containers/netapp-ci-event-exportatrice*.log
+Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
 </blocks>
