@@ -526,5 +526,11 @@ Redémarrez ensuite Telegraf.
 
 
 | Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-netapp-kubernetes-monitoring-operator,installez le nouveau>>. 
+
+
+| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue. | Récupérez le nom du pod Event-exportateur `kubectl -n pods netapp-monitoring 
+
+
+| grep exportateur-événement | awk '{print $1}' 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
