@@ -12793,14 +12793,17 @@ Voir la section référence du fournisseur du Data Collector de la documentation
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ID utilisateur pour ECS</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">désinstaller</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">réinstallez</block>
-  <block id="8469e2ae035ceb8a5938bd217eb94df0" category="cell">Récupérer le nom du pod Event-exportateur :
+  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">Récupérer le nom du pod Event-exportateur :
 
 <block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
 
 Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
 
-    - Clé : FICHIER_JOURNAL
-      valeurs :
-      - /var/log/containers/netapp-ci-event-exportatrice*.log
+....
+ - Clé : FICHIER_JOURNAL
+   valeurs :
+   - /var/log/containers/netapp-ci-event-exportatrice*.log
+....
+
 Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
 </blocks>
