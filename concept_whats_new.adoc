@@ -34,7 +34,7 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 La sécurité des charges de travail a été améliorée grâce aux éléments suivants :
 
 * *Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir des événements « accès refusé » et fournir une couche supplémentaire d'analyses et de réponses automatiques.
-* Liste blanche *autorisé types de fichiers* : si une attaque par ransomware est détectée pour une extension de fichier connue, cette extension peut être mise en blanc pour empêcher les alertes inutiles. - link:/ws_allowed_file_types.html["En savoir plus >>"]
+* *Types de fichiers autorisés* : si une attaque par ransomware est détectée pour une extension de fichier connue, cette extension de fichier peut être ajoutée à un link:ws_allowed_file_types.html["types de fichiers autorisés"] pour éviter les alertes inutiles.
 
 
 
