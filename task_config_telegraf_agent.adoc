@@ -23,6 +23,8 @@ Utilisations de Cloud Insights link:https://docs.influxdata.com/telegraf["Télé
 
 La version actuelle de Telegraf pour Cloud Insights est *1.24.0*.
 
+Pour plus d'informations sur l'installation sur Kubernetes, reportez-vous à la section link:/task_config_telegraf_agent_k8s.html["cette page"].
+
 
 NOTE: Pour un audit et un reporting précis des données, il est fortement recommandé de synchroniser l'heure sur l'ordinateur Agent à l'aide de *NTP (Network Time Protocol)* ou *SNTP (simple Network Time Protocol)*.
 
