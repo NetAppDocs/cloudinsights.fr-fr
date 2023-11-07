@@ -39,8 +39,6 @@ sidebar:
         url: "/task_configure_acquisition_unit.html"
       - title: Configuration d'un agent sous Windows/Linux
         url: "/task_config_telegraf_agent.html"
-      - title: Configuration d'un opérateur Kubernetes
-        url: "/task_config_telegraf_agent_k8s.html"
       - title: Configuration des collecteurs de données
         url: "/task_configure_data_collectors.html"
       - title: Détermination de l'état d'acquisition du Data Collector
