@@ -21,6 +21,9 @@ summary: 'Cloud Insights prend en charge Telegraf en tant qu"agent pour collecte
 [role="lead"]
 Cloud Insights propose *l'opérateur de surveillance NetApp Kubernetes* (NKMO) pour la collection Kubernetes. Lorsque vous ajoutez un collecteur de données, il vous suffit de choisir la vignette « Kubernetes ».
 
+
+NOTE: Si vous disposez de l'édition fédérale de Cloud Insights, les instructions d'installation et de configuration peuvent être différentes de celles de cette page. Suivez les instructions dans Cloud Insights pour installer l'opérateur de surveillance NetApp Kubernetes.
+
 image:kubernetes_tile.png["Mosaïque Kubernetes Data Collector"]
 
 
