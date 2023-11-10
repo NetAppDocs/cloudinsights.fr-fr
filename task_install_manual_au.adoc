@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
-keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
 summary: Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement. 
 ---
 = Installation manuelle du logiciel de l'unité d'acquisition
@@ -27,14 +27,14 @@ Le processus est similaire pour Linux et Windows.
 
 
 
-=== Exécution D'une NOUVELLE installation au sous Linux :
+== Exécution D'une NOUVELLE installation au sous Linux :
 
 . Dans Cloud Insights, créez un jeton d'API.
 +
 .. Accédez à *Admin > accès API* et sélectionnez *+jeton d'accès API*.
 +
 ... Définissez un *Nom* et une *Description* faciles à identifier
-... Type : *unité d'acquisition*
+... Type : choisissez *unité d'acquisition* et *collecte de données*
 ... Autorisations : *lecture/écriture*
 ... Sélectionnez les valeurs *Expiry* et *Auto-Renew* souhaitées
 
@@ -109,68 +109,90 @@ Remarque : si vous ne souhaitez pas utiliser un utilisateur et un groupe personn
 
 
 
-À ce stade, le logiciel au est installé sur le système et est accessible par l'utilisateur et le groupe personnalisés. Cependant, vous n'avez pas la possibilité d'ajouter des collecteurs de données. Pour ce faire manuellement, vous devez copier le fichier datasources.war à l'emplacement approprié.
+À ce stade, le logiciel au est installé sur le système et est accessible par l'utilisateur et le groupe personnalisés. Cependant, vous n'avez pas la possibilité d'ajouter des collecteurs de données. Pour ce faire manuellement, lisez les instructions suivantes. Si vous souhaitez uniquement installer un correctif, reportez-vous au <<downloading-a-patch,Correctif>> section ci-dessous.
 
-. Naviguez jusqu'à l'emplacement source de datasources.war et vérifiez le fichier zip :
-+
-....
-cd /opt/netapp/cloudinsights/acq
-ls -al
-…
--rw-rw----  1 test-user1 test-group1 282103053 Mar 12 12:27 datasources-war-<version>>.zip
-…
-....
-. Notez les autorisations sur le dossier datasources.war par défaut :
-+
-....
-ls -al /var/lib/netapp/cloudinsights/acq/
-…
-drwxrwx--- 2 test-user1 test-group-1  4096 Feb 16 10:10 datasources.war
-…
-....
+
+
+== Installation manuelle des collecteurs de données
+
+Téléchargez la dernière version de datasources.war à l'aide de /Collector/patch/datasources/latest API :
+
+image:API_Manual_Download_datasources.png["API pour récupérer la dernière datasources.war"]
+
+Remarque : si vous ne téléchargez pas la dernière version, confirmez auprès de NetApp la version à télécharger.
+
+Cliquez sur Télécharger le fichier. Si vous effectuez ces étapes sur un système autre que le système au, copiez le paquet zip datasources.war téléchargé sur le système au.
+
+Assurez-vous que le paquet zip datasources.war est copié dans le répertoire suivant : /var/lib/netapp/cloudInsights/acq/download
+
+Accédez au répertoire /var/lib/netapp/cloudInsights/acq/download pour datasources.war et vérifiez le fichier zip à cet emplacement :
+
 . Pour les étapes suivantes, vous devez basculer vers (ou déconnecter root et vous connecter avec) l'utilisateur personnalisé.
 +
  su <custom user>
 +
-.. Remarque : si vous utilisez l’utilisateur et le groupe “cisys” par défaut, vous n’avez pas besoin d’effectuer cette étape.
-.. Remarque : l'utilisateur personnalisé peut être tout utilisateur membre d'un groupe personnalisé que vous avez fourni à cloudinsights-install.sh lors de l'installation au, et peut être identique ou différent de l'utilisateur personnalisé que vous avez fourni lors de l'installation au.
+Remarque : si vous utilisez l’utilisateur et le groupe “cisys” par défaut, vous n’avez pas besoin d’effectuer cette étape.
 
++
+Remarque : l'utilisateur personnalisé peut être tout utilisateur membre d'un groupe personnalisé que vous avez fourni à cloudinsights-install.sh lors de l'installation au, et peut être identique ou différent de l'utilisateur personnalisé que vous avez fourni lors de l'installation au.
 
-. Créez un dossier de travail et réglez-le sur les mêmes autorisations :
+. Effectuez les opérations suivantes :
 +
 ....
-mkdir /var/lib/netapp/cloudinsights/acq/download
-chmod 770 /var/lib/netapp/cloudinsights/acq/download
-ls -al /var/lib/netapp/cloudinsights/acq
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
 …
-drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources.war
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
 …
 ....
 +
-.. Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront affichés dans la sortie ci-dessus.
+Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront affichés dans la sortie ci-dessus.
+
++
+Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs personnalisés, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (chmod 660 …)
+
+. Redémarrez au. Dans Cloud Insights, accédez à observabilité > collecteurs et sélectionnez l'onglet unités d'acquisition. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
 
 
-. Copiez le fichier _datasources-war-<version>.zip_ dans le dossier de travail. Par exemple :
+
+
+== Téléchargement d'un correctif
+
+Téléchargez le correctif à l'aide de l'API /Collector/patch/file/{version} :
+
+image:API_Manual_Download_patch.png["API pour récupérer le correctif"]
+
+Remarque : confirmez avec NetApp la version à télécharger.
+
+Cliquez sur Télécharger le fichier. Si vous effectuez ces étapes sur un système autre que le système au, copiez le paquet zip téléchargé sur le système au.
+
+Assurez-vous que le paquet zip de correctifs est copié dans le répertoire suivant : /var/lib/netapp/cloudInsights/acq/download
+
+Accédez au répertoire /var/lib/netapp/cloudInsights/acq/download pour trouver le correctif et vérifiez le fichier .zip à cet emplacement :
+
+. Pour les étapes suivantes, vous devez basculer vers (ou déconnecter root et vous connecter avec) l'utilisateur personnalisé.
 +
- cp /opt/netapp/cloudinsights/acq/ TBD/var/lib/netapp/cloudinsights/acq/download
-. Accédez au dossier de téléchargement et décompressez le fichier :
+ su <custom user>
 +
- cd /var/lib/netapp/cloudinsights/acq/download
+Remarque : si vous utilisez l’utilisateur et le groupe “cisys” par défaut, vous n’avez pas besoin d’effectuer cette étape.
+
++
+Remarque : l'utilisateur personnalisé peut être tout utilisateur membre d'un groupe personnalisé que vous avez fourni à cloudinsights-install.sh lors de l'installation au, et peut être identique ou différent de l'utilisateur personnalisé que vous avez fourni lors de l'installation au.
+
+. Effectuez les opérations suivantes :
 +
 ....
-unzip datasources-war-<version>.zip -d /var/lib/netapp/cloudinsights/acq/datasources.war/
-ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
 ....
 +
-.. assurez-vous que l'utilisateur, le groupe et les autorisations sont corrects sur tous les fichiers :
+Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront affichés dans la sortie ci-dessus.
+
 +
- -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
+Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs personnalisés, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (chmod 660 …)
 
-
-. Remarque : si vous prévoyez d'utiliser des utilisateurs personnalisés différents, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (_chmod 660 …_)
-. Redémarrez au.
-+
-.. Dans Cloud Insights, accédez à *observabilité > collecteurs* et sélectionnez l'onglet *unités d'acquisition*. Choisissez _Restart_ dans le menu "trois points" à droite de l'au.
-
-
+. Redémarrez au. Dans Cloud Insights, accédez à observabilité > collecteurs et sélectionnez l'onglet unités d'acquisition. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
 
