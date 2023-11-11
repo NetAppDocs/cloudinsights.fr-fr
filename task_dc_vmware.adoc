@@ -136,6 +136,21 @@ Dans l'écran de configuration avancée, cochez la case *VM Performance* pour co
 |===
 
 
+== Mappage des balises VMware aux annotations Cloud Insights
+
+Le collecteur de données VMware vous permet de remplir les annotations Cloud Insights avec des balises configurées sur VMware. Les annotations doivent être nommées exactement comme les balises VMware. Cloud Insights renseigne toujours les annotations de type texte nommées identique et tentera de remplir les annotations des autres types (nombre, booléen, etc.). Si votre annotation est de type différent et que le collecteur de données ne parvient pas à la remplir, il peut être nécessaire de supprimer l'annotation et de la recréer en tant que type de texte.
+
+Notez que les balises VMware peuvent être sensibles à la casse, tandis que les balises Cloud Insights ne sont pas sensibles à la casse. Par conséquent, si vous créez une annotation nommée « PROPRIÉTAIRE » dans Cloud Insights et des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans VMware, toutes ces variations de « propriétaire » seront associées à l'annotation « PROPRIÉTAIRE » DE Cloud Insight.
+
+Gardez à l'esprit les éléments suivants :
+
+* Actuellement, Cloud Insights ne publie automatiquement que les informations de support pour les périphériques NetApp.
+* Étant donné que ces informations de support sont conservées sous forme d'annotation, vous pouvez les interroger ou les utiliser dans des tableaux de bord.
+* Si un utilisateur écrase ou vide la valeur de l'annotation, la valeur est automatiquement redéfinie lorsque Cloud Insights met à jour les annotations, ce qui est effectué une fois par jour.
+
+
+
+
 == Dépannage
 
 Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur de données :

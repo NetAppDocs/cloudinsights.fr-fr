@@ -25,6 +25,33 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Novembre 2023
+
+
+
+=== Informations sur la prise en charge du nœud de stockage
+
+Sur la page d'accueil d'un nœud de stockage, la section _données utilisateur_ fournit des informations d'un coup d'œil sur votre offre de support, votre statut actuel, votre statut du support et la date de fin de garantie. Notez que Cloud Insights ne publie actuellement que ces informations pour les terminaux NetApp. Notez également que ces champs de support sont des annotations, de sorte qu'ils peuvent être utilisés dans les requêtes et les tableaux de bord.
+
+image:StorageNodeSupportData.png["Informations sur la prise en charge du nœud de stockage"]
+
+
+
+=== Mapper les balises VMware aux annotations Cloud Insights
+
+Le link:task_dc_vmware.html#mapping-vmware-tags-to-cloud-insights-annotations["VMware"] Le collecteur de données vous permet de remplir les annotations de texte Cloud Insights avec des balises de même nom configurées sur VMware.
+
+
+
+=== Améliorations de la fiabilité du collecteur CLI Brocade pour le micrologiciel FOS 9.1.1c et supérieur
+
+Sur certains commutateurs Brocade Fibre Channel exécutant le micrologiciel 9.1.1c, le résultat de certaines commandes de l'interface de ligne de commande peut être précédé du texte de la bannière de connexion « motd » ou des avertissements pour que les utilisateurs modifient les mots de passe par défaut. Le collecteur CLI Brocade a été amélioré pour ignorer ces deux types de texte étranger.
+
+Avant cette amélioration, seuls les commutateurs FOS 9.1.1c sans structure virtuelle étaient susceptibles d'être détectés avec ce type de collecteur.
+
+'''
+
+
 == Octobre 2023
 
 
