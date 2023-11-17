@@ -29,6 +29,12 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+=== Sécurité de la charge de travail : interrompre/reprendre un collecteur
+
+Dans Workload Security, vous pouvez interrompre un Data Collector si le collecteur est à l'état _running_ ou _Error_. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Sélectionnez reprendre pour recommencer la collecte.
+
+
+
 === Informations sur la prise en charge du nœud de stockage
 
 Sur la page d'accueil d'un nœud de stockage, la section _données utilisateur_ fournit des informations d'un coup d'œil sur votre offre de support, votre statut actuel, votre statut du support et la date de fin de garantie. Notez que Cloud Insights ne publie actuellement que ces informations pour les terminaux NetApp. Notez également que ces champs de support sont des annotations, de sorte qu'ils peuvent être utilisés dans les requêtes et les tableaux de bord.

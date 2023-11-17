@@ -218,6 +218,42 @@ Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas bes
 
 
 
+== Collecteur de données Play-Pause
+
+2 nouvelles opérations sont maintenant affichées dans le menu kebab du collecteur (PAUSE et REPRISE).
+
+Si le Data Collector est à l'état _running_ ou _Error_, vous pouvez suspendre la collecte. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Cela signifie qu'aucun événement Fpolicy ne circule de ONTAP vers le collecteur de données et de là vers Cloud Insights.
+
+Notez que si de nouveaux volumes, etc. Sont créés sur ONTAP alors que le collecteur est en pause, la sécurité des workloads ne recueillera pas les données et ces volumes, etc. Ne seront pas reflétés dans les tableaux de bord ou les tableaux.
+
+Gardez à l'esprit les éléments suivants :
+
+|===
+| # | Comportement de pause du collecteur 
+
+
+| 1 | La suppression des snapshots ne se fera pas conformément aux paramètres configurés sur un collecteur en pause. 
+
+
+| 2 | Les événements EMS (comme ONTAP ARP) ne seront pas traités sur un collecteur en pause. En d'autres termes, si ONTAP identifie une attaque par ransomware, Cloud Insights Workload Security ne pourra pas acquérir cet événement. 
+
+
+| 3 | Les e-mails de notification de santé NE seront PAS envoyés pour un collecteur en pause. 
+
+
+| 4 | Les actions manuelles ou automatiques (telles que instantané ou blocage utilisateur) ne sont pas prises en charge sur un collecteur en pause. 
+
+
+| 5 | Lors des mises à niveau d'agent ou de collecteur, des redémarrages/redémarrages de machine virtuelle d'agent ou du redémarrage du service d'agent, un collecteur en pause restera à l'état _Pause_. 
+
+
+| 6 | Si le collecteur de données est à l'état _Error_, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le bouton Pause est activé uniquement si l'état du collecteur est _running_. 
+
+
+| 7 | Si l'agent est déconnecté, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le collecteur passe à l'état _stopped_ et le bouton Pause est désactivé. 
+|===
+
+
 == Dépannage
 
 Les problèmes connus et leurs résolutions sont décrits dans le tableau suivant.
