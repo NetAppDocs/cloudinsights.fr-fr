@@ -48,8 +48,8 @@ L'outil SecurityAdmin permet de gérer les options de sécurité de Cloud Insigh
 Après l'installation de au, l'outil SecurityAdmin se trouve sur le système d'unités d'acquisition à l'un des emplacements suivants :
 
 ....
-Windows: C:\Program Files\Cloud Insights\Acquisition Unit\acq\securityadmin\bin\securityadmin.bat
-Linux: /opt/netapp/cloudinsights/securityadmin/bin/securityadmin.sh
+Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat
+Linux - /bin/oci-securityadmin.sh
 ....
 
 
@@ -70,8 +70,8 @@ Crée un fichier zip de sauvegarde du coffre-fort contenant tous les mots de pas
 
 +
 ....
-Windows: C:\Program Files\Cloud Insights\Acquisition Unit\backup\vault
-Linux: /var/log/netapp/cloudinsights/backup/vault
+Windows - C:\Program Files\SANscreen\backup\vault
+Linux - /var/log/netapp/oci/backup/vault
 ....
 +
 Il est recommandé de préserver la sécurité des sauvegardes de coffre-fort, car elles contiennent des informations sensibles.
@@ -201,3 +201,70 @@ Vous devez redémarrer l'unité d'acquisition après avoir exécuté la commande
 Pour mettre à jour un proxy, la commande est
 
  ./securityadmin -pr -upr <arg>
+
+
+== Récupération de clé externe
+
+Si vous fournissez un script shell UNIX, il peut être exécuté par l'unité d'acquisition pour récupérer la *clé privée* et la *clé publique* de votre système de gestion des clés.
+
+Pour récupérer la clé, Cloud Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
+
+Pour renvoyer la clé à l'unité d'acquisition, le script doit imprimer la clé sur la sortie standard. Le script doit imprimer _uniquement_ la clé de la sortie standard ; aucun autre texte ne doit être imprimé sur la sortie standard. Une fois la clé demandée imprimée sur la sortie standard, le script doit se fermer avec un code de sortie de 0 ; tout autre code de retour est considéré comme une erreur.
+
+Le script doit être enregistré avec l'unité d'acquisition à l'aide de l'outil SecurityAdmin, qui exécutera le script avec l'unité d'acquisition. Le script doit disposer des autorisations _read_ et _execute_ pour l'utilisateur root et "cisys". Si le script shell est modifié après l'enregistrement, le script shell modifié doit être réenregistré avec l'unité d'acquisition.
+
+|===
+
+
+| paramètre d'entrée : id de clé | Identificateur de clé utilisé pour identifier la clé dans le système de gestion des clés du client. 
+
+
+| paramètre d'entrée : type de clé | public ou privé. 
+
+
+| sortie | La clé demandée doit être imprimée sur la sortie standard. La clé RSA 2048 bits est actuellement prise en charge. Les clés doivent être codées et imprimées au format suivant :
+
+Format de clé privée - PEM, PKCS8 PrivateKeyInfo RFC 5958 codé DER
+
+Format de clé publique : PEM, X.509 codé DER subjectPublicKeyInfo RFC 5280 
+
+
+| code de sortie | Code de sortie de zéro pour réussir. Toutes les autres valeurs de sortie sont considérées comme ayant échoué. 
+
+
+| autorisations de script | Le script doit disposer d'une autorisation de lecture et d'exécution pour l'utilisateur root et cisys. 
+
+
+| journaux | Les exécutions de script sont consignées. Les journaux sont disponibles dans -
+
+/var/log/netapp/cloudinsights/securityadmin/securityadmin.log
+
+/var/log/netapp/cloudinsights/acq/acq.log 
+|===
+
+
+== Cryptage d'un mot de passe à utiliser dans l'API
+
+L'option 8 vous permet de crypter un mot de passe que vous pouvez ensuite transmettre à un collecteur de données via l'API.
+
+Démarrez l'outil SecurityAdmin en mode interactif et sélectionnez l'option 8 : _crypter le mot de passe_.
+
+ securityadmin.sh -i
+Vous êtes invité à saisir le mot de passe que vous souhaitez crypter. Notez que les caractères que vous saisissez ne s'affichent pas à l'écran.  Saisissez à nouveau le mot de passe lorsque vous y êtes invité.
+
+Sinon, si vous utilisez la commande dans un script, sur une ligne de commande, utilisez _securityadmin.sh_ avec le paramètre "-enc", en transmettant votre mot de passe non chiffré :
+
+ securityadmin -enc mypassword
+image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["Exemple de CLI"]
+
+Le mot de passe chiffré s'affiche à l'écran. Copiez la chaîne entière, y compris les symboles de début ou de fin.
+
+image:SecurityAdmin_Encrypt_Key_1.png["Mode interactif crypter le mot de passe, largeur=640"]
+
+Pour envoyer le mot de passe crypté à un collecteur de données, vous pouvez utiliser l'API de collecte de données. Le swagger pour cette API se trouve à l'adresse *Admin > API Access* et cliquez sur le lien « Documentation API ». Sélectionnez le type d'API « collecte de données ».  Sous l'en-tête _data_collection.data_Collector_, choisissez l'API _/Collector/datasources_ POST pour cet exemple.
+
+image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API pour la collecte de données"]
+
+Si vous définissez l'option _preEncrypted_ sur _True_, tout mot de passe que vous passez par la commande API sera traité comme *déjà crypté*; l'API ne recryptera pas le(s) mot(s) de passe. Lors de la création de votre API, il vous suffit de coller le mot de passe précédemment chiffré à l'emplacement approprié.
+
+image:SecurityAdmin_Encrypt_Key_API_Example.png["Exemple d'API, width=600"]
