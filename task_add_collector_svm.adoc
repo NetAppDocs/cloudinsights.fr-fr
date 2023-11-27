@@ -90,11 +90,7 @@ Si vous ne pouvez pas utiliser l'utilisateur administrateur de gestion du cluste
 Pour créer le nouvel utilisateur, connectez-vous à ONTAP à l'aide du nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP :
 
 ....
-security login role create -role csrole -cmddirname DEFAULT -access none
-security login role create -role csrole -cmddirname "network interface" -access readonly
-security login role create -role csrole -cmddirname version -access readonly
-security login role create -role csrole -cmddirname volume -access readonly
-security login role create -role csrole -cmddirname vserver -access readonly
+security login role create -role csrole -cmddirname DEFAULT -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
 security login role create -role csrole -cmddirname "event catalog" -access all
@@ -114,11 +110,7 @@ Si vous ne pouvez pas utiliser l'utilisateur administrateur de gestion du cluste
 Pour créer le nouvel utilisateur, connectez-vous à ONTAP à l'aide du nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP. Pour faciliter la gestion, copiez ces commandes dans un éditeur de texte et remplacez <vservername> par votre nom de Vserver avant d'exécuter les commandes suivantes sur ONTAP :
 
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access readonly
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
