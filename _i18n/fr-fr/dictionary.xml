@@ -1794,7 +1794,6 @@
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">Nom de la forêt</block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">Niveau forestier de la structure du répertoire. Le nom de forêt permet les deux formats suivants : _x. correct.z_ =&gt; nom de domaine direct comme vous l'avez sur votre SVM. [Exemple : hq.companyname.com] _DC=x,DC=y,DC=z_ =&gt; noms distinctifs relatifs [exemple : DC=hq,DC= companyname,DC=com] ou vous pouvez spécifier les éléments suivants : _Ou=engineering,DC=hq,DC= companyname,DC=com_ [to filter by Specific UO Engineering] _CN=username,ou=engineering,DC=companyname, DC=netapp, DC=com_ [to get only user with &lt;username&gt; from ou &lt;engineering&gt;] _CN=Acrobat,CN=Users,CN=company=ID=DC=ID=ID=ID=ici=ID=ID=ID=ID=entreprise,DC=ID=ici=ID=s=ID=ID=s=s=s=s=ici=ID_a_a_a_c,c=ID=s=s=noms_a_a_c=noms_c=</block>
   <block id="58384d924f3205aaac5f4a09d3b33801" category="cell">Lier DN</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_</block>
   <block id="7066ea6d497311d6e3c4be6a9523999c" category="cell">LIER le mot de passe</block>
   <block id="0d91a6f24e197b2dbd20b358e4f84785" category="cell">Mot de passe du serveur d'annuaire (c'est-à-dire mot de passe pour le nom d'utilisateur utilisé dans Bind DN)</block>
   <block id="aebd636047453941f5450b96d44c3195" category="cell">ldap, ldaps, ldap-start-tls</block>
@@ -12900,4 +12899,6 @@ Format de clé publique : PEM, X.509 codé DER subjectPublicKeyInfo RFC 5280</bl
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Adresses IP ou FQDN des passerelles ScaleIO/PowerFlex, séparées par une virgule (,) ou un point-virgule (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nom d'utilisateur Admin utilisé pour se connecter au périphérique ScaleIO/PowerFlex</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Mot de passe utilisé pour se connecter au périphérique ScaleIO/PowerFlex</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_
+En outre, l'autorisation lecture seule du domaine est requise.</block>
 </blocks>

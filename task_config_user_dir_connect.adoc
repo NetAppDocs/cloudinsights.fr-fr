@@ -56,7 +56,8 @@ Configurez le collecteur d'annuaire d'utilisateurs en entrant les données requi
 | Nom de la forêt | Niveau forestier de la structure du répertoire. Le nom de forêt permet les deux formats suivants : _x. correct.z_ => nom de domaine direct comme vous l'avez sur votre SVM. [Exemple : hq.companyname.com] _DC=x,DC=y,DC=z_ => noms distinctifs relatifs [exemple : DC=hq,DC= companyname,DC=com] ou vous pouvez spécifier les éléments suivants : _Ou=engineering,DC=hq,DC= companyname,DC=com_ [to filter by Specific UO Engineering] _CN=username,ou=engineering,DC=companyname, DC=netapp, DC=com_ [to get only user with <username> from ou <engineering>] _CN=Acrobat,CN=Users,CN=company=ID=DC=ID=ID=ID=ici=ID=ID=ID=ID=entreprise,DC=ID=ici=ID=s=ID=ID=s=s=s=s=ici=ID_a_a_a_c,c=ID=s=s=noms_a_a_c=noms_c= 
 
 
-| Lier DN | L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_ 
+| Lier DN | L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_
+En outre, l'autorisation lecture seule du domaine est requise. 
 
 
 | LIER le mot de passe | Mot de passe du serveur d'annuaire (c'est-à-dire mot de passe pour le nom d'utilisateur utilisé dans Bind DN) 
