@@ -49,7 +49,11 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
 | Mémoire | 8 GO DE RAM | Identique 
 
 
-| Espace disque disponible | 50 Go pour Linux, l'espace disque doit être alloué de cette manière : /opt/netapp 10 Go /var/log/netapp 40 Go /tmp au moins 1 Go disponible lors de l'installation | 50 Go 
+| Espace disque disponible | 50 Go (100 Go recommandés)
+Pour Linux, l'espace disque doit être alloué de la manière suivante :
+/Opt/netapp 10 Go (20 Go pour les grands environnements)
+/Var/log/netapp 40 Go (80 Go pour les grands environnements)
+/Tmp au moins 1 Go disponible pendant l'installation | 50 Go 
 
 
 | Le réseau | Connexion Ethernet 100 Mbit/s/1 Gbit/s, adresse IP statique et connectivité port 80 ou 443 entre l'unité d'acquisition et *.cloudinsights.netapp.com ou votre environnement Cloud Insights (c.-à-d. \https://<environment_id>.c01.cloudinsights.netapp.com) est obligatoire. Pour connaître les exigences entre l'unité d'acquisition et chaque Data Collector, reportez-vous aux instructions du link:data_collector_list.html["Collecteur de données"]. Si votre entreprise nécessite une utilisation par proxy pour l'accès à Internet, vous devrez peut-être comprendre le comportement de votre organisation par procuration et rechercher certaines exceptions pour que Cloud Insights fonctionne. Par exemple, votre organisation bloque-t-elle l'accès par défaut et autorise-t-elle uniquement l'accès à des sites ou domaines Web spécifiques par exception ? Si c'est le cas, vous devrez ajouter le domaine suivant à la liste d'exceptions : *.cloudinsights.netapp.com pour plus d'informations, prêt à propos de Proxies link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["ici"] ou link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["ici"]. | Identique 

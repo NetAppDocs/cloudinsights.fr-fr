@@ -3866,7 +3866,6 @@
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 cœurs de processeurs</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">Identique</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GO DE RAM</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">50 Go pour Linux, l'espace disque doit être alloué de cette manière : /opt/netapp 10 Go /var/log/netapp 40 Go /tmp au moins 1 Go disponible lors de l'installation</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 Go</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">Collecteur de données</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">ici</block>
@@ -12901,4 +12900,12 @@ Format de clé publique : PEM, X.509 codé DER subjectPublicKeyInfo RFC 5280</bl
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Mot de passe utilisé pour se connecter au périphérique ScaleIO/PowerFlex</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_
 En outre, l'autorisation lecture seule du domaine est requise.</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">Surveillance du réseau :</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Nécessite le noyau Linux version 4.18.0 et ultérieure</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">Le système d'exploitation de photons n'est pas pris en charge.</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 Go (100 Go recommandés)
+Pour Linux, l'espace disque doit être alloué de la manière suivante :
+/Opt/netapp 10 Go (20 Go pour les grands environnements)
+/Var/log/netapp 40 Go (80 Go pour les grands environnements)
+/Tmp au moins 1 Go disponible pendant l'installation</block>
 </blocks>

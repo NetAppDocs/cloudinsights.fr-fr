@@ -51,6 +51,12 @@ Lisez ces informations avant d'installer l'outil de mise à niveau de l'opérate
 * L'opérateur de surveillance NetApp Kubernetes installe ses propres metrics kube-State pour éviter les conflits avec d'autres instances. Pour un audit et un reporting précis des données, il est vivement recommandé de synchroniser l'heure sur l'ordinateur de l'agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol).
 * Si vous redéployez l'opérateur (c'est-à-dire que vous le mettez à jour ou le remplacez), il n'est pas nécessaire de créer un jeton _New_ API ; vous pouvez réutiliser le jeton précédent.
 * Notez également que si un opérateur de surveillance NetApp Kubernetes est récemment installé et qu'un jeton d'accès d'API renouvelable est utilisé, les tokens arrivant à expiration seront automatiquement remplacés par des jetons d'accès d'API nouveaux/mis à jour.
+* Surveillance du réseau :
++
+** Nécessite le noyau Linux version 4.18.0 et ultérieure
+** Le système d'exploitation de photons n'est pas pris en charge.
+
+
 
 
 
