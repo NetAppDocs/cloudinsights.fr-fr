@@ -94,7 +94,7 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_dc_emc_recoverpoint.html["Dell EMC RecoverPoint"] | Infrastructures 
 
 
-| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO"] | Infrastructures 
+| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO/PowerFlex "] | Infrastructures 
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | Infrastructures 

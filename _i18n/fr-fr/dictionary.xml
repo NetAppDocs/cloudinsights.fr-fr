@@ -2388,19 +2388,10 @@
   <block id="9dfe195610055e64617d7d9b41cc93dc" category="paragraph">Les détails de l'erreur incluent le texte du message d'erreur, les causes les plus probables, les informations en cours d'utilisation et les suggestions sur ce qui peut être tenté de corriger le problème.</block>
   <block id="a066cf88d3ac386328bc0eab3ea533db" category="list-text">Dans la zone périphériques signalés par ce Data Collector, vous pouvez filtrer la liste pour n'afficher que les périphériques qui vous intéressent et cliquer sur le *Nom* lié d'un périphérique pour afficher la page de ressources de ce périphérique.</block>
   <block id="6fa72091f5d00eef42431f7879f3fa4b" category="list-text">Lorsque vous revenez à la page de résumé du collecteur de données, vérifiez la zone *Afficher les changements récents* en bas de la page pour voir si des modifications récentes pourraient avoir causé le problème.</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">Configuration du collecteur de données Dell EMC ScaleIO</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">Collecteur de données DELL EMC ScaleIO</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">Le collecteur de données ScaleIO collecte les informations d'inventaire du stockage ScaleIO. Pour la configuration, ce collecteur de données nécessite l'adresse de la passerelle ScaleIO ainsi qu'un nom d'utilisateur et un mot de passe administrateur.</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données ScaleIO. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">Cluster MDM (Meta Data Manager)</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS (serveur de données ScaleIO)</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">Périphérique</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">Accès en lecture seule au compte utilisateur Admin</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">Port requis : port HTTPS 443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">Passerelle(s) ScaleIO</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">Adresses IP ou FQDN des passerelles ScaleIO, séparées par une virgule (,) ou un point-virgule (;)</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">Nom d'utilisateur Admin utilisé pour se connecter au périphérique ScaleIO</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">Mot de passe utilisé pour se connecter au périphérique ScaleIO</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">Cochez la case Inventaire pour activer la collecte de stock.</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">Port HTTPS</block>
   <block id="5fdb13066473bd6f58da638bc9c08a77" category="cell">La valeur par défaut est 60.</block>
@@ -3963,8 +3954,6 @@
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC RecoverPoint</block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO</block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity</block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="20efc9aa81289aa30cb8621f0a4eadf8" category="inline-link-macro">Gamme de périphériques Dell EMC VMAX/PowerMax</block>
@@ -12900,4 +12889,15 @@ Format de clé publique : PEM, X.509 codé DER subjectPublicKeyInfo RFC 5280</bl
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">un fichier de somme de contrôle (se terminant par sha256.signed ou sha256.ps1)</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">Vérifier la somme de contrôle</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">Extraire la somme de contrôle attendue du fichier de somme de contrôle</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">Dell EMC ScaleIO/PowerFlex </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">Configuration du collecteur de données DELL EMC ScaleIO/PowerFlex.</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">Collecteur de données DELL EMC ScaleIO / PowerFlex</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">Le collecteur de données ScaleIO/PowerFlex collecte les informations d'inventaire à partir du stockage ScaleIO et PowerFlex. Pour la configuration, ce collecteur de données nécessite l'adresse de la passerelle ScaleIO/PowerFlex ainsi qu'un nom d'utilisateur et un mot de passe administrateur.</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données ScaleIO/PowerFlex. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS (ScaleIO/serveur de données PowerFlex)</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">Passerelle(s) ScaleIO/PowerFlex</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">Adresses IP ou FQDN des passerelles ScaleIO/PowerFlex, séparées par une virgule (,) ou un point-virgule (;)</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Nom d'utilisateur Admin utilisé pour se connecter au périphérique ScaleIO/PowerFlex</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Mot de passe utilisé pour se connecter au périphérique ScaleIO/PowerFlex</block>
 </blocks>
