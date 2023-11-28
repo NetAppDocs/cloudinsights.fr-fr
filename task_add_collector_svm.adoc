@@ -214,7 +214,7 @@ Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas bes
 
 2 nouvelles opérations sont maintenant affichées dans le menu kebab du collecteur (PAUSE et REPRISE).
 
-Si le Data Collector est à l'état _running_ ou _Error_, vous pouvez suspendre la collecte. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Cela signifie qu'aucun événement Fpolicy ne circule de ONTAP vers le collecteur de données et de là vers Cloud Insights.
+Si le Data Collector est à l'état _running_, vous pouvez suspendre la collection. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Cela signifie qu'aucun événement Fpolicy ne circule de ONTAP vers le collecteur de données et de là vers Cloud Insights.
 
 Notez que si de nouveaux volumes, etc. Sont créés sur ONTAP alors que le collecteur est en pause, la sécurité des workloads ne recueillera pas les données et ces volumes, etc. Ne seront pas reflétés dans les tableaux de bord ou les tableaux.
 

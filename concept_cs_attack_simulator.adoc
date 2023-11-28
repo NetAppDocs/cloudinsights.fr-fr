@@ -137,7 +137,11 @@ Après avoir généré une attaque par ransomware pour un utilisateur, passez à
 
 == Créez des fichiers par programmation
 
-Avant de créer les fichiers, vous devez d'abord arrêter le traitement du collecteur de données. Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'agent. Si vous avez déjà ajouté le collecteur de données, il vous suffit de modifier le collecteur de données, de saisir un mot de passe non valide et de l'enregistrer. Le collecteur de données sera temporairement à l'état d'erreur. REMARQUE : veillez à noter le mot de passe d'origine !
+Avant de créer les fichiers, vous devez d'abord arrêter ou interrompre le traitement du collecteur de données.
+Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'agent. Si vous avez déjà ajouté le collecteur de données, il vous suffit de modifier le collecteur de données, de saisir un mot de passe non valide et de l'enregistrer. Le collecteur de données sera temporairement à l'état d'erreur. REMARQUE : veillez à noter le mot de passe d'origine !
+
+
+NOTE: L'option recommandée est à link:task_add_collector_svm.html#play-pause-data-collector["mettre le collecteur en pause"] avant de créer vos fichiers.]
 
 Avant d'exécuter la simulation, vous devez d'abord ajouter des fichiers à chiffrer. Vous pouvez soit copier manuellement les fichiers à crypter dans le dossier cible, soit utiliser un script (voir l'exemple ci-dessous) pour créer les fichiers par programmation. Quelle que soit la méthode utilisée, copiez au moins 1,000 fichiers.
 
@@ -169,4 +173,5 @@ echo 3 > /proc/sys/vm/drop_caches ; sync
 +
 Si vous avez désactivé le collecteur de données à l'étape 1, modifiez le collecteur de données, saisissez le mot de passe correct et enregistrez. Assurez-vous que le collecteur de données est à nouveau en cours d'exécution.
 
+. Si vous avez interrompu le collecteur avant de suivre ces étapes, assurez-vous de link:task_add_collector_svm.html#play-pause-data-collector["reprendre le collecteur"].
 

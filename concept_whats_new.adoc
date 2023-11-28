@@ -31,7 +31,7 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 === Sécurité de la charge de travail : interrompre/reprendre un collecteur
 
-Dans Workload Security, vous pouvez interrompre un Data Collector si le collecteur est à l'état _running_ ou _Error_. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Sélectionnez reprendre pour recommencer la collecte.
+Dans Workload Security, vous pouvez mettre en pause un Data Collector si le collecteur est à l'état _running_. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Sélectionnez reprendre pour recommencer la collecte.
 
 
 
