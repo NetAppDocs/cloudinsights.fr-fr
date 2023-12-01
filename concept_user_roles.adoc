@@ -104,7 +104,10 @@ Le tableau suivant présente les autorisations Cloud Insights accordées à chaq
 | Collecteurs de données : ajouter/Modifier/Sondage/Supprimer | Y | N | N 
 
 
-| Notifications : afficher/Modifier | Y | N | N 
+| Notifications : afficher | Y | Y | Y 
+
+
+| Notifications : modifier | Y | N | N 
 
 
 | Requêtes : créer/Modifier/Supprimer | Y | Y | N 
