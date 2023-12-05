@@ -4039,8 +4039,6 @@
   <block id="3d569988d784be7b4a432df70e13153d" category="cell"><block ref="3d569988d784be7b4a432df70e13153d" category="inline-link-macro-rx"></block></block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">Connexion cloud NetApp pour ONTAP 9.9+</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor</block>
-  <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
   <block id="995d9995da501d3734932d95524f1a35" category="inline-link-macro">NetApp Data ONTAP 7-mode</block>
   <block id="2e59af567907cf6ad1ae87c0cac8e6dd" category="cell"><block ref="2e59af567907cf6ad1ae87c0cac8e6dd" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">NetApp E-Series</block>
@@ -5054,62 +5052,6 @@
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">Base de connaissances NetApp</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">D'autres conseils de dépannage sont disponibles dans le <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> (connexion au support requise).</block>
   <block id="aae5f077ba03e56d1d16eaba111b41fa" category="paragraph">Vous trouverez d'autres informations de support dans le Cloud Insights <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> page.</block>
-  <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">Collecteur de données NetApp Config Advisor</block>
-  <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">Collecteur de données NetApp Config Advisor</block>
-  <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">Ce collecteur de données acquiert les données de configuration des systèmes de stockage exécutant ONTAP et des commutateurs connectés en utilisant des appels en lecture seule. Ce Data Collector exécute également la validation de la configuration et des contrôles d'état sur l'ensemble de la pile de la configuration du cluster ONTAP afin d'identifier les problèmes de câblage, de configuration, de résilience, de disponibilité et de sécurité.</block>
-  <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights acquiert les données de configuration de ONTAP et des commutateurs avec le collecteur de données Config Advisor. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
-  <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">liste déroulante affichant l'étiquette métrique config advisor</block>
-  <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">Notez également que les metrics de Config Advisor seront disponibles dans le tableau de bord et d'autres requêtes portant la balise _netapp_ontap.configAdvisor_.<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="24b9e08fd1f7ee3ff738c574a84a91af" category="section-title">Terminologie Config Advisor</block>
-  <block id="06d58427354787f0e6d7c893fe2243bc" category="paragraph">Les termes suivants s'appliquent aux objets ou aux références que vous trouverez dans les tableaux de bord Config Advisor.</block>
-  <block id="30c7128fd20d47795972c28c056858e9" category="section-title">Résumé du périphérique</block>
-  <block id="744d9871512feec9f51d65f3dd1c47ab" category="list-text">Type/Type de périphérique – type de périphérique dans la source de données – contrôleur/commutateur de stockage</block>
-  <block id="624932da51cedff9d7ac173a91c610a1" category="list-text">Fournisseur/sous-type : même nom de fournisseur que vous pouvez voir si vous configurez une nouvelle source de données.</block>
-  <block id="7d43a6f99fa2a91e1af6d7d2c7c18f13" category="list-text">Hostname –hostname(s) tel que configuré dans la source de données.</block>
-  <block id="cb46dd80b8d9a5b9d45de5e217aaa9df" category="list-text">Version : version du se ou du firmware.</block>
-  <block id="b1fa038342539dd3908a11c162ea4c27" category="section-title">Résultats des règles</block>
-  <block id="36dce5e2b74a110ae5a36da007cf06f5" category="list-text">Règle – contrôle exécuté par rapport au système analyse des écarts de configuration à partir des pratiques recommandées ou identification des problèmes connus.</block>
-  <block id="7f571e862fdd40095520423d149828d8" category="list-text">Nom de règle : nom court de la règle ou vérification exécutée.</block>
-  <block id="f742f640bcdf429ec002619c5b306bfb" category="list-text">ID règle : identifiant de la règle.</block>
-  <block id="d5f2db6c184f1d03095ebed8fab38f6d" category="list-text">Target : composant sur lequel la règle est appliquée. Il s'agir d'un nom de cluster, d'un nom de nœud ou d'un nom de commutateur.</block>
-  <block id="07e9e3b11dbfe13fae2d6a989de1722c" category="list-text">Impact : impact du risque sur le système. Les niveaux d'impact sont classés comme ci-dessous</block>
-  <block id="f9465122ea451d5ec730ea7884c2879f" category="list-text">Impact élevé : perte potentielle de l'accès aux données ou perte prolongée de la redondance du nœud</block>
-  <block id="59917e42806fa2d873b1567e2fab2ed8" category="list-text">Impact moyen : dégradation des performances ou perte à court terme de la redondance des nœuds.</block>
-  <block id="0296cc1b8c1bba2993b2bf444d65e226" category="list-text">Faible impact : scénarios à faible impact</block>
-  <block id="35c28fe615929955e070ca34eea74a58" category="list-text">Meilleure pratique : écarts par rapport aux meilleures pratiques documentées</block>
-  <block id="da671d02becd0b448278c88d7cae5f0c" category="list-text">Description – brève description de l'erreur.</block>
-  <block id="4684fb2fabd191161c08c96564158dfa" category="list-text">Détails : description détaillée de l'erreur répertoriant les composants concernés</block>
-  <block id="107a9bd1e11fd68e05b0eca047c2d0a3" category="list-text">Recommandations : liens vers des articles de la base de connaissances ou la documentation NetApp qui fournissent des informations supplémentaires sur les risques ou la résolution de problèmes.</block>
-  <block id="32e0e75cce51d9a86e3d9548e662cad3" category="list-text">Vous devez avoir configuré l'accès à un compte d'administrateur pour un accès en lecture seule pour les appels SSH et ONTAP sur ONTAP.</block>
-  <block id="0a51523b7b104781f9276319d7728e78" category="list-text">Vous devez avoir accès à un compte d'administrateur configuré pour un accès en lecture seule pour les appels SSH sur les commutateurs s'ils font partie de la collection</block>
-  <block id="905f005d189dfca41c588dfb3a86c577" category="list-text">Les détails du compte incluent le nom d'utilisateur et le mot de passe. Peut éventuellement réussir la clé privée SSH si ONTAP est configuré pour une authentification basée sur une clé SSH ou l'authentification multifacteur (MFA)</block>
-  <block id="ccdc4e4e1923b0b16ce7eea299ea4163" category="list-text">Configuration requise pour les ports : 22, 80 ou 443</block>
-  <block id="6598e142ccb1746c77267497f22d951b" category="list-text">Nom de rôle en lecture seule en ssh ou/et application ontapi sur le Vserver par défaut</block>
-  <block id="3b8258085ea914c50770f05a8c8040cf" category="list-text">Compte d'administrateur avec au moins une autorisation en lecture seule sur les commutateurs</block>
-  <block id="881e28667d3bfa6ea28cdd40ef5acdb4" category="cell">Activez MFA pour ONTAP</block>
-  <block id="892219065257846dd04f00fcdffe9e12" category="cell">Cochez cette case pour activer l'authentification multifacteur sur ONTAP</block>
-  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="cell">Clé privée SSH</block>
-  <block id="b243383d42c261781fda74277075a9bf" category="cell">Collez la clé privée SSH si ONTAP utilise une authentification de clé SSH ou MFA</block>
-  <block id="1ad2c997667844425cb79936e5d49437" category="cell">Port SSH ONTAP</block>
-  <block id="043854f925a3ddec09321e61f0796cb1" category="cell">Permet de spécifier un port SSH personnalisé pour la connexion ONTAP</block>
-  <block id="1e5fb47b2115f5fd80852bf2d19f9931" category="cell">Port SSH du commutateur</block>
-  <block id="3d56802b24eb9202180b8a5869ee4f5a" category="cell">Permet de spécifier un port SSH personnalisé pour la connexion de commutateur</block>
-  <block id="dfdfdc8cf35c1a03b11bc6b5c58e09f8" category="cell">Intervalle d'interrogation (min)</block>
-  <block id="a0c828f2046ae9b82d4a8bcdc9c02147" category="cell">La valeur par défaut est 1440 minutes ou 24 heures. Peut régler au minimum jusqu'à 60 minutes</block>
-  <block id="6cc75295aec583ed79034eb36a15cdae" category="section-title">Systèmes d'exploitation pris en charge</block>
-  <block id="3c4d9416409219cf9622042be0436a75" category="paragraph">Config Advisor peut s'exécuter sur les systèmes d'exploitation suivants. Si le collecteur est installé sur une unité d'acquisition avec le système d'exploitation ne figurant pas dans cette liste, les collections échoueront.</block>
-  <block id="1c9b42d9cdad3e650c7fc63dfa544dd3" category="list-text">Windows 10 (64 bits)</block>
-  <block id="f943cc21622ce70821e7210ca18fa6dd" category="list-text">Windows 2012 R2 Server (64 bits)</block>
-  <block id="d58eb715e810c3f2ac46575a5aacd90b" category="list-text">Windows 2016 Server (64 bits)</block>
-  <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019 Server (64 bits)</block>
-  <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux (RHEL) 7.7 et versions ultérieures (64 bits)</block>
-  <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0 et version ultérieure</block>
-  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">Assistance et vidéo</block>
-  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">Regardez ces vidéos pour découvrir comment installer le collecteur de données et utiliser les tableaux de bord pour tirer le meilleur parti de Config Advisor dans Cloud Insights :</block>
-  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">Installation et configuration du collecteur de données :</block>
-  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Création d'un tableau de bord Config Advisor :</block>
-  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">Autre soutien</block>
-  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Pour toute autre question associée à Config Advisor, ouvrez un ticket depuis l'outil Config Advisor en cliquant sur aide &gt; Ouvrir un ticket de support.</block>
   <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis de configuration de collecteur de données</block>
   <block id="9d2537f158357c95ae162019d658de08" category="doc">Collecteur de données RethinkDB</block>
   <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">Cloud Insights utilise ce collecteur de données pour collecter des mesures à partir de RethinkDB.</block>
@@ -8383,7 +8325,6 @@
   <block id="c5865855c43d734069987786177edd98" category="sidebar">Hyper-V</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="b81efc5684c71c82d1f7592812e5af66" category="sidebar">Cloud volumes Services pour AWS</block>
-  <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="9c58e11f96200548fd2f5932b391509a" category="sidebar">Logiciel de gestion des données ONTAP</block>
   <block id="7bb16842baaba3fd3ce157e27d9652f3" category="sidebar">Data ONTAP 7-mode</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="sidebar">E-Series</block>
@@ -12920,10 +12861,15 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights utilise le collecteur REST Brocade FOS pour détecter l'inventaire et les performances des commutateurs Brocade exécutant le firmware FabricOS (FOS) version 8.2 et ultérieure.</block>
   <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">Par défaut, ce collecteur tentera de découvrir tous les périphériques FOS faisant partie de toutes les structures dont le commutateur fait partie.</block>
   <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données REST Brocade FOS. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
-  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">Il doit y avoir une connectivité IP à tous les commutateurs de la structure. Si vous cochez la case _découvrir tous les commutateurs dans la structure_, Cloud Insights identifie tous les commutateurs de la structure ; cependant, il faut une connectivité IP à ces commutateurs supplémentaires pour les découvrir.</block>
-  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">Liste d'ID de périphérique séparés par une virgule à exclure de l'interrogation.</block>
   <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">Sélectionnez pour découvrir tous les switchs de la structure.</block>
   <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">Choisissez de favoriser les alias de HBA ou de zone.</block>
   <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP ou HTTPS.</block>
   <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">Spécifiez un port si la valeur par défaut n'est pas utilisée.</block>
+  <block id="fa54865ee3e5060e95de2db0939bb141" category="list-text">Il doit y avoir une connectivité TCP à tous les commutateurs de la structure. Ce type de collecteur de données essaiera de manière transparente HTTP et HTTPS pour chaque périphérique de la structure. Si vous cochez la case _découvrir tous les commutateurs dans la structure_, Cloud Insights identifie tous les commutateurs de la structure ; cependant, il a besoin de la connectivité TCP à ces commutateurs supplémentaires pour les découvrir.</block>
+  <block id="0c5002d65cc5f10f6e18141ac2704b54" category="list-text">Le même compte est nécessaire au niveau global pour tous les commutateurs du maillage. Vous pouvez utiliser l'interface Web du périphérique pour confirmer l'accès.</block>
+  <block id="bf05c9a08b659ee97017024af4c9309f" category="cell">Adresse IP ou nom de domaine complet du commutateur FOS</block>
+  <block id="e22e1a04d650adc7ca588d795e7461c2" category="cell">Liste séparée par des virgules des adresses IPv4 de périphérique à exclure de l'interrogation.</block>
+  <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">Notez que ce paramètre ne modifie que l'EC de protocole qui tente d'utiliser d'abord par périphérique. L'EC essaiera automatiquement le protocole opposé si la valeur par défaut échoue</block>
+  <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">La fonction de test m'avertit qu'un protocole est inaccessible</block>
+  <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">Un périphérique Brocade FOS 8.2+ donné ne veut parler que sur HTTP ou HTTPS. Si un commutateur est équipé d'un certificat numérique, le commutateur affichera des erreurs HTTP si l'on tente de communiquer avec lui avec HTTP ou HTTPS non chiffré. La fonction de test tente de communiquer avec HTTP et HTTPS. Si le test vous indique qu'un protocole réussit, vous pouvez enregistrer le collecteur en toute sécurité et ne vous inquiétez pas que l'autre protocole a échoué. Le collecteur tentera les deux protocoles pendant la collecte et n'échouera que si aucun des deux protocoles ne fonctionne.</block>
 </blocks>
