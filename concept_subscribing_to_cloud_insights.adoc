@@ -151,7 +151,7 @@ Vous devez fournir votre numéro de série Cloud Insights * à votre ingénieur 
 
 NOTE: Vous devez être propriétaire ou administrateur de compte pour appliquer un abonnement AWS Marketplace à votre compte d'essai Cloud Insights existant. Vous devez également disposer d'un compte Amazon Web Services (AWS).
 
-Pour ouvrir AWS, cliquez sur le lien Amazon Marketplace link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
+Pour ouvrir AWS, cliquez sur le lien Amazon Marketplace https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights"] page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
 
 Après avoir saisi le nombre total d'unités gérées et choisi soit 12 mois, soit 36 mois, cliquez sur *configurer votre compte* pour terminer le processus d'abonnement.
 
