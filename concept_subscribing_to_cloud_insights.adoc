@@ -217,7 +217,7 @@ Des avertissements s'affichent lorsque l'utilisation de votre unité gérée dé
 
 == Inscrivez-vous directement et ignorez l'essai
 
-Vous pouvez également vous abonner à Cloud Insights directement à partir du link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"], sans créer d'abord un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.
+Vous pouvez également vous abonner à Cloud Insights directement à partir du https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"], sans créer d'abord un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.
 
 
 
