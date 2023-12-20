@@ -12922,4 +12922,6 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">Panneau de détails de l'échec de déploiement</block>
   <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">La sélection d'une alerte de même type fournit des détails sur l'alerte, y compris le moniteur qui a déclenché l'alerte, ainsi qu'un graphique montrant un chronogramme visuel pour l'alerte.</block>
+  <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Page de liste Webhooks</block>
+  <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Sur la page de liste Webhooks, sont affichés le Nom, créé par, créé le, État, sécurisé, et les champs dernier rapport.</block>
 </blocks>
