@@ -40,7 +40,15 @@ Vous devez installer une unité d'acquisition (au) afin d'obtenir des informatio
 * Rocky 9.0, 9.1
 * Serveur Ubuntu: 18.04 et 20.04 LTS
 
-Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé. | Un ordinateur exécutant une version sous licence de l'un des ordinateurs suivants : * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 cet ordinateur ne doit pas exécuter d'autre logiciel de niveau application. Un serveur dédié est recommandé. 
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
+
+<<<<<<<<< SELinux
+Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivantes sur le système d'unités d'acquisition :
+
+ _sudo semanage fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"_
+ _Sudo restorecon -R /opt/netapp/cloudInsights_
+=======
+>>>>>>> principal | Un ordinateur exécutant une version sous licence de l'un des ordinateurs suivants : * Microsoft Windows 10 64 bits * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 cet ordinateur ne doit pas exécuter d'autre logiciel de niveau application. Un serveur dédié est recommandé. 
 
 
 | CPU | 2 cœurs de processeurs | Identique 
