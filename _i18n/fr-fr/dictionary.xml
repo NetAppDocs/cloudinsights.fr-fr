@@ -10204,7 +10204,6 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes suivantes avec _group_by_ correspondant générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données.</block>
-  <block id="e3177fae37278722b7908e612a5b872b" category="list-text">Protocole SMB version 3.1 et antérieure.  Notez que la sécurité des workloads ne fonctionne pas avec les configurations SMB qui utilisent FlexCache. Sur les systèmes utilisant FlexCache, à partir de ONTAP 9.7, Fpolicy n'est prise en charge que dans un environnement NFS.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 unité gérée = 4 vCPU de Kuberentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Les calculateurs d'abonnement vous aident à estimer le coût de votre abonnement Cloud Insights en fonction du nombre d'unités gérées nécessaires. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Vues de l'utilisation de votre unité gérée</block>
@@ -12929,4 +12928,5 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
 
  sous-système fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"
  Sudo restorecon -R /opt/netapp/cloudInsights</block>
+  <block id="343a405f2f06197f662e42373c7fb059" category="list-text">Protocole SMB version 3.1 et antérieure.</block>
 </blocks>

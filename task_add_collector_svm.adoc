@@ -28,7 +28,7 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 * Ce collecteur de données est pris en charge avec les éléments suivants :
 +
 ** Data ONTAP 9.2 et versions ultérieures Pour obtenir des performances optimales, utilisez la version Data ONTAP où link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["cette question"] est fixe.
-** Protocole SMB version 3.1 et antérieure.  Notez que la sécurité des workloads ne fonctionne pas avec les configurations SMB qui utilisent FlexCache. Sur les systèmes utilisant FlexCache, à partir de ONTAP 9.7, Fpolicy n'est prise en charge que dans un environnement NFS.
+** Protocole SMB version 3.1 et antérieure.
 ** Protocole NFS version 4.0 et antérieure
 ** FlexGroup est pris en charge à partir de ONTAP 9.4 et versions ultérieures
 ** ONTAP Select est pris en charge
