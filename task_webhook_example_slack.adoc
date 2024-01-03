@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["Créer un crochet mou"]
 
 * Accédez aux Webpatères entrants, cliquez sur _Activer les Webpatères entrants_, demander à _Ajouter un nouveau Webhook_ et sélectionnez le canal sur lequel envoyer.
 * Copiez l'URL du Webhook. Vous devrez coller ce texte dans la configuration du crochet Web Cloud Insights.
-+
-image:Webhook_Slack_Config.jpg["URL de Slack Webhook"]
-
 
 
 
