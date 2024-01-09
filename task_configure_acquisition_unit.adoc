@@ -26,6 +26,8 @@ Cette rubrique décrit comment ajouter des unités d'acquisition et décrit les 
 
 NOTE: Pour un audit et un reporting précis des données, il est fortement recommandé de synchroniser l'heure sur la machine de l'unité d'acquisition à l'aide de *Network Time Protocol (NTP)* ou *simple Network Time Protocol (SNTP)*.
 
+En savoir plus sur la sécurité Cloud Insights link:security_overview.html["ici"].
+
 
 
 == Ajout d'une unité d'acquisition Linux

@@ -108,3 +108,9 @@ Tous les employés Cloud Insights suivent une formation sur la sécurité, déve
 === La conformité
 
 Cloud Insights procède à un audit et à des validations indépendantes d'un cabinet d'experts en licence externe en vertu de sa sécurité, de ses processus et de ses services, y compris l'achèvement de l'audit SOC 2.
+
+
+
+=== Avis de sécurité NetApp
+
+Vous pouvez afficher les conseils de sécurité NetApp link:https://security.netapp.com/advisory/["ici"].
