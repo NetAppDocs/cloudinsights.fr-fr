@@ -5056,7 +5056,6 @@
   <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">Documentation de RethinkDB</block>
   <block id="61c63e4b6fa084c1807e368faaf150e4" category="paragraph">Vous trouverez des informations dans le <block ref="02af3cecada50a802d68e28a6a325991" category="inline-link-macro-rx"></block>.</block>
-  <block id="2837a19125070133e6e88f25d23f955b" category="summary">Vous créez des règles d'annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez.</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">Création d'applications</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Cloud Insights.</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">Si vous souhaitez associer l'application à une entité métier, vous devez créer l'entité métier avant de définir l'application.</block>
@@ -12931,5 +12930,5 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">En savoir plus sur la sécurité Cloud Insights <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">Avis de sécurité NetApp</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Vous pouvez afficher les conseils de sécurité NetApp <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
-  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">sécurité login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
+  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">Vous définissez les applications que vous appliquez ensuite aux ressources de votre environnement selon les besoins.</block>
 </blocks>

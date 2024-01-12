@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: 'Vous créez des règles d"annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez.' 
+summary: Vous définissez les applications que vous appliquez ensuite aux ressources de votre environnement selon les besoins. 
 keywords: application, create application, 
 ---
 = Création d'applications
