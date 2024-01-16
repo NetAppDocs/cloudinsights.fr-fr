@@ -12680,19 +12680,6 @@ Voir la section référence du fournisseur du Data Collector de la documentation
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ID utilisateur pour ECS</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">désinstaller</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">réinstallez</block>
-  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">Récupérer le nom du pod Event-exportateur :
-
-<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
-
-Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
-
-....
- - Clé : FICHIER_JOURNAL
-   valeurs :
-   - /var/log/containers/netapp-ci-event-exportatrice*.log
-....
-
-Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Lors de la saisie d'un horaire de rapport Cognos, parfois, je me termine par un "m" supplémentaire dans l'horaire. Par exemple, si j'entre l'heure « 02:15 PM », il peut ajouter un caractère supplémentaire : « 02:15 PMM » (ou PMM). Lorsque je clique à l'extérieur, il passe à « 2:15 AM ».
 
 Je suis capable d'enregistrer le rapport, mais lorsque je rouvre le rapport enregistré, l'heure de planification apparaît comme AM (c'est-à-dire matin), que je saisis AM ou PM dans l'heure de planification.</block>
@@ -12931,4 +12918,9 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">Avis de sécurité NetApp</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Vous pouvez afficher les conseils de sécurité NetApp <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">Vous définissez les applications que vous appliquez ensuite aux ressources de votre environnement selon les besoins.</block>
+  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">Récupérer le nom du pod Event-exportateur :</block>
+  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».</block>
+  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
+  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">Un ou plusieurs pods sont déployés par l'opérateur de surveillance Kubernetes NetApp en raison de l'insuffisance des ressources.</block>
+  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">Reportez-vous à l'opérateur de surveillance NetApp Kubernetes <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> Pour augmenter les limites du CPU et/ou de la mémoire selon les besoins.</block>
 </blocks>

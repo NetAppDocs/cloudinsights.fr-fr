@@ -534,18 +534,26 @@ Redémarrez ensuite Telegraf.
 | Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-netapp-kubernetes-monitoring-operator,installez le nouveau>>. 
 
 
-| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue. | Récupérer le nom du pod Event-exportateur :
+| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue.  a| 
+Récupérer le nom du pod Event-exportateur :
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
-
 Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance `kubectl -n netapp-monitoring edit agent`, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
 
 ....
- - Clé : FICHIER_JOURNAL
-   valeurs :
-   - /var/log/containers/netapp-ci-event-exportatrice*.log
+fluent-bit:
+...
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
+...
 ....
+Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-the-netapp-kubernetes-monitoring-operator,réinstallez>> l'agent.
 
-Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-the-netapp-kubernetes-monitoring-operator,réinstallez>> l'agent. 
+
+
+| Un ou plusieurs pods sont déployés par l'opérateur de surveillance Kubernetes NetApp en raison de l'insuffisance des ressources. | Reportez-vous à l'opérateur de surveillance NetApp Kubernetes link:telegraf_agent_k8s_config_options.html["options de configuration"] Pour augmenter les limites du CPU et/ou de la mémoire selon les besoins. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
