@@ -537,7 +537,7 @@ Redémarrez ensuite Telegraf.
 | Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue.  a| 
 Récupérer le nom du pod Event-exportateur :
 
- `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
+ `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`
 Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance `kubectl -n netapp-monitoring edit agent`, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».
 
 ....
