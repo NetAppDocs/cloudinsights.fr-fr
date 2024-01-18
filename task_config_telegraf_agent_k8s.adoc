@@ -309,7 +309,35 @@ runPrivileged: true
 ....
 OpenShift peut implémenter un niveau de sécurité supplémentaire qui peut bloquer l'accès à certains composants Kubernetes.
 
- '''
+
+
+== Remarque sur les secrets
+
+Pour supprimer l'autorisation pour l'opérateur de surveillance NetApp Kubernetes d'afficher les secrets à l'échelle du cluster, supprimez les ressources suivantes du fichier _Operator-setup.yaml_ avant d'installer :
+
+[listing]
+----
+ ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+S'il s'agit d'une mise à niveau, supprimez également les ressources de votre cluster :
+
+[listing]
+----
+ kubectl delete ClusterRole/netapp-ci-<namespace>-agent-secret-clusterrole
+ kubectl delete ClusterRoleBinding/netapp-ci-<namespace>-agent-secret-clusterrolebinding
+----
+Si l'option analyse des modifications est activée, modifiez _AgentConfiguration_ ou _Operator-config.yaml_ pour annuler le commentaire de la section de gestion des modifications et incluez _kindsToIgnoreFromWatch: '"secrets"'_ dans la section de gestion des modifications. Notez la présence et la position des guillemets simples et doubles dans cette ligne.
+
+....
+# change-management:
+  ...
+  # # A comma separated list of kinds to ignore from watching from the default set of kinds watched by the collector
+  # # Each kind will have to be prefixed by its apigroup
+  # # Example: '"networking.k8s.io.networkpolicies,batch.jobs", "authorization.k8s.io.subjectaccessreviews"'
+  kindsToIgnoreFromWatch: '"secrets"'
+  ...
+....
 
 
 == Vérification des checksums Kubernetes
