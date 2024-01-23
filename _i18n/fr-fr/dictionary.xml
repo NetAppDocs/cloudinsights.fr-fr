@@ -12927,4 +12927,9 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">Pour supprimer l'autorisation pour l'opérateur de surveillance NetApp Kubernetes d'afficher les secrets à l'échelle du cluster, supprimez les ressources suivantes du fichier _Operator-setup.yaml_ avant d'installer :</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">S'il s'agit d'une mise à niveau, supprimez également les ressources de votre cluster :</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">Si l'option analyse des modifications est activée, modifiez _AgentConfiguration_ ou _Operator-config.yaml_ pour annuler le commentaire de la section de gestion des modifications et incluez _kindsToIgnoreFromWatch: '"secrets"'_ dans la section de gestion des modifications. Notez la présence et la position des guillemets simples et doubles dans cette ligne.</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">Janvier 2024</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">Meilleure sécurité des workloads</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">La sécurité des workloads comprend les améliorations suivantes :</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">Les algorithmes de détection ont été améliorés pour réduire le nombre de fausses alertes positives.</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">Les performances de l'interface utilisateur ont été améliorées lors du chargement, de l'affichage et du défilement des pages Forensics.</block>
 </blocks>
