@@ -29,6 +29,45 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+=== Essayez des fonctionnalités Cloud Insights que vous n'avez pas encore utilisées
+
+En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:/concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.
+
+
+
+=== Mes workloads sont-ils sains ?
+
+L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes > Explore > workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide.
+
+image:WorkloadHealth.png["Aperçu de l'état des workloads"]
+
+
+
+=== Mises à jour du Data Collector
+
+
+
+==== Identification Data Domain
+
+Le collecteur Data Domain a été amélioré afin de mieux identifier les systèmes haute disponibilité pour la durabilité lors des événements de basculement. Cette modification entraînera une réidentification *unique* des appliances Data Domain dans les systèmes haute disponibilité, ce qui entraînera la suppression des annotations sur ces ressources (car ces baies seront réidentifiées). Vous devrez rattacher des annotations à vos objets Data Domain.
+
+
+
+=== Meilleure sécurité des workloads
+
+La sécurité des workloads comprend les améliorations suivantes :
+
+* Les algorithmes de détection ont été améliorés pour réduire le nombre de fausses alertes positives.
+* Les performances de l'interface utilisateur ont été améliorées lors du chargement, de l'affichage et du défilement des pages Forensics.
+
+
+'''
+
+
+== Janvier 2024
+
+
+
 === Meilleure sécurité des workloads
 
 La sécurité des workloads comprend les améliorations suivantes :
