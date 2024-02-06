@@ -29,6 +29,12 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+=== API de sécurité du workload
+
+De nouvelles API de sécurité de la charge de travail sont disponibles pour gérer les collecteurs de données (ajout/mise à jour/suppression) et les agents. Accédez à *Admin > accès API > Documentation API* et sélectionnez le type d'API _Workload Security_ pour en savoir plus.
+
+
+
 === Essayez des fonctionnalités Cloud Insights que vous n'avez pas encore utilisées
 
 En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.
