@@ -12599,7 +12599,6 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Les lignes affichant une vérification sont actives. "X" indique les périphériques inactifs.</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">État récent de l'inventaire : données inattendues récupérées -Array a signalé 0 volume</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Indique généralement un problème d'autorisation (et non d'authentification). Assurez-vous que vos informations d'identification sont correctes et que le nom d'utilisateur est habilité à répertorier tous les volumes et à voir leurs attributs.</block>
-  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition &gt; +unité d'acquisition*</block>
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition* pour vérifier l'état des unités d'acquisition.</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition &gt; +unité d'acquisition* .</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">Cliquez sur * &gt; observabilité &gt; collecteurs &gt; unités d'acquisition* pour vérifier l'état des unités d'acquisition.</block>
@@ -12957,4 +12956,5 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">Une fois les événements acquis à partir du système ONTAP, la page analyse de sécurité de la charge de travail affiche les événements accès refusé. En plus des informations affichées, vous pouvez afficher les autorisations utilisateur manquantes pour une opération particulière en ajoutant la colonne _activité_ souhaitée à la table à partir de l'icône en forme d'engrenage.</block>
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">Exemple d'événement accès refusé</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition &gt; +unité d'acquisition*</block>
 </blocks>
