@@ -25,13 +25,18 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
-== Janvier 2024
+== Février 2024
 
 
 
 === API de sécurité du workload
 
 De nouvelles API de sécurité de la charge de travail sont disponibles pour gérer les collecteurs de données (ajout/mise à jour/suppression) et les agents. Accédez à *Admin > accès API > Documentation API* et sélectionnez le type d'API _Workload Security_ pour en savoir plus.
+
+'''
+
+
+== Janvier 2024
 
 
 

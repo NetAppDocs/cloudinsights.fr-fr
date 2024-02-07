@@ -12957,4 +12957,5 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">Exemple d'événement accès refusé</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition &gt; +unité d'acquisition*</block>
+  <block id="f76b3457c69f53525d8080927e20d41d" category="section-title">Février 2024</block>
 </blocks>
