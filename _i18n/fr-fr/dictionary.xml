@@ -12490,42 +12490,9 @@ kubectl get all -n &lt;namespace&gt; | grep -i psp (devrait montrer que rien n'e
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">Je ne vois aucun indicateur collecté pour les cronjobs Kubernetes qui existent dans mon cluster.</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Vérifiez votre version Kubernetes (c'est-à-dire<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  S'il est v1.20.x ou inférieur, il s'agit d'une limitation attendue.  La version de kube-state-metrics déployée avec l'opérateur de surveillance Kubernetes NetApp ne prend en charge que v1.cronjob.  Avec Kubernetes 1.20.x et versions antérieures, la ressource cronjob est à v1beta.cronjob.  Par conséquent, les indicateurs d'état kube ne peuvent pas trouver la ressource cronjob.</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ».</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">Modifiez la section netapp-monitoring-configuration dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.
-
-REMARQUE : si vous utilisez l'édition fédérale de Cloud Insights, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter de metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut ; pour les désactiver, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_ :
-
-...
-spéc. :
-...
-telegraf :
-    ...
-     - nom: docker
-            mode run :
-              - DemonSet
-            substitutions :
-              - CLÉ : DOCKER_UNIX_SOCK_PLACEHOLDER
-                valeur : unix:///run/docker.sock
-    ...
-...</block>
   <block id="9de497f607f8a73311408d3d7b337399" category="cell">Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
 
  E ! [Agent] erreur lors de l'écriture dans les sorties.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Délai de contexte dépassé (client.Timeout dépassé lors de l'attente des en-têtes)</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">Modifiez chaque fichier de configuration Telegraf (c.-à-d. /etc/telegraf/telegraf.d/*.conf) et augmentez le délai d'expiration des plugins de sortie Telegraf.  Par exemple, dans chaque fichier .conf, remplacez toutes les instances de...
-
-[[outputs.http]]
-...
-timeout = « 5s »
-...
-
-
-...avec les éléments suivants :
-
-[[outputs.http]]
-...
-timeout = « 10 s »
-...
-
-Redémarrez ensuite Telegraf.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Avant d'installer ou de mettre à niveau l'opérateur</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installation de l'opérateur de surveillance</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">Intervalle d'Aggregationde métadonnées</block>
@@ -12958,4 +12925,22 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">Cliquez sur *observabilité &gt; collecteurs &gt; unités d'acquisition &gt; +unité d'acquisition*</block>
   <block id="f76b3457c69f53525d8080927e20d41d" category="section-title">Février 2024</block>
+  <block id="80423bf256c338862372efdf1e8a1473" category="cell">Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.
+
+REMARQUE : si vous utilisez l'édition fédérale de Cloud Insights, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter de metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut ; pour les désactiver, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_ :
+
+...
+spéc. :
+...
+telegraf :
+    ...
+     - nom: docker
+            mode run :
+              - DemonSet
+            substitutions :
+              - CLÉ : DOCKER_UNIX_SOCK_PLACEHOLDER
+                valeur : unix:///run/docker.sock
+    ...
+...</block>
+  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
 </blocks>
