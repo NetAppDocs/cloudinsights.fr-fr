@@ -75,21 +75,6 @@ La sécurité des workloads comprend les améliorations suivantes :
 '''
 
 
-== Janvier 2024
-
-
-
-=== Meilleure sécurité des workloads
-
-La sécurité des workloads comprend les améliorations suivantes :
-
-* Les algorithmes de détection ont été améliorés pour réduire le nombre de fausses alertes positives.
-* Les performances de l'interface utilisateur ont été améliorées lors du chargement, de l'affichage et du défilement des pages Forensics.
-
-
-'''
-
-
 == Décembre 2023
 
 
