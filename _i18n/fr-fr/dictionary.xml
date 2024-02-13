@@ -12944,4 +12944,6 @@ telegraf :
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">Événements « accès refusé »</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> et fournissent une couche supplémentaire d'analytique et de réponses automatiques.</block>
+  <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">J'ai rencontré une erreur « Echec de la demande avec le code d'état 500/503 » lors de l'utilisation d'un filtre de chemin.</block>
+  <block id="62ce499553ccf0270c3a01cc146e46fd" category="cell">Essayez d'utiliser une plage de dates plus petite pour filtrer les enregistrements.</block>
 </blocks>

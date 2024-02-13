@@ -232,4 +232,7 @@ Exemple : utilisez la chaîne _testvolume*_, plutôt que _*testvolume_ ou _*test
 
 Utilisez une recherche basée sur des préfixes pour voir toutes les activités sous un dossier donné de manière récursive (recherche hiérarchique). par exemple _/path1/path2/path3_ ou _“/path1/path2/path3”_ répertoriera toutes les activités récursivement sous _/path1/path2/path3_.
 Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet toutes les activités. 
+
+
+| J'ai rencontré une erreur « Echec de la demande avec le code d'état 500/503 » lors de l'utilisation d'un filtre de chemin. | Essayez d'utiliser une plage de dates plus petite pour filtrer les enregistrements. 
 |===
