@@ -160,7 +160,7 @@ Avant cette amélioration, seuls les commutateurs FOS 9.1.1c sans structure virt
 
 La sécurité des charges de travail a été améliorée grâce aux éléments suivants :
 
-* *Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir des événements « accès refusé » et fournir une couche supplémentaire d'analyses et de réponses automatiques.
+* *Accès refusé* : la sécurité de la charge de travail s'intègre à ONTAP pour recevoir link:concept_ws_integration_with_ontap_access_denied.html["Événements « accès refusé »"] et fournissent une couche supplémentaire d'analytique et de réponses automatiques.
 * *Types de fichiers autorisés* : si une attaque par ransomware est détectée pour une extension de fichier connue, cette extension de fichier peut être ajoutée à un link:ws_allowed_file_types.html["types de fichiers autorisés"] pour éviter les alertes inutiles.
 
 
