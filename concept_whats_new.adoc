@@ -29,9 +29,9 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
-=== API de sécurité du workload
+=== API Data Collector de Workload Security
 
-De nouvelles API de sécurité de la charge de travail sont disponibles pour gérer les collecteurs de données (ajout/mise à jour/suppression) et les agents. Accédez à *Admin > accès API > Documentation API* et sélectionnez le type d'API _Workload Security_ pour en savoir plus.
+Dans les environnements de grande taille, vous pouvez automatiser la création du collecteur Workload Security à l'aide de la nouvelle API Data Collectors. Accédez à *Admin > accès API > Documentation API* et sélectionnez le type d'API _Workload Security_ pour en savoir plus.
 
 '''
 
@@ -64,13 +64,11 @@ Le collecteur Data Domain a été amélioré afin de mieux identifier les systè
 
 
 
-=== Meilleure sécurité des workloads
+=== Algorithme amélioré de détection DES ransomwares par ML
 
-La sécurité des workloads comprend les améliorations suivantes :
+Workload Security inclut un nouvel algorithme de détection de ransomware de 2e génération pour détecter les attaques les plus sophistiquées plus rapidement et de manière plus précise.
 
-* Les algorithmes de détection ont été améliorés pour réduire le nombre de fausses alertes positives.
-* Les performances de l'interface utilisateur ont été améliorées lors du chargement, de l'affichage et du défilement des pages Forensics.
-
+« Saisonnalité » des comportements : le comportement du week-end peut suivre des modèles différents par rapport au jour de la semaine ou au comportement du matin par rapport à l'après-midi. Les algorithmes de sécurité des workloads tiennent compte de cette saisonnalité.
 
 '''
 
