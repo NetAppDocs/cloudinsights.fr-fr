@@ -95,6 +95,8 @@ sidebar:
       url: "/kubernetes_cluster_detail.html"
     - title: Surveillance et carte réseau
       url: "/concept_kubernetes_network_monitoring_and_map.html"
+    - title: Analyse des changements
+      url: "/kubernetes_change_analytics.html"
   - title: Visibilité
     entries:
     - title: Présentation
