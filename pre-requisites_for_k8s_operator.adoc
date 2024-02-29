@@ -79,7 +79,7 @@ Si vous voyez un message “erreur du serveur (NotFound)”, votre opérateur do
 
 Si vous utilisez un <<configuring-proxy-support,proxy>>, ont un <<using-a-custom-or-private-docker-repository,référentiel personnalisé>>, ou utilisent <<openshift-instructions,OpenShift>>, lisez attentivement les sections suivantes.
 
-Lisez également à propos de <<permissions,Autorisations>>.
+Lisez également à propos de <<autorisations,Autorisations>>.
 
 Si vous effectuez une mise à niveau à partir d'une installation précédente, lisez le <<mise à niveau,Mise à niveau>> informations.
 
