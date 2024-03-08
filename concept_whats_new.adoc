@@ -22,6 +22,31 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Mars 2024
+
+
+
+=== Détails de l'agent de sécurité de la charge de travail
+
+Chacun de vos agents de sécurité de la charge de travail possède sa propre page d'accueil, où vous pouvez facilement consulter des informations récapitulatives sur l'agent ainsi que les collecteurs de données et d'annuaires d'utilisateurs installés associés à cet agent.
+
+image:Agent_Detail_Page.png["Exemple de page d'accueil Détails de l'agent"]
+
+
+
+=== Tracez plus rapidement davantage de données
+
+Lors de l'analyse de données sur la page d'accueil d'une ressource, l'ajout de données supplémentaires aux graphiques de la vue Expert est un jeu d'enfant. Pour chaque table de la page d'accueil, si un type d'objet contient des données pertinentes, placez le pointeur de la souris sur cet objet pour afficher l'icône « Ajouter à la vue experte ». La sélection de cette icône ajoute cet objet aux Ressources supplémentaires et l'affiche dans les graphiques de la vue Expert.
+
+image:AddToChartIcon.png["Ajouter des données de tableau à la vue experte"]
+
+Ou peut-être voulez-vous voir les données d'une table de page d'accueil dans son propre graphique. Il vous suffit de sélectionner l'icône _Afficher le diagramme_ pour ouvrir le graphique sous le tableau :
+
+image:LPTableShowChartIcon.png["Afficher l'icône graphique"]
+
+'''
+
+
 == Février 2024
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["Journaux associés sur une page d'accueil d'alerte d
 
 === Collecter les données du commutateur ONTAP
 
-Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"] et a le approprié link:["autorisations"] réglez.
+Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"] et a le approprié <<a-note-about-permissions,autorisations>> réglez.
 
 
 
