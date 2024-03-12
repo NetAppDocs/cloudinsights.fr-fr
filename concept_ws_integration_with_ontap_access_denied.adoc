@@ -53,6 +53,8 @@ Pour les csuser avec _SVM_ credentials, executer les commandes suivantes depuis 
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
+En savoir plus sur la configuration d'autres <<task_add_collector_svm.html,Autorisations ONTAP>>.
+
 
 
 == Événements d'accès refusé
