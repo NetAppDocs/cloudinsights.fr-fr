@@ -162,7 +162,7 @@ Pour les csuser avec _SVM_ credentials, executer les commandes suivantes depuis 
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-Pour plus d'informations, consultez à propos de <<concept_ws_integration_with_ontap_access_denied.html,Intégration avec l'accès ONTAP refusée>>
+Pour plus d'informations, consultez à propos de link:\concept_ws_integration_with_ontap_access_denied.html["Intégration avec l'accès ONTAP refusée"]
 
 
 
