@@ -16,13 +16,13 @@ summary: Collecteur de données REST ONTAP
 
 
 [role="lead"]
-Ce collecteur de données acquiert les données d'inventaire et de performance des systèmes de stockage exécutant ONTAP à l'aide d'appels d'API REST en lecture seule à partir d'un compte ONTAP. Ce collecteur de données crée également un enregistrement dans le registre d'applications du cluster pour accélérer le support.
+Ce collecteur de données acquiert les données d'inventaire, les journaux EMS et les données de performances des systèmes de stockage exécutant ONTAP 9.14.1 et versions ultérieures en utilisant des appels d'API REST. Pour les systèmes ONTAP des versions antérieures, utilisez le type de collecteur « logiciel de gestion des données NetApp ONTAP » basé sur ZAPI.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les données d'inventaire et de performance à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Cloud Insights acquiert les données d'inventaire, de journaux et de performances à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
@@ -61,7 +61,7 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 
 * Modèle – liste délimitée par des virgules des noms de modèles de nœud uniques et discrets au sein de ce cluster. Si tous les nœuds des clusters sont du même type de modèle, un seul nom de modèle apparaît.
 * Fournisseur : même nom de fournisseur que vous pouvez voir si vous configurez une nouvelle source de données.
-* Numéro de série – le numéro de série de la baie. Sur les systèmes de stockage en cluster, tels que le logiciel de gestion des données ONTAP, ce numéro de série peut être moins utile que les différents numéros de série des « nœuds de stockage ».
+* Numéro de série : UUID de la baie
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données.
 * Version du microcode : micrologiciel.
 * Capacité brute : somme de base 2 de tous les disques physiques du système, quel que soit leur rôle.
@@ -109,18 +109,12 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 
 Les conditions suivantes sont requises pour configurer et utiliser ce collecteur de données :
 
-* Vous devez avoir accès à un compte administrateur configuré pour les appels API REST en lecture seule.
+* Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis
 * Les détails du compte incluent le nom d'utilisateur et le mot de passe.
-* Configuration requise pour les ports : 80 ou 443
+* Exigences relatives aux ports : 443
 * Autorisations de compte :
 +
-** Nom de rôle en lecture seule pour l'application ontapi au Vserver par défaut
-** Vous pouvez demander des autorisations d'écriture supplémentaires. Reportez-vous à la remarque sur les autorisations ci-dessous.
-
-
-* Exigences relatives aux licences ONTAP :
-+
-** Une licence FCP et des volumes mappés/masqués sont requis pour la détection Fibre Channel
+** Fonctionnellement, Cloud Insights fait des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que l'EC s'enregistre auprès de la baie ONTAP. Reportez-vous à la remarque sur les autorisations ci-dessous.
 
 
 
@@ -210,9 +204,7 @@ FAS/AFF 8080
 
 == Remarque sur les autorisations
 
-Comme un certain nombre de tableaux de bord ONTAP de Cloud Insights reposent sur des compteurs ONTAP avancés, vous devez activer *collecte de données de compteur avancée* dans la section Configuration avancée du collecteur de données.
-
-Vous devez également vous assurer que l'autorisation d'écriture sur l'API REST ONTAP est activée. Ces opérations nécessitent généralement un compte au niveau du cluster avec les autorisations nécessaires.
+Comme plusieurs tableaux de bord ONTAP de Cloud Insights reposent sur des compteurs ONTAP avancés, vous devez conserver *Activer la collecte avancée de données de compteur* activé dans la section Configuration avancée du collecteur de données.
 
 Pour créer un compte local pour Cloud Insights au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP :
 
