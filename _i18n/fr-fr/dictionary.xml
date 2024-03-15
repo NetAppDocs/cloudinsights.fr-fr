@@ -12975,9 +12975,7 @@ Pour plus d'informations, lisez à propos de Proxies <block ref="05c875968683001
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">Nom d'utilisateur REST ONTAP</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">Mot de passe REST ONTAP</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">La valeur par défaut est 60 secondes.</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">Sélectionnez cette option pour inclure les données de compteur avancé ONTAP dans les sondages.</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">Activer la collecte d'événements EMS</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">Sélectionnez cette option pour inclure les données des événements du journal EMS ONTAP.</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">Intervalle d'interrogation EMS (s)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">Créez un rôle à l'aide des commandes suivantes :</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">sécurité login rôle-rest create -role {role name} -api /api -access readonly
@@ -12993,7 +12991,10 @@ Configuration: 10.193.98.84: ONTAP REST API at 10.193.98.84 n'est pas disponible
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">Ce collecteur de données acquiert les données d'inventaire, les journaux EMS et les données de performances des systèmes de stockage exécutant ONTAP 9.14.1 et versions ultérieures en utilisant des appels d'API REST. Pour les systèmes ONTAP des versions antérieures, utilisez le type de collecteur « logiciel de gestion des données NetApp ONTAP » basé sur ZAPI.</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights acquiert les données d'inventaire, de journaux et de performances à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Numéro de série : UUID de la baie</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">Fonctionnellement, Cloud Insights fait des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que l'EC s'enregistre auprès de la baie ONTAP. Reportez-vous à la remarque sur les autorisations ci-dessous.</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Comme plusieurs tableaux de bord ONTAP de Cloud Insights reposent sur des compteurs ONTAP avancés, vous devez conserver *Activer la collecte avancée de données de compteur* activé dans la section Configuration avancée du collecteur de données.</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis. Notez que les autorisations d'administrateur sont requises si vous créez un nouvel utilisateur/rôle REST.</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">Remarque sur les autorisations</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">Fonctionnellement, Cloud Insights fait des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que Cloud Insights s'enregistre dans la baie ONTAP. Voir la <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> ci-dessous.</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">Sélectionnez cette option pour inclure les données de compteur avancé ONTAP dans les sondages. Activé par défaut.</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">Sélectionnez cette option pour inclure les données des événements du journal EMS ONTAP. Activé par défaut.</block>
 </blocks>

@@ -109,12 +109,12 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 
 Les conditions suivantes sont requises pour configurer et utiliser ce collecteur de données :
 
-* Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis
+* Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis. Notez que les autorisations d'administrateur sont requises si vous créez un nouvel utilisateur/rôle REST.
 * Les détails du compte incluent le nom d'utilisateur et le mot de passe.
 * Exigences relatives aux ports : 443
 * Autorisations de compte :
 +
-** Fonctionnellement, Cloud Insights fait des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que l'EC s'enregistre auprès de la baie ONTAP. Reportez-vous à la remarque sur les autorisations ci-dessous.
+** Fonctionnellement, Cloud Insights fait des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que Cloud Insights s'enregistre dans la baie ONTAP. Voir la <<a-note-about-permissions,Remarque sur les autorisations>> ci-dessous.
 
 
 
@@ -151,10 +151,10 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 | Intervalle d'interrogation des performances (s) | La valeur par défaut est 60 secondes. 
 
 
-| Collecte avancée des données du compteur | Sélectionnez cette option pour inclure les données de compteur avancé ONTAP dans les sondages. 
+| Collecte avancée des données du compteur | Sélectionnez cette option pour inclure les données de compteur avancé ONTAP dans les sondages. Activé par défaut. 
 
 
-| Activer la collecte d'événements EMS | Sélectionnez cette option pour inclure les données des événements du journal EMS ONTAP. 
+| Activer la collecte d'événements EMS | Sélectionnez cette option pour inclure les données des événements du journal EMS ONTAP. Activé par défaut. 
 
 
 | Intervalle d'interrogation EMS (s) | La valeur par défaut est 60 secondes. 
@@ -239,8 +239,8 @@ Le rôle et la connexion de l'utilisateur ainsi obtenus seront similaires à ceu
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 ci_readonly DEFAULT read only
-cluster1 ci_readonly security readonly
+cluster1   ci_readonly   DEFAULT   read only
+cluster1   ci_readonly   security  read only
 ....
 ....
 cluster1::security login> show
@@ -248,7 +248,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    ci_readonly   no
+ci_user     ontapi       password    ci_readonly    no
 ....
 
 
