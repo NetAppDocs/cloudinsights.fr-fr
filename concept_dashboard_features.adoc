@@ -407,7 +407,7 @@ image::SecondaryAxisExplained.png[Exemple d'axe secondaire]
 
 == Expressions dans les widgets
 
-Dans un tableau de bord, tout widget de séries chronologiques (ligne, spline, zone, zone empilée), valeur unique, Ou widget de jauge vous permet de créer des expressions à partir des mesures que vous choisissez et d'afficher le résultat de ces expressions dans un seul graphique. Les exemples suivants utilisent des expressions pour résoudre des problèmes spécifiques. Dans le premier exemple, nous souhaitons afficher les IOPS en lecture sous forme de pourcentage du nombre total d'IOPS pour l'ensemble des ressources de stockage de notre environnement. Le deuxième exemple donne une visibilité sur les IOPS du système ou de surcharge de votre environnement--ces IOPS qui ne sont pas directement liées à la lecture ou à l'écriture des données.
+Dans un tableau de bord, n'importe quel widget de séries chronologiques (ligne, spline, zone, zone empilée) graphique à barres, graphique à colonnes, graphique à secteurs ou widget de tableau vous permet de créer des expressions à partir des mesures que vous choisissez et d'afficher le résultat de ces expressions dans un seul graphique (ou colonne dans le cas du <<expressions-in-a-table-widget,widget de tableau>>). Les exemples suivants utilisent des expressions pour résoudre des problèmes spécifiques. Dans le premier exemple, nous souhaitons afficher les IOPS en lecture sous forme de pourcentage du nombre total d'IOPS pour l'ensemble des ressources de stockage de notre environnement. Le deuxième exemple donne une visibilité sur les IOPS du système ou de surcharge de votre environnement--ces IOPS qui ne sont pas directement liées à la lecture ou à l'écriture des données.
 
 Vous pouvez utiliser des variables dans des expressions (par exemple, _$Var1 * 100_)
 
@@ -446,9 +446,6 @@ Vous pouvez ajouter jusqu'à cinq variables alphabétiques pour votre expression
 Le graphique affiche le pourcentage de lecture des IOPS dans le temps pour les périphériques de stockage sélectionnés. Si vous le souhaitez, vous pouvez définir un filtre ou choisir une autre méthode d'agrégation. Sachez que si vous sélectionnez somme comme méthode de cumul, toutes les valeurs de pourcentage sont ajoutées ensemble, qui peuvent être supérieures à 100 %.
 
 . Cliquez sur *Enregistrer* pour enregistrer le graphique dans votre tableau de bord.
-+
-Vous pouvez également utiliser des expressions dans les widgets Line Chart, Spline Chart ou surface empilées.
-
 
 
 
@@ -499,6 +496,14 @@ Le graphique affiche le nombre total d'IOPS sous forme de graphique linéaire et
 
 
 Pour utiliser une variable dans une expression, tapez simplement le nom de la variable, par exemple _$var1 * 100_. Seules les variables numériques peuvent être utilisées dans les expressions.
+
+
+
+=== Expressions dans un widget de tableau
+
+Les widgets de tableau traitent les expressions un peu différemment. Vous pouvez avoir jusqu'à cinq expressions dans un widget de table unique, chacune étant ajoutée en tant que nouvelle colonne à la table. Chaque expression peut inclure jusqu'à cinq valeurs sur lesquelles effectuer son calcul. Vous pouvez facilement nommer la colonne quelque chose de significatif.
+
+image:Expression Example.png["Expression dans un widget de tableau"]
 
 
 
