@@ -170,7 +170,7 @@ Pour plus d'informations, consultez à propos de link:concept_ws_integration_wit
 
 .Étapes de configuration
 . Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Cloud Insights.
-. Cliquez sur *observabilité > Collectors > +Data Collectors*
+. Cliquez sur *sécurité de la charge de travail > collecteurs > +collecteurs de données*
 +
 Le système affiche les collecteurs de données disponibles.
 
