@@ -57,7 +57,8 @@ Configurez le collecteur d'annuaire d'utilisateurs en entrant les données requi
 
 
 | Lier DN | L'utilisateur est autorisé à rechercher dans le répertoire. Par exemple : _username@companyname.com_ ou _username@domainname.com_
-En outre, l'autorisation lecture seule du domaine est requise. 
+En outre, l'autorisation lecture seule du domaine est requise.
+L'utilisateur doit être membre du groupe de sécurité _contrôleurs de domaine en lecture seule_. 
 
 
 | LIER le mot de passe | Mot de passe du serveur d'annuaire (c'est-à-dire mot de passe pour le nom d'utilisateur utilisé dans Bind DN) 
