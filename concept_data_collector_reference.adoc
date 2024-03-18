@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_data_collector_reference.html 
 summary: Informations de référence du collecteur de données spécifique au fournisseur. 
-keywords: data collector, vendor, AWS, BROADCOM, Cisco, Dell, EMC, Hitachi, IBM, NetApp, OceanStor, OpenStack, Oracle, Pure Storage, Red Hat, redhat, VMWare 
+keywords: data collector, vendor, AWS, BROADCOM, Cisco, Dell, EMC, Hitachi, IBM, NetApp, OceanStor, OpenStack, Oracle, Pure Storage, Red Hat, redhat, VMware 
 ---
 = Référence spécifique au fournisseur
 :toc: macro
