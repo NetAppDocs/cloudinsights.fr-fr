@@ -1681,7 +1681,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Communication de l'API avec ONTAP</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">Adresses IP des LIF de données des SVM</block>
-  <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">Communication avec ONTAP pour les événements Fpolicy</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">Bidirectionnel</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">Vérificateur de taux d'événement</block>
@@ -13021,4 +13020,5 @@ L'utilisateur doit être membre du groupe de sécurité _contrôleurs de domaine
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">Sélectionnez cette option pour activer la connexion via SSL</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Signaler l'alias WWN</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Sélectionnez cette option pour signaler l'alias WWN</block>
+  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Communication avec ONTAP pour les événements Fpolicy. Ces ports doivent être ouverts vers l'agent de sécurité de la charge de travail pour que ONTAP lui envoie des événements, y compris tout pare-feu sur l'agent de sécurité de la charge de travail lui-même (le cas échéant).</block>
 </blocks>
