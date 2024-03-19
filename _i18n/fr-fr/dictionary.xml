@@ -1663,11 +1663,9 @@
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">Règles d'accès au réseau cloud</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocole</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destination</block>
-  <block id="02674a4ef33e11c879283629996c8ff8" category="cell">Direction</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
   <block id="1e5d29d467aa39ff7343d30dc2f8de5b" category="cell">&lt;site_name&gt; .cs01.cloudinsights.netapp.com &lt;site_name&gt; .c01.cloudinsights.netapp.com &lt;site_name&gt; .c02.cloudinsights.netapp.com</block>
-  <block id="4c32be4a0b4f48cdd593aef35fd69e44" category="cell">Appel sortant</block>
   <block id="800d899720a1567094af6346ee35787a" category="cell">Accès à Cloud Insights</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">Accès aux services d'authentification</block>
@@ -9724,7 +9722,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">La sécurité des workloads de stockage n'est pas disponible dans l'édition fédérale de Cloud Insights.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">Entrant</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirectionnel entre ONTAP et Workload Security. L'agent commande ping les LIFs du SVM.</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
@@ -13004,4 +13001,5 @@ L'utilisateur doit être membre du groupe de sécurité _contrôleurs de domaine
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">Informations générales sur les blocs iSCSI, VMware VMFS</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">Cliquez sur *sécurité de la charge de travail &gt; collecteurs &gt; +collecteurs de données*</block>
+  <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">Agent de sécurité des charges de travail</block>
 </blocks>
