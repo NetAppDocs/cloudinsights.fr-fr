@@ -19,6 +19,9 @@ summary: Collecteur de données REST ONTAP
 Ce collecteur de données acquiert les données d'inventaire, les journaux EMS et les données de performances des systèmes de stockage exécutant ONTAP 9.14.1 et versions ultérieures en utilisant des appels d'API REST. Pour les systèmes ONTAP des versions antérieures, utilisez le type de collecteur « logiciel de gestion des données NetApp ONTAP » basé sur ZAPI.
 
 
+NOTE: Le collecteur REST ONTAP peut être utilisé en remplacement du collecteur basé sur ONTAPI précédent. Ainsi, il peut y avoir des différences dans les mesures qui sont collectées ou déclarées. Pour plus d'informations sur les différences entre ONTAPI et REST, consultez le link:https://docs.netapp.com/us-en/ontap-restmap-9141/index.html["Mappage de ONTAP 9.14.1 ONTAPI-to-REST"] documentation :
+
+
 
 == Terminologie
 
@@ -210,21 +213,15 @@ Pour créer un compte local pour Cloud Insights au niveau du cluster, connectez-
 
 . Avant de commencer, vous devez être connecté à ONTAP avec un compte _Administrator_ et _diagnostics-level commands_ doit être activé.
 . Créez un rôle à l'aide des commandes suivantes :
-
-
-sécurité login rôle-rest create -role {role name} -api /api -access readonly
-sécurité login rôle rest create -role {role name} -api /api/cluster/agents -access all
-
++
+....
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
 vserver services web access create -name spi -role {role name} -vserver {name from above command}
-sécurité login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
+....
 
-....
- ////
-security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
- security login role create -role ci_readonly -cmddirname security -access readonly
- security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
- ////
-....
+
 . Créez l'utilisateur en lecture seule à l'aide de la commande suivante. Une fois la commande create exécutée, vous êtes invité à saisir un mot de passe pour cet utilisateur.
 +
  security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly

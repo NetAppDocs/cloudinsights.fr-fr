@@ -12961,10 +12961,6 @@ Pour plus d'informations, lisez à propos de Proxies <block ref="05c875968683001
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">Activer la collecte d'événements EMS</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">Intervalle d'interrogation EMS (s)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">Créez un rôle à l'aide des commandes suivantes :</block>
-  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">sécurité login rôle-rest create -role {role name} -api /api -access readonly
-sécurité login rôle rest create -role {role name} -api /api/cluster/agents -access all</block>
-  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver services web access create -name spi -role {role name} -vserver {name from above command}
-sécurité login create -user-or-group-name {username} -application http -authentication-method password -role {role name}</block>
   <block id="7483de82186016bc69ffb8a75489f338" category="cell">Lors de la tentative de création d'un collecteur de données REST ONTAP, une erreur comme celle-ci s'affiche :
 Configuration : 10.193.70.14 : l'API REST de ONTAP à l'adresse 10.193.70.14 n'est pas disponible : 10.193.70.14 Impossible D'OBTENIR /api/cluster : 400 demande incorrecte</block>
   <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">Cela est probablement dû à une baie de ONTAP olDeer, par exemple, ONTAP 9.6) qui ne possède pas de fonctionnalités d'API REST. ONTAP 9.14.1 est la version minimale de ONTAP prise en charge par le collecteur REST ONTAP. Les réponses « 400 Bad Request » doivent être attendues sur les versions ONTAP pré-REST.
@@ -13021,4 +13017,6 @@ L'utilisateur doit être membre du groupe de sécurité _contrôleurs de domaine
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Signaler l'alias WWN</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Sélectionnez cette option pour signaler l'alias WWN</block>
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Communication avec ONTAP pour les événements Fpolicy. Ces ports doivent être ouverts vers l'agent de sécurité de la charge de travail pour que ONTAP lui envoie des événements, y compris tout pare-feu sur l'agent de sécurité de la charge de travail lui-même (le cas échéant).</block>
+  <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">Mappage de ONTAP 9.14.1 ONTAPI-to-REST</block>
+  <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">Le collecteur REST ONTAP peut être utilisé en remplacement du collecteur basé sur ONTAPI précédent. Ainsi, il peut y avoir des différences dans les mesures qui sont collectées ou déclarées. Pour plus d'informations sur les différences entre ONTAPI et REST, consultez le <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> documentation :</block>
 </blocks>
