@@ -50,7 +50,13 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
 | Mémoire | 16 GO DE RAM 
 
 
-| Espace disque disponible | L'espace disque doit être alloué de cette manière : /opt/netapp 35 Go (minimum) si /opt est un dossier monté d'un stockage NAS, assurez-vous que les utilisateurs locaux ont accès à ce dossier. L'installation de l'agent ou du Data Collector peut échouer si les utilisateurs locaux n'ont pas l'autorisation de ce dossier. voir la link:task_cs_add_agent.html#troubleshooting-agent-errors["dépannage"] pour plus de détails. 
+| Espace disque disponible | L'espace disque doit être alloué de la manière suivante :
+/Opt/netapp 35 Go (minimum)
+
+Remarque : il est recommandé d'allouer un peu d'espace disque supplémentaire pour permettre la création du système de fichiers. Assurez-vous qu'il y a au moins 35 Go d'espace libre dans le système de fichiers.
+
+
+Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les utilisateurs locaux ont accès à ce dossier. L'installation de l'agent ou du Data Collector peut échouer si les utilisateurs locaux n'ont pas l'autorisation de ce dossier. voir la link:task_cs_add_agent.html#troubleshooting-agent-errors["dépannage"] pour plus de détails. 
 
 
 | Le réseau | Connexion Ethernet de 100 Mbit/s à 1 Gbit/s, adresse IP statique, connectivité IP à tous les périphériques et port requis à l'instance de sécurité de la charge de travail (80 ou 443). 
