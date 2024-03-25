@@ -13029,4 +13029,17 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">Blocage de l'accès utilisateur</block>
   <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">Gardez les points suivants à l'esprit pendant <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>:</block>
   <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">Assurez-vous de consulter la section autorisations du <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> page également.</block>
+  <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">Migration</block>
+  <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">Pour migrer d'un précédent collecteur de données ONTAP (ontapi) vers le nouveau collecteur de données REST ONTAP, procédez comme suit :</block>
+  <block id="4c6f28d201414a07e1d049d75ef07ba7" category="list-text">Ajoutez le collecteur REST, en saisissant tous les mêmes utilisateur/permission/etc vous aviez pour le collecteur précédent.</block>
+  <block id="7aa31458c5152c5d27f8fbb18c369015" category="list-text">Mettre en pause le collecteur précédent.</block>
+  <block id="36c201f32e3f02bd95c1dd1ccdbc73dc" category="list-text">Laissez le système collecter des données pendant environ 30 minutes. Ignorez toutes les oddities de données pendant cette période.</block>
+  <block id="dede93f696efdb5fb1be1cde69b231cb" category="list-text">Après la période de repos, vous verrez une continuation stable des données sur le collecteur de REPOS.</block>
+  <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual machine/Vserver</block>
+  <block id="40a9aa8d8be93bdef25a488011f71fcb" category="cell">Storage Virtual machine (SVM)</block>
+  <block id="b34043f2adcaed7afb95502f8e304bd7" category="list-text">ONTAP version 9.14.1 ou supérieure.</block>
+  <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">Adresse IP ou nom de domaine complet du cluster NetApp. Doit être l'adresse IP/FQDN de Cluster Management.</block>
+  <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">Récupérer le nom du vServer de type _admin_. Vous utiliserez ce nom dans les commandes suivantes.</block>
+  <block id="01489ea97f62d455d744d92e643e44a9" category="cell">Je vois des métriques vides ou « 0 » où le collecteur ONTAP ontapi affiche des données.</block>
+  <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST ne signale pas les mesures utilisées en interne sur le système ONTAP uniquement. Par exemple, les agrégats système ne seront pas collectés par ONTAP REST, seuls les SVM de type « données » seront collectés.</block>
 </blocks>

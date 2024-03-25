@@ -23,6 +23,18 @@ NOTE: Le collecteur REST ONTAP peut être utilisé en remplacement du collecteur
 
 
 
+== Migration
+
+Pour migrer d'un précédent collecteur de données ONTAP (ontapi) vers le nouveau collecteur de données REST ONTAP, procédez comme suit :
+
+. Ajoutez le collecteur REST, en saisissant tous les mêmes utilisateur/permission/etc vous aviez pour le collecteur précédent.
+. Mettre en pause le collecteur précédent.
+. Laissez le système collecter des données pendant environ 30 minutes. Ignorez toutes les oddities de données pendant cette période.
+. Après la période de repos, vous verrez une continuation stable des données sur le collecteur de REPOS.
+
+
+
+
 == Terminologie
 
 Cloud Insights acquiert les données d'inventaire, de journaux et de performances à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
@@ -51,6 +63,9 @@ Cloud Insights acquiert les données d'inventaire, de journaux et de performance
 
 
 | Volumétrie | Volume interne 
+
+
+| Storage Virtual machine/Vserver | Storage Virtual machine (SVM) 
 |===
 
 
@@ -113,6 +128,7 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 Les conditions suivantes sont requises pour configurer et utiliser ce collecteur de données :
 
 * Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis. Notez que les autorisations d'administrateur sont requises si vous créez un nouvel utilisateur/rôle REST.
+* ONTAP version 9.14.1 ou supérieure.
 * Les détails du compte incluent le nom d'utilisateur et le mot de passe.
 * Exigences relatives aux ports : 443
 * Autorisations de compte :
@@ -131,7 +147,7 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 | Champ | Description 
 
 
-| Adresse IP de gestion ONTAP | Adresse IP ou nom de domaine complet du cluster NetApp 
+| Adresse IP de gestion ONTAP | Adresse IP ou nom de domaine complet du cluster NetApp. Doit être l'adresse IP/FQDN de Cluster Management. 
 
 
 | Nom d'utilisateur REST ONTAP | Nom d'utilisateur du cluster NetApp 
@@ -212,41 +228,47 @@ Comme plusieurs tableaux de bord ONTAP de Cloud Insights reposent sur des compte
 Pour créer un compte local pour Cloud Insights au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP :
 
 . Avant de commencer, vous devez être connecté à ONTAP avec un compte _Administrator_ et _diagnostics-level commands_ doit être activé.
+. Récupérer le nom du vServer de type _admin_. Vous utiliserez ce nom dans les commandes suivantes.
++
+ vserver show -type admin
 . Créez un rôle à l'aide des commandes suivantes :
 +
 ....
 security login rest-role create -role {role name} -api /api -access readonly
 security login rest-role create -role {role name} -api /api/cluster/agents -access all
-vserver services web access create -name spi -role {role name} -vserver {name from above command}
+vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
 security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
-
-
 . Créez l'utilisateur en lecture seule à l'aide de la commande suivante. Une fois la commande create exécutée, vous êtes invité à saisir un mot de passe pour cet utilisateur.
 +
- security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
+ security login create -username ci_user -application http -authentication-method password -role ci_readonly
 
 
 Si le compte AD/LDAP est utilisé, la commande doit être
 
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
 Le rôle et la connexion de l'utilisateur ainsi obtenus seront similaires à ceux qui suivent. Votre sortie réelle peut varier :
 
-....
-Role Command/ Access
-Vserver Name Directory Query Level
----------- ------------- --------- ------------------ --------
-cluster1   ci_readonly   DEFAULT   read only
-cluster1   ci_readonly   security  read only
-....
-....
-cluster1::security login> show
-Vserver: cluster1
-Authentication Acct
-UserName    Application   Method      Role Name      Locked
----------   -------      ----------- -------------- --------
-ci_user     ontapi       password    ci_readonly    no
-....
+[listing]
+----
+security login rest-role show -vserver <vserver name> -role restRole
+
+               Role                                    Access
+Vserver        Name            API                     Level
+----------     -------------   -------------------     ------
+<vserver name> restRole        /api                    readonly
+                               /api/cluster/agents     all
+2 entries were displayed.
+
+security login show -vserver <vserver name> -user-or-group-name restUser
+
+Vserver: <vserver name>
+                                                                 Second
+User/Group                 Authentication                 Acct   Authentication
+Name           Application Method        Role Name        Locked Method
+-------------- ----------- ------------- ---------------- ------ --------------
+restUser       http        password      restRole         no     none
+----
 
 
 == Dépannage
@@ -263,5 +285,8 @@ Configuration : 10.193.70.14 : l'API REST de ONTAP à l'adresse 10.193.70.14 n'e
 
 Pour les versions ONTAP qui prennent en charge REST mais qui ne sont pas 9.14.1 ou plus récentes, le message suivant peut s'afficher :
 Configuration: 10.193.98.84: ONTAP REST API at 10.193.98.84 n'est pas disponible: 10.193.98.84: ONTAP REST API at 10.193.98.84 est disponible: Cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 mais n'est pas de la version minimale 9.14.1. 
+
+
+| Je vois des métriques vides ou « 0 » où le collecteur ONTAP ontapi affiche des données. | ONTAP REST ne signale pas les mesures utilisées en interne sur le système ONTAP uniquement. Par exemple, les agrégats système ne seront pas collectés par ONTAP REST, seuls les SVM de type « données » seront collectés. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
