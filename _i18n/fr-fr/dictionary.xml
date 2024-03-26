@@ -9719,7 +9719,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">La sécurité des workloads de stockage n'est pas disponible dans l'édition fédérale de Cloud Insights.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirectionnel entre ONTAP et Workload Security. L'agent commande ping les LIFs du SVM.</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 100,000 premiers enregistrements sont exportés. Selon la quantité de données, l'exportation peut prendre de quelques secondes à plusieurs minutes.</block>
@@ -13013,7 +13012,6 @@ L'utilisateur doit être membre du groupe de sécurité _contrôleurs de domaine
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">Sélectionnez cette option pour activer la connexion via SSL</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">Signaler l'alias WWN</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">Sélectionnez cette option pour signaler l'alias WWN</block>
-  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">Communication avec ONTAP pour les événements Fpolicy. Ces ports doivent être ouverts vers l'agent de sécurité de la charge de travail pour que ONTAP lui envoie des événements, y compris tout pare-feu sur l'agent de sécurité de la charge de travail lui-même (le cas échéant).</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">Mappage de ONTAP 9.14.1 ONTAPI-to-REST</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">Le collecteur REST ONTAP peut être utilisé en remplacement du collecteur basé sur ONTAPI précédent. Ainsi, il peut y avoir des différences dans les mesures qui sont collectées ou déclarées. Pour plus d'informations sur les différences entre ONTAPI et REST, consultez le <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> documentation :</block>
   <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">L'espace disque doit être alloué de la manière suivante :
@@ -13041,4 +13039,6 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">Je vois des métriques vides ou « 0 » où le collecteur ONTAP ontapi affiche des données.</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST ne signale pas les mesures utilisées en interne sur le système ONTAP uniquement. Par exemple, les agrégats système ne seront pas collectés par ONTAP REST, seuls les SVM de type « données » seront collectés.</block>
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">Ajoutez le collecteur de REPOS, en saisissant tous les mêmes utilisateur/permission/etc vous aviez pour le collecteur précédent.</block>
+  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">Communication de ONTAP à l'agent de sécurité de la charge de travail pour les événements Fpolicy.  Ces ports doivent être ouverts vers l'agent de sécurité de la charge de travail pour que ONTAP lui envoie des événements, y compris tout pare-feu sur l'agent de sécurité de la charge de travail lui-même (le cas échéant).</block>
+  <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">Echo from Agent to SVM Data LIFs</block>
 </blocks>
