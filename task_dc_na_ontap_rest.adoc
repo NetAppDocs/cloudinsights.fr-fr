@@ -27,7 +27,7 @@ NOTE: Le collecteur REST ONTAP peut être utilisé en remplacement du collecteur
 
 Pour migrer d'un précédent collecteur de données ONTAP (ontapi) vers le nouveau collecteur de données REST ONTAP, procédez comme suit :
 
-. Ajoutez le collecteur REST, en saisissant tous les mêmes utilisateur/permission/etc vous aviez pour le collecteur précédent.
+. Ajoutez le collecteur de REPOS, en saisissant tous les mêmes utilisateur/permission/etc vous aviez pour le collecteur précédent.
 . Mettre en pause le collecteur précédent.
 . Laissez le système collecter des données pendant environ 30 minutes. Ignorez toutes les oddities de données pendant cette période.
 . Après la période de repos, vous verrez une continuation stable des données sur le collecteur de REPOS.
