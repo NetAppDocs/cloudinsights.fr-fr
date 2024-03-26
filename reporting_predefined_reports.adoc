@@ -30,8 +30,6 @@ Les rapports prédéfinis indiquent votre inventaire, vos capacités de stockage
 
 Vous pouvez générer des rapports sous différents formats, notamment HTML, PDF, CSV, XML, Et Excel.
 
-Cloud Insights s'adapte à plusieurs services de création de rapports en vous permettant d'associer des utilisateurs aux unités commerciales. Grâce à cette fonction, les administrateurs peuvent séparer des données ou des rapports en fonction des attributs d'un utilisateur ou de son affiliation.
-
 
 
 == Accès aux rapports prédéfinis
