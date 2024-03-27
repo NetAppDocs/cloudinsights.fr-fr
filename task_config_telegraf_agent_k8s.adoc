@@ -260,16 +260,16 @@ Exécutez l'extrait de code image dans la mosaïque d'installation de NetApp Mon
 Fonctionnalités centrales de l'opérateur et surveillance Kubernetes
 
 * surveillance netapp
-* proxy kube-rbac
-* metrics-état-kube
-* telegraf
+* proxy ci-kube-rbac
+* ci-ksm
+* ci-telegraf
 * utilisateur-root-distroless
 
 
 Journal des événements
 
-* fluent-bit
-* exportateur-événements-kubernetes
+* bit fluide ci
+* ci-kubernetes-exportateur-événements
 
 
 Performances et carte réseau
@@ -282,7 +282,7 @@ Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, 
 Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 Modifiez la configuration d'agentConfiguration dans Operator-config.yaml pour refléter le nouvel emplacement docker repo. Créez une nouvelle imagePullSecret pour votre référentiel privé. Pour plus de détails, voir _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
