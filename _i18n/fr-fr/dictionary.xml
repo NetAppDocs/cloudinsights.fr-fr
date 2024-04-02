@@ -1710,7 +1710,6 @@
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Saisissez une adresse e-mail professionnelle valide et choisissez un mot de passe.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Entrez le nom de votre entreprise, ainsi que votre nom complet.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Sélectionnez Cloud Insights.</block>
-  <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">Que se passe-t-il si je dispose déjà d'un identifiant NetApp Cloud ?</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">Entrez votre adresse e-mail et votre mot de passe. Vous serez ensuite redirigé vers la page d'offres clouds de NetApp.</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">Commencez votre essai gratuit de Cloud Insights</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">commencez votre abonnement</block>
@@ -13042,8 +13041,10 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">Une fois votre environnement créé, il vous suffit à tout moment de vous connecter au portail NetApp BlueXP et de cliquer sur *aller à Cloud Insights*. Vous serez directement redirigé vers votre environnement Cloud Insights.</block>
   <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">L'URL sera également incluse dans l'e-mail d'invitation de chaque utilisateur pour faciliter l'accès et le signet. Si l'utilisateur n'est pas déjà connecté à BlueXP, il est invité à se connecter.</block>
   <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">Les nouveaux utilisateurs doivent toujours s'inscrire pour accéder à BlueXP avant de pouvoir accéder à leur URL d'environnement.</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Pour vous déconnecter de Cloud Insights, cliquez sur votre *Nom d'utilisateur* et sélectionnez *Déconnexion*. Vous revenez à l'écran de connexion BlueXP.</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">La déconnexion de Cloud Insights vous déconnecte de BlueXP. Vous serez également déconnecté des autres services cloud NetApp qui utilisent la connexion BlueXP.</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">Délai d'inactivité</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">Par défaut, BlueXP déconnecte un utilisateur s'il n'y a pas d'activité pendant six heures (360 minutes). Quelle que soit l'activité, les utilisateurs seront déconnectés après sept jours.</block>
+  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">Que se passe-t-il si je dispose déjà d'un identifiant de connexion NetApp BlueXP ?</block>
+  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">Connexion BlueXP</block>
+  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Pour vous déconnecter de Cloud Insights, cliquez sur votre *Nom d'utilisateur* et sélectionnez *Déconnexion*. Vous serez redirigé vers le <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> écran.</block>
+  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">La déconnexion de Cloud Insights vous déconnecte de BlueXP. Vous serez également déconnecté des autres services cloud NetApp qui utilisent la connexion BlueXP.</block>
 </blocks>
