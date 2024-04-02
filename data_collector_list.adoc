@@ -34,9 +34,6 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | Collecteur de données | Type 
 
 
-| link:task_config_telegraf_activemq.html["ActiveMQ"] | Service 
-
-
 | link:task_dc_amazon_ec2.html["Amazon EC2 et EBS"] | Infrastructures 
 
 

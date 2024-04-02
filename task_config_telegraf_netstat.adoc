@@ -25,7 +25,7 @@ Cloud Insights utilise ce collecteur de données pour collecter les mesures Nets
 
 == Installation
 
-. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Netstat.
+. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Choisissez Netstat.
 +
 Sélectionnez le système d'exploitation ou la plate-forme sur laquelle l'agent Telegraf est installé.
 

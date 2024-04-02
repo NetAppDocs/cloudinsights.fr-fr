@@ -31,7 +31,7 @@ Ce collecteur de données permet de collecter des données à partir des serveur
 
 == Installation
 
-. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Apache.
+. Dans *observabilité > Collectors*, cliquez sur *+Data Collector*. Choisissez Apache.
 +
 Sélectionnez le système d'exploitation ou la plate-forme sur laquelle l'agent Telegraf est installé.
 

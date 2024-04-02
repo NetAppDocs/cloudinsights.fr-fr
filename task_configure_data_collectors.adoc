@@ -40,11 +40,45 @@ Les informations d'identification du collecteur de données sont chiffrées lors
 
 == Configuration du Data Collector
 
-* Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors* et cliquez sur le bouton *+ Data Collector*. Vous pouvez choisir d'afficher tous les collecteurs de données, ou de filtrer pour afficher uniquement les collecteurs de données disponibles pour vous en fonction de votre abonnement.
-
-
+* Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors* et cliquez sur le bouton *+ Data Collector*.
 * Selon le type de collecteur de données choisi, les étapes d'installation varient.
 
+
+
+
+=== Infrastructure :
+
+Les collecteurs de données d'infrastructure incluent des choses comme le stockage ou les commutateurs.
+
+.Avant de commencer
+* Vous devez avoir au moins une unité d'acquisition configurée pour commencer la collecte des données d'infrastructure.
++
+.. Cliquez sur un collecteur de données d'infrastructure.
+.. Entrez un nom pour le collecteur de données. Les noms peuvent contenir les caractères suivants :
+
+
+* lettre (a-z)
+* nombre (0-9)
+* tiret (-)
+* trait de soulignement (_)
+* période (.)
+* espace ( )
++
+Les noms ne peuvent pas commencer ou se terminer par un espace, un point ou un tiret.
+
++
+.. Entrez l'unité d'acquisition à associer à ce collecteur de données.
+.. Entrez les champs requis dans l'écran Configuration.
+.. Cliquez sur *Configuration avancée* pour saisir des champs de configuration supplémentaires. Tous les collecteurs de données ne nécessitent pas une configuration avancée.
+.. Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.
+.. Lorsque vous avez terminé, cliquez sur *Ajouter un collecteur*.
+
+
+
+
+Pour obtenir de l'aide sur l'ajout d'une nouvelle unité d'acquisition, reportez-vous à la section link:task_configure_acquisition_unit.html["Configuration des unités d'acquisition"]
+
++ il peut prendre jusqu'à deux périodes d'interrogation avant que les données de l'environnement soient affichées dans les tableaux de bord ou disponibles pour les requêtes.
 
 
 
@@ -86,39 +120,3 @@ Il peut prendre jusqu'à deux périodes d'interrogation avant que les données d
 
 
 
-
-
-
-=== Infrastructure :
-
-Les collecteurs de données d'infrastructure incluent des choses comme le stockage ou les commutateurs.
-
-.Avant de commencer
-* Vous devez avoir au moins une unité d'acquisition configurée pour commencer la collecte des données d'infrastructure.
-+
-.. Cliquez sur un collecteur de données d'infrastructure.
-.. Entrez un nom pour le collecteur de données. Les noms peuvent contenir les caractères suivants :
-
-
-* lettre (a-z)
-* nombre (0-9)
-* tiret (-)
-* trait de soulignement (_)
-* période (.)
-* espace ( )
-+
-Les noms ne peuvent pas commencer ou se terminer par un espace, un point ou un tiret.
-
-+
-.. Entrez l'unité d'acquisition à associer à ce collecteur de données.
-.. Entrez les champs requis dans l'écran Configuration.
-.. Cliquez sur *Configuration avancée* pour saisir des champs de configuration supplémentaires. Tous les collecteurs de données ne nécessitent pas une configuration avancée.
-.. Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.
-.. Lorsque vous avez terminé, cliquez sur *Ajouter un collecteur*.
-
-
-
-
-Pour obtenir de l'aide sur l'ajout d'une nouvelle unité d'acquisition, reportez-vous à la section link:task_configure_acquisition_unit.html["Configuration des unités d'acquisition"]
-
-+ il peut prendre jusqu'à deux périodes d'interrogation avant que les données de l'environnement soient affichées dans les tableaux de bord ou disponibles pour les requêtes.

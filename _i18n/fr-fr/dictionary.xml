@@ -3896,8 +3896,6 @@
   <block id="63bee0ce61faf34ba2eb5eaf1772a185" category="list-text">Service : acquis auprès de services tels que Kubernetes ou Docker. Également appelé _Integration_.</block>
   <block id="8d1b7e78620c4edd1b1cb04c457422e7" category="paragraph">Liste alphabétique des collecteurs de données pris en charge par Cloud Insights :</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">Type</block>
-  <block id="440599e693054b36db08ebf86d960001" category="inline-link-macro">ActiveMQ</block>
-  <block id="01c33ba55f3a95c562cab844795d98bf" category="cell"><block ref="01c33ba55f3a95c562cab844795d98bf" category="inline-link-macro-rx"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Service</block>
   <block id="9c767a6f4aebc77e391afa6a6ca9c4ca" category="inline-link-macro">Amazon EC2 et EBS</block>
   <block id="9fe90fd7f13100c2c90971039d08207b" category="cell"><block ref="9fe90fd7f13100c2c90971039d08207b" category="inline-link-macro-rx"></block></block>
@@ -5418,7 +5416,6 @@
   <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Configuration du collecteur de données Apache Zookeeper</block>
   <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Data Collector Zookeeper</block>
   <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">Cloud Insights utilise ce collecteur de données pour collecter des metrics à partir d'Apache Zookeeper.</block>
-  <block id="9eacca645d0260ad873e91bf1da19a71" category="list-text">Dans *Admin &gt; Data Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Apache Zookeeper.</block>
   <block id="8429b9b7552e9131928dae7613de806c" category="inline-image-macro">Configuration du Zookeeper</block>
   <block id="95e6ebb37419864b276c313f8f6c3cbb" category="paragraph"><block ref="95e6ebb37419864b276c313f8f6c3cbb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb4ac192a5f039c2e2c335ba5ced3583" category="inline-link-macro">Zookeeper</block>
@@ -12520,7 +12517,6 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
 2. Un collecteur d'annuaire d'utilisateurs a été configuré, mais il s'est arrêté ou est à l'état d'erreur. Accédez à *collecteurs &gt; collecteurs d'annuaire d'utilisateurs* et vérifiez l'état. Reportez-vous à la <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> section de la documentation pour des conseils de dépannage.
 Après la configuration correcte, le nom sera automatiquement résolu dans les 24 heures.
 Si elle n'est toujours pas résolue, vérifiez si vous avez ajouté le collecteur de données utilisateur approprié. Assurez-vous que l'utilisateur fait bien partie du serveur Active Directory/LDAP d'annuaire ajouté.</block>
-  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez RethinkDB.</block>
   <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">Le statut au sur la page *observabilité &gt; collecteurs* de l'onglet *unités d'acquisition* affiche "certificat expiré" ou "certificat révoqué" .</block>
   <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">Sélectionnez *collecteurs &gt; agents &gt; +Agent*</block>
   <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">Cliquez sur *Workload Security &gt; Collectors*
@@ -12530,45 +12526,20 @@ Cliquez sur le collecteur de données à configurer.
 Voir la section référence du fournisseur du Data Collector de la documentation.
 
 <block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
-  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Nginx.</block>
-  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Redis.</block>
-  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Kafka.</block>
-  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez MySQL.</block>
-  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Docker.</block>
-  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Kibana.</block>
-  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez JVM.</block>
   <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">Cliquez sur *observabilité &gt; Collectors &gt; +Data Collectors*</block>
   <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">Dans *observabilité &gt; Collectors*, choisissez un système d'exploitation/une plate-forme. Notez que l'installation d'un collecteur de données d'intégration (Kubernetes, Docker, Apache, etc.) configure également la collecte des données du nœud.</block>
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">Dans le menu sécurité de la charge de travail, cliquez sur :
 *Collecteurs &gt; collecteurs d'annuaire d'utilisateurs &gt; + collecteur d'annuaire d'utilisateurs* et sélectionnez *serveur d'annuaire LDAP*</block>
-  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Consul.</block>
-  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Apache.</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">Vous pouvez modifier les informations de plusieurs collecteurs de données en même temps. Sur la page *observabilité &gt; Collectors*, sélectionnez les collecteurs de données à modifier en cochant la case à gauche de chaque et cliquez sur le bouton *Bulk actions*. Choisissez *Modifier* et modifiez les champs nécessaires.</block>
-  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Memcached.</block>
-  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez MongoDB.</block>
   <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">Dans le menu sécurité de la charge de travail, cliquez sur :
 *Collecteurs &gt; collecteurs d'annuaire d'utilisateurs &gt; + collecteur d'annuaire d'utilisateurs* et sélectionnez *Active Directory*</block>
   <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; Collectors*</block>
   <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; collecteurs* pour ouvrir la liste des collecteurs de données installés.</block>
   <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; Collectors*.</block>
-  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez PostgreSQL.</block>
-  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez OpenZFS.</block>
   <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">Connectez-vous à votre environnement Cloud Insights et accédez à *observabilité &gt; Collectors*.</block>
   <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">Cliquez sur *sécurité de la charge de travail &gt; collecteurs &gt; agents*</block>
-  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Puppet.</block>
-  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Couchbase.</block>
-  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; Collectors* et cliquez sur le bouton *+ Data Collector*. Vous pouvez choisir d'afficher tous les collecteurs de données, ou de filtrer pour afficher uniquement les collecteurs de données disponibles pour vous en fonction de votre abonnement.</block>
-  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Kapacitor.</block>
-  <block id="588c730d062048ef78564e2278564813" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Netstat.</block>
   <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">Cliquez sur *Workload Security &gt; Collectors* pour vérifier l'état du collecteur que vous avez configuré.</block>
-  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez HAProxy.</block>
-  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez *DC/OS*.</block>
   <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; Collectors*</block>
-  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez ActiveMQ.</block>
-  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Elasticsearch.</block>
-  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez Hadoop.</block>
-  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, sélectionnez CouchDB.</block>
-  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sous *Services*, choisissez encre.</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">Accédez à Workload Security *Collectors* et cliquez sur l'onglet *agents*.</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">Cliquez sur *+ Collector* et sélectionnez le collecteur de données à configurer.</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">Stratégies de types de fichiers autorisées</block>
@@ -13046,4 +13017,31 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="5b006d79d014a1860daf684ecea7e093" category="list-text">Laissez le nouveau collecteur de REPOS acquérir les données pendant au moins 30 minutes. Ignorez les données qui n'apparaissent pas « normales » pendant cette période.</block>
   <block id="6e81cdef5dd14e3cf193147eefe83cc4" category="list-text">Après la période de repos, vous devriez voir vos données se stabiliser au fur et à mesure que le collecteur de REPOS continue à acquérir.</block>
   <block id="d2098b0b84e989c49759cf70450a78d8" category="paragraph">Vous pouvez utiliser ce même processus pour revenir au collecteur précédent, si vous le souhaitez.</block>
+  <block id="34328c30b9aeceaed8fcff2dfe3eec30" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Kapapitor.</block>
+  <block id="3c9d727e041ea1596d9e67f7568b3d4b" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Redis.</block>
+  <block id="3d0738af358079dc547755789be4774a" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Netstat.</block>
+  <block id="419697cbdba3ded9f042d2b7a045a7be" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez HASProxy.</block>
+  <block id="c22bbce40f7866184fc5238e4cf0526d" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Elasticsearch.</block>
+  <block id="6ed4f0f0b93d3def9b1fe51a22e44d7a" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Consul.</block>
+  <block id="4bcd3cf21ebb34b835f0e6aa0d638f54" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez ActiveMQ.</block>
+  <block id="5ccd9dd8e50ca94f3cd4db51f6b42c50" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez RethinkDB.</block>
+  <block id="b0896396e0f3a7aa981b2ef8957b9208" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Apache.</block>
+  <block id="0ba3615a02f45b8a7b485192d849f02b" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez PostgreSQL.</block>
+  <block id="589728f32967406f1fdbd032c3fe018d" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Sélectionnez Memcached.</block>
+  <block id="5888b2a0267a27f9f34b34863d7a8110" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez OpenZFS.</block>
+  <block id="2f646a2871ea4aa3befe55d29f178062" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez JVM.</block>
+  <block id="6f449010e727da85fc5dba4dc0566129" category="list-text">Dans *Admin &gt; Data Collectors*, cliquez sur *+Data Collector*. Choisissez Apache Zookeeper.</block>
+  <block id="e71ca37de84258d54f5428c43e7d7278" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Kafka.</block>
+  <block id="ada6106f548a6369154652d4ea69d9a1" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez *DC/OS*.</block>
+  <block id="993b018a6d59665db1ee4e45e62026f4" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Nginx.</block>
+  <block id="8a8e72cdfe9e0062f257b6b3af0a66fc" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Puppet.</block>
+  <block id="c3dba9c80e9fa5a82c71abb7fa5cf37f" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez CouchDB.</block>
+  <block id="65f4403a1570898156c13c0053e0d957" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Avec Hadoop</block>
+  <block id="9ee6c12aac4505f529c285b136202ce5" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Docker.</block>
+  <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Couchbase.</block>
+  <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Flink.</block>
+  <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez MySQL.</block>
+  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">Dans le menu Cloud Insights, cliquez sur *observabilité &gt; Collectors* et cliquez sur le bouton *+ Data Collector*.</block>
+  <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez Kibana.</block>
+  <block id="c71f6654a45927e285ab22a697438b43" category="list-text">Dans *observabilité &gt; Collectors*, cliquez sur *+Data Collector*. Choisissez MongoDB.</block>
 </blocks>
