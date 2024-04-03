@@ -9814,7 +9814,6 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">EnableDNSLookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">Vrai/faux, activer la recherche DNS</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">Exemple de fichier AgentConfiguration</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">Vous trouverez ci-dessous un exemple de fichier AgentConfiguration. Notez que toutes les options ne sont pas capturées ici :</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">Si vous utilisez un référentiel docker personnalisé ou privé, suivez les instructions de la section utilisation d'un référentiel docker personnalisé ou privé</block>
   <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">Depuis août 2022, l'opérateur de surveillance NetApp Kubernetes inclut la prise en charge de Pod Security Policy (PSP). Si votre environnement utilise PSP, vous devez effectuer la mise à niveau vers l'opérateur de surveillance NetApp Kubernetes le plus récent.</block>
   <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">Si vous utilisez OpenShift 4.6 ou une version supérieure, vous devez suivre les instructions OpenShift ci-dessous en plus de vous assurer que ces conditions préalables sont remplies.</block>
@@ -13047,4 +13046,6 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">Connexion BlueXP</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Pour vous déconnecter de Cloud Insights, cliquez sur votre *Nom d'utilisateur* et sélectionnez *Déconnexion*. Vous serez redirigé vers le <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> écran.</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">La déconnexion de Cloud Insights vous déconnecte de BlueXP. Vous serez également déconnecté des autres services cloud NetApp qui utilisent la connexion BlueXP.</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">True/FALSE : définissez runPrivileged sur TRUE si SELinux est activé sur vos nœuds Kubernetes.</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">Vous trouverez ci-dessous un exemple de fichier AgentConfiguration.</block>
 </blocks>
