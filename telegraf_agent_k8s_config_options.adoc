@@ -40,7 +40,21 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier AgentCon
 |  | Nom du cluster | Champ de texte libre qui identifie de manière unique un cluster dans tous les clusters de clients. Il doit être unique pour un locataire Cloud Insights. La valeur par défaut correspond à ce que le client saisit dans l'interface utilisateur pour le champ Cluster Name 
 
 
-|  | Proxy format: Proxy: Server: Port: Nom d'utilisateur: Mot de passe: NoProxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Facultatif pour que le client puisse définir le proxy. Il s'agit généralement d'un proxy d'entreprise du client. 
+|  | proxy
+
+Format :
+
+proxy :
+
+  serveur :
+  port :
+  nom d'utilisateur :
+  mot de passe :
+  NoProxy :
+  IsTelegrafProxyEnabled :
+  IsAuProxyEnabled :
+  IsFluentbitProxyEnabled :
+  IsCollectorProxyEnabled : | Facultatif pour définir le proxy. Il s'agit généralement du proxy d'entreprise du client. 
 
 
 | telegraf |  | Options de configuration qui peuvent personnaliser l'installation de telegraf de l'opérateur 
@@ -168,10 +182,10 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 | mappe des charges de travail |  | Options de configuration permettant de personnaliser la collection de cartes de charge de travail et l'installation de l'opérateur 
 
 
-|  | CpuLimit | Limite UC pour les observateurs nets 
+|  | CpuLimit | Limite CPU pour net observateur ds 
 
 
-|  | MemLimit | Limite mem pour les observateurs nets 
+|  | MemLimit | limite mem pour les observateurs nets 
 
 
 |  | CpuRequest | Demande CPU pour net observateur ds 
@@ -193,6 +207,47 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 
 
 |  | Avec privilèges d'exécution | True/FALSE : définissez runPrivileged sur TRUE si SELinux est activé sur vos nœuds Kubernetes. 
+
+
+| gestion des modifications |  | Options de configuration de Kubernetes change Management and Analysis 
+
+
+|  | CpuLimit | Limite CPU pour change-observateur-Watch-RS 
+
+
+|  | MemLimit | Limite MEM pour change-observateur-Watch-RS 
+
+
+|  | CpuRequest | Demande CPU pour change-observateur-Watch-RS 
+
+
+|  | MemRequest | demande mem pour changement-observateur-watch-rs 
+
+
+|  | FailureDeclationIntervalMins | Intervalle en minutes après lequel un déploiement non réussi d'une charge de travail sera marqué comme ayant échoué 
+
+
+|  | DeployAggrIntervalSeconds | Fréquence à laquelle les événements de déploiement de charge de travail en cours sont envoyés 
+
+
+|  | Non WorkloadAggrIntervalSeconds | Fréquence à laquelle les déploiements sans charge de travail sont combinés et envoyés 
+
+
+|  | TermsToRedact | Ensemble d'expressions régulières utilisées dans les noms env et les cartes de données dont la valeur sera biffée
+Exemples de termes :"pwd", "password", "token", "apikey", "api-key", « jwt » 
+
+
+|  | AdditionalKindsToWatch | Liste séparée par des virgules de types supplémentaires à surveiller par rapport à l'ensemble de types par défaut surveillés par le collecteur 
+
+
+|  | KindsToIgnoreFromWatch | Liste de types séparés par une virgule à ignorer de l'ensemble de types par défaut surveillés par le collecteur 
+
+
+|  | LogRecordAggrIntervalSeconds | Fréquence à laquelle les enregistrements de journal sont envoyés à l'EC à partir du collecteur 
+
+
+|  | tolérances de surveillance | change-observateur-watch-ds tolérances supplémentaires. Format abrégé à une seule ligne uniquement.
+Exemple : '{key: Taint1, operator: Exists, effect: NoSchedule},{key: Taint2, operator: Exists, effect: NoExecute}' 
 |===
 
 

@@ -9745,8 +9745,6 @@
   <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">Facultatif : un secret pour les clients repo privés</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">Nom du cluster</block>
   <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">Champ de texte libre qui identifie de manière unique un cluster dans tous les clusters de clients. Il doit être unique pour un locataire Cloud Insights. La valeur par défaut correspond à ce que le client saisit dans l'interface utilisateur pour le champ Cluster Name</block>
-  <block id="b5249bb082b669e275606cdef10879b6" category="cell">Proxy format: Proxy: Server: Port: Nom d'utilisateur: Mot de passe: NoProxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled:</block>
-  <block id="f430d84b3603b6c921d2a45741baab1e" category="cell">Facultatif pour que le client puisse définir le proxy. Il s'agit généralement d'un proxy d'entreprise du client.</block>
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">Options de configuration qui peuvent personnaliser l'installation de telegraf de l'opérateur</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">Intervalle de collection</block>
@@ -9803,9 +9801,7 @@
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">mappe des charges de travail</block>
   <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">Options de configuration permettant de personnaliser la collection de cartes de charge de travail et l'installation de l'opérateur</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">CpuLimit</block>
-  <block id="3a8e375aaa03d4b48cdd1a1758a69d81" category="cell">Limite UC pour les observateurs nets</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
-  <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">Limite mem pour les observateurs nets</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">Demande CPU pour net observateur ds</block>
   <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">demande mem pour net observateur ds</block>
   <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">intervalle d'agrégation des mesures, en secondes</block>
@@ -13048,4 +13044,46 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">La déconnexion de Cloud Insights vous déconnecte de BlueXP. Vous serez également déconnecté des autres services cloud NetApp qui utilisent la connexion BlueXP.</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">True/FALSE : définissez runPrivileged sur TRUE si SELinux est activé sur vos nœuds Kubernetes.</block>
   <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">Vous trouverez ci-dessous un exemple de fichier AgentConfiguration.</block>
+  <block id="5c7af4a6b686285084e62f255503c141" category="cell">proxy
+
+Format :
+
+proxy :
+
+  serveur :
+  port :
+  nom d'utilisateur :
+  mot de passe :
+  NoProxy :
+  IsTelegrafProxyEnabled :
+  IsAuProxyEnabled :
+  IsFluentbitProxyEnabled :
+  IsCollectorProxyEnabled :</block>
+  <block id="f8ac74d8a3668ddf89efeb8e806ca908" category="cell">Facultatif pour définir le proxy. Il s'agit généralement du proxy d'entreprise du client.</block>
+  <block id="27f8013ee549a9c4b57f90e2187cfe5f" category="cell">Limite CPU pour net observateur ds</block>
+  <block id="579e696b8054af08af33dfd55dfad78b" category="cell">limite mem pour les observateurs nets</block>
+  <block id="78835e1c315b219e4c62fc613fdfd311" category="cell">gestion des modifications</block>
+  <block id="02b609b32da65dbc17b9446c8542f3dd" category="cell">Options de configuration de Kubernetes change Management and Analysis</block>
+  <block id="75f551b07991fea9589bce25b6abb363" category="cell">Limite CPU pour change-observateur-Watch-RS</block>
+  <block id="6e753299d008aca89690ad5b5c6b784f" category="cell">Limite MEM pour change-observateur-Watch-RS</block>
+  <block id="582e83d73d36aa6674624867468704da" category="cell">Demande CPU pour change-observateur-Watch-RS</block>
+  <block id="d73c96f8e69fcf08ffd440cc16f573af" category="cell">demande mem pour changement-observateur-watch-rs</block>
+  <block id="5190879b0edfb4a53603a0ab23ab40e8" category="cell">FailureDeclationIntervalMins</block>
+  <block id="6e18e5efc4d170de4ac66b784ca443b6" category="cell">Intervalle en minutes après lequel un déploiement non réussi d'une charge de travail sera marqué comme ayant échoué</block>
+  <block id="c055d40d7bbe856522ad8c59006f6754" category="cell">DeployAggrIntervalSeconds</block>
+  <block id="e06e4cc3c2b6796e0850387e7147734e" category="cell">Fréquence à laquelle les événements de déploiement de charge de travail en cours sont envoyés</block>
+  <block id="43aa9b44901fa9982cd6c7faf3f97402" category="cell">Non WorkloadAggrIntervalSeconds</block>
+  <block id="cff422cbad1df823699a6830f754d451" category="cell">Fréquence à laquelle les déploiements sans charge de travail sont combinés et envoyés</block>
+  <block id="6d53bc2f7711e2d9a24631defb23b18f" category="cell">TermsToRedact</block>
+  <block id="532aa006f97c495d1734618405645779" category="cell">Ensemble d'expressions régulières utilisées dans les noms env et les cartes de données dont la valeur sera biffée
+Exemples de termes :"pwd", "password", "token", "apikey", "api-key", « jwt »</block>
+  <block id="44011a6b8af68cc46d2d0dfb669fd887" category="cell">AdditionalKindsToWatch</block>
+  <block id="ac3fd52049b8a2c3ba2e8b8a5eff74e0" category="cell">Liste séparée par des virgules de types supplémentaires à surveiller par rapport à l'ensemble de types par défaut surveillés par le collecteur</block>
+  <block id="20e3bce2d07b4e6d70959f7793b18bc9" category="cell">KindsToIgnoreFromWatch</block>
+  <block id="003936f0b815c468a99ed57f900f3d8a" category="cell">Liste de types séparés par une virgule à ignorer de l'ensemble de types par défaut surveillés par le collecteur</block>
+  <block id="eee9690c1174453d706353a8a678c8a1" category="cell">LogRecordAggrIntervalSeconds</block>
+  <block id="284d60e68534479175e5c3f018cecc45" category="cell">Fréquence à laquelle les enregistrements de journal sont envoyés à l'EC à partir du collecteur</block>
+  <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">tolérances de surveillance</block>
+  <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-observateur-watch-ds tolérances supplémentaires. Format abrégé à une seule ligne uniquement.
+Exemple : '{key: Taint1, operator: Exists, effect: NoSchedule},{key: Taint2, operator: Exists, effect: NoExecute}'</block>
 </blocks>
