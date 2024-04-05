@@ -3838,7 +3838,6 @@
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">Oui.</block>
   <block id="2b7c53bace6e76127dd80fffa6f4f898" category="cell">11.5</block>
   <block id="bca66716b9ca2d13a4c28be69b276777" category="cell">3.3</block>
-  <block id="961208029de208a5d667bc4557cd4628" category="summary">Le serveur ou la VM que vous utilisez comme unité d'acquisition doit répondre aux exigences minimales</block>
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">Exigences relatives à l'unité d'acquisition</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">Vous devez installer une unité d'acquisition (au) afin d'obtenir des informations auprès de vos collecteurs de données d'infrastructure (stockage, VM, port, EC2, etc.). Avant d'installer l'unité d'acquisition, assurez-vous que votre environnement répond aux exigences de votre système d'exploitation, de votre processeur, de la mémoire et de l'espace disque.</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Configuration Windows requise</block>
@@ -12757,21 +12756,6 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">La sélection d'une alerte de même type fournit des détails sur l'alerte, y compris le moniteur qui a déclenché l'alerte, ainsi qu'un graphique montrant un chronogramme visuel pour l'alerte.</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Page de liste Webhooks</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Sur la page de liste Webhooks, sont affichés le Nom, créé par, créé le, État, sécurisé, et les champs dernier rapport.</block>
-  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
-
-* CentOS (64 bits) : 7.2 à 7.9, Stream 8, Stream 9
-* Debian (64 bits) : 9 et 10
-* Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.4
-* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.7, 9.1
-* Rocky 9.0, 9.1
-* Serveur Ubuntu: 18.04 et 20.04 LTS
-
-Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
-
-Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivantes sur le système d'unités d'acquisition :
-
- sous-système fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"
- Sudo restorecon -R /opt/netapp/cloudInsights</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">Protocole SMB version 3.1 et antérieure.</block>
   <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">Vous pouvez en savoir plus sur la sécurité Cloud Insights <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">En savoir plus sur la sécurité Cloud Insights <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
@@ -13086,4 +13070,23 @@ Exemples de termes :"pwd", "password", "token", "apikey", "api-key", « jwt »</
   <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">tolérances de surveillance</block>
   <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-observateur-watch-ds tolérances supplémentaires. Format abrégé à une seule ligne uniquement.
 Exemple : '{key: Taint1, operator: Exists, effect: NoSchedule},{key: Taint2, operator: Exists, effect: NoExecute}'</block>
+  <block id="ab8e405c19b7905ee11081815f3188e8" category="summary">Le serveur ou la machine virtuelle que vous utilisez comme unité d'acquisition doit satisfaire aux exigences minimales.</block>
+  <block id="a09b5775576e1f992d4b31384ff11e67" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
+
+* CentOS (64 bits) : 7.2 à 7.9, 8.1 à 8.4, Stream 8, Stream 9
+* Debian (64 bits) : 9 et 10
+* OpenSUSE Leap 15.1 à 15.5
+* Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.8
+* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.8, 9.1, 9.2
+* Rocky 9.0, 9.1, 9.3
+* SUSE Enterprise Linux Server 15, 15 SP2 à 15 SP5
+* Serveur Ubuntu: 18.04, 20.04, 22.04 LTS
+* SELinux sur les plates-formes ci-dessus
+
+Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
+
+Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivantes sur le système d'unités d'acquisition :
+
+ sous-système fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"
+ Sudo restorecon -R /opt/netapp/cloudInsights</block>
 </blocks>

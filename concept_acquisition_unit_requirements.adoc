@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_acquisition_unit_requirements.html 
-summary: 'Le serveur ou la VM que vous utilisez comme unité d"acquisition doit répondre aux exigences minimales' 
-keywords: AU, acquisition unit, RAU, requirements, sizing 
+summary: 'Le serveur ou la machine virtuelle que vous utilisez comme unité d"acquisition doit satisfaire aux exigences minimales.' 
+keywords: AU, acquisition unit, requirements, sizing 
 ---
 = Exigences relatives à l'unité d'acquisition
 :toc: macro
@@ -33,12 +33,15 @@ Vous devez installer une unité d'acquisition (au) afin d'obtenir des informatio
 
 | Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
 
-* CentOS (64 bits) : 7.2 à 7.9, Stream 8, Stream 9
+* CentOS (64 bits) : 7.2 à 7.9, 8.1 à 8.4, Stream 8, Stream 9
 * Debian (64 bits) : 9 et 10
-* Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.4
-* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.7, 9.1
-* Rocky 9.0, 9.1
-* Serveur Ubuntu: 18.04 et 20.04 LTS
+* OpenSUSE Leap 15.1 à 15.5
+* Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.8
+* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.8, 9.1, 9.2
+* Rocky 9.0, 9.1, 9.3
+* SUSE Enterprise Linux Server 15, 15 SP2 à 15 SP5
+* Serveur Ubuntu: 18.04, 20.04, 22.04 LTS
+* SELinux sur les plates-formes ci-dessus
 
 Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.
 
