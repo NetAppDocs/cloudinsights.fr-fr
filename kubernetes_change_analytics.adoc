@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_change_analytics.html 
-keywords: changes, management, analysis 
+keywords: changes, management, analysis, kubernetes, k8s 
 summary: Le suivi des modifications Kubernetes est plus simple que jamais. 
 ---
 = Analyse des changements Kubernetes
@@ -19,12 +19,12 @@ summary: Le suivi des modifications Kubernetes est plus simple que jamais.
 
 
 [role="lead"]
-L'analytique des changements Kubernetes vous offre une vue complète des modifications récentes de votre environnement K8s. Les alertes et l'état du déploiement sont à portée de main. Avec change Analytics, vous pouvez suivre chaque changement de déploiement et de configuration et le mettre en corrélation avec l'état et les performances des services, de l'infrastructure et des clusters K8s.
+745bf0c93bc131f89ec736fc36e64da7
 
 Gardez à l'esprit les éléments suivants :
 
-* Dans les environnements mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans des environnements très dynamiques, Cloud Insights peut ne pas être en mesure de suivre correctement toutes les modifications.
-* L'analyse des changements fournit une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut aider à dépanner les environnements dynamiques.
+* baa67b8c9085fb7f1ab7886843918360
+* ee48ad51c38d1e68f90591ef3918ee29
 
 
 Pour afficher l'analyse des changements Kubernetes, accédez à *Kubernetes > analyse des changements*.

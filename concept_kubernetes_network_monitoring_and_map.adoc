@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_kubernetes_network_monitoring_and_map.html 
-keywords: service map, workloads, 
+keywords: service map, workloads, Kubernetes, 
 summary: Présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance 
 ---
 = Surveillance et mappage des performances du réseau Kubernetes
@@ -19,8 +19,10 @@ summary: Présente les dépendances et les flux des workloads Kubernetes, et sou
 
 
 [role="lead"]
-La fonctionnalité de surveillance et de mappage des performances réseau Kubernetes simplifie la résolution de problèmes en mappant les dépendances entre les services (également appelés workloads). Elle fournit une visibilité en temps réel sur les latences des performances réseau et les anomalies pour identifier les problèmes de performance avant qu'ils n'affectent les utilisateurs.
-Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.
+642d357bd708eba3d8ac3744a27588a3
+
+
+NOTE: 7d69190c63825bab664b2d4ce825918a
 
 Principales fonctionnalités : • la carte des workloads présente les dépendances et les flux des workloads Kubernetes, et souligne les problèmes de réseau et de performance. • Surveiller le trafic réseau entre les pods Kubernetes, les workloads et les nœuds ; identifier la source des problèmes de trafic et de latence. • Réduire les coûts globaux en analysant les entrées, les sorties, le trafic interrégional et le trafic de réseau interzone.
 

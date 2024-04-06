@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_node_detail.html 
-keywords: k8s, pods, clusters, nodes. troubleshooting, planning 
+keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning 
 summary: La page de détails des nœuds Kubernetes fournit des informations sur le stockage persistant et Pod en back-end. 
 ---
 = Page des détails des nœuds Kubernetes

@@ -1,18 +1,21 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_kubernetes.html 
-keywords: telegraf 
-summary: Collecteur de données pour Kubernetes 
+keywords: telegraf, installation, install, kubernetes 
+summary: ccb06b64aa7e8cb6a869d22deb1de8bd 
 ---
-= Data Collector : Kubernetes
+= Collecteur de données Kubernetes
+:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
+:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
@@ -22,7 +25,10 @@ Cloud Insights utilise ce collecteur de données pour recueillir les metrics du 
 
 == Installation
 
-Pour obtenir des instructions d'installation de Kubernetes, consultez le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] page.
+853a529a2cb031ba8c442d361b80f74e
+
+
+NOTE: 9202ccff1bbfb1125df09b7eb605eb6c
 
 
 

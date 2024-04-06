@@ -26,12 +26,9 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
-=== Prise en charge SAN iSCSI pour Kubernetes Network Map
+=== Latence du volume iSCSI
 
-Identifiez les dépendances du stockage sous-jacent Kubernetes pour NFS et maintenant iSCSI.
-Accélérez la résolution des problèmes en obtenant une vue précise de l'activité du réseau de stockage de l'application Kubernetes ainsi que des metrics de stockage non délimités. Découvrez comment l'application Kubernetes utilise l'infrastructure de stockage pour le reporting de justification et de facturation interne.
-
-image:pod-to-storage.png["Exemple de pod à stockage"]
+Les indicateurs de latence du volume iSCSI sont disponibles dans les tableaux de bord, les alertes, etc. Pour collecter les mesures de latence iSCSI, activez _performances réseau et Map_ à partir de l'élément de menu « Modifier le déploiement » du collecteur Kubernetes.
 
 
 
