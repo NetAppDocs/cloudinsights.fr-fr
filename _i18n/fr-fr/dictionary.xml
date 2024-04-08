@@ -2496,8 +2496,6 @@
   <block id="5c7f848c8021f50b6420b0c983ceafd0" category="doc">Collecteur de données Kubernetes</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights utilise ce collecteur de données pour recueillir les metrics du pod Kubernetes, des nœuds et des conteneurs.</block>
   <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">Installation de l'agent</block>
-  <block id="853a529a2cb031ba8c442d361b80f74e" category="paragraph">Pour obtenir des instructions d'installation de Kubernetes, consultez le <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> page.</block>
-  <block id="9202ccff1bbfb1125df09b7eb605eb6c" category="admonition">L'information sur *kube-State-metrics* a été déplacée vers le <block ref="83baed86820f9347147bd19d20167e7d" category="inline-link-macro-rx"></block> page.</block>
   <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Conteneur Kubernetes</block>
   <block id="5415e066c63454268882855520be8f45" category="cell">Cluster de conteneurs de pod d'espace de noms</block>
   <block id="7bc7c32edd5f6378984b7385ffc0ed80" category="cell">Kubernetes Node Name Node Node OS Node UUID de nœud d'OS IP</block>
@@ -12558,7 +12556,6 @@ Je suis capable d'enregistrer le rapport, mais lorsque je rouvre le rapport enre
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">Vous devez avoir accès à un compte avec le rôle "fsxadmin", avec trois applications qui lui sont affectées : ssh, ontapi, http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Exigences relatives aux ports : 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Notez que les commandes de l'interface de ligne de commande FSX et de l'API récupèrent certaines valeurs de capacité que Cloud Insights ZAPI ne collecte pas. Par conséquent, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Cloud Insights de celles utilisées sur FSX.</block>
-  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Pour plus d'informations sur l'installation sur Kubernetes, reportez-vous à la section <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>.</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Si vous disposez de l'édition fédérale de Cloud Insights, les instructions d'installation et de configuration peuvent être différentes de celles de cette page. Suivez les instructions dans Cloud Insights pour installer l'opérateur de surveillance NetApp Kubernetes.</block>
   <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">Type : choisissez *unité d'acquisition* et *collecte de données*</block>
   <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">Correctif</block>
@@ -12774,7 +12771,6 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">Janvier 2024</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">Essayez des fonctionnalités Cloud Insights que vous n'avez pas encore utilisées</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">Mes workloads sont-ils sains ?</block>
-  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes &gt; Explore &gt; workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide.</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">Aperçu de l'état des workloads</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Identification Data Domain</block>
@@ -12878,7 +12874,6 @@ Pour plus d'informations, lisez à propos de Proxies <block ref="05c875968683001
   <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">Ou peut-être voulez-vous voir les données d'une table de page d'accueil dans son propre graphique. Il vous suffit de sélectionner l'icône _Afficher le diagramme_ pour ouvrir le graphique sous le tableau :</block>
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">Afficher l'icône graphique</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> et a le approprié <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> réglez.</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">Autorisations ONTAP</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Autorisations pour la protection anti-ransomware autonome de ONTAP</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">Autorisations d'accès ONTAP refusées</block>
@@ -13089,4 +13084,17 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
 
  sous-système fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"
  Sudo restorecon -R /opt/netapp/cloudInsights</block>
+  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">Avril 2024</block>
+  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">Latence du volume iSCSI</block>
+  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">Les indicateurs de latence du volume iSCSI sont disponibles dans les tableaux de bord, les alertes, etc. Pour collecter les mesures de latence iSCSI, activez _performances réseau et Map_ à partir de l'élément de menu « Modifier le déploiement » du collecteur Kubernetes.</block>
+  <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
+  <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
+  <block id="c3571084e6793888922121d12a2dca13" category="list-text">Rocky 9.3</block>
+  <block id="7c5f962bedfb419a0baae6396bf5594d" category="list-text">OpenSUSE Leap 15.1 à 15.5</block>
+  <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15, 15 SP2 à 15 SP5</block>
+  <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> et a le approprié <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> réglez.</block>
+  <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes &gt; Explore &gt; workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide. Identifiez facilement si le problème d'intégrité est lié à des modifications de l'infrastructure, du réseau ou de la configuration, puis explorez la source des problèmes pour en analyser la cause.</block>
+  <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Pour plus d'informations sur l'installation sur Kubernetes, reportez-vous au <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> page.</block>
+  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Pour obtenir des instructions d'installation de Kubernetes, consultez le <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> page.</block>
+  <block id="9475d89ab72707a841c177322d6462fa" category="summary">L'opérateur de surveillance Kubernetes NetApp collecte les données Kubernetes pour les utiliser dans Cloud Insights.</block>
 </blocks>

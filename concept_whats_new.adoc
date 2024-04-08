@@ -22,6 +22,30 @@ NOTE: Certaines de ces fonctions peuvent ne pas être disponibles dans l'éditio
 
 
 
+== Avril 2024
+
+
+
+=== Latence du volume iSCSI
+
+Les indicateurs de latence du volume iSCSI sont disponibles dans les tableaux de bord, les alertes, etc. Pour collecter les mesures de latence iSCSI, activez _performances réseau et Map_ à partir de l'élément de menu « Modifier le déploiement » du collecteur Kubernetes.
+
+
+
+=== Systèmes d'exploitation pris en charge
+
+Les systèmes d'exploitation suivants sont pris en charge par les unités d'acquisition Cloud Insights, en plus de ceux-ci link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["déjà pris en charge"]:
+
+* Oracle Enterprise Linux 8.8
+* Red Hat Enterprise Linux 8.8
+* Rocky 9.3
+* OpenSUSE Leap 15.1 à 15.5
+* SUSE Enterprise Linux Server 15, 15 SP2 à 15 SP5
+
+
+'''
+
+
 == Mars 2024
 
 
@@ -93,7 +117,7 @@ image:RelatedLogsTable.png["Journaux associés sur une page d'accueil d'alerte d
 
 === Collecter les données du commutateur ONTAP
 
-Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"] et a le approprié <<a-note-about-permissions,autorisations>> réglez.
+Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"] et a le approprié link:task_dc_na_cdot.html#a-note-about-permissions["autorisations"] réglez.
 
 
 
@@ -116,7 +140,7 @@ En plus de votre essai initial de Cloud Insights, vous pouvez également profite
 
 === Mes workloads sont-ils sains ?
 
-L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes > Explore > workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide.
+L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes > Explore > workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide. Identifiez facilement si le problème d'intégrité est lié à des modifications de l'infrastructure, du réseau ou de la configuration, puis explorez la source des problèmes pour en analyser la cause.
 
 image:WorkloadHealth.png["Aperçu de l'état des workloads"]
 
