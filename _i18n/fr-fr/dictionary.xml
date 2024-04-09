@@ -13082,8 +13082,6 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
  sous-système fcontext -a -t usr_t "/opt/netapp/cloudinsights(/.*)?"
  Sudo restorecon -R /opt/netapp/cloudInsights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">Avril 2024</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">Latence du volume iSCSI</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">Les indicateurs de latence du volume iSCSI sont disponibles dans les tableaux de bord, les alertes, etc. Pour collecter les mesures de latence iSCSI, activez _performances réseau et Map_ à partir de l'élément de menu « Modifier le déploiement » du collecteur Kubernetes.</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">Rocky 9.3</block>
@@ -13098,4 +13096,9 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector : Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Installation et configuration de l'opérateur de contrôle Kubernetes</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lire le <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Documentation requise avant l'installation ou la mise à niveau de l'opérateur de surveillance NetApp Kubernetes.</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Prise en charge SAN iSCSI pour Kubernetes Network Map</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">Identifiez les dépendances du stockage sous-jacent Kubernetes pour NFS et maintenant iSCSI.
+Accélérez la résolution des problèmes en obtenant une vue précise de l'activité du réseau de stockage de l'application Kubernetes ainsi que des metrics de stockage non délimités. Découvrez comment l'application Kubernetes utilise l'infrastructure de stockage pour le reporting de justification et de facturation interne.</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Exemple de pod à stockage</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
