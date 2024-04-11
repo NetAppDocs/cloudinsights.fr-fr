@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_object_icons.html 
 summary: 'Référence de l"icône de l"objet Cloud Insights.' 
-keywords: icons, assets, objects, reference, kubernetes, map 
+keywords: icons, assets, objects, reference, map 
 ---
 = Référence de l'icône d'objet
 :toc: macro

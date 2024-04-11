@@ -51,7 +51,7 @@ Cloud Insights conserve les données historiques à utiliser dans le cadre du re
 | Marts de performance | Nœud de stockage | Tous les jours | 13 mois 
 
 
-| Marts de performance | Performances des VM | Horaire | 35 jours 
+| Marts de performance | Performances des VM | Horaire | 14 jours 
 
 
 | Marts de performance | Performances des VM | Tous les jours | 13 mois 
