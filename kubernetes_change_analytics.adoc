@@ -23,7 +23,7 @@ L'analytique des changements Kubernetes vous offre une vue complète des modific
 
 Gardez à l'esprit les éléments suivants :
 
-* Dans les environnements mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans des environnements très dynamiques, Cloud Insights peut ne pas être en mesure de suivre correctement toutes les modifications.
+* Dans les environnements mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans des environnements très dynamiques, Cloud Insights change Analytics peut ne pas être en mesure de suivre correctement tous les changements.
 * L'analyse des changements fournit une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut aider à dépanner les environnements dynamiques.
 
 
