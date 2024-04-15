@@ -119,8 +119,6 @@ Pour les environnements de sécurité de la charge de travail *APAC* :
 
 == Règles dans le réseau
 
-Notez que lors de l'ajout de _link:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["csuser"]_, cet utilisateur requiert un accès SSH au LIF de gestion ONTAP.
-
 [cols="5*"]
 |===
 | Protocole | Port | Source | Destination | Description 
