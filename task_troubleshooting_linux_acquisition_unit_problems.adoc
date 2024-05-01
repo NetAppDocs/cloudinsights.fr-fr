@@ -60,7 +60,10 @@ Vous trouverez ici des suggestions de dépannage des problèmes liés aux unité
 | État : échec du signal de détection | L'unité d'acquisition (au) envoie un signal de présence à Cloud Insights toutes les 60 secondes pour renouveler son bail. Si l'appel de pulsation échoue en raison d'un problème de réseau ou si le Cloud Insights ne répond pas, le délai de bail de l'au n'est pas mis à jour. Lorsque le délai de bail de l'au expire, Cloud Insights affiche le statut "Heartbeat failed". Étapes de dépannage : vérifiez la connexion réseau entre l'unité d'acquisition et CloudInsights. Vérifiez si le service de l'unité d'acquisition est en cours d'exécution. Si le service n'est pas en cours d'exécution, démarrez-le. Consultez le journal des unités d'acquisition (/var/log/netapp/cloudInsights/acq/acq.log) pour vérifier s'il y a des erreurs. 
 
 
-| Je vois un message « Heartbeat Error: | Cette erreur peut survenir en cas d'interruption du réseau entraînant l'interruption de la communication entre l'unité d'acquisition et l'environnement Cloud Insights pendant plus d'une minute. Vérifier que la connexion entre l'au et l'Cloud Insights est stable et active. 
+| Je vois un message « erreur Heartbeat : » | Cette erreur peut survenir en cas d'interruption du réseau entraînant l'interruption de la communication entre l'unité d'acquisition et l'environnement Cloud Insights pendant plus d'une minute. Vérifier que la connexion entre l'au et l'Cloud Insights est stable et active. 
+
+
+| Lors de la réinstallation de l'unité d'acquisition, je vois « ValueError: File context for /opt/netapp/cloudInsights(/.*)? déjà défini ». | Sur un système équipé de SELinux, ce message d'erreur peut apparaître après `cloudinsights-uninstall.sh -p` A été exécuté et l'unité d'acquisition doit être réinstallée. Exécution de la commande `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` doit corriger le problème et supprimer le message. 
 |===
 
 
