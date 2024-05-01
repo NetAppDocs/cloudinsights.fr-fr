@@ -165,6 +165,49 @@ Workload Security inclut un nouvel algorithme de détection de ransomware de 2e 
 
 « Saisonnalité » des comportements : le comportement du week-end peut suivre des modèles différents par rapport au jour de la semaine ou au comportement du matin par rapport à l'après-midi. Les algorithmes de sécurité des workloads tiennent compte de cette saisonnalité.
 
+
+
+=== Fonctionnalités obsolètes
+
+Les fonctionnalités sont parfois obsolètes à mesure que les fonctions évoluent. Voici quelques-unes des fonctionnalités qui ont été obsolètes dans Cloud Insights :
+
+
+
+==== L'API de workload Secure REST cloudSecure_Forensics.Activities.v1 est obsolète
+
+L'API _cloudsecure_Forensics.Activities.v1_ est obsolète. Cette API renvoie des informations sur les activités associées aux entités de l'environnement Storage Workload Security. Cette API a été remplacée par cloudsecure_Forensics.Activities.*v2*_.
+
+OBTENIR pour cette API a précédemment renvoyé ce qui suit :
+
+[listing]
+----
+{
+  "count": 24594,
+  "limit": 1000,
+  "offset": 0,
+  "results": [
+    {
+      "accessLocation":
+----
+Cette API renvoie maintenant :
+
+[listing]
+----
+{
+  "limit": 1000,
+  "meta": {
+    "page": {
+      "after": "lvlvk3pp.4cpzcg4kpybl",
+      "before": "lvlxy3dz.4cq5ajdnl9fk",
+      "size": 1000
+    }
+  },
+  "results": [
+    {
+      "accessLocation": "10.249.6.220",
+----
+Pour plus d'informations, consultez la documentation de swagger à l'adresse suivante : « Admin > API Access > API Documentation > Workload Security ».
+
 '''
 
 
