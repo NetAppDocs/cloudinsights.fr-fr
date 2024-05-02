@@ -247,6 +247,9 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_dc_na_cdot.html["Logiciel de gestion des données NetApp ONTAP"] | Infrastructures 
 
 
+| link:task_dc_na_ontap_rest.html["Collecteur de REPOS NetApp ONTAP "] | Infrastructures 
+
+
 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] | Infrastructures 
 
 
