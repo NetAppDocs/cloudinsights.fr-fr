@@ -4,7 +4,7 @@ permalink: telegraf_agent_k8s_config_options.html
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s, options, configuration 
 summary: 'L"opérateur de surveillance NetApp Kubernetes dispose d"un certain nombre d"options configurables.' 
 ---
-= Options de configuration de l'opérateur de surveillance NetApp Kubernetes
+= Options de configuration de l'opérateur de surveillance Kubernetes
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: 'L"opérateur de surveillance NetApp Kubernetes dispose d"un certain no
 
 
 [role="lead"]
-Le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] l'installation et la configuration peuvent être personnalisées.
+Le link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Opérateur de surveillance Kubernetes"] la configuration peut être personnalisée.
 
-Le tableau ci-dessous répertorie les options possibles pour le fichier AgentConfiguration :
+Le tableau ci-dessous répertorie les options possibles pour le fichier _AgentConfiguration_ :
 
 [cols="1,1,2"]
 |===
@@ -244,7 +244,7 @@ Exemple : '{key: Taint1, operator: Exists, effect: NoSchedule},{key: Taint2, ope
 
 == Exemple de fichier AgentConfiguration
 
-Vous trouverez ci-dessous un exemple de fichier AgentConfiguration.
+Vous trouverez ci-dessous un exemple de fichier _AgentConfiguration_.
 
 [listing]
 ----
