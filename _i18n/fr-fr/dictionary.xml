@@ -9756,12 +9756,6 @@
   <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">Demande CPU pour les RS telegraf</block>
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">RsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">Demande de mémoire pour les RS telegraf</block>
-  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">DockerMountPoint</block>
-  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">Remplacement du chemin dockerMountPoint. Ceci concerne les installations docker non standard sur des plateformes k8s comme la fonderie de cloud</block>
-  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">DockerUnixSocket</block>
-  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">Remplacement du chemin dockerUnixSocket. Ceci concerne les installations docker non standard sur des plateformes k8s comme la fonderie de cloud.</block>
-  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">CrioSockPath</block>
-  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">Remplacement du chemin crioSockPath. Ceci concerne les installations docker non standard sur des plateformes k8s comme la fonderie de cloud.</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">Avec privilèges d'exécution</block>
   <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">Exécutez le conteneur telegraf en mode privilégié. Définissez cette valeur sur true si SELinux est activé sur vos nœuds k8s</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">Taille de la batchSize</block>
@@ -10185,8 +10179,6 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">Dans _AgentConfiguration_</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">Teintes et tolérances</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">En savoir plus sur Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>.</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Collecte de metrics Docker. Par défaut, ce paramètre est défini sur true et les metrics docker seront collectées pour les déploiements k8s sur site basés sur docker. Pour désactiver la collection de mesures docker, définissez cette option sur false.</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">Tolérances de type dsTolerations</block>
   <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">télégraf-ds tolérances supplémentaires.</block>
   <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">RsTolerations</block>
@@ -13082,7 +13074,6 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights peut collecter des données à partir des commutateurs back-end du système ONTAP ; il vous suffit d'activer la collecte dans la section _Configuration avancée_ du collecteur de données et de vous assurer que le système ONTAP est configuré pour fournir <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> et a le approprié <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> réglez.</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">L'état des workloads est disponible en un coup d'œil sur la page *Kubernetes &gt; Explore &gt; workloads*. Vous pouvez ainsi identifier rapidement les workloads qui fonctionnent correctement et ceux qui ont besoin d'aide. Identifiez facilement si le problème d'intégrité est lié à des modifications de l'infrastructure, du réseau ou de la configuration, puis explorez la source des problèmes pour en analyser la cause.</block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">L'analytique des changements Kubernetes vous offre une vue complète des modifications récentes de votre environnement K8s. Les alertes et l'état du déploiement sont à portée de main. Avec change Analytics, vous pouvez suivre chaque changement de déploiement et de configuration et le mettre en corrélation avec l'état et les performances des services, de l'infrastructure et des clusters K8s.</block>
-  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">L'analyse des changements fournit une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut aider à dépanner les environnements dynamiques.</block>
   <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">Prise en charge SAN iSCSI pour Kubernetes Network Map</block>
   <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">Identifiez les dépendances du stockage sous-jacent Kubernetes pour NFS et maintenant iSCSI.
 Accélérez la résolution des problèmes en obtenant une vue précise de l'activité du réseau de stockage de l'application Kubernetes ainsi que des metrics de stockage non délimités. Découvrez comment l'application Kubernetes utilise l'infrastructure de stockage pour le reporting de justification et de facturation interne.</block>
@@ -13098,7 +13089,6 @@ Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Installation et configuration de l'opérateur de contrôle Kubernetes</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">L'opérateur Kubernetes et les collecteurs de données sont téléchargés depuis le registre Docker de Cloud Insights. Une fois installé, l'opérateur gère ensuite tous les collecteurs compatibles avec l'opérateur déployés dans les nœuds du cluster Kubernetes pour acquérir des données, y compris la gestion du cycle de vie de ces collecteurs. Après cette chaîne, les données sont acquises auprès des collecteurs et envoyées à Cloud Insights.</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lire le <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Documentation requise avant l'installation ou la mise à niveau de l'opérateur de surveillance NetApp Kubernetes.</block>
-  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">Dans les environnements mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans des environnements très dynamiques, Cloud Insights change Analytics peut ne pas être en mesure de suivre correctement tous les changements.</block>
   <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">Autorisations pour l'intégration ARP ONTAP :</block>
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">Autorisations d'accès ONTAP refusées :</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">Remarque : si un rôle REST est déjà ajouté--soit _arwrole_ soit _csrestrole_--il n'est pas nécessaire d'ajouter un deuxième rôle REST. Vous pouvez simplement ajouter les autorisations d'API comme dans l'exemple ci-dessous.</block>
@@ -13118,4 +13108,7 @@ Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce
   <block id="bf9973f393dbc9824e3e96f831e12c25" category="sidebar">Collecteur de REPOS ONTAP</block>
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">Event-exportateur-maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">âge max. de l'événement de l'exportateur d'événement.  Voir<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
+  <block id="639bed0f86ee37975166505f25500f59" category="paragraph">Comment l'analyse des changements peut-elle aider ?</block>
+  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">Dans les environnements Kubernetes mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans les environnements très dynamiques, le contrôle de l'infrastructure Cloud Insights peut ne pas être en mesure de suivre correctement tous les changements.</block>
+  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">L'analyse des changements permet d'y apporter une solution en fournissant une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut vous aider dans le dépannage des environnements Kubernetes dynamiques.</block>
 </blocks>
