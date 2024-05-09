@@ -165,7 +165,11 @@ Pour plus d'informations sur Kube-State-Metrics, reportez-vous à la section lin
 
 Ces sections contiennent des informations sur la personnalisation de la configuration de votre opérateur, l'utilisation du proxy, l'utilisation d'un référentiel docker personnalisé ou privé ou l'utilisation d'OpenShift.
 
-Dans les nouvelles versions de l'opérateur, les paramètres les plus fréquemment modifiés peuvent être configurés dans la ressource personnalisée _AgentConfiguration_. Vous pouvez modifier cette ressource avant de déployer l'opérateur en modifiant le fichier _Operator-config.yaml_. Ce fichier contient des exemples de paramètres commentés. Voir la liste des link:telegraf_agent_k8s_config_options.html["paramètres disponibles"] pour la version la plus récente de l'opérateur.
+
+
+=== Options de configuration
+
+Les paramètres les plus fréquemment modifiés peuvent être configurés dans la ressource personnalisée _AgentConfiguration_. Vous pouvez modifier cette ressource avant de déployer l'opérateur en modifiant le fichier _Operator-config.yaml_. Ce fichier contient des exemples de paramètres commentés. Voir la liste des link:telegraf_agent_k8s_config_options.html["paramètres disponibles"] pour la version la plus récente de l'opérateur.
 
 Vous pouvez également modifier cette ressource après le déploiement de l'opérateur à l'aide de la commande suivante :
 
