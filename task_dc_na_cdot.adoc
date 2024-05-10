@@ -130,6 +130,12 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 
 
 
+=== Exigences d'autorisation pour la collecte des mesures de commutateur ONTAP
+
+Cloud Insights peut collecter les données des commutateurs de cluster ONTAP en option dans les collecteurs <<advanced-configuration,Configuration avancée>> paramètres. En plus de l'activer sur le collecteur Cloud Insights, vous devez également *configurer le système ONTAP* lui-même pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"], et s'assurer que le est correct <<a-note-about-permissions,autorisations>> Sont réglés pour permettre l'envoi des données du contacteur à Cloud Insights.
+
+
+
 == Configuration
 
 [cols="2*"]
