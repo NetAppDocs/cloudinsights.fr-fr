@@ -29,7 +29,7 @@ toc::[]
 
 Les widgets sont automatiquement nommés en fonction de l'objet, de la mesure ou de l'attribut sélectionné pour la première requête de widget. Si vous choisissez également un regroupement pour le widget, les attributs « Grouper par » sont inclus dans la dénomination automatique (méthode d'agrégation et métrique).
 
-image:WidgetNameExample.png["Exemple de dénomination des widgets"]
+image:WidgetNamingExample-C.png["Exemple de dénomination des widgets"]
 
 La sélection d'un nouvel objet ou d'un attribut de regroupement met à jour le nom automatique.
 
@@ -231,7 +231,7 @@ Les données affichées dans un widget sont regroupées (parfois appelées « cu
 * *Maximum* : affiche chaque ligne sous la forme _maximum_ des données sous-jacentes.
 * *Minimum* : affiche chaque ligne comme le _minimum_ des données sous-jacentes.
 * *Somme* : affiche chaque ligne sous la forme _sum_ des données sous-jacentes.
-* *Count* : affiche un _count_ d'objets qui ont des données déclarées dans la période spécifiée. Vous pouvez choisir la _fenêtre de temps entier_ comme déterminé par la plage de temps du tableau de bord (ou la plage de temps du widget, si elle est définie pour remplacer l'heure du tableau de bord), ou une _fenêtre de temps personnalisée_ que vous sélectionnez.
+* *Count* : affiche un _count_ d'objets qui ont des données déclarées dans la période spécifiée. Vous pouvez choisir la _fenêtre de temps entière_ déterminée par la plage de temps du tableau de bord.
 
 
 .Étapes
@@ -369,11 +369,13 @@ La plage de temps personnalisée vous permet de sélectionner jusqu'à 31 jours 
 
 Vous pouvez remplacer le paramètre de plage horaire principal du tableau de bord dans des widgets individuels. Ces widgets affichent des données en fonction de leur période définie, et non pas de l'heure du tableau de bord.
 
-Pour remplacer l'heure du tableau de bord et forcer un widget à utiliser son propre intervalle de temps, dans le mode d'édition du widget, définissez *Override Dashboard Time* sur *On* (cochez la case) et sélectionnez une plage de temps pour le widget. *Enregistrer* le widget du tableau de bord.
+Pour annuler l'heure du tableau de bord et forcer un widget à utiliser sa propre période, dans le mode d'édition du widget, choisissez la plage horaire dérisée et enregistrez le widget dans le tableau de bord.
 
 Le widget affichera ses données en fonction de la période définie, indépendamment du délai sélectionné sur le tableau de bord lui-même.
 
 La période que vous définissez pour un widget n'affectera pas les autres widgets du tableau de bord.
+
+image:OverrideTimeOnWidget.png["remplacement de la plage horaire du tableau de bord pour un widget"]
 
 
 
@@ -748,7 +750,7 @@ Le tableau suivant montre toutes les unités disponibles par catégorie.
 
 == Mode TV et actualisation automatique
 
-Les données des widgets des tableaux de bord et des pages de destination des actifs se réactualisent automatiquement en fonction d'un intervalle de rafraîchissement déterminé par la plage de temps du tableau de bord sélectionnée (ou la plage de temps du widget, si elle est définie pour remplacer l'heure du tableau de bord). L'intervalle d'actualisation est basé sur le fait que le widget soit des séries chronologiques (ligne, spline, zone, graphique à surface empilée) ou des séries non temporelles (tous les autres graphiques).
+Les données des widgets des tableaux de bord et des pages d'accueil des ressources sont automatiquement actualisées selon un intervalle d'actualisation déterminé par la plage horaire du tableau de bord sélectionnée. L'intervalle d'actualisation est basé sur le fait que le widget soit des séries chronologiques (ligne, spline, zone, graphique à surface empilée) ou des séries non temporelles (tous les autres graphiques).
 
 |===
 
