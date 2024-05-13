@@ -5615,7 +5615,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Dépannage des problèmes d'unité d'acquisition Linux</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Dépannage des problèmes d'unité d'acquisition Windows</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">Voir aussi <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> et <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>.</block>
-  <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights se déconnecte toutes les 5 minutes</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">Support NetApp</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">J'ai été invité à Cloud Insights mais j'ai reçu un message "non autorisé".</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">J'ai été automatiquement déconnecté après plusieurs jours.</block>
@@ -13100,16 +13099,6 @@ Vous pouvez également remarquer un changement dans l'apparence des graphiques q
   <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">Si vous interrogez l'URL de l'emplacement, les mêmes en-têtes seront retournés si la réponse n'est pas encore prête ou si l'état 200 est prêt. Le contenu de la réponse sera de type texte et contient l'état http de la requête d'origine et certaines métadonnées, suivies des résultats de la requête d'origine.</block>
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">Pour afficher la liste de toutes les requêtes asynchrones et savoir lesquelles sont prêtes, utilisez la commande suivante :</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">La réponse a le format suivant :</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">Activez l'acceptation par un tiers des cookies NetApp et auth0 nécessaires.
-
-Exemple :
-Dans Chrome, saisissez « chrome://settings/cookies » dans l'URL du navigateur.
-
-Sélectionnez l'option « Autoriser tous les cookies ».
-*OU*
-Sélectionnez « bloquer les cookies tiers » et ajoutez des exceptions pour [\*.]auth0.com et [*.]netapp.com.
-
-Remarque : veillez à sélectionner l'option « y compris les cookies tiers sur ce site » lors de la création d'une exception.</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">Je dispose d'un compte BlueXP, mais je ne peux pas me connecter à BlueXP.</block>
   <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">Ouvrez un ticket à partir de<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>. Sélectionnez la catégorie « blueXP.netapp.com &gt; problèmes de compte/connexion » ou « bluexp.netapp.com &gt; problèmes de fédération ».  Ces solutions répondent spécifiquement aux problèmes et aux questions concernant BlueXP.
 Pour tout autre problème de support technique Cloud Insights, contactez <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>.</block>
@@ -13126,4 +13115,17 @@ Vérifiez que l'adresse e-mail de votre profil BlueXP correspond à l'adresse in
   <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">La déconnexion de Cloud Insights vous déconnecte de BlueXP. Vous serez également déconnecté des autres services cloud NetApp qui utilisent la connexion BlueXP.</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">Exemple : _User *Tony Lavoie* connecté à partir de *10.1.120.15*, agent utilisateur *Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/85.0.4183.121 Safari/537.36*, méthode(s) de connexion *BlueXP Portal Login_*</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">Administration et autres tâches</block>
+  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insights se déconnecte automatiquement toutes les 6 heures</block>
+  <block id="125d2f260a38158435c7e7d5900894da" category="cell">Ceci est dû aux cookies tiers désactivés du navigateur. Les utilisateurs peuvent configurer leur navigateur pour activer tous les cookies tiers ou utiliser une liste d'exceptions plus étroite pour activer uniquement ceux de Cloud Insights.
+
+Exemple :
+Ouvrez les paramètres de votre navigateur
+
+Sélectionnez l'option « Autoriser tous les cookies ».
+*OU*
+Sélectionnez « bloquer les cookies tiers » et ajoutez des exceptions pour _[\*.]auth0.com_ et _[*.]netapp.com_.
+
+Microsoft Edge se charge du même format pour les exceptions que Chrome.
+
+Dans Firefox, les exceptions relatives aux cookies sont désignées simplement par _auth0.com_ et _netapp.com_.</block>
 </blocks>
