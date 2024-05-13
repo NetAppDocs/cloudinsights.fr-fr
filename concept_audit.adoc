@@ -95,7 +95,7 @@ Les événements et les actions audités par Cloud Insights peuvent être class�
 
 * *Compte utilisateur* : connexion, déconnexion, changement de rôle, etc
 +
-Exemple : _User *Tony Lavoie* connecté à partir de *10.1.120.15*, agent utilisateur *Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/85.0.4183.121 Safari/537.36*, méthode(s) de connexion *BlueXP Portal Login_*
+5a3b3866ed7beab8b728614f1d33c0b5
 
 * *Unité d'acquisition* : créer, supprimer, etc
 +

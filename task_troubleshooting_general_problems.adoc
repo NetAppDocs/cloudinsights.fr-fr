@@ -31,35 +31,22 @@ Voir aussi link:task_troubleshooting_linux_acquisition_unit_problems.html["Dépa
 | *Problème:* | *Essayez ceci:* 
 
 
-| Cloud Insights se déconnecte toutes les 5 minutes | Activez l'acceptation par un tiers des cookies NetApp et auth0 nécessaires.
-
-Exemple :
-Dans Chrome, saisissez « chrome://settings/cookies » dans l'URL du navigateur.
-
-Sélectionnez l'option « Autoriser tous les cookies ».
-*OU*
-Sélectionnez « bloquer les cookies tiers » et ajoutez des exceptions pour [\*.]auth0.com et [*.]netapp.com.
-
-Remarque : veillez à sélectionner l'option « y compris les cookies tiers sur ce site » lors de la création d'une exception. 
+| Cloud Insights se déconnecte toutes les 5 minutes | 396149d67edd166e53b49c38f4b707ba 
 
 
-| Je dispose d'un compte BlueXP, mais je ne peux pas me connecter à BlueXP. | Ouvrez un ticket à partir de https://mysupport.netapp.com/site/help[]. Sélectionnez la catégorie « blueXP.netapp.com > problèmes de compte/connexion » ou « bluexp.netapp.com > problèmes de fédération ».  Ces solutions répondent spécifiquement aux problèmes et aux questions concernant BlueXP.
-Pour tout autre problème de support technique Cloud Insights, contactez link:concept_requesting_support.html["Support NetApp"]. 
+| e4ff2e59dd571d2bbd5a906b6fad2546 | a9a216fbb1fb9d774e7cedfcf74c00cf 
 
 
-| J'ai été invité à Cloud Insights mais j'ai reçu un message "non autorisé". | Vérifiez que vous avez créé un compte BlueXP ou que votre entreprise utilise la connexion SSO avec BlueXP.
-
-Vérifiez que l'adresse e-mail de votre profil BlueXP correspond à l'adresse indiquée dans votre e-mail de bienvenue Cloud Insights. Si l'e-mail ne correspond pas, demandez une nouvelle invitation avec l'adresse e-mail correcte. 
+| J'ai été invité à Cloud Insights mais j'ai reçu un message "non autorisé". | 199017f1d912993f091b6b969d3442ad 
 
 
-| Je me suis déconnecté de BlueXP et ai été automatiquement déconnecté de Cloud Insights. | L'authentification unique (SSO) pour tous les services cloud NetApp déconnecte toutes les sessions Cloud Insights. Si vous avez accès à plusieurs comptes Cloud Insights, la déconnexion à partir de n'importe quel utilisateur déconnecte toutes les sessions actives. Reconnectez-vous pour accéder à votre compte. 
+| 176f8c6fa466059df49f2717c021d306 | 7a8624fb56224e907698f45ef2e4cc47 
 
 
-| J'ai été automatiquement déconnecté après plusieurs jours. | Les comptes cloud NetApp requièrent une nouvelle authentification tous les deux ou trois jours (la configuration actuelle de BlueXP est de 7 jours). Reconnectez-vous pour accéder à votre compte. 
+| J'ai été automatiquement déconnecté après plusieurs jours. | ed6e79e2f9b9c201ed834c6efeb7f356 
 
 
-| Je reçois un message d'erreur "n'est plus autorisé à se connecter". | Contactez votre administrateur de compte pour vérifier l'accès à Cloud Insights.
-Vérifiez que l'adresse e-mail de votre profil BlueXP correspond à l'adresse indiquée dans votre e-mail de bienvenue Cloud Insights 
+| Je reçois un message d'erreur "n'est plus autorisé à se connecter". | acf29dcaa06698c29122cba5402e3145 
 
 
 | Autres erreurs de connexion | Essayez le mode incognito dans Chrome ou effacez l'historique du navigateur, les cookies et le cache. Essayez avec un autre profil de navigateur (c.-à-d. Chrome - ajouter personne). 

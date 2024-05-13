@@ -798,7 +798,7 @@ L'actualisation automatique n'est pas disponible pour la plage de temps du table
 Combiné au *mode TV*, l'actualisation automatique permet d'afficher les données en temps quasi réel sur un tableau de bord ou une page de ressources. Le mode TV offre un affichage sans encombré ; le menu de navigation est masqué, offrant davantage d'espace pour l'affichage de vos données, tout comme le bouton Modifier. Le mode TV ignore les délais Cloud Insights classiques, laissant l'écran sous tension jusqu'à ce qu'il soit déconnecté manuellement ou automatiquement par des protocoles de sécurité d'autorisation.
 
 
-NOTE: Étant donné que NetApp BlueXP a son propre délai de connexion utilisateur de 7 jours, Cloud Insights doit également se déconnecter avec cet événement. Il vous suffit de vous connecter à nouveau pour que votre tableau de bord continue à s'afficher.
+NOTE: 9fd11a00d0217c79c8723171888d8b89
 
 * Pour activer le mode TV, cliquez sur le bouton image:ActivateTVMode.png["Mode TV"] bouton.
 * Pour désactiver le mode TV, cliquez sur le bouton *Quitter* dans le coin supérieur gauche de l'écran. image:ExitTVMode.png["Bouton Quitter"]
