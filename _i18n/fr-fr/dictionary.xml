@@ -9912,11 +9912,8 @@ REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Vot
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">Page d'abonnement affichant les calculateurs d'estimation des coûts d'infrastructure et de Kubernetes</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. De plus, si l'environnement n'est plus actif (par exemple, vous vous êtes déconnecté), vous accédez à la page de connexion de NetApp BlueXP. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.</block>
-  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">L'onglet Résumé de l'abonnement affiche les éléments suivants :</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">Édition actuelle</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">Numéro de série de l'abonnement</block>
-  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">Utilisation actuelle des UM et « et si ? » estimateurs de coûts</block>
-  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">Liens permettant de modifier votre abonnement</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">L'onglet gestion de l'utilisation présente un aperçu de l'utilisation des unités gérées, ainsi que les onglets qui dépanne la consommation des unités gérées par collecteur ou cluster Kubernetes.</block>
   <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">Si votre utilisation approche ou dépasse le montant souscrit, vous pouvez réduire l'utilisation en supprimant des collecteurs de données ou en arrêtant la surveillance des clusters Kubernetes. Supprimez un élément de cette liste en cliquant sur le menu « trois points » et en sélectionnant _Supprimer_.</block>
   <block id="718a66b23c9ea5a577883d447f892296" category="cell">Une bannière d'erreur s'affiche et les fonctionnalités sont limitées jusqu'à ce que vous effectuez l'une des opérations suivantes :
@@ -10013,7 +10010,6 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 unité gérée = 4 vCPU de Kuberentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Les calculateurs d'abonnement vous aident à estimer le coût de votre abonnement Cloud Insights en fonction du nombre d'unités gérées nécessaires. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.</block>
-  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Vues de l'utilisation de votre unité gérée</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Modification d'un rapport existant</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">N'oubliez pas que la modification des fichiers à leur emplacement par défaut risque d'écraser ces rapports lors de la prochaine actualisation du catalogue de rapports. Il est recommandé d'enregistrer le rapport modifié sous un nouveau nom ou de le stocker dans un emplacement autre que celui par défaut.</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Après avoir saisi des lettres contenant un caractère générique comme l'astérisque (*) dans les filtres des pages Forensics _All Activity_ ou _Entities_, les pages se chargent très lentement.</block>
@@ -13128,4 +13124,12 @@ Sélectionnez « bloquer les cookies tiers » et ajoutez des exceptions pour _[\
 Microsoft Edge se charge du même format pour les exceptions que Chrome.
 
 Dans Firefox, les exceptions relatives aux cookies sont désignées simplement par _auth0.com_ et _netapp.com_.</block>
+  <block id="8bfda936be946f758536df68a230dfab" category="paragraph">L'onglet Subscription *Summary* affiche les éléments suivants :</block>
+  <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">Droits UM actuels</block>
+  <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">L'onglet *usage* vous indique votre utilisation actuelle des UM et la manière dont cette utilisation se divise par collecteur de données.</block>
+  <block id="5e4b95db832e18e6c9bfe688b8cb8044" category="inline-image-macro">Utilisation des UM par module</block>
+  <block id="36be66d4e4e4fc3739c2b9f067442449" category="paragraph"><block ref="36be66d4e4e4fc3739c2b9f067442449" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">L'onglet *Historique* vous donne un aperçu de votre utilisation des UM au cours des 7 à 90 derniers jours. Passez le curseur sur une colonne du graphique pour une répartition par module (observabilité, Kubernetes).</block>
+  <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">Historique d'utilisation des UM</block>
+  <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

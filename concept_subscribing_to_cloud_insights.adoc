@@ -168,14 +168,20 @@ En cas de problème et si le processus d'abonnement ne s'effectue pas correcteme
 
 Une fois votre abonnement actif, vous pouvez afficher l'état de votre abonnement et l'utilisation de l'unité gérée à partir de la page *Admin > abonnement*.
 
-L'onglet Résumé de l'abonnement affiche les éléments suivants :
+L'onglet Subscription *Summary* affiche les éléments suivants :
 
 * Édition actuelle
 * Numéro de série de l'abonnement
-* Utilisation actuelle des UM et « et si ? » estimateurs de coûts
-* Liens permettant de modifier votre abonnement
-* Vues de l'utilisation de votre unité gérée
+* Droits UM actuels
 
+
+L'onglet *usage* vous indique votre utilisation actuelle des UM et la manière dont cette utilisation se divise par collecteur de données.
+
+image:SubscriptionUsageByModule.png["Utilisation des UM par module"]
+
+L'onglet *Historique* vous donne un aperçu de votre utilisation des UM au cours des 7 à 90 derniers jours. Passez le curseur sur une colonne du graphique pour une répartition par module (observabilité, Kubernetes).
+
+image:Subscription_Usage_History.png["Historique d'utilisation des UM"]
 
 
 
