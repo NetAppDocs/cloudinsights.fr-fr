@@ -287,6 +287,15 @@ Pour les versions ONTAP qui prennent en charge REST mais qui ne sont pas 9.14.1 
 Configuration: 10.193.98.84: ONTAP REST API at 10.193.98.84 n'est pas disponible: 10.193.98.84: ONTAP REST API at 10.193.98.84 est disponible: Cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 mais n'est pas de la version minimale 9.14.1. 
 
 
-| Je vois des métriques vides ou « 0 » où le collecteur ONTAP ontapi affiche des données. | ONTAP REST ne signale pas les mesures utilisées en interne sur le système ONTAP uniquement. Par exemple, les agrégats système ne seront pas collectés par ONTAP REST, seuls les SVM de type « données » seront collectés. 
+| Je vois des métriques vides ou « 0 » où le collecteur ONTAP ontapi affiche des données. | ONTAP REST ne signale pas les mesures utilisées en interne sur le système ONTAP uniquement. Par exemple, les agrégats système ne seront pas collectés par ONTAP REST, seuls les SVM de type « données » seront collectés.
+
+Autres exemples de mesures REST ONTAP susceptibles de rapporter zéro donnée ou des données vides :
+
+Internalvolumes : REST ne rapporte plus vol0.
+Agrégats : REST ne signale plus aggr0.
+Stockage : la plupart des mesures sont un cumul des mesures du volume interne et seront affectées par ce qui précède.
+Machines virtuelles de stockage : REST ne signale plus des SVM de type autre que « données » (par exemple, « cluster », « gmt », « nœud »).
+
+Vous pouvez également remarquer un changement dans l'apparence des graphiques qui ont des données, en raison de la modification de la période d'interrogation de performance par défaut de 15 minutes à 5 minutes.  Une interrogation plus fréquente signifie plus de points de données à tracer. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

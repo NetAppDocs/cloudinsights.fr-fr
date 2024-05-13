@@ -55,32 +55,134 @@ sidebar:
     url: "/data_collector_list.html"
   - title: Abonnement à Cloud Insights
     url: "/concept_subscribing_to_cloud_insights.html"
-  - title: Résolution automatique des périphériques
+  - title: Observabilité
     entries:
-    - title: Présentation de la résolution des périphériques
-      url: "/concept_device_resolution_overview.html"
-    - title: Règles de résolution des périphériques
-      url: "/task_device_resolution_rules.html"
-    - title: Résolution de périphérique Fibre Channel
-      url: "/task_device_resolution_fibre_channel.html"
-    - title: Résolution de périphérique IP
-      url: "/task_device_resolution_ip.html"
-    - title: Définition des préférences de résolution du périphérique
-      url: "/task_device_resolution_preferences.html"
-    - title: Exemples d'expression régulière
-      url: "/concept_device_resolution_regex_examples.html"
-  - title: Création de tableaux de bord
-    entries:
-    - title: Présentation du tableau de bord
-      url: "/concept_dashboards_overview.html"
-    - title: Caractéristiques des tableaux de bord
-      url: "/concept_dashboard_features.html"
-    - title: Exemple de tableaux de bord
+    - title: Création de tableaux de bord
       entries:
-      - title: Performances des ordinateurs virtuels
-        url: "/task_dashboard_example_VM_performance.html"
-    - title: Meilleures pratiques de tableau de bord
-      url: "/concept_dashboard_best_practices.html"
+      - title: Présentation du tableau de bord
+        url: "/concept_dashboards_overview.html"
+      - title: Caractéristiques des tableaux de bord
+        url: "/concept_dashboard_features.html"
+      - title: Exemple de tableaux de bord
+        entries:
+        - title: Performances des ordinateurs virtuels
+          url: "/task_dashboard_example_VM_performance.html"
+      - title: Meilleures pratiques de tableau de bord
+        url: "/concept_dashboard_best_practices.html"
+    - title: Utilisation des requêtes
+      entries:
+      - title: Interrogation des ressources
+        url: "/concept_querying_assets.html"
+      - title: Création d'une requête
+        url: "/task_create_query.html"
+      - title: Affichage des requêtes disponibles
+        url: "/task_view_queries.html"
+      - title: Exportation des résultats de la requête au format .CSV
+        url: "/task_export_query_results.html"
+      - title: Modification ou suppression d'une requête
+        url: "/task_modify_delete_query.html"
+      - title: Affectation de plusieurs applications/annotations à des objets
+        url: "/task_query_assign_multiple_applicationss.html"
+      - title: Copie des valeurs de table dans le presse-papiers
+        url: "/task_query_copy_table_values.html"
+      - title: Interrogation des journaux
+        url: "/concept_log_explorer.html"
+    - title: Visibilité
+      entries:
+      - title: Présentation
+        url: "/insights_overview.html"
+      - title: Ressources partagées sous contrainte
+        url: "/insights_shared_resources_under_stress.html"
+      - title: Espaces de noms Kubernetes manque d'espace
+        url: "/insights_k8s_namespaces_running_out_of_space.html"
+      - title: Récupération du stockage à froid ONTAP
+        url: "/insights_reclaim_ontap_cold_storage.html"
+    - title: Surveille et alerte
+      entries:
+      - title: Création de moniteurs
+        url: "/task_create_monitor.html"
+      - title: Affichage et gestion des alertes
+        url: "/task_view_and_manage_alerts.html"
+      - title: Configuration des destinataires de notification
+        url: "/concept_notifications_email.html"
+      - title: Moniteurs définis par le système
+        url: "/task_system_monitors.html"
+      - title: Notification Webhook
+        url: "/task_create_webhook.html"
+    - title: Utilisation des annotations
+      entries:
+      - title: Définition d'annotations
+        url: "/task_defining_annotations.html"
+      - title: Utilisation d'annotations
+        url: "/task_create_annotation.html"
+      - title: Utilisation des règles d'annotation
+        url: "/task_create_annotation_rules.html"
+      - title: Importation d'annotations avec l'API
+        url: "/task_annotation_import.html"
+    - title: Utilisation des applications
+      entries:
+      - title: Concepts d'application
+        url: "/concept_about_applications.html"
+      - title: Configuration des applications
+        url: "/task_create_application.html"
+    - title: Résolution automatique des périphériques
+      entries:
+      - title: Présentation de la résolution des périphériques
+        url: "/concept_device_resolution_overview.html"
+      - title: Règles de résolution des périphériques
+        url: "/task_device_resolution_rules.html"
+      - title: Résolution de périphérique Fibre Channel
+        url: "/task_device_resolution_fibre_channel.html"
+      - title: Résolution de périphérique IP
+        url: "/task_device_resolution_ip.html"
+      - title: Définition des préférences de résolution du périphérique
+        url: "/task_device_resolution_preferences.html"
+      - title: Exemples d'expression régulière
+        url: "/concept_device_resolution_regex_examples.html"
+    - title: Informations sur la page de ressources
+      entries:
+      - title: Présentation de la page de ressources
+        url: "/concept_asset_page_overview.html"
+      - title: Filtrage dans le contexte pour les objets
+        url: "/concept_in_context_filters.html"
+      - title: Récapitulatif des sections de topologie
+        url: "/concept_asset_summary_section.html"
+      - title: Section vue expert
+        url: "/concept_asset_expert_view_section.html"
+      - title: Section données utilisateur
+        url: "/concept_asset_user_data_section.html"
+      - title: Section alertes associées
+        url: "/concept_asset_alerts_section.html"
+      - title: Virtualisation du stockage
+        url: "/concept_storage_virtualization.html"
+      - title: Conseils et astuces pour rechercher des ressources
+        url: "/concept_searching_assets.html"
+    - title: Création de rapports
+      entries:
+      - title: Présentation des rapports
+        url: "/reporting_overview.html"
+      - title: Génération de rapports des rôles utilisateur
+        url: "/reporting_user_roles.html"
+      - title: Utilisation de rapports prédéfinis
+        url: "/reporting_predefined_reports.html"
+      - title: Tableau de bord de Storage Manager
+        url: "/reporting_storage_manager_dashboard.html"
+      - title: Création d'un exemple de rapport
+        url: "/reporting_create_example.html"
+      - title: Gestion des rapports
+        url: "/reporting_managing_reports.html"
+      - title: Rapports personnalisés
+        url: "/reporting_creating_custom_reports.html"
+      - title: Modèles de données
+        url: "/reporting_creating_custom_reports.html#reporting-data-models"
+      - title: API de base de données de reporting
+        url: "/reporting_querying_database.html"
+      - title: Conservation des données
+        url: "/reporting_data_retention.html"
+      - title: Diagrammes de schéma
+        url: "/reporting_schema_diagrams.html"
+      - title: Tables de schéma
+        url: "/reference_schemas.html"
   - title: Kubernetes
     entries:
     - title: Page de présentation de Kubernetes
@@ -97,116 +199,20 @@ sidebar:
       url: "/concept_kubernetes_network_monitoring_and_map.html"
     - title: Analyse des changements
       url: "/kubernetes_change_analytics.html"
-  - title: Visibilité
-    entries:
-    - title: Présentation
-      url: "/insights_overview.html"
-    - title: Ressources partagées sous contrainte
-      url: "/insights_shared_resources_under_stress.html"
-    - title: Espaces de noms Kubernetes manque d'espace
-      url: "/insights_k8s_namespaces_running_out_of_space.html"
-    - title: Récupération du stockage à froid ONTAP
-      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP Essentials
     url: "/concept_ontap_essentials.html"
-  - title: Utilisation des requêtes
+  - title: Administration et autres tâches
     entries:
-    - title: Interrogation des ressources
-      url: "/concept_querying_assets.html"
-    - title: Création d'une requête
-      url: "/task_create_query.html"
-    - title: Affichage des requêtes disponibles
-      url: "/task_view_queries.html"
-    - title: Exportation des résultats de la requête au format .CSV
-      url: "/task_export_query_results.html"
-    - title: Modification ou suppression d'une requête
-      url: "/task_modify_delete_query.html"
-    - title: Affectation de plusieurs applications/annotations à des objets
-      url: "/task_query_assign_multiple_applicationss.html"
-    - title: Copie des valeurs de table dans le presse-papiers
-      url: "/task_query_copy_table_values.html"
-    - title: Interrogation des journaux
-      url: "/concept_log_explorer.html"
-  - title: Utilisation des annotations
-    entries:
-    - title: Définition d'annotations
-      url: "/task_defining_annotations.html"
-    - title: Utilisation d'annotations
-      url: "/task_create_annotation.html"
-    - title: Utilisation des règles d'annotation
-      url: "/task_create_annotation_rules.html"
-    - title: Importation d'annotations avec l'API
-      url: "/task_annotation_import.html"
-  - title: Utilisation des applications
-    entries:
-    - title: Concepts d'application
-      url: "/concept_about_applications.html"
-    - title: Configuration des applications
-      url: "/task_create_application.html"
-  - title: Surveille et alerte
-    entries:
-    - title: Création de moniteurs
-      url: "/task_create_monitor.html"
-    - title: Affichage et gestion des alertes
-      url: "/task_view_and_manage_alerts.html"
-    - title: Configuration des destinataires de notification
-      url: "/concept_notifications_email.html"
-    - title: Moniteurs définis par le système
-      url: "/task_system_monitors.html"
-  - title: Utilisation d'API
-    url: "/API_Overview.html"
-  - title: Notification Webhook
-    url: "/task_create_webhook.html"
-  - title: Contrôle de votre environnement
-    entries:
-    - title: Événements d'audit
-      url: "/concept_audit.html"
-    - title: TTL et sous-échantillonnage
-      url: concept_ttl_and_downsampling.html
-  - title: Informations sur la page de ressources
-    entries:
-    - title: Présentation de la page de ressources
-      url: "/concept_asset_page_overview.html"
-    - title: Filtrage dans le contexte pour les objets
-      url: "/concept_in_context_filters.html"
-    - title: Récapitulatif des sections de topologie
-      url: "/concept_asset_summary_section.html"
-    - title: Section vue expert
-      url: "/concept_asset_expert_view_section.html"
-    - title: Section données utilisateur
-      url: "/concept_asset_user_data_section.html"
-    - title: Section alertes associées
-      url: "/concept_asset_alerts_section.html"
-    - title: Virtualisation du stockage
-      url: "/concept_storage_virtualization.html"
-    - title: Conseils et astuces pour rechercher des ressources
-      url: "/concept_searching_assets.html"
-  - title: Création de rapports
-    entries:
-    - title: Présentation des rapports
-      url: "/reporting_overview.html"
-    - title: Génération de rapports des rôles utilisateur
-      url: "/reporting_user_roles.html"
-    - title: Utilisation de rapports prédéfinis
-      url: "/reporting_predefined_reports.html"
-    - title: Tableau de bord de Storage Manager
-      url: "/reporting_storage_manager_dashboard.html"
-    - title: Création d'un exemple de rapport
-      url: "/reporting_create_example.html"
-    - title: Gestion des rapports
-      url: "/reporting_managing_reports.html"
-    - title: Rapports personnalisés
-      url: "/reporting_creating_custom_reports.html"
-    - title: Modèles de données
-      url: "/reporting_creating_custom_reports.html#reporting-data-models"
-    - title: API de base de données de reporting
-      url: "/reporting_querying_database.html"
-    - title: Conservation des données
-      url: "/reporting_data_retention.html"
-    - title: Diagrammes de schéma
-      url: "/reporting_schema_diagrams.html"
-    - title: Tables de schéma
-      url: "/reference_schemas.html"
+    - title: Utilisation d'API
+      url: "/API_Overview.html"
+    - title: Contrôle de votre environnement
+      entries:
+      - title: Événements d'audit
+        url: "/concept_audit.html"
+      - title: TTL et sous-échantillonnage
+        url: concept_ttl_and_downsampling.html
+      - title: Active IQ
+        url: "/concept_activeiq.html"
   - title: Sécurité des workloads
     entries:
     - title: À propos de la sécurité des workloads
@@ -259,8 +265,6 @@ sidebar:
       url: "/cs_notifications_email.html"
     - title: API de sécurité du workload
       url: "/concept_cs_api.html"
-  - title: Active IQ
-    url: "/concept_activeiq.html"
   - title: Dépannage
     entries:
     - title: Dépannage général

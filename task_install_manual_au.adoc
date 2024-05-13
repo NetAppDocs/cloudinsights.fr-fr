@@ -196,3 +196,44 @@ Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs p
 
 . Redémarrez au. Dans Cloud Insights, accédez à observabilité > collecteurs et sélectionnez l'onglet unités d'acquisition. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
 
+
+
+
+== Récupération de clé externe
+
+Si vous fournissez un script shell UNIX, il peut être exécuté par l'unité d'acquisition pour récupérer la *clé privée* et la *clé publique* de votre système de gestion des clés.
+
+Pour récupérer la clé, Cloud Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
+
+Pour renvoyer la clé à l'unité d'acquisition, le script doit imprimer la clé sur la sortie standard. Le script doit imprimer _uniquement_ la clé de la sortie standard ; aucun autre texte ne doit être imprimé sur la sortie standard. Une fois la clé demandée imprimée sur la sortie standard, le script doit se fermer avec un code de sortie de 0 ; tout autre code de retour est considéré comme une erreur.
+
+Le script doit être enregistré avec l'unité d'acquisition à l'aide de l'outil SecurityAdmin, qui exécutera le script avec l'unité d'acquisition. Le script doit disposer des autorisations _read_ et _execute_ pour l'utilisateur root et "cisys". Si le script shell est modifié après l'enregistrement, le script shell modifié doit être réenregistré avec l'unité d'acquisition.
+
+|===
+
+
+| paramètre d'entrée : id de clé | Identificateur de clé utilisé pour identifier la clé dans le système de gestion des clés du client. 
+
+
+| paramètre d'entrée : type de clé | public ou privé. 
+
+
+| sortie | La clé demandée doit être imprimée sur la sortie standard. La clé RSA 2048 bits est actuellement prise en charge. Les clés doivent être codées et imprimées au format suivant :
+
+Format de clé privée - PEM, PKCS8 PrivateKeyInfo RFC 5958 codé DER
+
+Format de clé publique : PEM, X.509 codé DER subjectPublicKeyInfo RFC 5280 
+
+
+| code de sortie | Code de sortie de zéro pour réussir. Toutes les autres valeurs de sortie sont considérées comme ayant échoué. 
+
+
+| autorisations de script | Le script doit disposer d'une autorisation de lecture et d'exécution pour l'utilisateur root et cisys. 
+
+
+| journaux | Les exécutions de script sont consignées. Les journaux sont disponibles dans -
+
+/var/log/netapp/cloudinsights/securityadmin/securityadmin.log
+
+/var/log/netapp/cloudinsights/acq/acq.log 
+|===

@@ -49,7 +49,7 @@ Il s'agit de données générées par NetApp avec le service de données cloud q
 
 * Données d'accès utilisateur
 +
-Informations d'authentification et d'accès qui permettent à NetApp Cloud Central de communiquer avec les sites Cloud Insights régionaux, notamment les données liées aux autorisations des utilisateurs.
+Informations d'authentification et d'accès permettant à NetApp BlueXP de communiquer avec les sites Cloud Insights régionaux, y compris les données relatives aux autorisations utilisateur.
 
 * Données du répertoire utilisateur pour la sécurité des charges de travail de stockage
 +
@@ -85,7 +85,7 @@ Les informations suivantes sont stockées dans la région hôte :
 Les informations suivantes résident aux États-Unis, quelle que soit la région hébergeant votre environnement Cloud Insights :
 
 * Informations sur le site de l'environnement (parfois appelées « locataire »), telles que le site ou le propriétaire du compte.
-* Informations permettant à NetApp Cloud Central de communiquer avec les sites Cloud Insights régionaux, y compris tout ce qui est en rapport avec l'autorisation des utilisateurs.
+* Informations permettant à NetApp BlueXP de communiquer avec les sites Cloud Insights régionaux, y compris tout ce qui a à voir avec l'autorisation des utilisateurs.
 * Informations relatives à la relation entre l'utilisateur Cloud Insights et le locataire.
 
 
