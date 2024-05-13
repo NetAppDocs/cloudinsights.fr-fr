@@ -268,3 +268,31 @@ image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API pour la collecte de donnée
 Si vous définissez l'option _preEncrypted_ sur _True_, tout mot de passe que vous passez par la commande API sera traité comme *déjà crypté*; l'API ne recryptera pas le(s) mot(s) de passe. Lors de la création de votre API, il vous suffit de coller le mot de passe précédemment chiffré à l'emplacement approprié.
 
 image:SecurityAdmin_Encrypt_Key_API_Example.png["Exemple d'API, width=600"]
+
+
+
+== Cryptage d'un mot de passe à utiliser dans l'API
+
+L'option 8 vous permet de crypter un mot de passe que vous pouvez ensuite transmettre à un collecteur de données via l'API.
+
+Démarrez l'outil SecurityAdmin en mode interactif et sélectionnez l'option 8 : _crypter le mot de passe_.
+
+ securityadmin.sh -i
+Vous êtes invité à saisir le mot de passe que vous souhaitez crypter. Notez que les caractères que vous saisissez ne s'affichent pas à l'écran.  Saisissez à nouveau le mot de passe lorsque vous y êtes invité.
+
+Sinon, si vous utilisez la commande dans un script, sur une ligne de commande, utilisez _securityadmin.sh_ avec le paramètre "-enc", en transmettant votre mot de passe non chiffré :
+
+ securityadmin -enc mypassword
+image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["Exemple de CLI"]
+
+Le mot de passe chiffré s'affiche à l'écran. Copiez la chaîne entière, y compris les symboles de début ou de fin.
+
+image:SecurityAdmin_Encrypt_Key_1.png["Mode interactif crypter le mot de passe, largeur=640"]
+
+Pour envoyer le mot de passe crypté à un collecteur de données, vous pouvez utiliser l'API de collecte de données. Le swagger pour cette API se trouve à l'adresse *Admin > API Access* et cliquez sur le lien « Documentation API ». Sélectionnez le type d'API « collecte de données ».  Sous l'en-tête _data_collection.data_Collector_, choisissez l'API _/Collector/datasources_ POST pour cet exemple.
+
+image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API pour la collecte de données"]
+
+Si vous définissez l'option _preEncrypted_ sur _True_, tout mot de passe que vous passez par la commande API sera traité comme *déjà crypté*; l'API ne recryptera pas le(s) mot(s) de passe. Lors de la création de votre API, il vous suffit de coller le mot de passe précédemment chiffré à l'emplacement approprié.
+
+image:SecurityAdmin_Encrypt_Key_API_Example.png["Exemple d'API, width=600"]

@@ -562,5 +562,8 @@ Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-t
 
 
 | J'constate que le ou les pods déployés par l'opérateur de surveillance Kubernetes sont en panne en raison de ressources insuffisantes. | Reportez-vous à l'opérateur de surveillance Kubernetes link:telegraf_agent_k8s_config_options.html["options de configuration"] Pour augmenter les limites du CPU et/ou de la mémoire selon les besoins. 
+
+
+| Si une image manquante ou une configuration non valide a entraîné l'échec du démarrage ou de la préparation des pods de metrics d'état de netapp-ci-kube. L'état StatefulSet est bloqué et les modifications de configuration ne sont pas appliquées aux pods de metrics netapp-ci-kube-state. | StatefulSet est dans un link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["cassé"] état. Après avoir résolu tout problème de configuration, utilisez les pods de metrics netapp-ci-kube-état. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
