@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: À tout moment pendant votre essai gratuit, vous pouvez vous abonner à Cloud Insights. 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = Abonnement à Cloud Insights
 :toc: macro
@@ -69,27 +69,25 @@ Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud
 
 
 
-== Essais de module
+== Évaluation du module
 
-Bientôt disponible !
-
-
-NOTE: La version d'évaluation du module est considérée comme une fonctionnalité d'aperçu et est donc susceptible d'être modifiée.
-
-En plus de votre essai initial de Cloud Insights, vous pouvez également profiter des *essais de module*. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes, en commençant par l'installation de l'opérateur de surveillance Kubernetes NetApp. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
+Vous pouvez également profiter des *évaluations de module*. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous passez automatiquement une évaluation de 30 jours de l'observabilité Kubernetes, à partir de l'installation de l'opérateur de surveillance Kubernetes NetApp. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'évaluation.
 
 
-NOTE: Gardez à l'esprit que vous serez facturé pour une nouvelle utilisation d'unité gérée (MU) après la période d'essai, veillez donc à planifier en conséquence. Lorsque la version d'évaluation de votre module se termine, vous serez averti si vous devrez ajouter d'autres unités de gestion pour éviter toute interruption de service.
+NOTE: Gardez à l'esprit que vous serez facturé pour une nouvelle utilisation d'unité gérée (MU) après l'évaluation, assurez-vous donc de planifier en conséquence. À la fin de l'évaluation de votre module, vous serez informé si vous devrez ajouter d'autres unités de gestion pour éviter toute interruption de service.
 
 Vous pouvez contrôler l'utilisation de votre unité gérée sur la page *Admin > abonnement* de l'onglet *usage*.
 
 image:Module_Trials_UsageTab.png["Ecran utilisation UM"]
 
 
+NOTE: Une _évaluation de module_ n'est pas une _version d'essai_ - nous utilisons la version d'essai lorsque nous fournissons aux clients une période d'essai gratuite d'utilisation du service ci pour confirmer l'ajustement et activer l'achat. Une évaluation de module est différente : c'est lorsque nous permettons à un client payant d'essayer un module de Cloud Insights qu'il n'a pas utilisé au cours des derniers mois de son abonnement payant. Lorsque l'évaluation est active, les frais pour le module nouvellement configuré sont annulés. L'environnement de travail du client est toujours sous abonnement et n'a pas rétabli la version d'évaluation. L'abonnement n'a pas changé.
+
+
 
 === Estimateur
 
-Pendant un essai de module, vous n'avez pas modifié l'utilisation des UM pour les ressources consommées pour le module, mais vous pouvez ouvrir le *estimateur* (dans l'onglet _Summary_) pour voir comment les UM seront facturées après l'essai, ainsi que jouer avec des scénarios de type "What if" avec le nombre d'UM dont vous aurez besoin à l'avenir. Réinitialisez les chiffres en quittant l'estimateur.
+Lors d'une évaluation de module, vous n'avez pas modifié l'utilisation des UM pour les ressources consommées pour le module, mais vous pouvez ouvrir le *estimateur* (dans l'onglet _Summary_) pour voir comment les UM seront facturées après l'évaluation, ainsi que jouer avec des scénarios de type "What if" avec le nombre d'UM dont vous aurez besoin à l'avenir. Réinitialisez les chiffres en quittant l'estimateur.
 
 image:Module_Trials_Estimator.png["Estimateur"]
 
@@ -97,7 +95,7 @@ Cochez la case en regard d'un module pour ajouter ou supprimer les UM du module 
 
 L'estimateur vous permet également de voir comment les numéros se positionnent soit pour un module complémentaire, où vous conservez votre abonnement actuel et augmentez le nombre d'unités gérées sous licence, soit pour une option Renew pour un abonnement de renouvellement que vous achèterez lors de votre abonnement actuel fin du terme.
 
-Notez que les clients ne peuvent bénéficier d'un essai de module qu'une seule fois par abonnement.
+Notez que les clients ne peuvent bénéficier d'une évaluation de module qu'une seule fois par abonnement.
 
 
 
