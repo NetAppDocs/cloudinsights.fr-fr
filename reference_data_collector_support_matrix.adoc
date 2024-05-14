@@ -17593,7 +17593,7 @@ Produits pris en charge par ce collecteur de données :
 | Type | Écart | HTTPS |  
 
 
-.4+| performances | Qtree.1+ | Stockage | Disques défectueux | Mise en œuvre | HTTPS 
+.4+| Performance | Qtree | Stockage | Disques défectueux | Mise en œuvre | HTTPS 
 
 
 |  .3+| Nœud de stockage | Taux de réussite total du cache | Mise en œuvre | HTTPS 

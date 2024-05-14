@@ -1,16 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: forensic_entity_detail.html 
-keywords: Forensic, entity, entity overview, entity behavior, detail 
-summary: 'Détail de l"entité légale' 
+keywords: Forensic, entity, entity overview, entity behavior, entities 
+summary: Entités judiciaires 
 ---
-= Détail de l'entité légale
+= Page entités judiciaires
 :toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
 :toc: 
-:toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -18,60 +16,18 @@ summary: 'Détail de l"entité légale'
 :toc-position: content
 
 
-Utilisez la page Détails de l'entité pour accéder aux informations détaillées sur une entité.
+La page entités judiciaires fournit des informations détaillées sur l'activité de l'entité dans votre environnement.
 
 
 
 == Examen des informations sur l'entité
 
-Vous accédez au
+Cliquez sur *Forensics > activités médico-légales* et cliquez sur l'onglet _entités_ pour accéder à la page entités.
 
-Profil d'entité:: Décrit en détail :
-+
---
-* Nom
-+
-** Cliquez pour accéder à [vue d'ensemble de l'entité]
+Cette page présente l'activité de l'entité dans votre environnement, en soulignant les informations suivantes : * Un graphique montrant _unique entités_ accédées par minute * Un graphique de _types d'entités accédées_ * Une ventilation des _chemins communs_ * Une liste des _50 principales entités_ sur le nombre total d'entités
 
+image:CS-Entities-Page.png["Page entités"]
 
-* Type
-* Communautés
-* Chemin
-* Dernier accès
-+
-** Cliquez sur utilisateur pour accéder à [User Overview]
+Un clic sur une entité dans la liste ouvre une page de présentation pour l'entité, affichant un profil de l'entité avec des détails tels que le nom, le type, le nom du périphérique, l'adresse IP la plus utilisée et le chemin d'accès, ainsi que le comportement de l'entité comme l'utilisateur, l'adresse IP, et heure du dernier accès à l'entité.
 
-
-* Taille
-
-
---
-Utilisateur et communauté::
-+
---
-* Nombre d'accès de l'entité par les utilisateurs
-* Nombre de fois où l'entité a été accédée par les communautés.
-
-
---
-Bahavior entité::
-+
---
-* Activité récente :
-+
-** Dernière date d'accès
-** Utilisateur ayant accédé pour la dernière fois à l'entité
-** Emplacement auquel l'entité a été accédée
-
-
-* Exploitation
-+
-** Nombre d'opérations d'écriture
-** Nombre d'opérations de lecture
-** Nombre d'accès aux métadonnées
-
-
-
-
---
-
+image:CS-entity-detail-page.png["Page vue d'ensemble de l'entité"]

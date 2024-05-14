@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_isolate_root_volume.html 
+permalink: task_io_density_report_no_root.html 
 summary: 'Lorsque vous recherchez une densité d"E/S élevée, vous voulez exclure les volumes racine.' 
 keywords: NetApp, root volume, high I/O, 
 ---

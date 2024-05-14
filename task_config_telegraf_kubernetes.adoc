@@ -22,7 +22,7 @@ Cloud Insights utilise ce collecteur de données pour recueillir les metrics du 
 
 == Installation
 
-Pour obtenir des instructions d'installation de Kubernetes, consultez le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] page.
+Pour obtenir des instructions d'installation de Kubernetes, consultez le link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance Kubernetes"] page.
 
 
 

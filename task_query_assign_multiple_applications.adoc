@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: Utilisez une requête pour attribuer plusieurs applications ou annotations à des objets ou pour en supprimer plusieurs. 
 keywords: query, queries, application, annotation, multiple 
 ---
