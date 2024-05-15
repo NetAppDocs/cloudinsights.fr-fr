@@ -13,6 +13,7 @@ summary: informations utilisateur médico-légales
 :imagesdir: ./media/
 
 
+[role="lead"]
 Les informations relatives à chaque utilisateur sont fournies dans la vue d'ensemble de l'utilisateur. Utilisez ces vues pour comprendre les caractéristiques des utilisateurs, les entités associées et les activités récentes.
 
 

@@ -30,8 +30,8 @@ Voir la link:pre-requisites_for_k8s_operator.html["Conditions préalables"] Docu
 
 == Installation de l'opérateur de surveillance Kubernetes
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+image:NKMO-Instructions-1.png["Instructions de l'opérateur de surveillance"]
+image:NKMO-Instructions-2.png["Instructions de l'opérateur de surveillance"]
 
 .Étapes d'installation de l'agent opérateur de surveillance Kubernetes sur Kubernetes :
 . Entrez un nom de cluster et un espace de noms uniques. Si vous l'êtes <<mise à niveau,mise à niveau>> Depuis un opérateur Kubernetes précédent, utilisez le même nom de cluster et le même espace de noms.
@@ -532,7 +532,7 @@ telegraf :
 
 | Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
 
- E ! [Agent] erreur lors de l'écriture dans les sorties.http: Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] Délai de contexte dépassé (client.Timeout dépassé lors de l'attente des en-têtes) | Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur  link:telegraf_agent_k8s_config_options.html["options de configuration"]. 
+ E ! [Agent] erreur d'écriture dans outputs.http: Post "\https://<tenant_url>/REST/v1/Lake/iningt/influxdb": Délai de contexte dépassé (client. Dépassement du délai d'attente des en-têtes) | Modifiez la section telegraf dans _AgentConfiguration_ et augmentez _outputTimeout_ à 10 s. Pour plus de détails, reportez-vous au manuel de l'opérateur link:telegraf_agent_k8s_config_options.html["options de configuration"]. 
 
 
 | Il me manque des données _involvedobject_ pour certains journaux d'événements. | Assurez-vous d'avoir suivi les étapes de la link:pre-requisites_for_k8s_operator.html["Autorisations"] section ci-dessus. 

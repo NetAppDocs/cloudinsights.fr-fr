@@ -45,7 +45,7 @@ Le processus est similaire pour Linux et Windows.
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["Créer un jeton d'API"]
 
 . Dans swagger (Admin > accès API > Documentation API), utilisez le jeton pour autoriser les API Cloud Insights
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["Autorisez le jeton API"]
 
 . Téléchargez le programme d'installation au à l'aide de l'API _/au/installateurs/{Platform}/Latest_ ou _/au/installateurs/{Platform}/{version}_ :
 +
@@ -89,8 +89,8 @@ IMPORTANT: Les étapes suivantes nécessitent l'utilisation d'un jeton temporair
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["Créez un jeton d'API à usage unique"]
+image:Manual_AU_one_time_token_response.png["Réponse pour un exemple de jeton d'API à usage unique"]
 
 . Sur l'ordinateur sur lequel l'au va être installé, accédez au dossier contenant le fichier d'installation téléchargé. Les commandes ci-dessous nécessitent que l'utilisateur dispose des autorisations root.
 +

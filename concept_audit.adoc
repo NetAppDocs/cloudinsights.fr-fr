@@ -156,7 +156,6 @@ Les entrées d'audit antérieures à la durée de conservation sont automatiquem
 
 == Dépannage
 
-[role="lead"]
 Vous trouverez ici des suggestions pour résoudre les problèmes liés à l'audit.
 
 |===

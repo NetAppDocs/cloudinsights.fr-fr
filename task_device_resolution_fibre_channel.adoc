@@ -120,7 +120,7 @@ Lorsque vous exportez une identification de périphérique Fibre Channel dans un
 . Cliquez sur *gérer > résolution du périphérique*
 . Sélectionnez l'onglet *Fibre Channel Identify*.
 . Sélectionnez le ou les périphériques Fibre Channel dont vous souhaitez exporter l'identification.
-. Cliquez sur *Exporter* image:ExportButton.png[""] bouton.
+. Cliquez sur *Exporter* image:ExportButton.png["Bouton Exporter"] bouton.
 +
 Indiquez si vous souhaitez ouvrir le fichier .CSV ou enregistrer le fichier.
 

@@ -47,7 +47,7 @@ La boîte de dialogue Modifier le widget s'ouvre. Les données affichées par d�
 
 
 
-image:VMDashboard-TableWidget1.png[""]
+image:VMDashboard-TableWidget1.png["Boîte de dialogue Modifier le widget de tableau"]
 
 . Nous pouvons personnaliser ce widget. Dans le champ Nom en haut, supprimez le widget 1 et entrez le tableau performances de l'ordinateur virtuel.
 . Cliquez sur la liste déroulante Type de ressource et remplacez _Storage_ par _Virtual machine_.
@@ -68,7 +68,7 @@ Les lignes de la table sont désormais regroupées en fonction de vos paramètre
 
 
 
-image:VMDashboard-TableWidgetGroup.png[""]
+image:VMDashboard-TableWidgetGroup.png["Exemple de regroupement de widgets de tableau"]
 
 . Lorsque vous avez personnalisé le widget de tableau à votre convenance, cliquez sur le bouton *[Save]*.
 +
@@ -88,7 +88,7 @@ Nous ajouterons ensuite des graphiques pour afficher les performances de nos mac
 . Cliquez sur *[Save]* pour ajouter ce widget au tableau de bord.
 
 
-image:VMDashboard-LineChartVMLatency.png[""]
+image:VMDashboard-LineChartVMLatency.png["Graphique linéaire montrant les données de latence"]
 
 Nous allons ensuite ajouter un graphique illustrant le nombre total d'IOPS, lecture, écriture et lecture de VM dans un seul graphique.
 
@@ -100,7 +100,7 @@ Nous allons ensuite ajouter un graphique illustrant le nombre total d'IOPS, lect
 . Cliquez sur *Afficher la légende* pour afficher une légende pour ce widget sur le tableau de bord.
 
 
-image:VMDashboard-AreaChartVMIOPS.png[""]
+image:VMDashboard-AreaChartVMIOPS.png["Graphique à secteurs affichant les IOPS de VM"]
 
 . Cliquez sur *[Save]* pour ajouter ce widget au tableau de bord.
 
@@ -121,4 +121,4 @@ Une fois vos modifications effectuées, assurez-vous que *[Save]* est le tableau
 
 Votre tableau de bord final des performances VM se présente comme suit :
 
-image:VMDashExample1.png[""]
+image:VMDashExample1.png["Tableau de bord VM exemple complet montrant tous les widgets en place"]

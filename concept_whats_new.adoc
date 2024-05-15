@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 NetApp améliore et améliore continuellement ses produits et services. Voici quelques-unes des dernières fonctionnalités disponibles dans les éditions commerciales de Cloud Insights.
 
 
@@ -1418,8 +1419,8 @@ _Nouvelles variables pour les attributs et la possibilité d'utiliser des variab
 
 Les tableaux de bord sont désormais plus puissants et plus flexibles que jamais. Créez des tableaux de bord adaptatifs avec des variables d'attributs pour filtrer rapidement les tableaux de bord à la volée. Utilisation de ces éléments et d'autres pré-existants link:concept_dashboard_features.html#variables["variables"] vous pouvez désormais créer un tableau de bord général qui affiche les metrics de l'ensemble de votre environnement et les filtrer par nom, type, emplacement, etc. de manière fluide. Utilisez des variables de nombre dans les widgets pour associer des métriques brutes à des coûts, par exemple le coût par Go pour le stockage à la demande.
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["Annotations déroulantes dans une variable"]
+image:Variables_Attribute_Filtering.png["filtrage d'attributs dans une variable"]
 
 
 
@@ -1594,19 +1595,19 @@ Les puissantes API de Cloud Insights sont plus accessibles que jamais, avec les 
 | Catégorie API | Basique | Standard | Premium 
 
 
-| Unité d'acquisition | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unité d'acquisition | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Collecte de données | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Collecte de données | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Alertes |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Alertes |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ressources |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressources |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ingestion des données |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingestion des données |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 |===
 
 
@@ -1688,19 +1689,19 @@ L'accès API est désormais disponible dans toutes les éditions de Cloud Insigh
 | Catégorie API | Basique | Standard | Premium 
 
 
-| Unité d'acquisition | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unité d'acquisition | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Collecte de données | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Collecte de données | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ressources |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressources |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ingestion des données |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingestion des données |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Entrepôt de données |  |  | image:SmallCheckMark.png[""] 
+| Entrepôt de données |  |  | image:SmallCheckMark.png["cochez la case"] 
 |===
 Pour plus de détails sur l'utilisation de l'API, reportez-vous au link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["Documentation API"].
 

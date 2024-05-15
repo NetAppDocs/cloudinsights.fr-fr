@@ -291,4 +291,4 @@ Les choix suivants s'offrent à vous :
 * Limitez l'accès aux valeurs par défaut et aux domaines que vous spécifiez. Répertoriez tous les domaines auxquels vous souhaitez avoir accès à votre environnement Cloud Insights, en plus des domaines par défaut.
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["Info-bulle restreindre les domaines"]

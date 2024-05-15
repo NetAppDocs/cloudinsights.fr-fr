@@ -111,7 +111,7 @@ Vous devez disposer des éléments suivants pour collecter les données de stock
 * Nom d'utilisateur et mot de passe en lecture seule pour le logiciel HiCommand Device Manager et les privilèges homologues
 * Exigences relatives aux ports : 2001 (http) ou 2443 (https)
 * Connectez-vous au logiciel HiCommand Device Manager à l'aide du nom d'utilisateur et du mot de passe
-* Vérifiez l'accès au Gestionnaire de périphériques HiCommand http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager[]
+* Vérifiez l'accès au gestionnaire de périphériques HiCommand \http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager
 
 
 

@@ -43,7 +43,7 @@ NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition 
 Le système affiche la page Ajouter un agent :
 
 +
-image::Add-agent-1.png[Ajouter un agent 1]
+image::Add-agent-1.png[Ajout d'un agent de sécurité de la charge de travail]
 
 . Vérifiez que le serveur agent répond à la configuration système minimale requise.
 . Pour vérifier que le serveur d'agent exécute une version prise en charge de Linux, cliquez sur _versions supportées (i)_.
@@ -55,7 +55,7 @@ image:CloudSecureAgentWithProxy_Instructions.png["Note d'installation de l'agent
 . Exécutez la commande d'installation dans une fenêtre de terminal.
 . Une fois l'installation terminée, le système affiche le message suivant :
 +
-image::new-agent-detect.png[détection d'un nouvel agent]
+image::new-agent-detect.png[Message indiquant que l'installation de l'agent a réussi]
 
 
 

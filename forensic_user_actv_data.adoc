@@ -18,6 +18,7 @@ summary: 'données d"activité des utilisateurs médico-légales'
 :toc-position: content
 
 
+[role="lead"]
 La page activité utilisateur vous aide à comprendre les actions effectuées par les utilisateurs sur des entités.
 
 Les données disponibles dans cette page, décrit :

@@ -16,6 +16,7 @@ summary: Entités judiciaires
 :toc-position: content
 
 
+[role="lead"]
 La page entités judiciaires fournit des informations détaillées sur l'activité de l'entité dans votre environnement.
 
 

@@ -91,7 +91,7 @@ Lorsque vous exportez une identification de périphérique IP dans un fichier .C
 . Cliquez sur *gérer > résolution du périphérique*
 . Sélectionnez l'onglet *IP Address Identify*.
 . Sélectionnez le ou les périphériques IP dont vous souhaitez exporter l'identification.
-. Cliquez sur *Exporter* image:ExportButton.png[""] bouton.
+. Cliquez sur *Exporter* image:ExportButton.png["Bouton Exporter"] bouton.
 +
 Indiquez si vous souhaitez ouvrir le fichier .CSV ou enregistrer le fichier.
 

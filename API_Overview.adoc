@@ -28,22 +28,22 @@ Notez que les API Cloud Insights sont disponibles en fonction de votre édition 
 | Type d'API | Basique | Standard | Premium 
 
 
-| Unité d'acquisition | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Unité d'acquisition | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Collecte de données | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Collecte de données | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Alertes |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Alertes |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ressources |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressources |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ingestion des données |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingestion des données |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 
 
-| Ingestion de journal |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ingestion de journal |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
 |===
 De plus, votre Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["rôle du jeu de fonctions"] Déterminera les API auxquelles vous pouvez accéder. Les rôles utilisateur et invité disposent de privilèges moins nombreux que le rôle administrateur. Par exemple, si vous avez un rôle Administrateur dans Monitor and Optimize, mais que vous avez un rôle utilisateur dans Reporting, vous pouvez gérer tous les types d'API, à l'exception de Data Warehouse.
 
