@@ -74,7 +74,7 @@ image:Time-Series Charts.png["Zone, zone empilée, ligne, graphiques de spline"]
 +
 image:Single-Value Widgets.png["Widgets à valeur unique avec et sans formatage"]
 
-* *Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous link:concept_dashboard_features.adoc#formatting-gauge-widgets["personnaliser"].
+* *Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous link:concept_dashboard_features.html#formatting-gauge-widgets["personnaliser"].
 +
 image:Gauge Widgets.png["Valeur unique avec formatage, jauge traditionnelle, jauge à puce"]
 

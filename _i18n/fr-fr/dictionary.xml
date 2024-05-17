@@ -1193,7 +1193,6 @@
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">Erreur : les pools de stockage ne signalant pas les disques sur le Service Processor à l'adresse IP configurée</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">Configurez le collecteur de données avec les deux adresses IP du processeur de service, séparées par une virgule</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">Erreur : erreur de non-concordance de révision</block>
-  <block id="fd5876ba02b2687e0f759426e0298df1" category="cell">• Cela est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage bloc VNX, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente). • Vérifiez que le périphérique et l'hôte exécutent tous les deux des versions identiques du logiciel : - Dans l'unité d'acquisition Cloud Insights, ouvrez une fenêtre de ligne de commande - modifiez le répertoire dans le répertoire d'installation configuré - effectuez une connexion avec le périphérique CLARiiON en tapant « navicli -h ${ip} getagent » - recherchez le numéro de version sur les deux premières lignes. Exemple : “Agent Rév: 6.16.2 (0.1)” - chercher et comparer la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07”</block>
   <block id="2224c0524fbd6e8f44ccc50ce4a96ad5" category="cell">Erreur : configuration non prise en charge - pas de ports Fibre Channel</block>
   <block id="529b04e834f40481051d6ce9539ddc0f" category="cell">Le périphérique n'est configuré avec aucun port Fibre Channel. Actuellement, seules les configurations FC sont prises en charge. Vérifiez que cette version/micrologiciel est prise en charge.</block>
   <block id="65e6065f91f7e03659d071a3c7789f6e" category="summary">Configuration du collecteur de données du commutateur Fablic Cisco MDS.</block>
@@ -2622,7 +2621,6 @@
   <block id="0899fcc28c04aa81ead738e68e460060" category="summary">Utilisez les API Cloud Insights pour interroger directement la base de données de reporting.</block>
   <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="doc">Accéder à la base de données de rapports via l'API</block>
   <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">La puissante API de Cloud Insights permet aux utilisateurs d'interroger directement la base de données Cloud Insights Reporting, sans passer par l'environnement Cognos Reporting.</block>
-  <block id="839e9965620da680dac976910eb42800" category="admonition">Cette documentation fait référence à la fonctionnalité de création de rapports Cloud Insights, disponible dans le <block ref="4403a1ad625c6a857c60069d4bc3b41a" category="inline-link-macro-rx"></block>.</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">ce tutoriel</block>
@@ -3002,7 +3000,6 @@
   <block id="3cfba54c70b6969bcb6d6cf2f956498a" category="cell">Choisissez la région AWS</block>
   <block id="a9e18ceb0cf33b5fa58eee464eb5119b" category="cell">Rôle IAM</block>
   <block id="5af83476a58c870df52d1d246574922c" category="inline-link-macro">Rôles IAM</block>
-  <block id="263820305fad40ce46e17fb4c0dcd2f0" category="cell">À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur <block ref="b1fa9c7402c411a5cbbd77540aba7325" category="inline-link-macro-rx"></block>.</block>
   <block id="0e174ead80150bd1646bbe3dff5be348" category="cell">ID de clé d'accès IAM AWS</block>
   <block id="ee70e7971d85d7d2d77742381912070b" category="cell">Entrez l'ID de clé d'accès IAM AWS. Obligatoire si vous n'utilisez pas le rôle IAM.</block>
   <block id="f55ad0ad249bea7ede23875a3038fe11" category="cell">Clé d'accès secrète AWS IAM</block>
@@ -3099,7 +3096,6 @@
   <block id="1c86ffb67b6c557efd57f02a8124391f" category="inline-image-macro">Widgets à valeur unique avec et sans formatage</block>
   <block id="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="paragraph"><block ref="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbd63d84b143ca4d977c56413f0636f8" category="inline-link-macro">personnaliser</block>
-  <block id="0645d2bfff769e917835d157e691f0be" category="list-text">*Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous <block ref="7b06cec2bc04bb3452943fbeb3b82682" category="inline-link-macro-rx"></block>.</block>
   <block id="750f1ef44e948ec90cac7cb3f1abb83c" category="inline-image-macro">Valeur unique avec formatage, jauge traditionnelle, jauge à puce</block>
   <block id="fd3db0ae2d5cb2c027ca4fb5235885fd" category="paragraph"><block ref="fd3db0ae2d5cb2c027ca4fb5235885fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="134fad64e91be8733fd79da18b8f3061" category="list-text">*Bar, colonnes graphiques* : affiche les valeurs N supérieures ou inférieures, par exemple, les 10 premiers stockages par capacité ou les 5 volumes inférieurs par IOPS.</block>
@@ -3236,12 +3232,10 @@
   <block id="6acc33ae48cab5cb2335531500f89b02" category="paragraph">Les données disponibles dans cette page, décrit :</block>
   <block id="add45c9b3192a1741f0078c1e3a26199" category="list-text">Heure d'accès de l'entité, mois, jour, année et heure compris.</block>
   <block id="2ba01387eb193f306ecd9e0aa92ec18b" category="inline-link-macro">Données détaillées utilisateur</block>
-  <block id="d392843964c335c1c9dd5d3a73ecffa9" category="list-text">L'utilisateur qui a accédé à l'entité avec un lien vers le <block ref="7c73493d9f7ea518160cd9b15865320b" category="inline-link-macro-rx"></block>.</block>
   <block id="5620854eb6d9dfc6232bbccefdbb4f0e" category="list-text">L'activité effectuée par l'utilisateur :</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">Écriture</block>
   <block id="db7ee224458b6b939d2f759930e9a9f1" category="list-text">Accéder aux métadonnées</block>
   <block id="d97c308acbc0f0d3e5a290abc82e12a0" category="inline-link-macro">Données de détail d'entité</block>
-  <block id="02d2d907a8cea574883286e56e5834d0" category="list-text">Chemin d'accès à l'entité avec un lien vers le <block ref="48ae99400f35b5a30544095c0b977e4d" category="inline-link-macro-rx"></block></block>
   <block id="234e95e32a1ea9eb274c2e8437dfb0a7" category="list-text">Le type d'entité :</block>
   <block id="0b27918290ff5323bea1e3b78a9cf04e" category="list-text">Fichier</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">Chemin</block>
@@ -3371,7 +3365,6 @@
   <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">Activation des droits de support</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">détails</block>
-  <block id="1b179bc63122b8c6c97a198ea6812e2a" category="paragraph">Cloud Insights offre une assistance en libre-service et par e-mail lorsqu'il est exécuté en mode d'essai. Une fois que vous êtes abonné au service, il est fortement recommandé d'activer les droits de support. L'activation du support technique vous permet d'accéder au support technique via le chat en ligne, le système de gestion de tickets Web et le téléphone. Le mode d'assistance par défaut est en libre-service jusqu'à ce que l'enregistrement soit terminé. Voir <block ref="0ac112fddddbe1a53d74b73cbe92356e" category="inline-link-macro-rx"></block> ci-dessous.</block>
   <block id="8c3419f130ad04caaa52bc7ca345b657" category="paragraph">Lors du processus d'abonnement initial, votre instance Cloud Insights génère un numéro de série à 20 chiffres dont le numéro commence par « 950 ». Ce numéro de série NetApp correspond à l'abonnement Cloud Insights associé à votre compte. Vous devez enregistrer le numéro de série NetApp pour activer les droits au support. Nous proposons deux options d'inscription aux services de support :</block>
   <block id="cc8ae441e8fc2d8b41c5c0efa830b99e" category="list-text">Utilisateur avec un compte SSO existant sur le site de support NetApp (NSS) (par exemple, client NetApp actuel)</block>
   <block id="0a0b0ec9b756ca7bf1c8323bc90df282" category="list-text">Nouveau client NetApp sans compte SSO existant sur le site de support NetApp (NSS)</block>
@@ -4998,7 +4991,6 @@
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">Notez que dans cette section, les substitutions sont _non_ effectuées lorsque vous cliquez sur le bouton « Tester le Webhook » ; le bouton envoie une charge utile indiquant les substitutions de _ %_ mais ne les remplace pas par des données.</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">Dans cette section, vous pouvez ajouter des paramètres et/ou des secrets personnalisés. Pour des raisons de sécurité, si un secret est défini, seul le créateur de webhook peut modifier ce canal de webhook. Il est en lecture seule pour les autres. Vous pouvez utiliser les secrets d'URL/en-têtes sous la forme _%&lt;secret_name&gt;%_.</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">Choix de notification Webhook dans un moniteur</block>
-  <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">Pour choisir la notification du crochet Web dans un <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>, Accédez à *alertes &gt; gérer les moniteurs* et sélectionnez le moniteur souhaité ou ajoutez un nouveau moniteur. Dans la section _configurer les notifications d'équipe_, choisissez _Webhook_ comme méthode de livraison. Sélectionnez les niveaux d'alerte (critique, Avertissement, résolu), puis choisissez le crochet souhaité.</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Notification du moniteur Webhook</block>
   <block id="4b43841fab74d16cf87af7d828515aa0" category="paragraph"><block ref="4b43841fab74d16cf87af7d828515aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41e96c412b3694cd49b21435dba2aa8b" category="section-title">Exemples de Webhook :</block>
@@ -5661,7 +5653,6 @@
   <block id="51222d9334f8421be01a4c67bba211f0" category="list-text">L'ID *IAM Access Key* et la clé d'accès secrète pour votre compte de cloud AWS, si vous utilisez l'authentification IAM Access Key.</block>
   <block id="059cecdb406ea318583165dbd87ae76a" category="list-text">Il est possible de signalement des instances AWS S3 en tant que machine virtuelle ou (moins naturellement) d'un hôte. Les volumes EBS peuvent être signalés comme des virtualDisk utilisés par la machine virtuelle, ainsi qu'un datastore fournissant la capacité pour la virtuelleDisk.</block>
   <block id="eabf633dc74f78f079f74efeb11ba4c2" category="paragraph">Les clés d'accès comprennent un ID de clé d'accès (par exemple, AKIAIOSFONDN7EXAMPLE) et une clé d'accès secrète (par exemple, wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY). Vous utilisez des clés d'accès pour signer les demandes de programmation que vous créez à AWS si vous utilisez les opérations de kits de développement logiciel et D'API REST AWS ou Query. Ces clés sont fournies avec votre contrat Amazon.</block>
-  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>.</block>
   <block id="a9798702903d4f5ee46de22467eb3ccd" category="paragraph">Par exemple, si vous créez un rôle IAM nommé _InstanceS3ReadOnly_, vous devez configurer la règle pour accorder l'autorisation d'accès à la liste en lecture seule S3 à toutes les ressources S3 pour ce rôle IAM. En outre, vous devez accorder l'accès STS (Security Token Service) pour que ce rôle soit autorisé à assumer des comptes croisés de rôles.</block>
   <block id="56fbeb9e954ace68d534e66e58b364a1" category="paragraph">Une fois que vous avez créé un rôle IAM, vous pouvez le rattacher à une nouvelle instance S3 ou à toute instance S3 existante.</block>
   <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">Une fois le rôle IAM _InstanceS3ReadOnly_ à une instance S3, vous pouvez récupérer les informations d'identification temporaires via les métadonnées de l'instance par le nom de rôle IAM et les utiliser pour accéder aux ressources AWS par toute application exécutée sur cette instance S3.</block>
@@ -6468,7 +6459,6 @@
   <block id="c74022ec3500804719ac4dae2639c107" category="cell">Inclure : données collectées uniquement à partir des périphériques de la liste. Exclure : aucune donnée de ces périphériques n'est collectée</block>
   <block id="67f88e9638429025aedc9459c104dc99" category="cell">Liste séparée par des virgules d'ID de périphérique à inclure ou exclure de la collecte de performances</block>
   <block id="13cb776e94eedbe31790c3da868fce4f" category="cell">Erreur contenant : CMUC00192E, CMUC00191E ou CMUC00190E</block>
-  <block id="74ce3011edbe24d23741ab64757e01b3" category="cell">* Vérifier les informations d'identification et l'adresse IP saisies. * Essayez de communiquer avec la baie par le biais de la console de gestion Web<block ref="05cc9b0aa4749686afc5de5ae5526f25" category="inline-link-rx"></block>. Remplacez le ${ip} par l'adresse IP configurée par le collecteur de données.</block>
   <block id="b18a21f855b9b4e7ca0fae5355812eb5" category="cell">Erreur : * Impossible d'exécuter PROGRAM * erreur d'exécution de la commande</block>
   <block id="d3fb13aa93c07b18952569ac666e58a4" category="cell">* À partir de l'unité d'acquisition Cloud Insights Ouvrez un fichier CMD * Ouvrir CLI.CFG dans le dossier/lib de l'interface de ligne de commande et vérifiez la propriété JAVA_INSTALL, modifiez la valeur pour qu'elle corresponde à votre environnement * Afficher la version Java installée sur cet ordinateur, entrez : "java -version" * Envoyez une commande ping à l'adresse IP du périphérique de stockage IBM spécifié dans la commande CLI. * Si toutes les réponses ci-dessus fonctionnent correctement, exécutez manuellement une commande CLI</block>
   <block id="e6bfb980e30f4f6a39aeb1af52be14f3" category="summary">Exemple de tableau de bord soulignant les performances des machines virtuelles.</block>
@@ -7504,7 +7494,6 @@
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">Le nom du SVM doit être exactement comme indiqué dans ONTAP et est sensible à la casse.</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">En utilisant SVM Vserver Management IP, Nom d'utilisateur et Mot de passe</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">“Une note sur les autorisations”</block>
-  <block id="b19cd1e15a68af6b243893fbf6531cb2" category="list-text">Si vous ne pouvez pas ou n'êtes pas disposé à utiliser le nom d'utilisateur et le mot de passe administrateur complet Cluster/SVM Management, vous pouvez créer un utilisateur personnalisé avec des privilèges moins importants comme indiqué dans la <block ref="257f1904b32a0b6b3ad6c048be9351a6" category="inline-link-macro-rx"></block> section ci-dessous. Cet utilisateur personnalisé peut être créé pour l'accès au SVM ou au cluster.</block>
   <block id="af3222f57064502de0a6067116f97f3e" category="list-text">o vous pouvez également utiliser un utilisateur AD avec un rôle qui possède au moins les autorisations de csrole, comme indiqué dans la section “Une note sur les autorisations” ci-dessous. Reportez-vous également à la <block ref="d4aa194db895e3203d834756bc431bad" category="inline-link-macro-rx"></block>.</block>
   <block id="af53996a121bcf0b43c612a8465b5398" category="list-text">S'assurer que les applications correctes sont définies pour le SVM en exécutant la commande suivante :</block>
   <block id="cce32d87b6a1e3cf5567d9c84f96be3f" category="inline-image-macro">Exemple de sortie de commande SVM</block>
@@ -7570,7 +7559,6 @@
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">Le collecteur de données est en erreur, affiche ce message d'erreur. “Erreur : le connecteur est en état d'erreur. Nom du service : audit. Motif de l'échec : échec de la configuration de la règle sur le SVM svm_test. Motif : valeur manquante pour le champ zapi : événements. «</block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collector affiche le message d'erreur : "erreur : échec de la détermination de la santé du collecteur dans 2 tentatives, essayez de redémarrer le collecteur à nouveau (Code d'erreur : AGENT008)".</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">cette page</block>
-  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1. Sur la page collecteurs de données, faites défiler vers la droite du collecteur de données pour afficher l'erreur et cliquez sur le menu 3 points. Sélectionnez _Modifier_. Saisissez à nouveau le mot de passe du collecteur de données. Enregistrez le collecteur de données en appuyant sur le bouton _Save_. Data Collector redémarre et l'erreur doit être résolue. 2. La machine Agent peut ne pas avoir assez de marge CPU ou RAM, c'est pourquoi les DSC sont défaillants. Veuillez vérifier le nombre de collecteurs de données ajoutés à l'agent de la machine. Si elle est supérieure à 20, augmentez la capacité CPU et RAM de l'ordinateur Agent. Une fois l'UC et la RAM augmentées, les DSC sont en cours d'initialisation, puis s'exécutent automatiquement. Consultez le guide de dimensionnement du <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>.</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">Si vous rencontrez toujours des problèmes, accédez aux liens d'assistance mentionnés dans la page *aide &gt; support*.</block>
   <block id="1914b55914b6ee44bc0dcd84cc7caeb3" category="summary">Configuration du collecteur de données Apache</block>
   <block id="a2c447b19901c50472d86c46b78e4269" category="doc">Collecteur de données Apache</block>
@@ -9007,9 +8995,7 @@
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">OBTENIR /{schema}/** - récupère les données de la base de données de rapports.</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">Ce script peut être exécuté pour vérifier le taux d'évènement dans le SVM avant d'installer un SVM DSC de ONTAP</block>
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">Le vérificateur de taux d'événement est utilisé pour vérifier le taux d'événement combiné NFS/SMB au sein du SVM avant d'installer un collecteur de données SVM ONTAP, afin de voir le nombre de SVM qu'un ordinateur Agent peut surveiller. Utilisez le vérificateur de taux d'événements comme guide de dimensionnement pour vous aider à planifier votre environnement de sécurité.</block>
-  <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">Une erreur similaire à celle-ci s'est produite : « échec de l'exécution de la demande : connexion à &lt;AWS region endpoint&gt;:8080 [&lt;AWS region endpoint&gt;/AWS Region Endpoint IP&gt;] a échoué : échec de la connexion : OBTENTION<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> FQDN du noeud final de la région&gt;:8080/v1/Storage/IPRanges HTTP/1.1'</block>
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">Article de la base de connaissances NetApp</block>
-  <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">Le <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Utilisé par Cloud Insights pour communiquer avec l'unité d'acquisition ne communique pas entre Cloud Insights et le Data Collector lui-même. Voici quelques éléments que vous pouvez essayer : assurez-vous que l'unité d'acquisition est capable de résoudre le fqdn et d'atteindre le port requis. Confirmez qu'un proxy n'est pas nécessaire pour atteindre le noeud final spécifié dans le message d'erreur. Curl peut être utilisé pour tester la communication entre l'unité d'acquisition et le noeud final. Assurez-vous que vous utilisez *pas* un proxy pour ce test. Exemple : root@acquisitionunit# curl -s -H Accept:application/json -H "Content-type: Application/json" -H api-key:&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X GET<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> Point final régional&gt;:8080/v1/Storage/IPRanges Voir ceci <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>.</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">Vérificateur de taux d'événements SVM (Guide de dimensionnement des agents)</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Vérificateur de taux d'événements (Guide de dimensionnement des agents)</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement.</block>
@@ -10075,42 +10061,6 @@ FAS/AFF 8080</block>
   <block id="bca37b041da64be838599cd43784ed63" category="paragraph">Admin :</block>
   <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">Accès aux API</block>
   <block id="4620823d389a7467f91084ea88f4f104" category="list-text">Informations sur l'abonnement</block>
-  <block id="384d2b3681715a5efe4a0e8ae256591a" category="cell">Cela est probablement dû à un problème de réseau côté ONTAP. Procédez comme suit :
-
-1. S'assurer qu'il n'y a pas de pare-feu sur la lif de données du SVM ou sur la lif de gestion qui bloquent la connexion du SVM.
-
-2. Lorsque vous ajoutez un SVM via une IP de gestion du cluster, veillez à ce que la lif de données et la lif de gestion de la SVM soient pingable à partir de la machine virtuelle de l'agent. En cas de problème, vérifier la passerelle, le masque de réseau et les routes de la lif.
-
-Vous pouvez également essayer de vous connecter au cluster via ssh à l'aide de l'IP de gestion de cluster et envoyer une requête ping à l'IP de l'agent. Assurez-vous que l'adresse IP de l'agent peut faire l'objet d'un ping :
-
-_Network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt; -show-detail_
-
-Si vous ne pouvez pas effectuer de ping, assurez-vous que les paramètres réseau dans ONTAP sont corrects, de sorte que l'ordinateur de l'agent puisse effectuer des requêtes ping.
-
-3. Si vous avez essayé de vous connecter via Cluster IP et qu'il ne fonctionne pas, essayez de vous connecter directement via SVM IP. Voir ci-dessus pour les étapes de connexion via SVM IP.
-
-4. Lors de l'ajout du collecteur via les identifiants SVM IP et vsadmin, vérifier si le LIF du SVM a le rôle de gestion et Data est activé Dans ce cas, le ping vers la LIF du SVM va fonctionner, mais SSH vers la LIF du SVM ne fonctionnera pas.
-Si oui, créer une LIF SVM Mgmt uniquement et tenter de se connecter via cette LIF de management SVM uniquement.
-
-5. Si elle ne fonctionne toujours pas, créez une nouvelle LIF de SVM et essayez de vous connecter via cette LIF. Vérifiez que le masque de sous-réseau est correctement défini.
-
-6. Débogage avancé :
-A) démarrez une trace de paquet dans ONTAP.
-b) essayez de connecter un collecteur de données au SVM à partir de l'interface utilisateur CloudSecure.
-c) attendez que l'erreur s'affiche. Arrêtez la trace de paquet dans ONTAP.
-d) Ouvrez la trace de paquet à partir de ONTAP. Il est disponible à cet endroit
-
- _\https://&lt;cluster_mgmt_ip&gt;/spi/&lt;clustername&gt;/etc/log/packet_traces/_
-
-e) Assurez-vous qu'il y a un SYN de ONTAP dans la zone Agent.
-f) s'il n'y a pas de SYN dans ONTAP, il s'agit d'un problème avec le pare-feu dans ONTAP.
-g) Ouvrez le pare-feu dans ONTAP, afin que ONTAP puisse connecter le boîtier de l'agent.
-
-7. Si elle ne fonctionne toujours pas, veuillez consulter l'équipe réseau pour vous assurer qu'aucun pare-feu externe ne bloque la connexion entre ONTAP et la boîte de l'agent.
-
-8. Vérifiez que le port 7 est ouvert.
-
-9. Si aucune des réponses ci-dessus ne résout le problème, ouvrez un dossier avec <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> pour obtenir de l'aide.</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">Modèles et versions pris en charge par ce collecteur de données :</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
@@ -12023,7 +11973,6 @@ Oct 11 14:23:41 ip-172-31-39-47 telegraf[1827]: 2021-10-11T14:23:41Z I! Démarra
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">Il s'agit d'un problème connu.  Reportez-vous à la section <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> pour en savoir plus. Tant que Telegraf est opérationnel, les utilisateurs peuvent ignorer ces messages d'erreur.</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">Sur Kubernetes, mon ou mes pod(s) Telegraf signalent l'erreur suivante :
 "Erreur lors du traitement des info mountstats: Impossible d'ouvrir le fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Open /hostfs/proc/1/mountstats: Permission denied"</block>
-  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, voir :<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>.</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">Sur Kubernetes, mon pod ReplicaSet Telegraf rapporte l'erreur suivante :
 
  [inputs.prometheus] erreur dans le plug-in : impossible de charger keypair /etc/kubernetes/pki/etcd/Server.crt:/etc/kubernetes/pki/etcd/Server.key: Ouvrir /etc/kubernetes/pki/etcd/Server.crt: Pas de fichier ou de répertoire de ce type</block>
@@ -12570,7 +12519,6 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">Blocage de l'accès utilisateur</block>
   <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">Gardez les points suivants à l'esprit pendant <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>:</block>
-  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">Assurez-vous de consulter la section autorisations du <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> page également.</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">Migration</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">Pour migrer d'un précédent collecteur de données ONTAP (ontapi) vers le nouveau collecteur de données REST ONTAP, procédez comme suit :</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual machine/Vserver</block>
@@ -12710,10 +12658,6 @@ Accélérez la résolution des problèmes en obtenant une vue précise de l'acti
 Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce à l'analyse et à l'audit des flux de trafic Kubernetes.</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">L'opérateur de surveillance Kubernetes collecte les données Kubernetes pour les utiliser dans Cloud Insights.</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Installation et configuration de l'opérateur de contrôle Kubernetes</block>
-  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">Autorisations pour l'intégration ARP ONTAP :</block>
-  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">Autorisations d'accès ONTAP refusées :</block>
-  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">Remarque : si un rôle REST est déjà ajouté--soit _arwrole_ soit _csrestrole_--il n'est pas nécessaire d'ajouter un deuxième rôle REST. Vous pouvez simplement ajouter les autorisations d'API comme dans l'exemple ci-dessous.</block>
-  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">Exemple : _csrestrole_ est déjà présent. Il nous suffit donc d'activer la protection contre les ransomware et de donner des autorisations d'API au _csrestrole_ existant :</block>
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">Je vois un message « erreur Heartbeat : »</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">Lors de la réinstallation de l'unité d'acquisition, je vois « ValueError: File context for /opt/netapp/cloudInsights(/.*)? déjà défini ».</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">Sur un système équipé de SELinux, ce message d'erreur peut apparaître après<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> A été exécuté et l'unité d'acquisition doit être réinstallée. Exécution de la commande<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> doit corriger le problème et supprimer le message.</block>
@@ -12730,8 +12674,6 @@ Cette fonctionnalité aide les entreprises à réduire les coûts globaux grâce
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">Event-exportateur-maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">âge max. de l'événement de l'exportateur d'événement.  Voir<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
   <block id="639bed0f86ee37975166505f25500f59" category="paragraph">Comment l'analyse des changements peut-elle aider ?</block>
-  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">Dans les environnements Kubernetes mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. Dans les environnements très dynamiques, le contrôle de l'infrastructure Cloud Insights peut ne pas être en mesure de suivre correctement tous les changements.</block>
-  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">L'analyse des changements permet d'y apporter une solution en fournissant une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut vous aider dans le dépannage des environnements Kubernetes dynamiques.</block>
   <block id="9c64a0e0a0e22cc18b7137e967889926" category="doc">Options de configuration de l'opérateur de surveillance Kubernetes</block>
   <block id="3371b7c42a338a1d63764ce6cc96fdcb" category="inline-link-macro">Opérateur de surveillance Kubernetes</block>
   <block id="f32519ffeecd98f4c4f06a7bf1c7a34c" category="paragraph">Le <block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block> la configuration peut être personnalisée.</block>
@@ -12759,12 +12701,6 @@ Kubernetes v1.20 et versions ultérieures : Kubernetes.io/os = linux
 Rancher + bovin.io comme plateforme d'orchestration/Kubernetes : bovin.io/os = linux</block>
   <block id="b0c7368729c7094129da2a9003691e56" category="cell">Les commandes curl et kubectl doivent être disponibles.; pour de meilleurs résultats, ajoutez ces commandes au CHEMIN.</block>
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">Connectivité</block>
-  <block id="55a65c182f00e32a2ec3792167680870" category="cell">L'interface de ligne de commande kubectl est configurée pour communiquer avec le cluster K8s cible et dispose d'une connectivité Internet à votre environnement Cloud Insights.
-
-Si vous êtes derrière un proxy pendant l'installation, suivez les instructions de la <block ref="64cf37673a6ed79c9da34b6623735516" category="inline-link-macro-rx"></block> De l'installation de l'opérateur.
-
-Pour un audit et un reporting précis des données, synchronisez l'heure sur la machine Agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol).</block>
-  <block id="a4b54dca162f049f992f72e7505f2056" category="cell">Si vous utilisez OpenShift 4.6 ou une version supérieure, vous devez suivre le lien:task_config_telegraf_agent_k8s.html#openshift-instructions[openshift instructions en plus de vous assurer que ces conditions préalables sont remplies.</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">Jeton d'API</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">Si vous redéployez l'opérateur (c'est-à-dire que vous le mettez à jour ou le remplacez), il n'est pas nécessaire de créer un nouveau jeton d'API ; vous pouvez réutiliser le jeton précédent.</block>
   <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
@@ -13047,11 +12983,6 @@ Dans Firefox, les exceptions relatives aux cookies sont désignées simplement p
   <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">Tableau de bord VM exemple complet montrant tous les widgets en place</block>
   <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">Cliquez sur *Exporter* <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> bouton.</block>
-  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; TÊTE</block>
-  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== autorisations lors de l'ajout via *Vserver Management IP* :</block>
-  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== autorisations pour la protection anti-ransomware autonome de ONTAP</block>
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">Erreur du collecteur de sécurité de la charge de travail lien plus détaillé</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">Exemple de section Récapitulatif de la page d'accueil</block>
@@ -13079,4 +13010,99 @@ Dans Firefox, les exceptions relatives aux cookies sont désignées simplement p
   <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">Réponse pour un exemple de jeton d'API à usage unique</block>
   <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
 <block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88624c8c7afb5c98f1c473e14dcbf963" category="cell">L'interface de ligne de commande kubectl est configurée pour communiquer avec le cluster K8s cible et dispose d'une connectivité Internet à votre environnement Cloud Insights.
+
+Si vous êtes derrière un proxy pendant l'installation, suivez les instructions de la <block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block> De l'installation de l'opérateur.
+
+Pour un audit et un reporting précis des données, synchronisez l'heure sur la machine Agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol).</block>
+  <block id="7c32e6404e015057fc5db282b24077f0" category="cell">Si vous utilisez OpenShift 4.6 ou une version supérieure, vous devez suivre la <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> en plus de s'assurer que ces conditions préalables sont remplies.</block>
+  <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>.</block>
+  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">• Cela est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage VNX Block, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente).
+• Vérifiez que le périphérique et l'hôte exécutent des versions identiques du logiciel :
+    - À partir de l'unité d'acquisition Cloud Insights, ouvrir une fenêtre de ligne de commande
+    - Modifiez le répertoire dans le répertoire d'installation configuré
+    - Établir une connexion avec le périphérique CLARiiON en tapant “navicli -h &lt;ip&gt; getagent”
+    - Recherchez le numéro de version sur les premières lignes. Exemple : « Agent Rev: 6.16.2 (0.1)”
+    - Chercher et comparer la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07”</block>
+  <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">Pour choisir la notification du crochet Web dans un <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>, Accédez à *alertes &gt; gérer les moniteurs* et sélectionnez le moniteur souhaité ou ajoutez un nouveau moniteur. Dans la section _configurer les notifications d'équipe_, choisissez _Webhook_ comme méthode de livraison. Sélectionnez les niveaux d'alerte (critique, Avertissement, résolu), puis choisissez le crochet souhaité.</block>
+  <block id="4123cf4f6521073cef46192908207644" category="cell">Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, reportez-vous au <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>.</block>
+  <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">Cette documentation fait référence à la fonction de génération de rapports Cloud Insights, disponible dans l'édition Premium de Cloud Insights.</block>
+  <block id="f09f88f2a0cd4d59d1c5dc91fdce034b" category="cell">* Ouvrir l'invite de commande et changer le répertoire au chemin configuré
+* Exécutez la commande “set=STONARVM_HOME=”.
+* Exécuter la commande “auunitref”
+* Confirmez que la sortie de la commande contient les détails de la matrice avec IP
+* Si la sortie ne contient pas les détails de la matrice, enregistrez la matrice avec Storage Navigator CLI :
+    - Ouvrir l'invite de commande et changer le répertoire au chemin configuré
+    - Exécutez la commande “set=STONARVM_HOME=”.
+    - Exécutez la commande “auunitaddauto -ip &lt;ip&gt;”. Remplacez &lt;ip&gt; par le tableau de bord correct.</block>
+  <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">*Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>.</block>
+  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">L'utilisateur qui a accédé à l'entité avec un lien vers le <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>.</block>
+  <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">Chemin d'accès à l'entité avec un lien vers le <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
+  <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">Cloud Insights offre une assistance en libre-service et par e-mail lorsqu'il est exécuté en mode d'essai. Une fois que vous êtes abonné au service, il est fortement recommandé d'activer les droits de support. L'activation du support technique vous permet d'accéder au support technique via le chat en ligne, le système de gestion de tickets Web et le téléphone. Le mode d'assistance par défaut est en libre-service jusqu'à ce que l'enregistrement soit terminé. Voir <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> ci-dessous.</block>
+  <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* Vérifier les informations d'identification et l'adresse IP saisies.
+* Essayez de communiquer avec la baie via la console de gestion Web \https://&lt;ip&gt;:8452/DS8000/Console.  Remplacez &lt;ip&gt; par l'adresse IP configurée du collecteur de données.</block>
+  <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">Assurez-vous de consulter la section autorisations du <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> page également.</block>
+  <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">Si vous ne pouvez pas ou n'êtes pas disposé à utiliser le nom d'utilisateur et le mot de passe administrateur complet Cluster/SVM Management, vous pouvez créer un utilisateur personnalisé avec des privilèges moins importants comme indiqué dans la <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> section ci-dessous. Cet utilisateur personnalisé peut être créé pour l'accès au SVM ou au cluster.</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">Autorisations lors de l'ajout via *Vserver Management IP* :</block>
+  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Autorisations pour la protection anti-ransomware autonome de ONTAP</block>
+  <block id="ce2c442b24aec5c08788260869132fdd" category="cell">Cela est probablement dû à un problème de réseau côté ONTAP. Procédez comme suit :
+
+1. S'assurer qu'il n'y a pas de pare-feu sur la lif de données du SVM ou sur la lif de gestion qui bloquent la connexion du SVM.
+
+2. Lorsque vous ajoutez un SVM via une IP de gestion du cluster, veillez à ce que la lif de données et la lif de gestion de la SVM soient pingable à partir de la machine virtuelle de l'agent. En cas de problème, vérifier la passerelle, le masque de réseau et les routes de la lif.
+
+Vous pouvez également essayer de vous connecter au cluster via ssh à l'aide de l'IP de gestion de cluster et envoyer une requête ping à l'IP de l'agent. Assurez-vous que l'adresse IP de l'agent peut faire l'objet d'un ping :
+
+_Network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt; -show-detail_
+
+Si vous ne pouvez pas effectuer de ping, assurez-vous que les paramètres réseau dans ONTAP sont corrects, de sorte que l'ordinateur de l'agent puisse effectuer des requêtes ping.
+
+3. Si vous avez essayé de vous connecter via Cluster IP et qu'il ne fonctionne pas, essayez de vous connecter directement via SVM IP. Voir ci-dessus pour les étapes de connexion via SVM IP.
+
+4. Lors de l'ajout du collecteur via les identifiants SVM IP et vsadmin, vérifier si le LIF du SVM a le rôle de gestion et Data est activé Dans ce cas, le ping vers la LIF du SVM va fonctionner, mais SSH vers la LIF du SVM ne fonctionnera pas.
+Si oui, créer une LIF SVM Mgmt uniquement et tenter de se connecter via cette LIF de management SVM uniquement.
+
+5. Si elle ne fonctionne toujours pas, créez une nouvelle LIF de SVM et essayez de vous connecter via cette LIF. Vérifiez que le masque de sous-réseau est correctement défini.
+
+6. Débogage avancé :
+A) démarrez une trace de paquet dans ONTAP.
+b) essayez de connecter un collecteur de données au SVM à partir de l'interface utilisateur CloudSecure.
+c) attendez que l'erreur s'affiche. Arrêtez la trace de paquet dans ONTAP.
+d) Ouvrez la trace de paquet à partir de ONTAP. Il est disponible à cet endroit
+
+ _\https://&lt;cluster_mgmt_ip&gt;/spi/&lt;clustername&gt;/etc/log/packet_traces/_
+
+e) Assurez-vous qu'il y a un SYN de ONTAP dans la zone Agent.
+f) s'il n'y a pas de SYN dans ONTAP, il s'agit d'un problème avec le pare-feu dans ONTAP.
+g) Ouvrez le pare-feu dans ONTAP, afin que ONTAP puisse connecter le boîtier de l'agent.
+
+7. Si elle ne fonctionne toujours pas, veuillez consulter l'équipe réseau pour vous assurer qu'aucun pare-feu externe ne bloque la connexion entre ONTAP et la boîte de l'agent.
+
+8. Vérifiez que le port 7 est ouvert.
+
+9. Si aucune des réponses ci-dessus ne résout le problème, ouvrez un dossier avec <block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block> pour obtenir de l'aide.</block>
+  <block id="c54f0cb7ebe859ae013e2a39e57b38c0" category="cell">1. Sur la page collecteurs de données, faites défiler vers la droite du collecteur de données pour afficher l'erreur et cliquez sur le menu 3 points. Sélectionnez _Modifier_.
+Saisissez à nouveau le mot de passe du collecteur de données.
+Enregistrez le collecteur de données en appuyant sur le bouton _Save_.
+Data Collector redémarre et l'erreur doit être résolue.
+
+2. La machine Agent peut ne pas avoir assez de marge CPU ou RAM, c'est pourquoi les DSC sont défaillants.
+Veuillez vérifier le nombre de collecteurs de données ajoutés à l'agent de la machine.
+Si elle est supérieure à 20, augmentez la capacité CPU et RAM de l'ordinateur Agent.
+Une fois l'UC et la RAM augmentées, les DSC sont en cours d'initialisation, puis s'exécutent automatiquement.
+Consultez le guide de dimensionnement du <block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>.</block>
+  <block id="36d35d8bdb33f254c1406a404bc7c125" category="cell">J'ai reçu une erreur similaire à celle-ci :
+'Échec de l'exécution de la demande : connexion à &lt;point de terminaison de la région AWS&gt;:8080 [&lt;point de terminaison de la région AWS&gt;/IP du point de terminaison de la région AWS&gt;] échec : connexion expirée : OBTENIR UN nom de domaine complet de la région \https://&lt;AWS&gt;:8080/v1/Storage/IPRanges HTTP/1.1'</block>
+  <block id="eb146021cef6507d29dcdce3e2090a16" category="cell">Le <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Utilisé par Cloud Insights pour communiquer avec l'unité d'acquisition ne communique pas entre Cloud Insights et le Data Collector lui-même. Voici quelques exemples de ce que vous pouvez essayer :
+
+Assurez-vous que l'unité d'acquisition est en mesure de résoudre le nom de domaine complet et d'atteindre le port requis.
+Confirmez qu'un proxy n'est pas nécessaire pour atteindre le noeud final spécifié dans le message d'erreur.
+Curl peut être utilisé pour tester la communication entre l'unité d'acquisition et le noeud final. Assurez-vous que vous utilisez *pas* un proxy pour ce test.
+
+Exemple :
+
+Root@acquisition Unit# curl -s -H Accept:application/json -H « Content-type: Application/json » -H api-key:&lt;clé api utilisée dans les informations d'identification du collecteur de données -H secret-key:&lt;clé secrète utilisée dans les informations d'identification du collecteur de données&gt; -X GET \https://&lt;AWS Regional Endpoint&gt;:8080/v1/Storage/IPRanges
+
+Voir ceci <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>.</block>
+  <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">Dans les environnements Kubernetes mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. L'analyse des changements permet d'y apporter une solution en fournissant une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut vous aider dans le dépannage des environnements Kubernetes dynamiques.</block>
 </blocks>

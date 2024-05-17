@@ -124,7 +124,8 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Problème : | Essayer : 
 
 
-| Erreur contenant : CMUC00192E, CMUC00191E ou CMUC00190E | * Vérifier les informations d'identification et l'adresse IP saisies. * Essayez de communiquer avec la baie par le biais de la console de gestion Web https://${ip}:8452/DS8000/Console[]. Remplacez le ${ip} par l'adresse IP configurée par le collecteur de données. 
+| Erreur contenant : CMUC00192E, CMUC00191E ou CMUC00190E | * Vérifier les informations d'identification et l'adresse IP saisies.
+* Essayez de communiquer avec la baie via la console de gestion Web \https://<ip>:8452/DS8000/Console.  Remplacez <ip> par l'adresse IP configurée du collecteur de données. 
 
 
 | Erreur : * Impossible d'exécuter PROGRAM * erreur d'exécution de la commande | * À partir de l'unité d'acquisition Cloud Insights Ouvrez un fichier CMD * Ouvrir CLI.CFG dans le dossier/lib de l'interface de ligne de commande et vérifiez la propriété JAVA_INSTALL, modifiez la valeur pour qu'elle corresponde à votre environnement * Afficher la version Java installée sur cet ordinateur, entrez : "java -version" * Envoyez une commande ping à l'adresse IP du périphérique de stockage IBM spécifié dans la commande CLI. * Si toutes les réponses ci-dessus fonctionnent correctement, exécutez manuellement une commande CLI 

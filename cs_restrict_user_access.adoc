@@ -46,7 +46,7 @@ security login role create -role csrole -cmddirname "vserver cifs session" -acce
 security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
 security login role create -role csrole -cmddirname "vserver name-mapping" -access all
 ....
-Assurez-vous de consulter la section autorisations du link:/cloudinsights/task_add_collector_svm.html["Configuration du SVM Data Collector de ONTAP"] page également.
+Assurez-vous de consulter la section autorisations du link:task_add_collector_svm.html["Configuration du SVM Data Collector de ONTAP"] page également.
 
 
 

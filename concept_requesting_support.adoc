@@ -31,7 +31,7 @@ image:SupportPageWithLearningCenter.png["Page de support"]
 
 == Activation des droits de support
 
-Cloud Insights offre une assistance en libre-service et par e-mail lorsqu'il est exécuté en mode d'essai. Une fois que vous êtes abonné au service, il est fortement recommandé d'activer les droits de support. L'activation du support technique vous permet d'accéder au support technique via le chat en ligne, le système de gestion de tickets Web et le téléphone. Le mode d'assistance par défaut est en libre-service jusqu'à ce que l'enregistrement soit terminé. Voir link:#obtaining-support-information["détails"] ci-dessous.
+Cloud Insights offre une assistance en libre-service et par e-mail lorsqu'il est exécuté en mode d'essai. Une fois que vous êtes abonné au service, il est fortement recommandé d'activer les droits de support. L'activation du support technique vous permet d'accéder au support technique via le chat en ligne, le système de gestion de tickets Web et le téléphone. Le mode d'assistance par défaut est en libre-service jusqu'à ce que l'enregistrement soit terminé. Voir <<obtaining-support-information,détails>> ci-dessous.
 
 Lors du processus d'abonnement initial, votre instance Cloud Insights génère un numéro de série à 20 chiffres dont le numéro commence par « 950 ». Ce numéro de série NetApp correspond à l'abonnement Cloud Insights associé à votre compte. Vous devez enregistrer le numéro de série NetApp pour activer les droits au support. Nous proposons deux options d'inscription aux services de support :
 

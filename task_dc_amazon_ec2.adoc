@@ -54,7 +54,7 @@ Entrez les données dans les champs du collecteur de données conformément au t
 | Région AWS | Choisissez la région AWS 
 
 
-| Rôle IAM | À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur link:task_dc_amazon_ec2.html#iam-roles["Rôles IAM"]. 
+| Rôle IAM | À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur <<iam-role,Rôle IAM>>. 
 
 
 | ID de clé d'accès IAM AWS | Entrez l'ID de clé d'accès IAM AWS. Obligatoire si vous n'utilisez pas le rôle IAM. 

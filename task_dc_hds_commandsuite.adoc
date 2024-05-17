@@ -260,6 +260,13 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : erreur de configuration : matrice de stockage non signalée par Inventory | Vérifiez si la matrice de stockage en question est configurée dans le serveur HiCommand 
 
 
-| Erreur : * aucune matrice n'est enregistrée avec la matrice CLI * Storage Navigator modulaire 2 n'est pas enregistrée avec la CLI * Storage Navigator modulaire 2 erreur de configuration : la matrice de stockage n'est pas enregistrée avec la CLI modulaire StorageNavigator | * Ouvrir l'invite de commande et passer au chemin configuré * Exécuter la commande "set=STONAVM_HOME=". * Exécutez la commande "auunitref" * Vérifiez que la sortie de la commande contient les détails de la matrice avec IP * si la sortie ne contient pas les détails de la matrice, puis enregistrez la matrice avec l'interface de ligne de commande de Storage Navigator : - Ouvrir l'invite de commande et passer au répertoire du chemin configuré - Exécuter la commande "set=STONAVM_HOME=". - Exécutez la commande « auunitaddauto -ip ${ip} ». Remplacez ${ip} par une adresse IP réelle 
+| Erreur : * aucune matrice n'est enregistrée avec la matrice CLI * Storage Navigator modulaire 2 n'est pas enregistrée avec la CLI * Storage Navigator modulaire 2 erreur de configuration : la matrice de stockage n'est pas enregistrée avec la CLI modulaire StorageNavigator | * Ouvrir l'invite de commande et changer le répertoire au chemin configuré
+* Exécutez la commande “set=STONARVM_HOME=”.
+* Exécuter la commande “auunitref”
+* Confirmez que la sortie de la commande contient les détails de la matrice avec IP
+* Si la sortie ne contient pas les détails de la matrice, enregistrez la matrice avec Storage Navigator CLI :
+    - Ouvrir l'invite de commande et changer le répertoire au chemin configuré
+    - Exécutez la commande “set=STONARVM_HOME=”.
+    - Exécutez la commande “auunitaddauto -ip <ip>”. Remplacez <ip> par le tableau de bord correct. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

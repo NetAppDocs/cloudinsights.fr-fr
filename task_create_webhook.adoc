@@ -92,7 +92,7 @@ Sur la page de liste Webhooks, sont affichés le Nom, créé par, créé le, Ét
 
 == Choix de notification Webhook dans un moniteur
 
-Pour choisir la notification du crochet Web dans un link:task_create_monitor.html#creating-a-monitor["superviser"], Accédez à *alertes > gérer les moniteurs* et sélectionnez le moniteur souhaité ou ajoutez un nouveau moniteur. Dans la section _configurer les notifications d'équipe_, choisissez _Webhook_ comme méthode de livraison. Sélectionnez les niveaux d'alerte (critique, Avertissement, résolu), puis choisissez le crochet souhaité.
+Pour choisir la notification du crochet Web dans un link:task_create_monitor.html["superviser"], Accédez à *alertes > gérer les moniteurs* et sélectionnez le moniteur souhaité ou ajoutez un nouveau moniteur. Dans la section _configurer les notifications d'équipe_, choisissez _Webhook_ comme méthode de livraison. Sélectionnez les niveaux d'alerte (critique, Avertissement, résolu), puis choisissez le crochet souhaité.
 
 image:Webhook_Monitor_Notify.png["Notification du moniteur Webhook"]
 

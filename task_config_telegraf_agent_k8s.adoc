@@ -276,7 +276,7 @@ Modifiez la configuration d'agentConfiguration dans Operator-config.yaml pour re
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name
@@ -434,7 +434,7 @@ Oct 11 14:23:41 ip-172-31-39-47 telegraf[1827]: 2021-10-11T14:23:41Z I! Démarra
 
 
 | Sur Kubernetes, mon ou mes pod(s) Telegraf signalent l'erreur suivante :
-"Erreur lors du traitement des info mountstats: Impossible d'ouvrir le fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Open /hostfs/proc/1/mountstats: Permission denied" | Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, voir : https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]. 
+"Erreur lors du traitement des info mountstats: Impossible d'ouvrir le fichier mountstats: /Hostfs/proc/1/mountstats, erreur: Open /hostfs/proc/1/mountstats: Permission denied" | Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, reportez-vous au link:task_config_telegraf_agent_k8s.html#openshift-instructions["Instructions OpenShift"]. 
 
 
 | Sur Kubernetes, mon pod ReplicaSet Telegraf rapporte l'erreur suivante :

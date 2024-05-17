@@ -133,7 +133,13 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : les pools de stockage ne signalant pas les disques sur le Service Processor à l'adresse IP configurée | Configurez le collecteur de données avec les deux adresses IP du processeur de service, séparées par une virgule 
 
 
-| Erreur : erreur de non-concordance de révision | • Cela est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage bloc VNX, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente). • Vérifiez que le périphérique et l'hôte exécutent tous les deux des versions identiques du logiciel : - Dans l'unité d'acquisition Cloud Insights, ouvrez une fenêtre de ligne de commande - modifiez le répertoire dans le répertoire d'installation configuré - effectuez une connexion avec le périphérique CLARiiON en tapant « navicli -h ${ip} getagent » - recherchez le numéro de version sur les deux premières lignes. Exemple : “Agent Rév: 6.16.2 (0.1)” - chercher et comparer la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07” 
+| Erreur : erreur de non-concordance de révision | • Cela est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage VNX Block, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente).
+• Vérifiez que le périphérique et l'hôte exécutent des versions identiques du logiciel :
+    - À partir de l'unité d'acquisition Cloud Insights, ouvrir une fenêtre de ligne de commande
+    - Modifiez le répertoire dans le répertoire d'installation configuré
+    - Établir une connexion avec le périphérique CLARiiON en tapant “navicli -h <ip> getagent”
+    - Recherchez le numéro de version sur les premières lignes. Exemple : « Agent Rev: 6.16.2 (0.1)”
+    - Chercher et comparer la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07” 
 
 
 | Erreur : configuration non prise en charge - pas de ports Fibre Channel | Le périphérique n'est configuré avec aucun port Fibre Channel. Actuellement, seules les configurations FC sont prises en charge. Vérifiez que cette version/micrologiciel est prise en charge. 
