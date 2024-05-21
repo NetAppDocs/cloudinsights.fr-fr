@@ -81,7 +81,7 @@ Déterminez si une configuration d'agentConfiguration existe avec l'opérateur e
  kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
 Si une configuration d'agentConfiguration existe :
 
-* <<installing-the-netapp-kubernetes-monitoring-operator,Installer>> Dernier opérateur par rapport à l'opérateur existant.
+* <<installing-the-kubernetes-monitoring-operator,Installer>> Dernier opérateur par rapport à l'opérateur existant.
 +
 ** Assurez-vous de l'être <<using-a-custom-or-private-docker-repository,extraction des dernières images du conteneur>> si vous utilisez un référentiel personnalisé.
 
@@ -96,8 +96,8 @@ Si AgentConfiguration n'existe pas :
 * Créer une sauvegarde de l'opérateur existant (si votre namespace n'est pas la surveillance netapp par défaut, remplacez le namespace approprié) :
 +
  kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
-* <<to-remove-the-netapp-kubernetes-monitoring-operator,Désinstaller>> L'opérateur existant.
-* <<installing-the-netapp-kubernetes-monitoring-operator,Installer>> Le dernier opérateur.
+* <<to-remove-the-kubernetes-monitoring-operator,Désinstaller>> L'opérateur existant.
+* <<installing-the-kubernetes-monitoring-operator,Installer>> Le dernier opérateur.
 +
 ** Utilisez le même nom de cluster.
 ** Après avoir téléchargé les derniers fichiers Operator YAML, porter toutes les personnalisations trouvées dans agent_backup.yaml à l'opérateur-config.yaml téléchargé avant le déploiement.
@@ -458,7 +458,7 @@ Par exemple, modifiez ReplicaSet...
  kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
  kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
 
-2. <<installing-the-netapp-kubernetes-monitoring-operator,Installer>> la dernière version du moniteur. 
+2. <<installing-the-kubernetes-monitoring-operator,Installer>> la dernière version du moniteur. 
 
 
 | J'ai rencontré des problèmes lors de la tentative de déploiement de l'opérateur, et j'ai utilisé PSP/PSA. | 1. Modifiez l'agent à l'aide de la commande suivante :
@@ -538,7 +538,7 @@ telegraf :
 | Il me manque des données _involvedobject_ pour certains journaux d'événements. | Assurez-vous d'avoir suivi les étapes de la link:pre-requisites_for_k8s_operator.html["Autorisations"] section ci-dessus. 
 
 
-| Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-netapp-kubernetes-monitoring-operator,installez le nouveau>>. 
+| Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-kubernetes-monitoring-operator,installez le nouveau>>. 
 
 
 | Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue.  a| 
@@ -557,7 +557,7 @@ fluent-bit:
     - /var/log/containers/netapp-ci-event-exporter*.log
 ...
 ....
-Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-the-netapp-kubernetes-monitoring-operator,réinstallez>> l'agent.
+Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-the-kubernetes-monitoring-operator,réinstallez>> l'agent.
 
 
 

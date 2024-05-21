@@ -1189,7 +1189,6 @@
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">Erreur : 4.29 emc235848 emc241018 getall n'a pas pu analyser les informations d'alias de l'hôte</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">Cela est probablement dû à un problème DE corruption FLARE 29 de la base de données d'initiateurs hôtes sur la baie elle-même. Consultez les articles de la base de connaissances EMC : emc235848, emc241018. Vous pouvez également vérifier<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">Erreur : impossible de récupérer les méta-LUN. Erreur lors de l'exécution de Java -jar navicli.jar</block>
-  <block id="048af5a91eb86b88a58c85caf252b7f2" category="cell">• Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé) • installer navicli.jar dans le chemin CLI à navicli.exe OU naviseccli.exe • Remarque : navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere • le navicli.jar peut être disponible sur<block ref="52ccc160ee6ad92eb3a129205f83a3c5" category="inline-link-rx"></block></block>
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">Erreur : les pools de stockage ne signalant pas les disques sur le Service Processor à l'adresse IP configurée</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">Configurez le collecteur de données avec les deux adresses IP du processeur de service, séparées par une virgule</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">Erreur : erreur de non-concordance de révision</block>
@@ -3396,7 +3395,6 @@
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">Pour accéder à ce centre de documentation, cliquez sur le lien Documentation.</block>
   <block id="7d61983c34edc2a8cabbea71c4732f62" category="inline-link-macro">NetApp</block>
-  <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
   <block id="a7a9e9720c642358ce4d75836f0323d7" category="paragraph">Cliquez sur le lien de la communauté pour accéder à la communauté NetApp Cloud Insights, qui vous permettra d'entrer en contact avec vos pairs et vos experts.</block>
   <block id="c48730cb532534ed8ded87a7e1e63743" category="inline-link-macro">* Retour*</block>
   <block id="1ee12c9d2a4f0460caa4b5f609d4b32e" category="paragraph">Il existe également un lien à fournir <block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block> Pour nous aider à améliorer Cloud Insights.</block>
@@ -3404,7 +3402,6 @@
   <block id="8af88bdd2f4549eb670a6c4568c51014" category="paragraph">Outre les options de libre-service ci-dessus, si vous disposez d'un abonnement Cloud Insights ou d'un support payant pour des produits ou services NetApp surveillés, vous pouvez vous contacter un ingénieur du support NetApp pour résoudre votre problème.</block>
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">Inscription au support Services de données cloud</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">activer le support</block>
-  <block id="cad626d3146515dadd70f1b0383e0eb2" category="admonition">Vous devez vous inscrire pour pouvoir vous inscrire à <block ref="508882d56a37a1ac140f8523d62ed3d4" category="inline-xref-macro-rx"></block> Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>.</block>
   <block id="59ec599572265c11af88366fc10b5d22" category="paragraph">Il est fortement recommandé de cocher cette case pour permettre aux ingénieurs du support NetApp d'accéder à votre environnement Cloud Insights lors de votre session de support. Ainsi, le technicien pourra résoudre le problème rapidement. Lorsque votre problème est résolu ou que votre session d'assistance a pris fin, vous pouvez décocher la case.</block>
   <block id="1178d064739e36d66d617e550b890b3c" category="paragraph">Vous pouvez demander de l'aide par l'une des méthodes suivantes. Vous devez être abonné à Cloud Insights pour pouvoir utiliser les options de support suivantes :</block>
   <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">*Téléphone*</block>
@@ -3504,7 +3501,6 @@
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">Estimer le coût de votre abonnement</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">Comment s'inscrire ?</block>
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">s'abonner vous-même</block>
-  <block id="29778014c6460acd3ebe88e1e1f1652b" category="paragraph">Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous inscrire via les équipes commerciales NetApp ou <block ref="c7602cfa7469b32fb39d8de19e42676e" category="inline-xref-macro-rx"></block> Via AWS Marketplace.</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">Abonnez-vous via NetApp Sales Direct</block>
   <block id="e3b70cffc25d522a4137f9cafd0f3c50" category="paragraph">Si le nombre d'unités gérées attendu est de 1,000 ou plus, cliquez sur le <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> Pour vous inscrire via l'équipe de vente NetApp.</block>
   <block id="1cf7fd422699345d54e2c23df79ac3a2" category="paragraph">Vous devez fournir votre numéro de série Cloud Insights * à votre ingénieur commercial NetApp afin que votre abonnement payant puisse s'appliquer à votre environnement Cloud Insights. Le numéro de série identifie de manière unique votre environnement d'essai Cloud Insights et se trouve sur la page *Admin &gt; abonnement*.</block>
@@ -5245,7 +5241,6 @@
   <block id="53b0472808dabea62502439bc14f2c4d" category="list-text">Le nom d'utilisateur doit être fourni pour le cimserver. La connexion doit disposer d'un accès complet en lecture à la configuration et aux propriétés de la matrice.</block>
   <block id="389e3a971065b48ffc3a05981fa6df88" category="list-text">Espace de noms SMI-S. La valeur par défaut est root/ibm. Ceci est configurable dans le cimserver.</block>
   <block id="3fb43ae0166a0c7258bca2e98a24ca2b" category="list-text">Configuration requise : 5988 pour HTTP, 5989 pour HTTPS.</block>
-  <block id="11c301b2ca2b5c8e4b4520a428503821" category="list-text">Pour créer un compte pour la collecte de performances SMI-S, reportez-vous au lien suivant :<block ref="449b9c51502ef7d0a14d677d1d606dd7" category="inline-link-rx"></block></block>
   <block id="341a4bf00fff7bb62ad3ac648c6ac9d4" category="cell">Adresse IP XIV</block>
   <block id="474b42a95b200cc5860646bb3c3691b2" category="cell">Adresse IP ou nom de domaine complet du stockage XIV</block>
   <block id="ae2b712c4dd6aa98dc14069f97abb853" category="cell">Nom d'utilisateur pour le stockage XIV</block>
@@ -6860,8 +6855,6 @@
   <block id="8aa90565fb34d8b0aeab74ab74ffdf4a" category="section-title">Février 2021</block>
   <block id="2a266bc5a8b07b0f2457a4df0aadfb6c" category="paragraph">L'agent pour l'ingestion de données d'intégration de telegraf a été mis à jour vers la version 1.17.0, qui inclut des correctifs de vulnérabilité et de bogues.</block>
   <block id="dc50895267bc4dee6b58ad70b85a96b9" category="section-title">Analyseur de coût du cloud</block>
-  <block id="11b5e8f0c975c40cd6464e682e336f13" category="inline-link-macro">analyse des coûts</block>
-  <block id="bcc80a36bebd03f3264a4aaa13d8a82b" category="paragraph">Découvrez la puissance de Spot by NetApp avec le coût du cloud, une solution détaillée <block ref="7b1d0f4c403bdc72ee0dc9975922d090" category="inline-link-macro-rx"></block> des dépenses passées, présentes et estimées, qui offrent une meilleure visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses du cloud ainsi qu'un aperçu détaillé des charges de travail, des comptes et des services individuels.</block>
   <block id="690e46a66b86b18e0053b85ffa67f4d8" category="paragraph">Le coût du cloud peut relever les défis majeurs suivants :</block>
   <block id="eb67bbd04d0744ceaeb4a1ecb49afecc" category="paragraph">Le coût du cloud est axé sur la surveillance. Passez au compte point complet de NetApp pour réaliser des économies automatiques et optimiser l'environnement.</block>
   <block id="f0a05082925a4e52ff224fde55a6d481" category="section-title">Recherche d'objets ayant des valeurs nulles à l'aide de filtres</block>
@@ -6976,7 +6969,6 @@
   <block id="a5667679a016ee66ef9bc45c1a173b3b" category="section-title">Décembre 2020</block>
   <block id="2b615a7f2e90071943cf38af444bddc3" category="section-title">Installation Kubernetes simplifiée</block>
   <block id="fad2f286b8862fcd3a947310f05dc816" category="inline-link-macro">Installation de l'agent Kubernetes</block>
-  <block id="67e488807bb09964f73d2e7fdb021f7a" category="paragraph">L'installation de Kubernetes Agent est rationalisée afin de réduire le nombre d'interactions entre l'utilisateur. <block ref="3777bc6c1722cb1c6ddba242b3b94c15" category="inline-link-macro-rx"></block> Inclut désormais la collecte de données Kubernetes.</block>
   <block id="0e347c50a0d60b8f46cb8c37cd3b5088" category="section-title">Novembre 2020</block>
   <block id="d9947aaf7f49e22f3949677e3c0a6a23" category="section-title">Tableaux de bord supplémentaires</block>
   <block id="2b7f89335a36359ed3085691d2f5cd6d" category="paragraph">Les nouveaux tableaux de bord ONTAP suivants ont été ajoutés à la galerie et sont disponibles à l'importation :</block>
@@ -7180,7 +7172,6 @@
   <block id="08c8691f6d02bf3d991e67f0cfbf6a14" category="section-title">Duplication simplifiée des widgets</block>
   <block id="76c3a3713f87f2eb502911d43547ba5f" category="paragraph">Il est plus simple que jamais de créer une copie d'un widget depuis le tableau de bord ou une page d'accueil. En mode Tableau de bord, cliquez sur le menu du widget et sélectionnez *Dupliquer*. L'éditeur de widget est lancé, rempli avec la configuration du widget original et avec un suffixe "copie" dans le nom du widget. Vous pouvez facilement apporter les modifications nécessaires et enregistrer le nouveau widget. Le widget sera placé au bas de votre tableau de bord et vous pouvez le positionner selon les besoins. N'oubliez pas d'enregistrer votre tableau de bord lorsque toutes les modifications sont terminées.</block>
   <block id="48bddfb993c982287aecbed4fe284efe" category="inline-link-macro">Authentification unique</block>
-  <block id="a3516ed3470691df24f62296c61b5a09" category="paragraph">Avec Cloud Insights Premium Edition, les administrateurs peuvent activer *<block ref="f2c5efb9cc6ea11069356a919f3b9d88" category="inline-link-macro-rx"></block>* (SSO) accès à Cloud Insights pour tous les utilisateurs de leur domaine d'entreprise, sans avoir à les inviter individuellement. Avec SSO activé, tous les utilisateurs disposant de la même adresse e-mail de domaine peuvent se connecter à Cloud Insights à l'aide de leurs informations d'identification d'entreprise.</block>
   <block id="0d34e9c21a13cf4c27d88185c745fbfa" category="admonition">SSO n'est disponible que dans Cloud Insights Premium Edition et doit être configuré avant de pouvoir être activé pour Cloud Insights. La configuration SSO inclut <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> Par le biais de NetApp Cloud Central. La fédération permet aux utilisateurs de Single Sign-on d'accéder à vos comptes NetApp Cloud Central à l'aide des identifiants de votre annuaire d'entreprise.</block>
   <block id="d835981d77534f5f20446d4648ad7e5b" category="section-title">Janvier 2020</block>
   <block id="2cc7e858ba807100ff4baef8dd609c4c" category="section-title">Documentation swagger pour l'API REST</block>
@@ -7216,7 +7207,6 @@
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">Novembre 2019</block>
   <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">Editions la table de comparaison des fonctionnalités</block>
   <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">tableau comparatif</block>
-  <block id="3dd10079e95ba50871a5ab5215dce86e" category="paragraph">La page *Admin &gt; abonnement* <block ref="0d2c63a7998c59da36d6389e14580db4" category="inline-link-macro-rx"></block> A été mis à jour pour répertorier les ensembles de fonctionnalités disponibles dans les éditions Basic, Standard et Premium de Cloud Insights. NetApp améliore constamment ses services clouds. Aussi, consultez régulièrement cette page pour trouver l'édition qui répond le mieux à l'évolution de vos besoins.</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">Octobre 2019</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">*Rapport Cloud Insights*</block>
   <block id="bf477952b52b01fceb367c01be571adb" category="paragraph"><block ref="b7cfc719aea5efd14bf49a060e3d8bab" category="inline-link-macro-rx"></block> est un outil de veille stratégique qui vous permet d'afficher des rapports prédéfinis ou de créer des rapports personnalisés. Avec le système de rapports, vous pouvez effectuer les tâches suivantes :</block>
@@ -7310,7 +7300,6 @@
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link-macro">Azure</block>
   <block id="0258c52d81b28196d9cbe098b4856a2f" category="list-text"><block ref="0258c52d81b28196d9cbe098b4856a2f" category="inline-link-macro-rx"></block></block>
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="inline-link-macro">Google Cloud Platform</block>
-  <block id="72c552fb4cd87641ab3c9f8cf214eb84" category="list-text"><block ref="72c552fb4cd87641ab3c9f8cf214eb84" category="inline-link-macro-rx"></block></block>
   <block id="692664770412ddd705b7f413cee7d6fb" category="section-title">Mars 2019</block>
   <block id="3601f99e8d21385b2b03f7fab345b666" category="section-title">Notifications par e-mail pour les événements liés à un abonnement</block>
   <block id="f37bd2f66651e7d46f6d38440f2bc5dd" category="inline-link-macro">notifications</block>
@@ -7322,7 +7311,6 @@
   <block id="6a32031ac9a48d2cec00a754d1a57961" category="list-text">Performances de l'instance AWS EC2 par région</block>
   <block id="faae77443f7a8406deaf55c3795ace10" category="section-title">Février 2019</block>
   <block id="433984394960c952a78e6fd7daed6948" category="inline-link-macro">Collection de comptes enfants AWS</block>
-  <block id="594a73585fb2101d0cd4e1fe43e9ce13" category="list-text">Prise en charge de Cloud Insights <block ref="226fd2eb507f3c50c07835ace6fcdf92" category="inline-link-macro-rx"></block> dans un seul collecteur de données. Votre environnement AWS doit être configuré de sorte que Cloud Insights puisse collecter des données auprès de comptes enfants.</block>
   <block id="d6d43bf1a9a7a5440ae98da79a4d974f" category="section-title">Dénomination du Data Collector</block>
   <block id="26d7394791900bc730455fc0d475c6ea" category="list-text">Les noms de Data Collector peuvent maintenant inclure des points (.), des tirets (-) et des espaces ( ) en plus de lettres, des chiffres et des traits de soulignement. Les noms ne peuvent pas commencer ou se terminer par un espace, un point ou un tiret.</block>
   <block id="9d82d310bac0f9ae47be63a87775a97d" category="section-title">Unité d'acquisition pour Windows</block>
@@ -8899,11 +8887,6 @@
   <block id="9a2fea05fffd9db96b4c1b56a8565c0f" category="list-text">Je suis inscrit. Que dois-je faire maintenant ?<block ref="cbfa9b616716f21245fe15dc5f968c06" category="inline-link-macro-rx"></block>
 <block ref="781d4ec8a1ed10dd5e5e73381919382f" category="inline-link-macro-rx"></block></block>
   <block id="1f3aee47e5a067de1cdceffdeaa16afa" category="inline-link-macro">Sécurisation des données</block>
-  <block id="b3686203dff26adb25b86088bb90a8a9" category="list-text">Génial ! Et la suite ?<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
-<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
-<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
-<block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block>
-<block ref="736f96cf0a6accc6598879f4794392e1" category="inline-link-macro-rx"></block></block>
   <block id="f22fe88435293fe687ec1e801a002593" category="list-text">C'est super ! Je suis prêt à <block ref="ba6df6766cca6593f2f22c86bc0c10f1" category="inline-link-macro-rx"></block>.</block>
   <block id="1bad96ad9051405457c7ba247f0febab" category="admonition">Ce collecteur de données est <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block>.</block>
   <block id="069a2016d54bf7b98ce327edac1bcc77" category="section-title">Moniteurs d'alimentation, de fréquence cardiaque et divers systèmes supplémentaires</block>
@@ -8979,7 +8962,6 @@
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">Notez que certains de ces moniteurs seront _activés_ par défaut ; vous devez les _mettre_ en pause si vous ne souhaitez pas les alerter. Notez également que ces moniteurs ne sont pas configurés pour transmettre des notifications. Vous devez configurer les destinataires de notification sur ces moniteurs si vous souhaitez envoyer des alertes par e-mail ou via webhook.</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">Exportation .CSV pour tous les widgets de la table du tableau de bord</block>
   <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">icône d'exportation .csv</block>
-  <block id="44d9011c39c37e8f6a446942bc615548" category="paragraph">Il est essentiel de garantir l'accessibilité de vos données, aussi nous avons réalisé l'exportation au format .CSV <block ref="c41d9af9fc2647da102c1cb100d033ea" category="inline-image-macro-rx" type="image"></block> disponible pour toutes les requêtes de mesures, les widgets de tableau de bord et les pages d'arrivée d'objets, quel que soit le type de données (ressource ou intégration) que vous interrorez.</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">Les personnalisations de données telles que la sélection de colonnes, le changement de nom des colonnes et les conversions d'unités sont désormais incluses dans la nouvelle fonctionnalité d'exportation.</block>
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">Connectez-vous à Cloud Insights.</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">L'exportation au format .CSV est également disponible dans le menu « trois points » des widgets de tableau de bord, ainsi que dans la plupart des tables de pages d'accueil.</block>
@@ -9710,7 +9692,6 @@
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">Les e-mails de notification sont envoyés depuis le domaine NetApp Cloud Insights, c'est-à-dire depuis _accounts@service.cloudinsights.netapp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Cloud Insights sont blanches.</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin &gt; Automated Response Policies* et cliquez sur le bouton *+Policy* approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f54630a238a2ce40ac5742f2df04227" category="list-text">Créez un compte sur <block ref="b7d0b9f9f12fc76a51e1b13d72622a5b" category="inline-link-macro-rx"></block> Accédez à toutes les offres cloud de NetApp.</block>
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> direct ou <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>.</block>
   <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights. L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Tarifs Cloud Insights</block>
@@ -11896,15 +11877,12 @@ La saturation des processeurs du cluster est calculée comme la somme de l'utili
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">Revenir au <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Déterminez si une configuration d'agentConfiguration existe avec l'opérateur existant (si votre espace de noms n'est pas le _netapp-monitoring_ par défaut, remplacez l'espace de noms approprié) :</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Si une configuration d'agentConfiguration existe :</block>
-  <block id="7f7436ae77d35f1d44077fc6a514e554" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> Dernier opérateur par rapport à l'opérateur existant.</block>
   <block id="f60428f53f8ec06db7eeb3c6dc8a3ec1" category="inline-xref">extraction des dernières images du conteneur</block>
   <block id="727021f9728a61f5f57027c22e99ed17" category="list-text">Assurez-vous de l'être <block ref="70886476cda3a9669d1d2ba99218e076" category="inline-xref-macro-rx"></block> si vous utilisez un référentiel personnalisé.</block>
   <block id="a7e8df3295c386ff0d7a33ebd0ce4762" category="paragraph">Si AgentConfiguration n'existe pas :</block>
   <block id="62648df30f88e4c53ea40e1b390e145a" category="list-text">Notez le nom de votre cluster tel que reconnu par Cloud Insights (si votre espace de noms n'est pas la surveillance netapp par défaut, remplacez l'espace de noms approprié) :</block>
   <block id="af43624bdc80303ec074448a745b7a3c" category="list-text">Créer une sauvegarde de l'opérateur existant (si votre namespace n'est pas la surveillance netapp par défaut, remplacez le namespace approprié) :</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">Désinstaller</block>
-  <block id="9fc345bef178837fdc05e65957ebec12" category="list-text"><block ref="202bdd2c16e54d75fc99028d87bc1bc6" category="inline-xref-macro-rx"></block> L'opérateur existant.</block>
-  <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> Le dernier opérateur.</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">Utilisez le même nom de cluster.</block>
   <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">Après avoir téléchargé les derniers fichiers Operator YAML, porter toutes les personnalisations trouvées dans agent_backup.yaml à l'opérateur-config.yaml téléchargé avant le déploiement.</block>
   <block id="c2aaea4dacecce78b34302e41fcef75e" category="section-title">Désinstallation</block>
@@ -12043,11 +12021,9 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
   <block id="5e77ada1a807785ef1b03c3f1b96779c" category="cell">Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-&lt;pod&gt; et l'autre Monitoring-Operator-&lt;pod&gt; ?</block>
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">retirez l'ancien opérateur</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">installez le nouveau</block>
-  <block id="e7d6cf6485500824df0535ac307eb301" category="cell">Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> et <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>.</block>
   <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">Un agent peut prendre en charge jusqu'à 50 collecteurs de données.</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">Exécutez la commande suivante :</block>
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">A) utilisez ce tableau comme guide de dimensionnement général. Vous pouvez augmenter le nombre de cœurs et/ou de mémoire pour augmenter le nombre de collecteurs de données pris en charge, jusqu'à un maximum de 50 collecteurs de données :</block>
-  <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">Les administrateurs et les propriétaires de compte ont désormais la possibilité de <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> aux domaines de messagerie qu'ils spécifient. Accédez à *Admin &gt; gestion des utilisateurs* et sélectionnez le bouton _restreindre les domaines_.</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">Rôles et règles</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">Temps de conservation des données et temps de sous-échantillonnage expliqués</block>
@@ -12327,7 +12303,6 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">Vous définissez les applications que vous appliquez ensuite aux ressources de votre environnement selon les besoins.</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">Récupérer le nom du pod Event-exportateur :</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">Il doit être « netapp-ci-event-exportatrice » ou « event-exportatrice ».  Modifiez ensuite l'agent de surveillance<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Et définissez la valeur de LOG_FILE pour qu'elle reflète le nom de pod d'exportation d'événements approprié trouvé à l'étape précédente.  Plus précisément, LOG_FILE doit être défini sur «/var/log/containers/netapp-ci-event-exportatrice.log » ou «/var/log/containers/event-exportatrice*.log ».</block>
-  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> l'agent.</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">Remarque sur les secrets</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">S'il s'agit d'une mise à niveau, supprimez également les ressources de votre cluster :</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">Si l'option analyse des modifications est activée, modifiez _AgentConfiguration_ ou _Operator-config.yaml_ pour annuler le commentaire de la section de gestion des modifications et incluez _kindsToIgnoreFromWatch: '"secrets"'_ dans la section de gestion des modifications. Notez la présence et la position des guillemets simples et doubles dans cette ligne.</block>
@@ -12338,7 +12313,6 @@ Effectuez les étapes ci-dessous avant d'ajouter le collecteur de données à l'
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">Identification Data Domain</block>
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">Le collecteur Data Domain a été amélioré afin de mieux identifier les systèmes haute disponibilité pour la durabilité lors des événements de basculement. Cette modification entraînera une réidentification *unique* des appliances Data Domain dans les systèmes haute disponibilité, ce qui entraînera la suppression des annotations sur ces ressources (car ces baies seront réidentifiées). Vous devrez rattacher des annotations à vos objets Data Domain.</block>
-  <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.</block>
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">Workload Security s'intègre à ONTAP pour recevoir les événements de refus d'accès et fournir une couche d'analytique et de réponses automatique supplémentaire.</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">Intégration avec l'accès ONTAP refusée</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">La fonction ONTAP de refus d'accès utilise l'analyse de la charge de travail dans les environnements NAS (NFS et SMB) pour détecter de manière proactive les opérations de fichiers qui ont échoué et pour signaler ces échecs (c'est-à-dire qu'un utilisateur tente d'effectuer une opération pour laquelle il n'a pas l'autorisation nécessaire). Ces notifications d'échec d'opération de fichier, en particulier en cas de défaillances liées à la sécurité, aideront encore davantage à bloquer les attaques internes dès les premiers stades.</block>
@@ -12518,7 +12492,6 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">Blocage de l'accès utilisateur</block>
-  <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">Gardez les points suivants à l'esprit pendant <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>:</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">Migration</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">Pour migrer d'un précédent collecteur de données ONTAP (ontapi) vers le nouveau collecteur de données REST ONTAP, procédez comme suit :</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual machine/Vserver</block>
@@ -12703,7 +12676,6 @@ Rancher + bovin.io comme plateforme d'orchestration/Kubernetes : bovin.io/os = l
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">Connectivité</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">Jeton d'API</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">Si vous redéployez l'opérateur (c'est-à-dire que vous le mettez à jour ou le remplacez), il n'est pas nécessaire de créer un nouveau jeton d'API ; vous pouvez réutiliser le jeton précédent.</block>
-  <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
   <block id="6a2947f7e89b5053f53a29320e46a462" category="paragraph">L'opérateur de surveillance Kubernetes installe automatiquement des metrics kube-state. Aucune interaction de l'utilisateur n'est nécessaire.</block>
   <block id="9c2506e67ece46fad96ea50d91339c89" category="paragraph">Cloud Insights propose l'opérateur de surveillance * Kubernetes pour la collection Kubernetes. Accédez à *Kubernetes &gt; Collectors &gt; +Kubernetes Collector* pour déployer un nouvel opérateur.</block>
   <block id="ef9cae2862d53687ca6c708bce978631" category="section-title">Avant d'installer l'opérateur de surveillance Kubernetes</block>
@@ -12744,17 +12716,6 @@ Rancher + bovin.io comme plateforme d'orchestration/Kubernetes : bovin.io/os = l
   <block id="1f1cd41335301b707232462ccfe6641a" category="paragraph">Par défaut, l'opérateur de surveillance Kubernetes extrait les images du conteneur du référentiel Cloud Insights. Si vous utilisez un cluster Kubernetes comme cible pour la surveillance et que ce cluster est configuré pour extraire uniquement les images de conteneur à partir d'un référentiel Docker personnalisé ou privé ou d'un registre de conteneurs, vous devez configurer l'accès aux conteneurs requis par l'opérateur de surveillance Kubernetes.</block>
   <block id="bd0f62d92c7b0e5d6e74b4447418c58b" category="paragraph">Pour supprimer l'autorisation pour l'opérateur de surveillance Kubernetes d'afficher les secrets à l'échelle du cluster, supprimez les ressources suivantes du fichier _Operator-setup.yaml_ avant d'installer :</block>
   <block id="5961d0092306c169d325c3e662030e8e" category="paragraph">Voici quelques points à essayer en cas de problème lors de la configuration de l'opérateur de surveillance Kubernetes :</block>
-  <block id="909f5f4ab6355c685c77bc41c8507d3c" category="cell">Si votre cluster Kubernetes s'exécute avec la règle de sécurité Pod (PSP) ou l'admission de sécurité Pod (PSA) sur place, vous devez effectuer la mise à niveau vers l'opérateur de surveillance Kubernetes le plus récent. Procédez comme suit pour effectuer la mise à niveau vers l'opérateur actuel avec prise en charge de PSP/PSA :
-
-1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> l'opérateur de surveillance précédent :
-
- kubectl delete agent agent-monitoring-netapp -n netapp-monitoring
- kubectl delete ns netapp-monitoring
- kubectl delete crd agents.monitoring.netapp.com
- kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
- kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
-
-2. <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> la dernière version du moniteur.</block>
   <block id="b10669273dd57c8fd5d2fe2a3b97e299" category="cell">J'ai rencontré des problèmes lors de la tentative de déploiement de l'opérateur, et j'ai utilisé PSP/PSA.</block>
   <block id="f005ad36a865e60c2f589a58c0daafa5" category="cell">1. Modifiez l'agent à l'aide de la commande suivante :
 
@@ -12874,7 +12835,6 @@ Dans Firefox, les exceptions relatives aux cookies sont désignées simplement p
   <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">Si vous utilisez un <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>, ont un <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>, ou utilisent <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>, lisez attentivement les sections suivantes.</block>
   <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">Lisez également à propos de <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>.</block>
-  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">Si vous effectuez une mise à niveau à partir d'une installation précédente, lisez le <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> informations.</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">Pour installer l'opérateur NetApp Kubernetes Monitoring, vous pouvez utiliser un proxy dans votre environnement. Il peut s'agir de systèmes proxy identiques ou distincts :</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Si vous utilisez un proxy pour l'une ou l'autre de ces opérations, ou pour les deux, vous NetApp devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Cloud Insights. Par exemple, à partir des serveurs/machines virtuelles à partir desquels vous souhaitez installer l'opérateur, vous devez pouvoir accéder à Cloud Insights et télécharger des binaires à partir de Cloud Insights.</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">Pour le proxy utilisé pour installer le moniteur d'exploitation NetApp Kubernetes, définissez les variables d'environnement _http_proxy/https_proxy_ avant d'installer l'opérateur. Pour certains environnements proxy, il peut être nécessaire de définir la variable _no_proxy Environment_.</block>
@@ -13036,7 +12996,6 @@ Pour un audit et un reporting précis des données, synchronisez l'heure sur la 
     - Exécutez la commande “set=STONARVM_HOME=”.
     - Exécutez la commande “auunitaddauto -ip &lt;ip&gt;”. Remplacez &lt;ip&gt; par le tableau de bord correct.</block>
   <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">*Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>.</block>
-  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">L'utilisateur qui a accédé à l'entité avec un lien vers le <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>.</block>
   <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">Chemin d'accès à l'entité avec un lien vers le <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
   <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">Cloud Insights offre une assistance en libre-service et par e-mail lorsqu'il est exécuté en mode d'essai. Une fois que vous êtes abonné au service, il est fortement recommandé d'activer les droits de support. L'activation du support technique vous permet d'accéder au support technique via le chat en ligne, le système de gestion de tickets Web et le téléphone. Le mode d'assistance par défaut est en libre-service jusqu'à ce que l'enregistrement soit terminé. Voir <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> ci-dessous.</block>
   <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* Vérifier les informations d'identification et l'adresse IP saisies.
@@ -13105,4 +13064,47 @@ Root@acquisition Unit# curl -s -H Accept:application/json -H « Content-type: Ap
 
 Voir ceci <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>.</block>
   <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">Dans les environnements Kubernetes mutualisés, les pannes peuvent se produire en raison de modifications mal configurées. L'analyse des changements permet d'y apporter une solution en fournissant une seule interface pour afficher et mettre en corrélation l'état des workloads et les modifications de configuration. Cela peut vous aider dans le dépannage des environnements Kubernetes dynamiques.</block>
+  <block id="44b44ec49661da05e81e9deacf4859c9" category="list-text">Génial ! Et la suite ?
+<block ref="30a61035c14bad051f5a421dfd3d3693" category="inline-link-macro-rx"></block>
+<block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
+<block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
+<block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
+<block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
+  <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">Pour créer un compte pour la collecte de performances SMI-S, reportez-vous au lien suivant :<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
+  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">• Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé)
+• Installez navicli.jar dans le chemin CLI vers navicli.exe OU naviseccli.exe
+• Remarque : navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere
+• Le navicli.jar peut être disponible sur \http://powerlink.emc.com</block>
+  <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> Dernier opérateur par rapport à l'opérateur existant.</block>
+  <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> L'opérateur existant.</block>
+  <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> Le dernier opérateur.</block>
+  <block id="55b27691d4a3ba1d0f59fb6a06ac2e22" category="cell">Si votre cluster Kubernetes s'exécute avec la règle de sécurité Pod (PSP) ou l'admission de sécurité Pod (PSA) sur place, vous devez effectuer la mise à niveau vers l'opérateur de surveillance Kubernetes le plus récent. Procédez comme suit pour effectuer la mise à niveau vers l'opérateur actuel avec prise en charge de PSP/PSA :
+
+1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> l'opérateur de surveillance précédent :
+
+ kubectl delete agent agent-monitoring-netapp -n netapp-monitoring
+ kubectl delete ns netapp-monitoring
+ kubectl delete crd agents.monitoring.netapp.com
+ kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+
+2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> la dernière version du moniteur.</block>
+  <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> et <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">Vous pouvez également le faire <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> et <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> l'agent.</block>
+  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.</block>
+  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.</block>
+  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">Il est essentiel de garantir l'accessibilité de vos données, aussi nous avons réalisé l'exportation au format .CSV <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> disponible pour toutes les requêtes de mesures, les widgets de tableau de bord et les pages d'arrivée d'objets, quel que soit le type de données (ressource ou intégration) que vous interrorez.</block>
+  <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">Bénéficiez de la puissance de Spot by NetApp avec le coût du cloud, qui fournit une analyse détaillée des coûts des dépenses passées, présentes et estimées, afin de bénéficier d'une meilleure visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses du cloud ainsi qu'un aperçu détaillé des charges de travail, des comptes et des services individuels.</block>
+  <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">L'installation de Kubernetes Agent est rationalisée afin de réduire le nombre d'interactions entre l'utilisateur. <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> Inclut désormais la collecte de données Kubernetes.</block>
+  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">Avec Cloud Insights Premium Edition, les administrateurs peuvent activer *<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>* (SSO) accès à Cloud Insights pour tous les utilisateurs de leur domaine d'entreprise, sans avoir à les inviter individuellement. Avec SSO activé, tous les utilisateurs disposant de la même adresse e-mail de domaine peuvent se connecter à Cloud Insights à l'aide de leurs informations d'identification d'entreprise.</block>
+  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">La page *Admin &gt; abonnement* <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> A été mis à jour pour répertorier les ensembles de fonctionnalités disponibles dans les éditions Basic, Standard et Premium de Cloud Insights. NetApp améliore constamment ses services clouds. Aussi, consultez régulièrement cette page pour trouver l'édition qui répond le mieux à l'évolution de vos besoins.</block>
+  <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
+  <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">Prise en charge de Cloud Insights <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> dans un seul collecteur de données. Votre environnement AWS doit être configuré de sorte que Cloud Insights puisse collecter des données auprès de comptes enfants.</block>
+  <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">Créez un compte sur <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> Accédez à toutes les offres cloud de NetApp.</block>
+  <block id="ab5e9545afec38b9d4cc8cb1f64b1a59" category="paragraph">Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous inscrire via les équipes commerciales NetApp ou <block ref="5ef09ccc45a6e1ddce52b5a69393ce8f" category="inline-xref-macro-rx"></block> Via AWS Marketplace.</block>
+  <block id="c74bfaee9dd9d6bc97968a50b9386641" category="cell"><block ref="c74bfaee9dd9d6bc97968a50b9386641" category="inline-link-macro-rx"></block></block>
+  <block id="936c9a2cee3c5dc4479213c8279d9a02" category="list-text">L'utilisateur qui a accédé à l'entité avec un lien vers le <block ref="82b8f427f7bb55fa43068f2e0e5af588" category="inline-link-macro-rx"></block>.</block>
+  <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
+  <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">Vous devez vous inscrire pour pouvoir vous inscrire à <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>.</block>
+  <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">Gardez les points suivants à l'esprit pendant <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>:</block>
 </blocks>

@@ -95,13 +95,11 @@ Ces options d'assistance sont disponibles en mode d'essai et sont disponibles gr
 +
 Cliquez sur les liens de cette section pour accéder à la base de connaissances NetApp. Vous pouvez rechercher des articles pertinents et des méthodes d'utilisation, et plus encore.
 
-
-
 * *link:https://docs.netapp.com/us-en/cloudinsights/["Documentation"]*
 +
 Pour accéder à ce centre de documentation, cliquez sur le lien Documentation.
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["NetApp"]*
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["NetApp"]*
 +
 Cliquez sur le lien de la communauté pour accéder à la communauté NetApp Cloud Insights, qui vous permettra d'entrer en contact avec vos pairs et vos experts.
 
@@ -116,7 +114,7 @@ Il existe également un lien à fournir link:mailto:ng-cloudinsights-customerfee
 Outre les options de libre-service ci-dessus, si vous disposez d'un abonnement Cloud Insights ou d'un support payant pour des produits ou services NetApp surveillés, vous pouvez vous contacter un ingénieur du support NetApp pour résoudre votre problème.
 
 
-NOTE: Vous devez vous inscrire pour pouvoir vous inscrire à <<Activating support entitlement and accessing support,activer le support>> Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de link:https://register.netapp.com["Inscription au support Services de données cloud"].
+NOTE: Vous devez vous inscrire pour pouvoir vous inscrire à <<activating-support-entitlement,activer le support>> Pour les produits cloud NetApp. Pour vous inscrire, accédez à la page de link:https://register.netapp.com["Inscription au support Services de données cloud"].
 
 Il est fortement recommandé de cocher cette case pour permettre aux ingénieurs du support NetApp d'accéder à votre environnement Cloud Insights lors de votre session de support. Ainsi, le technicien pourra résoudre le problème rapidement. Lorsque votre problème est résolu ou que votre session d'assistance a pris fin, vous pouvez décocher la case.
 

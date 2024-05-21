@@ -24,7 +24,7 @@ La page activité utilisateur vous aide à comprendre les actions effectuées pa
 Les données disponibles dans cette page, décrit :
 
 * Heure d'accès de l'entité, mois, jour, année et heure compris.
-* L'utilisateur qui a accédé à l'entité avec un lien vers le link:forensic_user_detail.html["Données détaillées utilisateur"].
+* L'utilisateur qui a accédé à l'entité avec un lien vers le link:forensic_user_overview.html["Données détaillées utilisateur"].
 * L'activité effectuée par l'utilisateur :
 +
 ** Écriture

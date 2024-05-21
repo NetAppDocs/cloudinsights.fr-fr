@@ -138,7 +138,7 @@ Dans les environnements de grande taille, vous pouvez automatiser la création d
 
 === Essayez des fonctionnalités Cloud Insights que vous n'avez pas encore utilisées
 
-En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.
+En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-evaluation["Évaluation du module"]. Par exemple, si vous êtes abonné à Cloud Insights et que vous avez surveillé le stockage et les machines virtuelles, lorsque vous ajoutez Kubernetes à votre environnement, vous essai automatique de 30 jours de l'observabilité Kubernetes. L'utilisation d'unités gérées d'observabilité Kubernetes ne compte pas sur vos droits souscrits avant la fin de la période d'essai.
 
 
 
@@ -305,7 +305,7 @@ La sécurité des charges de travail a été améliorée grâce aux éléments s
 
 === Essais de module
 
-En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-trials["Essais de module"]. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
+En plus de votre essai initial de Cloud Insights, vous pouvez également profiter de link:concept_subscribing_to_cloud_insights.html#module-evaluation["Évaluation du module"]. Par exemple, si vous êtes déjà abonné à l'observabilité de l'infrastructure, mais que vous ajoutez Kubernetes à votre environnement, vous exécuterez automatiquement un essai de 30 jours de l'observabilité Kubernetes. Vous ne serez facturé que pour l'utilisation de votre unité gérée d'observabilité Kubernetes à la fin de la période d'essai.
 
 
 
@@ -767,7 +767,7 @@ Notez que certains de ces moniteurs seront _activés_ par défaut ; vous devez l
 
 === Exportation .CSV pour tous les widgets de la table du tableau de bord
 
-Il est essentiel de garantir l'accessibilité de vos données, aussi nous avons réalisé l'exportation au format .CSV image:csv_export_icon["icône d'exportation .csv"] disponible pour toutes les requêtes de mesures, les widgets de tableau de bord et les pages d'arrivée d'objets, quel que soit le type de données (ressource ou intégration) que vous interrorez.
+Il est essentiel de garantir l'accessibilité de vos données, aussi nous avons réalisé l'exportation au format .CSV image:csv_export_icon.png["icône d'exportation .csv"] disponible pour toutes les requêtes de mesures, les widgets de tableau de bord et les pages d'arrivée d'objets, quel que soit le type de données (ressource ou intégration) que vous interrorez.
 
 Les personnalisations de données telles que la sélection de colonnes, le changement de nom des colonnes et les conversions d'unités sont désormais incluses dans la nouvelle fonctionnalité d'exportation.
 
@@ -1784,7 +1784,7 @@ L'agent pour l'ingestion de données d'intégration de telegraf a été mis à j
 
 === Analyseur de coût du cloud
 
-Découvrez la puissance de Spot by NetApp avec le coût du cloud, une solution détaillée link:http://docs.netapp.com/us-en/cloudinsights/task_getting_started_with_cloud_cost.html["analyse des coûts"] des dépenses passées, présentes et estimées, qui offrent une meilleure visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses du cloud ainsi qu'un aperçu détaillé des charges de travail, des comptes et des services individuels.
+Bénéficiez de la puissance de Spot by NetApp avec le coût du cloud, qui fournit une analyse détaillée des coûts des dépenses passées, présentes et estimées, afin de bénéficier d'une meilleure visibilité sur l'utilisation du cloud dans votre environnement. Le tableau de bord des coûts du cloud offre une vue claire des dépenses du cloud ainsi qu'un aperçu détaillé des charges de travail, des comptes et des services individuels.
 
 Le coût du cloud peut relever les défis majeurs suivants :
 
@@ -1984,7 +1984,7 @@ image:Kubernetes_Cluster_Detail_Example.png["L'explorateur Kubernetes"]
 
 === Installation Kubernetes simplifiée
 
-L'installation de Kubernetes Agent est rationalisée afin de réduire le nombre d'interactions entre l'utilisateur. link:task_config_telegraf_agent.html#kubernetes["Installation de l'agent Kubernetes"] Inclut désormais la collecte de données Kubernetes.
+L'installation de Kubernetes Agent est rationalisée afin de réduire le nombre d'interactions entre l'utilisateur. link:task_config_telegraf_agent_k8s.html["Installation de l'agent Kubernetes"] Inclut désormais la collecte de données Kubernetes.
 
 '''
 
@@ -2492,7 +2492,7 @@ image:DuplicateWidget.png["Dupliquer un widget"]
 
 === Authentification unique (SSO)
 
-Avec Cloud Insights Premium Edition, les administrateurs peuvent activer *link:concept_user_roles.html#single-sign-on-sso-accounts["Authentification unique"]* (SSO) accès à Cloud Insights pour tous les utilisateurs de leur domaine d'entreprise, sans avoir à les inviter individuellement. Avec SSO activé, tous les utilisateurs disposant de la même adresse e-mail de domaine peuvent se connecter à Cloud Insights à l'aide de leurs informations d'identification d'entreprise.
+Avec Cloud Insights Premium Edition, les administrateurs peuvent activer *link:concept_user_roles.html["Authentification unique"]* (SSO) accès à Cloud Insights pour tous les utilisateurs de leur domaine d'entreprise, sans avoir à les inviter individuellement. Avec SSO activé, tous les utilisateurs disposant de la même adresse e-mail de domaine peuvent se connecter à Cloud Insights à l'aide de leurs informations d'identification d'entreprise.
 
 
 NOTE: SSO n'est disponible que dans Cloud Insights Premium Edition et doit être configuré avant de pouvoir être activé pour Cloud Insights. La configuration SSO inclut link:https://services.cloud.netapp.com/misc/federation-support["Fédération des identités"] Par le biais de NetApp Cloud Central. La fédération permet aux utilisateurs de Single Sign-on d'accéder à vos comptes NetApp Cloud Central à l'aide des identifiants de votre annuaire d'entreprise.
@@ -2590,7 +2590,7 @@ Cette modification double de manière efficace la capacité de l'environnement q
 
 === Editions la table de comparaison des fonctionnalités
 
-La page *Admin > abonnement* link:concept_subscribing_to_cloud_insights.html#key-features["tableau comparatif"] A été mis à jour pour répertorier les ensembles de fonctionnalités disponibles dans les éditions Basic, Standard et Premium de Cloud Insights. NetApp améliore constamment ses services clouds. Aussi, consultez régulièrement cette page pour trouver l'édition qui répond le mieux à l'évolution de vos besoins.
+La page *Admin > abonnement* link:concept_subscribing_to_cloud_insights.html["tableau comparatif"] A été mis à jour pour répertorier les ensembles de fonctionnalités disponibles dans les éditions Basic, Standard et Premium de Cloud Insights. NetApp améliore constamment ses services clouds. Aussi, consultez régulièrement cette page pour trouver l'édition qui répond le mieux à l'évolution de vos besoins.
 
 '''
 
@@ -2803,7 +2803,7 @@ Lors de la configuration des collecteurs de données suivants, vous pouvez filtr
 
 * link:task_dc_amazon_ec2.html#advanced-configuration["Amazon EC2"]
 * link:task_dc_ms_azure.html#advanced-configuration["Azure"]
-* link:task_dc_google_cloud.html#advanced_configuration["Google Cloud Platform"]
+* link:task_dc_google_cloud.html#advanced-configuration["Google Cloud Platform"]
 
 
 '''
@@ -2845,7 +2845,7 @@ Lors de la configuration des collecteurs de données suivants, vous pouvez filtr
 
 === Collecte depuis les comptes enfants AWS
 
-* Prise en charge de Cloud Insights link:task_dc_amazon_ec2.html#collecting_from_aws_child_accounts["Collection de comptes enfants AWS"] dans un seul collecteur de données. Votre environnement AWS doit être configuré de sorte que Cloud Insights puisse collecter des données auprès de comptes enfants.
+* Prise en charge de Cloud Insights link:task_dc_amazon_ec2.html#collecting-from-aws-child-accounts["Collection de comptes enfants AWS"] dans un seul collecteur de données. Votre environnement AWS doit être configuré de sorte que Cloud Insights puisse collecter des données auprès de comptes enfants.
 
 
 

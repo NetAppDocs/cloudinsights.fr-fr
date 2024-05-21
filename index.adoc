@@ -46,10 +46,11 @@ Cloud Insights offre un contrôle multicloud hybride tout en garantissant l'obse
 * Comment faire link:task_cloud_insights_onboarding_1.html["*lancez-vous*"] Avec Cloud Insights ?
 * Je suis inscrit. Que dois-je faire maintenant ?link:task_getting_started_with_cloud_insights.html["Acquisition des données"]
 link:concept_user_roles.html["Configuration des utilisateurs"]
-* Génial ! Et la suite ?link:task_defining_annotations.html["Préparation des ressources : annotation"]
+* Génial ! Et la suite ?
+link:task_defining_annotations.html["Préparation des ressources : annotation"]
 link:concept_querying_assets.html["Recherche des ressources que vous voulez : interrogation"]
 link:concept_dashboards_overview.html["Voir les données que vous voulez : tableaux de bord"]
-link:https:task_create_monitor.html["Surveillance et alertes"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["Sécurisation des données"]
+link:task_create_monitor.html["Surveillance et alertes"]
+link:task_cs_getting_started.html["Sécurisation des données"]
 * C'est super ! Je suis prêt à link:concept_subscribing_to_cloud_insights.html["*abonnez-vous*"].
 

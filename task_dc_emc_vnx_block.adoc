@@ -127,7 +127,10 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : 4.29 emc235848 emc241018 getall n'a pas pu analyser les informations d'alias de l'hôte | Cela est probablement dû à un problème DE corruption FLARE 29 de la base de données d'initiateurs hôtes sur la baie elle-même. Consultez les articles de la base de connaissances EMC : emc235848, emc241018. Vous pouvez également vérifier https://now.netapp.com/Knowledgebase/solutionarea.asp?id=kb58128[] 
 
 
-| Erreur : impossible de récupérer les méta-LUN. Erreur lors de l'exécution de Java -jar navicli.jar | • Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé) • installer navicli.jar dans le chemin CLI à navicli.exe OU naviseccli.exe • Remarque : navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere • le navicli.jar peut être disponible sur http://powerlink.emc.com[] 
+| Erreur : impossible de récupérer les méta-LUN. Erreur lors de l'exécution de Java -jar navicli.jar | • Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé)
+• Installez navicli.jar dans le chemin CLI vers navicli.exe OU naviseccli.exe
+• Remarque : navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere
+• Le navicli.jar peut être disponible sur \http://powerlink.emc.com 
 
 
 | Erreur : les pools de stockage ne signalant pas les disques sur le Service Processor à l'adresse IP configurée | Configurez le collecteur de données avec les deux adresses IP du processeur de service, séparées par une virgule 

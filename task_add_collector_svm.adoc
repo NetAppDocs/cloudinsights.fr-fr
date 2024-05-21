@@ -81,7 +81,7 @@ Voir link:concept_cs_agent_requirements.html["Exigences de l'agent"] pour des in
 
 == Conditions préalables au blocage de l'accès utilisateur
 
-Gardez les points suivants à l'esprit pendant link:/cloudinsights/cs_restrict_user_access.html["Blocage de l'accès utilisateur"]:
+Gardez les points suivants à l'esprit pendant link:cs_restrict_user_access.html["Blocage de l'accès utilisateur"]:
 
 Des informations d'identification au niveau du cluster sont nécessaires pour que cette fonctionnalité fonctionne.
 
