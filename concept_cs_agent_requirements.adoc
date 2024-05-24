@@ -51,7 +51,7 @@ Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'applicati
 
 
 | Espace disque disponible | L'espace disque doit être alloué de la manière suivante :
-/Opt/netapp 35 Go (minimum)
+/Opt/netapp 36 Go (au moins 35 Go d'espace libre après la création du système de fichiers)
 
 Remarque : il est recommandé d'allouer un peu d'espace disque supplémentaire pour permettre la création du système de fichiers. Assurez-vous qu'il y a au moins 35 Go d'espace libre dans le système de fichiers.
 
