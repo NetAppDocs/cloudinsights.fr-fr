@@ -238,6 +238,9 @@ Liste alphabétique des collecteurs de données pris en charge par Cloud Insight
 | link:task_dc_na_eseries.html["NetApp E-Series"] | Infrastructures 
 
 
+| link:task_dc_netapp_eseries_rest.html["NetApp E-Series REST "] | Infrastructures 
+
+
 | link:task_dc_na_amazon_fsx.html["Amazon FSX pour NetApp ONTAP"] | Infrastructures 
 
 

@@ -13119,4 +13119,7 @@ Remarque : il est recommandé d'allouer un peu d'espace disque supplémentaire p
 
 
 Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les utilisateurs locaux ont accès à ce dossier. L'installation de l'agent ou du Data Collector peut échouer si les utilisateurs locaux n'ont pas l'autorisation de ce dossier. voir la <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> pour plus de détails.</block>
+  <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E-Series REST </block>
+  <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
+  <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">REST E-Series</block>
 </blocks>
