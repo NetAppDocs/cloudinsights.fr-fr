@@ -568,5 +568,8 @@ Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-t
 
 
 | les pods de metrics d'état-ci-kube-netapp ne parviennent pas à démarrer après l'exécution d'une mise à niveau d'opérateur Kubernetes, et lancent ErrImagePull (échec de l'extraction de l'image). | Essayez de réinitialiser les modules manuellement. 
+
+
+| Des messages « événement ignoré comme étant plus ancien que maxEventAgeSeconds » sont observés pour mon cluster Kubernetes sous analyse du journal. | Modifiez l'opérateur _agentconfiguration_ et augmentez les valeurs _event-exportatrice-maxEventAgeSeconds_ (c.-à-d. à 60 s), _event-exportatrice-kubeQPS_ (c.-à-d. à 100) et _event-exportatrice-kubeBurst_ (c.-à-d. à 500). Pour plus de détails sur ces options de configuration, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration"] page. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

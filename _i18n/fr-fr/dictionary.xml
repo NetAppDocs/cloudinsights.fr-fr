@@ -13124,4 +13124,6 @@ Si /opt est un dossier monté à partir d'un stockage NAS, assurez-vous que les 
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">REST E-Series</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">les pods de metrics d'état-ci-kube-netapp ne parviennent pas à démarrer après l'exécution d'une mise à niveau d'opérateur Kubernetes, et lancent ErrImagePull (échec de l'extraction de l'image).</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">Essayez de réinitialiser les modules manuellement.</block>
+  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">Des messages « événement ignoré comme étant plus ancien que maxEventAgeSeconds » sont observés pour mon cluster Kubernetes sous analyse du journal.</block>
+  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">Modifiez l'opérateur _agentconfiguration_ et augmentez les valeurs _event-exportatrice-maxEventAgeSeconds_ (c.-à-d. à 60 s), _event-exportatrice-kubeQPS_ (c.-à-d. à 100) et _event-exportatrice-kubeBurst_ (c.-à-d. à 500). Pour plus de détails sur ces options de configuration, reportez-vous au <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> page.</block>
 </blocks>
