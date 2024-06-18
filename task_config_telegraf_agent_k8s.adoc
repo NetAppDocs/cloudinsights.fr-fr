@@ -571,5 +571,8 @@ Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-t
 
 
 | Des messages « événement ignoré comme étant plus ancien que maxEventAgeSeconds » sont observés pour mon cluster Kubernetes sous analyse du journal. | Modifiez l'opérateur _agentconfiguration_ et augmentez les valeurs _event-exportatrice-maxEventAgeSeconds_ (c.-à-d. à 60 s), _event-exportatrice-kubeQPS_ (c.-à-d. à 100) et _event-exportatrice-kubeBurst_ (c.-à-d. à 500). Pour plus de détails sur ces options de configuration, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration"] page. 
+
+
+| Telegraf veut (ou se bloque en raison) d'une mémoire verrouillable insuffisante. | Essayez d'augmenter la limite de mémoire verrouillable pour Telegraf dans le système d'exploitation/nœud sous-jacent. Si l'augmentation de la limite n'est pas une option, modifiez la configuration d'agentNKMO et définissez _skipLockedMemory_ sur _true_.  Cela indique à Telegraf de ne pas tenter de réserver des pages de mémoire verrouillées. Bien que cela puisse présenter un risque de sécurité car les secrets déchiffrés peuvent être échangés sur disque, il permet une exécution dans des environnements où il est impossible de réserver de la mémoire verrouillée. Pour plus de détails sur les options de configuration _skipLockedMemory_, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration"] page. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
