@@ -20,6 +20,21 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+== Juin 2024
+
+
+
+=== Systèmes d'exploitation pris en charge
+
+Les systèmes d'exploitation suivants sont pris en charge par les unités d'acquisition Cloud Insights, en plus de ceux-ci link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["déjà pris en charge"]:
+
+* Red Hat Enterprise Linux 8.9, 8.10 et 9.4
+* Rocky 9.4
+* AlmaLinux 9.3 et 9.4
+
+
+
+
 == Mai 2024
 
 

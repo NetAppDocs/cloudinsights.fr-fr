@@ -34,11 +34,12 @@ Vous devez installer une unité d'acquisition (au) afin d'obtenir des informatio
 | Système d'exploitation | Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
 
 * CentOS (64 bits) : 7.2 à 7.9, 8.1 à 8.4, Stream 8, Stream 9
+* AlmaLinux 9.3 et 9.4
 * Debian (64 bits) : 9 et 10
 * OpenSUSE Leap 15.1 à 15.5
 * Oracle Enterprise Linux (64 bits) : 7.5 à 7.9, 8.1 à 8.8
-* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.8, 9.1, 9.2
-* Rocky 9.0, 9.1, 9.3
+* Red Hat Enterprise Linux (64 bits) : 7.2 à 7.9, 8.1 à 8.10, 9.1 à 9.4
+* Rocky 9.0 à 9.4
 * SUSE Enterprise Linux Server 15, 15 SP2 à 15 SP5
 * Serveur Ubuntu: 18.04, 20.04, 22.04 LTS
 * SELinux sur les plates-formes ci-dessus
