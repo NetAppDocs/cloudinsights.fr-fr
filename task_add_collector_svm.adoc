@@ -38,6 +38,7 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 * SVM possède plusieurs sous-types. Parmi ceux-ci, seuls _default_, _sync_source_ et _sync_destination_ sont pris en charge.
 * Un agent link:task_cs_add_agent.html["doit être configuré"] avant de pouvoir configurer des collecteurs de données.
 * Assurez-vous que vous disposez d'un connecteur d'annuaire utilisateur correctement configuré. Dans le cas contraire, les événements affichent des noms d'utilisateur codés et non le nom réel de l'utilisateur (tel qu'il est stocké dans Active Directory) dans la page « activités approfondies ».
+* • Le magasin permanent ONTAP est pris en charge à partir de 9.15.1.
 * Pour des performances optimales, il est recommandé de configurer le serveur FPolicy sur le même sous-réseau que le système de stockage.
 
 
@@ -297,6 +298,8 @@ Gardez à l'esprit les éléments suivants :
 * Lors des mises à niveau d'agent ou de collecteur, des redémarrages/redémarrages de machine virtuelle d'agent ou du redémarrage du service d'agent, un collecteur en pause restera à l'état _Pause_.
 * Si le collecteur de données est à l'état _Error_, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le bouton Pause est activé uniquement si l'état du collecteur est _running_.
 * Si l'agent est déconnecté, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le collecteur passe à l'état _stopped_ et le bouton Pause est désactivé.
+* Un Data Collector en pause ne peut pas être supprimé.
+* Pendant la pause, les paramètres fpolicy de ONTAP sont désactivés, mais ne sont pas supprimés. Lors de la reprise, les paramètres fpolicy de ONTAP sont de nouveau activés.
 
 
 
@@ -398,5 +401,8 @@ Veuillez vérifier le nombre de collecteurs de données ajoutés à l'agent de l
 Si elle est supérieure à 20, augmentez la capacité CPU et RAM de l'ordinateur Agent.
 Une fois l'UC et la RAM augmentées, les DSC sont en cours d'initialisation, puis s'exécutent automatiquement.
 Consultez le guide de dimensionnement du link:concept_cs_event_rate_checker.html["cette page"]. 
+
+
+| Le Data Collector est en cours d'erroring lorsque le mode SVM est sélectionné. | Lors de la connexion en mode SVM, si l'IP de gestion du cluster est utilisée pour se connecter à la place de l'IP de gestion du SVM, alors la connexion sera error out. S'assurer que l'IP de SVM correct est utilisé. 
 |===
 Si vous rencontrez toujours des problèmes, accédez aux liens d'assistance mentionnés dans la page *aide > support*.

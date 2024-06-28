@@ -13281,4 +13281,24 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. Erreur non autorisée</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">Cette erreur s'affiche si le jeton d'accès API est généré sans sélectionner toutes les catégories d'API requises. Générez un nouveau jeton d'accès API en sélectionnant toutes les catégories d'API requises.</block>
+  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">Vous pouvez utiliser un exemple de script pour extraire des données d'analyse via une API dans la page _/opt/netapp/cloudsecure/agent/export-script/_. Consultez le fichier readme à cet emplacement pour plus de détails sur le script.</block>
+  <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">L'interface utilisateur d'analyse effectue un chargement lent des données lors de l'utilisation du filtre _PATH_.</block>
+  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">Si le chemin est _/AAA/BBB/CCC/DDD_, au lieu de rechercher :
+
+AAA/BBB/CCC*
+
+OU
+
+AAA/BBB/C*
+
+Essayez de rechercher :
+
+AAA/BBB/CCC/*
+
+Cette recherche devrait permettre aux données de se charger plus rapidement.</block>
+  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• Le magasin permanent ONTAP est pris en charge à partir de 9.15.1.</block>
+  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">Un Data Collector en pause ne peut pas être supprimé.</block>
+  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">Pendant la pause, les paramètres fpolicy de ONTAP sont désactivés, mais ne sont pas supprimés. Lors de la reprise, les paramètres fpolicy de ONTAP sont de nouveau activés.</block>
+  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">Le Data Collector est en cours d'erroring lorsque le mode SVM est sélectionné.</block>
+  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">Lors de la connexion en mode SVM, si l'IP de gestion du cluster est utilisée pour se connecter à la place de l'IP de gestion du SVM, alors la connexion sera error out. S'assurer que l'IP de SVM correct est utilisé.</block>
 </blocks>

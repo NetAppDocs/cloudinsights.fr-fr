@@ -127,6 +127,8 @@ Vous pouvez trier les données de l'historique d'activité par _Time, User, Sour
 
 Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 100,000 premiers enregistrements sont exportés. Selon la quantité de données, l'exportation peut prendre de quelques secondes à plusieurs minutes.
 
+Vous pouvez utiliser un exemple de script pour extraire des données d'analyse via une API dans la page _/opt/netapp/cloudsecure/agent/export-script/_. Consultez le fichier readme à cet emplacement pour plus de détails sur le script.
+
 
 
 == Sélection de colonne pour toutes les activités
@@ -235,4 +237,19 @@ Vous pouvez également utiliser l'option « Ajouter au filtre » sous l'onglet t
 
 
 | J'ai rencontré une erreur « Echec de la demande avec le code d'état 500/503 » lors de l'utilisation d'un filtre de chemin. | Essayez d'utiliser une plage de dates plus petite pour filtrer les enregistrements. 
+
+
+| L'interface utilisateur d'analyse effectue un chargement lent des données lors de l'utilisation du filtre _PATH_. | Si le chemin est _/AAA/BBB/CCC/DDD_, au lieu de rechercher :
+
+AAA/BBB/CCC*
+
+OU
+
+AAA/BBB/C*
+
+Essayez de rechercher :
+
+AAA/BBB/CCC/*
+
+Cette recherche devrait permettre aux données de se charger plus rapidement. 
 |===
