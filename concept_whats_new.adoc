@@ -20,6 +20,31 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+== Juillet 2024
+
+
+
+=== Navigation facilitée dans le tableau de bord
+
+Il s'agit de rationaliser vos workflows opérationnels et de faciliter la collaboration entre les équipes.
+
+Le regroupement de vos tableaux de bord vous permet d'obtenir plus facilement la visibilité dont vous avez besoin. Désormais, grâce au nouveau menu de navigation, vous pouvez passer d'un tableau de bord à l'autre sans perdre votre place, ce qui facilite l'exploration et la gestion de votre infrastructure. Alignez les groupes de tableaux de bord sur vos runbooks opérationnels pour améliorer votre expérience.
+
+image:Dashboard_Nav_Group_Dropdown.png["Pour sélectionner un autre tableau de bord dans le(s) même(s) groupe(s) que le tableau de bord actuel"]
+
+
+
+=== Icônes d'objet frais
+
+Cloud Insights dispose désormais d'une iconographie d'objet mise à jour, réduisant ainsi la variance globale des icônes utilisées sur les différentes pages Cloud Insights et regroupant des objets similaires (par exemple, des objets liés au volume). Les icônes « à base de lettres » précédentes sont remplacées par des graphiques à base d'images, ce qui rend les écrans Cloud Insights plus conviviaux et plus accessibles.
+
+Vous n'êtes pas sûr de la signification d'une icône ? Le tableau ci-dessous (également disponible sur la link:reference_object_icons.html["Référence de l'icône d'objet"] page) les explique tous.
+
+image:Icons_2024.png["'Image montrant toutes les icônes d'objet utilisées dans Cloud Insights regroupées sous stockage, mise en réseau, calcul et intégrations (y compris Kubernetes), et autres'"]
+
+'''
+
+
 == Juin 2024
 
 
