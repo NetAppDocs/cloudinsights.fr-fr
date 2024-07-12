@@ -1884,14 +1884,10 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Droits d'auteur</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques déposées</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, le logo NETAPP et les marques mentionnées sur la page des marques commerciales NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Vous trouverez une liste actuelle des brevets appartenant à NetApp à l'adresse suivante :</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Notification relative à Cloud Insights</block>
@@ -5162,8 +5158,6 @@
   <block id="8d9c681869c01295953453519607171e" category="list-text">Dans le menu Cloud Insights, cliquez sur *gérer &gt; Annotations*</block>
   <block id="f65b484d944bbb5696490852b2d2c6d0" category="list-text">Entrez une description de l'annotation : *Supprimer l'agrégat racine du rapport "densité d'E/S élevée"*</block>
   <block id="e4731b310642ca51f9042d77c31a36cc" category="paragraph">Au lieu d'appliquer manuellement des annotations à des ressources individuelles, vous pouvez appliquer automatiquement des annotations à plusieurs ressources à l'aide de règles d'annotation. Les règles d'annotation sont basées sur les requêtes que vous créez et lorsqu'elles sont exécutées sur le système, elles ajoutent de nouvelles ressources à des ensembles de ressources existants. Lorsque ces ensembles d'actifs sont exclus d'un rapport, les nouveaux actifs sont également automatiquement exclus.</block>
-  <block id="066dd3116632d178996fcf4d32b30c70" category="paragraph">Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement. . Étapes . Dans la barre d'outils Cloud Insights, cliquez sur *gérer &gt; règles d'annotation* . Cliquez sur *Ajouter*</block>
-  <block id="5a4064cefa68bcf6be0e69870c969e3d" category="paragraph">+ la boîte de dialogue Ajouter une règle s'affiche : .. Dans la zone Nom , entrez un nom unique qui décrit la règle : *"RootAggrExclude"* .. Cliquez sur requête et sélectionnez la requête à utiliser par Insight pour appliquer la règle d'annotation à : *"Aggregate0"* .. Cliquez sur Annotation et sélectionnez : *"exclusion d'agg racine"* .. Cliquez sur *valeur* et saisissez *vrai*</block>
   <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">Configuration du collecteur de données MongoDB</block>
   <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">Collecteur de données MongoDB</block>
   <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">Cloud Insights utilise ce collecteur de données pour collecter des metrics depuis MongoDB.</block>
@@ -7720,7 +7714,6 @@
   <block id="ac2ddb56e922acac513828fc77bc85f6" category="cell">"Erreur de configuration" avec le message d'erreur "le service REST est désactivé"</block>
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">Vérifiez que le service REST est activé sur ce périphérique.</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">"Erreur de configuration" avec message d'erreur "utilisateur non autorisé pour la commande"</block>
-  <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">La probabilité qu'un certain nombre de rôles (par exemple, « Advanced_Analytics ») ne soient pas inclus pour l'utilisateur configuré &lt;nom d'utilisateur&gt;. Solution possible : * correction de l'étendue analytique (statistique) de l'utilisateur ${user} avec le rôle lecture seule : - dans l'écran Configuration -&gt; utilisateurs, placez votre souris sur le rôle et double-cliquez pour autoriser la modification - sélectionnez « Analytics » dans le menu déroulant portée. Une liste des propriétés possibles s'affiche. - Cliquez sur la case la plus en haut pour sélectionner les trois propriétés. - Cliquez sur le bouton Ajouter à droite. - Cliquez sur le bouton appliquer en haut à droite de la fenêtre contextuelle. La fenêtre contextuelle se ferme.</block>
   <block id="5194ac07f0578fb108df17cc52b75ccc" category="summary">Configuration du collecteur de données Pure Storage.</block>
   <block id="4d05f9f9aae283a43131d72fd410500e" category="doc">Collecteur de données FlashArray de Pure Storage</block>
   <block id="4803e12533cf1a9835839a2e3730efdf" category="paragraph">Cloud Insights utilise le collecteur de données FlashArray de Pure Storage pour collecter les données d'inventaire et de performance.</block>
@@ -9426,8 +9419,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">La sécurité des workloads de stockage n'est pas disponible dans l'édition fédérale de Cloud Insights.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">Vous pouvez exporter l'historique des activités dans un fichier .CSV en cliquant sur le bouton _Export_ au-dessus de la table Historique des activités. Notez que seuls les 100,000 premiers enregistrements sont exportés. Selon la quantité de données, l'exportation peut prendre de quelques secondes à plusieurs minutes.</block>
   <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">Vous nous avez demandé de vous fournir des valeurs de somme de contrôle lors de l'installation de l'agent pour Windows et Linux et nous pensons que c'est une excellente idée. Les voici donc :</block>
   <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights prend en charge Telegraf comme agent de collecte des données d'intégration et peut être configuré sous Windows ou Linux.</block>
@@ -13326,10 +13317,24 @@ Cette recherche devrait permettre aux données de se charger plus rapidement.</b
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">Le regroupement de vos tableaux de bord vous permet d'obtenir plus facilement la visibilité dont vous avez besoin. Désormais, grâce au nouveau menu de navigation, vous pouvez passer d'un tableau de bord à l'autre sans perdre votre place, ce qui facilite l'exploration et la gestion de votre infrastructure. Alignez les groupes de tableaux de bord sur vos runbooks opérationnels pour améliorer votre expérience.</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">Pour sélectionner un autre tableau de bord dans le(s) même(s) groupe(s) que le tableau de bord actuel</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">Icônes d'objet frais</block>
-  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insights dispose désormais d'une iconographie d'objet mise à jour, réduisant ainsi la variance globale des icônes utilisées sur les différentes pages Cloud Insights et regroupant des objets similaires (par exemple, des objets liés au volume). Les icônes « à base de lettres » précédentes sont remplacées par des graphiques à base d'images, ce qui rend les écrans Cloud Insights plus conviviaux et plus accessibles.</block>
-  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">Vous n'êtes pas sûr de la signification d'une icône ? Le tableau ci-dessous (également disponible sur la <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> page) les explique tous.</block>
-  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">'Image montrant toutes les icônes d'objet utilisées dans Cloud Insights regroupées sous stockage, mise en réseau, calcul et intégrations (y compris Kubernetes), et autres'</block>
-  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Icônes d'objet utilisées dans Cloud Insights.</block>
+  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
+  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">Icônes d'infrastructure :</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">Référence des icônes d'infrastructure</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Icônes Kubernetes :</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Référence des icônes Kubernetes, largeur=180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Contrôle des performances du réseau Kubernetes et icônes de carte :</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Surveillance et mappage des performances du réseau Kubernetes, largeur=640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f206f600866607637821c713ae2b63cc" category="cell">Cette erreur est probablement due à certains rôles (par exemple, 'Advanced_analytics') qui ne sont pas inclus pour l'utilisateur configuré. L'application de la portée analytique pour l'utilisateur avec un rôle en lecture seule peut supprimer l'erreur. Procédez comme suit : 1. Sur le système ZFS, à partir de l'écran Configuration -&gt; utilisateurs, déplacez votre souris sur le rôle et double-cliquez pour permettre la modification. 2. Sélectionnez « analyse » dans le menu déroulant objectif. Une liste des propriétés possibles s'affiche. 3. Cliquez sur la case la plus en haut pour sélectionner les trois propriétés. 4. Cliquez sur le bouton Ajouter à droite. 5. Cliquez sur le bouton appliquer en haut à droite de la fenêtre contextuelle. La fenêtre contextuelle se ferme.</block>
+  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement.</block>
+  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Dans la barre d'outils Cloud Insights, cliquez sur *gérer &gt; règles d'annotation*.</block>
+  <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">Cliquez sur *Ajouter*. La boîte de dialogue Ajouter une règle s'affiche.</block>
+  <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">Dans la zone Nom, entrez un nom unique qui décrit la règle : *"RootAggrExclude"*</block>
+  <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">Cliquez sur requête et sélectionnez la requête que Insight doit utiliser pour appliquer la règle d'annotation à : *"Aggregate0"*</block>
+  <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">Cliquez sur Annotation et sélectionnez : *"exclure agg racine"*</block>
+  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">Cliquez sur *valeur* et saisissez *vrai*</block>
 </blocks>

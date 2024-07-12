@@ -79,6 +79,16 @@ Vous devez avoir identifié tous les agrégats racine à exclure du rapport « d
 Au lieu d'appliquer manuellement des annotations à des ressources individuelles, vous pouvez appliquer automatiquement des annotations à plusieurs ressources à l'aide de règles d'annotation. Les règles d'annotation sont basées sur les requêtes que vous créez et lorsqu'elles sont exécutées sur le système, elles ajoutent de nouvelles ressources à des ensembles de ressources existants. Lorsque ces ensembles d'actifs sont exclus d'un rapport, les nouveaux actifs sont également automatiquement exclus.
 
 .Avant de commencer
-Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement. . Étapes . Dans la barre d'outils Cloud Insights, cliquez sur *gérer > règles d'annotation* . Cliquez sur *Ajouter*
+Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement.
 
-+ la boîte de dialogue Ajouter une règle s'affiche : .. Dans la zone Nom , entrez un nom unique qui décrit la règle : *"RootAggrExclude"* .. Cliquez sur requête et sélectionnez la requête à utiliser par Insight pour appliquer la règle d'annotation à : *"Aggregate0"* .. Cliquez sur Annotation et sélectionnez : *"exclusion d'agg racine"* .. Cliquez sur *valeur* et saisissez *vrai*
+.Étapes
+. Dans la barre d'outils Cloud Insights, cliquez sur *gérer > règles d'annotation*.
+. Cliquez sur *Ajouter*. La boîte de dialogue Ajouter une règle s'affiche.
++
+.. Dans la zone Nom, entrez un nom unique qui décrit la règle : *"RootAggrExclude"*
+.. Cliquez sur requête et sélectionnez la requête que Insight doit utiliser pour appliquer la règle d'annotation à : *"Aggregate0"*
+.. Cliquez sur Annotation et sélectionnez : *"exclure agg racine"*
+.. Cliquez sur *valeur* et saisissez *vrai*
+
+
+
