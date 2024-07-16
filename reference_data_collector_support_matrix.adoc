@@ -19900,55 +19900,70 @@ Produits pris en charge par ce collecteur de données :
 | Nombre total d'objets | Mise en œuvre |  |  
 
 
-| Qtree.4+ | Stockage | Échec de la capacité brute | Mise en œuvre |  
+.5+| Qtree | Capacité utilisée | Mise en œuvre |  |  
 
 
-|  | Capacité brute disponible | Mise en œuvre |  | CapapCity brute des disques de secours (somme de tous les disques de secours) 
+| IOPS total | Mise en œuvre |  |  
 
 
-| Capacité des stockagePools | Mise en œuvre |  |  | Capacité brute 
+| Limite stricte du quota de capacité | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  .8+| Nœud de stockage | Métadonnées autorisées d'utilisation de la capacité des nœuds 
+| Limite souple de quota de capacité | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Utilisation totale de la capacité des nœuds 
+| Nombre de fichiers | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Utilisation de la capacité des nœuds utilisable 
+.4+| Stockage | Échec de la capacité brute | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Utilisation de la capacité des nœuds 
+| Capacité brute disponible | Mise en œuvre |  | CapapCity brute des disques de secours (somme de tous les disques de secours) 
 
 
-| Mise en œuvre |  |  | Métadonnées utilisées dans l'utilisation de la capacité des nœuds 
+| Capacité des stockagePools | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Débit de lecture 
+| Capacité brute | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Débit total 
+.8+| Nœud de stockage | Métadonnées autorisées d'utilisation de la capacité des nœuds | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  | Taux total moyen des disques (lecture et écriture sur tous les disques) en Mo/s. | Débit d'écriture 
+| Utilisation totale de la capacité des nœuds | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  .6+| StoragePool | Capacité provisionnée 
+| Utilisation de la capacité des nœuds utilisable | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Capacité brute 
+| Utilisation de la capacité des nœuds | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Capacité totale 
+| Métadonnées utilisées dans l'utilisation de la capacité des nœuds | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Capacité utilisée 
+| Débit de lecture | Mise en œuvre |  |  
 
 
-| Mise en œuvre |  |  | Rapport de capacité de surengagement 
+| Débit total | Mise en œuvre |  | Taux total moyen des disques (lecture et écriture sur tous les disques) en Mo/s. 
 
 
-| Mise en œuvre |  | Signalé comme une série chronologique | Rapport de capacité utilisé 
+| Débit d'écriture | Mise en œuvre |  |  
+
+
+.6+| StoragePool | Capacité provisionnée | Mise en œuvre |  |  
+
+
+| Capacité brute | Mise en œuvre |  |  | Capacité totale 
+
+
+| Mise en œuvre |  |  | Capacité utilisée | Mise en œuvre 
+
+
+|  |  | Rapport de capacité de surengagement | Mise en œuvre |  
+
+
+| Signalé comme une série chronologique | Rapport de capacité utilisé | Mise en œuvre |  |  
 |===
 API de gestion utilisées par ce collecteur de données :
 

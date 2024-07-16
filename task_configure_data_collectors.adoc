@@ -37,17 +37,12 @@ Le système affiche les collecteurs de données disponibles classés par fournis
 Dans la boîte de dialogue, vous pouvez configurer le collecteur de données et ajouter une unité d'acquisition.
 
 . Entrez un nom pour le collecteur de données.
-
-
-<<<<<<<< TÊTE
 . Cliquez sur *Configuration avancée* pour ajouter des champs de configuration supplémentaires. (Tous les collecteurs de données ne nécessitent pas une configuration avancée.)
 . Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.
 . Cliquez sur *Ajouter un collecteur* pour enregistrer la configuration et ajouter le collecteur de données à votre locataire Cloud Insights.
 
-[]
-====
+
 Il peut prendre jusqu'à deux périodes d'interrogation avant que les données du service soient affichées dans les tableaux de bord ou disponibles pour les requêtes.
->>>>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
 
 * 1er sondage d'inventaire : immédiatement
 * 1er sondage de données sur les performances pour établir une ligne de base : immédiatement après l'inventaire des stocks
@@ -55,5 +50,3 @@ Il peut prendre jusqu'à deux périodes d'interrogation avant que les données d
 
 
 L'interrogation se poursuit ensuite en fonction des intervalles d'inventaire et d'interrogation des performances configurés.
-
-====

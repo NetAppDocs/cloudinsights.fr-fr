@@ -38,12 +38,18 @@ Les étapes de ce guide peuvent également être appliquées aux systèmes de st
 
 Les requêtes fournissent une recherche granulaire, en fonction des critères sélectionnés par l'utilisateur. Une requête vous permet de rechercher des volumes internes dans votre environnement contenant l'agrégat racine NetApp.
 
-. Étapes
+.Étapes
 . Créer une requête pour identifier les agrégats racine NetApp dans votre environnement : cliquez sur *Queries > New Query > Select Resource Type* (?)
 . Cliquez sur *pool de stockage*
 . Entrer le nom de l'agrégat root
 +
-Cet exemple utilise "aggr0" pour le nom. Lors de la création d'un agrégat, seules les exigences suivantes doivent être respectées pour ce nom : .. Il doit commencer par une lettre ou un trait de soulignement (_). .. Il ne peut contenir que des lettres, des chiffres et des traits de soulignement. .. Elle peut comporter 250 caractères maximum. Dans la plupart des cas, l'agrégat est nommé aggr0, aggr_0 ou quelque chose de similaire. Cela peut impliquer un processus itératif pour identifier tous les agrégats racines NetApp de votre environnement.
+Cet exemple utilise "aggr0" pour le nom. Lors de la création d'un agrégat, seules les exigences suivantes concernant le nom doivent être respectées :
+
++
+.. Il doit commencer par une lettre ou un trait de soulignement (_).
+.. Il ne peut contenir que des lettres, des chiffres et des traits de soulignement.
+.. Elle peut comporter 250 caractères maximum. Dans la plupart des cas, l'agrégat est nommé aggr0, aggr_0 ou quelque chose de similaire. Cela peut impliquer un processus itératif pour identifier tous les agrégats racines NetApp de votre environnement.
+
 
 . Cliquez sur *Enregistrer* et entrez un nom pour la nouvelle requête.
 +

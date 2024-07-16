@@ -1183,8 +1183,6 @@
   <block id="c986424b59283e1aa18a7ebe90190f7c" category="cell">Intervalle entre les sondages d'inventaire. La valeur par défaut est 40 minutes.</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">Portée</block>
   <block id="529cf703eca7100792de266841b2b06b" category="cell">Périmètre client sécurisé. La valeur par défaut est Global.</block>
-  <block id="7e4665920f5ea9564b167402b303e931" category="cell">Erreur : • l'agent ne s'exécute pas • Impossible de trouver naviseccli • Impossible d'exécuter une commande</block>
-  <block id="6c8224496d7bc35b0ff1714bff1939e9" category="cell">• Confirmez que Navisphere CLI est installé sur Cloud Insight acquisition Unit • vous n'avez pas sélectionné l'option « utiliser le client sécurisé » dans l'assistant de configuration du collecteur de données et n'avez pas installé de version non sécurisée de Navisphere CLI. • Vérifiez que le répertoire d'installation de Navisphere CLI est correct dans la configuration du collecteur de données • Confirmez que l'adresse IP du stockage de bloc VNX est correcte dans la configuration du collecteur de données : • à partir de l'unité d'acquisition Cloud Insights : - Ouvrez un CMD. - Modifiez le répertoire dans le répertoire d'installation configuré - essayez d'établir une connexion avec le périphérique de stockage bloc VNX en tapant « navicli -h {ip} getagent » (remplacez le {ip} par l'adresse IP réelle)</block>
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">Erreur : 4.29 emc235848 emc241018 getall n'a pas pu analyser les informations d'alias de l'hôte</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">Cela est probablement dû à un problème DE corruption FLARE 29 de la base de données d'initiateurs hôtes sur la baie elle-même. Consultez les articles de la base de connaissances EMC : emc235848, emc241018. Vous pouvez également vérifier<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">Erreur : impossible de récupérer les méta-LUN. Erreur lors de l'exécution de Java -jar navicli.jar</block>
@@ -5153,7 +5151,6 @@
   <block id="e9845712cabf8536f0d8a78bca8306af" category="paragraph">Les étapes de ce guide peuvent également être appliquées aux systèmes de stockage d'autres fournisseurs. Vous devez identifier les volumes contenant des répertoires et des fichiers de configuration pour gérer le système de stockage et utiliser des étapes similaires pour exclure ces volumes.</block>
   <block id="34d1e1ec387494ae7adb4531e99bcdaa" category="list-text">Créer une requête pour identifier les agrégats racine NetApp dans votre environnement : cliquez sur *Queries &gt; New Query &gt; Select Resource Type* (?)</block>
   <block id="7d67bb4f1a6063faca1a41fe36394d3e" category="list-text">Cliquez sur *pool de stockage*</block>
-  <block id="256df3a597f7a147ef4c2594c915c7ba" category="paragraph">Cet exemple utilise "aggr0" pour le nom. Lors de la création d'un agrégat, seules les exigences suivantes doivent être respectées pour ce nom : .. Il doit commencer par une lettre ou un trait de soulignement (_). .. Il ne peut contenir que des lettres, des chiffres et des traits de soulignement. .. Elle peut comporter 250 caractères maximum. Dans la plupart des cas, l'agrégat est nommé aggr0, aggr_0 ou quelque chose de similaire. Cela peut impliquer un processus itératif pour identifier tous les agrégats racines NetApp de votre environnement.</block>
   <block id="c888462b6bfcb7d60ef70f30c22e0c51" category="paragraph">Les annotations sont des notes spécialisées que vous attribuez à vos ressources, ce qui vous permet de filtrer les ressources par leurs annotations. Cette annotation vous permettra d'identifier les agrégats NetApp racine dans votre environnement et de vérifier qu'ils ne sont pas inclus dans un rapport spécifique.</block>
   <block id="8d9c681869c01295953453519607171e" category="list-text">Dans le menu Cloud Insights, cliquez sur *gérer &gt; Annotations*</block>
   <block id="f65b484d944bbb5696490852b2d2c6d0" category="list-text">Entrez une description de l'annotation : *Supprimer l'agrégat racine du rapport "densité d'E/S élevée"*</block>
@@ -11955,16 +11952,6 @@ Par exemple, modifiez ReplicaSet...
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Avant d'installer ou de mettre à niveau l'opérateur</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installation de l'opérateur de surveillance</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">Intervalle d'Aggregationde métadonnées</block>
-  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">Un ordinateur exécutant une version sous licence de l'une des versions suivantes :
-
-Red Hat Enterprise Linux 7.x, 8.x 64 bits, SELinux
-CentOS 7.x 64 bits, SELinux
-CentOS 8 Stream, SELinux
-Ubuntu 20 à 22 64 bits
-Rocky 8.x 64 bits, Rocky 9.x 64 bits, SELinux
-SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux sur SUSE 15 SP3
-
-Cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">Il me manque des données _involvedobject_ pour certains journaux d'événements.</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Assurez-vous d'avoir suivi les étapes de la <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> section ci-dessus.</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">Essais de module</block>
@@ -12893,12 +12880,6 @@ Dans Firefox, les exceptions relatives aux cookies sont désignées simplement p
   <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">Exemple de section topologie de page d'accueil</block>
   <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; TÊTE
-. Cliquez sur *Configuration avancée* pour ajouter des champs de configuration supplémentaires. (Tous les collecteurs de données ne nécessitent pas une configuration avancée.)
-. Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.
-. Cliquez sur *Ajouter un collecteur* pour enregistrer la configuration et ajouter le collecteur de données à votre locataire Cloud Insights.</block>
-  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">Il peut prendre jusqu'à deux périodes d'interrogation avant que les données du service soient affichées dans les tableaux de bord ou disponibles pour les requêtes.
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1</block>
   <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">Bouton Exporter</block>
   <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">Cliquez sur *Exporter* <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> bouton.</block>
   <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">Pour commencer à utiliser les services cloud NetApp, rendez-vous sur <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> Et cliquez sur *commencer*.</block>
@@ -12921,13 +12902,6 @@ Si vous êtes derrière un proxy pendant l'installation, suivez les instructions
 Pour un audit et un reporting précis des données, synchronisez l'heure sur la machine Agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol).</block>
   <block id="7c32e6404e015057fc5db282b24077f0" category="cell">Si vous utilisez OpenShift 4.6 ou une version supérieure, vous devez suivre la <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> en plus de s'assurer que ces conditions préalables sont remplies.</block>
   <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">À utiliser uniquement lorsqu'il est acquis sur un au dans AWS. Voir ci-dessous pour plus d'informations sur <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>.</block>
-  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">• Cela est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage VNX Block, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente).
-• Vérifiez que le périphérique et l'hôte exécutent des versions identiques du logiciel :
-    - À partir de l'unité d'acquisition Cloud Insights, ouvrir une fenêtre de ligne de commande
-    - Modifiez le répertoire dans le répertoire d'installation configuré
-    - Établir une connexion avec le périphérique CLARiiON en tapant “navicli -h &lt;ip&gt; getagent”
-    - Recherchez le numéro de version sur les premières lignes. Exemple : « Agent Rev: 6.16.2 (0.1)”
-    - Chercher et comparer la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07”</block>
   <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">Pour choisir la notification du crochet Web dans un <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>, Accédez à *alertes &gt; gérer les moniteurs* et sélectionnez le moniteur souhaité ou ajoutez un nouveau moniteur. Dans la section _configurer les notifications d'équipe_, choisissez _Webhook_ comme méthode de livraison. Sélectionnez les niveaux d'alerte (critique, Avertissement, résolu), puis choisissez le crochet souhaité.</block>
   <block id="4123cf4f6521073cef46192908207644" category="cell">Si SELinux est activé et applique, il empêche probablement le ou les pod(s) Telegraf d'accéder au fichier /proc/1/mountstats sur le nœud Kubernetes. Pour contourner cette restriction, modifiez la configuration d'agentconfiguration et activez le paramètre runPrivileged. Pour plus de détails, reportez-vous au <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>.</block>
   <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">Cette documentation fait référence à la fonction de génération de rapports Cloud Insights, disponible dans l'édition Premium de Cloud Insights.</block>
@@ -13015,10 +12989,6 @@ Voir ceci <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-ma
 <block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
 <block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
   <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">Pour créer un compte pour la collecte de performances SMI-S, reportez-vous au lien suivant :<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
-  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">• Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé)
-• Installez navicli.jar dans le chemin CLI vers navicli.exe OU naviseccli.exe
-• Remarque : navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere
-• Le navicli.jar peut être disponible sur \http://powerlink.emc.com</block>
   <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> Dernier opérateur par rapport à l'opérateur existant.</block>
   <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> L'opérateur existant.</block>
   <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> Le dernier opérateur.</block>
@@ -13329,7 +13299,6 @@ Cette recherche devrait permettre aux données de se charger plus rapidement.</b
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Contrôle des performances du réseau Kubernetes et icônes de carte :</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Surveillance et mappage des performances du réseau Kubernetes, largeur=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f206f600866607637821c713ae2b63cc" category="cell">Cette erreur est probablement due à certains rôles (par exemple, 'Advanced_analytics') qui ne sont pas inclus pour l'utilisateur configuré. L'application de la portée analytique pour l'utilisateur avec un rôle en lecture seule peut supprimer l'erreur. Procédez comme suit : 1. Sur le système ZFS, à partir de l'écran Configuration -&gt; utilisateurs, déplacez votre souris sur le rôle et double-cliquez pour permettre la modification. 2. Sélectionnez « analyse » dans le menu déroulant objectif. Une liste des propriétés possibles s'affiche. 3. Cliquez sur la case la plus en haut pour sélectionner les trois propriétés. 4. Cliquez sur le bouton Ajouter à droite. 5. Cliquez sur le bouton appliquer en haut à droite de la fenêtre contextuelle. La fenêtre contextuelle se ferme.</block>
   <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">Vous devez avoir créé et enregistré une requête qui identifie les agrégats racine NetApp que vous avez identifiés dans votre environnement.</block>
   <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Dans la barre d'outils Cloud Insights, cliquez sur *gérer &gt; règles d'annotation*.</block>
   <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">Cliquez sur *Ajouter*. La boîte de dialogue Ajouter une règle s'affiche.</block>
@@ -13337,4 +13306,48 @@ Cette recherche devrait permettre aux données de se charger plus rapidement.</b
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">Cliquez sur requête et sélectionnez la requête que Insight doit utiliser pour appliquer la règle d'annotation à : *"Aggregate0"*</block>
   <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">Cliquez sur Annotation et sélectionnez : *"exclure agg racine"*</block>
   <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">Cliquez sur *valeur* et saisissez *vrai*</block>
+  <block id="108ba1ee72dc04eca8f69cdd3be5042b" category="cell">Un ordinateur exécutant une version sous licence de l'un des éléments suivants : * CentOS 8 Stream (64 bits), SELinux * openSUSE Leap 15.3 à 15.5 (64 bits) * Oracle Linux 8.6 - 8.8, 9.1 à 9.2 (64 bits) * Red Hat Enterprise Linux 8.6 à 8.8, 9.1 à 9.2 (64 bits), SELinux * Rocky 9.2 (64 bits), SELinux * SUSE Linux Enterprise Server 15 SP3 à 15 SP3 (64 bits) * Ubuntu 20.04 LTS et 22.04 LTS (64 bits) cet ordinateur ne doit pas exécuter d'autres logiciels au niveau de l'application. Un serveur dédié est recommandé.</block>
+  <block id="4550bd733b367bee1e03cd59abc31e8d" category="cell">J'obtiens le message d'erreur _SID Translate failed._ _Reason:255:Error: Command failed: Not authorized for this commandeError: "Access-check" n'est pas une commande reconnue_, quand un utilisateur aurait dû être bloqué.</block>
+  <block id="f5ce9e1caf923fc5af4671571a0fa7de" category="cell">Cela peut se produire lorsque _csuser_ ne dispose pas des autorisations appropriées. Voir <block ref="54b565a562b697bec979a5b58e397a1a" category="inline-link-macro-rx"></block> pour plus d'informations. Après avoir appliqué les autorisations, il est recommandé de redémarrer le collecteur de données ONTAP et le collecteur de données du répertoire utilisateur. Les commandes d'autorisation requises sont répertoriées ci-dessous. ---- sécurité login role create -role csrole -cmddirname "vserver export-policy rule" -access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session" -access all security login role create -role csrole -cmddirname "vserver services access-check authentifiez" -all security login rôle create -role csrole -cmddirname "vserver name-mapping" -access all ----</block>
+  <block id="aebb627cd726b3cef553d204f38a30e1" category="cell">IOPS total</block>
+  <block id="0e7eeb5ae5a9b72d3c35c2ccece0b487" category="cell">Limite stricte du quota de capacité</block>
+  <block id="42912c555e8bff9f4a5fd6443fef82fe" category="cell">Limite souple de quota de capacité</block>
+  <block id="b05f0d41b637f86ee2555bfc971f76bf" category="cell">Nombre de fichiers</block>
+  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">Cliquez sur *Configuration avancée* pour ajouter des champs de configuration supplémentaires. (Tous les collecteurs de données ne nécessitent pas une configuration avancée.)</block>
+  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.</block>
+  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">Cliquez sur *Ajouter un collecteur* pour enregistrer la configuration et ajouter le collecteur de données à votre locataire Cloud Insights.</block>
+  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">Il peut prendre jusqu'à deux périodes d'interrogation avant que les données du service soient affichées dans les tableaux de bord ou disponibles pour les requêtes.</block>
+  <block id="3d9f514d46849760ef1b1412e314fd99" category="paragraph">Erreur :</block>
+  <block id="0764744c95ee6244fcf44e9abace1780" category="list-text">L'agent ne fonctionne pas</block>
+  <block id="50fe01395cf06f0bda9c7785c7850b3c" category="list-text">Impossible de trouver naviseccli</block>
+  <block id="eef81c9905bf29aaca9fc2c2372b2d7d" category="list-text">Impossible d'exécuter une commande</block>
+  <block id="adda4fad94eddad68c81a536f6fe276b" category="list-text">Vérifiez que Navisphere CLI est installé sur l'unité d'acquisition Cloud Insight</block>
+  <block id="1840df5cb1968b467a032c9069eeb9c6" category="list-text">Vous n'avez pas sélectionné l'option « utiliser le client sécurisé » dans l'assistant de configuration du collecteur de données et vous n'avez pas installé de version non sécurisée de Navisphere CLI.</block>
+  <block id="45588a7df87bd65a1a96f5f04007af97" category="list-text">Vérifiez que le répertoire d'installation de Navisphere CLI est correct dans la configuration du collecteur de données</block>
+  <block id="fb08276f28e0821f5afdc80679822211" category="list-text">Vérifiez que l'adresse IP du stockage en mode bloc VNX est correcte dans la configuration du collecteur de données :</block>
+  <block id="20a681cc8b895e56eb4a894d551cb442" category="list-text">Dans l'unité d'acquisition Cloud Insights :</block>
+  <block id="be5615c3dd501caa54c15cd9e2bfcf45" category="list-text">Ouvrez un CMD.</block>
+  <block id="886ad310965204f7168440eb252a084a" category="list-text">Remplacez le répertoire par le répertoire d'installation configuré</block>
+  <block id="3c43e9ac93c272aa4bfdc57cc935352f" category="list-text">Essayez d'établir une connexion avec le périphérique de stockage en mode bloc VNX en tapant « navicli -h {ip} getagent » (remplacez le {ip} par l'adresse ip réelle)</block>
+  <block id="a82401284e008612408db511edcb09c1" category="list-text">Modifier la configuration du collecteur de données pour utiliser le client sécurisé (recommandé)</block>
+  <block id="1df66018941e95008e15a2e1c78e3726" category="list-text">Installez navicli.jar dans le chemin d'accès CLI vers navicli.exe OU naviseccli.exe</block>
+  <block id="85b53449ad4b0a390d5a28a3901d67b3" category="list-text">Remarque : la version navicli.jar est obsolète à partir de la version 6.26 d'EMC Navisphere</block>
+  <block id="97000b8c373b07cac3f4aaa0293db3ff" category="list-text">Le navicli.jar peut être disponible sur \http://powerlink.emc.com</block>
+  <block id="a09b98ae7e225d29e48bc82a2a3cdcc2" category="list-text">Ceci est généralement dû à la mise à jour du micrologiciel sur le périphérique de stockage en mode bloc VNX, mais pas à la mise à jour de l'installation de NaviCLI.exe. Cela peut également être dû à l'installation de différents périphériques avec des firmwares différents, mais à une seule interface de ligne de commande (avec une version de micrologiciel différente).</block>
+  <block id="8d8c9c49b1496662a04f576b02a94c85" category="list-text">Vérifiez que le périphérique et l'hôte exécutent des versions identiques du logiciel :</block>
+  <block id="328dc93550d7121f2379427072c81a06" category="list-text">Dans l'unité d'acquisition Cloud Insights, ouvrez une fenêtre de ligne de commande</block>
+  <block id="56fd873a352d97a50759ba9cf0c3f815" category="list-text">Établir une connexion avec le périphérique CLARiiON en tapant « navicli -h &lt;ip&gt; getagent »</block>
+  <block id="449910d5dfa39e01156bf9f68dd57eca" category="list-text">Recherchez le numéro de version sur les deux premières lignes. Exemple : « Agent Rév. : 6.16.2 (0.1) »</block>
+  <block id="04adf764800f5c8a53f3220e26174673" category="list-text">Recherchez et comparez la version sur la première ligne. Exemple : “Navisphere CLI révision 6.07.00.04.07”</block>
+  <block id="49de05ff5e80d977931bb78ae77b1fb6" category="paragraph">Cette erreur est probablement due à certains rôles (par exemple, 'Advanced_analytics') qui ne sont pas inclus pour l'utilisateur configuré.</block>
+  <block id="6660bb65ec23c92ba285586a7b130d42" category="paragraph">L'application de la portée analytique pour l'utilisateur avec un rôle en lecture seule peut supprimer l'erreur. Voici la procédure à suivre :</block>
+  <block id="e26dcd427fecb2b0cd4c8a29c5778144" category="list-text">Sur le système ZFS, à partir de l'écran Configuration -&gt; utilisateurs, déplacez votre souris sur le rôle et double-cliquez pour autoriser la modification</block>
+  <block id="1b6d2e448d401a05eb632c37be03a078" category="list-text">Sélectionnez « analyse » dans le menu déroulant objectif. Une liste des propriétés possibles s'affiche.</block>
+  <block id="aed974f658af4bbc8b55b50f9e1144ac" category="list-text">Cliquez sur la case la plus en haut pour sélectionner les trois propriétés.</block>
+  <block id="df1eafe25ea8ef9c03eef34a7b2fa3c0" category="list-text">Cliquez sur le bouton Ajouter à droite.</block>
+  <block id="1dc9ebcdf41f3814f2793bf8b9cc03c2" category="list-text">Cliquez sur le bouton appliquer en haut à droite de la fenêtre contextuelle. La fenêtre contextuelle se ferme.</block>
+  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">Cet exemple utilise "aggr0" pour le nom. Lors de la création d'un agrégat, seules les exigences suivantes concernant le nom doivent être respectées :</block>
+  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">Il doit commencer par une lettre ou un trait de soulignement (_).</block>
+  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">Il ne peut contenir que des lettres, des chiffres et des traits de soulignement.</block>
+  <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">Elle peut comporter 250 caractères maximum. Dans la plupart des cas, l'agrégat est nommé aggr0, aggr_0 ou quelque chose de similaire. Cela peut impliquer un processus itératif pour identifier tous les agrégats racines NetApp de votre environnement.</block>
 </blocks>
