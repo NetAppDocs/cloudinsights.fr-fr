@@ -13350,4 +13350,7 @@ Cette recherche devrait permettre aux données de se charger plus rapidement.</b
   <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">Il doit commencer par une lettre ou un trait de soulignement (_).</block>
   <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">Il ne peut contenir que des lettres, des chiffres et des traits de soulignement.</block>
   <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">Elle peut comporter 250 caractères maximum. Dans la plupart des cas, l'agrégat est nommé aggr0, aggr_0 ou quelque chose de similaire. Cela peut impliquer un processus itératif pour identifier tous les agrégats racines NetApp de votre environnement.</block>
+  <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Collecteur de données Pure Storage FlashBlade</block>
+  <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights collecte les données d'inventaire et de performance à l'aide du collecteur de données Pure Storage FlashBlade.</block>
+  <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">Adresse IP de l'hôte FlashBlade</block>
 </blocks>
