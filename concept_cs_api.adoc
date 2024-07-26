@@ -16,9 +16,6 @@ summary: 'La sécurité des charges de travail intègre une API puissante pour l
 [role="lead"]
 L'API de sécurité des charges de travail permet aux clients NetApp et aux éditeurs de logiciels indépendants d'intégrer la sécurité des charges de travail à d'autres applications, comme les CMDB ou d'autres systèmes de gestion des tickets.
 
-
-NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
-
 Conditions requises pour l'accès à l'API :
 
 * Un modèle de token d'accès API est utilisé pour accorder l'accès.
@@ -30,6 +27,9 @@ Conditions requises pour l'accès à l'API :
 == Documentation API (swagger)
 
 Pour obtenir les dernières informations sur l'API, connectez-vous à la sécurité de la charge de travail et accédez à *Admin > API Access*. Cliquez sur le lien *API Documentation*. La documentation API est basée sur swagger, qui fournit une brève description et des informations d'utilisation de l'API et vous permet de l'essayer dans votre environnement.
+
+
+NOTE: Si vous appelez l'API Forensics Activity, utilisez l'API cloudsecure_Forensics.Activities.*v2*. Si vous effectuez plusieurs appels vers cette API, assurez-vous que les appels se produisent séquentiellement et non en parallèle. Plusieurs appels parallèles peuvent entraîner la temporisation de l'API.
 
 
 

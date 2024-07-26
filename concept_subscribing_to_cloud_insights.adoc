@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: À tout moment pendant votre essai gratuit, vous pouvez vous abonner à Cloud Insights. 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation, pricing, meter, metering 
 ---
 = Abonnement à Cloud Insights
 :toc: macro
@@ -29,15 +29,12 @@ La mise en route de Cloud Insights se fait en trois étapes simples :
 
 Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights link:security_information_and_region.html["Information et région"].
 
-
-NOTE: Sauf indication contraire, les informations figurant sur cette page s'appliquent généralement aux éditions commerciales de Cloud Insights. L'édition fédérale de Cloud Insights peut ne pas contenir certaines des fonctionnalités décrites sur cette page.
-
 Pour une comparaison complète des fonctionnalités disponibles dans les éditions de base et Premium de Cloud Insights, consultez le link:https://bluexp.netapp.com/cloud-insights-pricing["Tarifs Cloud Insights"] page.
 
 
 WARNING: Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.
 
-Lors de l'utilisation de Cloud Insights, si une icône de cadenas s'affiche image:padlock.png["Cadenas"], Cela signifie que la fonction n'est pas disponible dans votre édition actuelle ou est disponible sous une forme limitée. Mise à niveau pour un accès complet à la fonctionnalité.
+Lorsque vous utilisez Cloud Insights, si vous voyez une icône de cadenas image:padlock.png["Cadenas"], cela signifie que la fonction n'est pas disponible dans votre abonnement actuel ou est disponible sous une forme limitée. Abonnez-vous à cette fonction pour un accès complet. Certaines fonctionnalités sont disponibles <<module-evaluation,Évaluation du module>> avant l'abonnement.
 
 
 
@@ -56,7 +53,7 @@ NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights 
 
 === Essai via AWS Marketplace
 
-Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 personnes <<pricing,Unités gérées>> (MUS).
+Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 <<observability-metering,Unités gérées>> MU.
 
 Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'évaluation est en état de violation, vous perdrez l'accès à certaines fonctionnalités Cloud Insights jusqu'à ce que la violation soit résolue, soit en réduisant le nombre d'UM configurées, soit en vous abonnant à Cloud Insights.
 
@@ -82,7 +79,7 @@ Vous pouvez contrôler l'utilisation de votre unité gérée sur la page *Admin 
 image:Module_Trials_UsageTab.png["Ecran utilisation UM"]
 
 
-NOTE: Une _évaluation de module_ n'est pas une _version d'essai_ - nous utilisons la version d'essai lorsque nous fournissons aux clients une période d'essai gratuite d'utilisation du service ci pour confirmer l'ajustement et activer l'achat. Une évaluation de module est différente : c'est lorsque nous permettons à un client payant d'essayer un module de Cloud Insights qu'il n'a pas utilisé au cours des derniers mois de son abonnement payant. Lorsque l'évaluation est active, les frais pour le module nouvellement configuré sont annulés. L'environnement de travail du client est toujours sous abonnement et n'a pas rétabli la version d'évaluation. L'abonnement n'a pas changé.
+NOTE: Une _évaluation de module_ n'est pas une _version d'essai_ - nous utilisons la version d'essai lorsque nous fournissons aux clients une période d'essai gratuite d'utilisation du service Cloud Insights pour confirmer l'adéquation et activer l'achat. Une évaluation de module est différente : c'est lorsque nous permettons à un client payant d'essayer un module de Cloud Insights qu'il n'a pas utilisé au cours des derniers mois de son abonnement payant. Lorsque l'évaluation est active, les frais pour le module nouvellement configuré sont annulés. L'environnement de travail du client est toujours sous abonnement et n'a pas rétabli la version d'évaluation. L'abonnement n'a pas changé.
 
 
 
@@ -102,32 +99,58 @@ Notez que les clients ne peuvent bénéficier d'une évaluation de module qu'une
 
 == Options d'abonnement
 
-Pour vous abonner, accédez à *Admin -> abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre prix estimé. Dans un environnement classique, vous pouvez cliquer sur le bouton AWS Marketplace en libre-service. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.
+Pour vous abonner, accédez à *Admin -> abonnement*. En plus des boutons *Subscribe*, vous pourrez voir vos collecteurs de données installés et calculer votre mesure estimée. Dans un environnement classique, vous pouvez cliquer sur le bouton AWS Marketplace en libre-service. Si votre environnement comprend ou devrait inclure au moins 1,000 unités gérées, vous pouvez bénéficier de la tarification en volume.
 
 
 
-=== Tarifs
+=== Mesure de l'observabilité
 
-Le prix de Cloud Insights est conforme à *unité gérée*. L'utilisation de vos unités gérées est calculée en fonction du nombre de *hôtes ou machines virtuelles* et de la quantité de *capacité non formatée* gérée dans votre environnement d'infrastructure.
+L'observabilité de l'infrastructure Cloud Insights et l'observabilité Kubernetes sont mesurées par *unité gérée*. L'utilisation de vos unités gérées est calculée en fonction du nombre de *hôtes ou machines virtuelles* et de la quantité de *capacité non formatée* gérée dans votre environnement d'infrastructure.
 
 * 1 unité gérée = 2 hôtes (toute machine virtuelle ou physique)
 * 1 unité gérée = 4 Tio de capacité non formatée des disques physiques ou virtuels
 * 1 unité gérée = 40 Tio de capacité non formatée de stockage secondaire sélectionné : AWS S3, Cohesity SmartFiles, Dell EMC Data Domain, Dell EMC ECS, Hitachi Content Platform, IBM Cleversafe, NetApp StorageGRID, Rubrik.
-* 1 unité gérée = 4 vCPU de Kuberentes
+* 1 unité gérée = 4 vCPU de Kuberentes.
++
+** 1 ajustement des K8s d'une unité gérée = 2 nœuds ou hôtes également surveillés par l'infrastructure.
+
+
 
 
 Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gérées, vous pouvez bénéficier de *Volume Pricing* et vous devrez contacter les équipes commerciales NetApp pour vous abonner. Voir <<how-do-i-subscribe,ci-dessous>> pour en savoir plus.
 
 
 
-=== Estimer le coût de votre abonnement
+=== Mesure de la sécurité des charges de travail
 
-Les calculateurs d'abonnement vous aident à estimer le coût de votre abonnement Cloud Insights en fonction du nombre d'unités gérées nécessaires. Les valeurs actuelles sont pré-remplies et vous pouvez ajuster ces valeurs pour vous aider à planifier la croissance future estimée. Vous pouvez ajuster les valeurs pour Infrastructure, Kubernetes, ou les deux.
+La sécurité de la charge de travail est mesurée selon que les nœuds utilisés sont haut de gamme, milieu de gamme ou entrée de gamme, selon le nombre d'unités gérées (MU) suivant :
 
-Le coût estimé de votre liste de prix sera modifié en fonction de la durée de votre abonnement.
-REMARQUE : les calculatrices sont fournies à titre d'estimation uniquement. Votre prix exact sera défini lorsque vous vous abonnez.
+|===
 
-image:Subscription_Cost_Calculators.png["Page d'abonnement affichant les calculateurs d'estimation des coûts d'infrastructure et de Kubernetes"]
+
+| Type de nœud : | Exemples de modèles : | Mesure effectuée à : 
+
+
+| 1 nœud haut de gamme | 700, 800, 900, 9xxx | 80 unités gérées 
+
+
+| 1 nœud milieu de gamme | 300, 400, 500, 8 x 00 | 40 unités gérées 
+
+
+| 1 nœud d'entrée de gamme | 1xx, 2xx, 2xxx | 20 unités gérées 
+
+
+| 1 ONTAP logiciel | CVO, FSX | 10 unités gérées 
+
+
+| 1 nœud inconnu |  | 80 unités gérées 
+|===
+Vous pouvez afficher votre utilisation de Workload Security dans la page *Admin > Subscription* de l'onglet *Workload Security*.
+
+image:ws_metering_example_page.png["'Admin > Subscription > onglet Workload Security affichant le nombre de nœuds haut de gamme, milieu de gamme et entrée de gamme'"]
+
+
+NOTE: L'utilisation des UM des abonnements Workload Security existants est ajustée de sorte que l'utilisation des nœuds ne consomme pas les unités gérées. Cloud Insights mesure l'utilisation pour garantir la conformité avec l'utilisation sous licence.
 
 
 
@@ -202,34 +225,37 @@ Si votre utilisation approche ou dépasse le montant souscrit, vous pouvez rédu
 
 Des avertissements s'affichent lorsque l'utilisation de votre unité gérée dépasse 80 %, 90 % et 100 % du montant total de votre abonnement :
 
+[cols="2*a"]
 |===
-
-
 | *Lorsque l'utilisation dépasse:* | *Ceci se produit / action recommandée:* 
 
 
-| *80 %* | Une bannière informative s'affiche. Aucune action n'est nécessaire. 
+ a| 
+*80 %*
+ a| 
+Une bannière informative s'affiche. Aucune action n'est nécessaire.
 
 
-| *90 %* | Une bannière d'avertissement s'affiche. Vous pouvez augmenter le nombre d'unités gérées souscrites. 
+
+ a| 
+*90 %*
+ a| 
+Une bannière d'avertissement s'affiche. Vous pouvez augmenter le nombre d'unités gérées souscrites.
 
 
-| *100 %* | Une bannière d'erreur s'affiche et les fonctionnalités sont limitées jusqu'à ce que vous effectuez l'une des opérations suivantes :
-* Supprimez les collecteurs de données de sorte que votre utilisation de l'unité gérée soit égale ou inférieure à votre montant souscrit
-* Modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites 
+
+ a| 
+*100 %*
+ a| 
+Une bannière d'erreur s'affiche jusqu'à ce que vous effectuez l'une des opérations suivantes :
+
+* Supprimez les collecteurs de données pour que votre utilisation de l'unité gérée soit égale ou inférieure au montant souscrit
+* Modifiez votre abonnement pour augmenter le nombre d'unités gérées souscrites
+
+
 |===
 
 
 == Inscrivez-vous directement et ignorez l'essai
 
 Vous pouvez également vous abonner à Cloud Insights directement à partir du https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"], sans créer d'abord un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.
-
-
-
-== Ajout d'un ID de droit
-
-Si vous possédez un produit NetApp valide fourni avec Cloud Insights, vous pouvez ajouter ce numéro de série à votre abonnement Cloud Insights existant. Par exemple, si vous avez acheté un centre de contrôle Astra de NetApp, vous pouvez utiliser le numéro de série de la licence du centre de contrôle Astra pour identifier l'abonnement dans Cloud Insights. Cloud Insights fait référence à ceci un _ID de droit_.
-
-Pour ajouter un ID d'abonnement à votre abonnement Cloud Insights, cliquez sur _+ID d'abonnement_ sur la page *Admin > abonnement*.
-
-image:Subscription_AddEntitlementID.png["Ajoutez un ID de droit à votre abonnement"]

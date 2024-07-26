@@ -29,7 +29,7 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 +
 ** Data ONTAP 9.2 et versions ultérieures Pour des performances optimales, utilisez une version Data ONTAP supérieure à 9.13.1.
 ** Protocole SMB version 3.1 et antérieure.
-** Protocole NFS version 4.0 et antérieure
+** Protocole NFS version 4.1 et antérieure
 ** FlexGroup est pris en charge à partir de ONTAP 9.4 et versions ultérieures
 ** ONTAP Select est pris en charge
 
@@ -147,44 +147,15 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 
 
-=== Autorisations pour la protection anti-ransomware autonome de ONTAP
+=== Autorisations pour la protection anti-ransomware autonome ONTAP et accès ONTAP refusées
 
 Si vous utilisez les informations d'identification d'administration du cluster, aucune nouvelle autorisation n'est nécessaire.
 
 Si vous utilisez un utilisateur personnalisé (par exemple, _csuser_) avec les autorisations accordées à l'utilisateur, suivez les étapes ci-dessous pour donner les autorisations à la sécurité de la charge de travail afin de collecter des informations relatives à ARP à partir de ONTAP.
 
-Pour _csuser_ avec les informations d'identification du cluster, effectuez les opérations suivantes à partir de la ligne de commande ONTAP :
-
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-Pour plus d'informations, consultez à propos de link:concept_cs_integration_with_ontap_arp.html["Intégration avec la protection ONTAP autonome contre les ransomwares"]
-
-
-
-=== Autorisations d'accès ONTAP refusées
-
-Si le Data Collector est ajouté à l'aide des informations d'identification d'administration du cluster, aucune nouvelle autorisation n'est nécessaire.
-
-Si le collecteur est ajouté à l'aide d'un utilisateur personnalisé (par exemple, _csuser_) avec les autorisations données à l'utilisateur, suivez les étapes ci-dessous pour donner à Workload Security l'autorisation nécessaire pour s'inscrire aux événements d'accès refusé avec ONTAP.
-
-Pour les ccsuser avec des informations d'identification _cluster_, exécutez les commandes suivantes à partir de la ligne de commande ONTAP. Notez que _csrestrole_ est un rôle personnalisé et _csuser_ est un utilisateur personnalisé ONTAP.
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-----
-Pour les csuser avec _SVM_ credentials, executer les commandes suivantes depuis la ligne de commande ONTAP :
-
-[listing]
-----
- security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
- security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-----
 Pour plus d'informations, consultez à propos de link:concept_ws_integration_with_ontap_access_denied.html["Intégration avec l'accès ONTAP refusée"]
+
+et link:concept_cs_integration_with_ontap_arp.html["Intégration avec la protection ONTAP autonome contre les ransomwares"]
 
 
 
@@ -299,7 +270,7 @@ Gardez à l'esprit les éléments suivants :
 * Si le collecteur de données est à l'état _Error_, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le bouton Pause est activé uniquement si l'état du collecteur est _running_.
 * Si l'agent est déconnecté, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le collecteur passe à l'état _stopped_ et le bouton Pause est désactivé.
 * Un Data Collector en pause ne peut pas être supprimé.
-* Pendant la pause, les paramètres fpolicy de ONTAP sont désactivés, mais ne sont pas supprimés. Lors de la reprise, les paramètres fpolicy de ONTAP sont de nouveau activés.
+* Pendant la pause, les paramètres fpolicy de ONTAP sont désactivés, mais ne sont pas supprimés. Lors de la reprise, les paramètres fpolicy de ONTAP sont réactivés.
 
 
 

@@ -24,6 +24,20 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+=== Amélioration de la sécurité des workloads
+
+*Prise en charge NFS 4.1*
+
+Le Data Collector SVM prend désormais en charge les versions NFS jusqu'à *NFS 4.1* inclus.
+
+*Nouvelle API d'activité Forensics*
+
+L'activité Forensics link:concept_cs_api.html["API"] a une nouvelle version. Lorsque vous appelez l'API pour Forensics Activity, utilisez l'API *cloudsecure_Forensics.Activities._v2_*.
+
+Notez que si vous effectuez plusieurs appels vers cette API, pour de meilleurs résultats, assurez-vous que les appels se produisent séquentiellement, au lieu de en parallèle. Plusieurs appels parallèles peuvent entraîner la temporisation de l'API.
+
+
+
 === Navigation facilitée dans le tableau de bord
 
 Il s'agit de rationaliser vos workflows opérationnels et de faciliter la collaboration entre les équipes.
