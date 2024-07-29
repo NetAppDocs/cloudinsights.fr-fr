@@ -28,7 +28,7 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 *Prise en charge NFS 4.1*
 
-Le Data Collector SVM prend désormais en charge les versions NFS jusqu'à *NFS 4.1* inclus.
+Le Data Collector SVM prend désormais en charge les versions NFS jusqu'à *NFS 4.1* avec ONTAP 9.15.1 ou version ultérieure.
 
 *Nouvelle API d'activité Forensics*
 
