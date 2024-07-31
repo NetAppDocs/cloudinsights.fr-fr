@@ -52,7 +52,7 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 == De formation
 
-Les éléments suivants sont requis pour configurer ce collatel de données :
+Les éléments suivants sont nécessaires pour configurer ce collecteur de données :
 
 * Adresse IP ou FQDN du cluster InServ
 * Pour l'inventaire, nom d'utilisateur et mot de passe en lecture seule pour le serveur StoreServ

@@ -29,7 +29,7 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 +
 ** Data ONTAP 9.2 et versions ultérieures Pour des performances optimales, utilisez une version Data ONTAP supérieure à 9.13.1.
 ** Protocole SMB version 3.1 et antérieure.
-** Protocole NFS version 4.1 et antérieure
+** NFS versions jusqu'à NFS 4.1 avec ONTAP 9.15.1 ou version ultérieure incluse.
 ** FlexGroup est pris en charge à partir de ONTAP 9.4 et versions ultérieures
 ** ONTAP Select est pris en charge
 
@@ -38,7 +38,7 @@ La sécurité de la charge de travail utilise des collecteurs de données pour c
 * SVM possède plusieurs sous-types. Parmi ceux-ci, seuls _default_, _sync_source_ et _sync_destination_ sont pris en charge.
 * Un agent link:task_cs_add_agent.html["doit être configuré"] avant de pouvoir configurer des collecteurs de données.
 * Assurez-vous que vous disposez d'un connecteur d'annuaire utilisateur correctement configuré. Dans le cas contraire, les événements affichent des noms d'utilisateur codés et non le nom réel de l'utilisateur (tel qu'il est stocké dans Active Directory) dans la page « activités approfondies ».
-* • Le magasin permanent ONTAP est pris en charge à partir de 9.15.1.
+* • Le magasin permanent ONTAP est pris en charge à partir de 9.14.1.
 * Pour des performances optimales, il est recommandé de configurer le serveur FPolicy sur le même sous-réseau que le système de stockage.
 
 
@@ -269,10 +269,34 @@ Gardez à l'esprit les éléments suivants :
 * Lors des mises à niveau d'agent ou de collecteur, des redémarrages/redémarrages de machine virtuelle d'agent ou du redémarrage du service d'agent, un collecteur en pause restera à l'état _Pause_.
 * Si le collecteur de données est à l'état _Error_, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le bouton Pause est activé uniquement si l'état du collecteur est _running_.
 * Si l'agent est déconnecté, le collecteur ne peut pas être remplacé par l'état _Papersed_. Le collecteur passe à l'état _stopped_ et le bouton Pause est désactivé.
-* Un Data Collector en pause ne peut pas être supprimé.
-* Pendant la pause, les paramètres fpolicy de ONTAP sont désactivés, mais ne sont pas supprimés. Lors de la reprise, les paramètres fpolicy de ONTAP sont réactivés.
 
 
+
+
+== Stockage persistant
+
+Le stockage persistant est pris en charge avec ONTAP 9.14.1 et les versions ultérieures. Notez que les instructions relatives au nom du volume varient de ONTAP 9.14 à 9.15.
+
+Le stockage persistant peut être activé en cochant la case dans la page de modification/ajout du collecteur. Une fois la case cochée, un champ de texte permettant d'accepter le nom du volume s'affiche. Le nom du volume est un champ obligatoire pour activer le stockage permanent.
+
+* Pour ONTAP 9.14.1, vous devez créer le volume avant d'activer la fonction et fournir le même nom dans le champ _Nom du volume_. La taille de volume recommandée est de 16 Go.
+* Pour ONTAP 9.15.1, le volume sera créé automatiquement avec une taille de 16 Go par le collecteur, en utilisant le nom fourni dans le champ _Nom du volume_ .
+
+
+Des autorisations spécifiques sont requises pour le stockage permanent (certaines ou toutes ces autorisations existent peut-être déjà) :
+
+Mode cluster :
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <cluster-name>
+....
+Mode SVM :
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <vserver-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <vserver-name>
+....
 
 
 == Dépannage

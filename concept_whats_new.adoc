@@ -24,6 +24,20 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+=== Fonctionnalités basées sur l'IA : détection des anomalies
+
+Cloud Insights utilise le machine learning pour détecter les changements inattendus dans les modèles de données de votre environnement et fournir des alertes proactives pour vous aider à identifier les problèmes plus tôt.
+
+Un data Center se comporte de différentes manières à différents moments de la journée et à différents jours de la semaine. Cloud Insights utilise la saisonnalité hebdomadaire pour comparer le comportement historique pour chaque jour et heure.
+
+La surveillance de la détection des anomalies peut fournir des alertes dans des situations telles que lorsque la définition de la « normale » n'est pas claire, lorsque le comportement change au fil du temps ou lorsque vous travaillez avec de grandes quantités de données où il n'est pas possible de définir manuellement des seuils.
+
+link:concept_anomaly_detection.html["Moniteurs de détection d'anomalies"]Alerte lorsque des anomalies de ce type se produisent sur les metrics d'objet de votre choix.
+
+image:anomaly_detection_expert_view.png["graphique montrant l'anomalie détectée"]
+
+
+
 === Amélioration de la sécurité des workloads
 
 *Prise en charge NFS 4.1*
