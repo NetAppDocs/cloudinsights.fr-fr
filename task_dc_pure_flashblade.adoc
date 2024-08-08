@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Pure Storage.
 
 
 [role="lead"]
-Cloud Insights collecte les données d'inventaire et de performance à l'aide du collecteur de données Pure Storage FlashBlade.
+Cloud Insights utilise le collecteur de données Pure Storage FlashBlade pour collecter les données d'inventaire et de performance des clusters FlashBlade qui exposent la version 2 de leur API REST
 
 
 
@@ -38,13 +38,13 @@ Pour chaque type d'actif acquis par Cloud Insights, la terminologie la plus util
 | Baie | Stockage 
 
 
-| Contrôleur | Nœud de stockage 
+| Lame | Nœud de stockage 
 
 
-| Volumétrie | Volumétrie 
+| Système de fichiers | Volume interne 
 
 
-| Mappage de LUN | Carte de volume 
+| Compartiment de stockage objet | Qtree 
 
 
 | Initiateur,cible | Masque de volume 
@@ -55,9 +55,9 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 == De formation
 
-* Adresse IP du système de stockage
-* Nom d'utilisateur et mot de passe du compte Administrateur du système Pure Storage.
-* Port requis : HTTP/HTTPS 80/443
+* Adresse IP du système de stockage ou nom de domaine complet
+* Jeton API, idéalement avec une durée de vie infinie. Un utilisateur de niveau lecture seule devrait suffire.
+* Port requis : HTTPS 443
 
 
 
@@ -72,10 +72,10 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 | Adresse IP de l'hôte FlashBlade | Adresse IP du système de stockage 
 
 
-| Nom d'utilisateur | Nom d'utilisateur avec privilèges d'administrateur 
+| Nom d'utilisateur | Nom d'utilisateur pour aider les administrateurs Cloud Insights à se souvenir de l'utilisateur auquel appartient leur jeton d'API 
 
 
-| Mot de passe du compte admin privilégié | Mot de passe 
+| Jeton API | Jeton API 
 |===
 
 

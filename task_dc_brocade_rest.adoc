@@ -21,6 +21,14 @@ summary: Configuration du collecteur de données REST Brocade FOS.
 [role="lead"]
 Cloud Insights utilise le collecteur REST Brocade FOS pour détecter l'inventaire et les performances des commutateurs Brocade exécutant le firmware FabricOS (FOS) version 8.2 et ultérieure.
 
+Remarque : le niveau « utilisateur » par défaut de FOS n'est pas suffisamment puissant pour que Cloud Insights puisse afficher tous les aspects logiques d'un périphérique. Nous avons besoin d'un compte utilisateur avec le rôle « châssis » activé, ainsi que des autorisations sur toutes les structures virtuelles configurées sur un commutateur.
+
+Voici un exemple de procédure permettant de créer un compte utilisateur avec un « privilège minimum » pour une utilisation de Cloud Insights dans une session SSH vers un périphérique FOS :
+
+UserConfig --add NetAppCIUser -r user -l 1-128 -c user -p Qwerty !
+
+Cela créera un utilisateur « NetAppCIUser » avec le mot de passe « Qwerty! ». Cet utilisateur a le rôle « user » (-r) sur les 128 structures virtuelles possibles ( -l ). Cet utilisateur possède en outre le rôle “Chassis” ( -c) requis, avec un accès de niveau utilisateur attribué.
+
 Par défaut, ce collecteur tentera de découvrir tous les périphériques FOS faisant partie de toutes les structures dont le commutateur fait partie.
 
 
@@ -47,9 +55,6 @@ Cloud Insights acquiert les informations d'inventaire suivantes à partir du col
 
 
 | Commutateur logique | Commutateur logique 
-
-
-| Volume virtuel | Volumétrie 
 
 
 | Zone LSAN | Zone IVR 
@@ -134,9 +139,6 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : « adresse IP du châssis non concordante » | Modifiez la configuration de la source de données pour utiliser l'adresse IP du châssis. 
 
 
-| Recevez un message indiquant que plus d'un nœud est connecté au port Access Gateway | Vérifiez que le périphérique NPV fonctionne correctement et que tous les WWN connectés sont attendus. N'obtenez pas directement le périphérique NPV. L'acquisition du commutateur principal de la structure collecte plutôt les données du dispositif NPV. 
-
-
-| Échec de la collecte des performances avec « délai dépassé lors de l'envoi de la requête SNMP ». | Selon les variables de requête et la configuration du commutateur, certaines requêtes peuvent dépasser le délai par défaut.  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["En savoir plus >>"]. 
+| Échec de l'inventaire avec un 403 interdit | Il peut s'agir simplement de mauvaises informations d'identification ou indiquer que vous essayez d'utiliser un rôle suffisamment puissant. Rappelez-vous que les utilisateurs de niveau « utilisateur » NE disposent PAS du droit requis de « rôle de châssis », ou consultez l'accès aux structures virtuelles non par défaut. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
