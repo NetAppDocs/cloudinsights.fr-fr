@@ -61,9 +61,20 @@ La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tou
 
 
 
-==== Que se passe-t-il si mon essai a expiré ?
+=== Que se passe-t-il si mon essai a expiré ?
 
-Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez.
+Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez. L'ingestion des données peut s'arrêter et au bout de quelques semaines, vos données seront supprimées conformément à notre politique de conservation des données.
+
+
+
+== Que se passe-t-il si mon abonnement a expiré ?
+
+Si vous avez souscrit un abonnement à Cloud Insights mais que cet abonnement a expiré, vous disposez d'un délai de grâce de cinq jours pour renouveler votre abonnement. Toutes les fonctionnalités Cloud Insights resteront actives pendant cette période de grâce.
+
+Une fois le délai de grâce écoulé, la fonctionnalité Cloud Insights est suspendue jusqu'au renouvellement. Pour renouveler votre abonnement, consultez la page *Admin > abonnement* ou contactez le service commercial de NetApp.
+
+
+NOTE: Vos données Cloud Insights collectées jusqu'à la fin du délai de grâce restent intactes pendant les 30 jours suivant le délai de grâce. Si vous renouvelez votre abonnement dans ce délai, toutes vos données jusqu'au moment où le délai de grâce s'est écoulé seront disponibles.
 
 
 
@@ -123,28 +134,8 @@ Si votre environnement inclut ou prévoit d'inclure au moins 1,000 unités gér�
 
 === Mesure de la sécurité des charges de travail
 
-La sécurité de la charge de travail est mesurée selon que les nœuds utilisés sont haut de gamme, milieu de gamme ou entrée de gamme, selon le nombre d'unités gérées (MU) suivant :
+La mesure de la sécurité des workloads est effectuée par Cluster selon la même approche que la mesure de l'observabilité.
 
-|===
-
-
-| Type de nœud : | Exemples de modèles : | Mesure effectuée à : 
-
-
-| 1 nœud haut de gamme | 700, 800, 900, 9xxx | 80 unités gérées 
-
-
-| 1 nœud milieu de gamme | 300, 400, 500, 8 x 00 | 40 unités gérées 
-
-
-| 1 nœud d'entrée de gamme | 1xx, 2xx, 2xxx | 20 unités gérées 
-
-
-| 1 ONTAP logiciel | CVO, FSX | 10 unités gérées 
-
-
-| 1 nœud inconnu |  | 80 unités gérées 
-|===
 Vous pouvez afficher votre utilisation de Workload Security dans la page *Admin > Subscription* de l'onglet *Workload Security*.
 
 image:ws_metering_example_page.png["'Admin > Subscription > onglet Workload Security affichant le nombre de nœuds haut de gamme, milieu de gamme et entrée de gamme'"]
