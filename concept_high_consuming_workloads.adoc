@@ -43,13 +43,9 @@ Un *conflit* survient lorsque les IOPS sont déterminées à affecter d'autres r
 
 === Les workloads consommateurs
 
-Pour commencer à examiner les charges de travail influente et impactées dans vos ressources partagées, cliquez sur *tableaux de bord > charges de travail exigeantes* dans le menu Cloud Insights.
+Toutes les charges de travail très consommatrices détectées par Cloud Insights sont indiquées dans la _analyse des ressources partagées sous stress_. Accédez à *observabilité > Infrastructure Insights* pour afficher ces informations.
 
-image:Impacts_Workloads_Menu.png["Menu des charges de travail exigeantes"]
-
-Cloud Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Cliquez sur une charge de travail pour ouvrir le tableau de bord des charges de travail.
-
-image:Impacts_High_Consuming_Workloads.png["Liste des charges de travail"]
+image:Impacts_Workloads_Menu.png["Partage les ressources"]
 
 Cliquez sur une charge de travail pour afficher la page de détails correspondante. Le graphique du haut indique l'activité sur la ressource partagée (par exemple, un pool de stockage) sur laquelle le conflit se produit.
 

@@ -7831,7 +7831,6 @@
   <block id="f6ee2d35944570b247cc02129e0311be" category="paragraph">*Baseline* est défini comme le point de données maximum rapporté pour chaque charge de travail dans l'heure précédant immédiatement la saturation détectée.</block>
   <block id="bf306d07c3ed41852c5f9cb551a07b59" category="paragraph">Un *conflit* ou *saturation* survient lorsque les IOPS sont déterminées à affecter d'autres ressources ou charges de travail dans le pool de stockage partagé.</block>
   <block id="0b34f00d1d4a3885b35a431a55efeb18" category="section-title">Et des workloads exigeants</block>
-  <block id="f59f9eea55ba2a2439645d8e6d60708c" category="inline-image-macro">Liste des charges de travail</block>
   <block id="d7c664bf82d9e14603a845f0ffe47993" category="paragraph">Cliquez sur une charge de travail pour afficher la page de détails correspondante. Le graphique du haut indique l'activité sur la ressource partagée (par exemple, un pool de stockage) sur laquelle se produit la contention/saturation.</block>
   <block id="2ca1e64d0a4fdfcf135961f6931ac68b" category="inline-image-macro">Ressource partagée montrant des conflits</block>
   <block id="7e4a0aeb0ee372dc4742c55ad85d4088" category="paragraph">Voici deux graphiques illustrant les _charges de travail_ exigeantes_ et les charges de travail _affectées_ par les charges de travail exigeantes.</block>
@@ -8742,11 +8741,6 @@
   <block id="684e1f5d1d8f7ac135116fe2276f6ffa" category="paragraph">Une * charge de travail * affectée est une charge de travail affectée par une charge de travail élevée dans le pool de stockage partagé. Ces charges de travail rencontrent un nombre réduit d'IOPS et/ou une latence plus élevée en raison des charges de travail exigeantes.</block>
   <block id="3367fa0ed89a38c283ceec91a93c76d8" category="paragraph">Un *conflit* survient lorsque les IOPS sont déterminées à affecter d'autres ressources ou charges de travail dans le pool de stockage partagé.</block>
   <block id="37a9aae3864b377f0900828ee037f208" category="section-title">Les workloads consommateurs</block>
-  <block id="b3ce303d0c6722ce9fdb558bffac60ef" category="paragraph">Pour commencer à examiner les charges de travail influente et impactées dans vos ressources partagées, cliquez sur *tableaux de bord &gt; charges de travail exigeantes* dans le menu Cloud Insights.</block>
-  <block id="b992bc0e08350e51fd4652894eac27af" category="inline-image-macro">Menu des charges de travail exigeantes</block>
-  <block id="6fb82f846ba607879c539a718d458a0a" category="paragraph"><block ref="6fb82f846ba607879c539a718d458a0a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5a72c824988fe0db628e9972163040bd" category="paragraph">Cloud Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Cliquez sur une charge de travail pour ouvrir le tableau de bord des charges de travail.</block>
-  <block id="de2c31e33c3872ea890351741fe0ae8b" category="paragraph"><block ref="de2c31e33c3872ea890351741fe0ae8b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cc92b6bf3533cd5cdb88e08f278b791" category="paragraph">Cliquez sur une charge de travail pour afficher la page de détails correspondante. Le graphique du haut indique l'activité sur la ressource partagée (par exemple, un pool de stockage) sur laquelle le conflit se produit.</block>
   <block id="21ba7591ebed3b77699071ac2c45a2fe" category="inline-image-macro">Graphique montrant l'activité sur la ressource partagée</block>
   <block id="3cda1acec37e60b5404717c83d727453" category="paragraph"><block ref="3cda1acec37e60b5404717c83d727453" category="inline-image-macro-rx" type="image"></block></block>
@@ -13424,4 +13418,7 @@ Cette recherche devrait permettre aux données de se charger plus rapidement.</b
   <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">Une fois le délai de grâce écoulé, la fonctionnalité Cloud Insights est suspendue jusqu'au renouvellement. Pour renouveler votre abonnement, consultez la page *Admin &gt; abonnement* ou contactez le service commercial de NetApp.</block>
   <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">Vos données Cloud Insights collectées jusqu'à la fin du délai de grâce restent intactes pendant les 30 jours suivant le délai de grâce. Si vous renouvelez votre abonnement dans ce délai, toutes vos données jusqu'au moment où le délai de grâce s'est écoulé seront disponibles.</block>
   <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">La mesure de la sécurité des workloads est effectuée par Cluster selon la même approche que la mesure de l'observabilité.</block>
+  <block id="b740b52e59449de8ca69c0abf8f65235" category="paragraph">Toutes les charges de travail très consommatrices détectées par Cloud Insights sont indiquées dans la _analyse des ressources partagées sous stress_. Accédez à *observabilité &gt; Infrastructure Insights* pour afficher ces informations.</block>
+  <block id="559b55d2ef8b4ca8873098ababc8733e" category="inline-image-macro">Partage les ressources</block>
+  <block id="104a62c301b2c9494638e2812254d98d" category="paragraph"><block ref="104a62c301b2c9494638e2812254d98d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
