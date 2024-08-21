@@ -20,6 +20,47 @@ NetApp améliore et améliore continuellement ses produits et services. Voici qu
 
 
 
+== Août 2024
+
+
+
+=== Afficher les données spécifiques à votre plage horaire
+
+Vous êtes en train d'examiner une alerte ? Vous avez effectué un zoom avant sur une carte ? Ces actions modifient la plage horaire de ces pages. Vous pouvez maintenant verrouiller cette plage de temps, naviguer vers d'autres pages Cloud Insights et afficher des données spécifiques à cette plage de temps verrouillée. Les recherches et le dépannage sont désormais beaucoup plus faciles !
+
+image:timerange_lock.png["info-bulle indiquant de cliquer sur l'icône pour verrouiller la plage horaire à utiliser sur d'autres pages"]
+
+
+
+=== Analyse du taux de changement (%)
+
+Les agrégations de temps de rapport de changement vous aident à identifier les changements et tendances significatifs des valeurs métriques au fil du temps. Ces informations sont essentielles pour comprendre ce qui a changé, par exemple une augmentation considérable de la capacité pour une période donnée ou une modification des performances d'un seul port.
+
+* *Changement* - observer le changement d'une métrique entre deux points au sein d'une période donnée.
+* *Ratio de changement* - observer le changement proportionnel dans une mesure entre deux points, par rapport au point initial, dans une période donnée.
+
+
+image:change_and_change_ratio_bar_chart.png["exemple de graphique à barres montrant les choix d'agrégation de changement et de ratio de changement"]
+
+
+
+=== Exporter les résultats de la requête de journal au format .CSV
+
+Lors de l'affichage des résultats des requêtes de journal, exportez facilement jusqu'à 10,000 lignes au format .CSV en cliquant sur le nouveau bouton « Exporter ». Cela améliore l'accessibilité des données, facilite l'analyse et le reporting des données et facilite l'intégration transparente avec d'autres outils Data Processing.
+
+image:csv_export_button.png["Bouton Exporter au format CSV sur une page de requête de journal"]
+
+
+
+=== Résolution des alertes par heure
+
+Cloud Insights vous permet désormais de résoudre une alerte lorsque la mesure surveillée reste dans la plage acceptable pendant une durée spécifiée. Cela vous permet de vous concentrer sur les problèmes réels et de réduire le bruit associé aux mesures en franchissant de manière répétée des seuils définis en consolidant plusieurs alertes en une seule.
+
+image:resolve_alert_by_time_dropdown.png["résolution ponctuelle d'une alerte"]
+
+'''
+
+
 == Juillet 2024
 
 
