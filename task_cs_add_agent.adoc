@@ -95,6 +95,24 @@ Sortie d'échantillon :
  35000-55000/tcp
 
 
+== « Épingler » un agent à la version actuelle
+
+Par défaut, Cloud Insights Workload Security met à jour les agents automatiquement. Certains clients peuvent souhaiter suspendre la mise à jour automatique, ce qui laisse un agent à sa version actuelle jusqu'à ce que l'une des situations suivantes se produise :
+
+* Le client reprend les mises à jour automatiques de l'agent.
+* 30 jours se sont écoulés. Notez que les 30 jours commencent le jour de la dernière mise à jour de l'agent, et non le jour de la mise en pause de l'agent.
+
+
+Dans chacun de ces cas, l'agent sera mis à jour lors de la prochaine actualisation de la sécurité de la charge de travail. Pour interrompre ou reprendre les mises à jour automatiques des agents, utilisez les API _cloudsecure_config.agents_:
+
+image:ws_pin_agent_apis.png["API WS PIN Agent"]
+
+Notez qu'il peut prendre jusqu'à cinq minutes pour que l'action de pause ou de reprise prenne effet. Vous pouvez afficher les versions actuelles de vos agents sur la page sécurité de la charge de travail > collecteurs, dans l'onglet agents.
+
+image:ws_agent_version.png["Versions de WS Agent"]
+
+
+
 == Dépannage des erreurs de l'agent
 
 Les problèmes connus et leurs résolutions sont décrits dans le tableau suivant.
@@ -104,7 +122,7 @@ Les problèmes connus et leurs résolutions sont décrits dans le tableau suivan
 | Problème : | Résolution : 
 
 
-| L'installation de l'agent ne parvient pas à créer le dossier /opt/netapp/cloudSecure/agent/logs/agent.log et le fichier install.log ne contient aucune information pertinente. | Cette erreur se produit lors du démarrage de l'agent. L'erreur n'est pas consignée dans les fichiers journaux car elle se produit avant l'initialisation de l'enregistreur. L'erreur est redirigée vers la sortie standard et est visible dans le journal de service à l'aide de `journalctl -u cloudsecure-agent.service` commande. Cette commande peut être utilisée pour résoudre le problème plus loin. 
+| L'installation de l'agent ne parvient pas à créer le dossier /opt/netapp/cloudSecure/agent/logs/agent.log et le fichier install.log ne contient aucune information pertinente. | Cette erreur se produit lors du démarrage de l'agent. L'erreur n'est pas consignée dans les fichiers journaux car elle se produit avant l'initialisation de l'enregistreur. L'erreur est redirigée vers la sortie standard et est visible dans le journal de service à l'aide de la `journalctl -u cloudsecure-agent.service` commande. Cette commande peut être utilisée pour résoudre le problème. est 
 
 
 | L'installation de l'agent échoue avec 'cette distribution linux n'est pas prise en charge. Fermeture de l'installation». | Cette erreur apparaît lorsque vous tentez d'installer l'agent sur un système non pris en charge. Voir link:concept_cs_agent_requirements.html["Exigences de l'agent"]. 
