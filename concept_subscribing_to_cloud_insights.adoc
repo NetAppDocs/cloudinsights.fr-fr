@@ -28,7 +28,7 @@ La mise en route de Cloud Insights se fait en trois étapes simples :
 
 Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights link:security_information_and_region.html["Information et région"].
 
-Pour une comparaison complète des fonctionnalités disponibles dans les éditions de base et Premium de Cloud Insights, consultez le link:https://bluexp.netapp.com/cloud-insights-pricing["Tarifs Cloud Insights"] page.
+Pour une comparaison complète des fonctions disponibles dans les éditions de base et Premium de Cloud Insights, reportez-vous à la link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Tarifs Cloud Insights"] page.
 
 
 WARNING: Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.
