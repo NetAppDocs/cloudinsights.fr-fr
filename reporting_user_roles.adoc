@@ -92,14 +92,6 @@ NOTE: Si vous modifiez vos préférences de messagerie utilisateur dans Cloud In
 
 
 
-== Remarque importante pour les clients existants
-
-Si vous découvrez Cloud Insights avec reporting, bienvenue ! Vous n'avez rien de plus à faire pour commencer à profiter de l'établissement de rapports.
-
-Si vous êtes un client Premium Edition actuel, SSO n'est pas automatiquement activé pour votre environnement. Lorsque vous activez SSO, l'utilisateur administrateur du portail de génération de rapports (Cognos) n'existe plus. Cela signifie que tous les rapports contenus dans le dossier _My Content_ sont supprimés et doivent être réinstallés ou recréés dans _Team Content_. Par ailleurs, une fois l'authentification SSO activée, les rapports planifiés doivent être configurés.
-
-
-
 === Quelles mesures dois-je prendre pour préparer mon environnement existant à l'activation de la fonctionnalité SSO ?
 
 Pour vous assurer que vos rapports sont conservés, migrez tous les rapports de _mon contenu_ à _contenu_ de l'équipe en suivant les étapes ci-dessous. Vous devez effectuer cette opération avant d'activer SSO dans votre environnement :
