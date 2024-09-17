@@ -210,6 +210,19 @@ Les résultats de la recherche avec et sans / seront différents
 |===
 
 
+== Modifications de l'activité des utilisateurs du SVM root local
+
+Si un utilisateur root du SVM effectue une activité, l'adresse IP du client sur lequel le partage NFS est monté est considérée dans le nom d'utilisateur, qui est indiquée sous la forme _root@<ip-address-of-the-client>_ dans les pages d'activité d'analyse et d'activité des utilisateurs.
+
+Par exemple :
+
+* Si SVM-1 est surveillé par Workload Security et que l'utilisateur root de ce SVM monte le partage sur un client avec l'adresse IP 10.197.12.40, le nom d'utilisateur indiqué sur la page d'activité Forensic sera _root@10.197.12.40_.
+* Si le même SVM-1 est monté sur un autre client avec l'adresse IP 10.197.12.41, le nom d'utilisateur affiché sur la page d'activité d'analyse sera _root@10.197.12.41_.
+* Cette opération permet de séparer l'activité de l'utilisateur root NFS par adresse IP. Auparavant, toute l'activité était considérée comme effectuée uniquement par _root_ user, sans distinction IP.
+
+
+
+
 == Dépannage
 
 |===
