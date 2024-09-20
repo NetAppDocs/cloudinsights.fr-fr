@@ -132,6 +132,7 @@ Cloud Insights prend en charge la collecte de comptes enfants pour AWS dans un c
 * Vous devez configurer chaque compte enfant pour qu'il dispose d'un rôle AWS qui permet à l'ID de compte principal d'accéder aux informations S3 à partir du compte enfants.
 * Chaque compte enfant doit avoir le nom du rôle configuré comme la même chaîne.
 * Entrez cette chaîne de nom de rôle dans la section Cloud Insights AWS Data Collector *Advanced Configuration*, dans le champ *Cross account role*.
+* Le compte sur lequel le collecteur est installé doit disposer de _déléguer l'accès administrateur_ Privileges. Pour link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentation AWS"]plus d'informations, reportez-vous à la section.
 
 
 Meilleure pratique : il est fortement recommandé d'attribuer la politique AWS prédéfinie _Amazon S3ReadOnlyAccess_ au compte principal S3. En outre, l'utilisateur configuré dans la source de données doit avoir au moins la stratégie prédéfinie _AWOrganiztionsReadOnlyAccess_, afin d'interroger AWS.

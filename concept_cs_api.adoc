@@ -62,3 +62,19 @@ Par exemple, utilisez les éléments suivants pour récupérer des actifs de sto
 Où _<API_Access_Token>_ est le jeton que vous avez enregistré lors de la création de la clé d'accès à l'API.
 
 Vous trouverez des informations détaillées dans le lien _API Documentation_ sous *Admin > API Access*.
+
+
+
+== Script pour extraire les données via l'API
+
+Les agents de sécurité de la charge de travail incluent un script d'exportation qui facilite les appels parallèles vers l'API v2 en divisant la plage de temps demandée en lots plus petits.
+
+Le script se trouve à l'adresse _/opt/NetApp/cloudsecure/agent/export-script_. Un fichier README dans le même répertoire fournit des instructions d'utilisation.
+
+Voici un exemple de commande pour appeler le script :
+
+[source]
+----
+python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+----
+Paramètres clés `--iteration_interval 12` : -: fractionne la plage de temps demandée en intervalles de 12 heures. - `--num_workers 3`: Fetches ces intervalles en parallèle à l'aide de 3 threads.
