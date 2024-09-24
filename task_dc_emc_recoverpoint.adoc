@@ -23,7 +23,7 @@ L'utilisation principale du collecteur de données EMC RecoverPoint consiste à 
 
 Pour la configuration, le collecteur de données nécessite l'adresse IP des processeurs de stockage ainsi qu'un nom d'utilisateur et un mot de passe en lecture seule.
 
-Le collecteur de données EMC RecoverPoint rassemble les relations de réplication volume-volume que RecoverPoint coordonne sur les autres matrices de stockage. Cloud Insights représente une matrice de stockage pour chaque cluster RecoverPoint et collecte les données d'inventaire pour les nœuds et les ports de stockage de ce cluster. Aucune donnée de volume ou de pool de stockage n'est collectée.
+Le collecteur de données EMC RecoverPoint rassemble les relations de réplication volume-volume que RecoverPoint coordonne sur les autres matrices de stockage. Data Infrastructure Insights affiche une baie de stockage pour chaque cluster RecoverPoint et collecte les données d'inventaire pour les nœuds et les ports de stockage sur ce cluster. Aucune donnée de volume ou de pool de stockage n'est collectée.
 
 
 

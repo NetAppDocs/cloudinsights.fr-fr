@@ -22,7 +22,7 @@ Ce collecteur de données acquiert l'inventaire
 
 == Terminologie
 
-Cloud Insights acquiert l'inventaire à partir de ce collecteur.
+Data Infrastructure Insights acquiert l'inventaire à partir de ce collecteur.
 
 
 

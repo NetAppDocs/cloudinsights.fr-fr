@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données de calcul Azure
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données de calcul Azure pour acquérir les données d'inventaire et de performance des instances de calcul Azure.
+Data Infrastructure Insights utilise le collecteur de données de calcul Azure pour acquérir des données d'inventaire et de performance à partir des instances de calcul Azure.
 
 
 
@@ -33,9 +33,9 @@ Vous avez besoin des informations suivantes pour configurer ce collecteur de don
 * IP Azure Resource Manager (management.core.windows.net)
 * Identifiant d'application principale (client) du service Azure (rôle du lecteur requis)
 * Clé d'authentification principale du service Azure (mot de passe utilisateur)
-* Vous devez configurer un compte Azure pour la découverte Cloud Insights.
+* Vous devez configurer un compte Azure pour la découverte Data Infrastructure Insights.
 +
-Une fois le compte correctement configuré et l'application enregistrée dans Azure, vous disposez des identifiants nécessaires pour découvrir l'instance Azure avec Cloud Insights. Le lien suivant explique comment configurer le compte pour qu'il puisse être découvert.https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+Une fois le compte correctement configuré et que vous enregistrez l'application dans Azure, vous disposez des identifiants requis pour découvrir l'instance Azure avec Data Infrastructure Insights. Le lien suivant explique comment configurer le compte pour la découverte. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

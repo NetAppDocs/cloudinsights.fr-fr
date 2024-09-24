@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données IBM Cleversafe.
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour détecter les données d'inventaire et de performance des systèmes de stockage IBM Cleversafe.
+Data Infrastructure Insights utilise ce collecteur de données pour détecter les données d'inventaire et de performance des systèmes de stockage IBM Cleversafe.
 
 
 NOTE: IBM Cleversafe est mesuré à un taux de TB brut différent de celui de l'unité gérée. Chaque 40 To de capacité IBM Cleversafe non formatée est facturé comme 1 link:concept_subscribing_to_cloud_insights.html#pricing["Unité gérée (UM)"].
@@ -28,11 +28,11 @@ NOTE: IBM Cleversafe est mesuré à un taux de TB brut différent de celui de l'
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes auprès du collecteur de données IBM Cleversafe. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM Cleversafe. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Pool de stockage | Pool de stockage 

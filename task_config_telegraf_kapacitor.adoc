@@ -19,7 +19,7 @@ summary: configuration du kapacitor
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour recueillir des mesures auprès de influenxdata Kapacitor.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter des mesures à partir d'influxdata Kapamonitor.
 
 
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
-summary: À tout moment pendant votre essai gratuit, vous pouvez vous abonner à Cloud Insights. 
+summary: Vous pouvez à tout moment pendant votre essai gratuit vous abonner à Data Infrastructure Insights. 
 keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation, pricing, meter, metering 
 ---
-= Abonnement à Cloud Insights
+= Abonnement à Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,61 +19,72 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 
 
 [role="lead"]
-La mise en route de Cloud Insights se fait en trois étapes simples :
+La mise en route de Data Infrastructure Insights se fait en trois étapes simples :
 
 * Créez un compte sur link:https://bluexp.netapp.com//["*NetApp BlueXP*"] Accédez à toutes les offres cloud de NetApp.
-* S'inscrire à un link:https://cloud.netapp.com/cloud-insights["*essai gratuit*"] De Cloud Insights pour explorer les fonctionnalités disponibles.
-* *Abonnez-vous* à Cloud Insights pour un accès continu et ininterrompu à vos données via link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Ventes NetApp"] direct ou link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"].
+* Inscrivez-vous à une link:https://cloud.netapp.com/cloud-insights["*essai gratuit*"] des informations exploitables de l'infrastructure de données pour découvrir les fonctionnalités disponibles.
+* *Abonnez-vous* à Data Infrastructure Insights pour un accès continu et ininterrompu à vos données via link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["Ventes NetApp"] direct ou link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"].
 
 
-Lors du processus d'inscription, vous pouvez choisir la région globale qui héberge votre environnement Cloud Insights. Pour plus d'informations, consultez le document Cloud Insights link:security_information_and_region.html["Information et région"].
+Lors du processus d'enregistrement, vous pouvez choisir la région globale dans laquelle héberger votre environnement Data Infrastructure Insights. Pour en savoir plus, consultez la rubrique informations sur l'infrastructure de données link:security_information_and_region.html["Information et région"].
 
-Pour une comparaison complète des fonctions disponibles dans les éditions de base et Premium de Cloud Insights, reportez-vous à la link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Tarifs Cloud Insights"] page.
+Pour une comparaison complète des fonctionnalités disponibles dans Data Infrastructure Insights Basic Edition et Premium Edition, reportez-vous à la link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Tarifs informations sur l'infrastructure de données"] page.
 
 
-WARNING: Les environnements inactifs de l'édition de base Cloud Insights sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Cloud Insights envoie une notification et offre un délai de grâce de quatre jours avant la suppression d'un environnement.
+WARNING: Les environnements inactifs Data Infrastructure Insights Basic Edition sont supprimés et leurs ressources sont récupérées. Un environnement est considéré comme inactif s'il n'y a aucune activité utilisateur pendant 30 jours consécutifs, si aucune donnée n'est ingérées pendant 7 jours consécutifs. Data Infrastructure Insights envoie une notification et fournit un délai de grâce de quatre jours avant la suppression d'un environnement.
 
-Lorsque vous utilisez Cloud Insights, si vous voyez une icône de cadenas image:padlock.png["Cadenas"], cela signifie que la fonction n'est pas disponible dans votre abonnement actuel ou est disponible sous une forme limitée. Abonnez-vous à cette fonction pour un accès complet. Certaines fonctionnalités sont disponibles <<module-evaluation,Évaluation du module>> avant l'abonnement.
+Lorsque vous utilisez Data Infrastructure Insights, si vous voyez une icône de cadenas image:padlock.png["Cadenas"], cela signifie que la fonction n'est pas disponible dans votre abonnement actuel ou est disponible sous une forme limitée. Abonnez-vous à cette fonction pour un accès complet. Certaines fonctionnalités sont disponibles <<module-evaluation,Évaluation du module>> avant l'abonnement.
 
 
 
 == Version d'essai
 
-Lorsque vous vous inscrivez à Cloud Insights et que votre environnement est actif, vous pouvez essayer gratuitement Cloud Insights pendant 30 jours. Au cours de cet essai, vous pourrez explorer les fonctionnalités que Cloud Insights propose, dans votre propre environnement.
+En vous inscrivant pour accéder à des informations exploitables sur l'infrastructure de données et que votre environnement est actif, vous pouvez participer à un essai gratuit de 30 jours de Data Infrastructure Insights. Pendant la période d'essai, vous pouvez explorer les fonctionnalités que Data Infrastructure Insights peut offrir, dans votre propre environnement.
 
-Vous pouvez vous abonner à Cloud Insights à tout moment pendant la période d'essai. L'abonnement à Cloud Insights garantit un accès ininterrompu à vos données ainsi qu'un accès prolongé link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*support produit*"] options.
+Vous pouvez à tout moment pendant la période d'essai vous abonner à Data Infrastructure Insights. En vous abonnant à Data Infrastructure Insights, vous bénéficiez d'link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*support produit*"]un accès ininterrompu à vos données ainsi que d'options étendues.
 
-Cloud Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _Afficher l'abonnement_ qui ouvre la page *Admin -> abonnement*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.
+Data Infrastructure Insights affiche une bannière lorsque votre essai gratuit approche de sa fin Dans cette bannière se trouve un lien _Afficher l'abonnement_ qui ouvre la page *Admin -> abonnement*. Les utilisateurs non administrateurs verront la bannière mais ne pourront pas accéder à la page abonnement.
 
 
-NOTE: Si vous avez besoin de temps supplémentaire pour évaluer Cloud Insights et que votre période d'essai expire dans 4 jours maximum, vous pouvez prolonger votre période d'essai de 30 jours supplémentaires. Vous ne pouvez prolonger l'essai qu'une seule fois. Vous ne pouvez pas prolonger si votre période d'essai a expiré.
+NOTE: Si vous avez besoin de plus de temps pour évaluer les informations stratégiques de votre infrastructure de données et que votre version d'évaluation expire dans 4 jours ou moins, vous pouvez prolonger votre période d'essai de 30 jours supplémentaires. Vous ne pouvez prolonger l'essai qu'une seule fois. Vous ne pouvez pas prolonger si votre période d'essai a expiré.
 
 
 
 === Essai via AWS Marketplace
 
-Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès à Cloud Insights pendant une période d'essai de 33 jours, pour un maximum de 499 <<observability-metering,Unités gérées>> MU.
+Vous pouvez également vous inscrire pour essayer gratuitement sur AWS Marketplace. L'essai gratuit d'AWS Marketplace vous donne accès aux informations stratégiques de votre infrastructure de données pendant une période d'essai de 33 jours, avec <<observability-metering,Unités gérées>>une capacité allant jusqu'à 499 MU.
 
-Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'évaluation est en état de violation, vous perdrez l'accès à certaines fonctionnalités Cloud Insights jusqu'à ce que la violation soit résolue, soit en réduisant le nombre d'UM configurées, soit en vous abonnant à Cloud Insights.
+Remarque : si vous configurez plus de 499 UM, vous entrez l'état « brèche ». Pendant que votre version d'essai est enfreinte, vous perdez l'accès à certaines fonctionnalités Data Infrastructure Insights jusqu'à ce que la faille soit résolue, soit en réduisant le nombre de MU configurées, soit en vous abonnant à Data Infrastructure Insights.
 
-La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre période d'essai, vous pouvez revenir à un abonnement à l'édition de base de Cloud Insights ou passer à un abonnement Cloud Insights payant en visitant la page *Admin -> abonnement*.
+La version d'essai gratuite d'AWS Marketplace ne peut pas être étendue. À tout moment pendant votre période d'essai, vous pouvez revenir à un abonnement Data Infrastructure Insights Basic Edition ou passer à un abonnement payant Data Infrastructure Insights en visitant la page *Admin -> abonnement*.
 
 
 
 === Que se passe-t-il si mon essai a expiré ?
 
-Si votre essai gratuit a expiré et que vous n'êtes pas encore abonné à Cloud Insights, vous ne pourrez bénéficier de fonctionnalités limitées que lorsque vous vous abonnez. L'ingestion des données peut s'arrêter et au bout de quelques semaines, vos données seront supprimées conformément à notre politique de conservation des données.
+Si votre essai gratuit a expiré et que vous n'avez pas encore souscrit à Data Infrastructure Insights, vous bénéficierez de fonctionnalités limitées jusqu'à votre abonnement. L'ingestion des données peut s'arrêter et au bout de quelques semaines, vos données seront supprimées conformément à notre politique de conservation des données.
 
 
 
 == Que se passe-t-il si mon abonnement a expiré ?
 
-Si vous avez souscrit un abonnement à Cloud Insights mais que cet abonnement a expiré, vous disposez d'un délai de grâce de cinq jours pour renouveler votre abonnement. Toutes les fonctionnalités Cloud Insights resteront actives pendant cette période de grâce.
+Si vous avez souscrit un abonnement à Data Infrastructure Insights, mais que cet abonnement a expiré, vous disposez d'un délai de grâce de cinq jours pour renouveler votre abonnement. Toutes les fonctionnalités Data Infrastructure Insights restent actives pendant ce délai de grâce.
 
-Une fois le délai de grâce écoulé, la fonctionnalité Cloud Insights est suspendue jusqu'au renouvellement. Pour renouveler votre abonnement, consultez la page *Admin > abonnement* ou contactez le service commercial de NetApp.
+Une fois le délai de grâce écoulé, la fonctionnalité Data Infrastructure Insights est suspendue jusqu'au renouvellement. Pour renouveler votre abonnement, consultez la page *Admin > abonnement* ou contactez le service commercial de NetApp.
 
 
-NOTE: Vos données Cloud Insights collectées jusqu'à la fin du délai de grâce restent intactes pendant les 30 jours suivant le délai de grâce. Si vous renouvelez votre abonnement dans ce délai, toutes vos données jusqu'au moment où le délai de grâce s'est écoulé seront disponibles.
+NOTE: Les données Data Infrastructure Insights collectées à la fin du délai de grâce restent intactes pendant les 30 jours suivant le délai de grâce. Si vous renouvelez votre abonnement dans ce délai, toutes vos données jusqu'au moment où le délai de grâce s'est écoulé seront disponibles.
+
+
+
+== Que se passe-t-il si mon *abonnement* a expiré ?
+
+Si vous avez souscrit un abonnement à Data Infrastructure Insights, mais que cet abonnement a expiré, vous disposez d'un délai de grâce de cinq jours pour renouveler votre abonnement. Toutes les fonctionnalités Data Infrastructure Insights restent actives pendant ce délai de grâce.
+
+Une fois le délai de grâce écoulé, la fonctionnalité Data Infrastructure Insights est suspendue jusqu'au renouvellement. Pour renouveler votre abonnement, consultez la page *Admin > abonnement* ou contactez le service commercial de NetApp.
+
+
+NOTE: Vos données Data Infrastructure Insights restent intactes pendant les 30 jours suivant le délai de grâce. Si vous renouvelez votre abonnement dans ce délai, toutes vos données jusqu'au moment où le délai de grâce s'est écoulé seront disponibles.
 
 
 
@@ -89,7 +100,7 @@ Vous pouvez contrôler l'utilisation de votre unité gérée sur la page *Admin 
 image:Module_Trials_UsageTab.png["Ecran utilisation UM"]
 
 
-NOTE: Une _évaluation de module_ n'est pas une _version d'essai_ - nous utilisons la version d'essai lorsque nous fournissons aux clients une période d'essai gratuite d'utilisation du service Cloud Insights pour confirmer l'adéquation et activer l'achat. Une évaluation de module est différente : c'est lorsque nous permettons à un client payant d'essayer un module de Cloud Insights qu'il n'a pas utilisé au cours des derniers mois de son abonnement payant. Lorsque l'évaluation est active, les frais pour le module nouvellement configuré sont annulés. L'environnement de travail du client est toujours sous abonnement et n'a pas rétabli la version d'évaluation. L'abonnement n'a pas changé.
+NOTE: Une _évaluation de module_ n'est pas une _version d'essai_ - nous utilisons la version d'essai lorsque nous fournissons aux clients une période d'essai gratuite d'utilisation du service Data Infrastructure Insights pour confirmer l'adéquation et activer l'achat. Une évaluation de module est différente. C'est lorsque nous permettons à un client payant de tester un module Data Infrastructure Insights qu'il n'a pas utilisé au cours des derniers mois de son abonnement payant. Lorsque l'évaluation est active, les frais pour le module nouvellement configuré sont annulés. L'environnement de travail du client est toujours sous abonnement et n'a pas rétabli la version d'évaluation. L'abonnement n'a pas changé.
 
 
 
@@ -115,7 +126,7 @@ Pour vous abonner, accédez à *Admin -> abonnement*. En plus des boutons *Subsc
 
 === Mesure de l'observabilité
 
-L'observabilité de l'infrastructure Cloud Insights et l'observabilité Kubernetes sont mesurées par *unité gérée*. L'utilisation de vos unités gérées est calculée en fonction du nombre de *hôtes ou machines virtuelles* et de la quantité de *capacité non formatée* gérée dans votre environnement d'infrastructure.
+Informations sur l'infrastructure de données l'observabilité de l'infrastructure et l'observabilité Kubernetes sont mesurées par *unité gérée*. L'utilisation de vos unités gérées est calculée en fonction du nombre de *hôtes ou machines virtuelles* et de la quantité de *capacité non formatée* gérée dans votre environnement d'infrastructure.
 
 * 1 unité gérée = 2 hôtes (toute machine virtuelle ou physique)
 * 1 unité gérée = 4 Tio de capacité non formatée des disques physiques ou virtuels
@@ -140,7 +151,7 @@ Vous pouvez afficher votre utilisation de Workload Security dans la page *Admin 
 image:ws_metering_example_page.png["'Admin > Subscription > onglet Workload Security affichant le nombre de nœuds haut de gamme, milieu de gamme et entrée de gamme'"]
 
 
-NOTE: L'utilisation des UM des abonnements Workload Security existants est ajustée de sorte que l'utilisation des nœuds ne consomme pas les unités gérées. Cloud Insights mesure l'utilisation pour garantir la conformité avec l'utilisation sous licence.
+NOTE: L'utilisation des UM des abonnements Workload Security existants est ajustée de sorte que l'utilisation des nœuds ne consomme pas les unités gérées. Data Infrastructure Insights mesure l'utilisation pour garantir la conformité avec l'utilisation sous licence.
 
 
 
@@ -154,20 +165,20 @@ Si le nombre de vos unités gérées est inférieur à 1,000, vous pouvez vous i
 
 Si le nombre d'unités gérées attendu est de 1,000 ou plus, cliquez sur le link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*Contactez-nous*"] Pour vous inscrire via l'équipe de vente NetApp.
 
-Vous devez fournir votre numéro de série Cloud Insights * à votre ingénieur commercial NetApp afin que votre abonnement payant puisse s'appliquer à votre environnement Cloud Insights. Le numéro de série identifie de manière unique votre environnement d'essai Cloud Insights et se trouve sur la page *Admin > abonnement*.
+Vous devez fournir vos informations de l'infrastructure de données *Numéro de série* à votre ingénieur commercial NetApp pour que votre abonnement payant puisse être appliqué à votre environnement Data Infrastructure Insights. Le numéro de série identifie de manière unique votre environnement d'essai Data Infrastructure Insights et se trouve sur la page *Admin > abonnement*.
 
 
 
 === Vous pouvez vous inscrire via AWS Marketplace
 
 
-NOTE: Vous devez être propriétaire ou administrateur de compte pour appliquer un abonnement AWS Marketplace à votre compte d'essai Cloud Insights existant. Vous devez également disposer d'un compte Amazon Web Services (AWS).
+NOTE: Vous devez être titulaire d'un compte ou administrateur pour appliquer un abonnement AWS Marketplace à votre compte d'essai Data Infrastructure Insights existant. Vous devez également disposer d'un compte Amazon Web Services (AWS).
 
-Pour ouvrir AWS, cliquez sur le lien Amazon Marketplace https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights"] page d'abonnement, où vous pouvez compléter votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
+Cliquez sur le lien Amazon Marketplace pour ouvrir la https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Informations exploitables sur l'infrastructure de données"] page d'abonnement AWS, où vous pouvez terminer votre abonnement. Notez que les valeurs saisies dans le calculateur ne sont pas renseignées dans la page d'abonnement AWS ; vous devez entrer le nombre total d'unités gérées sur cette page.
 
 Après avoir saisi le nombre total d'unités gérées et choisi soit 12 mois, soit 36 mois, cliquez sur *configurer votre compte* pour terminer le processus d'abonnement.
 
-Une fois le processus d'abonnement AWS terminé, vous serez redirigé vers votre environnement Cloud Insights. De plus, si l'environnement n'est plus actif (par exemple, vous vous êtes déconnecté), vous accédez à la page de connexion de NetApp BlueXP. Lorsque vous vous connectez de nouveau à Cloud Insights, votre abonnement sera actif.
+Une fois l'abonnement à AWS terminé, vous serez à nouveau redirigé vers votre environnement Data Infrastructure Insights. De plus, si l'environnement n'est plus actif (par exemple, vous vous êtes déconnecté), vous accédez à la page de connexion de NetApp BlueXP. Lorsque vous vous reconnectez à Data Infrastructure Insights, votre abonnement est actif.
 
 
 NOTE: Après avoir cliqué sur *configurer votre compte* sur la page AWS Marketplace, vous devez terminer le processus d'abonnement AWS en une heure. Si vous ne le terminez pas dans l'heure, vous devrez cliquer de nouveau sur *configurer votre compte* pour terminer le processus.
@@ -248,4 +259,14 @@ Une bannière d'erreur s'affiche jusqu'à ce que vous effectuez l'une des opéra
 
 == Inscrivez-vous directement et ignorez l'essai
 
-Vous pouvez également vous abonner à Cloud Insights directement à partir du https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"], sans créer d'abord un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.
+Vous pouvez également vous abonner à Data Infrastructure Insights directement à partir du https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"], sans avoir à créer au préalable un environnement d'essai. Une fois votre abonnement terminé et votre environnement configuré, vous êtes immédiatement abonné.
+
+
+
+== Ajout d'un ID de droit
+
+Si vous possédez un produit NetApp valide fourni avec Data Infrastructure Insights, vous pouvez ajouter ce numéro de série à votre abonnement Data Infrastructure Insights existant. Par exemple, si vous avez acheté NetApp Astra Control Center, le numéro de série de licence Astra Control Center peut être utilisé pour identifier l'abonnement dans Data Infrastructure Insights. Les informations sur l'infrastructure de données font référence à ceci : _ID de licence_.
+
+Pour ajouter un ID de droit à votre abonnement à Data Infrastructure Insights, sur la page *Admin > abonnement*, cliquez sur _+ID de droit_.
+
+image:Subscription_AddEntitlementID.png["Ajoutez un ID de droit à votre abonnement"]

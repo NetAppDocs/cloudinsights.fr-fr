@@ -68,35 +68,35 @@ image:TableWidgetPerformanceData.png["Widget de tableau"]
 
 * *Graphiques ligne, Spline, surface, surface empilée* : il s'agit de widgets graphiques de séries chronologiques sur lesquels vous pouvez afficher les performances et d'autres données au fil du temps.
 +
-image:Time-Series Charts.png["Zone, zone empilée, ligne, graphiques de spline"]
+image:Time-SeriesCharts.png["Zone, zone empilée, ligne, graphiques de spline"]
 
 * *Widget valeur unique* : widget permettant d'afficher une valeur unique qui peut être dérivée directement d'un compteur ou calculée à l'aide d'une requête ou d'une expression. Vous pouvez définir des seuils de mise en forme des couleurs pour indiquer si la valeur est dans la plage attendue, avertissement ou critique.
 +
-image:Single-Value Widgets.png["Widgets à valeur unique avec et sans formatage"]
+image:Single-ValueWidgets.png["Widgets à valeur unique avec et sans formatage"]
 
 * *Widget de jauge* : affiche des données à valeur unique dans une jauge traditionnelle (solide) ou une jauge à puce, avec des couleurs basées sur les valeurs "Avertissement" ou "critique" vous link:concept_dashboard_features.html#formatting-gauge-widgets["personnaliser"].
 +
-image:Gauge Widgets.png["Valeur unique avec formatage, jauge traditionnelle, jauge à puce"]
+image:GaugeWidgets.png["Valeur unique avec formatage, jauge traditionnelle, jauge à puce"]
 
 * *Bar, colonnes graphiques* : affiche les valeurs N supérieures ou inférieures, par exemple, les 10 premiers stockages par capacité ou les 5 volumes inférieurs par IOPS.
 +
-image:Bar and Column Charts.png["Graphiques à barres et colonnes"]
+image:BarandColumnCharts.png["Graphiques à barres et colonnes"]
 
 * *Diagramme de tracé de boîte* : tracé de la valeur minimale, maximale, médiane et de la plage entre le quartile inférieur et le quartile supérieur des données dans un seul graphique.
 +
-image:Box Plot.png["Tracé de la case"]
+image:BoxPlot.png["Tracé de la case"]
 
 * *Diagramme de tracé Scatter* : trace les données associées en points, par exemple, les IOPS et la latence. Dans cet exemple, vous pouvez localiser rapidement des ressources bénéficiant d'un débit élevé et d'IOPS faibles.
 +
-image:Scatter Plot.png["Tracé de diffusion"]
+image:ScatterPlot.png["Tracé de diffusion"]
 
 * *Pie Chart*: Un diagramme circulaire traditionnel pour afficher les données en tant que pièce du total.
 +
-image:Pie Chart.png["Graphique à secteurs"]
+image:PieChart.png["Graphique à secteurs"]
 
 * *Note widget* : jusqu'à 1000 caractères de texte libre.
 +
-image:Note Widget.png["Widget de note"]
+image:NoteWidget.png["Widget de note"]
 
 * *Tableau des alertes* : affiche jusqu'aux 1,000 dernières alertes.
 

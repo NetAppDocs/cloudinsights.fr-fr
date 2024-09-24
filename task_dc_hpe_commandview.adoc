@@ -19,17 +19,17 @@ summary: Configuration du collecteur de données HP Enterprise Command View
 
 
 [role="lead"]
-Le collecteur de données HP Enterprise Command View Advanced Edition prend en charge la découverte des baies XP et P9500 via le serveur Command View Advanced Edition (CVAE). Cloud Insights communique avec CVAE à l'aide de l'API standard Command View pour collecter des données d'inventaire et de performances.
+Le collecteur de données HP Enterprise Command View Advanced Edition prend en charge la découverte des baies XP et P9500 via le serveur Command View Advanced Edition (CVAE). Data Infrastructure Insights communique avec CVAE à l'aide de l'API Command View standard pour collecter des données d'inventaire et de performances.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données HP Enterprise Command View. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données HP Enterprise Command View. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | PDEV | Disque 
@@ -72,14 +72,14 @@ Les exigences suivantes doivent être respectées pour collecter les données de
 +
 ** Le moniteur de performances doit être sous licence.
 ** L'interrupteur de surveillance doit être activé.
-** L'outil d'exportation (Export.exe) doit être copié dans Cloud Insights au et extrait vers un emplacement. Sur ci Linux AUS, assurez-vous que "cisys" dispose d'autorisations de lecture et d'exécution.
+** L'outil d'exportation (Export.exe) doit être copié dans Data Infrastructure Insights au et extrait dans un emplacement. Sur ci Linux AUS, assurez-vous que "cisys" dispose d'autorisations de lecture et d'exécution.
 ** La version de l'outil d'exportation doit correspondre à la version du microcode de la matrice cible.
 
 
 * Performances AMS :
 +
 ** Le moniteur de performances doit être sous licence.
-** L'utilitaire CLI Storage Navigator Modular 2 (SNM2) est installé sur le Cloud Insights au.
+** L'utilitaire CLI de Storage Navigator Modular 2 (SNM2) doit être installé sur Data Infrastructure Insights au.
 
 
 * Exigences liées au réseau
@@ -191,13 +191,13 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Problème : | Essayer : 
 
 
-| Erreur : * erreur lors de l'exécution de l'utilitaire d'exportation * erreur lors de l'exécution de la commande externe | * Confirmez que l'utilitaire d'exportation est installé sur l'unité d'acquisition Cloud Insights * Confirmez que l'emplacement de l'utilitaire d'exportation est correct dans la configuration du collecteur de données * Confirmez que l'adresse IP de la matrice USP/R600 est correcte dans la configuration du collecteur de données * Confirmez que le nom de l'utilisateur Et le mot de passe est correct dans la configuration du collecteur de données * Vérifiez que la version de l'utilitaire d'exportation est compatible avec la version * du micro code de la matrice de stockage de l'unité d'acquisition Cloud Insights, ouvrez une invite CMD et procédez comme suit : - Modifiez le répertoire dans le répertoire d'installation configuré - essayez d'établir une connexion avec la matrice de stockage configurée en exécutant le fichier batch runWin.bat 
+| Erreur : * erreur lors de l'exécution de l'utilitaire d'exportation * erreur lors de l'exécution de la commande externe | * Vérifiez que l'utilitaire d'exportation est installé sur l'unité d'acquisition Data Infrastructure Insights * Vérifiez que l'emplacement de l'utilitaire d'exportation est correct dans la configuration du collecteur de données * Vérifiez que l'adresse IP de la matrice USP/R600 est correcte dans la configuration du collecteur de données * Confirmez que le nom d'utilisateur et le mot de passe sont corrects dans la configuration du collecteur de données * Vérifiez que la version de l'utilitaire d'exportation est compatible avec la matrice de stockage version du microcode de la matrice de stockage runWin.bat 
 
 
 | Erreur : la connexion de l'outil d'exportation a échoué pour l'adresse IP cible | * Confirmez que le nom d'utilisateur/mot de passe est correct * Créez un ID utilisateur principalement pour ce collecteur de données HDS * Confirmez qu'aucun autre collecteur de données n'est configuré pour acquérir ce tableau 
 
 
-| Erreur : les outils d'exportation sont consignés « Impossible d'obtenir la plage de temps pour la surveillance ». | * Vérifiez que la surveillance des performances est activée sur la matrice. * Essayez d'appeler les outils d'exportation en dehors de Cloud Insights pour confirmer que le problème se situe en dehors de Cloud Insights. 
+| Erreur : les outils d'exportation sont consignés « Impossible d'obtenir la plage de temps pour la surveillance ». | * Vérifiez que la surveillance des performances est activée sur la matrice. * Essayez d'appeler les outils d'exportation en dehors de Data Infrastructure Insights pour confirmer que le problème se situe en dehors de Data Infrastructure Insights. 
 
 
 | Erreur : * erreur de configuration : matrice de stockage non prise en charge par l'utilitaire d'exportation * erreur de configuration : matrice de stockage non prise en charge par l'interface CLI modulaire de Storage Navigator | * Configurez uniquement les matrices de stockage prises en charge. * Utilisez “Filtrer la liste de périphériques” pour exclure les matrices de stockage non prises en charge. 
@@ -206,7 +206,7 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : * erreur d'exécution de la commande externe * erreur de configuration : la matrice de stockage n'a pas été signalée par Inventory * erreur de configuration : le dossier d'exportation ne contient pas de fichiers JAR | * Vérifier l'emplacement de l'utilitaire d'exportation. * Vérifiez si la matrice de stockage en question est configurée dans Command View Server * définissez l'intervalle d'interrogation des performances sur plusieurs 60 secondes. 
 
 
-| Erreur : * erreur de l'interface CLI du navigateur de stockage * erreur lors de l'exécution de la commande auPerform * erreur lors de l'exécution de la commande externe | * Vérifiez que la CLI modulaire du navigateur de stockage est installée sur l'unité d'acquisition Cloud Insights * Confirmez que l'emplacement de la CLI modulaire du navigateur de stockage est correct dans la configuration du collecteur de données * Confirmez que l'adresse IP de la matrice WMS/SMS/SMS est correcte dans la configuration du collecteur de données * Confirmez Que la version de l'interface CLI modulaire de Storage Navigator est compatible avec la version micro-code de la matrice de stockage configurée dans le collecteur de données * à partir de l'unité d'acquisition Cloud Insights, ouvrez une invite CMD et procédez comme suit : - Modifiez le répertoire dans le répertoire d'installation configuré - essayez d'établir une connexion avec la matrice de stockage configurée en exécutant la commande suivante “auunitref.exe” 
+| Erreur : * erreur de l'interface CLI du navigateur de stockage * erreur lors de l'exécution de la commande auPerform * erreur lors de l'exécution de la commande externe | * Vérifiez que l'interface de ligne de commande modulaire Storage Navigator est installée sur l'unité d'acquisition Data Infrastructure Insights * Vérifiez que l'emplacement de l'interface de ligne de commande modulaire Storage Navigator est correct dans la configuration du collecteur de données * Vérifiez que l'adresse IP de la matrice WMS/SMS/SMS/SMS est correcte dans la configuration du collecteur de données * Vérifiez que la version de l'interface de ligne de commande Storage Navigator Modular CLI est compatible avec la version de stockage configurée dans le répertoire d'acquisition de données *. 
 
 
 | Erreur : erreur de configuration : matrice de stockage non signalée par Inventory | Vérifiez si la matrice de stockage en question est configurée dans le serveur Command View 

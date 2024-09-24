@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: Bienvenue sur le portail de documentation de Cloud Insights. 
+summary: Bienvenue dans le portail de documentation Data Infrastructure Insights. 
 keywords:  
 ---
-= Documentation Cloud Insights
+= Documentation Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-NetApp Cloud Insights est un outil de surveillance de l'infrastructure cloud qui permet de bénéficier d'une grande visibilité sur l'ensemble de l'infrastructure. Avec Cloud Insights, vous pouvez surveiller toutes les ressources, les optimiser et résoudre les problèmes, y compris dans les clouds publics et dans vos data centers privés.
+NetApp Data Infrastructure Insights (anciennement Cloud Insights) est un outil de surveillance de l'infrastructure cloud qui permet de bénéficier d'une grande visibilité sur l'ensemble de votre infrastructure. Avec Data Infrastructure Insights, vous pouvez surveiller et optimiser toutes les ressources et résoudre les problèmes, y compris dans les clouds publics et dans vos data centers privés.
 
 
 
-== Que peut m'apporter Cloud Insights ?
+== Avantages de la fonctionnalité Data Infrastructure
 
-Cloud Insights offre un contrôle multicloud hybride tout en garantissant l'observabilité de l'infrastructure et des charges de travail.
+Les informations sur l'infrastructure de données fournissent une surveillance multicloud hybride, ce qui assure l'observabilité intégrale de l'infrastructure et des workloads.
 
 * Collecteurs de données pour infrastructure et workloads hétérogènes, y compris Kubernetes
 * Ouvrez le collecteur Telegraf et les API ouvertes pour faciliter l'intégration
@@ -42,7 +42,7 @@ Cloud Insights offre un contrôle multicloud hybride tout en garantissant l'obse
 
 == Mise en route
 
-* Comment faire link:task_cloud_insights_onboarding_1.html["*lancez-vous*"] Avec Cloud Insights ?
+* Comment link:task_cloud_insights_onboarding_1.html["*lancez-vous*"]utiliser une infrastructure de données exploitables ?
 * Je suis inscrit. Que dois-je faire maintenant ?link:task_getting_started_with_cloud_insights.html["Acquisition des données"]
 link:concept_user_roles.html["Configuration des utilisateurs"]
 * Génial ! Et la suite ?

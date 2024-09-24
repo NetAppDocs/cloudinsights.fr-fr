@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Brocade
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données Brocade Enterprise Fabric Connectivity Manager (EFCM) pour détecter l'inventaire des commutateurs Brocade EFCM. Cloud Insights prend en charge EFCM versions 9.5, 9.6 et 9.7.
+Les informations d'infrastructure de données utilisent le collecteur de données Brocade EFCM (Enterprise Fabric Connectivity Manager) pour découvrir l'inventaire des commutateurs Brocade EFCM. Data Infrastructure Insights prend en charge les versions 9.5, 9.6 et 9.7 de EFCM.
 
 
 
@@ -29,7 +29,7 @@ Cloud Insights utilise le collecteur de données Brocade Enterprise Fabric Conne
 * La version EFCM doit être 9.5, 9.6 ou 9.7
 * Adresse IP du serveur EFCM
 * Nom d'utilisateur et mot de passe en lecture seule pour le serveur EFCM
-* Accès validé au commutateur Connectrix par Telnet à partir du serveur Cloud Insights, à l'aide du nom d'utilisateur et du mot de passe en lecture seule sur le port 51512
+* Accès validé au commutateur Connectrix par Telnet à partir du serveur Data Infrastructure Insights, en utilisant le nom d'utilisateur et le mot de passe en lecture seule sur le port 51512
 
 
 
@@ -82,7 +82,7 @@ Cloud Insights utilise le collecteur de données Brocade Enterprise Fabric Conne
 | Exclure les périphériques | Liste de noms d'unités séparés par des virgules à inclure ou exclure de l'interrogation 
 
 
-| Utilisez le surnom du commutateur EFCM comme nom de commutateur | Sélectionnez cette option pour utiliser le surnom du commutateur EFCM comme nom du commutateur Cloud Insights. 
+| Utilisez le surnom du commutateur EFCM comme nom de commutateur | Sélectionnez cette option pour utiliser le surnom du commutateur EFCM comme nom du commutateur Data Infrastructure Insights. 
 
 
 | Intervalle d'interrogation des performances (s) | Intervalle entre les sondages de performances. La valeur par défaut est 300 secondes. 

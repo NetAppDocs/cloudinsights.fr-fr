@@ -31,7 +31,7 @@ TIP: Les moniteurs et alertes sont disponibles dans Cloud Insights Standard Edit
 Pour afficher et gérer les alertes, procédez comme suit.
 
 . Accédez à la page *alertes > toutes les alertes*.
-. Une liste des 1,000 alertes les plus récentes s'affiche. Vous pouvez trier cette liste sur n'importe quel champ en cliquant sur l'en-tête de colonne du champ. La liste affiche les informations suivantes. Notez que toutes ces colonnes ne sont pas affichées par défaut. Vous pouvez sélectionner les colonnes à afficher en cliquant sur l'icône « vitesse » image:gear.png["icône de vitesse"]:
+. Une liste des 1,000 alertes les plus récentes s'affiche. Vous pouvez trier cette liste sur n'importe quel champ en cliquant sur l'en-tête de colonne du champ. La liste affiche les informations suivantes. Notez que toutes ces colonnes ne sont pas affichées par défaut. Vous pouvez sélectionner les colonnes à afficher en cliquant sur l'icône « engrenage » :
 +
 ** *ID d'alerte* : ID d'alerte unique généré par le système
 ** *Déclenché Time* : heure à laquelle le moniteur concerné a déclenché l'alerte

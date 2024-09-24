@@ -36,11 +36,11 @@ Pour configurer le collecteur de données EMC XtremIO (HTTP), vous devez avoir :
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes auprès du collecteur de données EMC XtremIO. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de cette source de données, gardez à l'esprit la terminologie suivante :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données EMC XtremIO. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de cette source de données, gardez à l'esprit la terminologie suivante :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque (SSD) | Disque 

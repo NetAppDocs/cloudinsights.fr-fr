@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données du commutateur Fablic Cisco MDS
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données des commutateurs Cisco MDS Fabric pour détecter l'inventaire des commutateurs Cisco MDS Fabric, ainsi que de nombreux commutateurs Cisco Nexus FCoE sur lesquels le service FC est activé.
+Les informations d'infrastructure de données utilisent le collecteur de données de commutateurs de structure MDS Cisco pour découvrir l'inventaire des commutateurs de structure MDS Cisco ainsi que de plusieurs commutateurs FCoE Cisco Nexus sur lesquels le service FC est activé.
 
 De plus, vous pouvez découvrir de nombreux modèles de périphériques Cisco fonctionnant en mode NPV avec ce collecteur de données.
 
@@ -27,11 +27,11 @@ De plus, vous pouvez découvrir de nombreux modèles de périphériques Cisco fo
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes auprès du collecteur de données du commutateur FC Cisco. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Les informations d'inventaire suivantes sont acquises à partir du collecteur de données du commutateur FC Cisco. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Commutateur | Commutateur 
@@ -169,7 +169,7 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | Erreur : le périphérique n'est pas un commutateur Cisco MDS | • Assurez-vous que l'adresse IP de la source de données configurée pour le périphérique est correcte • connexion au périphérique à l'aide de l'interface utilisateur graphique de Cisco Device Manager • connexion au périphérique à l'aide de l'interface CLI 
 
 
-| Erreur : Cloud Insights ne peut pas obtenir le WWN du commutateur. | Il ne peut pas s'agir d'un commutateur FC ou FCoE, et ne sera donc pas pris en charge. Assurez-vous que l'IP/FQDN configuré dans la source de données est véritablement un commutateur FC/FCoE. 
+| Erreur : Data Infrastructure Insights ne peut pas obtenir le WWN du commutateur. | Il ne peut pas s'agir d'un commutateur FC ou FCoE, et ne sera donc pas pris en charge. Assurez-vous que l'IP/FQDN configuré dans la source de données est véritablement un commutateur FC/FCoE. 
 
 
 | Erreur : plusieurs nœuds connectés au port de commutation NPV ont été détectés | Désactiver l'acquisition directe du commutateur NPV 

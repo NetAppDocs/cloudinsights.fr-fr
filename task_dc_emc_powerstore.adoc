@@ -21,17 +21,17 @@ summary: Configuration DU collecteur de données DELL EMC PowerStore.
 [role="lead"]
 Le collecteur de données EMC PowerStore rassemble les informations d'inventaire à partir du stockage EMC PowerStore. Pour la configuration, le collecteur de données nécessite l'adresse IP des processeurs de stockage ainsi qu'un nom d'utilisateur et un mot de passe en lecture seule.
 
-Le collecteur de données EMC PowerStore rassemble les relations de réplication volume-volume que PowerStore coordonne entre les autres matrices de stockage. Cloud Insights affiche une matrice de stockage pour chaque cluster PowerStore et collecte les données d'inventaire pour les nœuds et les ports de stockage de ce cluster. Aucune donnée de volume ou de pool de stockage n'est collectée.
+Le collecteur de données EMC PowerStore rassemble les relations de réplication volume-volume que PowerStore coordonne entre les autres matrices de stockage. Data Infrastructure Insights affiche une matrice de stockage pour chaque cluster PowerStore et collecte les données d'inventaire pour les nœuds et les ports de stockage de ce cluster. Aucune donnée de volume ou de pool de stockage n'est collectée.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes à partir de ce collecteur de données. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir de ce collecteur de données. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | hôte | hôte 
@@ -103,7 +103,7 @@ Les informations suivantes sont requises pour configurer ce collecteur de donné
 
 | Intervalle d'interrogation des stocks (minutes) | Intervalle entre les sondages d'inventaire. La valeur par défaut est 60 minutes. 
 |===
-La collecte des performances PowerStore de Cloud Insight utilise les données sources de granularité de 5 minutes de PowerStore. Ainsi, Cloud Insights interroge ces données toutes les cinq minutes, et ce n'est pas configurable.
+La collecte des performances PowerStore de Cloud Insight utilise les données sources de granularité de 5 minutes de PowerStore. C'est pourquoi Data Infrastructure Insights interroge ces données toutes les cinq minutes, mais elles ne sont pas configurables.
 
 
 

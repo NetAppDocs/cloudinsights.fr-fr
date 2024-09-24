@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: 'L"opérateur de surveillance Kubernetes collecte les données Kubernetes pour les utiliser dans Cloud Insights.' 
+summary: 'L"opérateur de surveillance Kubernetes collecte les données Kubernetes pour les utiliser dans les informations exploitables de l"infrastructure de données.' 
 ---
 = Installation et configuration de l'opérateur de contrôle Kubernetes
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: 'L"opérateur de surveillance Kubernetes collecte les données Kubernet
 
 
 [role="lead"]
-Cloud Insights propose l'opérateur de surveillance * Kubernetes pour la collection Kubernetes. Accédez à *Kubernetes > Collectors > +Kubernetes Collector* pour déployer un nouvel opérateur.
+Data Infrastructure Insights propose l'opérateur *Kubernetes Monitoring Operator* pour la collecte Kubernetes. Accédez à *Kubernetes > Collectors > +Kubernetes Collector* pour déployer un nouvel opérateur.
 
 
 toc::[]
@@ -52,7 +52,7 @@ Si vous disposez d'un référentiel personnalisé, lisez à propos de <<using-a-
 
 == Composants de surveillance Kubernetes
 
-La surveillance Cloud Insights Kubernetes comprend quatre composants de surveillance :
+La surveillance Kubernetes de Data Infrastructure Insights comprend quatre composants de surveillance :
 
 * Metrics du cluster
 * Carte et performances réseau (en option)
@@ -90,7 +90,7 @@ Si une configuration d'agentConfiguration existe :
 
 Si AgentConfiguration n'existe pas :
 
-* Notez le nom de votre cluster tel que reconnu par Cloud Insights (si votre espace de noms n'est pas la surveillance netapp par défaut, remplacez l'espace de noms approprié) :
+* Notez le nom de votre cluster tel qu'il a été reconnu par les informations d'infrastructure de données (si votre namespace n'est pas le contrôle NetApp par défaut, remplacez l'espace de noms approprié) :
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
 * Créer une sauvegarde de l'opérateur existant (si votre namespace n'est pas la surveillance netapp par défaut, remplacez le namespace approprié) :
@@ -185,11 +185,11 @@ Si vous voyez un message “erreur du serveur (NotFound)”, votre opérateur do
 
 Vous pouvez utiliser un proxy dans votre environnement à deux endroits pour installer l'opérateur de surveillance Kubernetes. Il peut s'agir de systèmes proxy identiques ou distincts :
 
-* Proxy requis lors de l'exécution de l'extrait de code d'installation (en utilisant "curl") pour connecter le système sur lequel l'extrait est exécuté dans votre environnement Cloud Insights
-* Proxy nécessaire du cluster Kubernetes cible pour communiquer avec votre environnement Cloud Insights
+* Proxy nécessaire lors de l'exécution de l'extrait de code d'installation (à l'aide de « curl ») pour connecter le système sur lequel l'extrait de code est exécuté à votre environnement Data Infrastructure Insights
+* Proxy requis par le cluster Kubernetes cible pour communiquer avec votre environnement Data Infrastructure Insights
 
 
-Si vous utilisez un proxy pour l'un de ces serveurs, ou les deux, afin d'installer le moniteur d'exploitation Kubernetes, vous devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Cloud Insights. Si vous disposez d'un proxy et que vous pouvez accéder à Cloud Insights à partir du serveur/VM à partir duquel vous souhaitez installer l'opérateur, votre proxy est probablement configuré correctement.
+Si vous utilisez un proxy pour l'une ou l'autre de ces opérations, ou pour les deux, vous devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Data Infrastructure Insights. Si vous disposez d'un proxy et que vous pouvez accéder à Data Infrastructure Insights à partir du serveur/de la machine virtuelle à partir duquel vous souhaitez installer l'opérateur, votre proxy est probablement configuré correctement.
 
 Pour le proxy utilisé pour installer le moniteur d'exploitation Kubernetes, avant d'installer l'opérateur, définissez les variables d'environnement _http_proxy/https_proxy_. Pour certains environnements proxy, il peut être nécessaire de définir la variable _no_proxy Environment_.
 
@@ -207,7 +207,7 @@ Pour définir la ou les variable(s), effectuez les opérations suivantes sur vot
 
 
 
-Pour que le proxy utilisé pour votre cluster Kubernetes communique avec votre environnement Cloud Insights, installez l'opérateur de surveillance Kubernetes après avoir lu toutes ces instructions.
+Pour que le proxy utilisé pour votre cluster Kubernetes communique avec votre environnement Data Infrastructure Insights, installez l'opérateur de surveillance Kubernetes après avoir lu toutes ces instructions.
 
 Configurez la section proxy d'AgentConfiguration dans Operator-config.yaml avant de déployer l'opérateur de surveillance Kubernetes.
 
@@ -237,9 +237,9 @@ agent:
 
 === À l'aide d'un référentiel docker personnalisé ou privé
 
-Par défaut, l'opérateur de surveillance Kubernetes extrait les images du conteneur du référentiel Cloud Insights. Si vous utilisez un cluster Kubernetes comme cible pour la surveillance et que ce cluster est configuré pour extraire uniquement les images de conteneur à partir d'un référentiel Docker personnalisé ou privé ou d'un registre de conteneurs, vous devez configurer l'accès aux conteneurs requis par l'opérateur de surveillance Kubernetes.
+Par défaut, l'opérateur de surveillance Kubernetes extrait les images de conteneur du référentiel Data Infrastructure Insights. Si vous utilisez un cluster Kubernetes comme cible pour la surveillance et que ce cluster est configuré pour extraire uniquement les images de conteneur à partir d'un référentiel Docker personnalisé ou privé ou d'un registre de conteneurs, vous devez configurer l'accès aux conteneurs requis par l'opérateur de surveillance Kubernetes.
 
-Exécutez l'extrait de code image dans la mosaïque d'installation de NetApp Monitoring Operator. Cette commande permet de se connecter au référentiel Cloud Insights, d'extraire toutes les dépendances d'image pour l'opérateur et de se déconnecter du référentiel Cloud Insights. Lorsque vous y êtes invité, saisissez le mot de passe temporaire du référentiel fourni. Cette commande permet de télécharger toutes les images utilisées par l'opérateur, y compris pour les fonctions facultatives. Voir ci-dessous pour connaître les caractéristiques auxquelles ces images sont utilisées.
+Exécutez l'extrait de code image dans la mosaïque d'installation de NetApp Monitoring Operator. Cette commande permet de se connecter au référentiel Data Infrastructure Insights, d'extraire toutes les dépendances d'image pour l'opérateur et de se déconnecter du référentiel Data Infrastructure Insights. Lorsque vous y êtes invité, saisissez le mot de passe temporaire du référentiel fourni. Cette commande permet de télécharger toutes les images utilisées par l'opérateur, y compris pour les fonctions facultatives. Voir ci-dessous pour connaître les caractéristiques auxquelles ces images sont utilisées.
 
 Fonctionnalités centrales de l'opérateur et surveillance Kubernetes
 
@@ -261,7 +261,7 @@ Performances et carte réseau
 * ci-net-observateur
 
 
-Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les balises d'image et les chemins de répertoire de ces images dans votre référentiel sont cohérents avec ceux du référentiel Cloud Insights.
+Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les balises d'image et les chemins de répertoire vers ces images dans votre référentiel sont cohérents avec ceux du référentiel Data Infrastructure Insights.
 
 Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.
 
@@ -326,7 +326,7 @@ Si l'option analyse des modifications est activée, modifiez _AgentConfiguration
 
 == Vérification des checksums Kubernetes
 
-Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour effectuer une opération de téléchargement uniquement (par opposition au téléchargement et à l'installation par défaut), ces utilisateurs peuvent modifier la commande d'installation de l'agent obtenue à partir de l'interface utilisateur et supprimer l'option "installation" de fin.
+Le programme d'installation de l'agent Data Infrastructure Insights effectue des vérifications d'intégrité, mais certains utilisateurs peuvent vouloir effectuer leurs propres vérifications avant d'installer ou d'appliquer des artéfacts téléchargés. Pour effectuer une opération de téléchargement uniquement (par opposition au téléchargement et à l'installation par défaut), ces utilisateurs peuvent modifier la commande d'installation de l'agent obtenue à partir de l'interface utilisateur et supprimer l'option "installation" de fin.
 
 Voici la procédure à suivre :
 
@@ -346,7 +346,7 @@ Voici la procédure à suivre :
 
 
 
-La commande de téléchargement uniquement télécharge tous les artefacts requis de Cloud Insights vers le répertoire de travail.  Les artefacts incluent, mais ne se limitent pas aux éléments suivants :
+La commande de téléchargement uniquement télécharge tous les artefacts requis depuis Data Infrastructure Insights vers le répertoire de travail. Les artefacts incluent, mais ne se limitent pas aux éléments suivants :
 
 * un script d'installation
 * un fichier d'environnement
@@ -390,7 +390,7 @@ Voici quelques points à essayer en cas de problème lors de la configuration de
 | Problème : | Essayer : 
 
 
-| Je ne vois pas de lien hypertexte/connexion entre mon volume persistant Kubernetes et le périphérique de stockage back-end correspondant. Mon volume persistant Kubernetes est configuré en utilisant le nom d'hôte du serveur de stockage. | Procédez comme suit pour désinstaller l'agent Telegraf existant, puis réinstaller l'agent Telegraf le plus récent. Vous devez utiliser Telegraf version 2.0 ou ultérieure et le stockage en cluster Kubernetes doit être activement surveillé par Cloud Insights. 
+| Je ne vois pas de lien hypertexte/connexion entre mon volume persistant Kubernetes et le périphérique de stockage back-end correspondant. Mon volume persistant Kubernetes est configuré en utilisant le nom d'hôte du serveur de stockage. | Procédez comme suit pour désinstaller l'agent Telegraf existant, puis réinstaller l'agent Telegraf le plus récent. Vous devez utiliser Telegraf version 2.0 ou ultérieure et le stockage de votre cluster Kubernetes doit être activement surveillé par Data Infrastructure Insights. 
 
 
 | Je vois des messages dans les journaux qui ressemblent à ce qui suit :
@@ -511,23 +511,7 @@ Capturer ou noter le résultat des commandes suivantes et contacter l'équipe de
 | Je ne vois aucun indicateur collecté pour les cronjobs Kubernetes qui existent dans mon cluster. | Vérifiez votre version Kubernetes (c'est-à-dire `kubectl version`).  S'il est v1.20.x ou inférieur, il s'agit d'une limitation attendue.  La version de kube-state-metrics déployée avec l'opérateur de surveillance Kubernetes ne prend en charge que v1.cronjob.  Avec Kubernetes 1.20.x et versions antérieures, la ressource cronjob est à v1beta.cronjob.  Par conséquent, les indicateurs d'état kube ne peuvent pas trouver la ressource cronjob. 
 
 
-| Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ». | Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au manuel de l'opérateur  link:telegraf_agent_k8s_config_options.html["options de configuration"].
-
-REMARQUE : si vous utilisez l'édition fédérale de Cloud Insights, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter de metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut ; pour les désactiver, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_ :
-
-...
-spéc. :
-...
-telegraf :
-    ...
-     - nom: docker
-            mode run :
-              - DemonSet
-            substitutions :
-              - CLÉ : DOCKER_UNIX_SOCK_PLACEHOLDER
-                valeur : unix:///run/docker.sock
-    ...
-... 
+| Après l'installation de l'opérateur, les modules telegraf-ds entrent dans CrashLoopBackOff et les journaux du pod indiquent « su: Authentication failure ». | Modifiez la section telegraf dans _AgentConfiguration_ et définissez _dockerMetricCollectionEnabled_ sur FALSE. Pour plus de détails, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration"]manuel de l'opérateur . REMARQUE : si vous utilisez Data Infrastructure Insights Federal Edition, les utilisateurs avec des restrictions sur l'utilisation de _su_ ne pourront pas collecter les metrics docker car l'accès au socket docker nécessite l'exécution du conteneur telegraf en tant que root ou l'utilisation de _su_ pour ajouter l'utilisateur telegraf au groupe docker. La collecte de mesures Docker et l'utilisation de _su_ sont activées par défaut; pour désactiver les deux, supprimez l'entrée _telegraf.docker_ dans le fichier _AgentConfiguration_: ... Spec: ... telegraf: ...           - Nom: docker       run-mode             : - DemonSet substitutions:        - Key: DOCKER_UNIX_SOCK_PLACEHOLDER         valeur: unix:///run/docker.sock ... ... 
 
 
 | Je vois des messages d'erreur récurrents ressemblant à ce qui suit dans mes journaux Telegraf :
@@ -538,10 +522,10 @@ telegraf :
 | Il me manque des données _involvedobject_ pour certains journaux d'événements. | Assurez-vous d'avoir suivi les étapes de la link:pre-requisites_for_k8s_operator.html["Autorisations"] section ci-dessus. 
 
 
-| Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Cloud Insights a décidé de réorganiser l'opérateur pour mieux servir nos utilisateurs ; pour que ces changements soient pleinement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-kubernetes-monitoring-operator,installez le nouveau>>. 
+| Pourquoi deux modules d'opérateurs de surveillance s'exécutent, l'un nommé netapp-ci-monitoring-Operator-<pod> et l'autre Monitoring-Operator-<pod> ? | Depuis le 12 octobre 2023, Data Infrastructure Insights a été décidé de réorganiser l'opérateur pour mieux répondre aux besoins de nos utilisateurs. Pour que ces changements soient entièrement adoptés, vous devez <<uninstalling,retirez l'ancien opérateur>> et <<installing-the-kubernetes-monitoring-operator,installez le nouveau>>. 
 
 
-| Mes événements kubernetes ont cessé de générer des rapports sur Cloud Insights de manière inattendue.  a| 
+| Mes événements kubernetes ont cessé de générer des rapports à Data Infrastructure Insights de manière inattendue.  a| 
 Récupérer le nom du pod Event-exportateur :
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`

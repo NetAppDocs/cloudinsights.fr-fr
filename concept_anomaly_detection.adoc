@@ -62,7 +62,7 @@ La surveillance de la détection des anomalies peut fournir des alertes utiles d
 
 Pour signaler des anomalies, créez un moniteur en accédant à *observabilité > alertes > +Monitor*. Sélectionnez _surveillance de détection d'anomalie_ comme type de moniteur.
 
-image:Anomaly Detection Monitor Choice.png["Sélection de la détection des anomalies lors de la création d'un moniteur, largeur=480"]
+image:AnomalyDetectionMonitorChoice.png["Sélection de la détection des anomalies lors de la création d'un moniteur, largeur=480"]
 
 Choisissez l'objet et la mesure à surveiller. Vous pouvez définir des filtres et des groupes comme pour d'autres types de moniteurs.
 
@@ -74,7 +74,7 @@ Définissez ensuite les conditions du moniteur.
 * Vous pouvez également définir une valeur au-dessous de laquelle les anomalies sont _ignorées_. Cela peut contribuer à réduire le bruit. Cette valeur s'affiche sous la forme d'une ligne pointillée sur le graphique échantillon.
 
 
-image:Anomaly Detection Monitor Conditions.png["Réglage des conditions du moniteur de détection d'anomalie"]
+image:AnomalyDetectionMonitorConditions.png["Réglage des conditions du moniteur de détection d'anomalie"]
 
 Enfin, vous pouvez configurer une méthode de livraison pour les alertes (e-mail, webhook, ou les deux), fournir au moniteur une description facultative ou des actions correctives, et ajouter le moniteur à un groupe personnalisé, si vous le souhaitez.
 

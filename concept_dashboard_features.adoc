@@ -47,8 +47,6 @@ Tous les widgets de tableau de bord peuvent être positionnés et dimensionnés 
 
 En mode Tableau de bord, cliquez sur le menu du widget et sélectionnez *Dupliquer*. L'éditeur de widget est lancé, rempli avec la configuration du widget original et avec un suffixe "copie" dans le nom du widget. Vous pouvez facilement apporter les modifications nécessaires et enregistrer le nouveau widget. Le widget sera placé au bas de votre tableau de bord et vous pouvez le positionner selon les besoins. N'oubliez pas d'enregistrer votre tableau de bord lorsque toutes les modifications sont terminées.
 
-image:DuplicateWidget.png["Dupliquer un widget"]
-
 
 
 == Affichage des légendes du widget
@@ -471,7 +469,7 @@ Le widget s'ouvre en mode édition. Par défaut, une requête est affichée avec
 +
 Le graphique affiche une ligne indiquant la somme des IOPS totales.
 
-. Cliquez sur l'icône _Dupliquer cette requête_ image:DuplicateQueryIcon.png["Requête de duplicaat"] pour créer une copie de la requête.
+. Cliquez sur l'icône _Dupliquer cette requête_ pour créer une copie de la requête.
 +
 Une copie de la requête est ajoutée sous l'original.
 
@@ -505,7 +503,7 @@ Pour utiliser une variable dans une expression, tapez simplement le nom de la va
 
 Les widgets de tableau traitent les expressions un peu différemment. Vous pouvez avoir jusqu'à cinq expressions dans un widget de table unique, chacune étant ajoutée en tant que nouvelle colonne à la table. Chaque expression peut inclure jusqu'à cinq valeurs sur lesquelles effectuer son calcul. Vous pouvez facilement nommer la colonne quelque chose de significatif.
 
-image:Expression Example.png["Expression dans un widget de tableau"]
+image:ExpressionExample.png["Expression dans un widget de tableau"]
 
 
 
@@ -612,7 +610,7 @@ Noms des variables :
 
 Les widgets solide et jauge à puce vous permettent de définir des seuils pour les niveaux _Warning_ et/ou _Critical_, fournissant une représentation claire des données que vous spécifiez.
 
-image:Gauge Widget Formatting.png["Paramètres de format pour le widget Gauge"]
+image:GaugeWidgetFormatting.png["Paramètres de format pour le widget Gauge"]
 
 Pour définir le formatage de ces widgets, procédez comme suit :
 
@@ -632,7 +630,7 @@ image:Gauge-Bullet.png["Jauge à puce, largeur=374"]
 
 Dans le widget valeur unique, outre le réglage des seuils d'avertissement (orange) et critique (rouge), vous pouvez choisir d'avoir des valeurs « dans la plage » (celles qui se trouvent sous le niveau d'avertissement) affichées avec un arrière-plan vert ou blanc.
 
-image:Single-Value Widgets.png["Widget de valeur unique avec et sans formatage"]
+image:Single-ValueWidgets.png["Widget de valeur unique avec et sans formatage"]
 
 Si vous cliquez sur le lien dans un widget à valeur unique ou un widget de jauge, une page de requête correspondant à la première requête du widget s'affiche.
 
@@ -692,7 +690,7 @@ NOTE: Cloud Insights utilise les normes américaines de nommage des numéros ang
 
 Si vous disposez d'un widget de séries chronologiques (ligne, spline, zone, zone empilée) comportant deux requêtes dans lesquelles les deux sont tracées sur l'axe y principal, l'unité de base n'est pas affichée en haut de l'axe Y. Toutefois, si votre widget a une requête sur l'axe y principal et une requête sur l'axe y secondaire, les unités de base de chacune sont affichées.
 
-image:UnitsOnPrimaryAnd SecondaryYAxis.png["Unités sur les deux axes Y."]
+image:UnitsOnPrimaryAndSecondaryYAxis.png["Unités sur les deux axes Y."]
 
 Si votre widget a au moins trois requêtes, les unités de base ne sont pas affichées sur l'axe Y.
 
@@ -802,8 +800,8 @@ Combiné au *mode TV*, l'actualisation automatique permet d'afficher les donnée
 
 NOTE: Étant donné que NetApp BlueXP a son propre délai de connexion utilisateur de 7 jours, Cloud Insights doit également se déconnecter avec cet événement. Il vous suffit de vous connecter à nouveau pour que votre tableau de bord continue à s'afficher.
 
-* Pour activer le mode TV, cliquez sur le bouton image:ActivateTVMode.png["Mode TV"] bouton.
-* Pour désactiver le mode TV, cliquez sur le bouton *Quitter* dans le coin supérieur gauche de l'écran. image:ExitTVMode.png["Bouton Quitter"]
+* Pour activer le mode TV, cliquez sur le bouton mode TV.
+* Pour désactiver le mode TV, cliquez sur le bouton *Quitter* dans le coin supérieur gauche de l'écran.
 
 
 Vous pouvez suspendre temporairement l'actualisation automatique en cliquant sur le bouton Pause dans le coin supérieur droit. En pause, le champ de plage de temps du tableau de bord affiche la plage de temps active des données en pause. Vos données sont toujours en cours d'acquisition et de mise à jour pendant l'actualisation automatique. Cliquez sur le bouton reprendre pour continuer l'actualisation automatique des données.

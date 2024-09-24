@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données CouchDB
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour recueillir des mesures à partir de CouchDB.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter des metrics à partir de CouchDB.
 
 
 

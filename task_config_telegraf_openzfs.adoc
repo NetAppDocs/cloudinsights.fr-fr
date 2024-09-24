@@ -19,7 +19,7 @@ summary: Configuration OpenZFS Data Collector
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour collecter des metrics à partir d'OpenZFS.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter des mesures à partir d'OpenZFS.
 
 
 

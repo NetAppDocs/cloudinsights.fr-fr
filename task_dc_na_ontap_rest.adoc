@@ -29,7 +29,7 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 
 * Vous devez avoir accès à un compte utilisateur avec le niveau d'accès requis. Notez que les autorisations d'administrateur sont requises si vous créez un nouvel utilisateur/rôle REST.
 +
-** Fonctionnellement, Cloud Insights fait principalement des demandes de lecture, mais certaines autorisations d'écriture sont requises pour que Cloud Insights s'enregistre dans la baie ONTAP. Voir la _remarque sur les autorisations_ ci-dessous.
+** Fonctionnellement, Data Infrastructure Insights effectue principalement des requêtes de lecture, mais certaines autorisations d'écriture sont requises pour que les informations d'infrastructure de données s'enregistrent sur la baie ONTAP. Voir la _remarque sur les autorisations_ ci-dessous.
 
 
 * ONTAP version 9.14.1 ou supérieure.
@@ -40,9 +40,9 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 
 == Remarque sur les autorisations
 
-Comme plusieurs tableaux de bord ONTAP de Cloud Insights reposent sur des compteurs ONTAP avancés, vous devez conserver *Activer la collecte avancée de données de compteur* activé dans la section Configuration avancée du collecteur de données.
+Comme plusieurs tableaux de bord ONTAP de Data Infrastructure Insights reposent sur des compteurs ONTAP avancés, vous devez conserver *Activer la collecte avancée de données de compteur* activé dans la section Configuration avancée du collecteur de données.
 
-Pour créer un compte local pour Cloud Insights au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP :
+Pour créer un compte local pour les données d'infrastructure de données au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion du cluster et exécutez les commandes suivantes sur le serveur ONTAP :
 
 . Avant de commencer, vous devez être connecté à ONTAP avec un compte _Administrator_ et _diagnostics-level commands_ doit être activé.
 . Récupérer le nom du vServer de type _admin_. Vous utiliserez ce nom dans les commandes suivantes.
@@ -144,11 +144,11 @@ Vous pouvez utiliser ce même processus pour revenir au collecteur précédent, 
 
 == Terminologie
 
-Cloud Insights acquiert les données d'inventaire, de journaux et de performances à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Les informations d'infrastructure de données font l'acquisition d'inventaires, de journaux et de données de performances à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque | Disque 
@@ -190,8 +190,8 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données.
 * Version du microcode : micrologiciel.
 * Capacité brute : somme de base 2 de tous les disques physiques du système, quel que soit leur rôle.
-* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, Cloud Insights s'approvisionna directement cette valeur, mais ce n'est souvent pas le cas. Au lieu de cela, Cloud Insights effectue généralement un calcul pondéré par IOPS, à partir des statistiques des volumes internes individuels.
-* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Cloud Insights dans le cadre du rapport d'inventaire.
+* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, les informations sur l'infrastructure de données génèrent directement cette valeur, mais ce n'est souvent pas le cas. À la place de la baie qui propose cela, Data Infrastructure Insights effectue généralement un calcul pondéré par IOPS à partir des statistiques des volumes internes individuels.
+* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Data Infrastructure Insights dans le cadre du reporting d'inventaire.
 
 
 
@@ -232,7 +232,7 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 
 == Mesures de puissance ONTAP
 
-Plusieurs modèles ONTAP fournissent des mesures de puissance pour Cloud Insights qui peuvent être utilisées à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.
+Plusieurs modèles ONTAP fournissent des metrics de puissance pour les informations exploitables de l'infrastructure de données, qui peuvent être utilisés à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.
 
 Modèles pris en charge :
 

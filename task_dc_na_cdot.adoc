@@ -25,11 +25,11 @@ Ce collecteur de données acquiert les données d'inventaire et de performance d
 
 == Terminologie
 
-Cloud Insights acquiert les données d'inventaire et de performance à partir du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Les informations d'infrastructure de données font l'acquisition des données d'inventaire et de performance du collecteur de données ONTAP. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque | Disque 
@@ -68,8 +68,8 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données.
 * Version du microcode : micrologiciel.
 * Capacité brute : somme de base 2 de tous les disques physiques du système, quel que soit leur rôle.
-* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, Cloud Insights s'approvisionna directement cette valeur, mais ce n'est souvent pas le cas. Au lieu de cela, Cloud Insights effectue généralement un calcul pondéré par IOPS, à partir des statistiques des volumes internes individuels.
-* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Cloud Insights dans le cadre du rapport d'inventaire.
+* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, les informations sur l'infrastructure de données génèrent directement cette valeur, mais ce n'est souvent pas le cas. À la place de la baie qui propose cela, Data Infrastructure Insights effectue généralement un calcul pondéré par IOPS à partir des statistiques des volumes internes individuels.
+* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Data Infrastructure Insights dans le cadre du reporting d'inventaire.
 
 
 
@@ -132,7 +132,7 @@ Les conditions suivantes sont requises pour configurer et utiliser ce collecteur
 
 === Exigences d'autorisation pour la collecte des mesures de commutateur ONTAP
 
-Cloud Insights peut collecter les données des commutateurs de cluster ONTAP en option dans les collecteurs <<advanced-configuration,Configuration avancée>> paramètres. En plus de l'activer sur le collecteur Cloud Insights, vous devez également *configurer le système ONTAP* lui-même pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"], et s'assurer que le est correct <<a-note-about-permissions,autorisations>> Sont réglés pour permettre l'envoi des données du contacteur à Cloud Insights.
+Les informations d'infrastructure de données peuvent collecter en option les données des commutateurs de cluster ONTAP dans <<advanced-configuration,Configuration avancée>>les paramètres du collecteur. En plus de l'activer sur le collecteur de données d'informations d'infrastructure de données, vous devez également *configurer le système ONTAP* lui-même pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"], et vous assurer que les bonnes <<a-note-about-permissions,autorisations>> sont définies, afin de permettre l'envoi des données de commutateur aux informations d'infrastructure de données.
 
 
 
@@ -190,13 +190,13 @@ Cloud Insights peut collecter les données des commutateurs de cluster ONTAP en 
 | Collecte avancée des données du compteur | Activez l'intégration ONTAP. Sélectionnez cette option pour inclure les données de compteur avancé ONTAP dans les sondages. Choisissez les compteurs souhaités dans la liste. 
 
 
-| Metrics des commutateurs de cluster | Autorisez Cloud Insights à collecter les données des commutateurs du cluster. Notez qu'en plus de l'activer côté Cloud Insights, vous devez également configurer le système ONTAP pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"], et s'assurer que le est correct <<a-note-about-permissions,autorisations>> Sont réglés pour permettre l'envoi des données du contacteur à Cloud Insights. Reportez-vous à la section « Note sur les autorisations » ci-dessous. 
+| Metrics des commutateurs de cluster | Permettez à Data Infrastructure Insights de collecter les données des commutateurs de cluster. Notez qu'en plus de l'activer du côté informations sur l'infrastructure de données, vous devez également configurer le système ONTAP pour fournir link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["informations sur le commutateur"]et vous assurer que les bonnes <<a-note-about-permissions,autorisations>> sont définies, afin de permettre l'envoi des données de commutation aux informations sur l'infrastructure de données. Reportez-vous à la section « Note sur les autorisations » ci-dessous. 
 |===
 
 
 == Mesures de puissance ONTAP
 
-Plusieurs modèles ONTAP fournissent des mesures de puissance pour Cloud Insights qui peuvent être utilisées à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.
+Plusieurs modèles ONTAP fournissent des metrics de puissance pour les informations exploitables de l'infrastructure de données, qui peuvent être utilisés à des fins de surveillance ou d'alerte. Les listes des modèles pris en charge et non pris en charge ci-dessous ne sont pas exhaustives, mais doivent fournir des conseils ; en général, si un modèle se trouve dans la même famille qu'un modèle de la liste, le support doit être le même.
 
 Modèles pris en charge :
 
@@ -237,11 +237,11 @@ FAS/AFF 8080
 
 == Remarque sur les autorisations
 
-Comme un certain nombre de tableaux de bord ONTAP de Cloud Insights reposent sur des compteurs ONTAP avancés, vous devez activer *collecte de données de compteur avancée* dans la section Configuration avancée du collecteur de données.
+Comme plusieurs tableaux de bord ONTAP de Data Infrastructure Insights reposent sur des compteurs ONTAP avancés, vous devez activer *Advanced Counter Data Collection* dans la section Data Collector Advanced Configuration.
 
 Vous devez également vous assurer que l'autorisation d'écriture à l'API ONTAP est activée. Ces opérations nécessitent généralement un compte au niveau du cluster avec les autorisations nécessaires.
 
-Pour créer un compte local pour Cloud Insights au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion des clusters et exécutez les commandes suivantes sur le serveur ONTAP :
+Pour créer un compte local pour les données d'infrastructure de données au niveau du cluster, connectez-vous à ONTAP avec le nom d'utilisateur/mot de passe de l'administrateur de gestion du cluster et exécutez les commandes suivantes sur le serveur ONTAP :
 
 . Avant de commencer, vous devez être connecté à ONTAP avec un compte _Administrator_ et _diagnostics-level commands_ doit être activé.
 . Créez un rôle en lecture seule à l'aide des commandes suivantes.
@@ -280,7 +280,7 @@ UserName    Application   Method      Role Name      Locked
 ci_user     ontapi      password    ci_readonly   no
 ....
 
-NOTE: Si le contrôle d'accès ONTAP n'est pas défini correctement, les appels de REPOS Cloud Insights peuvent échouer et entraîner des lacunes dans les données de l'appareil.  Par exemple, si vous l'avez activé sur le collecteur Cloud Insights mais que vous n'avez pas configuré les autorisations sur le ONTAP, l'acquisition échouera.  En outre, si le rôle est précédemment défini sur ONTAP et que vous ajoutez les capacités de l'API REST, assurez-vous que _http_ est ajouté au rôle.
+NOTE: Si le contrôle d'accès ONTAP n'est pas défini correctement, les appels REST de Data Infrastructure Insights peuvent échouer et entraîner des lacunes dans les données du périphérique. Par exemple, si vous l'avez activé sur le collecteur d'informations sur l'infrastructure de données mais que vous n'avez pas configuré les autorisations sur ONTAP, l'acquisition échouera. En outre, si le rôle est précédemment défini sur ONTAP et que vous ajoutez les capacités de l'API REST, assurez-vous que _http_ est ajouté au rôle.
 
 
 

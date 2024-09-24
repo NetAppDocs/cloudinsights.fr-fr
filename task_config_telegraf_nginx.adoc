@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Nginx
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour recueillir des mesures de Nginx.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter les metrics de ce dernier.
 
 
 

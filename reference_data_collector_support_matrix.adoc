@@ -17593,16 +17593,19 @@ Produits pris en charge par ce collecteur de données :
 | Type | Écart | HTTPS |  
 
 
-.4+| Performance | Qtree | Stockage | Disques défectueux | Mise en œuvre | HTTPS 
+.5+| Performance | Stockage | Disques défectueux | Mise en œuvre | HTTPS |  
 
 
-|  .3+| Nœud de stockage | Taux de réussite total du cache | Mise en œuvre | HTTPS 
+.3+| Nœud de stockage | Taux de réussite total du cache | Mise en œuvre | HTTPS |  
 
 
-|  | Nombre total de lectures de disque remplacé | Mise en œuvre | HTTPS 
+| Nombre total de lectures de disque remplacé | Mise en œuvre | HTTPS |  
 
 
-|  | Total d'utilisation | Mise en œuvre | HTTPS 
+| Total d'utilisation | Mise en œuvre | HTTPS |  
+
+
+| Qtree |  | Mise en œuvre | HTTPS |  
 |===
 API de gestion utilisées par ce collecteur de données :
 

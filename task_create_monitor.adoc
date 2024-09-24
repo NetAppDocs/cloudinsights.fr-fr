@@ -101,6 +101,16 @@ image:Monitor_metric_conditions.png["Définir les conditions du moniteur"]
 
 
 
+==== Définir le comportement de résolution d'alerte
+
+Vous pouvez choisir comment une alerte de surveillance des mesures est résolue. Deux options s'offrent à vous :
+
+* Résoudre le problème lorsque la mesure revient à la plage acceptable.
+* Résoudre lorsque la mesure se trouve dans la plage acceptable pendant une durée spécifiée, de 1 minute à 7 jours.
+
+
+
+
 === Surveillance des journaux
 
 Lors de la création d'un moniteur *Log Monitor*, choisissez d'abord le journal à surveiller dans la liste des journaux disponibles. Vous pouvez ensuite filtrer en fonction des attributs disponibles, comme ci-dessus. Vous pouvez également choisir un ou plusieurs attributs « Grouper par ».
@@ -122,12 +132,39 @@ Vous pouvez créer le moniteur pour qu'il vous alerte avec un niveau de gravité
 
 Vous pouvez choisir la façon dont une alerte de surveillance de journal est résolue. Trois choix sont proposés :
 
-* Résolution instantanée
-* Purger après la période de conservation des données (reportez-vous à la page Editions pour plus de détails). Notez que le moniteur n'a pas de condition de résolution par définition. Une alerte restera donc _active_ et supprimera toutes les alertes suivantes avec _group_by_ correspondant générées par ce moniteur, jusqu'à ce que la période de conservation des données soit terminée.
-* Résoudre en fonction de l'entrée de journal : résoudre l'alerte lorsque la ligne de journal est découverte comme indiqué dans la définition suivante, ou purger après la période de conservation des données.
+* *Résoudre instantanément*: L'alerte est immédiatement résolue sans action supplémentaire
+* *Résoudre en fonction de l'heure* : l'alerte est résolue une fois l'heure spécifiée écoulée
+* *Résoudre en fonction de l'entrée de journal* : l'alerte est résolue lorsqu'une activité de journal ultérieure s'est produite. Par exemple, lorsqu'un objet est enregistré comme « disponible ».
 
 
-image:LogMonitorAlertResolution.png["Options de résolution des alertes"]
+image:Monitor_log_monitor_resolution.png["Résolution des alertes"]
+
+
+
+=== Moniteur de détection des anomalies
+
+. Dans la liste déroulante, recherchez et choisissez un type d'objet et une mesure à surveiller.
+
+
+Vous pouvez définir des filtres pour réduire les attributs d'objet ou les mesures à surveiller.
+
+image:AnomalyDetectionMonitorMetricChoosing.png["Filtrage des metrics pour la détection des anomalies"]
+
+
+
+==== Définissez les conditions du moniteur.
+
+. Après avoir choisi l'objet et la mesure à surveiller, vous pouvez définir les conditions dans lesquelles une anomalie est détectée.
++
+** Choisissez de détecter une anomalie lorsque la métrique choisie *pointe au-dessus* des limites prévues, *chute en dessous* de ces limites, ou *pointe au-dessus ou chute en dessous* des limites.
+** Régler la *sensibilité* de la détection. *Faible* (moins d'anomalies sont détectées), *moyenne* ou *élevée* (plus d'anomalies sont détectées).
+** Définissez les alertes sur Wither *Warning* ou *Critical*.
+** Si vous le souhaitez, vous pouvez choisir de réduire le bruit, en ignorant les anomalies lorsque la mesure choisie est inférieure à un seuil que vous avez défini.
+
+
+
+
+image:AnomalyDetectionMonitorDefineConditions.png["Définition des conditions de déclenchement d'une détection d'anomalie"]
 
 
 

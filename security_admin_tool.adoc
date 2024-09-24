@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_admin_tool.html 
-summary: Cloud Insights suit les bonnes pratiques de sécurité tout au long du cycle de vie de la version. 
+summary: Data Infrastructure Insights applique de bonnes pratiques de sécurité tout au long du cycle de vie des versions. 
 keywords: security, risk, protection 
 ---
 = Outil SecurityAdmin
@@ -19,11 +19,11 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-Cloud Insights inclut des fonctions de sécurité qui permettent à votre environnement de fonctionner avec une sécurité renforcée. Ces fonctionnalités comprennent des améliorations au cryptage, au hachage de mot de passe et à la possibilité de modifier les mots de passe des utilisateurs internes ainsi que les paires de clés qui chiffrent et décryptent les mots de passe.
+Les informations d'infrastructure de données incluent des fonctionnalités de sécurité qui permettent à votre environnement de fonctionner avec une sécurité renforcée. Ces fonctionnalités comprennent des améliorations au cryptage, au hachage de mot de passe et à la possibilité de modifier les mots de passe des utilisateurs internes ainsi que les paires de clés qui chiffrent et décryptent les mots de passe.
 
 Pour protéger les données sensibles, NetApp vous recommande de modifier les clés par défaut et le mot de passe utilisateur _acquisition_ après une installation ou une mise à niveau.
 
-Les mots de passe cryptés de la source de données sont stockés dans Cloud Insights, qui utilise une clé publique pour chiffrer les mots de passe lorsqu'un utilisateur les saisit dans une page de configuration du collecteur de données. Cloud Insights ne dispose pas des clés privées requises pour décrypter les mots de passe du collecteur de données ; seules les unités d'acquisition (AUS) possèdent la clé privée du collecteur de données requise pour décrypter les mots de passe du collecteur de données.
+Les mots de passe cryptés de la source de données sont stockés dans Data Infrastructure Insights, qui utilise une clé publique pour chiffrer les mots de passe lorsqu'un utilisateur les saisit sur une page de configuration du collecteur de données. Data Infrastructure Insights ne dispose pas des clés privées requises pour décrypter les mots de passe du collecteur de données ; seules les unités d'acquisition (AUS) possèdent la clé privée du collecteur de données requise pour décrypter les mots de passe du collecteur de données.
 
 
 
@@ -35,7 +35,7 @@ Si le système Insight contient des configurations de sécurité autres que cell
 
 == Gestion de la sécurité sur l'unité d'acquisition
 
-L'outil SecurityAdmin permet de gérer les options de sécurité de Cloud Insights et s'exécute sur le système d'unités d'acquisition. La gestion de la sécurité inclut la gestion des clés et des mots de passe, l'enregistrement et la restauration des configurations de sécurité que vous créez ou restaurez aux paramètres par défaut.
+L'outil SecurityAdmin vous permet de gérer les options de sécurité de Data Infrastructure Insights et est exécuté sur le système d'unités d'acquisition. La gestion de la sécurité inclut la gestion des clés et des mots de passe, l'enregistrement et la restauration des configurations de sécurité que vous créez ou restaurez aux paramètres par défaut.
 
 
 
@@ -168,7 +168,7 @@ usage: securityadmin -pr -ap <arg> | -h | -rp | -upr <arg>
 
 The purpose of this tool is to enable reconfiguration of security aspects
 of the Acquisition Unit such as encryption keys, and proxy configuration,
-etc. For more information about this tool, please check the Cloud Insights
+etc. For more information about this tool, please check the Data Infrastructure Insights
 Documentation.
 
 -ap,--add-proxy <arg>       add a proxy server.  Arguments: ip=ip
@@ -207,7 +207,7 @@ Pour mettre à jour un proxy, la commande est
 
 Si vous fournissez un script shell UNIX, il peut être exécuté par l'unité d'acquisition pour récupérer la *clé privée* et la *clé publique* de votre système de gestion des clés.
 
-Pour récupérer la clé, Cloud Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
+Pour récupérer la clé, Data Infrastructure Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
 
 Pour renvoyer la clé à l'unité d'acquisition, le script doit imprimer la clé sur la sortie standard. Le script doit imprimer _uniquement_ la clé de la sortie standard ; aucun autre texte ne doit être imprimé sur la sortie standard. Une fois la clé demandée imprimée sur la sortie standard, le script doit se fermer avec un code de sortie de 0 ; tout autre code de retour est considéré comme une erreur.
 

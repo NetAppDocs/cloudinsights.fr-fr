@@ -16,7 +16,7 @@ summary: Collecteur de données pour Kubernetes
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour recueillir les metrics du pod Kubernetes, des nœuds et des conteneurs.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter les metrics Kubernetes Pod, de nœud et de conteneur.
 
 
 

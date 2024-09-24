@@ -23,7 +23,7 @@ Ce collecteur de données acquiert les données d'inventaire et de performances 
 
 Veuillez noter que Dell/EMC n'a pas introduit de statistiques par volume avant Unisphere 10.0 - ce collecteur de données prend en charge 9.2.0+, mais ne pourra pas collecter les statistiques de volume car elles n'existent pas.
 
-Une instance Unisphere for Vmax/PowerMax peut gérer une ou plusieurs baies de stockage Symmetrix Vmax 3 ou supérieures. Ce collecteur tente par défaut de découvrir toutes les baies « locales » de cette instance Unisphere. Si une instance Unisphere voit des baies « distantes » (c'est-à-dire celles connectées via la réplication SRDF), elles sont ignorées et vous devez créer un collecteur Unisphere supplémentaire dans Cloud Insights, désigné par l'instance Unisphere de ce site comme locale.
+Une instance Unisphere for Vmax/PowerMax peut gérer une ou plusieurs baies de stockage Symmetrix Vmax 3 ou supérieures. Ce collecteur tente par défaut de découvrir toutes les baies « locales » de cette instance Unisphere. Si une instance Unisphere voit des baies « distantes » (c'est-à-dire celles connectées via la réplication SRDF), elles seront ignorées et pour découvrir celles-ci, vous devez créer un collecteur Unisphere supplémentaire dans Data Infrastructure Insights pointés à n'importe quelle instance Unisphere de ce site les considère comme locales.
 
 Pour la configuration, le collecteur de données nécessite une adresse IP/FQDN du serveur Unisphere, la connectivité TCP au port 8443, ainsi qu'un nom d'utilisateur et un mot de passe.
 

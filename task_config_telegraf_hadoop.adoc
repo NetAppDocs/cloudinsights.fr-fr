@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Hadoop
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour collecter des metrics à partir de Hadoop.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter des metrics à partir de Hadoop.
 
 
 

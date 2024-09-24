@@ -19,7 +19,7 @@ keywords: data collector, queries, create
 
 
 [role="lead"]
-Ce collecteur de données prend en charge l'inventaire et la collecte de performances à partir des configurations de plateforme cloud Google Compute. Ce collecteur s'efforcera de découvrir toutes les ressources de calcul de tous les projets au sein d'une seule organisation Google. Si vous avez plusieurs organisations Google que vous souhaitez découvrir avec Cloud Insights, vous devrez déployer un collecteur Cloud Insights par organisation.
+Ce collecteur de données prend en charge l'inventaire et la collecte de performances à partir des configurations de plateforme cloud Google Compute. Ce collecteur s'efforcera de découvrir toutes les ressources de calcul de tous les projets au sein d'une seule organisation Google. Si vous souhaitez découvrir plusieurs entreprises Google à l'aide de Data Infrastructure Insights, vous pouvez déployer un collecteur Data Infrastructure Insights par entreprise.
 
 
 
@@ -33,7 +33,7 @@ Ce collecteur de données prend en charge l'inventaire et la collecte de perform
 | ID d'organisation | ID d'organisation que vous souhaitez découvrir avec ce collecteur. Ce champ est obligatoire si votre compte de service peut afficher plusieurs organisations 
 
 
-| Choisissez exclure ou inclure pour filtrer les projets GCP par ID | Si vous souhaitez limiter les ressources des projets disponibles dans Cloud Insights. 
+| Choisissez exclure ou inclure pour filtrer les projets GCP par ID | Vous souhaitez limiter les ressources des projets qui sont intégrées aux informations Data Infrastructure. 
 
 
 | ID de projet | La liste des ID de projet que vous souhaitez filtrer ou retirer de la découverte, en fonction de la valeur de la valeur choisir « exclure ».... La liste par défaut est vide 

@@ -19,13 +19,13 @@ summary: 'Configuration du collecteur de données HP Enterprise Alletra 9000 / P
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données HP Enterprise Alletra 9000 / HP Enterprise Primera (anciennement 3PAR) pour découvrir les inventaires et les performances.
+Data Infrastructure Insights utilise le collecteur de données HP Enterprise Alletra 9000 / HP Enterprise Primera (anciennement 3PAR) pour découvrir l'inventaire et les performances.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes à partir de ce collecteur de données. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir de ce collecteur de données. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
@@ -136,6 +136,6 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 | L'utilisateur SMI-S configuré ne possède aucun domaine | Accordez des privilèges de domaine appropriés à l'utilisateur SMI-S configuré 
 
 
-| Cloud Insights indique qu'il ne peut pas se connecter/se connecter au service SMI-S. | Vérifiez qu'il n'y a pas de pare-feu entre ci au et la matrice qui bloquera l'EC au de créer des connexions TCP à 5988 ou 5989. Une fois cela terminé, et si vous avez confirmé qu'il n'y a pas de pare-feu, vous devez utiliser SSH pour la baie et utiliser la commande « showcim » pour confirmer. Vérifiez que : * le service est activé * HTTPS est activé * le port HTTPS devrait être 5989 si tous ces éléments sont ainsi, vous pouvez essayer de "stopcim" puis un "startcim" pour redémarrer le CIM (c.-à-d. Service SMI-S). 
+| Data Infrastructure Insights indique qu'il ne peut pas se connecter au service SMI-S. | Vérifiez qu'il n'y a pas de pare-feu entre ci au et la matrice qui bloquera l'EC au de créer des connexions TCP à 5988 ou 5989. Une fois cela terminé, et si vous avez confirmé qu'il n'y a pas de pare-feu, vous devez utiliser SSH pour la baie et utiliser la commande « showcim » pour confirmer. Vérifiez que : * le service est activé * HTTPS est activé * le port HTTPS devrait être 5989 si tous ces éléments sont ainsi, vous pouvez essayer de "stopcim" puis un "startcim" pour redémarrer le CIM (c.-à-d. Service SMI-S). 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

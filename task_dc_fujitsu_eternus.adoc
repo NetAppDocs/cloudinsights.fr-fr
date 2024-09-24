@@ -25,11 +25,11 @@ Le collecteur de données ETERNUS de Fujitsu acquiert les données d'inventaire 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes à partir du système de stockage ETERNUS de Fujitsu. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir du système de stockage ETERNUS de Fujitsu. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque | Disque 

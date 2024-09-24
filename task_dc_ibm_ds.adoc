@@ -21,17 +21,17 @@ summary: Configuration du collecteur de données de la gamme DS8000 System Stora
 [role="lead"]
 Le collecteur de données IBM DS (CLI) prend en charge l'acquisition de données d'inventaire et de performance pour les périphériques DS6xxx et DS8xxx.
 
-Les appareils DS3xxx, DS4xxx et DS5xxx sont pris en charge par le link:task_dc_na_eseries.html["Collecteur de données NetApp E-Series"]. Pour connaître les modèles et les versions de firmware pris en charge, consultez la matrice de prise en charge des disques Cloud Insights.
+Les périphériques DS3xxx, DS4xxx et DS5xxx sont pris en charge par le link:task_dc_na_eseries.html["Collecteur de données NetApp E-Series"]. Consultez le tableau de prise en charge de Data Infrastructure Insights pour connaître les modèles et les versions de micrologiciel pris en charge.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM DS. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire suivantes à partir du collecteur de données IBM DS. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Module de lecteur de disque | Disque 
@@ -58,7 +58,7 @@ Vous devez disposer des éléments suivants pour configurer ce collecteur de don
 
 * Adresse IP de chaque matrice DS
 * Nom d'utilisateur et mot de passe en lecture seule sur chaque baie DS
-* Logiciels tiers installés sur le Cloud Insights au : IBM _dscli_
+* Logiciel tiers installé sur Data Infrastructure Insights au : IBM _dscli_
 * Validation des accès : exécutez les commandes _dscli_ à l'aide du nom d'utilisateur et du mot de passe
 * Configuration minimale requise pour les ports : 80, 443 et 1750
 
@@ -128,6 +128,6 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 * Essayez de communiquer avec la baie via la console de gestion Web \https://<ip>:8452/DS8000/Console.  Remplacez <ip> par l'adresse IP configurée du collecteur de données. 
 
 
-| Erreur : * Impossible d'exécuter PROGRAM * erreur d'exécution de la commande | * À partir de l'unité d'acquisition Cloud Insights Ouvrez un fichier CMD * Ouvrir CLI.CFG dans le dossier/lib de l'interface de ligne de commande et vérifiez la propriété JAVA_INSTALL, modifiez la valeur pour qu'elle corresponde à votre environnement * Afficher la version Java installée sur cet ordinateur, entrez : "java -version" * Envoyez une commande ping à l'adresse IP du périphérique de stockage IBM spécifié dans la commande CLI. * Si toutes les réponses ci-dessus fonctionnent correctement, exécutez manuellement une commande CLI 
+| Erreur : * Impossible d'exécuter PROGRAM * erreur d'exécution de la commande | * À partir de l'unité d'acquisition Data Infrastructure Insights Ouvrez un fichier CMD * Ouvrez un fichier CLI.CFG dans le répertoire principal/lib de CLI et vérifiez la propriété JAVA_INSTALL, modifiez la valeur pour qu'elle corresponde à votre environnement * Afficher la version java installée sur cet ordinateur, en tapant: "java -version" * Ping l'adresse IP du périphérique de stockage IBM spécifiée dans la commande CLI émise. * Si toutes les réponses ci-dessus fonctionnent correctement, exécutez manuellement une commande CLI 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

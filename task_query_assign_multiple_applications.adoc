@@ -28,7 +28,7 @@ NOTE: Vous pouvez utiliser ces étapes pour ajouter ou supprimer des éléments 
 Vous devez avoir déjà créé une requête qui trouve toutes les ressources à modifier.
 
 .Étapes
-. Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*.
+. Cliquez sur *Explorer* et sélectionnez *requêtes métriques*.
 +
 La page requêtes s'affiche.
 
@@ -38,15 +38,15 @@ La liste des actifs associés à la requête s'affiche.
 
 . Sélectionnez les ressources souhaitées dans la liste ou cliquez sur la case supérieure pour tout sélectionner.
 +
-Le image:BulkActions.png["Actions"] s'affiche.
+La liste déroulante actions groupées s'affiche.
 
-. Pour ajouter une application aux ressources sélectionnées, cliquez sur image:BulkActions.png["Actions"] Et sélectionnez *Ajouter application*.
+. Pour ajouter une application aux ressources sélectionnées, cliquez sur actions groupées et sélectionnez *Ajouter une application*.
 . Sélectionnez une ou plusieurs applications.
 +
 Vous pouvez sélectionner plusieurs applications pour les hôtes, les volumes internes, les qtrees et les machines virtuelles, mais vous ne pouvez sélectionner qu'une seule application pour un volume ou un partage.
 
 . Cliquez sur *Enregistrer*.
-. Pour supprimer une application affectée aux actifs, cliquez sur image:BulkActions.png["Actions"] Et sélectionnez *Supprimer l'application*.
+. Pour supprimer une application affectée aux actifs, cliquez sur actions groupées et sélectionnez *Supprimer l'application*.
 . Sélectionnez l'application ou les applications que vous souhaitez supprimer.
 . Cliquez sur *Supprimer*.
 

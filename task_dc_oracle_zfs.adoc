@@ -19,17 +19,17 @@ summary: Configuration du collecteur de données Oracle ZFS.
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données Oracle ZFS Storage Appliance pour collecter des données d'inventaire et de performances.
+Data Infrastructure Insights utilise le collecteur de données Oracle ZFS Storage Appliance pour collecter les données d'inventaire et de performances.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire avec le collecteur de données Oracle ZFS. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Data Infrastructure Insights acquiert les informations d'inventaire avec le collecteur de données Oracle ZFS. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque (SSD) | Disque 
@@ -67,7 +67,7 @@ Remarque : il s'agit uniquement de mappages terminologiques courants et peuvent 
 
 == Mesures de performances requises
 
-Les appliances Oracle ZFS offrent aux administrateurs de stockage une flexibilité considérable pour la capture des statistiques de performances. Cloud Insights s'attend à ce que vous ayez _each_ Controller dans une paire haute disponibilité configurée pour capturer les mesures suivantes :
+Les appliances Oracle ZFS offrent aux administrateurs de stockage une flexibilité considérable pour la capture des statistiques de performances. Data Infrastructure Insights attend de vous que _chaque_ contrôleur d'une paire haute disponibilité soit configuré pour capturer les mesures suivantes :
 
 * smb2.ops[partage]
 * nfs3.ops[partage]
@@ -75,7 +75,7 @@ Les appliances Oracle ZFS offrent aux administrateurs de stockage une flexibilit
 * nfs4-1.ops[part]
 
 
-Si le contrôleur n'est pas en mesure de les capturer, les Cloud Insights n'auront ou ne pourront pas générer de rapport sur la charge de travail des « volumes internes ».
+Si le contrôleur n'est pas en mesure de capturer l'un ou l'autre de ces éléments, les informations sur l'infrastructure de données n'auront probablement pas, ou ne sous-auront pas, la charge de travail sur les « volumes internes ».
 
 
 

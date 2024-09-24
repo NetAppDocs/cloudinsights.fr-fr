@@ -80,7 +80,7 @@ Ce collecteur de données prend en charge la collecte d'inventaire à partir des
 | Nombre de threads simultanés de performance | Nombre de threads simultanés. 
 
 
-| Collecte avancée des données du compteur | Vérifiez que Cloud Insights collecte les mesures avancées à partir de la liste ci-dessous. 
+| Collecte avancée des données du compteur | Cochez cette case pour que Data Infrastructure Insights collecte les metrics avancés à partir de la liste ci-dessous. 
 |===
 
 

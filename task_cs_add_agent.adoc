@@ -100,16 +100,20 @@ Sortie d'échantillon :
 Par défaut, Cloud Insights Workload Security met à jour les agents automatiquement. Certains clients peuvent souhaiter suspendre la mise à jour automatique, ce qui laisse un agent à sa version actuelle jusqu'à ce que l'une des situations suivantes se produise :
 
 * Le client reprend les mises à jour automatiques de l'agent.
-* 30 jours se sont écoulés. Notez que les 30 jours commencent le jour de la dernière mise à jour de l'agent, et non le jour de la mise en pause de l'agent.
+* 30 jours se sont écoulés. Notez que les 30 jours commencent le jour de la mise à jour la plus récente de l'agent, et non le jour de la mise en pause de l'agent.
 
 
-Dans chacun de ces cas, l'agent sera mis à jour lors de la prochaine actualisation de la sécurité de la charge de travail. Pour interrompre ou reprendre les mises à jour automatiques des agents, utilisez les API _cloudsecure_config.agents_:
+Dans chacun de ces cas, l'agent sera mis à jour lors de la prochaine actualisation de la sécurité de la charge de travail.
 
-image:ws_pin_agent_apis.png["API WS PIN Agent"]
+Pour interrompre ou reprendre les mises à jour automatiques des agents, utilisez les API _cloudsecure_config.agents_ :
 
-Notez qu'il peut prendre jusqu'à cinq minutes pour que l'action de pause ou de reprise prenne effet. Vous pouvez afficher les versions actuelles de vos agents sur la page sécurité de la charge de travail > collecteurs, dans l'onglet agents.
+image:ws_pin_agent_apis.png["API d'agent Cloud Secure pour épingler et déépingler des agents"]
 
-image:ws_agent_version.png["Versions de WS Agent"]
+Notez qu'il peut prendre jusqu'à cinq minutes pour que l'action de pause ou de reprise prenne effet.
+
+Vous pouvez afficher les versions actuelles de vos agents sur la page *Workload Security > Collectors*, dans l'onglet *agents*.
+
+image:ws_agent_version.png["Versions de WS Agent affichées dans le tableau des agents"]
 
 
 

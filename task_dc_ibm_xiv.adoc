@@ -27,7 +27,7 @@ Le collecteur de données IBM XIV et A9000 (CLI) utilise l'interface de ligne de
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque | Disque 

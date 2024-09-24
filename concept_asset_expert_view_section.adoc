@@ -222,4 +222,4 @@ Par exemple, si vous cliquez sur le pourcentage lié en regard d'une ressource e
 
 
 
-Une fois que vous avez sélectionné une ressource, elle s'affiche dans la section Ressources supplémentaires. Lorsque vous ne souhaitez plus afficher d'informations sur l'actif, cliquez sur image:TrashCanIcon.png["Supprimer"].
+Une fois que vous avez sélectionné une ressource, elle s'affiche dans la section Ressources supplémentaires. Lorsque vous ne souhaitez plus afficher les informations sur la ressource, cliquez sur l'icône de la corbeille pour la supprimer.

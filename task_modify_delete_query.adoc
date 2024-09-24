@@ -26,13 +26,12 @@ Vous pouvez modifier les critères qui sont associés à une requête lorsque vo
 == Modification d'une requête
 
 .Étapes
-. Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*.
+. Cliquez sur *Explorer* et sélectionnez *toutes les requêtes métriques*.
 +
 La page requêtes s'affiche.
 
 . Cliquez sur le nom de la requête
-. Pour ajouter un critère à la requête, cliquez sur image:GearIcon.png["Colonnes"] et sélectionnez un critère dans la liste.
-. Pour supprimer un filtre de la requête, cliquez sur *X* en regard du filtre à supprimer.
+. Pour ajouter un critère à la requête, cliquez sur l'icône colonnes et sélectionnez une mesure ou un attribut dans la liste.
 
 
 Lorsque vous avez effectué toutes les modifications nécessaires, effectuez l'une des opérations suivantes :

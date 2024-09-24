@@ -61,16 +61,6 @@ Certaines choses à essayer si vous rencontrez des problèmes avec ce collecteur
 
 
 | J'ai reçu une erreur similaire à celle-ci :
-'Échec de l'exécution de la demande : connexion à <point de terminaison de la région AWS>:8080 [<point de terminaison de la région AWS>/IP du point de terminaison de la région AWS>] échec : connexion expirée : OBTENIR UN nom de domaine complet de la région \https://<AWS>:8080/v1/Storage/IPRanges HTTP/1.1' | Le link:task_configure_acquisition_unit.html#proxy-configuration-2["proxy"] Utilisé par Cloud Insights pour communiquer avec l'unité d'acquisition ne communique pas entre Cloud Insights et le Data Collector lui-même. Voici quelques exemples de ce que vous pouvez essayer :
-
-Assurez-vous que l'unité d'acquisition est en mesure de résoudre le nom de domaine complet et d'atteindre le port requis.
-Confirmez qu'un proxy n'est pas nécessaire pour atteindre le noeud final spécifié dans le message d'erreur.
-Curl peut être utilisé pour tester la communication entre l'unité d'acquisition et le noeud final. Assurez-vous que vous utilisez *pas* un proxy pour ce test.
-
-Exemple :
-
-Root@acquisition Unit# curl -s -H Accept:application/json -H « Content-type: Application/json » -H api-key:<clé api utilisée dans les informations d'identification du collecteur de données -H secret-key:<clé secrète utilisée dans les informations d'identification du collecteur de données> -X GET \https://<AWS Regional Endpoint>:8080/v1/Storage/IPRanges
-
-Voir ceci link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["Article de la base de connaissances NetApp"]. 
+'Échec de l'exécution de la demande : connexion à <point de terminaison de la région AWS>:8080 [<point de terminaison de la région AWS>/IP du point de terminaison de la région AWS>] échec : connexion expirée : OBTENIR UN nom de domaine complet de la région \https://<AWS>:8080/v1/Storage/IPRanges HTTP/1.1' | Le système link:task_configure_acquisition_unit.html#proxy-configuration-2["proxy"] utilisé par Data Infrastructure Insights pour communiquer avec l'unité d'acquisition ne communique pas entre Data Infrastructure Insights et le Data Collector lui-même. Voici quelques éléments que vous pouvez essayer : assurez-vous que l'unité d'acquisition est capable de résoudre le fqdn et d'atteindre le port requis. Confirmez qu'un proxy n'est pas nécessaire pour atteindre le noeud final spécifié dans le message d'erreur. Curl peut être utilisé pour tester la communication entre l'unité d'acquisition et le noeud final. Assurez-vous que vous utilisez *pas* un proxy pour ce test. Exemple : root@acquisition Unit# curl -s -H Accept:application/json -H « Content-type: Application/json » -H api-key:<clé api utilisée dans les informations d'identification du collecteur de données -H secret-key:<clé secrète utilisée dans les informations d'identification du collecteur de données> -X GET \https://<AWS Regional Endpoint>:8080/v1/Storage/IPRanges Voir ce link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Cloud_Insights_fails_discovery_for_Cloud_Volumes_Service_for_AWS["Article de la base de connaissances NetApp"]. 
 |===
 Pour plus d'informations sur ce Data Collector, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

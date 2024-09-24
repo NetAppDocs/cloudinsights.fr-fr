@@ -19,7 +19,7 @@ summary: 'Configuration d"AWS S3 en tant que collecteur de données de stockage.
 
 
 [role="lead"]
-Cloud Insights utilise AWS S3 comme collecteur de données de stockage pour acquérir les données d'inventaire et de performance à partir des instances AWS S3.
+Les informations d'infrastructure de données utilisent AWS S3 en tant que collecteur de données de stockage pour acquérir des données d'inventaire et de performance à partir d'instances AWS S3.
 
 
 
@@ -63,7 +63,7 @@ Entrez les données dans les champs du collecteur de données conformément au t
 | Clé d'accès secrète AWS IAM | Entrez la clé d'accès secrète IAM AWS. Obligatoire si vous n'utilisez pas le rôle IAM. 
 
 
-| J'ai compris les factures AWS pour les demandes d'API | Vérifiez que vous comprenez bien qu'AWS vous facture pour les demandes d'API faites par l'interrogation de Cloud Insights. 
+| J'ai compris les factures AWS pour les demandes d'API | Vérifiez que vous savez qu'AWS vous facture pour les requêtes d'API formulées par l'interrogation Data Infrastructure Insights. 
 |===
 
 
@@ -111,11 +111,11 @@ Remarque : le rôle IAM ne peut être utilisé que lorsque l'unité d'acquisitio
 
 
 
-== Mappage des balises Amazon sur les annotations Cloud Insights
+== Mappage des balises Amazon avec les annotations Data Infrastructure Insights
 
-AWS S3 en tant que collecteur de données de stockage comprend une option qui vous permet de remplir les annotations d'Cloud Insights avec des balises configurées sur S3. Les annotations doivent être nommées exactement comme les balises AWS. Cloud Insights renseigne toujours les annotations de type texte nommées identique et tentera de remplir les annotations des autres types (nombre, booléen, etc.). Si votre annotation est de type différent et que le collecteur de données ne parvient pas à la remplir, il peut être nécessaire de supprimer l'annotation et de la recréer en tant que type de texte.
+Le collecteur de données AWS S3 en tant que stockage inclut une option qui vous permet de remplir les annotations Data Infrastructure Insights avec des balises configurées sur S3. Les annotations doivent être nommées exactement comme les balises AWS. Data Infrastructure Insights remplit toujours les annotations de type texte portant le même nom et fera une « meilleure tentative » pour remplir les annotations d'autres types (nombre, booléen, etc.). Si votre annotation est de type différent et que le collecteur de données ne parvient pas à la remplir, il peut être nécessaire de supprimer l'annotation et de la recréer en tant que type de texte.
 
-Notez qu'AWS est sensible à la casse, tandis que Cloud Insights n'est pas sensible à la casse. Si vous créez une annotation nommée « PROPRIÉTAIRE » dans Cloud Insights et des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans S3, toutes les variantes S3 du « propriétaire » seront mappées vers l'annotation « PROPRIÉTAIRE » de Cloud Insight.
+AWS est sensible à la casse, tandis que Data Infrastructure Insights n'est pas sensible à la casse. Par conséquent, si vous créez une annotation nommée « PROPRIÉTAIRE » dans Data Infrastructure Insights et des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans S3, toutes les variations S3 de « propriétaire » seront mappées sur l'annotation « PROPRIÉTAIRE » DE Cloud Insight.
 
 
 
@@ -127,17 +127,17 @@ Dans la section AWS Data Collector *Advanced Configuration*, vous pouvez défini
 
 == Collecte depuis les comptes enfants AWS
 
-Cloud Insights prend en charge la collecte de comptes enfants pour AWS dans un collecteur de données AWS unique. La configuration de cette collection est effectuée dans l'environnement AWS :
+Data Infrastructure Insights prend en charge la collecte de comptes enfants pour AWS dans un collecteur de données AWS unique. La configuration de cette collection est effectuée dans l'environnement AWS :
 
 * Vous devez configurer chaque compte enfant pour qu'il dispose d'un rôle AWS qui permet à l'ID de compte principal d'accéder aux informations S3 à partir du compte enfants.
 * Chaque compte enfant doit avoir le nom du rôle configuré comme la même chaîne.
-* Entrez cette chaîne de nom de rôle dans la section Cloud Insights AWS Data Collector *Advanced Configuration*, dans le champ *Cross account role*.
+* Entrez cette chaîne de nom de rôle dans la section Data Infrastructure Insights AWS Data Collector *Advanced Configuration*, dans le champ *Cross account role*.
 * Le compte sur lequel le collecteur est installé doit disposer de _déléguer l'accès administrateur_ Privileges. Pour link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentation AWS"]plus d'informations, reportez-vous à la section.
 
 
 Meilleure pratique : il est fortement recommandé d'attribuer la politique AWS prédéfinie _Amazon S3ReadOnlyAccess_ au compte principal S3. En outre, l'utilisateur configuré dans la source de données doit avoir au moins la stratégie prédéfinie _AWOrganiztionsReadOnlyAccess_, afin d'interroger AWS.
 
-Pour plus d'informations sur la configuration de votre environnement permettant Cloud Insights la collecte de données à partir de comptes enfants AWS, consultez les documents suivants :
+Pour plus d'informations sur la configuration de votre environnement afin que des informations sur l'infrastructure de données puissent être collectées à partir de comptes enfants AWS, consultez les documents suivants :
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["Tutoriel : déléguer l'accès aux comptes AWS à l'aide des rôles IAM"]
 

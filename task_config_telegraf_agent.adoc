@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, agent, telegraf agent 
-summary: 'Cloud Insights prend en charge Telegraf comme agent de collecte des données d"intégration et peut être configuré sous Windows ou Linux.' 
+summary: 'Data Infrastructure Insights prend en charge Telegraf en tant qu"agent de collecte de données d"intégration et peut être configuré sous Windows ou Linux.' 
 ---
 = Configuration d'un agent pour collecter des données (Windows/Linux)
 :toc: macro
@@ -19,9 +19,9 @@ summary: 'Cloud Insights prend en charge Telegraf comme agent de collecte des do
 
 
 [role="lead"]
-Utilisations de Cloud Insights link:https://docs.influxdata.com/telegraf["Télégraf"] en tant qu'agent pour la collecte de données d'intégration. Telegraf est un agent serveur piloté par plug-in qui peut être utilisé pour collecter et signaler des mesures, des événements et des journaux. Les plug-ins d'entrée sont utilisés pour recueillir les informations souhaitées dans l'agent en accédant directement au système/système d'exploitation, en appelant des API tierces ou en écoutant des flux configurés (c.-à-d. Kafka, statsD, etc.). Les plug-ins de sortie sont utilisés pour envoyer les mesures, les événements et les journaux collectés depuis l'agent vers Cloud Insights.
+L'link:https://docs.influxdata.com/telegraf["Télégraf"]agent Data Infrastructure Insights sert de collecte de données d'intégration. Telegraf est un agent serveur piloté par plug-in qui peut être utilisé pour collecter et signaler des mesures, des événements et des journaux. Les plug-ins d'entrée sont utilisés pour recueillir les informations souhaitées dans l'agent en accédant directement au système/système d'exploitation, en appelant des API tierces ou en écoutant des flux configurés (c.-à-d. Kafka, statsD, etc.). Les plug-ins de sortie permettent d'envoyer les metrics, les événements et les journaux collectés à partir de l'agent vers Data Infrastructure Insights.
 
-La version actuelle de Telegraf pour Cloud Insights est *1.24.0*.
+La version actuelle de Telegraf pour Data Infrastructure Insights est *1.24.0*.
 
 Pour plus d'informations sur l'installation sur Kubernetes, reportez-vous au link:task_config_telegraf_agent_k8s.html["Opérateur de surveillance NetApp Kubernetes"] page.
 
@@ -45,7 +45,7 @@ Si vous installez un collecteur de données de service et que vous n'avez pas en
 Pour installer un agent, quelle que soit la plate-forme que vous utilisez, vous devez d'abord effectuer les opérations suivantes :
 
 . Connectez-vous à l'hôte que vous utiliserez pour votre agent.
-. Connectez-vous à votre environnement Cloud Insights et accédez à *observabilité > Collectors*.
+. Connectez-vous à votre environnement Data Infrastructure Insights et accédez à *observabilité > Collectors*.
 . Cliquez sur *+Data Collector* et choisissez un collecteur de données à installer.
 . Choisir la plate-forme appropriée pour votre hôte (Windows, Linux)
 . Suivez les étapes restantes pour chaque plate-forme.
@@ -55,7 +55,7 @@ Pour installer un agent, quelle que soit la plate-forme que vous utilisez, vous 
 NOTE: Une fois que vous avez installé un agent sur un hôte, vous n'avez pas besoin d'installer de nouveau un agent sur cet hôte.
 
 
-TIP: Une fois que vous avez installé un agent sur un serveur/VM, Cloud Insights collecte les metrics de ce système en plus de la collecte à partir de tous les collecteurs de données que vous configurez. Ces metrics sont rassemblés sous la forme link:task_config_telegraf_node.html["Metrics de nœud"].
+TIP: Une fois que vous avez installé un agent sur un serveur/une machine virtuelle, Data Infrastructure Insights collecte des metrics à partir de ce système en plus de collecter les données des collecteurs que vous configurez. Ces mesures sont collectées comme link:task_config_telegraf_node.html["Metrics de nœud"].
 
 
 NOTE: Si vous utilisez un proxy, lisez les instructions du proxy de votre plate-forme avant d'installer l'agent Telegraf.
@@ -366,7 +366,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 == Vérification des sommes de contrôle
 
-Le programme d'installation de l'agent Cloud Insights effectue des contrôles d'intégrité, mais certains utilisateurs peuvent effectuer leurs propres vérifications avant d'installer ou d'appliquer des artefacts téléchargés. Pour ce faire, téléchargez le programme d'installation et générez une somme de contrôle pour le package téléchargé, puis comparez la somme de contrôle à la valeur indiquée dans les instructions d'installation.
+Le programme d'installation de l'agent Data Infrastructure Insights effectue des vérifications d'intégrité, mais certains utilisateurs peuvent vouloir effectuer leurs propres vérifications avant d'installer ou d'appliquer des artéfacts téléchargés. Pour ce faire, téléchargez le programme d'installation et générez une somme de contrôle pour le package téléchargé, puis comparez la somme de contrôle à la valeur indiquée dans les instructions d'installation.
 
 
 
@@ -403,7 +403,7 @@ Windows :
  !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
-La commande de téléchargement uniquement télécharge tous les artefacts requis de Cloud Insights vers le répertoire de travail. Les artefacts incluent, mais ne se limitent pas aux éléments suivants :
+La commande de téléchargement uniquement télécharge tous les artefacts requis depuis Data Infrastructure Insights vers le répertoire de travail. Les artefacts incluent, mais ne se limitent pas aux éléments suivants :
 
 * un script d'installation
 * un fichier d'environnement
@@ -470,9 +470,9 @@ Certaines choses à essayer si vous rencontrez des problèmes lors de la configu
 | J'ai exécuté le script d'installation sur une ancienne installation et maintenant l'agent n'envoie pas de données | Désinstallez l'agent telegraf, puis relancez le script d'installation. Suivez les étapes *mettre à niveau l'agent* de cette page pour votre plate-forme appropriée. 
 
 
-| J'ai déjà installé un agent à l'aide de Cloud Insights | Si vous avez déjà installé un agent sur votre hôte/machine virtuelle, il n'est pas nécessaire d'installer l'agent à nouveau. Dans ce cas, il vous suffit de choisir la plate-forme et la clé appropriées dans l'écran installation de l'agent, puis de cliquer sur *Continuer* ou *Terminer*. 
+| J'ai déjà installé un agent à l'aide de Data Infrastructure Insights | Si vous avez déjà installé un agent sur votre hôte/machine virtuelle, il n'est pas nécessaire d'installer l'agent à nouveau. Dans ce cas, il vous suffit de choisir la plate-forme et la clé appropriées dans l'écran installation de l'agent, puis de cliquer sur *Continuer* ou *Terminer*. 
 
 
-| J'ai déjà un agent installé, mais pas à l'aide du programme d'installation de Cloud Insights | Supprimez l'agent précédent et exécutez l'installation de l'agent Cloud Insights pour vous assurer que les paramètres par défaut du fichier de configuration sont corrects. Lorsque vous avez terminé, cliquez sur *Continuer* ou *Terminer*. 
+| Un agent est déjà installé, mais pas en utilisant le programme d'installation de Data Infrastructure Insights | Supprimez l'agent précédent et exécutez l'installation de l'agent Data Infrastructure Insights pour vous assurer que les paramètres par défaut du fichier de configuration sont corrects. Lorsque vous avez terminé, cliquez sur *Continuer* ou *Terminer*. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].

@@ -19,20 +19,20 @@ summary: Amazon FSX pour NetApp ONTAP Data Collector
 
 
 [role="lead"]
-Ce collecteur de données fait l'acquisition des données d'inventaire et de performance par Amazon FSX pour NetApp ONTAP. Ce collecteur de données sera disponible progressivement dans toutes les régions de service Cloud Insights. Contactez votre vendeur si vous ne voyez pas l'icône de ce collecteur dans votre environnement Cloud Insights.
+Ce collecteur de données fait l'acquisition des données d'inventaire et de performance par Amazon FSX pour NetApp ONTAP. Ce collecteur de données sera mis à disposition de manière incrémentielle dans les régions de service Data Infrastructure Insights. Contactez votre représentant commercial si vous ne voyez pas l'icône de ce collecteur dans votre environnement Data Infrastructure Insights.
 
 
-NOTE: Ce collecteur Cloud Insights nécessite un utilisateur ONTAP avec un rôle _Filesystem-scoped_. N'hésitez pas à consulter notre site AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rôles et règles"] documentation pour les options disponibles. À l'heure actuelle, AWS ne prend en charge qu'un seul type de rôle utilisateur avec le champ d'application du système de fichiers, à savoir _fsxadmin_. Il s'agit du rôle approprié à utiliser pour le collecteur Cloud Insights. L'utilisateur doit également avoir les trois applications qui lui sont affectées : http, ontapi, ssh.
+NOTE: Ce collecteur d'informations d'infrastructure de données requiert un utilisateur ONTAP avec un rôle _Filesystem-scoped_. Veuillez consulter la link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rôles et règles"]documentation AWS pour connaître les options disponibles. À l'heure actuelle, AWS ne prend en charge qu'un seul type de rôle utilisateur avec le champ d'application du système de fichiers, à savoir _fsxadmin_. Il s'agit du rôle approprié à utiliser pour le collecteur Data Infrastructure Insights. L'utilisateur doit également avoir les trois applications qui lui sont affectées : http, ontapi, ssh.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les données d'inventaire et de performance provenant du collecteur de données FSX-NetApp. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Les informations d'infrastructure de données font l'acquisition de données d'inventaire et de performances à partir du collecteur de données FSX-NetApp. Pour chaque type d'actif acquis, la terminologie la plus utilisée pour l'actif est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Cluster | Stockage 
@@ -58,8 +58,8 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 * Numéro de série – le numéro de série de la baie.
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données.
 * Capacité brute : somme de base 2 de tous les disques SSD affectés au système de fichiers FSX.
-* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, Cloud Insights s'approvisionna directement cette valeur, mais ce n'est souvent pas le cas. Au lieu de cela, Cloud Insights effectue généralement un calcul pondéré par IOPS, à partir des statistiques des volumes internes individuels.
-* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Cloud Insights dans le cadre du rapport d'inventaire.
+* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, les informations sur l'infrastructure de données génèrent directement cette valeur, mais ce n'est souvent pas le cas. À la place de la baie qui propose cela, Data Infrastructure Insights effectue généralement un calcul pondéré par IOPS à partir des statistiques des volumes internes individuels.
+* Débit : agrégé à partir de volumes internes. Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Data Infrastructure Insights dans le cadre du reporting d'inventaire.
 
 
 
@@ -120,7 +120,7 @@ Ce collecteur de données collecte les mesures avancées suivantes à partir du 
 * volume_charge_de_travail
 
 
-Notez que les commandes de l'interface de ligne de commande FSX et de l'API récupèrent certaines valeurs de capacité que Cloud Insights ZAPI ne collecte pas. Par conséquent, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Cloud Insights de celles utilisées sur FSX.
+Notez que les commandes de l'interface de ligne de commande FSX et de l'API récupère des valeurs de capacité que Data Infrastructure Insights ZAPI ne collecte pas. Par conséquent, certaines valeurs de capacité (telles que celles des pools de stockage) peuvent être différentes dans Data Infrastructure Insights qu'elles se trouvent sur FSX elle-même.
 
 
 

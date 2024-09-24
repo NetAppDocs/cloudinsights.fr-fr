@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Docker
 
 
 [role="lead"]
-Cloud Insights utilise ce collecteur de données pour collecter des metrics à partir de Docker.
+Data Infrastructure Insights utilise ce collecteur de données pour collecter des metrics à partir de Docker.
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-Notez que le programme d'installation Cloud Insights fourni pour la plateforme Kubernetes s'occupe automatiquement de ce mappage.
+Notez que le programme d'installation Data Infrastructure Insights fourni pour la plateforme Kubernetes prend automatiquement en charge ce mappage.
 
 
 
@@ -122,6 +122,6 @@ Les objets suivants et leurs compteurs sont collectés :
 | Problème : | Essayer : 
 
 
-| Je ne vois pas mes mesures Docker dans Cloud Insights après les instructions de la page de configuration. | Vérifiez les journaux de l'agent Telegraf pour voir s'il signale l'erreur suivante : E! Erreur dans le plug-in [inputs.docker] : obtention de l'autorisation refusée lors de la tentative de connexion à la socket du démon Docker si c'est le cas, suivez les étapes nécessaires pour fournir l'accès de l'agent Telegraf au socket Docker Unix, comme indiqué ci-dessus. 
+| Après avoir suivi les instructions de la page de configuration, je ne vois pas mes metrics Docker dans Data Infrastructure Insights. | Vérifiez les journaux de l'agent Telegraf pour voir s'il signale l'erreur suivante : E! Erreur dans le plug-in [inputs.docker] : obtention de l'autorisation refusée lors de la tentative de connexion à la socket du démon Docker si c'est le cas, suivez les étapes nécessaires pour fournir l'accès de l'agent Telegraf au socket Docker Unix, comme indiqué ci-dessus. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] page.

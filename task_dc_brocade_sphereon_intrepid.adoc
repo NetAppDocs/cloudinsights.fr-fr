@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données du commutateur Brocade Sphereon
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données Brocade Sphereon/Intrepid Switch (SNMP) pour détecter l'inventaire des commutateurs Brocade Sphereon ou Intrepid.
+Data Infrastructure Insights utilise le collecteur de données SNMP (Brocade Sphereon/Intrepid Switch) pour découvrir l'inventaire des commutateurs Brocade Sphereon ou Intrepid.
 
 
 
@@ -27,7 +27,7 @@ Cloud Insights utilise le collecteur de données Brocade Sphereon/Intrepid Switc
 
 Les conditions suivantes doivent être remplies pour configurer ce collecteur de données :
 
-* Il doit y avoir une connectivité IP à tous les commutateurs de la structure. Si vous cochez la case Discover All switches dans la structure, Cloud Insights identifie tous les commutateurs de la structure. Cependant, il faut une connectivité IP à ces commutateurs supplémentaires pour les découvrir.
+* Il doit y avoir une connectivité IP à tous les commutateurs de la structure. Si vous cochez la case détecter tous les switchs dans la structure, Data Infrastructure Insights identifie tous les switchs de la structure. Cependant, la connectivité IP à ces switchs supplémentaires est nécessaire pour les découvrir.
 * Chaîne de communauté en lecture seule en cas d'utilisation de SNMP V1 ou SNMP V2.
 * Accès HTTP au commutateur pour obtenir des informations de zoning.
 * Pour valider l'accès, exécutez l'utilitaire snmpwalk sur le commutateur (voir _<install_path>\bin\_).

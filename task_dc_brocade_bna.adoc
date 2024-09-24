@@ -19,17 +19,17 @@ summary: Configuration du collecteur Brocade BNA.
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données Brocade Network Advisor pour acquérir les données d'inventaire et de performance des commutateurs Brocade.
+Les informations d'infrastructure de données utilisent le collecteur de données Brocade Network Advisor pour acquérir des données d'inventaire et de performance à partir de commutateurs Brocade.
 
 
 
 == Terminologie
 
-Cloud Insights acquiert les informations d'inventaire suivantes auprès du collecteur de données Brocade Network Advisor. Pour chaque type de bien acquis par Cloud Insights, la terminologie la plus utilisée pour ce bien est présentée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
+Les informations d'infrastructure de données font l'acquisition des informations d'inventaire suivantes à partir du collecteur de données Brocade Network Advisor. Pour chaque type de ressource acquis par Data Infrastructure Insights, la terminologie la plus courante est indiquée. Lors de l'affichage ou du dépannage de ce collecteur de données, gardez la terminologie suivante à l'esprit :
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Commutateur | Commutateur 
@@ -51,7 +51,7 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 
 Les éléments suivants sont nécessaires pour configurer ce collecteur de données :
 
-* L'unité d'acquisition Cloud Insights va créer des connexions au port TCP 443 sur le serveur BNA. Le serveur BNA doit exécuter la version 14.2.1 ou supérieure.
+* L'unité d'acquisition Data Infrastructure Insights initera les connexions au port TCP 443 sur le serveur BNA. Le serveur BNA doit exécuter la version 14.2.1 ou supérieure.
 * Adresse IP du serveur Brocade Network Advisor
 * Nom d'utilisateur et mot de passe d'un compte d'administrateur
 * Port requis : HTTP/HTTPS 443

@@ -19,7 +19,7 @@ summary: Configuration du collecteur de données Amazon EC2.
 
 
 [role="lead"]
-Cloud Insights utilise le collecteur de données Amazon EC2 pour acquérir les données d'inventaire et de performance des instances EC2.
+Data Infrastructure Insights utilise le collecteur de données Amazon EC2 pour acquérir des données d'inventaire et de performance à partir des instances EC2.
 
 
 
@@ -63,7 +63,7 @@ Entrez les données dans les champs du collecteur de données conformément au t
 | Clé d'accès secrète AWS IAM | Entrez la clé d'accès secrète IAM AWS. Obligatoire si vous n'utilisez pas le rôle IAM. 
 
 
-| J'ai compris les factures AWS pour les demandes d'API | Vérifiez que vous comprenez bien qu'AWS vous facture pour les demandes d'API faites par l'interrogation de Cloud Insights. 
+| J'ai compris les factures AWS pour les demandes d'API | Vérifiez que vous savez qu'AWS vous facture pour les requêtes d'API formulées par l'interrogation Data Infrastructure Insights. 
 |===
 
 
@@ -92,7 +92,7 @@ Entrez les données dans les champs du collecteur de données conformément au t
 | Intervalle d'interrogation des performances (s) | La valeur par défaut est 1800 
 
 
-| Espace de noms des metrics de CloudWatch Agent | Espace de noms dans EC2/EBS à partir duquel collecter des données. Notez que si le nom des metrics par défaut dans cet espace de noms est modifié, Cloud Insights risque de ne pas pouvoir collecter ces données renommées. Il est recommandé de conserver les noms de mesures par défaut. 
+| Espace de noms des metrics de CloudWatch Agent | Espace de noms dans EC2/EBS à partir duquel collecter des données. Notez que si les noms des metrics par défaut dans cet espace de noms sont modifiés, Data Infrastructure Insights risque de ne pas pouvoir collecter les données renommées. Il est recommandé de conserver les noms de mesures par défaut. 
 |===
 
 
@@ -120,11 +120,11 @@ Remarque : le rôle IAM ne peut être utilisé que lorsque l'unité d'acquisitio
 
 
 
-== Mappage des balises Amazon sur les annotations Cloud Insights
+== Mappage des balises Amazon avec les annotations Data Infrastructure Insights
 
-Le collecteur de données Amazon EC2 inclut une option qui vous permet de remplir les annotations Cloud Insights avec des balises configurées sur EC2. Les annotations doivent être nommées exactement comme balises EC2. Cloud Insights renseigne toujours les annotations de type texte nommées identique et tentera de remplir les annotations des autres types (nombre, booléen, etc.). Si votre annotation est de type différent et que le collecteur de données ne parvient pas à la remplir, il peut être nécessaire de supprimer l'annotation et de la recréer en tant que type de texte.
+Le collecteur de données Amazon EC2 inclut une option qui vous permet de remplir les annotations Data Infrastructure Insights avec des balises configurées sur EC2. Les annotations doivent être nommées exactement comme balises EC2. Data Infrastructure Insights remplit toujours les annotations de type texte portant le même nom et fera une « meilleure tentative » pour remplir les annotations d'autres types (nombre, booléen, etc.). Si votre annotation est de type différent et que le collecteur de données ne parvient pas à la remplir, il peut être nécessaire de supprimer l'annotation et de la recréer en tant que type de texte.
 
-Notez qu'AWS est sensible à la casse, tandis que Cloud Insights n'est pas sensible à la casse. Si vous créez une annotation nommée « PROPRIÉTAIRE » dans Cloud Insights et que des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans EC2, toutes les variantes EC2 du « propriétaire » seront mappées sur l'annotation « PROPRIÉTAIRE » de Cloud Insight.
+AWS est sensible à la casse, tandis que Data Infrastructure Insights n'est pas sensible à la casse. Par conséquent, si vous créez une annotation nommée « PROPRIÉTAIRE » dans Data Infrastructure Insights et des balises nommées « PROPRIÉTAIRE », « propriétaire » et « propriétaire » dans EC2, toutes les variations EC2 de « propriétaire » seront mappées sur l'annotation « PROPRIÉTAIRE » de Cloud Insight.
 
 
 
@@ -136,17 +136,17 @@ Dans la section AWS Data Collector *Advanced Configuration*, vous pouvez défini
 
 == Collecte depuis les comptes enfants AWS
 
-Cloud Insights prend en charge la collecte de comptes enfants pour AWS dans un collecteur de données AWS unique. La configuration de cette collection est effectuée dans l'environnement AWS :
+Data Infrastructure Insights prend en charge la collecte de comptes enfants pour AWS dans un collecteur de données AWS unique. La configuration de cette collection est effectuée dans l'environnement AWS :
 
 * Vous devez configurer chaque compte enfant pour qu'il dispose d'un rôle AWS qui permet à l'ID de compte principal d'accéder aux informations EC2 à partir du compte enfants.
 * Chaque compte enfant doit avoir le nom du rôle configuré comme la même chaîne.
-* Entrez cette chaîne de nom de rôle dans la section Cloud Insights AWS Data Collector *Advanced Configuration*, dans le champ *Cross account role*.
+* Entrez cette chaîne de nom de rôle dans la section Data Infrastructure Insights AWS Data Collector *Advanced Configuration*, dans le champ *Cross account role*.
 * Le compte sur lequel le collecteur est installé doit disposer de _déléguer l'accès administrateur_ Privileges. Pour link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["Documentation AWS"]plus d'informations, reportez-vous à la section.
 
 
 Meilleure pratique : il est fortement recommandé d'attribuer la politique AWS prédéfinie _Amazon EC2ReadOnlyAccess_ au compte principal EC2. En outre, l'utilisateur configuré dans la source de données doit avoir au moins la stratégie prédéfinie _AWOrganiztionsReadOnlyAccess_, afin d'interroger AWS.
 
-Pour plus d'informations sur la configuration de votre environnement permettant Cloud Insights la collecte de données à partir de comptes enfants AWS, consultez les documents suivants :
+Pour plus d'informations sur la configuration de votre environnement afin que des informations sur l'infrastructure de données puissent être collectées à partir de comptes enfants AWS, consultez les documents suivants :
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["Tutoriel : déléguer l'accès aux comptes AWS à l'aide des rôles IAM"]
 

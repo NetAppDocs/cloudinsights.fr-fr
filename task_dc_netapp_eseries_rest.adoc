@@ -29,7 +29,7 @@ Cloud Insight acquiert les informations d'inventaire suivantes à partir des bai
 
 [cols="2*"]
 |===
-| Terme du fournisseur/modèle | Terme Cloud Insights 
+| Terme du fournisseur/modèle | Terme informations exploitables sur l'infrastructure de données 
 
 
 | Disque | Disque 
@@ -56,7 +56,7 @@ Remarque : il s'agit uniquement de mappages terminologiques communs et peuvent n
 == De formation
 
 * L'adresse IP de chaque contrôleur de la baie
-* Ce collecteur ne prend en charge que les baies de modèle E-Series dotées de *fonctionnalités d'API REST natives*. L'entreprise E-Series expédie une distribution d'API REST hors baie et installable pour les baies E-Series plus anciennes : ce collecteur ne prend pas en charge ce scénario. Les utilisateurs disposant de baies plus anciennes doivent continuer à utiliser Cloud Insights link:task_dc_na_eseries.html["API E-Series SANtricity"] collecteur.
+* Ce collecteur ne prend en charge que les baies de modèle E-Series dotées de *fonctionnalités d'API REST natives*. L'entreprise E-Series expédie une distribution d'API REST hors baie et installable pour les baies E-Series plus anciennes : ce collecteur ne prend pas en charge ce scénario. Les utilisateurs disposant de baies plus anciennes doivent continuer à utiliser le link:task_dc_na_eseries.html["API E-Series SANtricity"]collecteur Data Infrastructure Insights.
 * Le champ « adresses IP des contrôleurs E-Series » prend en charge une chaîne de 2 noms IP/hôtes délimitée par des virgules ; le collecteur essaiera intelligemment la deuxième adresse IP/nom d'hôte si la première est inaccessible.
 * Port HTTPS : la valeur par défaut est 8443.
 
@@ -102,9 +102,9 @@ Les termes suivants s'appliquent aux objets ou aux références que vous trouver
 * IP : il s'agit généralement des adresses IP ou des noms d'hôte configurés dans la source de données
 * Version du microcode : micrologiciel
 * Capacité brute : somme de base 2 de tous les disques physiques du système, quel que soit leur rôle
-* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, Cloud Insights s'approvisionna directement cette valeur, mais ce n'est souvent pas le cas. Au lieu de l'offre baie, Cloud Insights effectue généralement un calcul pondéré par IOPS, à partir des statistiques de chaque volume.
-* Débit : débit de la baie hôte total. Idéalement, les données proviennent directement de la baie, si elles ne sont pas disponibles, Cloud Insights additionne le débit des volumes pour tirer parti de cette valeur
-* Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Cloud Insights dans le cadre du reporting d'inventaire
+* Latence : représentation des charges de travail côté hôte, à la fois en lecture et en écriture. Idéalement, les informations sur l'infrastructure de données génèrent directement cette valeur, mais ce n'est souvent pas le cas. À la place de la baie qui propose cela, Data Infrastructure Insights effectue généralement un calcul pondéré en IOPS à partir des statistiques des volumes individuels.
+* Débit : débit de la baie hôte total. Idéalement situé directement à partir de la baie, Data Infrastructure Insights additionne le débit des volumes pour tirer parti de cette valeur en cas d'indisponibilité
+* Gestion – il peut contenir un lien hypertexte pour l'interface de gestion du périphérique. Créé par programmation par la source de données Data Infrastructure Insights dans le cadre du reporting d'inventaire  
 
 
 
