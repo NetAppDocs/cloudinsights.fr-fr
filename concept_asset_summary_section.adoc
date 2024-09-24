@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
-summary: Présentation de la section Résumé de la page de ressource dans Cloud Insights. 
+summary: Présentation de la section Récapitulatif de la page de ressources dans Data Infrastructure Insights. 
 keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = Section Résumé de la page de ressources

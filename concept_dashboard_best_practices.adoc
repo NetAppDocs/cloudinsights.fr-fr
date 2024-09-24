@@ -25,9 +25,9 @@ Conseils et astuces pour vous aider à tirer le meilleur parti des fonctionnalit
 
 == Trouver la mesure appropriée
 
-Cloud Insights acquiert des compteurs et des mesures à l'aide de noms qui diffèrent parfois du collecteur de données au collecteur de données.
+Data Infrastructure Insights acquiert des compteurs et des metrics à l'aide de noms qui diffèrent parfois du collecteur de données au collecteur de données.
 
-Lorsque vous recherchez la mesure ou le compteur adéquat pour votre widget tableau de bord, gardez à l'esprit que la mesure souhaitée peut être sous un nom différent de celui que vous pensez. Bien que les listes déroulantes de Cloud Insights soient généralement alphabétiques, un terme peut parfois ne pas apparaître dans la liste où vous le pensez. Par exemple, les termes « capacité brute » et « capacité utilisée » n'apparaissent pas dans la plupart des listes.
+Lorsque vous recherchez la mesure ou le compteur adéquat pour votre widget tableau de bord, gardez à l'esprit que la mesure souhaitée peut être sous un nom différent de celui que vous pensez. Bien que les listes déroulantes de Data Infrastructure Insights soient généralement alphabétiques, il arrive parfois qu'un terme ne s'affiche pas dans la liste à l'endroit où vous pensez qu'il devrait. Par exemple, les termes « capacité brute » et « capacité utilisée » n'apparaissent pas dans la plupart des listes.
 
 *Meilleure pratique* : utilisez la fonction de recherche dans des champs tels que Filtrer par ou des emplacements comme le sélecteur de colonne pour trouver ce que vous recherchez. Par exemple, une recherche portant sur « Cap » indique tous les metrics dont le nom contient « capacité », quel que soit l'endroit où ils se trouvent dans la liste. Vous pouvez ensuite facilement sélectionner les mesures souhaitées dans cette liste plus courte.
 

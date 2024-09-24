@@ -19,7 +19,7 @@ summary: 'Les informations exploitables permettent de prédire à quel moment le
 
 
 [role="lead"]
-Le manque d'espace de votre environnement n'est jamais une bonne situation. Cloud Insights vous aide à prévoir le temps dont vous disposez avant que les volumes persistants de Kubernetes ne deviennent complets.
+Le manque d'espace de votre environnement n'est jamais une bonne situation. Les informations sur l'infrastructure de données vous aident à prévoir le temps nécessaire avant que les volumes persistants de Kubernetes ne soient pleins.
 
 La _Kubernetes Namespaces étant hors d'Space_ Insight, vous disposez d'une vue détaillée des workloads sur vos espaces de noms Kubernetes qui risquent d'être à court d'espace, avec une estimation du nombre de jours restants avant que chaque volume persistant ne soit plein.
 
@@ -42,7 +42,7 @@ image:K8sRunningOutOfSpaceWorkloadTable.png["Le tableau des charges de travail a
 
 === Que faire si l'espace est insuffisant ?
 
-Sur la page Insight, cliquez sur *+Afficher les recommandations* pour voir les solutions possibles. L'option la plus simple en cas de manque d'espace consiste toujours à ajouter de la capacité, et Cloud Insights vous montre la capacité optimale à ajouter pour augmenter le temps de présaturation à une cible de 60 jours. D'autres recommandations sont également présentées.
+Sur la page Insight, cliquez sur *+Afficher les recommandations* pour voir les solutions possibles. En cas de manque d'espace, l'option la plus simple consiste à ajouter toujours plus de capacité, et Data Infrastructure Insights vous montre la capacité optimale à ajouter pour accélérer le temps de traitement d'une prévision cible de 60 jours. D'autres recommandations sont également présentées.
 
 image:K8sRunningOutOfSpaceRecommendations.png["Capacité à ajouter pour revenir au TTF de 60 jours"]
 

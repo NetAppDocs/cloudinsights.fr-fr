@@ -48,7 +48,7 @@ Pour supprimer une application, effectuez une liste déroulante et décochez l'a
 
 == Utilisation de la section données utilisateur pour attribuer ou modifier des annotations
 
-Lors de la personnalisation de Cloud Insights pour suivre les données en fonction des exigences de l'entreprise, vous pouvez définir des notes spécialisées appelées annotations et les attribuer à vos ressources. La section données utilisateur d'une page ressource affiche les annotations affectées à un bien et vous permet également de modifier les annotations affectées à ce bien.
+Lorsque vous personnalisez les informations de l'infrastructure de données pour effectuer le suivi des données en fonction des besoins de votre entreprise, vous pouvez définir des notes spécialisées appelées annotations et les affecter à vos ressources. La section données utilisateur d'une page ressource affiche les annotations affectées à un bien et vous permet également de modifier les annotations affectées à ce bien.
 
 .Étapes
 . Pour ajouter une annotation à la ressource, dans la section données utilisateur de la page ressource, cliquez sur *+Annotation*.

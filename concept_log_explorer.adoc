@@ -19,7 +19,7 @@ summary: 'L"explorateur de journaux est un outil puissant pour rechercher des pr
 
 
 [role="lead"]
-L'explorateur de journaux Cloud Insights est un outil puissant pour interroger les journaux système. En plus de vous aider dans les enquêtes, vous pouvez également enregistrer une requête de journal dans un moniteur afin de fournir des alertes lorsque ces déclencheurs de journal particuliers sont activés.
+Data Infrastructure Insights Log Explorer est un outil puissant d'interrogation des journaux système. En plus de vous aider dans les enquêtes, vous pouvez également enregistrer une requête de journal dans un moniteur afin de fournir des alertes lorsque ces déclencheurs de journal particuliers sont activés.
 
 Pour commencer à explorer les journaux, cliquez sur *requêtes de journal > +Nouvelle requête de journal*.
 
@@ -33,7 +33,7 @@ NOTE: Les types de journaux disponibles pour les requêtes peuvent varier en fon
 Vous pouvez définir des filtres pour affiner davantage les résultats de la requête. Par exemple, pour rechercher tous les messages de journal affichant une défaillance, définissez un filtre pour _messages_ contenant le mot "échec".
 
 
-TIP: Vous pouvez commencer à saisir le texte souhaité dans le champ de filtre. Cloud Insights vous invite à créer une recherche avec caractère générique contenant la chaîne à mesure que vous saisissez.
+TIP: Vous pouvez commencer à saisir le texte souhaité dans le champ de filtre ; Data Infrastructure Insights vous invite à créer une recherche générique contenant la chaîne au fur et à mesure de la saisie.
 
 Les résultats s'affichent dans un graphique indiquant le nombre d'instances de journal pour chaque période affichée. Sous le graphique se trouvent les entrées du journal temindividus. Le graphique et les entrées se réactualisent automatiquement en fonction de la plage horaire sélectionnée.
 
@@ -79,7 +79,7 @@ Notez que, dans le cas ci-dessus, étant donné que "cm-monitoring" et "EG-monit
 
 
 . Les résultats du filtre actuel, y compris les valeurs « Filtrer par » ET le filtre de requête avancée, sont affichés dans la liste des résultats. La liste peut être triée par colonnes affichées. Pour afficher des colonnes supplémentaires, sélectionner l'icône « vitesse ».
-. Le graphique a été agrandi pour afficher uniquement les résultats du journal qui se sont produits dans une période donnée. La plage horaire affichée ici reflète le niveau de zoom actuel. Sélectionnez le bouton _Réinitialiser le zoom_ pour rétablir le niveau de zoom sur la plage horaire Cloud Insights actuelle.
+. Le graphique a été agrandi pour afficher uniquement les résultats du journal qui se sont produits dans une période donnée. La plage horaire affichée ici reflète le niveau de zoom actuel. Sélectionnez le bouton _Réinitialiser le zoom_ pour rétablir le niveau de zoom sur la plage de temps actuelle de Data Infrastructure Insights.
 . Les résultats du graphique ont été regroupés par le champ _source_. Le graphique présente les résultats dans chaque colonne, regroupés en couleurs. Passez le curseur sur une colonne du graphique pour afficher des détails sur les entrées spécifiques.
 +
 image:Log_Advanced_Query_Group_Detail.png["Détails du survol groupés"]

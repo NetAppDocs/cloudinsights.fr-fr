@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: Présentation des tableaux de bord dans Cloud Insights. 
+summary: Présentation des tableaux de bord dans Data Infrastructure Insights. 
 keywords: dashboard, widget, custom, view, data 
 ---
 = Présentation des tableaux de bord
@@ -19,7 +19,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-Cloud Insights offre aux utilisateurs la flexibilité de créer des vues opérationnelles des données d'infrastructure. Vous pouvez ainsi créer des tableaux de bord personnalisés avec divers widgets, chacun d'entre eux assurant une grande flexibilité d'affichage et de saisie des données.
+Data Infrastructure Insights offre aux utilisateurs la flexibilité de créer des vues opérationnelles des données d'infrastructure, en vous permettant de créer des tableaux de bord personnalisés avec un grand nombre de widgets, chacun offrant une grande flexibilité d'affichage et de transcription de vos données.
 
 
 IMPORTANT: Les exemples présentés dans ces sections sont fournis à des fins d'explication uniquement et ne couvrent pas tous les scénarios possibles. Les concepts et étapes dans ce document peuvent être utilisés pour créer vos propres tableaux de bord afin de mettre en évidence les données spécifiques à vos besoins spécifiques.

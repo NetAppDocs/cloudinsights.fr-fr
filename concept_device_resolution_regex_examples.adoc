@@ -19,13 +19,13 @@ summary:
 
 
 [role="lead"]
-Si vous avez sélectionné l'approche d'expression régulière comme stratégie de dénomination source, vous pouvez utiliser les exemples d'expression régulière comme guides pour vos propres expressions utilisées dans les méthodes de résolution automatique Cloud Insights.
+Si vous avez sélectionné l'approche expression régulière comme stratégie de nommage de source, vous pouvez utiliser les exemples d'expression régulière comme guides pour vos propres expressions utilisées dans les méthodes de résolution automatique de Data Infrastructure Insights.
 
 
 
 == Formatage des expressions régulières
 
-Lors de la création d'expressions régulières pour la résolution automatique Cloud Insights, vous pouvez configurer le format de sortie en saisissant des valeurs dans un champ nommé _FORMAT_.
+Lorsque vous créez des expressions régulières pour la résolution automatique de Data Infrastructure Insights, vous pouvez configurer le format de sortie en entrant des valeurs dans un champ nommé _FORMAT_.
 
 Le paramètre par défaut est \1, ce qui signifie qu'un nom de zone correspondant à l'expression régulière est remplacé par le contenu de la première variable créée par l'expression régulière. Dans une expression régulière, les valeurs des variables sont créées par des instructions entre parenthèses. Si plusieurs instructions entre parenthèses se produisent, les variables sont référencées numériquement, de gauche à droite. Les variables peuvent être utilisées dans le format de sortie dans n'importe quel ordre. Le texte constant peut également être inséré dans la sortie, en l'ajoutant au champ FORMAT.
 
@@ -280,7 +280,7 @@ Le ^ (circumflex ou caret) *à l'intérieur des crochets* nient l'expression, pa
 
 *Nom d'hôte:* mhs-apps44-d
 
-*RegExp:* ([^_]+)_([AB]).*format dans Cloud Insights: \1-\2 ([^_]+)_ ([^_]+)_([^_]+).*format dans Cloud Insights: \1-\2-\3
+*RegExp:* ([^_]+)_([AB]).*format dans les informations de l'infrastructure de données : \1-\2 ([^_]+)_ ([^_]+)_([^_]+).*format dans les informations de l'infrastructure de données : \1-\2-\3
 
 
 

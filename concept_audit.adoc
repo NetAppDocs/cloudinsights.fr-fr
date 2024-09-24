@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_audit.html 
 keywords: audit, users, activities 
-summary: Cet audit offre une vue des activités des systèmes et des utilisateurs du système Cloud Insights. 
+summary: 'L"audit fournit une vue des activités du système et des utilisateurs dans le système Data Infrastructure Insights.' 
 ---
 = Audit
 :toc: macro
@@ -19,7 +19,7 @@ summary: Cet audit offre une vue des activités des systèmes et des utilisateur
 
 
 [role="lead"]
-Pour identifier les modifications attendues (pour le suivi) ou inattendues (pour le dépannage), vous pouvez afficher une piste d'audit des événements du système Cloud Insights et des activités des utilisateurs.
+Pour identifier les modifications attendues (pour le suivi) ou inattendues (pour le dépannage), vous pouvez afficher une piste d'audit des événements système et des activités utilisateur de Data Infrastructure Insights.
 
 
 
@@ -29,7 +29,7 @@ Pour afficher la page Audit, cliquez sur *Admin > Audit* dans le menu. La page A
 
 * *Heure* - Date et heure de l'événement ou de l'activité
 * *Utilisateur* - l'utilisateur qui a lancé l'activité
-* *Rôle* - rôle de l'utilisateur dans Cloud Insights (invité, utilisateur, administrateur)
+* *Role* - rôle de l'utilisateur dans Data Infrastructure Insights (invité, utilisateur, administrateur)
 * *IP* - adresse IP associée à l'événement
 * *Action* - Type d'activité, par exemple connexion, création, mise à jour
 * *Catégorie* - la catégorie d'activité
@@ -91,7 +91,7 @@ Si vous placez une chaîne de filtre entre deux guillemets, Insight traite tout 
 
 == Événements et actions audités
 
-Les événements et les actions audités par Cloud Insights peuvent être classés dans plusieurs catégories :
+Les événements et les actions audités par Data Infrastructure Insights peuvent être classés dans les domaines suivants :
 
 * *Compte utilisateur* : connexion, déconnexion, changement de rôle, etc
 +
@@ -134,7 +134,7 @@ Exemple : destinataire _ci-alertes-notifications-dl_ créé
 Vous pouvez exporter les résultats de votre affichage d'audit dans un fichier .CSV, qui vous permettra d'analyser les données ou de les importer dans une autre application.
 
 .Étapes
-. Sur la page Audit, définissez la plage de temps souhaitée et les filtres souhaités. Cloud Insights exporte uniquement les entrées d'audit correspondant au filtrage et à la plage horaire que vous avez définis.
+. Sur la page Audit, définissez la plage de temps souhaitée et les filtres souhaités. Data Infrastructure Insights exporte uniquement les entrées d'audit correspondant au filtrage et à la plage de temps que vous avez définis.
 . Cliquez sur le bouton _Export_ image:ExportButton.png["Bouton Exporter"] en haut à droite de la table.
 
 
@@ -144,7 +144,7 @@ Les événements d'audit affichés seront exportés vers un fichier .CSV, jusqu'
 
 == Conservation des données d'audit
 
-La durée de conservation des données d'audit par Cloud Insights est basée sur votre édition :
+La durée de conservation des données d'audit par Data Infrastructure est basée sur votre édition :
 
 * Édition de base : les données d'audit sont conservées pendant 30 jours
 * Éditions Standard et Premium : les données d'audit sont conservées pendant 1 an et 1 jour

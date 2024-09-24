@@ -162,7 +162,7 @@ et link:concept_cs_integration_with_ontap_arp.html["Intégration avec la protect
 == Configurer le collecteur de données
 
 .Étapes de configuration
-. Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Cloud Insights.
+. Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Data Infrastructure Insights.
 . Cliquez sur *sécurité de la charge de travail > collecteurs > +collecteurs de données*
 +
 Le système affiche les collecteurs de données disponibles.
@@ -256,14 +256,14 @@ Dans les versions ONTAP antérieures à 9.9.1, _data-fpolicy-client_ n'a pas bes
 
 2 nouvelles opérations sont maintenant affichées dans le menu kebab du collecteur (PAUSE et REPRISE).
 
-Si le Data Collector est à l'état _running_, vous pouvez suspendre la collection. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Cela signifie qu'aucun événement Fpolicy ne circule de ONTAP vers le collecteur de données et de là vers Cloud Insights.
+Si le Data Collector est à l'état _running_, vous pouvez suspendre la collection. Ouvrez le menu « trois points » du collecteur et sélectionnez PAUSE. Lorsque le collecteur est en pause, aucune donnée n'est collectée à partir de ONTAP et aucune donnée n'est envoyée du collecteur vers ONTAP. Cela signifie qu'aucun événement Fpolicy ne circule de ONTAP vers le collecteur de données, et de là vers les informations d'infrastructure de données.
 
 Notez que si de nouveaux volumes, etc. Sont créés sur ONTAP alors que le collecteur est en pause, la sécurité des workloads ne recueillera pas les données et ces volumes, etc. Ne seront pas reflétés dans les tableaux de bord ou les tableaux.
 
 Gardez à l'esprit les éléments suivants :
 
 * La suppression des snapshots ne se fera pas conformément aux paramètres configurés sur un collecteur en pause.
-* Les événements EMS (comme ONTAP ARP) ne seront pas traités sur un collecteur en pause. En d'autres termes, si ONTAP identifie une attaque par ransomware, Cloud Insights Workload Security ne pourra pas acquérir cet événement.
+* Les événements EMS (comme ONTAP ARP) ne seront pas traités sur un collecteur en pause. En d'autres termes, si identifie une attaque par ransomware, ONTAP ne pourra pas acquérir les connaissances nécessaires sur l'infrastructure de données avec Workload Security.
 * Les e-mails de notification de santé NE seront PAS envoyés pour un collecteur en pause.
 * Les actions manuelles ou automatiques (telles que instantané ou blocage utilisateur) ne sont pas prises en charge sur un collecteur en pause.
 * Lors des mises à niveau d'agent ou de collecteur, des redémarrages/redémarrages de machine virtuelle d'agent ou du redémarrage du service d'agent, un collecteur en pause restera à l'état _Pause_.

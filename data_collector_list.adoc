@@ -4,7 +4,7 @@ permalink: data_collector_list.html
 summary: Liste des collecteurs de données pris en charge. 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= Liste des collecteurs de données Cloud Insights
+= Liste Data Collector de Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,7 +19,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 
 
 [role="lead"]
-Cloud Insights prend en charge un grand nombre de collecteurs de données issus de nombreux fournisseurs et services.
+Informations exploitables sur l'infrastructure de données prend en charge une variété de collecteurs de données de nombreux fournisseurs et services.
 
 Les collecteurs de données sont classés selon les types suivants :
 
@@ -27,7 +27,7 @@ Les collecteurs de données sont classés selon les types suivants :
 * Service : acquis auprès de services tels que Kubernetes ou Docker. Également appelé _Integration_.
 
 
-Liste alphabétique des collecteurs de données pris en charge par Cloud Insights :
+Liste alphabétique des collecteurs de données pris en charge par Data Infrastructure Insights :
 
 [cols="<,<"]
 |===

@@ -21,7 +21,7 @@ summary: 'Ces informations vous permettent d"examiner l"impact des ressources su
 [role="lead"]
 L'outil _Reclaim ONTAP Cold Storage_ Insight fournit des données sur la capacité à froid, les économies potentielles en termes de coûts/d'énergie et les actions recommandées pour les volumes des systèmes ONTAP.
 
-Pour en savoir plus, accédez à *tableaux de bord > Insights* et découvrez l'analyse _Reclaim ONTAP Cold Storage_ Insight. Notez que cette Insight répertorie uniquement les stockages affectés si Cloud Insights a détecté un stockage à froid. Dans le cas contraire, un message « All Clear » s'affiche.
+Pour en savoir plus, accédez à *tableaux de bord > Insights* et découvrez l'analyse _Reclaim ONTAP Cold Storage_ Insight. Notez que cette Insight répertorie uniquement les stockages affectés si Data Infrastructure Insights a détecté un stockage à froid. Sinon, un message « tout effacer » s'affiche.
 
 N'oubliez pas que les données inactives de moins de 30 jours ne sont pas affichées.
 

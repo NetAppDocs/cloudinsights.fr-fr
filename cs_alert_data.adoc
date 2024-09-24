@@ -16,9 +16,6 @@ summary: 'La sécurité des charges de travail génère des alertes en cas d"act
 [role="lead"]
 La page alertes de sécurité de la charge de travail affiche un calendrier des attaques et/ou avertissements récents et vous permet d'afficher les détails de chaque problème.
 
-
-NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
-
 image:CloudSecureAlertsListPage.png["Liste des alertes"]
 
 

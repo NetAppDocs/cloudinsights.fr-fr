@@ -19,7 +19,7 @@ summary: 'Ces informations vous permettent d"examiner l"impact des ressources su
 
 
 [role="lead"]
-Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. Cloud Insights fournit des outils pour vous aider à analyser la saturation des ressources et l'impact sur votre environnement.
+Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. Les outils Data Infrastructure Insights permettent d'étudier la saturation des ressources et l'impact sur votre environnement.
 
 
 
@@ -29,7 +29,7 @@ Lorsqu'on parle de l'impact sur la charge de travail ou les ressources, les déf
 
 Une ressource *influente* ou _avide_ est une ressource qui cause un impact négatif sur une autre ressource. Par exemple, un volume dont les IOPS sont très élevées peut entraîner une augmentation de la latence dans d'autres volumes (ressources _affectées_ ou _dégradées_). Les ressources impactantes et affectées sont des « pairs » qui utilisent la même ressource partagée, par exemple un pool de stockage ou un volume.
 
-Une charge de travail * très coûteuse* est une charge de travail actuellement identifiée comme ayant un impact sur les autres ressources du pool de stockage partagé. Ces charges de travail sont exécutées sur des IOPS plus élevées, ce qui réduit les IOPS dans les charges de travail affectées. Dans Cloud Insights, ils sont identifiés comme des charges de travail *exigeantes*.
+Une charge de travail * très coûteuse* est une charge de travail actuellement identifiée comme ayant un impact sur les autres ressources du pool de stockage partagé. Ces charges de travail sont exécutées sur des IOPS plus élevées, ce qui réduit les IOPS dans les charges de travail affectées. Dans les informations sur l'infrastructure de données, elles sont identifiées comme *charges de travail exigeantes*.
 
 Une * charge de travail * affectée est une charge de travail affectée par une charge de travail élevée dans le pool de stockage partagé. Ces charges de travail rencontrent un nombre réduit d'IOPS et/ou une latence plus élevée en raison des charges de travail exigeantes.
 
@@ -43,7 +43,7 @@ Un *conflit* survient lorsque les IOPS sont déterminées à affecter d'autres r
 
 === Les workloads consommateurs
 
-Toutes les charges de travail très consommatrices détectées par Cloud Insights sont indiquées dans la _analyse des ressources partagées sous stress_. Accédez à *observabilité > Infrastructure Insights* pour afficher ces informations.
+Toutes les charges de travail très consommatrices détectées par Data Infrastructure Insights sont indiquées dans le _Shared Resources sous stress_ Insight. Accédez à *observabilité > Infrastructure Insights* pour afficher ces informations.
 
 image:Impacts_Workloads_Menu.png["Partage les ressources"]
 

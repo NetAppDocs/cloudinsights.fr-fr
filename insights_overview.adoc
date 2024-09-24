@@ -31,7 +31,7 @@ Plusieurs informations sont disponibles. Accédez à *tableaux de bord > Insight
 
 === Ressources partagées sous contrainte
 
-Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. La ressource partagée est alors contrainte. Cloud Insights fournit des outils pour vous aider à analyser la saturation des ressources et l'impact sur votre environnement. link:insights_shared_resources_under_stress.html["En savoir plus >>"]
+Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. La ressource partagée est alors contrainte. Les outils Data Infrastructure Insights permettent d'étudier la saturation des ressources et l'impact sur votre environnement. link:insights_shared_resources_under_stress.html["En savoir plus >>"]
 
 
 
@@ -46,4 +46,4 @@ L'exécution des espaces de noms Kubernetes en dehors de Space Insight vous donn
 L'outil _Reclaim ONTAP Cold Storage_ Insight fournit des données sur la capacité à froid, les économies potentielles en termes de coûts/d'énergie et les actions recommandées pour les volumes des systèmes ONTAP. link:insights_reclaim_ontap_cold_storage.html["En savoir plus >>"]
 
 
-NOTE: Il s'agit d'une fonction _Preview_ qui peut changer au fil du temps à mesure que des améliorations sont apportées. link:/concept_preview_features.html["En savoir plus >>"] A propos des fonctions d'aperçu de Cloud Insights.
+NOTE: Il s'agit d'une fonction _Preview_ qui peut changer au fil du temps à mesure que des améliorations sont apportées. link:/concept_preview_features.html["En savoir plus >>"] A propos des fonctionnalités de prévisualisation de Data Infrastructure Insights.

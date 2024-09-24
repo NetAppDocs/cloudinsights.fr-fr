@@ -21,9 +21,6 @@ summary: Quelques étapes simples vous aideront à utiliser la sécurité de la 
 [role="lead"]
 Certaines tâches de configuration doivent être effectuées avant de pouvoir utiliser la sécurité de la charge de travail pour surveiller l'activité des utilisateurs.
 
-
-NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
-
 Le système Workload Security utilise un agent pour collecter les données d'accès des systèmes de stockage et des informations utilisateur à partir des serveurs Directory Services.
 
 Vous devez configurer les éléments suivants avant de pouvoir commencer à collecter les données :

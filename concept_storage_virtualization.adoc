@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_storage_virtualization.html 
-summary: Cloud Insights peut offrir des vues sur le stockage virtualisé frontal et back-end. 
+summary: 'Les informations concernant l"infrastructure de données peuvent fournir des vues du stockage virtualisé frontal et back-end.' 
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = Virtualisation du stockage
@@ -19,7 +19,7 @@ keywords: storage, virtual, virtualized, virtualization,
 
 
 [role="lead"]
-Cloud Insights peut différencier une baie de stockage dotée d'un stockage local ou d'une virtualisation d'autres baies de stockage. Vous pouvez ainsi établir le lien entre les coûts et distinguer les performances du stockage frontal et du stockage interne de votre infrastructure.
+Les informations d'infrastructure de données permettent de différencier une baie de stockage dotée d'un stockage local ou de la virtualisation d'autres baies de stockage. Vous pouvez ainsi établir le lien entre les coûts et distinguer les performances du stockage frontal et du stockage interne de votre infrastructure.
 
 
 

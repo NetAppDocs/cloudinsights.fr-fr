@@ -22,9 +22,6 @@ keywords: email, notifications, alerts, warnings, attacks
 Pour configurer les destinataires d'alertes de sécurité de la charge de travail, cliquez sur *Admin > Notifications* et entrez une ou plusieurs adresses électroniques dans les sections appropriées pour chaque destinataire.
 
 
-NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
-
-
 
 == Alertes et avertissements d'attaque potentielle
 
@@ -66,5 +63,5 @@ Gardez à l'esprit les éléments suivants :
 | *Problème:* | *Essayez ceci:* 
 
 
-| Les ID d'e-mail sont présents dans les « alertes d'intégrité du Data Collector », mais je ne reçois pas de notifications. | Les e-mails de notification sont envoyés depuis le domaine NetApp Cloud Insights, c'est-à-dire depuis _accounts@service.cloudinsights.netapp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Cloud Insights sont blanches. 
+| Les ID d'e-mail sont présents dans les « alertes d'intégrité du Data Collector », mais je ne reçois pas de notifications. | Des e-mails de notification sont envoyés à partir du domaine NetApp Data Infrastructure Insights, c'est-à-dire à partir de_NetApp.com_. Certaines entreprises bloquent les e-mails entrants s'ils proviennent d'un domaine externe. Assurez-vous que les notifications externes provenant des domaines NetApp Data Infrastructure Insights sont placées sur liste blanche. 
 |===

@@ -25,7 +25,7 @@ Les pages d'actifs résument l'état actuel d'un bien et contiennent des liens v
 
 == Types de pages de biens
 
-Cloud Insights fournit des pages de ressources pour les ressources suivantes :
+Data Infrastructure Insights fournit des pages de ressources pour les ressources suivantes :
 
 * Ordinateur virtuel
 * Storage Virtual machine (SVM)

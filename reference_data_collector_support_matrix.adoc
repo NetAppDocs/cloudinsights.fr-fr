@@ -4,7 +4,7 @@ permalink: reference_data_collector_support_matrix.html
 summary: La matrice de prise en charge du Data Collector contient des informations détaillées sur les collecteurs de données pris en charge. 
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
-= Matrice de prise en charge du Data Collector de Cloud Insights
+= Matrice de prise en charge du Data Collector Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -22,7 +22,7 @@ keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, H
 :toc-position: content
 
 
-La matrice de prise en charge du Data Collector fournit une référence pour les collecteurs de données pris en charge par Cloud Insights, y compris les informations relatives au fournisseur et au modèle.
+La matrice de prise en charge des collecteurs de données fournit des références pour les collecteurs de données pris en charge par Data Infrastructure Insights, y compris des informations sur les fournisseurs et les modèles.
 
 
 toc::[]

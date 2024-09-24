@@ -16,9 +16,6 @@ summary: 'Vous pouvez définir des règles de réponse automatisées pour des at
 [role="lead"]
 Les stratégies de réponse déclenchent des actions telles que la prise d'un instantané ou la restriction de l'accès de l'utilisateur en cas d'attaque ou de comportement anormal de l'utilisateur.
 
-
-NOTE: La sécurité des charges de travail n'est pas disponible dans l'édition fédérale de Cloud Insights.
-
 Vous pouvez définir des stratégies sur des périphériques spécifiques ou sur tous les périphériques. Pour définir une stratégie de réponse, sélectionnez *Admin > Automated Response Policies* et cliquez sur le bouton *+Policy* approprié. Vous pouvez créer des stratégies pour les attaques ou les avertissements.
 
 image:Automated_Response_Screenshot.png["Créer une stratégie d'attaque"]

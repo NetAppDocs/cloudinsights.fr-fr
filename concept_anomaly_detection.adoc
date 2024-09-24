@@ -19,9 +19,9 @@ summary: 'Surveillez les indicateurs d"anomalie'
 
 
 [role="lead"]
-La détection des anomalies fournit des informations sur les changements inattendus dans les modèles de données de votre environnement. Une anomalie se produit lorsque le comportement d'un objet change dans votre environnement, par exemple, si un objet subit un certain niveau de latence le mercredi, mais que la latence dépasse ce niveau le mercredi suivant, ce pic serait considéré comme une anomalie. Cloud Insights permet de créer des moniteurs qui vous alertent en cas d'anomalies de ce type.
+La détection des anomalies fournit des informations sur les changements inattendus dans les modèles de données de votre environnement. Une anomalie se produit lorsque le comportement d'un objet change dans votre environnement, par exemple, si un objet subit un certain niveau de latence le mercredi, mais que la latence dépasse ce niveau le mercredi suivant, ce pic serait considéré comme une anomalie. Les informations sur l'infrastructure de données permettent de créer des moniteurs qui envoient des alertes en cas d'anomalies de ce type.
 
-La détection des anomalies convient aux metrics objet qui présentent un modèle prévisible et récurrent. Lorsque ces metrics d'objet dépassent ou dépassent les niveaux attendus, Cloud Insights peut générer une alerte pour inviter à une enquête.
+La détection des anomalies convient aux metrics objet qui présentent un modèle prévisible et récurrent. Lorsque ces metrics d'objet dépassent ou dépassent les niveaux attendus, Data Infrastructure Insights peut générer une alerte pour une investigation rapide.
 
 image:anomaly_detection_expert_view.png["graphique montrant l'anomalie détectée"]
 
@@ -29,7 +29,7 @@ image:anomaly_detection_expert_view.png["graphique montrant l'anomalie détecté
 
 == Qu'est-ce que la détection des anomalies ?
 
-Une anomalie se produit lorsque la valeur moyenne d'une mesure est un certain nombre d'écarts-types par rapport à la moyenne pondérée de cette mesure pour les semaines précédentes, avec des semaines récentes ayant plus de poids que les semaines précédentes. Cloud Insights permet de surveiller les données et d'émettre des alertes en cas de détection d'anomalies. Vous avez le choix de définir les niveaux de « sensibilité » de détection. Par exemple, une sensibilité plus élevée serait lorsque la valeur moyenne est moins d'écarts standard par rapport à la moyenne, ce qui entraînerait la génération d'alertes supplémentaires. Inversement, une sensibilité plus faible = des écarts plus standard par rapport à la moyenne = moins d'alertes.
+Une anomalie se produit lorsque la valeur moyenne d'une mesure est un certain nombre d'écarts-types par rapport à la moyenne pondérée de cette mesure pour les semaines précédentes, avec des semaines récentes ayant plus de poids que les semaines précédentes. Les informations sur l'infrastructure de données permettent de surveiller les données et d'émettre des alertes en cas de détection d'anomalies. Vous avez le choix de définir les niveaux de « sensibilité » de détection. Par exemple, une sensibilité plus élevée serait lorsque la valeur moyenne est moins d'écarts standard par rapport à la moyenne, ce qui entraînerait la génération d'alertes supplémentaires. Inversement, une sensibilité plus faible = des écarts plus standard par rapport à la moyenne = moins d'alertes.
 
 
 

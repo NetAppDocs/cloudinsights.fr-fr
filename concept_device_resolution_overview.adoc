@@ -19,7 +19,7 @@ summary: 'La résolution automatique des périphériques vous aide à suivre ave
 
 
 [role="lead"]
-Vous devez identifier tous les périphériques que vous souhaitez surveiller avec Cloud Insights. Une identification est nécessaire afin de suivre précisément les performances et le stock de votre environnement. En général, la plupart des périphériques découverts dans votre environnement sont identifiés par _résolution automatique des périphériques_.
+Vous devez identifier tous les dispositifs que vous souhaitez contrôler avec Data Infrastructure Insights. Une identification est nécessaire afin de suivre précisément les performances et le stock de votre environnement. En général, la plupart des périphériques découverts dans votre environnement sont identifiés par _résolution automatique des périphériques_.
 
 Une fois que vous avez configuré des collecteurs de données, les périphériques de votre environnement, y compris les commutateurs, les baies de stockage et votre infrastructure virtuelle d'hyperviseurs et de machines virtuelles sont identifiés. Toutefois, cela ne permet pas d'identifier 100 % des périphériques de votre environnement.
 
@@ -32,7 +32,7 @@ Une fois que les périphériques de type Data Collector ont été configurés, i
 
 Les périphériques qui restent inconnus après la résolution du périphérique sont considérés comme des périphériques génériques, que vous pouvez également afficher dans les requêtes et sur les tableaux de bord.
 
-Les règles créées à leur tour identifieront automatiquement les nouveaux périphériques ayant des attributs similaires au fur et à mesure qu'ils sont ajoutés à votre environnement. Dans certains cas, la résolution des périphériques permet également de contourner les règles de résolution des périphériques pour les périphériques non découverts dans Cloud Insights.
+Les règles créées à leur tour identifieront automatiquement les nouveaux périphériques ayant des attributs similaires au fur et à mesure qu'ils sont ajoutés à votre environnement. Dans certains cas, la résolution des périphériques permet également une identification manuelle en contournant les règles de résolution des périphériques pour les périphériques non détectés dans Data Infrastructure Insights.
 
 Une identification incomplète des périphériques peut entraîner des problèmes, notamment :
 

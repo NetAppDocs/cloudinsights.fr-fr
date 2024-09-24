@@ -38,9 +38,9 @@ image:ServiceMap_NKMO_Deployment_Options.png["Sélection de l'option carte penda
 
 == Moniteurs
 
-Le mappage des charges de travail utilise link:task_create_monitor.html["moniteurs"] pour dériver des informations. Cloud Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.
+La carte des charges de travail utilise link:task_create_monitor.html["moniteurs"] pour dériver des informations. Data Infrastructure Insights fournit plusieurs moniteurs Kubernetes par défaut (ceux-ci peuvent être _utilisés_ par défaut). Vous pouvez _reprendre_ (c'est-à-dire activer) les moniteurs de votre choix), ou vous pouvez créer des moniteurs personnalisés pour les objets kubernetes que Workload Map utilisera également.
 
-Vous pouvez créer des alertes de metric Cloud Insights sur tous les types d'objet ci-dessous. Assurez-vous que les données sont regroupées par type d'objet par défaut.
+Vous pouvez créer des alertes de metric Data Infrastructure Insights sur l'un des types d'objet ci-dessous. Assurez-vous que les données sont regroupées par type d'objet par défaut.
 
 * workloads kubernetes
 * kubernetes.demonset
@@ -83,7 +83,7 @@ image:Workload_Map_Slideout_with_Alert.png["Détails de la diapositive sur la ch
 
 == Recherche et filtrage
 
-À l'instar des autres fonctionnalités de Cloud Insights, vous pouvez facilement définir des filtres afin de vous concentrer sur les objets ou les attributs de charge de travail spécifiques que vous souhaitez.
+À l'instar des autres fonctionnalités Data Infrastructure Insights, vous pouvez facilement définir des filtres pour vous concentrer sur les objets ou les attributs de workload spécifiques que vous souhaitez.
 
 image:Workload_Map_Filtering.png["Filtrage de mappage des charges de travail"]
 
@@ -117,7 +117,7 @@ Les étiquettes de charge de travail sont nécessaires si vous souhaitez que la 
 
 * Si la source est externe au cluster kubernetes :
 +
-** Cloud Insights tente d'analyser le nom DNS résolu pour extraire le type de service.
+** Data Infrastructure Insights tente d'analyser le nom DNS résolu pour extraire le type de service.
 +
 Par exemple, avec un nom DNS résolu de _s3.eu-north-1.amazonaws.com_, le nom résolu est analysé pour obtenir _s3_ comme type de service.
 

@@ -19,7 +19,7 @@ summary: 'Ces informations vous permettent d"examiner l"impact des ressources su
 
 
 [role="lead"]
-Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. La ressource partagée est alors contrainte. Cloud Insights fournit des outils pour vous aider à analyser la saturation des ressources et l'impact sur votre environnement.
+Les charges de travail à fort impact peuvent réduire les performances d'autres workloads d'une ressource partagée. La ressource partagée est alors contrainte. Les outils Data Infrastructure Insights permettent d'étudier la saturation des ressources et l'impact sur votre environnement.
 
 
 
@@ -31,7 +31,7 @@ Une charge de travail *exigeante* est une charge de travail actuellement identif
 
 Une * charge de travail * affectée est une charge de travail affectée par une charge de travail élevée dans le pool de stockage partagé. Ces charges de travail rencontrent un nombre réduit d'IOPS et/ou une latence plus élevée en raison des charges de travail exigeantes.
 
-Notez que si Cloud Insights n'a pas détecté la charge de travail de calcul principale, le volume ou le volume interne lui-même sera reconnu comme la charge de travail. Cela s'applique aux workloads exigeants et impactés.
+Notez que si Data Infrastructure Insights n'a pas détecté la charge de travail de calcul la plus importante, le volume ou le volume interne lui-même sera reconnu comme la charge de travail. Cela s'applique aux workloads exigeants et impactés.
 
 *La saturation des ressources partagées* est le rapport entre les IOPS impactantes et _baseline_.
 
@@ -47,7 +47,7 @@ Pour commencer à examiner les charges de travail exigeantes et affectées dans 
 
 image:InsightsMenu.png["Menu Insights"]
 
-Cloud Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Notez que Cloud Insights affichera les charges de travail où au moins une ressource _exigeante_ *ou* _ressource impactée_ a été détectée.
+Data Infrastructure Insights affiche la liste des charges de travail pour lesquelles une saturation a été détectée. Notez que Data Infrastructure Insights affiche les charges de travail où au moins une ressource _exigeante_ *ou* _ressource affectée_ a été détectée.
 
 Cliquez sur une charge de travail pour afficher la page de détails correspondante. Le graphique du haut indique l'activité sur la ressource partagée (par exemple, un pool de stockage) sur laquelle se produit la contention/saturation.
 

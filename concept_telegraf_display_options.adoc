@@ -19,7 +19,7 @@ summary: 'Options d"affichage des données Telegraf'
 
 
 [role="lead"]
-Cloud Insights propose différentes options *Transform* pour certaines métriques dans les widgets (en particulier, les métriques appelées « personnalisé » ou mesures d'intégration, telles que Kubernetes, les données avancées ONTAP, les plug-ins Telegraf, etc.), ce qui vous permet d'afficher les données de différentes façons. Lorsque vous ajoutez des mesures transformables à un widget, une liste déroulante vous propose les options de transformation suivantes :
+Data Infrastructure Insights fournit différentes options de *transformation* pour certaines mesures dans des widgets (en particulier, les metrics appelés « personnalisés » ou les metrics d'intégration, telles que Kubernetes, les données avancées ONTAP, les plug-ins Telegraf, etc.), ce qui vous permet d'afficher les données de différentes manières. Lorsque vous ajoutez des mesures transformables à un widget, une liste déroulante vous propose les options de transformation suivantes :
 
 Aucune:: Les données sont affichées en l'état, sans manipulation.
 Taux:: Valeur actuelle divisée par la plage de temps depuis l'observation précédente.

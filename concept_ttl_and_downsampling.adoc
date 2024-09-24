@@ -19,13 +19,13 @@ keywords: time-to-live, TTL, downsampling, downsample, retention
 
 
 [role="lead"]
-Comme Cloud Insights conserve les données pour une période définie (par édition), il est possible de traiter des milliers de points de données. Les données peuvent donc être sous-échantillonnées avant d'être affichées dans les graphiques et les tableaux.
+Étant donné que Data Infrastructure Insights conserve les données pendant une période définie (par édition), il est possible de traiter des milliers de points de données. Les données peuvent donc être sous-échantillonnées avant d'être affichées dans les graphiques et les tableaux.
 
 
 
 == Conservation des données
 
-Cloud Insights conserve les données pendant une durée déterminée par l'édition souscrite active.
+Data Infrastructure Insights conserve les données pendant une durée déterminée par l'édition souscrite active.
 
 |===
 | Édition | Conservation des données 
@@ -36,7 +36,7 @@ Cloud Insights conserve les données pendant une durée déterminée par l'édit
 
 | Premium | 13 mois 
 |===
-Une liste complète des fonctions disponibles dans chaque édition est disponible sur le Cloud Insights link:https://bluexp.netapp.com/cloud-insights-pricing["Éditions et tarification"] page.
+La liste complète des fonctionnalités disponibles dans chaque édition est disponible sur la link:https://bluexp.netapp.com/cloud-insights-pricing["Éditions et tarification"]page informations sur l'infrastructure de données.
 
 
 
@@ -69,7 +69,7 @@ Puisque nous avons choisi une plage horaire de moins de 7 jours et que nous avon
 
 image:Charts_NoDownsample.png["Pas de sous-échantillonnage"]
 
-Cependant, si vous affichez des données en choisissant soit 30d dans le sélecteur d'heure de la page ASSET, Ou en définissant une plage de temps personnalisée de plus de 7 jours (ou si Cloud Insights a recueilli plus de 1,000 échantillons de données pour la période choisie), les données sont sous-échantillonnées avant d'être affichées. Lorsque vous effectuez un zoom avant sur une carte sous-échantillonnée, l'affichage continue d'afficher les données approximatives.
+Toutefois, si vous affichez des données en choisissant 30d dans le sélecteur de temps de la page d'inventaire, ou en définissant une plage de temps personnalisée de plus de 7 jours (ou si Data Infrastructure Insights a collecté plus de 1,000 échantillons de données pour la période choisie), les données sont sous-échantillonnées avant d'être affichées. Lorsque vous effectuez un zoom avant sur une carte sous-échantillonnée, l'affichage continue d'afficher les données approximatives.
 
 
 NOTE: Lorsque vous effectuez un zoom avant sur une carte sous-échantillonnée, le zoom est un zoom numérique. L'affichage continue d'afficher les données approximées.

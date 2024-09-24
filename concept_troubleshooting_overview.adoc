@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_troubleshooting_overview.html 
-summary: Cette section contient des conseils et des astuces pour résoudre vos problèmes au sein de votre environnement Cloud Insights. 
+summary: Cette section contient des conseils et des astuces pour résoudre les problèmes rencontrés dans votre environnement Data Infrastructure Insights. 
 keywords:  
 ---
-= Dépannage des problèmes de Cloud Insights
+= Résolution des problèmes liés à l'exploitation de l'infrastructure de données
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,8 +19,8 @@ keywords:
 
 
 [role="lead"]
-Les rubriques de cette section donnent des conseils de dépannage en cas de problèmes avec votre environnement Cloud Insights.
+Les rubriques de cette section fournissent des conseils de dépannage en cas de problèmes liés à votre environnement Data Infrastructure Insights.
 
 Cliquez sur une catégorie dans le menu à gauche pour afficher les informations de dépannage correspondant à cette catégorie.
 
-Vous trouverez plus de dépannage et d'autres link:concept_requesting_support.html["assistance"] Informations sur la page Cloud Insights *aide > support*.
+Vous trouverez plus d'link:concept_requesting_support.html["assistance"]informations de dépannage et d'autres  informations sur la page informations sur l'infrastructure de données *aide > support*.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_feature_tutorials.html 
-summary: Cloud Insights dispose de didacticiels pour vous montrer comment effectuer de nombreuses tâches. 
+summary: Des didacticiels vous expliquent comment réaliser de nombreuses tâches dans Data Infrastructure Insights. 
 keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
 = Tutoriels de fonctionnalités
@@ -19,22 +19,22 @@ keywords: onboarding, getting started, video, tutorial, resolution, dashboard, q
 
 
 [role="lead"]
-Cloud Insights est doté de fonctionnalités utiles qui vous permettent de trouver rapidement et facilement des données, de résoudre des problèmes et d'obtenir des informations sur l'environnement de votre entreprise. Trouvez facilement des données grâce à des requêtes puissantes, visualisez des données dans des tableaux de bord et envoyez des alertes par e-mail pour les seuils de données que vous définissez.
+Les fonctionnalités utiles de Data Infrastructure Insights vous permettent de trouver rapidement et facilement des données, de résoudre des problèmes et d'obtenir des informations sur votre environnement d'entreprise. Trouvez facilement des données grâce à des requêtes puissantes, visualisez des données dans des tableaux de bord et envoyez des alertes par e-mail pour les seuils de données que vous définissez.
 
-Cloud Insights comprend un certain nombre de didacticiels vidéo qui vous aideront à comprendre ces fonctionnalités et à mieux mettre en œuvre vos stratégies d'analyse de l'entreprise. Tous les utilisateurs qui accèdent à votre environnement Cloud Insights peuvent bénéficier de ces didacticiels.
+Data Infrastructure Insights inclut un certain nombre de didacticiels vidéo qui vous aideront à comprendre ces fonctionnalités et à mieux implémenter vos stratégies d'analyse de l'entreprise. Tous les utilisateurs ayant accès à votre environnement Data Infrastructure Insights peuvent tirer parti de ces didacticiels.
 
 
 
 == Introduction
 
-Regardez un bref tutoriel expliquant comment fonctionne Cloud Insights.
+Regardez un bref tutoriel expliquant le fonctionnement des informations exploitables de l'infrastructure de données.
 
 video::howTo.mp4[]
 
 
 == Liste de contrôle et didacticiels vidéo
 
-La *liste de contrôle de démarrage* affichée sur votre site Cloud Insights contient une liste de plusieurs tâches et concepts utiles. Sélectionnez un élément dans la liste de contrôle pour accéder à la page Cloud Insights appropriée pour ce concept. Par exemple, cliquer sur l'élément _Créer un tableau de bord_ ouvre la page Cloud Insights *tableaux de bord*.
+La *liste de contrôle de démarrage* affichée sur votre site Data Infrastructure Insights contient une liste de plusieurs tâches et concepts utiles. La sélection d'un élément de la checklist permet d'accéder à la page Data Infrastructure Insights appropriée pour ce concept. Par exemple, cliquer sur l'élément _Créer un tableau de bord_ ouvre la page informations sur l'infrastructure de données *tableaux de bord*.
 
 image:OnboardingChecklist.png["Progression de la liste de contrôle du tutoriel"]
 
@@ -51,7 +51,7 @@ NOTE: Vous pouvez afficher les didacticiels dans l'ordre de votre choix, autant 
 
 === Rejet de la liste de contrôle
 
-La liste de contrôle de démarrage s'affiche sur votre site jusqu'à ce que vous cliquiez sur le lien _ne plus afficher ce lien_ au bas de la liste de contrôle. Même après le rejet de la liste de contrôle, les didacticiels sont toujours disponibles sur chaque page Cloud Insights appropriée jusqu'à ce que vous écarquiez chacun d'eux de la barre d'en-tête du message.
+La liste de contrôle de démarrage s'affiche sur votre site jusqu'à ce que vous cliquiez sur le lien _ne plus afficher ce lien_ au bas de la liste de contrôle. Même après avoir rejeté la liste de contrôle, les didacticiels sont toujours disponibles sur chaque page Data Infrastructure Insights appropriée jusqu'à ce que vous les rejetez de la barre d'en-tête des messages.
 
 
 

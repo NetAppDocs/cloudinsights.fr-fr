@@ -19,10 +19,10 @@ summary: Un résumé.
 
 
 [role="lead"]
-La page collecteurs de données installés permet d'accéder aux collecteurs de données configurés pour Cloud Insights. Vous pouvez utiliser cette page pour modifier des collecteurs de données existants.
+La page collecteurs de données installés permet d'accéder aux collecteurs de données qui ont été configurés pour Data Infrastructure Insights. Vous pouvez utiliser cette page pour modifier des collecteurs de données existants.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors*
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors*
 +
 L'écran collecteurs de données disponibles s'affiche.
 
@@ -45,7 +45,7 @@ Une liste de tous les collecteurs de données installés s'affiche. La liste fou
 Après avoir apporté une modification à un collecteur de données, vous pouvez interroger immédiatement pour vérifier vos modifications ou reporter la collecte de données sur un collecteur de données pendant un, trois ou cinq jours pendant que vous travaillez sur un problème.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors*
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors*
 . Cliquez sur *collecteurs de données installés*
 . Cochez la case à gauche du Data Collector que vous souhaitez modifier
 . Cliquez sur *actions groupées* et sélectionnez l'action d'interrogation que vous souhaitez effectuer.
@@ -61,7 +61,7 @@ Les actions en bloc peuvent être exécutées simultanément sur plusieurs colle
 Vous pouvez modifier les informations de configuration existantes du collecteur de données.
 
 .Pour modifier un collecteur de données unique :
-. Dans le menu Cloud Insights, cliquez sur *observabilité > collecteurs* pour ouvrir la liste des collecteurs de données installés.
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors* pour ouvrir la liste des Data Collectors installés.
 . Dans le menu d'options à droite du collecteur de données que vous souhaitez modifier, cliquez sur *Modifier*.
 +
 La boîte de dialogue Modifier le collecteur s'ouvre.
@@ -93,7 +93,7 @@ Lors de l'édition de plusieurs collecteurs de données, le bouton *Test Configu
 La fonction de clonage permet d'ajouter rapidement une source de données dotée des mêmes identifiants et attributs qu'une autre source de données. Le clonage vous permet de configurer facilement plusieurs instances d'un même type de périphérique.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors*.
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors*.
 . Cliquez sur *collecteurs de données installés*.
 . Cochez la case à gauche du collecteur de données que vous souhaitez copier.
 . Dans le menu d'options à droite du collecteur de données sélectionné, cliquez sur *Clone*.
@@ -114,7 +114,7 @@ L'opération de clonage copie tous les autres attributs et paramètres pour cré
 Vous pouvez modifier simultanément certaines informations pour plusieurs collecteurs de données. Cette fonction vous permet de lancer un sondage, de reporter l'interrogation et de reprendre l'interrogation sur plusieurs collecteurs de données. En outre, vous pouvez supprimer plusieurs collecteurs de données.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors*
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors*
 . Cliquez sur *collecteurs de données installés*
 . Cochez la case à gauche des collecteurs de données que vous souhaitez modifier.
 . Dans le menu d'options à droite, cliquez sur l'option que vous souhaitez exécuter.

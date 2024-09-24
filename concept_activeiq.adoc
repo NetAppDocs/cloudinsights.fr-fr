@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_activeiq.html 
 keywords: Active IQ, risks, svm, AIQ, risk 
-summary: Cloud Insights collecte les données de risque auprès de NetApp Active IQ 
+summary: 'Les informations sur l"infrastructure de données collectent les données relatives aux risques à partir de NetApp Active IQ' 
 ---
 = Active IQ
 :toc: macro
@@ -22,13 +22,13 @@ summary: Cloud Insights collecte les données de risque auprès de NetApp Active
 NetApp link:https://www.netapp.com/us/products/data-infrastructure-management/active-iq.aspx["Active IQ"] Fournit une série de visualisations, d'analyses et d'autres services relatifs au support aux clients NetApp pour leurs systèmes matériels/logiciels. Les données rapportées par Active IQ peuvent améliorer le dépannage des problèmes système et fournir des informations sur l'optimisation et l'analyse prédictive liées à vos appareils.
 
 
-NOTE: ActiveIQ n'est pas disponible dans l'édition fédérale de Cloud Insights.
+NOTE: ActiveIQ n'est pas disponible dans Data Infrastructure Insights Federal Edition.
 
-Cloud Insights collecte les *risques* pour tout système de stockage NetApp clustered Data ONTAP contrôlé et signalé par Active IQ. Les risques signalés pour les systèmes de stockage sont automatiquement collectés par Cloud Insights dans le cadre de sa collecte de données sur ces périphériques. Vous devez ajouter le collecteur de données approprié à Cloud Insights pour collecter les informations de risque Active IQ.
+Data Infrastructure Insights collecte les *risques* pour tout système de stockage NetApp clustered Data ONTAP surveillé et signalé par Active IQ. Les risques signalés pour les systèmes de stockage sont automatiquement collectés par Data Infrastructure Insights dans le cadre de leur collecte de données sur ces périphériques. Vous devez ajouter le collecteur de données approprié aux informations sur l'infrastructure de données pour collecter les informations sur les risques Active IQ.
 
-Cloud Insights n'affichera pas les données de risque pour les systèmes ONTAP qui ne sont pas surveillés et signalés par Active IQ.
+Les informations sur l'infrastructure de données n'affichent pas les données sur les risques des systèmes ONTAP qui ne sont pas surveillés et signalés par Active IQ.
 
-Les risques signalés sont présentés dans Cloud Insights sur les pages d'accueil _Storage_ and _node_ ASSET, dans le tableau « risques ». Le tableau contient la description détaillée des risques, la catégorie de risque et l'impact potentiel du risque. Il fournit également un lien vers la page Active IQ résumant tous les risques pour le nœud de stockage (connexion du compte de support NetApp requise).
+Les risques signalés sont présentés dans les informations sur l'infrastructure de données sur les pages d'accueil _Storage_ and _Storage node_ Asset, dans le tableau des risques. Le tableau contient la description détaillée des risques, la catégorie de risque et l'impact potentiel du risque. Il fournit également un lien vers la page Active IQ résumant tous les risques pour le nœud de stockage (connexion du compte de support NetApp requise).
 
 image:AIQ_Risks_Table_Example.png["Tableau des risques Active IQ"]
 
@@ -42,7 +42,7 @@ image:AIQ_Summary_Example.png["Récapitulatif de la page de stockage"]
 
 Lorsque vous cliquez sur le lien vers une page Active IQ, si vous n'êtes pas encore connecté à votre compte Active IQ, vous devez effectuer les étapes suivantes pour afficher la page Active IQ du nœud de stockage.
 
-. Dans le widget Cloud Insights Summary ou Tableau des risques, cliquez sur le lien Active IQ.
+. Dans le widget Récapitulatif des informations sur l'infrastructure de données ou le tableau des risques, cliquez sur le lien Active IQ.
 . Connectez-vous à votre compte sur le site de support NetApp. Vous êtes redirigé directement vers la page du nœud de stockage dans Active IQ.
 
 
@@ -50,7 +50,7 @@ Lorsque vous cliquez sur le lien vers une page Active IQ, si vous n'êtes pas en
 
 == Recherche de risques
 
-Dans Cloud Insights, vous pouvez ajouter la colonne *monitoring.count* à une requête de nœud de stockage ou de stockage. Si le résultat renvoyé inclut des systèmes de stockage surveillés par Active IQ, la colonne monitoring.count affiche le nombre de risques correspondant au système ou au nœud de stockage.
+Dans Data Infrastructure Insights, vous pouvez ajouter la colonne *monitoring.count* à une requête de noeud de stockage ou de noeud de stockage. Si le résultat renvoyé inclut des systèmes de stockage surveillés par Active IQ, la colonne monitoring.count affiche le nombre de risques correspondant au système ou au nœud de stockage.
 
 
 

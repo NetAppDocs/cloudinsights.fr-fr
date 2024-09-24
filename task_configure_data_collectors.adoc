@@ -19,7 +19,7 @@ summary: Instructions générales relatives au collecteur de données
 
 
 [role="lead"]
-Vous configurez les collecteurs de données dans votre environnement Cloud Insights pour collecter des données à partir de périphériques du centre de données.
+Vous configurez les collecteurs de données dans votre environnement Data Infrastructure Insights pour collecter les données des terminaux du data Center.
 
 .Avant de commencer
 * Vous devez avoir configuré une unité d'acquisition pour pouvoir commencer à collecter des données.
@@ -28,7 +28,7 @@ Vous configurez les collecteurs de données dans votre environnement Cloud Insig
 
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > Collectors*
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > Collectors*
 +
 Le système affiche les collecteurs de données disponibles classés par fournisseur.
 
@@ -39,7 +39,7 @@ Dans la boîte de dialogue, vous pouvez configurer le collecteur de données et 
 . Entrez un nom pour le collecteur de données.
 . Cliquez sur *Configuration avancée* pour ajouter des champs de configuration supplémentaires. (Tous les collecteurs de données ne nécessitent pas une configuration avancée.)
 . Cliquez sur *Tester la configuration* pour vérifier que le collecteur de données est correctement configuré.
-. Cliquez sur *Ajouter un collecteur* pour enregistrer la configuration et ajouter le collecteur de données à votre locataire Cloud Insights.
+. Cliquez sur *Ajouter un collecteur* pour enregistrer la configuration et ajouter le collecteur de données à votre locataire Data Infrastructure Insights.
 
 
 Il peut prendre jusqu'à deux périodes d'interrogation avant que les données du service soient affichées dans les tableaux de bord ou disponibles pour les requêtes.
