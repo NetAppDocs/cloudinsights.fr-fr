@@ -88,22 +88,18 @@ Appuyez sur entrée ou cliquez en dehors de la zone de filtre pour appliquer le 
 Vous pouvez filtrer les données d'activité Forensic en utilisant les champs suivants :
 
 * Le type *activité*.
-
-
 * *Source IP* à partir de laquelle l'entité a été accédée. Vous devez fournir une adresse IP source valide en guillemets doubles, par exemple “10.1.1.1.” Les adresses IP incomplètes telles que “10.1.1.*”, “10.1.*.*”, etc. Ne fonctionneront pas.
 * *Protocole* pour extraire des activités spécifiques au protocole.
-
-
 * *Nom d'utilisateur* de l'utilisateur effectuant l'activité. Vous devez fournir le nom d'utilisateur exact pour filtrer. La recherche avec un nom d'utilisateur partiel ou un nom d'utilisateur partiel préfixé ou suffixé par '*' ne fonctionnera pas.
 * *Réduction du bruit* pour filtrer les fichiers créés par l'utilisateur au cours des 2 dernières heures. Il est également utilisé pour filtrer les fichiers temporaires (par exemple, les fichiers .tmp) auxquels l'utilisateur a accès.
-* *Domaine* de l'utilisateur exécutant l'activité. Vous devez fournir le *domaine exact* à filtrer. La recherche d'un domaine partiel, ou d'un domaine partiel préfixé ou suffixé avec le caractère générique ()'*'), ne fonctionnera pas. _None_ peut être spécifié pour rechercher un domaine manquant.
+* *Domaine* de l'utilisateur exécutant l'activité. Vous devez fournir le *domaine exact* à filtrer. La recherche d'un domaine partiel, ou d'un domaine partiel préfixé ou suffixé avec le caractère générique ('*'), ne fonctionnera pas. _None_ peut être spécifié pour rechercher un domaine manquant.
 
 
 Les champs suivants sont soumis à des règles de filtrage spéciales :
 
 * *Type d'entité*, avec l'extension entité (fichier) - il est préférable de spécifier le type d'entité exact entre guillemets. Par exemple _“txt”_.
 * *Chemin* de l'entité - filtres de chemin d'accès de répertoire (chaîne de chemin se terminant par /) jusqu'à 4 répertoires profonds sont recommandés pour des résultats plus rapides. Par exemple, _/home/userX/nested1/nested2/_ OU _"/home/userX/nested1/nested2/"_. Voir le tableau ci-dessous pour plus de détails.
-* *Utilisateur* exécutant l'activité - il est préférable de spécifier l'utilisateur exact entre guillemets. Pour eample, _« Administrateur »_.
+* *Utilisateur* exécutant l'activité - il est préférable de spécifier l'utilisateur exact entre guillemets. Par exemple, _« Administrateur »_.
 * *Périphérique* (SVM) où résident les entités
 * *Volume* où résident les entités
 * Le *chemin d'origine* utilisé pour renommer les événements lorsque le fichier d'origine a été renommé.
@@ -151,7 +147,7 @@ REMARQUE :
 
 == Tri des données d'historique d'activité Forensic
 
-Vous pouvez trier les données de l'historique d'activité par _Time, User, Source IP, Activity, Path_ et _Entity Type_. Par défaut, la table est triée par ordre décroissant _time_, ce qui signifie que les dernières données seront affichées en premier. Le tri est désactivé pour les champs _Device_ et _Protocol_.
+Vous pouvez trier les données de l'historique des activités par _heure, utilisateur, IP source, activité,_ et _Type d'entité_. Par défaut, la table est triée par ordre décroissant _time_, ce qui signifie que les dernières données seront affichées en premier. Le tri est désactivé pour les champs _Device_ et _Protocol_.
 
 
 
@@ -178,7 +174,7 @@ La fonction d'exportation asynchrone de Storage Workload Security est conçue po
 
 
 
-Vous pouvez utiliser un exemple de script pour extraire des données d'analyse via une API dans la page _/opt/netapp/cloudsecure/agent/export-script/_. Consultez le fichier readme à cet emplacement pour plus de détails sur le script.
+Un exemple de script permettant d'extraire des données d'analyse via l'API est présent sur _/opt/NetApp/cloudsecure/agent/export-script/_ sur l'agent. Consultez le fichier readme à cet emplacement pour plus de détails sur le script.
 
 
 
