@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reporting_overview.html 
-summary: Création de rapports personnalisés et prédéfinis pour vos données avec Cloud Insights. 
+summary: Reporting prédéfini et personnalisé pour vos données avec Data Infrastructure Insights. 
 keywords: reporting, cognos, data warehouse, dwh 
 ---
-= Présentation des rapports Cloud Insights
+= Présentation des rapports sur les informations d'infrastructure de données
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh
 
 
 [role="lead"]
-Les rapports Cloud Insights sont un outil de veille stratégique qui vous permet de consulter les rapports prédéfinis ou de créer des rapports personnalisés.
+Le reporting Data Infrastructure Insights est un outil de veille stratégique qui vous permet d'afficher des rapports prédéfinis ou de créer des rapports personnalisés.
 
 
-NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
+NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
-Les rapports Cloud Insights vous permettent d'effectuer les tâches suivantes :
+Les rapports Data Infrastructure Insights vous permettent d'effectuer les tâches suivantes :
 
 * Exécuter un rapport prédéfini
 * Créer un rapport personnalisé
@@ -34,7 +34,7 @@ Les rapports Cloud Insights vous permettent d'effectuer les tâches suivantes :
 * Utilisez des couleurs pour représenter des seuils sur les données
 
 
-Les rapports Cloud Insights peuvent générer des rapports personnalisés dans des domaines tels que la refacturation, l'analyse de consommation et la prévision. Ils peuvent également répondre à des questions comme :
+Le reporting Data Infrastructure Insights permet de générer des rapports personnalisés pour différents domaines tels que la facturation interne, l'analyse de consommation et la prévision. Il aide également à répondre à plusieurs questions :
 
 * Quel inventaire ai-je à faire ?
 * Où est mon inventaire?
@@ -47,21 +47,21 @@ Les rapports Cloud Insights peuvent générer des rapports personnalisés dans d
 
 
 
-== Accès aux rapports Cloud Insights
+== Accès au reporting Data Infrastructure Insights
 
-Vous pouvez accéder aux rapports Cloud Insights en cliquant sur le lien *Rapports* dans le menu.
+Vous pouvez accéder au rapport Data Infrastructure Insights en cliquant sur le lien *Rapports* dans le menu.
 
-Vous serez redirigé vers l'interface de génération de rapports. Cloud Insights utilise IBM Cognos Analytics pour son moteur de reporting.
+Vous serez redirigé vers l'interface de génération de rapports. Data Infrastructure Insights utilise IBM Cognos Analytics pour son moteur de reporting.
 
 
 
 == Qu'est-ce que le CÉC?
 
-Lorsque vous travaillez avec les rapports, vous entendrez les termes « entrepôt de données » et « ETL ». ETL signifie « extraire, transformer et charger ». Le processus ETL récupère les données collectées dans Cloud Insights et les transforme en un format à utiliser dans la génération de rapports. « Entrepôt de données » fait référence aux données collectées disponibles pour la génération de rapports.
+Lorsque vous travaillez avec les rapports, vous entendrez les termes « entrepôt de données » et « ETL ». ETL signifie « extraire, transformer et charger ». Le processus ETL récupère les données collectées dans Data Infrastructure Insights et les transforme dans un format pour les utiliser dans Reporting. « Entrepôt de données » fait référence aux données collectées disponibles pour la génération de rapports.
 
 Le processus ETL comprend les processus individuels suivants :
 
-* *Extrait*: Prend les données de Cloud Insights.
-* *Transform* : applique les règles ou fonctions de logique métier aux données extraites de Cloud Insights.
+* *Extract* : prend des données à partir de Data Infrastructure Insights.
+* *Transform* : applique des règles ou des fonctions de logique applicative aux données lorsqu'elles sont extraites de Data Infrastructure Insights.
 * *Load*: Enregistre les données transformées dans l'entrepôt de données pour utilisation dans Reporting.
 

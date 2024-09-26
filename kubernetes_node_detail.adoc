@@ -5,17 +5,14 @@ keywords: k8s, pods, clusters, nodes. troubleshooting, planning
 summary: La page de détails des nœuds Kubernetes fournit des informations sur le stockage persistant et Pod en back-end. 
 ---
 = Page des détails des nœuds Kubernetes
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -27,9 +24,9 @@ image:KubernetesNodeFiltering.png["Page Détails du nœud Kubernetes affichant l
 
 == Exploration des pods et des volumes persistants du nœud
 
-Cloud Insights fournit une visibilité sur le stockage back-end de vos environnements Kubernetes, ce qui vous donne des informations exploitables sur vos pods Kubernetes et vos volumes persistants. Vous pouvez suivre les compteurs PV tels que les IOPS, la latence et le débit, depuis l'utilisation d'un seul pod via un compteur PV vers un PV et jusqu'au périphérique de stockage interne.
+Les informations sur l'infrastructure de données offrent une visibilité sur le stockage interne de vos environnements Kubernetes, ce qui vous donne accès aux pods Kubernetes et aux volumes persistants (PVS). Vous pouvez suivre les compteurs PV tels que les IOPS, la latence et le débit, depuis l'utilisation d'un seul pod via un compteur PV vers un PV et jusqu'au périphérique de stockage interne.
 
-Au niveau des volumes persistants, Cloud Insights collecte des informations de capacité back-end (volume ou volume interne en fonction du type PV) (total, utilisé, pourcentage utilisé), ainsi que le nombre de snapshots de volume interne. Sur le Pod au niveau du stockage, il collecte la capacité interne et le nombre de snapshots des volumes internes.
+Au niveau des volumes persistants, Data Infrastructure Insights collecte des informations sur la capacité du back-end (volume ou volume interne selon le type de volume persistant) (total, utilisé, pourcentage utilisé), ainsi que sur le nombre de snapshots des volumes internes. Sur le Pod au niveau du stockage, il collecte la capacité interne et le nombre de snapshots des volumes internes.
 
 Sur une page d'accueil Volume ou Internal Volume, deux tableaux sont affichés :
 

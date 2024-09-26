@@ -19,7 +19,7 @@ summary: 'La page d"accueil Kubernetes s"est expliquée'
 
 
 [role="lead"]
-Cloud Insights Kubernetes Explorer est un puissant outil qui présente l'état et l'utilisation globaux de vos clusters Kubernetes et vous permet d'examiner facilement les points d'investigation.
+L'explorateur Kubernetes de Data Infrastructure Insights est un outil puissant pour afficher l'état et l'utilisation généraux de vos clusters Kubernetes. Il vous permet d'explorer facilement les domaines d'enquête.
 
 Cliquez sur *tableaux de bord > Kubernetes Explorer* pour ouvrir la page liste des clusters Kubernetes. Cette page de présentation contient un tableau des clusters Kubernetes de votre environnement.
 

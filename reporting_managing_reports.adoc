@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 Vous pouvez personnaliser le format de sortie et la diffusion d'un rapport, définir les propriétés ou les horaires des rapports et les rapports par e-mail.
 
 
-NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
+NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
 
 
@@ -30,7 +30,7 @@ NOTE: La fonction de création de rapports est disponible dans Cloud Insights li
 
 Vous pouvez personnaliser le format et la méthode de diffusion des rapports.
 
-. Dans le portail de rapports Cloud Insights, accédez à *Menu > contenu > mon contenu/contenu d'équipe*. Placez le pointeur de la souris sur le rapport que vous souhaitez personnaliser et ouvrez le menu « trois points ».
+. Dans le portail de génération de rapports Data Infrastructure Insights, accédez à *Menu > contenu > mon contenu/contenu d'équipe*. Placez le pointeur de la souris sur le rapport que vous souhaitez personnaliser et ouvrez le menu « trois points ».
 
 
 image:Reporting_Output_and_Delivery.png["Sortie et livraison du rapport"]

@@ -22,7 +22,7 @@ summary: Configuration de Workload Security LDAP User Directory Collector
 Vous configurez la sécurité de la charge de travail pour collecter les attributs utilisateur à partir des serveurs d'annuaire LDAP.
 
 .Avant de commencer
-* Vous devez être administrateur Cloud Insights ou propriétaire de compte pour effectuer cette tâche.
+* Vous devez être un administrateur Data Infrastructure Insights ou un propriétaire de compte pour effectuer cette tâche.
 * Vous devez avoir l'adresse IP du serveur hébergeant le serveur d'annuaire LDAP.
 * Un agent doit être configuré avant de configurer un connecteur d'annuaire LDAP.
 

@@ -22,9 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom
 Vous pouvez utiliser les outils de création de rapports pour créer des rapports personnalisés. Après avoir créé des rapports, vous pouvez les enregistrer et les exécuter selon un planning régulier. Les résultats des rapports peuvent être automatiquement envoyés par e-mail à vous-même et à d'autres personnes.
 
 
-NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
+NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
-Les exemples de cette section présentent le processus suivant, qui peut être utilisé pour n'importe quel modèle de données de rapport Cloud Insights :
+Les exemples de cette section présentent le processus suivant, qui peut être utilisé pour n'importe quel modèle de données de reporting Data Infrastructure Insights :
 
 * Identifier une question à répondre avec un rapport
 * Déterminer les données nécessaires pour soutenir les résultats
@@ -38,7 +38,7 @@ Par exemple, si vous n'avez pas terminé le processus d'identification du périp
 Avant de concevoir vos rapports, effectuez les tâches suivantes :
 
 * Tout configurer link:task_configure_data_collectors.html["collecteurs de données"] correctement.
-* Entrez des annotations (telles que les niveaux, les data centers et les entités) sur les terminaux et les ressources de votre environnement. Il est avantageux de disposer d'annotations stables avant de générer des rapports, car les rapports Cloud Insights collectent des informations historiques.
+* Entrez des annotations (telles que les niveaux, les data centers et les entités) sur les terminaux et les ressources de votre environnement. Il est avantageux d'avoir des annotations stables avant de générer des rapports, car le reporting Data Infrastructure Insights collecte des informations d'historique.
 
 
 
@@ -87,9 +87,9 @@ Plusieurs conseils peuvent être utiles lors de la conception de rapports.
 
 * Déterminez si vous devez utiliser des données actuelles ou historiques.
 +
-La plupart des rapports n'ont qu'à établir des rapports sur les dernières données disponibles dans Cloud Insights.
+La plupart des rapports n'ont besoin que de générer des rapports sur les données les plus récentes disponibles dans les informations sur l'infrastructure de données.
 
-* Le reporting Cloud Insights fournit des informations historiques sur la capacité et les performances, mais pas sur l'inventaire.
+* Les rapports Data Infrastructure Insights fournissent des informations historiques sur la capacité et les performances, mais pas sur l'inventaire.
 * Chacun voit l'ensemble des données. Cependant, vous devrez peut-être limiter ces données à des publics spécifiques.
 +
 Pour segmenter les informations des différents utilisateurs, vous pouvez créer des rapports et définir des autorisations d'accès.
@@ -100,7 +100,7 @@ Pour segmenter les informations des différents utilisateurs, vous pouvez créer
 
 == Modèles de données de création de rapports
 
-Cloud Insights inclut plusieurs modèles de données à partir desquels vous pouvez sélectionner des rapports prédéfinis ou créer votre propre rapport personnalisé.
+Data Infrastructure Insights comprend plusieurs modèles de données à partir desquels vous pouvez sélectionner des rapports prédéfinis ou créer votre propre rapport personnalisé.
 
 Chaque modèle de données comprend un simple data Mart et un Data Mart avancé :
 
@@ -188,7 +188,7 @@ Permet de générer des rapports sur l'utilisation de la capacité de votre envi
 * Quelles sont les économies réalisées en termes d'efficacité du stockage grâce aux technologies de déduplication et de provisionnement fin du stockage ?
 
 
-Capacités dans le modèle de données VM Capacity sont extraites de disques virtuels (VMDK). Cela signifie que la taille provisionnée d'une machine virtuelle qui utilise le modèle de données de capacité de la machine virtuelle correspond à la taille de ses disques virtuels. Cette approche est différente de la capacité provisionnée dans les ordinateurs virtuels, dans Cloud Insights, qui affiche la taille provisionnée de la machine virtuelle elle-même.
+Capacités dans le modèle de données VM Capacity sont extraites de disques virtuels (VMDK). Cela signifie que la taille provisionnée d'une machine virtuelle qui utilise le modèle de données de capacité de la machine virtuelle correspond à la taille de ses disques virtuels. Cette configuration est différente de la capacité provisionnée dans la vue Virtual machines des informations sur l'infrastructure de données, qui indique la taille provisionnée de la machine virtuelle elle-même.
 
 
 
@@ -302,7 +302,7 @@ Le modèle de données performances comprend des informations qui vous aident à
 
 === Modèle de données d'efficacité du stockage
 
-Vous permet de suivre le score et le potentiel en matière d'efficacité du stockage dans le temps. Ce modèle de données stocke les mesures de la capacité provisionnée et de la quantité utilisée ou consommée (la mesure physique). Par exemple, lorsque le provisionnement fin est activé, Cloud Insights indique la capacité du périphérique. Vous pouvez également utiliser ce modèle afin de déterminer l'efficacité lorsque la déduplication est activée. Vous pouvez répondre à diverses questions à l'aide du magasin de données Storage Efficiency :
+Vous permet de suivre le score et le potentiel en matière d'efficacité du stockage dans le temps. Ce modèle de données stocke les mesures de la capacité provisionnée et de la quantité utilisée ou consommée (la mesure physique). Par exemple, lorsque le provisionnement fin est activé, Data Infrastructure Insights indique la capacité prélevée sur le périphérique. Vous pouvez également utiliser ce modèle afin de déterminer l'efficacité lorsque la déduplication est activée. Vous pouvez répondre à diverses questions à l'aide du magasin de données Storage Efficiency :
 
 * Quels sont les économies que nous pouvons réaliser en termes d'efficacité du stockage grâce à l'implémentation des technologies de provisionnement fin et de déduplication ?
 * Quelles sont les économies de stockage réalisées dans l'ensemble des data centers ?

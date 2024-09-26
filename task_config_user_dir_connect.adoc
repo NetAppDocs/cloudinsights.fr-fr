@@ -22,7 +22,7 @@ summary: Configuration de Workload Security Active Directory User Directory Coll
 La sécurité des charges de travail peut être configurée pour collecter des attributs utilisateur à partir des serveurs Active Directory.
 
 .Avant de commencer
-* Vous devez être administrateur Cloud Insights ou propriétaire de compte pour effectuer cette tâche.
+* Vous devez être un administrateur Data Infrastructure Insights ou un propriétaire de compte pour effectuer cette tâche.
 * Vous devez avoir l'adresse IP du serveur hébergeant le serveur Active Directory.
 * Un agent doit être configuré avant de configurer un connecteur de répertoire utilisateur.
 

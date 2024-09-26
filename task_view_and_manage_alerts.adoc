@@ -19,10 +19,10 @@ keywords: monitor, alert, viewing
 
 
 [role="lead"]
-Cloud Insights affiche les alertes lorsque link:task_create_monitor.html["seuils surveillés"] sont dépassées.
+Data Infrastructure Insights affiche des alertes en cas link:task_create_monitor.html["seuils surveillés"]de dépassement.
 
 
-TIP: Les moniteurs et alertes sont disponibles dans Cloud Insights Standard Edition et versions ultérieures.
+TIP: Les fonctions de surveillance et d'alerte sont disponibles dans Data Infrastructure Insights Standard Edition et versions ultérieures.
 
 
 
@@ -71,7 +71,7 @@ image:alert_detail_page.png["Page de détails de l'alerte"]
 
 == Alertes lorsque des données sont manquantes
 
-Dans un système en temps réel tel que Cloud Insights, pour déclencher l'analyse d'un moniteur afin de décider si une alerte doit être générée, nous nous appuyons sur l'une des deux choses suivantes :
+Dans un système en temps réel tel que Data Infrastructure Insights, pour déclencher l'analyse d'un moniteur afin de décider si une alerte doit être générée, nous nous appuyons sur l'une des deux choses suivantes :
 
 * la prochaine donnée à arriver
 * un minuteur à tirer lorsqu'il n'y a pas de point de données et que vous avez attendu assez longtemps
@@ -87,4 +87,4 @@ Si vous disposez d'un moniteur avec une fenêtre de 30 minutes qui indique qu'un
 
 Il est possible de configurer un moniteur de façon à ce que la condition existe toujours * sur l'objet surveillé--par exemple, IOPS > 1 ou latence > 0. Ils sont souvent créés sous forme de moniteurs « test » puis oubliés. Ces moniteurs créent des alertes qui restent ouvertes en permanence sur les objets constitutifs, ce qui peut entraîner des problèmes de stabilité et de contrainte du système au fil du temps.
 
-Pour éviter cela, Cloud Insights fermera automatiquement toute alerte « active en permanence » après 7 jours. Notez que les conditions sous-jacentes du moniteur peuvent (probablement) continuer à exister, ce qui provoque l'émission d'une nouvelle alerte presque immédiatement, mais cette fermeture d'alertes « toujours actives » réduit une partie de la contrainte système qui peut autrement se produire.
+Pour éviter cela, Data Infrastructure Insights fermera automatiquement toute alerte « active en permanence » au bout de 7 jours. Notez que les conditions sous-jacentes du moniteur peuvent (probablement) continuer à exister, ce qui provoque l'émission d'une nouvelle alerte presque immédiatement, mais cette fermeture d'alertes « toujours actives » réduit une partie de la contrainte système qui peut autrement se produire.

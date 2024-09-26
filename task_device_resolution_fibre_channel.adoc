@@ -38,7 +38,7 @@ Le lien _Total Coverage_ affiche la liste du nombre de périphériques identifi�
 
 == Ajout manuel d'un périphérique Fibre Channel
 
-Vous pouvez ajouter manuellement un périphérique Fibre Channel à Cloud Insights à l'aide de la fonction _Ajout manuel_ disponible dans l'onglet identification Fibre Channel de la résolution du périphérique. Ce processus peut être utilisé pour la pré-identification d'un périphérique qui devrait être découvert à l'avenir.
+Vous pouvez ajouter manuellement un périphérique Fibre Channel à Data Infrastructure Insights à l'aide de la fonction _Manual Add_ disponible dans l'onglet Device Resolution Fibre Channel Identify. Ce processus peut être utilisé pour la pré-identification d'un périphérique qui devrait être découvert à l'avenir.
 
 .Avant de commencer
 Pour ajouter une identification de périphérique au système, vous devez connaître l'adresse WWN ou IP et le nom du périphérique.
@@ -47,7 +47,7 @@ Pour ajouter une identification de périphérique au système, vous devez conna�
 Vous pouvez ajouter manuellement un hôte, un périphérique de stockage, une bande ou un périphérique Fibre Channel inconnu.
 
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights
 . Cliquez sur *gérer > résolution du périphérique*
 . Cliquez sur l'onglet *Fibre Channel Identify*.
 . Cliquez sur le bouton *Ajouter*.
@@ -64,7 +64,7 @@ Le périphérique que vous entrez est ajouté à la liste des périphériques da
 
 == Importation de l'identification du périphérique Fibre Channel à partir d'un fichier .CSV
 
-Vous pouvez importer manuellement l'identification des périphériques Fibre Channel dans la résolution des périphériques Cloud Insights à l'aide d'une liste de périphériques d'un fichier .CSV.
+Vous pouvez importer manuellement l'identification des périphériques Fibre Channel dans la résolution des périphériques Data Infrastructure Insights à l'aide d'une liste de périphériques dans un fichier .CSV.
 
 . Avant de commencer
 
@@ -89,7 +89,7 @@ NOTE: Dans le cadre des meilleures pratiques, il est recommandé d'exporter d'ab
 
 Pour importer les informations d'identification de Fibre Channel :
 
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Sélectionnez l'onglet *Fibre Channel Identify*.
 . Cliquez sur le bouton *identifier > identifier à partir du fichier*.
@@ -103,7 +103,7 @@ Les périphériques que vous entrez sont ajoutés à la liste des périphérique
 
 == Exportation des identifications de périphérique Fibre Channel vers un fichier .CSV
 
-Vous pouvez exporter des identifications de périphérique Fibre Channel existantes vers un fichier .CSV à partir de la fonction de résolution de périphérique Cloud Insights. Vous pouvez exporter une identification de périphérique afin de pouvoir la modifier, puis la réimporter dans Cloud Insights, où elle est ensuite utilisée pour identifier les périphériques similaires à ceux qui correspondent à l'identification exportée.
+Vous pouvez exporter les identifications de périphériques Fibre Channel existantes vers un fichier .CSV à partir de la fonction de résolution de périphériques Data Infrastructure Insights. Vous pouvez exporter une identification de périphérique pour la modifier, puis l'importer à nouveau dans Data Infrastructure Insights, où elle est ensuite utilisée pour identifier les périphériques similaires à ceux qui correspondent à l'origine à l'identification exportée.
 
 .Description de la tâche
 Ce scénario peut être utilisé lorsque les périphériques ont des attributs similaires qui peuvent être facilement modifiés dans le fichier .CSV, puis importés à nouveau dans le système.
@@ -116,7 +116,7 @@ Lorsque vous exportez une identification de périphérique Fibre Channel dans un
 | WWN | IP | Nom | Type 
 |===
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Sélectionnez l'onglet *Fibre Channel Identify*.
 . Sélectionnez le ou les périphériques Fibre Channel dont vous souhaitez exporter l'identification.

@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh, pre-defined
 
 
 [role="lead"]
-Les rapports Cloud Insights incluent des rapports prédéfinis qui répondent à un certain nombre d'exigences courantes en matière de rapports et offrent aux parties prenantes une visibilité stratégique sur la nécessité de prendre des décisions avisées concernant leur infrastructure de stockage.
+Le reporting sur les informations de l'infrastructure de données inclut des rapports prédéfinis qui répondent à un certain nombre d'exigences courantes en matière de reporting, fournissant aux parties prenantes une vision critique nécessaire pour prendre des décisions avisées concernant leur infrastructure de stockage.
 
 
-NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
+NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
-Vous pouvez générer des rapports prédéfinis à partir du portail de rapports Cloud Insights, les envoyer par e-mail à d'autres utilisateurs et même les modifier. Plusieurs rapports vous permettent de filtrer par périphérique, entité commerciale ou niveau. Les outils de création de rapports utilisent IBM Cognos comme fondation et vous donnent de nombreuses options de présentation de données.
+Vous pouvez générer des rapports prédéfinis à partir du portail de rapports Data Infrastructure Insights, les envoyer par e-mail à d'autres utilisateurs et même les modifier. Plusieurs rapports vous permettent de filtrer par périphérique, entité commerciale ou niveau. Les outils de création de rapports utilisent IBM Cognos comme fondation et vous donnent de nombreuses options de présentation de données.
 
 Les rapports prédéfinis indiquent votre inventaire, vos capacités de stockage, votre facturation interne, vos performances, votre efficacité du stockage, et les données de coût du cloud. Vous pouvez modifier ces rapports prédéfinis et enregistrer vos modifications.
 
@@ -34,7 +34,7 @@ Vous pouvez générer des rapports sous différents formats, notamment HTML, PDF
 
 == Accès aux rapports prédéfinis
 
-Lorsque vous ouvrez le portail de rapports, le dossier _Team Content_ est le point de départ pour vous permettre de sélectionner le type d'informations dont vous avez besoin dans les rapports Cloud Insights.
+Lorsque vous ouvrez le portail de rapports, le dossier _Team Content_ vous permet de sélectionner le type d'informations dont vous avez besoin dans les rapports Data Infrastructure Insights.
 
 . Dans le volet de navigation de gauche, sélectionnez *contenu > contenu de l'équipe*.
 . Sélectionnez *Rapports* pour accéder aux rapports prédéfinis.
@@ -121,7 +121,7 @@ Le rapport capacité et performances de NetApp fournit des données globales pou
 
 === Tableau de bord
 
-Le rapport sur la carte de score présente un résumé et un état général de tous les actifs acquis par Cloud Insights. L'état est indiqué par des indicateurs verts, jaunes et rouges :
+Le rapport de la carte de performances fournit un résumé et un état général de tous les actifs acquis par Data Infrastructure Insights. L'état est indiqué par des indicateurs verts, jaunes et rouges :
 
 * Le vert indique un état normal
 * Le jaune indique un problème potentiel dans l'environnement

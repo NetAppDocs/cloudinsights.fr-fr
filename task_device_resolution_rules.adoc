@@ -19,7 +19,7 @@ summary: 'La résolution des périphériques vous permet de suivre avec précisi
 
 
 [role="lead"]
-Vous créez des règles de résolution des périphériques pour identifier les hôtes, le stockage et les bandes qui ne sont pas automatiquement identifiés actuellement par Cloud Insights. Les règles que vous créez identifient les périphériques actuellement dans votre environnement et identifient également les périphériques similaires ajoutés à votre environnement.
+Vous créez des règles de résolution des périphériques pour identifier les hôtes, le stockage et les bandes qui ne sont pas automatiquement identifiés actuellement par Data Infrastructure Insights. Les règles que vous créez identifient les périphériques actuellement dans votre environnement et identifient également les périphériques similaires ajoutés à votre environnement.
 
 
 
@@ -57,13 +57,13 @@ Vous pouvez sélectionner _Host_ ou _Tape_.
 
 . Dans la liste *Source*, sélectionnez la source à utiliser pour identifier l'hôte.
 +
-Selon la source que vous avez choisie, Cloud Insights affiche la réponse suivante :
+Selon la source que vous avez choisie, Data Infrastructure Insights affiche la réponse suivante :
 
 +
-.. *Zones* répertorie les zones et WWN qui doivent être identifiés par Cloud Insights.
-.. *SRM* liste les alias non identifiés qui doivent être identifiés par Cloud Insights
-.. *Alias de stockage* répertorie les alias de stockage et WWN qui doivent être identifiés par Cloud Insights
-.. *Alias de commutateur* répertorie les alias de commutateur qui doivent être identifiés par Cloud Insights
+.. *Zones* répertorie les zones et le WWN devant être identifiés par Data Infrastructure Insights.
+.. *SRM* répertorie les alias non identifiés qui doivent être identifiés par Data Infrastructure Insights
+.. *Alias de stockage* répertorie les alias de stockage et le WWN qui doivent être identifiés par Data Infrastructure Insights
+.. *Alias de commutateur* répertorie les alias de commutateur qui doivent être identifiés par Data Infrastructure Insights
 
 
 . Dans la liste *méthode*, sélectionnez la méthode à utiliser pour identifier l'hôte.
@@ -86,7 +86,7 @@ Selon la source que vous avez choisie, Cloud Insights affiche la réponse suivan
 | Zones | Délimiteurs, expressions régulières 
 |===
 +
-** Les règles utilisant des délimiteurs nécessitent les délimiteurs et la longueur minimale du nom d'hôte. La longueur minimale du nom d'hôte correspond au nombre de caractères que Cloud Insights doit utiliser pour identifier un hôte. Cloud Insights effectue des recherches DNS uniquement pour les noms d'hôtes qui sont aussi longs ou plus.
+** Les règles utilisant des délimiteurs nécessitent les délimiteurs et la longueur minimale du nom d'hôte. La longueur minimale du nom d'hôte est le nombre de caractères que Data Infrastructure Insights doit utiliser pour identifier un hôte. Data Infrastructure Insights effectue des recherches DNS uniquement pour les noms d'hôte longs ou plus.
 +
 Pour les règles utilisant des délimitateurs, la chaîne d'entrée est tokenisée par le délimiteur et une liste de candidats de noms d'hôte est créée en faisant plusieurs combinaisons du jeton adjacent. La liste est ensuite triée, la plus grande à la plus petite. Par exemple, pour un sring d'entrée de _vipsnq03_hba3_emc3_12ep0_, la liste se traduit par ce qui suit :
 
@@ -119,7 +119,7 @@ Les résultats de l'exécution de la règle sont affichés dans l'onglet *FC Ide
 Une mise à jour de la résolution du périphérique valide les modifications manuelles qui ont été ajoutées depuis la dernière exécution de la résolution automatique complète du périphérique. L'exécution d'une mise à jour peut être utilisée pour valider et exécuter uniquement les nouvelles entrées manuelles apportées à la configuration de résolution de périphérique. Aucune résolution complète du périphérique n'est exécutée.
 
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Dans l'écran *Device Resolution*, cliquez sur la flèche vers le bas du bouton *Run AR*.
 . Cliquez sur *Update* pour lancer la mise à jour.
@@ -138,7 +138,7 @@ Vous avez un certain nombre de périphériques qui n'ont pas été identifiés e
 NOTE: Si votre source ne contient qu'une partie d'un nom d'hôte ou de périphérique, utilisez une règle d'expression régulière et formatez-la pour ajouter le texte manquant.
 
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Cliquez sur l'onglet *Fibre Channel Identify*.
 +
@@ -156,7 +156,7 @@ L'ordre des règles est modifié dans l'écran identifier, mais ne sont pas modi
 . Sélectionnez la méthode qui répond à vos besoins.
 
 
-Cloud Insights exécute le processus de résolution de l'hôte dans l'ordre dans lequel les méthodes apparaissent, en commençant par celles en haut.
+Data Infrastructure Insights exécute le processus de résolution des hôtes dans l'ordre dans lequel les méthodes apparaissent, en commençant par celles situées en haut.
 
 Lorsque des règles s'appliquent, les noms de règles s'affichent dans la colonne règles et sont identifiés comme étant manuels.
 

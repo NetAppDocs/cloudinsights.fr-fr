@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reporting_user_roles.html 
-summary: 'Ce que vous pouvez faire avec Cloud Insights Reporting dépend de votre rôle d"utilisateur.' 
+summary: 'Ce que vous pouvez faire avec le reporting Data Infrastructure Insights dépend de votre rôle d"utilisateur.' 
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
-= Rôles d'utilisateur Cloud Insights Reporting
+= Rôles utilisateur du reporting Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,14 +19,14 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 
 
 [role="lead"]
-Si vous disposez de Cloud Insights Premium Edition avec reporting, chaque utilisateur Cloud Insights de votre environnement dispose également d'une connexion SSO (Single Sign-on) à l'application de reporting (c.-à-d. Cognos). Il vous suffit de cliquer sur le lien *Rapports* dans le menu pour vous connecter automatiquement à Reporting.
+Si vous disposez de Data Infrastructure Insights Premium Edition avec Reporting, chaque utilisateur Data Infrastructure Insights de votre environnement dispose également d'un login SSO pour l'application Reporting (par exemple, Cognos). Il vous suffit de cliquer sur le lien *Rapports* dans le menu pour vous connecter automatiquement à Reporting.
 
-Votre rôle d'utilisateur dans Cloud Insights détermine votre rôle d'utilisateur hiérarchique :
+Votre rôle d'utilisateur dans Data Infrastructure Insights détermine votre rôle d'utilisateur Reporting :
 
 |===
 
 
-| Rôle Cloud Insights | Rôle de génération de rapports | Autorisations liées aux rapports 
+| Rôle informations exploitables sur l'infrastructure de données | Rôle de génération de rapports | Autorisations liées aux rapports 
 
 
 | Invité | Grand public | Permet d'afficher, de planifier et d'exécuter des rapports et de définir des préférences personnelles telles que celles pour les langues et les fuseaux horaires. Les clients ne peuvent pas créer de rapports ni effectuer des tâches administratives. 
@@ -88,7 +88,7 @@ Le tableau suivant présente les fonctions disponibles pour chaque rôle de rapp
 == Définition des préférences de notification (Cognos)
 
 
-NOTE: Si vous modifiez vos préférences de messagerie utilisateur dans Cloud Insights Reporting (c'est-à-dire l'application Cognos), ces préférences sont actives _uniquement pour la session en cours_. La déconnexion de Cognos et de nouveau vous permettront de réinitialiser vos préférences de courriel.
+NOTE: Si vous modifiez vos préférences de messagerie utilisateur dans Data Infrastructure Insights Reporting (c'est-à-dire l'application Cognos), ces préférences sont actives _uniquement pour la session en cours_. La déconnexion de Cognos et de nouveau vous permettront de réinitialiser vos préférences de courriel.
 
 
 
@@ -111,6 +111,6 @@ image:Reporting_Menu.png["Menu supérieur gauche de Cognos"]
 . Dans le coin supérieur droit du menu, sélectionnez « Copier ou déplacer ».
 . Accédez au nouveau dossier créé dans _Team Content_
 . Collez les rapports dans le nouveau dossier créé à l'aide des boutons Copier vers ou déplacer vers
-. Une fois SSO activé pour Cognos, connectez-vous à Cloud Insights avec l'adresse électronique utilisée pour créer votre compte.
+. Une fois la connexion SSO activée pour Cognos, connectez-vous à Data Infrastructure Insights à l'aide de l'adresse e-mail utilisée pour créer votre compte.
 . Accédez au dossier _Team Content_ dans Cognos et copiez ou déplacez les rapports précédemment enregistrés vers _My Content_.
 

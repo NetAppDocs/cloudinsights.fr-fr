@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_data_retention.html 
-summary: Conservation des données Cloud Insights à des fins de création de rapports 
+summary: 'Conservation des données des informations exploitables de l"infrastructure de données à des fins de reporting' 
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = Conservation des données historiques pour les rapports
@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-Cloud Insights conserve les données historiques à utiliser dans le cadre du reporting en fonction des magasins de données et de la granularité des données, comme le montre le tableau suivant.
+Data Infrastructure Insights conserve les données historiques à utiliser dans Reporting en fonction des magasins de données et de la granularité des données, comme indiqué dans le tableau suivant.
 
 |===
 

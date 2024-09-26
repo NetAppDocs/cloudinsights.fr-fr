@@ -30,14 +30,14 @@ NOTE: Cette page fait référence aux instructions de tiers, qui peuvent faire l
 
 * Dans Discordon, sélectionnez le serveur, sous canaux de texte, sélectionnez Modifier le canal (icône d'engrenage)
 * Sélectionnez *intégrations > Afficher Webpatères* et cliquez sur *Nouveau Webhook*
-* Copiez l'URL du Webhook. Vous devrez coller ce texte dans la configuration du crochet Web Cloud Insights.
+* Copiez l'URL du Webhook. Vous devez coller cette information dans la configuration du webhook Data Infrastructure Insights.
 
 
 
 
-== Créer un Webhook Cloud Insights :
+== Créer le Webhook Data Infrastructure Insights :
 
-. Dans Cloud Insights, accédez à *Admin > Notifications* et sélectionnez l'onglet *Webpatères*. Cliquez sur *+Webhook* pour créer un nouveau mousqueton.
+. Dans Data Infrastructure Insights, accédez à *Admin > Notifications* et sélectionnez l'onglet *Webhooks*. Cliquez sur *+Webhook* pour créer un nouveau mousqueton.
 . Donnez au webhook un nom significatif, tel que « discorde ».
 . Dans la liste déroulante _Template Type_, sélectionnez *discorde*.
 . Collez l'URL ci-dessus dans le champ _URL_.
@@ -52,7 +52,7 @@ NOTE: Pour tester le webhook, remplacez temporairement la valeur url dans le cor
 
 == Notifications via Webhook
 
-Pour notifier les événements par le biais du webhook, dans Cloud Insights, accédez à *alertes > moniteurs* et cliquez sur *+moniteur* pour créer un nouveau link:task_create_monitor.html["superviser"].
+Pour signaler des événements via Webhook, accédez à *alertes > moniteurs* dans Data Infrastructure Insights et cliquez sur *+Monitor* pour créer un nouveau link:task_create_monitor.html["superviser"].
 
 * Sélectionnez une mesure et définissez les conditions du moniteur.
 * Sous _configurer la ou les notifications d'équipe, choisissez la méthode de livraison *Webhook*.

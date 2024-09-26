@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pre-requisites_for_k8s_operator.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
-summary: 'Cloud Insights prend en charge Telegraf en tant qu"agent pour collecter des données d"intégration sur Kubernetes.' 
+summary: 'Data Infrastructure Insights prend en charge Telegraf en tant qu"agent pour la collecte de données d"intégration sur Kubernetes.' 
 ---
 = Avant d'installer ou de mettre à niveau l'opérateur de surveillance NetApp Kubernetes
 :toc: macro
@@ -36,25 +36,16 @@ Rancher Kubernetes Engine (RKE)
 VMware Tanzu 
 
 
-| Linux | Cloud Insights ne prend pas en charge les nœuds qui fonctionnent avec l'architecture Arm64.
-
-Surveillance réseau : doit exécuter le noyau Linux version 4.18.0 ou ultérieure. Le système d'exploitation de photons n'est pas pris en charge. 
+| Linux | Data Infrastructure Insights ne prend pas en charge les nœuds qui s'exécutent avec l'architecture Arm64. Surveillance réseau : doit exécuter le noyau Linux version 4.18.0 ou ultérieure. Le système d'exploitation de photons n'est pas pris en charge. 
 
 
-| Étiquettes | Cloud Insights prend en charge le contrôle des nœuds Kubernetes qui exécutent Linux, en spécifiant un sélecteur de nœud Kubernetes qui recherche les étiquettes Kubernetes suivantes sur les plateformes :
-
-Kubernetes v1.20 et versions ultérieures : Kubernetes.io/os = linux
-Rancher + bovin.io comme plateforme d'orchestration/Kubernetes : bovin.io/os = linux 
+| Étiquettes | Les informations d'infrastructure de données prennent en charge la surveillance des nœuds Kubernetes exécutant Linux, en spécifiant un sélecteur de nœuds Kubernetes qui recherche les étiquettes Kubernetes suivantes sur ces plateformes : Kubernetes v1.20 et versions ultérieures : Kubernetes.io/os = linux Rancher + bétail.io comme plateforme d'orchestration/Kubernetes : bétail.io/os = linux 
 
 
 | Commandes | Les commandes curl et kubectl doivent être disponibles.; pour de meilleurs résultats, ajoutez ces commandes au CHEMIN. 
 
 
-| Connectivité | L'interface de ligne de commande kubectl est configurée pour communiquer avec le cluster K8s cible et dispose d'une connectivité Internet à votre environnement Cloud Insights.
-
-Si vous êtes derrière un proxy pendant l'installation, suivez les instructions de la link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["Configuration du support de proxy"] De l'installation de l'opérateur.
-
-Pour un audit et un reporting précis des données, synchronisez l'heure sur la machine Agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol). 
+| Connectivité | Kubectl cli est configuré pour communiquer avec le cluster K8s cible et dispose d'une connectivité Internet à votre environnement Data Infrastructure Insights. Si vous êtes derrière un proxy pendant l'installation, suivez les instructions de link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["Configuration du support de proxy"]la section installation de l'opérateur. Pour un audit et un reporting précis des données, synchronisez l'heure sur la machine Agent à l'aide du protocole NTP (Network Time Protocol) ou SNTP (simple Network Time Protocol). 
 
 
 | Autre | Si vous utilisez OpenShift 4.6 ou une version supérieure, vous devez suivre la link:task_config_telegraf_agent_k8s.html#openshift-instructions["Instructions OpenShift"] en plus de s'assurer que ces conditions préalables sont remplies. 
@@ -76,11 +67,11 @@ Lisez également à propos de <<autorisations,Autorisations>>.
 
 Pour installer l'opérateur NetApp Kubernetes Monitoring, vous pouvez utiliser un proxy dans votre environnement. Il peut s'agir de systèmes proxy identiques ou distincts :
 
-* Proxy requis lors de l'exécution de l'extrait de code d'installation (en utilisant "curl") pour connecter le système sur lequel l'extrait est exécuté dans votre environnement Cloud Insights
-* Proxy nécessaire du cluster Kubernetes cible pour communiquer avec votre environnement Cloud Insights
+* Proxy nécessaire lors de l'exécution de l'extrait de code d'installation (à l'aide de « curl ») pour connecter le système sur lequel l'extrait de code est exécuté à votre environnement Data Infrastructure Insights
+* Proxy requis par le cluster Kubernetes cible pour communiquer avec votre environnement Data Infrastructure Insights
 
 
-Si vous utilisez un proxy pour l'une ou l'autre de ces opérations, ou pour les deux, vous NetApp devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Cloud Insights. Par exemple, à partir des serveurs/machines virtuelles à partir desquels vous souhaitez installer l'opérateur, vous devez pouvoir accéder à Cloud Insights et télécharger des binaires à partir de Cloud Insights.
+Si vous utilisez un proxy pour l'une ou l'autre de ces versions, ou les deux, pour installer le moniteur d'exploitation NetApp Kubernetes, vous devez d'abord vous assurer que votre proxy est configuré pour permettre une bonne communication avec votre environnement Data Infrastructure Insights. Par exemple, dans les serveurs/machines virtuelles depuis lesquels vous souhaitez installer l'opérateur, vous devez être en mesure d'accéder aux informations exploitables de l'infrastructure de données et de télécharger des binaires depuis Data Infrastructure Insights.
 
 Pour le proxy utilisé pour installer le moniteur d'exploitation NetApp Kubernetes, définissez les variables d'environnement _http_proxy/https_proxy_ avant d'installer l'opérateur. Pour certains environnements proxy, il peut être nécessaire de définir la variable _no_proxy Environment_.
 
@@ -98,7 +89,7 @@ Pour définir la ou les variables, effectuez les opérations suivantes sur votre
 
 
 
-Pour que le proxy utilisé pour votre cluster Kubernetes puisse communiquer avec votre environnement Cloud Insights, installez l'opérateur NetApp Kubernetes Monitoring après avoir lu toutes ces instructions.
+Pour que le proxy utilisé pour votre cluster Kubernetes communique avec votre environnement Data Infrastructure Insights, installez l'opérateur de surveillance Kubernetes NetApp après avoir lu toutes ces instructions.
 
 Configurez la section proxy de AgentConfiguration dans Operator-config.yaml avant de déployer l'opérateur de surveillance NetApp Kubernetes.
 
@@ -128,9 +119,9 @@ agent:
 
 === À l'aide d'un référentiel docker personnalisé ou privé
 
-Par défaut, l'opérateur de surveillance NetApp Kubernetes extrait les images du conteneur du référentiel Cloud Insights. Si vous utilisez un cluster Kubernetes comme cible de surveillance et que ce cluster est configuré pour extraire uniquement les images de conteneur à partir d'un référentiel Docker personnalisé ou privé ou d'un registre de conteneurs, vous devez configurer l'accès aux conteneurs requis par l'opérateur de surveillance NetApp Kubernetes.
+Par défaut, l'opérateur de surveillance Kubernetes NetApp extrait les images du conteneur du référentiel informations exploitables de l'infrastructure de données. Si vous utilisez un cluster Kubernetes comme cible de surveillance et que ce cluster est configuré pour extraire uniquement les images de conteneur à partir d'un référentiel Docker personnalisé ou privé ou d'un registre de conteneurs, vous devez configurer l'accès aux conteneurs requis par l'opérateur de surveillance NetApp Kubernetes.
 
-Exécutez l'extrait de code image dans la mosaïque d'installation de NetApp Monitoring Operator. Cette commande permet de se connecter au référentiel Cloud Insights, d'extraire toutes les dépendances d'image pour l'opérateur et de se déconnecter du référentiel Cloud Insights. Lorsque vous y êtes invité, saisissez le mot de passe temporaire du référentiel fourni. Cette commande permet de télécharger toutes les images utilisées par l'opérateur, y compris pour les fonctions facultatives. Voir ci-dessous pour connaître les caractéristiques auxquelles ces images sont utilisées.
+Exécutez l'extrait de code image dans la mosaïque d'installation de NetApp Monitoring Operator. Cette commande permet de se connecter au référentiel Data Infrastructure Insights, d'extraire toutes les dépendances d'image pour l'opérateur et de se déconnecter du référentiel Data Infrastructure Insights. Lorsque vous y êtes invité, saisissez le mot de passe temporaire du référentiel fourni. Cette commande permet de télécharger toutes les images utilisées par l'opérateur, y compris pour les fonctions facultatives. Voir ci-dessous pour connaître les caractéristiques auxquelles ces images sont utilisées.
 
 Fonctionnalités centrales de l'opérateur et surveillance Kubernetes
 
@@ -152,7 +143,7 @@ Performances et carte réseau
 * ci-net-observateur
 
 
-Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les balises d'image et les chemins de répertoire de ces images dans votre référentiel sont cohérents avec ceux du référentiel Cloud Insights.
+Envoyez l'image de docker de l'opérateur à votre référentiel docker privé, local ou d'entreprise, conformément aux règles de votre entreprise. Assurez-vous que les balises d'image et les chemins de répertoire vers ces images dans votre référentiel sont cohérents avec ceux du référentiel Data Infrastructure Insights.
 
 Modifiez le déploiement de l'opérateur de surveillance dans Operator-deployment.yaml, et modifiez toutes les références d'image pour utiliser votre référentiel Docker privé.
 

@@ -5,24 +5,21 @@ summary: Affichage des requêtes qui ont été créées
 keywords: query, queries, viewing 
 ---
 = Affichage des requêtes
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 Vous pouvez afficher vos requêtes pour surveiller vos actifs et modifier la façon dont vos requêtes affichent les données associées à vos ressources.
 
 .Étapes
-. Connectez-vous à votre locataire Cloud Insights.
+. Connectez-vous à votre locataire Data Infrastructure Insights.
 . Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*. Vous pouvez modifier l'affichage des requêtes en effectuant l'une des actions suivantes :
 . Vous pouvez entrer du texte dans la zone de filtre pour rechercher des requêtes spécifiques.
 . Vous pouvez modifier l'ordre de tri des colonnes dans le tableau de requêtes en croissant (flèche vers le haut) ou en descendant (flèche vers le bas) en cliquant sur la flèche dans l'en-tête de colonne.
@@ -30,4 +27,4 @@ Vous pouvez afficher vos requêtes pour surveiller vos actifs et modifier la fa�
 . Pour déplacer une colonne, cliquez sur l'en-tête de colonne et faites-la glisser vers la droite ou vers la gauche.
 
 
-Lorsque vous faites défiler les résultats de la requête, sachez que les résultats peuvent changer car Cloud Insights interroge automatiquement vos collecteurs de données. Cela peut entraîner l'absence de certains éléments ou l'affichage de certains éléments hors de la commande en fonction du mode de tri.
+Lorsque vous faites défiler les résultats de la requête, sachez que les résultats peuvent changer, car Data Infrastructure Insights interroge automatiquement vos collecteurs de données. Cela peut entraîner l'absence de certains éléments ou l'affichage de certains éléments hors de la commande en fonction du mode de tri.

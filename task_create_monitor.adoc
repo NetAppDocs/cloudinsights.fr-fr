@@ -22,7 +22,7 @@ summary: 'Créez des moniteurs pour alerter les seuils de performances ou d"inve
 Vous créez des moniteurs pour définir des seuils qui déclenchent des alertes pour vous informer des problèmes liés aux ressources de votre réseau. Par exemple, vous pouvez créer un moniteur pour signaler la latence d'écriture _node_ pour n'importe lequel d'une multitude de protocoles.
 
 
-TIP: Les moniteurs et alertes sont disponibles dans toutes les éditions Cloud Insights. Cependant, l'édition de base est soumise aux conditions suivantes : * vous ne pouvez avoir que cinq moniteurs personnalisés actifs à la fois. Tous les moniteurs au-delà de cinq seront créés ou déplacés à l'état _Pause_. * Les moniteurs de metrics VMDK, Virtual machine, Host et DataStore ne sont pas pris en charge. Si des moniteurs ont été créés pour ces mesures, ils seront mis en pause et ne peuvent pas être repris lors de la rétrogradation vers l'édition de base.
+TIP: Les moniteurs et alertes sont disponibles dans toutes les éditions Data Infrastructure Insights. Cependant, l'édition Basic est soumise aux conditions suivantes : * vous ne pouvez avoir jusqu'à cinq moniteurs personnalisés actifs à la fois. Tous les moniteurs au-delà de cinq seront créés ou déplacés à l'état _Pause_. * Les moniteurs de metrics VMDK, Virtual machine, Host et DataStore ne sont pas pris en charge. Si des moniteurs ont été créés pour ces mesures, ils seront mis en pause et ne peuvent pas être repris lors de la rétrogradation vers l'édition de base.
 
 
 toc::[]
@@ -30,19 +30,19 @@ Les moniteurs vous permettent de définir des seuils sur les metrics générés 
 
 Vous pouvez également créer des moniteurs pour déclencher des alertes de niveau avertissement, critique ou informationnel lorsque les _événements log_ spécifiés sont détectés.
 
-Cloud Insights fournit un certain nombre de link:task_system_monitors.html["Moniteurs définis par le système"] ainsi, en fonction de votre environnement.
+Les informations d'infrastructure de données fournissent également un certain nombre d'informationslink:task_system_monitors.html["Moniteurs définis par le système"], en fonction de votre environnement.
 
 
 
 == Meilleures pratiques en matière de sécurité
 
-Les alertes Cloud Insights mettent en évidence les points de données et les tendances dans votre environnement. Cloud Insights vous permet de saisir n'importe quelle adresse e-mail valide comme destinataire d'alerte. Si vous travaillez dans un environnement sécurisé, soyez particulièrement attentif à la personne qui reçoit la notification ou a accès à l'alerte.
+Les alertes Data Infrastructure Insights sont conçues pour mettre en évidence les points de données et les tendances de votre environnement, et Data Infrastructure Insights vous permet d'entrer n'importe quelle adresse e-mail valide en tant que destinataire des alertes. Si vous travaillez dans un environnement sécurisé, soyez particulièrement attentif à la personne qui reçoit la notification ou a accès à l'alerte.
 
 
 
 == Moniteur de mesures ou de journaux ?
 
-. Dans le menu Cloud Insights, cliquez sur *alertes > gérer les moniteurs*
+. Dans le menu informations sur l'infrastructure de données, cliquez sur *alertes > gérer les moniteurs*
 +
 La page de liste moniteurs s'affiche et affiche les moniteurs actuellement configurés.
 
@@ -240,8 +240,8 @@ Les groupes de moniteurs suivants sont affichés. Le nombre de moniteurs contenu
 
 * *Tous les moniteurs* répertorie tous les moniteurs.
 * *Moniteurs personnalisés* répertorie tous les moniteurs créés par l'utilisateur.
-* *Moniteurs suspendus* répertorie tous les moniteurs système qui ont été suspendus par Cloud Insights.
-* Cloud Insights affiche également un certain nombre de *groupes de moniteurs système*, qui répertorieront un ou plusieurs groupes de link:task_system_monitors.html["moniteurs définis par le système"], Y compris les moniteurs de charge de travail et d'infrastructure ONTAP.
+* *Les moniteurs suspendus* répertorieront tous les moniteurs système qui ont été suspendus par Data Infrastructure Insights.
+* Les informations sur l'infrastructure de données afficheront également un certain nombre de *groupes de surveillance du système*, qui répertorieront un ou plusieurs groupes de link:task_system_monitors.html["moniteurs définis par le système"], y compris les moniteurs d'infrastructure et de charge de travail ONTAP.
 
 
 
@@ -251,13 +251,13 @@ NOTE: Les moniteurs personnalisés peuvent être mis en pause, repris, supprimé
 
 === Moniteurs suspendus
 
-Ce groupe s'affiche uniquement si Cloud Insights a suspendu un ou plusieurs moniteurs. Un moniteur peut être suspendu s'il génère des alertes excessives ou continues. Si le moniteur est un moniteur personnalisé, modifiez les conditions pour empêcher l'alerte continue, puis reprenez le moniteur. Le moniteur sera supprimé du groupe des moniteurs suspendus lorsque le problème à l'origine de la suspension est résolu.
+Ce groupe s'affiche uniquement si Data Infrastructure Insights a suspendu un ou plusieurs moniteurs. Un moniteur peut être suspendu s'il génère des alertes excessives ou continues. Si le moniteur est un moniteur personnalisé, modifiez les conditions pour empêcher l'alerte continue, puis reprenez le moniteur. Le moniteur sera supprimé du groupe des moniteurs suspendus lorsque le problème à l'origine de la suspension est résolu.
 
 
 
 === Moniteurs définis par le système
 
-Ces groupes affichent les moniteurs fournis par Cloud Insights, tant que votre environnement contient les périphériques et/ou la disponibilité du journal requis par les moniteurs.
+Ces groupes affichent les moniteurs fournis par Data Infrastructure Insights, à condition que votre environnement contienne les périphériques et/ou la disponibilité des journaux requis par les moniteurs.
 
 Les moniteurs définis par le système ne peuvent pas être modifiés, déplacés vers un autre groupe ou supprimés. Cependant, vous pouvez dupliquer un moniteur système et modifier ou déplacer le doublon.
 
@@ -283,13 +283,13 @@ image:Monitors_AssociateToGroup.png["Associer au groupe"]
 Supprimer les moniteurs en cliquant sur un groupe et en sélectionnant _Supprimer du groupe_ dans le menu. Vous ne pouvez pas supprimer de moniteurs du groupe _tous les moniteurs_ ou _moniteurs personnalisés_. Pour supprimer un moniteur de ces groupes, vous devez le supprimer lui-même.
 
 
-NOTE: La suppression d'un moniteur d'un groupe ne supprime pas le moniteur de Cloud Insights. Pour supprimer complètement un moniteur, sélectionnez-le et cliquez sur _Delete_. Ceci le supprime également du groupe auquel il appartenait et n'est plus disponible pour aucun utilisateur.
+NOTE: La suppression d'un moniteur d'un groupe ne supprime pas le moniteur de Data Infrastructure Insights. Pour supprimer complètement un moniteur, sélectionnez-le et cliquez sur _Delete_. Ceci le supprime également du groupe auquel il appartenait et n'est plus disponible pour aucun utilisateur.
 
 Vous pouvez également déplacer un moniteur vers un autre groupe de la même manière, en sélectionnant _Move to Group_.
 
 Pour mettre en pause ou reprendre tous les moniteurs d'un groupe à la fois, sélectionnez le menu du groupe et cliquez sur _Pause_ ou _reprendre_.
 
-Utilisez le même menu pour renommer ou supprimer un groupe. La suppression d'un groupe ne supprime pas les moniteurs de Cloud Insights ; ils sont toujours disponibles dans _tous les moniteurs_.
+Utilisez le même menu pour renommer ou supprimer un groupe. La suppression d'un groupe ne supprime pas les moniteurs de Data Infrastructure Insights ; ils sont toujours disponibles dans _tous les moniteurs_.
 
 image:Monitors_PauseGroup.png["Mettre un groupe en pause"]
 
@@ -297,9 +297,9 @@ image:Monitors_PauseGroup.png["Mettre un groupe en pause"]
 
 == Moniteurs définis par le système
 
-Cloud Insights inclut un certain nombre de contrôles définis par le système, à la fois pour les metrics et les journaux. Les moniteurs système disponibles dépendent des collecteurs de données présents dans votre environnement. De ce fait, les moniteurs disponibles dans Cloud Insights peuvent changer à mesure que des collecteurs de données sont ajoutés ou que leurs configurations ont changé.
+Les informations d'infrastructure de données comprennent un certain nombre de contrôles définis par le système pour les metrics et les journaux. Les moniteurs système disponibles dépendent des collecteurs de données présents dans votre environnement. De ce fait, les moniteurs disponibles dans Data Infrastructure Insights peuvent changer à mesure que des collecteurs de données sont ajoutés ou que leurs configurations changent.
 
-Afficher le link:task_system_monitors.html["Moniteurs définis par le système"] Pour obtenir des descriptions des moniteurs inclus avec Cloud Insights.
+Consultez la link:task_system_monitors.html["Moniteurs définis par le système"] page pour obtenir la description des moniteurs inclus dans Data Infrastructure Insights.
 
 
 

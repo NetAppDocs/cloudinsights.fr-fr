@@ -19,7 +19,7 @@ summary: 'Créez des moniteurs pour alerter les seuils de performances ou d"inve
 
 
 [role="lead"]
-Cloud Insights inclut un certain nombre de contrôles définis par le système, à la fois pour les metrics et les journaux. Les moniteurs système disponibles dépendent des collecteurs de données présents dans votre environnement. De ce fait, les moniteurs disponibles dans Cloud Insights peuvent changer à mesure que des collecteurs de données sont ajoutés ou que leurs configurations ont changé.
+Les informations d'infrastructure de données comprennent un certain nombre de contrôles définis par le système pour les metrics et les journaux. Les moniteurs système disponibles dépendent des collecteurs de données présents dans votre environnement. De ce fait, les moniteurs disponibles dans Data Infrastructure Insights peuvent changer à mesure que des collecteurs de données sont ajoutés ou que leurs configurations changent.
 
 
 NOTE: Par défaut, de nombreux moniteurs système sont en état _pause_. Vous pouvez activer un moniteur système en sélectionnant l'option _Resume_ pour le moniteur. Assurez-vous que _la collecte avancée de données de compteur_ et _l'activation de la collecte de journaux EMS ONTAP_ sont activées dans le collecteur de données. Ces options se trouvent dans le Data Collector de ONTAP sous _Configuration avancée_:image:Enable_Log_Monitor_Collection.png["Activation du compteur avancé et de la collecte des journaux EMS pour ONTAP"]
@@ -41,7 +41,7 @@ Les moniteurs définis par le système suivants sont disponibles dans les groupe
 * Les moniteurs des deux groupes sont par défaut à l'état _Pause_.
 
 
-Les moniteurs système actuellement fournis avec Cloud Insights sont les suivants :
+Voici les moniteurs système actuellement inclus dans Data Infrastructure Insights :
 
 
 
@@ -605,10 +605,10 @@ Pods de taille appropriée pour libérer le processeur sur les nœuds. | Avertis
 | Nom du moniteur | Description | Action corrective 
 
 
-| Arrêt de l'unité d'acquisition | Les unités d'acquisition Cloud Insights redémarrent régulièrement dans le cadre des mises à niveau pour introduire de nouvelles fonctionnalités. Cela se produit une fois par mois ou moins dans un environnement standard. Un avertissement indiquant qu'une unité d'acquisition est arrêtée doit être suivi peu après par une résolution indiquant que l'unité d'acquisition nouvellement redémarrée a terminé un enregistrement auprès de Cloud Insights. En général, ce cycle de fermeture à enregistrement prend de 5 à 15 minutes. | Si l'alerte survient fréquemment ou dure plus de 15 minutes, vérifiez le fonctionnement du système hébergeant l'unité d'acquisition, le réseau et tout proxy connectant l'UA à Internet. 
+| Arrêt de l'unité d'acquisition | Les unités d'acquisition Data Infrastructure Insights redémarrent régulièrement dans le cadre des mises à niveau pour introduire de nouvelles fonctionnalités. Cela se produit une fois par mois ou moins dans un environnement standard. Une alerte d'avertissement indiquant qu'une unité d'acquisition a été arrêtée doit être suivie peu après par une résolution indiquant que l'unité d'acquisition nouvellement redémarrée a terminé un enregistrement avec Data Infrastructure Insights. En général, ce cycle de fermeture à enregistrement prend de 5 à 15 minutes. | Si l'alerte survient fréquemment ou dure plus de 15 minutes, vérifiez le fonctionnement du système hébergeant l'unité d'acquisition, le réseau et tout proxy connectant l'UA à Internet. 
 
 
-| Echec du collecteur | Le sondage d'un collecteur de données a rencontré une défaillance inattendue. | Visitez la page Data Collector de Cloud Insights pour en savoir plus sur la situation. 
+| Echec du collecteur | Le sondage d'un collecteur de données a rencontré une défaillance inattendue. | Pour en savoir plus sur la situation, consultez la page relative au collecteur de données dans Data Infrastructure Insights. 
 
 
 | Avertissement du collecteur | Cette alerte peut généralement survenir en raison d'une configuration erronée du collecteur de données ou du système cible. Revoir les configurations pour éviter les alertes futures. Cela peut également être dû à la récupération de données moins complètes où le collecteur de données a rassemblé toutes les données qu'il pourrait. Cela peut se produire lorsque des situations changent pendant la collecte de données (par exemple, une machine virtuelle présente au début de la collecte de données est supprimée lors de la collecte et avant la capture de ces données). | Vérifier la configuration du collecteur de données ou du système cible. Notez que le moniteur pour l'avertissement du collecteur peut envoyer plus d'alertes que d'autres types de moniteur. Il est donc recommandé de ne définir aucun destinataire d'alerte à moins que vous ne soyez en mesure de résoudre les problèmes. 

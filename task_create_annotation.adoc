@@ -5,17 +5,14 @@ keywords: annotations, annotation rules, manual annotations,
 summary: Comment créer une annotation. 
 ---
 = Utilisation d'annotations
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -25,9 +22,9 @@ Vous créez des annotations et vous les attribuez aux ressources que vous survei
 
 == Définition des annotations
 
-Ces annotations vous permettent d'ajouter des données personnalisées spécifiques à l'entreprise qui correspondent aux ressources de votre entreprise. Alors que Cloud Insights fournit un ensemble d'annotations par défaut, telles que le cycle de vie des ressources (date d'anniversaire ou fin de vie), la création ou l'emplacement du data Center et le niveau, vous pouvez afficher les données d'autres manières.
+Ces annotations vous permettent d'ajouter des données personnalisées spécifiques à l'entreprise qui correspondent aux ressources de votre entreprise. Les informations d'infrastructure de données fournissent un ensemble d'annotations par défaut, telles que le cycle de vie des ressources (date d'anniversaire ou de fin de vie), l'emplacement du bâtiment ou du data Center et le niveau, mais vous pouvez rechercher d'autres façons d'afficher les données.
 
-Les données contenues dans des annotations personnalisées complètent les données déjà recueillies sur les périphériques, telles que le fabricant du commutateur, le nombre de ports et les statistiques de performance. Les données que vous ajoutez à l'aide d'annotations ne sont pas découvertes par Cloud Insights.
+Les données contenues dans des annotations personnalisées complètent les données déjà recueillies sur les périphériques, telles que le fabricant du commutateur, le nombre de ports et les statistiques de performance. Les données que vous ajoutez à l'aide d'annotations ne sont pas découvertes par Data Infrastructure Insights.
 
 .Avant de commencer
 * Répertoriez toute terminologie de l'industrie à laquelle les données d'environnement doivent être associées.
@@ -39,7 +36,7 @@ Les données contenues dans des annotations personnalisées complètent les donn
 Procédez comme suit pour créer une annotation.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *gérer > Annotations*
+. Dans le menu Data Infrastructure Insights, cliquez sur *observabilité > enrichir > Annotations*
 . Cliquez sur *+ Annotation* pour créer une nouvelle annotation.
 . Entrez un nom, une description et un type pour la nouvelle annotation.
 +
@@ -64,7 +61,7 @@ L'affectation d'annotations aux ressources vous permet de trier, de regrouper et
 
 
 .Étapes
-. Connectez-vous à votre environnement Cloud Insights.
+. Connectez-vous à votre environnement Data Infrastructure Insights.
 . Localisez la ressource à laquelle vous souhaitez appliquer l'annotation.
 +
 ** Vous pouvez localiser les ressources en effectuant une requête, en choisissant un widget dasoard ou en effectuant une recherche. Une fois que vous avez trouvé la ressource souhaitée, cliquez sur le lien pour ouvrir la page d'accueil de la ressource.
@@ -88,7 +85,7 @@ Si vous souhaitez modifier la valeur de l'annotation après l'avoir affectée, c
 
 == Affectation d'annotations à l'aide de règles d'annotation
 
-Pour attribuer automatiquement des annotations aux ressources en fonction des critères que vous définissez, vous devez configurer des règles d'annotation. Cloud Insights attribue les annotations aux ressources en fonction de ces règles. Cloud Insights propose également deux règles d'annotation par défaut, que vous pouvez modifier en fonction de vos besoins ou supprimer si vous ne souhaitez pas les utiliser.
+Pour attribuer automatiquement des annotations aux ressources en fonction des critères que vous définissez, vous devez configurer des règles d'annotation. Les informations d'infrastructure de données affectent les annotations aux ressources en fonction de ces règles. Data Infrastructure Insights propose également deux règles d'annotation par défaut, que vous pouvez modifier en fonction de vos besoins ou supprimer si vous ne souhaitez pas les utiliser.
 
 
 

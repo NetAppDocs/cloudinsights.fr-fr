@@ -69,7 +69,7 @@ Procédez comme suit pour configurer la machine à utiliser en tant qu'agent de 
 
 == Installez l'agent de sécurité de la charge de travail
 
-. Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Cloud Insights.
+. Connectez-vous en tant qu'administrateur ou responsable de compte à votre environnement Data Infrastructure Insights.
 . Accédez à Workload Security *Collectors* et cliquez sur l'onglet *agents*.
 . Cliquez sur *+Agent* et spécifiez RHEL comme plate-forme cible.
 . Copiez la commande installation de l'agent.

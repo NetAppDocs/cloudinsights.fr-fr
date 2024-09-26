@@ -19,13 +19,13 @@ keywords: annotate, annotation, rules
 
 
 [role="lead"]
-Vous pouvez utiliser des règles d'annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez. Cloud Insights attribue les annotations aux ressources en fonction de ces règles. Les annotations définies manuellement sur une page de ressource individuelle ont priorité sur les annotations basées sur des règles lors de l'évaluation des règles d'annotation par Cloud Insight.
+Vous pouvez utiliser des règles d'annotation pour appliquer automatiquement des annotations à plusieurs ressources en fonction de critères que vous définissez. Les informations d'infrastructure de données affectent les annotations aux ressources en fonction de ces règles. Les annotations définies manuellement sur une page de ressource individuelle ont priorité sur les annotations basées sur des règles lors de l'évaluation des règles d'annotation par Cloud Insight.
 
 .Avant de commencer
 Vous devez avoir créé une requête pour la règle d'annotation.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *gérer > règles d'annotation*.
+. Dans le menu informations sur l'infrastructure de données, cliquez sur *gérer > règles d'annotation*.
 . Cliquez sur *+ règle* pour ajouter une nouvelle règle d'annotation.
 +
 La boîte de dialogue Ajouter une règle s'affiche.
@@ -36,7 +36,7 @@ La boîte de dialogue Ajouter une règle s'affiche.
 +
 Le nom apparaît dans la page règles d'annotation.
 
-.. Cliquez sur *requête* et sélectionnez la requête utilisée par Cloud Insights pour identifier les ressources auxquelles l'annotation s'applique.
+.. Cliquez sur *Query* et sélectionnez la requête utilisée par Data Infrastructure Insights pour identifier les actifs auxquels l'annotation s'applique.
 .. Cliquez sur *Annotation* et sélectionnez l'annotation que vous souhaitez appliquer.
 .. Cliquez sur *valeur* et sélectionnez une valeur pour l'annotation.
 +
@@ -46,7 +46,7 @@ Par exemple, si vous choisissez anniversaire comme annotation, vous spécifiez u
 .. Cliquez sur *Exécuter toutes les règles* si vous souhaitez exécuter toutes les règles immédiatement ; sinon, les règles sont exécutées à un intervalle planifié régulièrement.
 +
 
-NOTE: Dans un environnement Cloud Insights de grande taille, vous remarquerez que l'exécution de règles d'annotation semble prendre un certain temps. Ceci est dû au fait que l'indexeur s'exécute en premier et doit se terminer avant d'exécuter les règles. L'indexeur permet à Cloud Insights de rechercher ou de filtrer des objets et des compteurs nouveaux ou mis à jour dans vos données. Le moteur de règles attend que l'indexeur termine sa mise à jour avant d'appliquer les règles.
+NOTE: Dans un environnement Data Infrastructure Insights volumineux, vous remarquerez peut-être que l'exécution de règles d'annotation semble prendre un certain temps. Ceci est dû au fait que l'indexeur s'exécute en premier et doit se terminer avant d'exécuter les règles. L'indexeur permet à Data Infrastructure Insights de rechercher ou de filtrer des objets et des compteurs nouveaux ou mis à jour dans vos données. Le moteur de règles attend que l'indexeur termine sa mise à jour avant d'appliquer les règles.
 
 
 
@@ -59,7 +59,7 @@ NOTE: Dans un environnement Cloud Insights de grande taille, vous remarquerez qu
 Vous pouvez modifier une règle d'annotation pour modifier le nom de la règle, son annotation, la valeur de l'annotation ou la requête associée à la règle.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *gérer > règles d'annotation*.
+. Dans le menu informations sur l'infrastructure de données, cliquez sur *gérer > règles d'annotation*.
 +
 La page règles d'annotation affiche la liste des règles d'annotation existantes.
 
@@ -95,7 +95,7 @@ Notez que lors de l'exécution de plusieurs règles qui mettent à jour la même
 Vous pouvez supprimer les règles d'annotation qui ne sont plus utilisées.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *gérer > règles d'annotation*.
+. Dans le menu informations sur l'infrastructure de données, cliquez sur *gérer > règles d'annotation*.
 +
 La page règles d'annotation affiche la liste des règles d'annotation existantes.
 

@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, smd, storage manager dashboard
 Le tableau de bord de Storage Manager vous offre une visualisation centralisée qui vous permet de comparer et de comparer l'utilisation des ressources dans le temps par rapport aux plages acceptables et aux jours précédents d'activité. En ne présentant que les indicateurs de performance clés pour vos services de stockage, vous pouvez prendre des décisions sur la maintenance de vos data centers.
 
 
-NOTE: La fonction de création de rapports est disponible dans Cloud Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
+NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
 
 

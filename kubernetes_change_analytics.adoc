@@ -30,13 +30,13 @@ Pour afficher l'analyse des changements Kubernetes, accédez à *Kubernetes > an
 
 image:ChangeAnalytitcs_Main_Screen.png["L'écran principal de l'analytique des changements Kubernetes affiche les alertes avertissement et critiques, les déploiements réussis ou non, ainsi que les 3 workloads qui déclenchent des alertes"].
 
-La page est automatiquement actualisée en fonction de la plage horaire Cloud Insights actuellement sélectionnée.  Des plages de temps plus petites permettent un rafraîchissement plus fréquent de l'écran.
+La page est automatiquement actualisée en fonction de la plage horaire Data Infrastructure Insights actuellement sélectionnée. Des plages de temps plus petites permettent un rafraîchissement plus fréquent de l'écran.
 
 
 
 == Filtrage
 
-Comme pour toutes les fonctionnalités d'Cloud Insights, le filtrage de la liste de modifications est intuitif : en haut de la page, entrez ou sélectionnez des valeurs pour votre cluster Kubernetes, votre espace de noms ou votre charge de travail, ou ajoutez vos propres filtres en cliquant sur le bouton {+].
+Comme toutes les fonctionnalités de Data Infrastructure Insights, il est intuitif de filtrer la liste de modifications : en haut de la page, entrez ou sélectionnez des valeurs pour votre cluster, espace de noms ou workload Kubernetes, ou ajoutez vos propres filtres en cliquant sur le bouton {+].
 
 Lorsque vous filtrez vers un cluster, un espace de noms et une charge de travail spécifique (ainsi que tous les autres filtres que vous avez définis), la chronologie des déploiements et des alertes s'affiche pour cette charge de travail dans cet espace de noms sur ce cluster. Pour effectuer un zoom avant, cliquez sur le graphique et faites-le glisser pour vous concentrer sur une plage horaire plus spécifique.
 

@@ -5,17 +5,14 @@ summary: Vous définissez les applications que vous appliquez ensuite aux ressou
 keywords: application, create application, 
 ---
 = Création d'applications
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -28,7 +25,7 @@ Si vous souhaitez associer l'application à une entité métier, vous devez cré
 Cloud Insights vous permet de suivre les données issues des ressources associées à des applications pour des éléments tels que l'utilisation ou le reporting des coûts.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *gérer > applications*.
+. Dans le menu Cloud Insights, cliquez sur *observabilité > enrichir > applications*. Sélectionnez
 +
 La boîte de dialogue Ajouter une application s'affiche.
 

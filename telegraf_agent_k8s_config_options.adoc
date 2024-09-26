@@ -31,13 +31,13 @@ Le tableau ci-dessous répertorie les options possibles pour le fichier _AgentCo
 | agent |  | Options de configuration communes à tous les composants que l'opérateur peut installer. Ces options peuvent être considérées comme des options « globales ». 
 
 
-|  | DockerRepo | Remplacement dockerRepo pour extraire des images des repos docker privés des clients par rapport à Cloud Insights docker repo. La valeur par défaut est Cloud Insights docker repo 
+|  | DockerRepo | Remplacement dockerRepo pour extraire des images des repos docker privés des clients par rapport à Data Infrastructure Insights docker repo. La valeur par défaut est Data Infrastructure Insights docker repo 
 
 
 |  | DockerImagePullSecret | Facultatif : un secret pour les clients repo privés 
 
 
-|  | Nom du cluster | Champ de texte libre qui identifie de manière unique un cluster dans tous les clusters de clients. Il doit être unique pour un locataire Cloud Insights. La valeur par défaut correspond à ce que le client saisit dans l'interface utilisateur pour le champ Cluster Name 
+|  | Nom du cluster | Champ de texte libre qui identifie de manière unique un cluster dans tous les clusters de clients. Cette fonctionnalité doit être unique dans un locataire Data Infrastructure Insights. La valeur par défaut correspond à ce que le client saisit dans l'interface utilisateur pour le champ Cluster Name 
 
 
 |  | proxy
@@ -271,10 +271,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

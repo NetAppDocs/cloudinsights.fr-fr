@@ -2,26 +2,23 @@
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
 keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
-summary: Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement. 
+summary: 'Les informations d"infrastructure de données peuvent être configurées pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.' 
 ---
 = Installation manuelle du logiciel de l'unité d'acquisition
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-Par défaut, Cloud Insights met automatiquement à jour le logiciel au (acquisition Unit) au fur et à mesure du déploiement des mises à jour. Cependant, dans un environnement contrôlé sécurisé, la mise à jour automatique peut ne pas être possible ou souhaitée.  Dans ce cas, Cloud Insights peut être configuré pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.
+Par défaut, Data Infrastructure Insights met à jour automatiquement le logiciel au (acquisition Unit) au fur et à mesure que des mises à jour sont déployées. Cependant, dans un environnement contrôlé sécurisé, la mise à jour automatique peut ne pas être possible ou souhaitée. Dans ce cas, vous pouvez configurer Data Infrastructure Insights pour que le logiciel au soit mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement.
 
-Pour télécharger et installer manuellement le logiciel au, procédez comme suit. Cloud Insights fournit une page de documentation swagger utile que vous pouvez utiliser pour la plupart de ces étapes, ou vous pouvez utiliser vos propres scripts/commandes d'API. Accédez à Admin > API Access et cliquez sur le lien API Documentation.
+Pour télécharger et installer manuellement le logiciel au, procédez comme suit. Data Infrastructure Insights fournit une page de documentation swagger utile que vous pouvez utiliser pour la plupart de ces étapes ou vous pouvez utiliser vos propres scripts/commandes d'API. Accédez à Admin > API Access et cliquez sur le lien API Documentation.
 
 Le processus est similaire pour Linux et Windows.
 
@@ -29,7 +26,7 @@ Le processus est similaire pour Linux et Windows.
 
 == Exécution D'une NOUVELLE installation au sous Linux :
 
-. Dans Cloud Insights, créez un jeton d'API.
+. Dans Data Infrastructure Insights, créez un jeton d'API.
 +
 .. Accédez à *Admin > accès API* et sélectionnez *+jeton d'accès API*.
 +
@@ -47,7 +44,7 @@ Le processus est similaire pour Linux et Windows.
 
 image:Manual_AU_Create_API_Token.png["Créer un jeton d'API"]
 
-. Dans swagger (Admin > accès API > Documentation API), utilisez le jeton pour autoriser les API Cloud Insights
+. Dans swagger (Admin > API Access > API Documentation), utilisez le jeton pour autoriser les API Data Infrastructure Insights
 +
 .. Cliquez sur _Authorise_ en haut à droite de l'écran swagger
 .. Collez le jeton copié depuis le haut dans le champ clé APIKey client
@@ -82,7 +79,7 @@ NOTE: Si vous ne téléchargez pas la dernière version, confirmez avec NetApp l
 
 IMPORTANT: Les étapes suivantes nécessitent l'utilisation d'un jeton temporaire. N'utilisez pas le jeton d'accès à l'API que vous avez créé ci-dessus.
 
-. Dans le swagger de l'API Cloud Insights, créez un jeton à usage unique à l'aide de l'API _/au/oneTimeToken_.
+. Dans le swagger de l'API Data Infrastructure Insights, créez un jeton unique à l'aide de l'API _/au/oneTimeToken_.
 +
 .. Copiez le jeton à usage unique obtenu.
 
@@ -151,7 +148,7 @@ Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront a
 +
 Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs personnalisés, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (chmod 660 …)
 
-. Redémarrez au. Dans Cloud Insights, accédez à observabilité > collecteurs et sélectionnez l'onglet unités d'acquisition. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
+. Redémarrez au. Dans Data Infrastructure Insights, accédez à observabilité > Collectors et sélectionnez l'onglet acquisition Units. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
 
 
 
@@ -194,7 +191,7 @@ Remarque : si vous utilisez l’utilisateur et le groupe cisys, ceux-ci seront a
 +
 Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs personnalisés, assurez-vous que les autorisations de groupe sont définies sur lecture et écriture pour le propriétaire et le groupe (chmod 660 …)
 
-. Redémarrez au. Dans Cloud Insights, accédez à observabilité > collecteurs et sélectionnez l'onglet unités d'acquisition. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
+. Redémarrez au. Dans Data Infrastructure Insights, accédez à observabilité > Collectors et sélectionnez l'onglet acquisition Units. Choisissez redémarrer dans le menu « trois points » à droite de l'au.
 
 
 
@@ -203,7 +200,7 @@ Remarque : si vous prévoyez d'installer en utilisant différents utilisateurs p
 
 Si vous fournissez un script shell UNIX, il peut être exécuté par l'unité d'acquisition pour récupérer la *clé privée* et la *clé publique* de votre système de gestion des clés.
 
-Pour récupérer la clé, Cloud Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
+Pour récupérer la clé, Data Infrastructure Insights exécute le script en passant deux paramètres : _Key ID_ et _Key type_. _Key ID_ peut être utilisé pour identifier la clé dans votre système de gestion des clés. _Key type_ est "public" ou "privé". Lorsque le type de clé est « public », le script doit renvoyer la clé publique. Lorsque le type de clé est "privé", la clé privée doit être renvoyée.
 
 Pour renvoyer la clé à l'unité d'acquisition, le script doit imprimer la clé sur la sortie standard. Le script doit imprimer _uniquement_ la clé de la sortie standard ; aucun autre texte ne doit être imprimé sur la sortie standard. Une fois la clé demandée imprimée sur la sortie standard, le script doit se fermer avec un code de sortie de 0 ; tout autre code de retour est considéré comme une erreur.
 

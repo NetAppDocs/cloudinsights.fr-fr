@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 Vous pouvez exporter les résultats de n'importe quelle requête dans un fichier .CSV, qui vous permettra d'analyser les données ou de les importer dans une autre application.
 
 .Étapes
-. Connectez-vous à Cloud Insights.
+. Connectez-vous à Data Infrastructure Insights.
 . Cliquez sur *requêtes* et sélectionnez *Afficher toutes les requêtes*.
 +
 La page requêtes s'affiche.

@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["Résolution de périphérique IP"]
 
 == Ajout manuel de périphériques IP
 
-Vous pouvez ajouter manuellement un périphérique IP à Cloud Insights à l'aide de la fonction d'ajout manuel disponible dans l'écran d'identification IP.
+Vous pouvez ajouter manuellement un périphérique IP à Data Infrastructure Insights à l'aide de la fonction d'ajout manuel disponible dans l'écran IP Identify.
 
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Cliquez sur l'onglet *IP Address Identify*.
 . Cliquez sur le bouton *Ajouter*.
@@ -74,7 +74,7 @@ NOTE: Il est recommandé d'exporter d'abord les informations d'identification de
 
 == Exportation de l'identification du périphérique IP vers un fichier .CSV
 
-Vous pouvez exporter des identifications de périphérique IP existantes vers un fichier .CSV à partir de la fonction de résolution de périphérique Cloud Insights. Vous pouvez exporter une identification de périphérique afin de pouvoir la modifier, puis la réimporter dans Cloud Insights, où elle est ensuite utilisée pour identifier les périphériques similaires à ceux qui correspondent à l'identification exportée.
+Vous pouvez exporter des identifications de périphériques IP existants vers un fichier .CSV à partir de la fonction de résolution de périphériques Data Infrastructure Insights. Vous pouvez exporter une identification de périphérique pour la modifier, puis l'importer à nouveau dans Data Infrastructure Insights, où elle est ensuite utilisée pour identifier les périphériques similaires à ceux qui correspondent à l'origine à l'identification exportée.
 
 .Description de la tâche
 . Ce scénario peut être utilisé lorsque les périphériques ont des attributs similaires qui peuvent être facilement modifiés dans le fichier .CSV, puis importés à nouveau dans le système.
@@ -87,7 +87,7 @@ Lorsque vous exportez une identification de périphérique IP dans un fichier .C
 | Adresse | IP | Nom 
 |===
 .Procédure
-. Connectez-vous à l'interface utilisateur Web de Cloud Insights.
+. Connectez-vous à l'interface utilisateur Web Data Infrastructure Insights.
 . Cliquez sur *gérer > résolution du périphérique*
 . Sélectionnez l'onglet *IP Address Identify*.
 . Sélectionnez le ou les périphériques IP dont vous souhaitez exporter l'identification.
