@@ -7536,8 +7536,6 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">Voici un exemple de fichier avec les autorisations cisys appropriées.</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">J'ai constaté des erreurs de collecte de données avec le message "code inconnu"</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM possède plusieurs sous-types. Parmi ceux-ci, seuls _default_, _sync_source_ et _sync_destination_ sont pris en charge.</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Configuration recommandée pour Metro Cluster</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Il est recommandé d'utiliser les éléments suivants pour Metro Cluster :</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">Connectez deux collecteurs de données, un sur le SVM source et un autre sur le SVM de destination.</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">Les collecteurs de données doivent être connectés par _Cluster IP_.</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">À tout moment, un collecteur de données doit être en cours d'exécution, un autre sera en erreur.</block>
@@ -13438,4 +13436,6 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">Le tableau et l'image suivants présentent le mappage des champs entre PagerDuty et Data Infrastructure Insights :</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">Remplacement dockerRepo pour extraire des images des repos docker privés des clients par rapport à Data Infrastructure Insights docker repo. La valeur par défaut est Data Infrastructure Insights docker repo</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">Champ de texte libre qui identifie de manière unique un cluster dans tous les clusters de clients. Cette fonctionnalité doit être unique dans un locataire Data Infrastructure Insights. La valeur par défaut correspond à ce que le client saisit dans l'interface utilisateur pour le champ Cluster Name</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">Configuration recommandée pour MetroCluster</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">Les recommandations suivantes sont recommandées pour MetroCluster :</block>
 </blocks>
