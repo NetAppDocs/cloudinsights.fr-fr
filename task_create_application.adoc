@@ -16,16 +16,16 @@ keywords: application, create application,
 
 
 [role="lead"]
-Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Cloud Insights.
+Pour suivre les données associées à des applications spécifiques s'exécutant dans votre environnement, vous pouvez définir les applications dans Data Infrastructure Insights.
 
 .Avant de commencer
 Si vous souhaitez associer l'application à une entité métier, vous devez créer l'entité métier avant de définir l'application.
 
 .Description de la tâche
-Cloud Insights vous permet de suivre les données issues des ressources associées à des applications pour des éléments tels que l'utilisation ou le reporting des coûts.
+Les informations sur l'infrastructure de données vous permettent de suivre les données des ressources associées aux applications, par exemple pour l'utilisation ou le reporting des coûts.
 
 .Étapes
-. Dans le menu Cloud Insights, cliquez sur *observabilité > enrichir > applications*. Sélectionnez
+. Dans le menu informations sur l'infrastructure de données, cliquez sur *observabilité > enrichir > applications*. Sélectionnez
 +
 La boîte de dialogue Ajouter une application s'affiche.
 
