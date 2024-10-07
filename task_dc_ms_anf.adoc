@@ -76,7 +76,7 @@ Entrez les données dans les champs du collecteur de données conformément au t
 
 == Dépannage
 
-* Les informations d'identification utilisées par votre collecteur de données ANF ne doivent pas avoir accès aux abonnements Azure contenant des volumes ANF.
+* Les identifiants utilisés par votre collecteur de données ANF doivent avoir accès à tous les abonnements Azure qui contiennent des volumes ANF.
 * Si l'accès au lecteur provoque l'échec de la collecte des performances, essayez d'accorder l'accès au collaborateur au niveau d'un groupe de ressources.
 
 
