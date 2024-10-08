@@ -558,5 +558,8 @@ Vous pouvez également le faire <<uninstalling,désinstaller>> et <<installing-t
 
 
 | Telegraf avertit ou se bloque en raison d'une mémoire verrouillable insuffisante. | Essayez d'augmenter la limite de mémoire verrouillable pour Telegraf dans le système d'exploitation/nœud sous-jacent. Si l'augmentation de la limite n'est pas une option, modifiez la configuration de l'agentNKMO et définissez _Unprotected_ sur _true_.  Cela indique à Telegraf de ne pas tenter de réserver des pages de mémoire verrouillées. Bien que cela puisse présenter un risque de sécurité car les secrets déchiffrés peuvent être échangés sur disque, il permet une exécution dans des environnements où il est impossible de réserver de la mémoire verrouillée. Pour plus de détails sur les options de configuration _Unprotected_, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration"] page. 
+
+
+| Je vois des messages d'avertissement de Telegraf ressemblant à ce qui suit: _W! [Inputs.diskio] Impossible de récupérer le nom du disque pour « vdc » : erreur lors de la lecture de /dev/vdc : pas de fichier ou de répertoire | Pour l'opérateur de surveillance Kubernetes, ces messages d'avertissement sont bénins et peuvent être ignorés en toute sécurité. Vous pouvez également modifier la section telegraf dans AgentConfiguration et définir runPrivileged sur true. Pour plus de détails, reportez-vous au link:telegraf_agent_k8s_config_options.html["options de configuration de l'opérateur"]. 
 |===
 Pour plus d'informations, consultez le link:concept_requesting_support.html["Assistance"] ou dans le link:reference_data_collector_support_matrix.html["Matrice de prise en charge du Data Collector"].
