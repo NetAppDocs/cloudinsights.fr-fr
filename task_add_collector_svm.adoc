@@ -239,7 +239,7 @@ Le collecteur de données actuel de la SVM "en cours d'exécution" s'affiche sou
 
 == Politique de service
 
-Si vous utilisez une stratégie de service de ONTAP version 9.9.1, afin de vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.
+Si vous utilisez une stratégie de service avec ONTAP *version 9.9.1 ou ultérieure*, pour vous connecter au Data Source Collector, le service _data-fpolicy-client_ est requis avec le service de données _data-nfs_ et/ou _data-cifs_.
 
 Exemple :
 
