@@ -4,8 +4,7 @@ permalink: ws_manually_installing_agent_and_collector.html
 keywords: install, configure, agent, collector, workload, security, cloud secure 
 summary: Les agents de sécurité des charges de travail peuvent être installés ou mis à jour manuellement, ce qui permet de mieux contrôler le logiciel installé dans votre environnement. 
 ---
-= Installation manuelle de Workload Security Agent et Collector
-:hardbreaks:
+= Installation manuelle de Workload Security Agent et Collector:hardbreaks :
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

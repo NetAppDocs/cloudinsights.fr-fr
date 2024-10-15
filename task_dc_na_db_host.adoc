@@ -4,8 +4,7 @@ permalink: task_dc_na_db_host.html
 keywords: data collector, generic db 
 summary: Collecteur de résolveur hôte DB générique 
 ---
-= Résolveur d'hôte de BD générique NetApp
-:hardbreaks:
+= Résolveur d'hôte de BD générique NetApp:hardbreaks :
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: infrastructure_change_analytics.html 
+keywords: changes, management, analysis, infra, infrastructure 
+summary: 'Cloud Insights effectue le suivi des modifications de l"infrastructure pour faciliter l"analyse et la résolution de problèmes.' 
+---
+= Analyse des modifications d'infrastructure
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+L'analyse des modifications d'infrastructure vous offre un aperçu complet des modifications récentes apportées à l'infrastructure (stockage, commutateur, etc.) de votre environnement. Avec change Analytics, vous pouvez suivre les modifications de configuration et explorer les problèmes attendus et imprévus.
+
+
+
+== Comment l'analyse des changements d'infrastructure peut-elle aider ?
+
+Dans n'importe quel environnement, des modifications de votre stockage ou de vos périphériques peuvent se produire en raison de modifications mal configurées, d'une perte d'alimentation, etc. L'analyse des modifications permet d'y apporter une aide en fournissant une fenêtre unique pour afficher et mettre en corrélation l'état de vos périphériques avec les pannes ou les modifications planifiées. Les modifications sont calculées avec chaque sondage d'inventaire (après le premier sondage sur un nouveau collecteur).
+
+Pour analyser les modifications d'infrastructure, accédez à *observabilité > analyse des modifications*. Les alertes et les modifications de configuration pour la plage horaire actuelle sont répertoriées. Les lignes d'alerte indiquent l'état d'alerte actuel (actif ou résolu).
+
+image:infraChange_list_example.png["Écran principal de l'analyse des changements d'infrastructure"].
+
+La sélection d'un élément dans la liste ouvre un volet coulissant donnant plus de détails sur l'alerte ou la modification.
+
+image:infraChange_config_detail.png["Exemple de volet des détails de modification de la configuration"]
+
+
+
+== Filtrage
+
+Comme pour toutes les fonctionnalités de Cloud Insights, le filtrage de la liste des modifications est intuitif : en haut de la page, vous pouvez filtrer des types d'actifs spécifiques (_déclenché sur:type_) et/ou filtrer uniquement des actifs portant des noms spécifiques si vous le souhaitez (_déclenché sur:nom_), ou ajouter vos propres filtres en sélectionnant le bouton {+].
+
+image:infraChange_filter_dropdown.png["Liste déroulante filtrage des modifications d'infrastructure"]
+
+Vous pouvez également accéder directement aux alertes clés ou aux modifications apportées dans la section d'état située sous les paramètres de filtre, y compris les trois principales ressources présentant le plus d'alertes.
+
+image:Change_Analysis_filters_and_status.png["état et liens rapides vers les alertes et les modifications"]
+
+
+
+== Quels sont les objets analysés pour les modifications ?
+
+Le tableau suivant répertorie les objets et les attributs inclus dans l'analyse des modifications d'infrastructure.
+
+|===
+
+
+| Type d'objet | Attributs | Attributs étendus 
+
+
+| Disque | Disksize.total isVirtual diskGroup SPEED type location serialNumber role status vendor model storage.name storagePools.name name | Chiffrement 
+
+
+| Stockage | Famille datasources.name ip isActive microcodeVersion nom de modèle protocoles serialNumber vendor |  
+
+
+| StorageNode | Nom storage.name nodeVersion modèle serialNumber numberOfProcessors état partner.name mémoire cache | ManageIpAddress parentSerialNumber nom du site 
+
+
+| Poolde stockage | Type de nom isAutoTiering isVendorVirtual Redundancy vendorTier usesFlashPools Storage.vendor Storage.ip Storage.model Storage.family storage.name storageNodes.name Capacity.total (attribut dynamique) | IsCompactionSavingsEnabled isEncrypted objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTieringFullnessThreshold objectStoreS3Name objectStoreServer 
+
+
+| Qtree | Tapez datasources.name securityStyle isOplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name internalVolume.virtualStorage simpleName statusNom du texte |  
+
+
+| StorageVirtualmachine | Nom storage.name type d'état protocoles ipSpace interneVolumeLimit commentaire |  
+
+
+| Volumétrie | Nom simpleName label type storage.name Storage.vendor Storage.ip Storage.model Storage.family isAutoTiering isThinProvisioned diskGroup isMainframe isMeta isReplicaSource isReplicaTarget isSnapshot isVirtual internalVolume.name internalVolume.virtualStorage storageVirtualMachine.name storagePools.minDiskSize.total storagePools.minDiskSpeed storagePools.minDiskType storagePools.name storagePools.minDiskPools.storageNodes.name storageNodes.partner.name niveau storagePools.usesFlashPools | Storage Groups isEncrypted isCompressionEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw 
+
+
+| Volume interne | FlashPoolEligibilité name simpleName spaceGuarantee status type virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name StoragePool.disksize.total storage.name Storage.vendor Storage.ip Storage.model Storage.family StoragePool.disks.speed storageVirtualMachine.name StoragePool.Redunancy storagePool.name StoragePool.disks.type storagePool.usesFlashPools Capacity.isThinprovisionned | QosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS comment isEncrypted adaptiveQosPolicy junctionPath objectStoreTieringPolicy tieringMinimumCoolingDays 
+
+
+| Virtualmachine | Nom dnsName processeurs de mémoire ip os guestState powerState host.name host.clustername host.ip host.os dataStore.name | InstanceType publicIps SecurityGroups virtualCenterIp 
+
+
+| Datastore | Nom virtualCenterIp | type 
+
+
+| Hôte | Nom modèle ip isconstructeur du système d'exploitation actif cpuCount memory isHypervisor clustername | VirtualCenterIp 
+
+
+| vmdk (VirtualMachineDisk) | Type de nom dataStore.name isRdm virtualMachine.host.name virtualMachine.name | IsSnapshot 
+
+
+| Port | Nom isType wwn actif portIndex vitesse de la lame gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn connectedports.wwn Controller device.name device.type fabrics.name Fabrics.vsanId nodeWwn | description 
+|===
+<<<<<<<<<< HEAD Data Infrastructure Insights répertorie les alertes et les modifications créées pour les journaux suivants :
+
+[]
+====
+Les informations sur l'infrastructure de données répertorient les alertes et les modifications créées pour les journaux suivants : >>>>>> 2d5e94be3615a400bce1e7a050d2d523cc06b5b8
+
+* logs.vmware.events
+* logs.NetApp.ems
+
+
+Les moniteurs de mesure sont également surveillés pour détecter les objets et les attributs dans la liste ci-dessus. Dans le moniteur, ces éléments doivent être sélectionnés dans l'option _regrouper par_ pour que change Analytics puisse les suivre.
+
+====

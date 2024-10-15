@@ -4,8 +4,7 @@ permalink: task_dc_na_ontap_rest.html
 keywords: data collector, ontap, ontap, CDOT, REST 
 summary: Collecteur de données REST ONTAP 
 ---
-= Collecteur de données REST NetApp ONTAP
-:hardbreaks:
+= Collecteur de données REST NetApp ONTAP:hardbreaks :
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

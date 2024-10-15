@@ -5,17 +5,14 @@ keywords: inactive, device,
 summary: 'L"identification des périphériques inactifs vous permet de choisir de les supprimer ou de les attribuer à un rôle actif.' 
 ---
 = Identification des périphériques inactifs
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

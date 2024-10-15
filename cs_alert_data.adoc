@@ -4,13 +4,12 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal 
 summary: 'La sécurité des charges de travail génère des alertes en cas d"activité anormale de l"utilisateur ou d"attaque potentielle. La page alertes répertorie ces activités pour une investigation rapide et facile.' 
 ---
-= Alertes
-:hardbreaks:
+= Alertes:interruptions de service :
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

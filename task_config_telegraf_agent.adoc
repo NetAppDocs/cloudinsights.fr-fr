@@ -5,17 +5,14 @@ keywords: telegraf, agent, telegraf agent
 summary: 'Data Infrastructure Insights prend en charge Telegraf en tant qu"agent de collecte de données d"intégration et peut être configuré sous Windows ou Linux.' 
 ---
 = Configuration d'un agent pour collecter des données (Windows/Linux)
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
