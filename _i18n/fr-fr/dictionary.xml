@@ -13509,4 +13509,5 @@ Si vous exécutez SELinux, il est recommandé d'exécuter les commandes suivante
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">Résolveur d'hôte de BD générique NetApp:hardbreaks :</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">Collecteur de données REST NetApp ONTAP:hardbreaks :</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">Installation manuelle de Workload Security Agent et Collector:hardbreaks :</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">Avant d'apporter des modifications aux autorisations ou à la sécurité des rapports, vous devez copier les rapports « mon contenu » dans le dossier « contenu de l'équipe » pour vous assurer que les rapports sont enregistrés.</block>
 </blocks>

@@ -22,6 +22,9 @@ Vous pouvez personnaliser le format de sortie et la diffusion d'un rapport, déf
 NOTE: La fonction de génération de rapports est disponible dans Data Infrastructure Insights link:concept_subscribing_to_cloud_insights.html["Édition Premium"].
 
 
+IMPORTANT: Avant d'apporter des modifications aux autorisations ou à la sécurité des rapports, vous devez copier les rapports « mon contenu » dans le dossier « contenu de l'équipe » pour vous assurer que les rapports sont enregistrés.
+
+
 
 == Personnalisation du format de sortie et de l'envoi d'un rapport
 
