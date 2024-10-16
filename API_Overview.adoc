@@ -18,31 +18,7 @@ summary: 'L"API Data Infrastructure Insights permet l"intégration à d"autres a
 [role="lead"]
 L'API Data Infrastructure Insights permet aux clients NetApp et aux fournisseurs de logiciels indépendants d'intégrer des informations exploitables de l'infrastructure de données à d'autres applications, telles que des CMDB ou d'autres systèmes de gestion de tickets.
 
-Notez que les API Data Infrastructure Insights sont disponibles en fonction de votre édition actuelle :
-
-[cols="<,^s,^s,^s"]
-|===
-| Type d'API | Basique | Standard | Premium 
-
-
-| Unité d'acquisition | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-
-
-| Collecte de données | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-
-
-| Alertes |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-
-
-| Ressources |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-
-
-| Ingestion des données |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-
-
-| Ingestion de journal |  | image:SmallCheckMark.png["cochez la case"] | image:SmallCheckMark.png["cochez la case"] 
-|===
-En outre, vos informations stratégiques sur link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["rôle du jeu de fonctions"] l'infrastructure de données déterminent les API auxquelles vous pouvez accéder. Les rôles utilisateur et invité disposent de privilèges moins nombreux que le rôle administrateur. Par exemple, si vous avez un rôle Administrateur dans Monitor and Optimize, mais que vous avez un rôle utilisateur dans Reporting, vous pouvez gérer tous les types d'API, à l'exception de Data Warehouse.
+Vos informations stratégiques sur  l'infrastructure de données link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["rôle du jeu de fonctions"]déterminent les API auxquelles vous pouvez accéder. Les rôles utilisateur et invité disposent de privilèges moins nombreux que le rôle administrateur. Par exemple, si vous avez un rôle Administrateur dans Monitor and Optimize, mais que vous avez un rôle utilisateur dans Reporting, vous pouvez gérer tous les types d'API, à l'exception de Data Warehouse.
 
 
 
