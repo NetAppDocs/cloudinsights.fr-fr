@@ -5,14 +5,17 @@ summary: 'Vous pouvez consulter les articles de la base de connaissances, vous c
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = Demande d'aide
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 

@@ -4,7 +4,8 @@ permalink: concept_cs_api.html
 keywords: api, access, token, swagger 
 summary: 'La sécurité des charges de travail intègre une API puissante pour l"intégration à d"autres applications telles que les CMDB.' 
 ---
-= API de sécurité des charges de travail:hardbreaks :
+= API de sécurité du workload
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font

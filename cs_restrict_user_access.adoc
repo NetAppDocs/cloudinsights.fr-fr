@@ -4,12 +4,13 @@ permalink: cs_restrict_user_access.html
 keywords: alert, snapshot,  attack 
 summary: 'Avec la sécurité des charges de travail, vous pouvez restreindre l"accès des utilisateurs en cas de sabotage possible' 
 ---
-= Blocage de l'accès utilisateur:interruptions :
+= Blocage de l'accès utilisateur
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

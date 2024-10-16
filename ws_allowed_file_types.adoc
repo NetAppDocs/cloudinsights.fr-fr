@@ -5,12 +5,7 @@ keywords: workload security, cloud secure, include list, allowed, file types, ra
 summary: Ajoutez des extensions de fichier à une liste de types de fichiers autorisés pour réduire les alertes. 
 ---
 = Stratégies de types de fichiers autorisées
-:hardbreaks:
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

@@ -5,14 +5,17 @@ keywords: telegraf, data, display,
 summary: 'Options d"affichage des données Telegraf' 
 ---
 = Transformation des mesures
+:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
+:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
