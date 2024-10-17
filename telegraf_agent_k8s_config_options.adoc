@@ -87,7 +87,7 @@ proxy :
 |  | RsMemRequest | Demande de mémoire pour les RS telegraf 
 
 
-|  | Avec privilèges d'exécution | Exécutez le conteneur telegraf en mode privilégié. Définissez cette valeur sur true si SELinux est activé sur vos nœuds k8s 
+|  | Avec privilèges d'exécution | Exécutez le conteneur _telegraf-mountstats-poller_ de telegraf DemonSet en mode privilégié. Définissez cette valeur sur true si SELinux est activé sur vos nœuds Kubernetes. 
 
 
 |  | Taille de la batchSize | Voir link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Documentation de configuration de Telegraf"] 
@@ -179,7 +179,10 @@ perstentvolupeclaims=[*],perstentvolumes=[*],pods=[*],réplicasets=[*],resourcec
 |  | Avec privilèges d'exécution | Définissez runPrivileged sur TRUE si Fluent bit ne démarre pas, en essayant d'ouvrir/de créer sa base de données. 
 
 
-| mappe des charges de travail |  | Options de configuration permettant de personnaliser la collection de cartes de charge de travail et l'installation de l'opérateur 
+|  | RunDsPrivileged | Définissez runDsPrivileged sur true pour exécuter le conteneur telegraf de telegraf DemonSet en mode privilégié. 
+
+
+| mappe des charges de travail |  | Options de configuration permettant de personnaliser la collection de cartes de charge de travail et l'installation de l'opérateur. 
 
 
 |  | CpuLimit | Limite CPU pour net observateur ds 
