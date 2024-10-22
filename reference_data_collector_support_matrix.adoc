@@ -5,27 +5,19 @@ summary: La matrice de prise en charge du Data Collector contient des informatio
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
 = Matrice de prise en charge du Data Collector Data Infrastructure Insights
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:toc-position: content
 
 
+[role="lead"]
 La matrice de prise en charge des collecteurs de données fournit des références pour les collecteurs de données pris en charge par Data Infrastructure Insights, y compris des informations sur les fournisseurs et les modèles.
 
-
-toc::[]
 
 
 == HP Enterprise 3PAR / Alletra 9000 / stockage Primera StoreServ
@@ -675,20 +667,17 @@ API de gestion utilisées par ce collecteur de données :
 
 | CLI 3PAR | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Amazon AWS EC2
 
 Modèles et versions pris en charge par ce collecteur de données :
 
-|===
-| Versions d'API 
+Versions API :
+
+* 2014-10-01
 
 
-| 2014-10-01 
-|===
 Produits pris en charge par ce collecteur de données :
 
 |===
@@ -960,8 +949,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API EC2 | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Amazon AWS S3
@@ -1119,8 +1106,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API S3 | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Microsoft Azure NetApp Files
@@ -1422,8 +1407,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Azure NetApp Files | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Commutateurs Fibre Channel Brocade
@@ -1845,8 +1828,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Assistant de configuration de la source de données | Saisie manuelle |  |  |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Brocade Network Advisor HTTP
@@ -2118,8 +2099,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Brocade Network Advisor | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Brocade FOS REST
@@ -2447,8 +2426,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST BROCADE FOS | HTTPS |  | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Commutateurs de structure Cisco MDS & Nexus
@@ -2868,8 +2845,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Le protocole SNMP de Cisco | SNMP | SNMPv1 (Inventaire uniquement), SNMPv2, SNMPv3 | 161 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Cohesity
@@ -3182,8 +3157,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de Cohesity | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC Celerra (SSH)
@@ -3478,8 +3451,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Celerra CLI | SSH | SSH |  |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC CLARiiON (NaviCLI)
@@ -4044,8 +4015,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | CLI Navi | CLI |  | 6389,2162,2163,443 (HTTPS)/80 (HTTP) |  | vrai | vrai | vrai | faux 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC Data Domain (SSH)
@@ -4365,8 +4334,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Interface de ligne de commande Data Domain | SSH | SSH | 22 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC ECS
@@ -4650,8 +4617,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST EMC ECS | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Dell EMC Isilon et PowerScale Rest
@@ -5256,8 +5221,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST EMC Isilon & PowerScale | HTTPS |  | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Dell EMC Isilon / PowerScale (CLI)
@@ -5781,8 +5744,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Isilon (SSH | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC PowerStore REST
@@ -6304,8 +6265,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST D'EMC POWERSTORE | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC RecoverPoint (HTTP)
@@ -6437,8 +6396,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST RecoverPoint | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC ScaleIO et POWERFLEX REST
@@ -6739,8 +6696,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | EMC ScaleIO et PowerFlex REST API | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == CLI EMC Symmetrix
@@ -7504,8 +7459,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Symmetrix SMI-S | SMI-S | HTTP/HTTPS | 5988/5989 |  | vrai | faux | faux | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Dell Unisphere REST
@@ -7931,8 +7884,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API Dell Unisphere | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC VNX (SSH)
@@ -8450,8 +8401,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | VNX SSH ET CLI | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC VNXe & Unity Unisphere (interface de ligne de commande)
@@ -9011,8 +8960,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Interface de ligne de commande VNXe et Unisphere | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC VPLEX
@@ -9331,8 +9278,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API EMC VPLEX | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == EMC XtremIO (HTTP)
@@ -9791,8 +9736,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST D'EMC XTREMIO | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == NetApp E-Series
@@ -10377,20 +10320,17 @@ API de gestion utilisées par ce collecteur de données :
 
 | API SANtricity | RMI | TCP |  |  | vrai | vrai | faux | faux 
 |===
-<<top,Haut de la page>>
-
 
 
 == Google Cloud Compute
 
 Modèles et versions pris en charge par ce collecteur de données :
 
-|===
-| Versions d'API 
+Versions API :
+
+* v1
 
 
-| v1 
-|===
 Produits pris en charge par ce collecteur de données :
 
 |===
@@ -10629,8 +10569,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de Google Compute Platform | HTTPS |  | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == HDS HCP (HTTPS)
@@ -10837,8 +10775,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST HCP HDS | HTTPS | HTTPS | 9090 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == HiCommand Device Manager
@@ -11404,8 +11340,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API XML HiCommand Device Manager | API XML HDS | HTTP/HTTPS | 2001 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Hitachi Ops Center
@@ -11848,8 +11782,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Hitachi Ops Center | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == HDS HNAS (INTERFACE DE LIGNE DE COMMANDE)
@@ -12142,8 +12074,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | CLI HDS HNAS | SSH | SSH | 22 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == HPE Nimble / Alletra 6000 Storage
@@ -12612,8 +12542,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST HP NIMBLE | HTTPS | HTTPS | 5392 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Huawei OceanStor (REST/HTTPS)
@@ -13132,8 +13060,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST OceanStor Performance Huawei | HTTPS | HTTPS | 8088 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == IBM Cleversafe
@@ -13324,8 +13250,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST IBM CLEVERSAFE | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == IBM DS 8K (DSCLI)
@@ -13721,8 +13645,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | INTERFACE DE LIGNE DE COMMANDE IBM DS | DSNI | DSNI |  |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == IBM PowerVM (SSH)
@@ -13904,8 +13826,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | Accès SSH à IBM Hardware Management Console | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == IBM SVC (CLI)
@@ -14494,8 +14414,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | CLI IBM SVC | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == IBM XIV ET A9000 (XIVCLI)
@@ -14907,8 +14825,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | INTERFACE DE LIGNE DE COMMANDE IBM XIV | INTERFACE DE LIGNE DE COMMANDE XIV | TCP | 7778 |  | vrai | faux | vrai | faux 
 |===
-<<top,Haut de la page>>
-
 
 
 == Infinidat Box (HTTP)
@@ -15235,20 +15151,17 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Infinidat | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Ressources de calcul Microsoft Azure
 
 Modèles et versions pris en charge par ce collecteur de données :
 
-|===
-| Versions d'API 
+Versions API :
+
+* 2018-06-01
 
 
-| 2018-06-01 
-|===
 Produits pris en charge par ce collecteur de données :
 
 |===
@@ -15484,8 +15397,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de calcul Microsoft Azure | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Microsoft Hyper-V
@@ -15883,8 +15794,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | WMI | WMI | WMI | 135 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Mode NetApp 7
@@ -16784,8 +16693,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | NetApp 7 mode ZAPI | ZAPI | ZAPI |  |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == NetApp Cloud Volumes Service
@@ -16973,8 +16880,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Cloud Volumes Service | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Amazon FSX pour NetApp ONTAP
@@ -17615,8 +17520,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API NetApp ONTAP | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == NetApp clustered Data ONTAP versions 8.1 et supérieures
@@ -19069,8 +18972,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API NetApp ONTAP | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == NetApp SolidFire 8.1+
@@ -19666,8 +19567,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST SolidFire | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == NetApp StorageGRID (HTTPS)
@@ -19976,8 +19875,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | L'API REST de StorageGRID | HTTPS | HTTPS | 443 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Nutanix Storage (REST)
@@ -20538,8 +20435,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de Nutanix | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == OPENSTACK (API REST/SSH)
@@ -20820,8 +20715,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | OpenStack SSH | SSH | SSH | 22 |  | vrai | faux | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Oracle ZFS (HTTPS)
@@ -21338,8 +21231,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST ORACLE ZFS | HTTP/HTTPS | HTTP/HTTPS | 215 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Pure Storage FlashArray (HTTP)
@@ -21832,8 +21723,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de Pure Storage | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Red Hat RHV (REST)
@@ -22075,8 +21964,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST Red Hat RHEV | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Stockage Rubrik
@@ -22367,8 +22254,6 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de stockage Rubrik | HTTPS | HTTPS | 443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == Centre virtuel NetApp HCI
@@ -22834,22 +22719,19 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de VMware | Services Web | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == VMware Cloud sur AWS
 
 Modèles et versions pris en charge par ce collecteur de données :
 
-|===
-| Versions d'API 
+Versions API :
+
+* VMware vCenter Server 7.0.3 build-20532039
+* VMware vCenter Server 7.0.3 build-20870699
+* VMware vCenter Server 8.0.0 build-21709157
 
 
-| VMware vCenter Server 7.0.3 build-20532039
-VMware vCenter Server 7.0.3 build-20870699
-VMware vCenter Server 8.0.0 build-21709157 
-|===
 Produits pris en charge par ce collecteur de données :
 
 |===
@@ -23226,104 +23108,101 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de VMware | Services Web | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
-
 
 
 == VMware vSphere (services Web)
 
 Modèles et versions pris en charge par ce collecteur de données :
 
-|===
-| Versions d'API 
+Versions API :
+
+* VMware ESXi 6.0.0 build-10719132
+* VMware ESXi 6.0.0 build-2494585
+* VMware ESXi 6.0.0 build-5572656
+* VMware ESXi 6.0.0 build-9313334
+* VMware ESXi 6.5.0 build-14990892
+* VMware ESXi 6.5.0 build-5969303
+* VMware ESXi 7.0.0 build-15843807
+* VMware ESXi 7.0.3 build-20036589
+* VMware ESXi 7.0.3 build-20328353
+* VMware ESXi 7.0.3 build-20842708
+* VMware vCenter Server 5.0.0 build-3073236
+* VMware vCenter Server 5.0.0 build-455964
+* VMware vCenter Server 5.0.0 build-623373
+* VMware vCenter Server 5.1.0 build-3814779
+* VMware vCenter Server 5.5.0 build-1750787
+* VMware vCenter Server 5.5.0 build-2442329
+* VMware vCenter Server 5.5.0 build-3000241
+* VMware vCenter Server 5.5.0 build-3252642
+* VMware vCenter Server 5.5.0 build-3721164
+* VMware vCenter Server 5.5.0 build-4180647
+* VMware vCenter Server 5.5.0 build-6516310
+* VMware vCenter Server 5.5.0 build-9911218
+* VMware vCenter Server 6.0.0 build-13638472
+* VMware vCenter Server 6.0.0 build-14510545
+* VMware vCenter Server 6.0.0 build-2776511
+* VMware vCenter Server 6.0.0 build-3634793
+* VMware vCenter Server 6.0.0 build-3634794
+* VMware vCenter Server 6.0.0 build-5960847
+* VMware vCenter Server 6.0.0 build-7924803
+* VMware vCenter Server 6.0.0 build-8803875
+* VMware vCenter Server 6.0.0 build-9313458
+* VMware vCenter Server 6.5.0 build-10964411
+* VMware vCenter Server 6.5.0 build-15679215
+* VMware vCenter Server 6.5.0 build-17590285
+* VMware vCenter Server 6.5.0 build-17994927
+* VMware vCenter Server 6.5.0 build-18499837
+* VMware vCenter Server 6.5.0 build-18711281
+* VMware vCenter Server 6.5.0 build-19261680
+* VMware vCenter Server 6.5.0 build-20510539
+* VMware vCenter Server 6.5.0 build-7119157
+* VMware vCenter Server 6.7.0 build-10244857
+* VMware vCenter Server 6.7.0 build-11727113
+* VMware vCenter Server 6.7.0 build-13007421
+* VMware vCenter Server 6.7.0 build-13639324
+* VMware vCenter Server 6.7.0 build-14368073
+* VMware vCenter Server 6.7.0 build-15129973
+* VMware vCenter Server 6.7.0 build-15679289
+* VMware vCenter Server 6.7.0 build-17137327
+* VMware vCenter Server 6.7.0 build-18010599
+* VMware vCenter Server 6.7.0 build-18485185
+* VMware vCenter Server 6.7.0 build-18831049
+* VMware vCenter Server 6.7.0 build-19299595
+* VMware vCenter Server 6.7.0 build-19832247
+* VMware vCenter Server 6.7.0 build-19832280
+* VMware vCenter Server 6.7.0 build-20504301
+* VMware vCenter Server 6.7.0 build-20504362
+* VMware vCenter Server 6.7.0 build-8170161
+* VMware vCenter Server 6.7.0 build-9433931
+* VMware vCenter Server 7.0.0 build-16620013
+* VMware vCenter Server 7.0.0 build-16749670
+* VMware vCenter Server 7.0.1 build-17491160
+* VMware vCenter Server 7.0.2 build-17694817
+* VMware vCenter Server 7.0.2 build-17958471
+* VMware vCenter Server 7.0.2 build-18356314
+* VMware vCenter Server 7.0.2 build-18455184
+* VMware vCenter Server 7.0.3 build-18700403
+* VMware vCenter Server 7.0.3 build-18778458
+* VMware vCenter Server 7.0.3 build-19234570
+* VMware vCenter Server 7.0.3 build-19480866
+* VMware vCenter Server 7.0.3 build-19717403
+* VMware vCenter Server 7.0.3 build-20051473
+* VMware vCenter Server 7.0.3 build-20150588
+* VMware vCenter Server 7.0.3 build-20395099
+* VMware vCenter Server 7.0.3 build-20845200
+* VMware vCenter Server 7.0.3 build-20990077
+* VMware vCenter Server 7.0.3 build-21290409
+* VMware vCenter Server 7.0.3 build-21477706
+* VMware vCenter Server 7.0.3 build-21784236
+* VMware vCenter Server 7.0.3 build-21958406
+* VMware vCenter Server 8.0.0 build-20920323
+* VMware vCenter Server 8.0.0 build-21216066
+* VMware vCenter Server 8.0.0 build-21457384
+* VMware vCenter Server 8.0.1 build-21560480
+* VMware vCenter Server 8.0.1 build-21815093
+* VMware vCenter Server 8.0.1 build-21860503
 
 
-| VMware ESXi 6.0.0 build-10719132
-VMware ESXi 6.0.0 build-2494585
-VMware ESXi 6.0.0 build-5572656
-VMware ESXi 6.0.0 build-9313334
-VMware ESXi 6.5.0 build-14990892
-VMware ESXi 6.5.0 build-5969303
-VMware ESXi 7.0.0 build-15843807
-VMware ESXi 7.0.3 build-20036589
-VMware ESXi 7.0.3 build-20328353
-VMware ESXi 7.0.3 build-20842708
-VMware vCenter Server 5.0.0 build-3073236
-VMware vCenter Server 5.0.0 build-455964
-VMware vCenter Server 5.0.0 build-623373
-VMware vCenter Server 5.1.0 build-3814779
-VMware vCenter Server 5.5.0 build-1750787
-VMware vCenter Server 5.5.0 build-2442329
-VMware vCenter Server 5.5.0 build-3000241
-VMware vCenter Server 5.5.0 build-3252642
-VMware vCenter Server 5.5.0 build-3721164
-VMware vCenter Server 5.5.0 build-4180647
-VMware vCenter Server 5.5.0 build-6516310
-VMware vCenter Server 5.5.0 build-9911218
-VMware vCenter Server 6.0.0 build-13638472
-VMware vCenter Server 6.0.0 build-14510545
-VMware vCenter Server 6.0.0 build-2776511
-VMware vCenter Server 6.0.0 build-3634793
-VMware vCenter Server 6.0.0 build-3634794
-VMware vCenter Server 6.0.0 build-5960847
-VMware vCenter Server 6.0.0 build-7924803
-VMware vCenter Server 6.0.0 build-8803875
-VMware vCenter Server 6.0.0 build-9313458
-VMware vCenter Server 6.5.0 build-10964411
-VMware vCenter Server 6.5.0 build-15679215
-VMware vCenter Server 6.5.0 build-17590285
-VMware vCenter Server 6.5.0 build-17994927
-VMware vCenter Server 6.5.0 build-18499837
-VMware vCenter Server 6.5.0 build-18711281
-VMware vCenter Server 6.5.0 build-19261680
-VMware vCenter Server 6.5.0 build-20510539
-VMware vCenter Server 6.5.0 build-7119157
-VMware vCenter Server 6.7.0 build-10244857
-VMware vCenter Server 6.7.0 build-11727113
-VMware vCenter Server 6.7.0 build-13007421
-VMware vCenter Server 6.7.0 build-13639324
-VMware vCenter Server 6.7.0 build-14368073
-VMware vCenter Server 6.7.0 build-15129973
-VMware vCenter Server 6.7.0 build-15679289
-VMware vCenter Server 6.7.0 build-17137327
-VMware vCenter Server 6.7.0 build-18010599
-VMware vCenter Server 6.7.0 build-18485185
-VMware vCenter Server 6.7.0 build-18831049
-VMware vCenter Server 6.7.0 build-19299595
-VMware vCenter Server 6.7.0 build-19832247
-VMware vCenter Server 6.7.0 build-19832280
-VMware vCenter Server 6.7.0 build-20504301
-VMware vCenter Server 6.7.0 build-20504362
-VMware vCenter Server 6.7.0 build-8170161
-VMware vCenter Server 6.7.0 build-9433931
-VMware vCenter Server 7.0.0 build-16620013
-VMware vCenter Server 7.0.0 build-16749670
-VMware vCenter Server 7.0.1 build-17491160
-VMware vCenter Server 7.0.2 build-17694817
-VMware vCenter Server 7.0.2 build-17958471
-VMware vCenter Server 7.0.2 build-18356314
-VMware vCenter Server 7.0.2 build-18455184
-VMware vCenter Server 7.0.3 build-18700403
-VMware vCenter Server 7.0.3 build-18778458
-VMware vCenter Server 7.0.3 build-19234570
-VMware vCenter Server 7.0.3 build-19480866
-VMware vCenter Server 7.0.3 build-19717403
-VMware vCenter Server 7.0.3 build-20051473
-VMware vCenter Server 7.0.3 build-20150588
-VMware vCenter Server 7.0.3 build-20395099
-VMware vCenter Server 7.0.3 build-20845200
-VMware vCenter Server 7.0.3 build-20990077
-VMware vCenter Server 7.0.3 build-21290409
-VMware vCenter Server 7.0.3 build-21477706
-VMware vCenter Server 7.0.3 build-21784236
-VMware vCenter Server 7.0.3 build-21958406
-VMware vCenter Server 8.0.0 build-20920323
-VMware vCenter Server 8.0.0 build-21216066
-VMware vCenter Server 8.0.0 build-21457384
-VMware vCenter Server 8.0.1 build-21560480
-VMware vCenter Server 8.0.1 build-21815093
-VMware vCenter Server 8.0.1 build-21860503 
-|===
 Produits pris en charge par ce collecteur de données :
 
 |===
@@ -23814,4 +23693,3 @@ API de gestion utilisées par ce collecteur de données :
 
 | API REST de VMware | Services Web | HTTP/HTTPS | 80/443 |  | vrai | vrai | vrai | vrai 
 |===
-<<top,Haut de la page>>
